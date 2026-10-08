@@ -1,0 +1,230 @@
+[
+  {
+    "id": "m05a01",
+    "goal": "escrever brief e distinguir funcionalidade entregue de resultado avaliado",
+    "materials": "dados fictícios 10 conflitos/50 tentativas, quadro e brief",
+    "opening": "Se entregarmos três telas, o problema da recepção estará resolvido? Vamos separar quantidade de trabalho entregue de benefício que ainda precisa ser observado.",
+    "talk": [
+      [
+        "Produto e valor",
+        "Um produto digital atende pessoas e continua evoluindo. Antes de escolher telas, identifique usuário e problema. O pedido de solução pode esconder outra necessidade. No caso, conflitos de agenda prejudicam recepção e clientes."
+      ],
+      [
+        "Hipótese e medida",
+        "Dez conflitos em cinquenta tentativas são vinte por cento na semana fictícia. Isso é base fornecida, não resultado da nossa implementação. A hipótese é que controle de ocupação reduza conflito operacional. Precisamos de definição, período e denominador para avaliar depois."
+      ],
+      [
+        "Papel do PO",
+        "No Scrum, PO responde por valor e gestão eficaz do backlog. Não é chefe técnico de toda especialidade. Consulta usuários, coopera com o time e torna decisões compreensíveis. As exigências reais da função variam; a formação oferece base para explorar produto."
+      ]
+    ],
+    "visual": "brief Usuário / Problema / Hipótese / Medida / Pergunta pendente",
+    "demo": [
+      [
+        "Definir necessidade",
+        "Recepção precisa evitar confirmação duplicada. Vou descrever efeito antes de escolher botão ou integração."
+      ],
+      [
+        "Calcular e rotular",
+        "10 dividido por 50 é 0,2, ou 20%. Vou escrever 'dados fictícios' e a janela de uma semana."
+      ],
+      [
+        "Evitar resultado inventado",
+        "Não direi que reduzimos conflitos porque ainda não medimos operação. Entregar controle e comprovar resultado são passos distintos."
+      ]
+    ],
+    "check": [
+      "Reduzir número de conflitos sempre indica melhora?",
+      "Não; pode haver menos uso. Conferir denominador, definição e contexto."
+    ],
+    "group": [
+      "Escrever público e problema.",
+      "Formular hipótese e medida com período.",
+      "Trocar revisão e indicar uma informação ausente."
+    ],
+    "individual": "Uma semana teve cinco conflitos em dez tentativas. Compare com a base e explique sem confundir quantidade com taxa.",
+    "answer": "Cinco é menor que dez em número absoluto, mas 5/10 = 50%, acima da base fictícia de 20%. Mudanças de amostra e contexto exigem análise; não concluir melhora pelo número bruto.",
+    "interventions": [
+      [
+        "Meta é três telas",
+        "Que efeito para usuário você pretende avaliar depois da entrega?"
+      ],
+      [
+        "Afirmar redução sem dados novos",
+        "Qual observação sustenta esse resultado? Registre como hipótese enquanto não houver evidência."
+      ]
+    ],
+    "home": "Revisar brief e acrescentar pergunta de investigação. Completar descrição de objetivo e métrica sem inventar impacto."
+  },
+  {
+    "id": "m05a02",
+    "goal": "realizar entrevista simulada e classificar requisitos e hipóteses",
+    "materials": "perguntas abertas, caso Agenda Clara e tabela Fonte / Informação / Classificação",
+    "opening": "'Você quer um relatório bonito?' ajuda a descobrir a necessidade? Vamos fazer perguntas que permitam à recepção explicar o problema com exemplos.",
+    "talk": [
+      [
+        "Escutar antes de sugerir",
+        "Perguntas abertas pedem uma situação, frequência, impacto e modo atual de trabalho. 'Conte a última ocorrência de conflito' produz informação diferente de oferecer uma solução pronta. Confirme entendimento com a pessoa."
+      ],
+      [
+        "Classificar",
+        "Requisito funcional descreve comportamento. Característica de qualidade precisa ser verificável. Restrição limita a solução. 'Rápido' é ambíguo até definir cenário e medida. Uma necessidade de qualidade pode ser essencial, não secundária."
+      ],
+      [
+        "Fonte e hipótese",
+        "Nesta entrevista, o cenário é fictício. Use informações fornecidas e marque respostas adicionais como hipótese de simulação. Não transformar conversa inventada em pesquisa real. Registrar ambiguidade e como validá-la faz parte da entrega."
+      ]
+    ],
+    "visual": "roteiro de entrevista e tabela Informação / Fonte / Funcional, qualidade ou restrição",
+    "demo": [
+      [
+        "Reescrever pergunta",
+        "Troco 'quer pagamento?' por 'em que momento o pagamento causa dificuldade e o que acontece depois?'. Quero entender objetivo."
+      ],
+      [
+        "Classificar exemplos",
+        "Uma reserva ativa por horário é comportamento. Dados fictícios são restrição educacional. 'Carregar rápido' exige condição de medição."
+      ],
+      [
+        "Registrar pendência",
+        "Quem pode cancelar? O laboratório não possui login; essa decisão fica como questão de extensão, sem fingir implementação."
+      ]
+    ],
+    "check": [
+      "Uma resposta simulada é evidência de usuário real?",
+      "Não; marcar origem e hipótese explicitamente."
+    ],
+    "group": [
+      "Preparar três das cinco perguntas da entrega.",
+      "Entrevistar por cinco minutos com base no caso.",
+      "Trocar papel e registrar uma ambiguidade e uma hipótese."
+    ],
+    "individual": "Reescreva duas perguntas indutivas como abertas. Classifique RN02 e a restrição de dados fictícios e proponha validação para 'rápido'.",
+    "answer": "RN02 é funcional; dados fictícios limitam o exercício. Para rapidez, pedir fluxo, ambiente e limiar antes de escrever critério. Aceitar outras perguntas abertas que não ofereçam resposta pronta.",
+    "interventions": [
+      [
+        "Pergunta já contém solução",
+        "Qual situação você quer entender antes de pedir essa função?"
+      ],
+      [
+        "Resposta extra tratada como fato",
+        "Onde essa informação foi fornecida e como confirmaremos?"
+      ]
+    ],
+    "home": "Completar cinco perguntas e registro de entrevista; classificar três requisitos e uma restrição. Revisar fontes e pendências."
+  },
+  {
+    "id": "m05a03",
+    "goal": "escrever uma história completa e critérios positivos e negativos verificáveis",
+    "materials": "RN, histórias e casos anteriores; quadro Dado / Quando / Então",
+    "opening": "'Quero cancelar para cancelar' explica o valor? Hoje vamos escrever para quem a funcionalidade existe e o que deve acontecer em situações diferentes.",
+    "talk": [
+      [
+        "História e conversa",
+        "Como perfil, quero ação, para benefício é um apoio. A frase não garante qualidade. Precisa de contexto, tamanho adequado e exemplos. Uma tarefa técnica pode ser item de trabalho sem forçar o formato de história."
+      ],
+      [
+        "Aceite verificável",
+        "Dado separa contexto, Quando a ação e Então o resultado. Para cancelamento, devemos conferir liberação do horário e recusa de id inexistente. Mensagem sozinha pode esconder estado incorreto."
+      ],
+      [
+        "Vínculo com QA",
+        "Critério define condição; caso de teste detalha preparação, dados e execução. Definition of Done é padrão comum, diferente dos critérios específicos da história. Produto, Dev e QA podem discutir os exemplos antes do código."
+      ]
+    ],
+    "visual": "US03 com perfil, ação e benefício; dois critérios e vínculo a RN06/RN07",
+    "demo": [
+      [
+        "Escrever história",
+        "Como recepcionista, quero cancelar reserva ativa para oferecer o horário a outra pessoa. O benefício explica a necessidade."
+      ],
+      [
+        "Adicionar positivo",
+        "Dada reserva ativa em H10, quando cancelamos seu id, então retornar cancelado e liberar H10."
+      ],
+      [
+        "Adicionar negativo",
+        "Dado id inexistente e outra reserva ativa, quando solicitamos cancelamento, então retornar nao_encontrado e preservar a reserva. Vou derivar dados e passos do teste."
+      ]
+    ],
+    "check": [
+      "Mensagem de cancelado comprova liberação do horário?",
+      "Não; consultar estado e conferir possibilidade de nova reserva."
+    ],
+    "group": [
+      "Escrever US02 ou US03 com benefício concreto.",
+      "Adicionar um critério positivo e um negativo.",
+      "Trocar revisão e converter um critério em teste."
+    ],
+    "individual": "Escreva critério de conflito para H09 já ocupado por Ana e tentativa de Bruno. Inclua o que não pode mudar e relacione à RN05.",
+    "answer": "Retornar conflito e preservar reserva de Ana. O caso prepara ocupação, envia Bruno/H09 e verifica retorno e estado. Não exigir frase idêntica; exigir condição verificável.",
+    "interventions": [
+      [
+        "Benefício circular",
+        "Quem ganha o quê quando a ação é possível?"
+      ],
+      [
+        "Critério diz 'ser intuitivo'",
+        "Qual ação e resultado permitem conferir essa condição?"
+      ]
+    ],
+    "home": "Concluir US01–US03 com critérios positivos/negativos e vínculos às regras. Revisar com perguntas de Dev e QA."
+  },
+  {
+    "id": "m05a04",
+    "goal": "ordenar backlog por evidência e registrar decisões de refinamento",
+    "materials": "seis itens do backlog, cartões e ata de refinamento",
+    "opening": "O patrocinador quer pagamento e a recepção sofre com duplicidade. Como decidir o próximo trabalho e comunicar o que ficou adiado?",
+    "talk": [
+      [
+        "Ordem e oportunidade",
+        "Backlog é ordenado e evolutivo. Compare valor, risco, esforço e dependências. Escolher um item adia outro. Pontuação sem evidência não é verdade objetiva. A razão precisa ser compreensível."
+      ],
+      [
+        "Recorte e dependência",
+        "Consultar e reservar sustentam cancelamento. Corrigir nome inválido faz parte da qualidade antes de liberar. Pagamento e relatórios continuam fora do MVP atual. MoSCoW organiza importância em um horizonte; ainda é preciso ordenar e respeitar capacidade."
+      ],
+      [
+        "Refinamento colaborativo",
+        "PO apresenta objetivo; Dev discute viabilidade; QA questiona exemplos. Registrar decisões e pendências com responsável. Unicidade sequencial não garante chamadas simultâneas. Não prometer um controle que o laboratório não implementa."
+      ]
+    ],
+    "visual": "backlog Item / Razão / Dependência / Recorte e ata Decisão / Pendência / Responsável",
+    "demo": [
+      [
+        "Ordenar recorte",
+        "Vou colocar consulta e reserva como base, cancelamento depois de identificação. Explico razões sem dizer que existe uma ordem universal."
+      ],
+      [
+        "Introduzir bug",
+        "A falha de RN03 muda o risco de liberação. Vou priorizar correção e registrar o motivo."
+      ],
+      [
+        "Refinar pedido novo",
+        "Pergunto qual problema pagamento resolve e o que sabemos da demanda. Integração e segurança precisam investigação antes de prometer prazo."
+      ]
+    ],
+    "check": [
+      "Tudo como Must ajuda a escolher?",
+      "Não; rever horizonte, razões e capacidade para distinguir e ordenar."
+    ],
+    "group": [
+      "Ordenar seis itens com uma razão por posição.",
+      "Distribuir PO/Dev/QA e formular uma pergunta por papel.",
+      "Registrar duas decisões e uma pendência com responsável."
+    ],
+    "individual": "Defenda um adiamento e uma mudança de prioridade por BUG01. Escreva o custo da escolha e a evidência utilizada.",
+    "answer": "Adiar relatório ou pagamento preserva foco na integridade, sem descartar valor futuro. Corrigir RN03 antes de liberar a reserva. Dependência e risco sustentam decisão; notas arbitrárias não bastam.",
+    "interventions": [
+      [
+        "Decisão sem razão",
+        "Qual evidência ou dependência distingue esse item dos demais?"
+      ],
+      [
+        "Prazo imposto antes de análise",
+        "Que informação de capacidade e viabilidade está faltando?"
+      ]
+    ],
+    "home": "Completar backlog e ata com três decisões e uma pendência. Consolidar brief, entrevista, histórias e reflexão individual."
+  }
+]

@@ -1,5 +1,7 @@
 # Roteiro — Módulo 4, Aula 4
 
+**Condução com falas prontas:** [script do professor](scripts/modulo-04-aula-04-regressao-ferramentas-e-automacao.md). Seguir a sequência de até 90 minutos. As atividades abaixo formam o caderno completo; o script define o recorte ao vivo e a conclusão em casa. A gravação serve para revisão posterior.
+
 ## Tema e objetivo da aula
 
 **Tema:** Regressão, ferramentas e automação. **Objetivo observável:** executar regressão e organizar um fluxo de defeito.
@@ -10,15 +12,15 @@
 
 | Etapa | Minutos |
 |---|---:|
-| Abertura e diagnóstico | 10 |
-| Teoria com exemplos | 20 |
-| Demonstração | 15 |
-| Pausa | 10 |
-| Dinâmica em grupo | 25 |
-| Exercício individual | 20 |
-| Perguntas e fechamento | 15 |
-| Orientação da tarefa de casa | 5 |
-| Total | 120 |
+| Abertura e diagnóstico | 8 |
+| Conceitos e exemplos | 17 |
+| Demonstração guiada | 20 |
+| Pausa | 5 |
+| Dinâmica em dupla ou grupo | 15 |
+| Exercício individual | 12 |
+| Correção e dúvidas | 8 |
+| Fechamento e orientação da tarefa | 5 |
+| Total | 90 |
 
 ## Materiais necessários
 
@@ -62,7 +64,7 @@ Pergunte como provar que corrigir um nome não prejudicou cancelamento. Dê dois
 
 **Orientação:** IDs estáveis, vínculos e transições explícitas; automatizar verificações repetitivas.
 
-Distribua os 20 minutos entre os tópicos. Peça um exemplo com palavras do aluno antes de avançar; se houver uma contradição, retome a regra do caso.
+Distribua os 17 minutos entre os tópicos. Peça um exemplo com palavras do aluno antes de avançar; se houver uma contradição, retome a regra do caso.
 
 ## Demonstração guiada
 
@@ -78,7 +80,7 @@ Interrompa antes do resultado para pedir uma previsão. Revele uma etapa de cada
 
 **Nome:** Da correção à decisão. **Contexto:** a equipe precisa revisar uma decisão antes de avançar o MVP. Em duplas, uma pessoa produz e outra confere; trocar funções na metade do tempo. Em grupos maiores, adicionar um papel de registro.
 
-**Distribuição:** 3 minutos de leitura; 10 de execução; 7 de revisão cruzada; 5 de compartilhamento. Se houver mais de duas duplas, recolher as demais conclusões por escrito para caber no tempo.
+**Distribuição:** 2 minutos de leitura; 5 de execução; 5 de revisão cruzada; 3 de compartilhamento. Se houver mais de duas duplas, recolher as demais conclusões por escrito para caber no tempo.
 
 **Atividade 5: Executar suíte mínima e emitir parecer**
 
@@ -132,7 +134,7 @@ Interrompa antes do resultado para pedir uma previsão. Revele uma etapa de cada
 
 Emita parecer para uma versão com caso crítico bloqueado e explique sua decisão.
 
-**Tempo:** 20 minutos. **Entrega:** uma versão própria do artefato, incluindo regra, decisão e evidência. **Avaliação:** critérios específicos acima e rubrica do E-book. O professor verifica se houve transferência para o novo caso. Se houver ajuda, registrar qual etapa foi assistida.
+**Tempo:** 12 minutos. **Entrega:** uma versão própria do artefato, incluindo regra, decisão e evidência. **Avaliação:** critérios específicos acima e rubrica do E-book. O professor verifica se houve transferência para o novo caso. Se houver ajuda, registrar qual etapa foi assistida.
 
 ## Perguntas para os alunos
 
@@ -157,4 +159,3 @@ As respostas de referência estão na demonstração. Não exigir frases idênti
 Consolidar plano, oito casos, BUG01, reteste e parecer.
 
 **Tempo sugerido:** 30–45 minutos. Entregar `m04-aula-04-revisao.md` com resposta inicial, feedback, versão revisada e explicação da mudança. O professor verifica a revisão no próximo encontro. Organizar também a entrega final e a reflexão individual.
-

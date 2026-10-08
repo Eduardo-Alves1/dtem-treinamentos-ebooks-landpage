@@ -36,7 +36,7 @@ SDLC organiza atividades de descoberta, construção, verificação, entrega e e
 | 3 | [Shift Left e prevenção](../aulas/modulo-07-aula-03-shift-left-e-prevencao.md) | 3 |
 | 4 | [Release e operação](../aulas/modulo-07-aula-04-release-e-operacao.md) | 4 |
 
-**Duração sugerida:** quatro aulas de 120 minutos, com pausa de 10 minutos por encontro: 8 horas por módulo. Reservar 30–45 minutos de revisão por aula e 60–90 minutos para organizar a entrega. Esta é uma proposta pedagógica, não uma carga comercial confirmada. Usar papel ou Markdown quando uma ferramenta estiver indisponível, completando posteriormente a evidência de execução exigida.
+**Duração sugerida:** quatro encontros de até 90 minutos, incluindo pausa de 5 minutos: até 6 horas ao vivo. O script delimita a prática do encontro; o restante do caderno é concluído depois. Usar papel ou Markdown se uma ferramenta estiver indisponível, identificando a simulação e concluindo posteriormente a execução exigida.
 
 ## Tópico 1 — SDLC e integração entre áreas
 
@@ -401,3 +401,15 @@ Guarde a primeira versão e a correção. Na apresentação, explique uma decis�
 
 [Ementa local](../ementa.md), [caso Agenda Clara](../atividades/caso-agenda-clara.md) e [laboratório](../portfolio/agenda-clara/README.md). Aprofundamento em [ISTQB CTFL](https://istqb.org/certifications/certified-tester-foundation-level-ctfl-v4-0/) e [Git](https://git-scm.com/docs/gittutorial). Os casos, exercícios e rubricas são autorais.
 
+
+
+## Scripts com falas para o professor
+
+Usar o roteiro para planejar, o script para conduzir e este E-book para aprofundar. As falas são apoio adaptável, com exemplos, perguntas, gabaritos e intervenções. O aluno revê a gravação do encontro na plataforma.
+
+- [Aula 1 — script com falas](../aulas/scripts/modulo-07-aula-01-sdlc-e-integracao.md)
+- [Aula 2 — script com falas](../aulas/scripts/modulo-07-aula-02-rastreabilidade-e-impacto.md)
+- [Aula 3 — script com falas](../aulas/scripts/modulo-07-aula-03-shift-left-e-prevencao.md)
+- [Aula 4 — script com falas](../aulas/scripts/modulo-07-aula-04-release-e-operacao.md)
+
+Planejar inicialmente 30–45 minutos de revisão e conclusão por aula; exercícios técnicos, projeto final e portfólio podem exigir blocos maiores. Combinar essa carga e os prazos com a turma. Não comprimir toda a prática original em 90 minutos.

@@ -1,0 +1,230 @@
+[
+  {
+    "id": "m04a01",
+    "goal": "produzir plano de testes com riscos, escopo e condições de início/fim",
+    "materials": "RN01–RN08, quadro de riscos e modelo de plano; simulador disponível para próxima aula",
+    "opening": "Se vocês tivessem pouco tempo para testar a agenda, por onde começariam? A resposta precisa considerar o que pode dar errado e qual o impacto para quem usa.",
+    "talk": [
+      [
+        "Qualidade compartilhada",
+        "Qualidade envolve atender necessidades e reduzir riscos. QA contribui para prevenir e investigar problemas, mas não garante tudo sozinho. Discutir uma regra antes de implementar é trabalho de qualidade. Testes aumentam informação e confiança, sem provar ausência de todos os defeitos."
+      ],
+      [
+        "Risco orienta escolha",
+        "Duplicidade prejudica atendimento; nome inválido prejudica identificação; cancelamento incorreto ocupa capacidade. Precisamos explicar impacto e chance considerada, não apenas dar uma nota. No laboratório, investigações são sequenciais; concorrência real e persistência ficam fora."
+      ],
+      [
+        "Plano orienta decisão",
+        "Um plano curto informa objetivo, escopo, riscos, estratégia, ambiente, dados e condições para iniciar e encerrar. 'Ter Jira' não define estratégia. 'Executar casos críticos e tratar defeitos impeditivos' é uma condição discutível e verificável quando identificamos quais casos e defeitos importam."
+      ]
+    ],
+    "visual": "plano em uma página e matriz Risco / Consequência / Evidência / Prioridade",
+    "demo": [
+      [
+        "Definir escopo",
+        "Vou investigar consulta, reserva e cancelamento nas RN01–RN08. Não vou afirmar validação de segurança ou acesso simultâneo."
+      ],
+      [
+        "Ligar risco a cenário",
+        "Duplicidade: reservar Ana/H09 e depois Bruno/H09, verificando conflito e preservação. Esse cenário responde a um risco concreto."
+      ],
+      [
+        "Definir início e fim",
+        "Início exige regras e ambiente disponíveis. Encerramento exige evidências dos casos críticos e decisão sobre defeitos. Caso bloqueado não vira aprovado."
+      ]
+    ],
+    "check": [
+      "Um plano que lista ferramentas explica por que testar?",
+      "Não; precisamos de objetivo, risco, cenários, ambiente e critérios."
+    ],
+    "group": [
+      "Listar três riscos com consequência.",
+      "Escolher cenário para o risco prioritário.",
+      "Trocar revisão e definir condição de início e fim."
+    ],
+    "individual": "Escreva um plano resumido para cancelamento: objetivo, risco, dados, sequência e limitação. O plano completo de oito regras será concluído em casa.",
+    "answer": "RN06: reservar, cancelar id e consultar disponibilidade. Risco é perda de capacidade. Ambiente sequencial em memória; não cobre autorização real. Encerramento deve exigir execução e análise de divergências.",
+    "interventions": [
+      [
+        "Plano afirma zero defeitos",
+        "Qual conjunto de condições você investigou e qual risco permaneceu?"
+      ],
+      [
+        "Prioridade sem razão",
+        "Que impacto justifica começar por esse cenário?"
+      ]
+    ],
+    "home": "Completar plano de uma página para RN01–RN08 e preparar ambiente. Identificar o que está fora e revisar com a rubrica."
+  },
+  {
+    "id": "m04a02",
+    "goal": "escrever casos funcionais e registrar execução com regra, versão e estado",
+    "materials": "Python e simulador preparados, tabela de casos e resultados; rastreamento manual identificado se necessário",
+    "opening": "O que significa 'testar reserva'? Para um colega repetir seu teste, essa frase é suficiente? Vamos transformar regras em casos que possam ser conferidos.",
+    "talk": [
+      [
+        "Cenário e caso",
+        "Cenário resume situação. Caso detalha regra, preparação, entrada, passos e esperado. 'Funcionou' não é esperado útil. Para recusar conflito, precisamos também conferir que a primeira reserva permanece."
+      ],
+      [
+        "Esperado antes do observado",
+        "A regra é o oráculo. Escreva o esperado antes de olhar a saída do código. A execução acrescenta versão, observado e evidência. Reinicie nos casos independentes; preserve o estado nas sequências que o exigem."
+      ],
+      [
+        "Cobertura proporcional",
+        "A entrega tem oito casos, um por RN01–RN08, com vínculos que podem cobrir mais de uma regra. Hoje executaremos os casos principais e iniciaremos a tabela; completar os demais fica como tarefa. Texto vazio e espaços são entradas diferentes."
+      ]
+    ],
+    "visual": "tabela ID / Regra / Preparação / Ação / Esperado / Observado / Estado / Versão",
+    "demo": [
+      [
+        "Escrever antes de executar",
+        "TC03: agenda vazia, espaços/H11; espero nome_invalido e H11 livre por RN03."
+      ],
+      [
+        "Comparar versões",
+        "Na referência, recusa. Na variante, sucesso e H11 ocupado. Registro observado sem reescrever o esperado para acomodar a saída."
+      ],
+      [
+        "Verificar conflito",
+        "Ana/H09 seguida de Bruno/H09: sucesso e conflito; conferir reserva de Ana. Duas chamadas formam a mesma sequência."
+      ]
+    ],
+    "check": [
+      "A ausência de exceção prova que o caso passou?",
+      "Não; conferir regra, retorno e estado final."
+    ],
+    "group": [
+      "Escrever casos de sucesso e conflito com pré-condição.",
+      "Executar ou rastrear e registrar versão/origem da evidência.",
+      "Trocar revisão e verificar preservação da primeira reserva."
+    ],
+    "individual": "Escreva e execute RN07: reservar H09, cancelar id 999 e conferir o estado. Se manual, declarar esse método e completar execução depois.",
+    "answer": "nao_encontrado; reserva de H09 preservada. Evidência deve conter preparação, entrada, retorno e consulta ou estado. Não confundir cancelamento inexistente com liberação de H09.",
+    "interventions": [
+      [
+        "Esperado copiado do resultado",
+        "Qual regra definia o comportamento antes da execução?"
+      ],
+      [
+        "Estado inicial não informado",
+        "Como o colega sabe se o horário já estava ocupado?"
+      ]
+    ],
+    "home": "Completar oito casos e execução nas versões solicitadas. Separar aprovado, falhou, bloqueado e não executado; anexar evidência própria."
+  },
+  {
+    "id": "m04a03",
+    "goal": "registrar exploração orientada e um reporte reproduzível de BUG01",
+    "materials": "simulador, missão de exploração e modelo de reporte",
+    "opening": "A variante aceitou um nome composto só por espaços. Como saber se é bug, dúvida ou melhoria? Precisamos de uma referência e de evidência.",
+    "talk": [
+      [
+        "Explorar com missão",
+        "Teste exploratório combina aprender, desenhar e executar. Uma missão como investigar cancelamento e re-reserva orienta a sessão. Anote ações e descobertas. Você pode mudar o próximo teste com base no que aprendeu, sem abandonar o registro."
+      ],
+      [
+        "Observação e interpretação",
+        "'H11 ficou ocupado' é observação. 'A regra de nome foi violada' é interpretação sustentada por RN03. Sem regra definida, pode haver uma dúvida. Não trate suspeita de causa como fato nem clique sem objetivo."
+      ],
+      [
+        "Reporte útil",
+        "Título, versão, preparação, dados, passos, esperado, observado e impacto permitem reproduzir. Severidade descreve efeito; prioridade indica ordem de tratamento no contexto. Não precisam ter o mesmo nível e não são classificação universal."
+      ]
+    ],
+    "visual": "missão de sessão e reporte BUG01, com esperado e observado em campos separados",
+    "demo": [
+      [
+        "Explorar uma sequência",
+        "Reservo H10, cancelo o id, reservo H10 outra vez e tento cancelar o id antigo. O novo id deve permanecer; anoto cada estado."
+      ],
+      [
+        "Reproduzir defeito plantado",
+        "Na AgendaComDefeito vazia, espaços/H11 retorna sucesso e ocupa H11. RN03 exige recusa. Vou descrever entrada e estado."
+      ],
+      [
+        "Explicar impacto",
+        "Reserva sem identificação útil dificulta recepção. Prioridade antes da liberação do MVP é proposta contextual. A causa no código pode ser estudada, mas não substitui passos."
+      ]
+    ],
+    "check": [
+      "Preciso conhecer a linha causadora para reportar?",
+      "Não; divergência reproduzível e referência bastam. Hipótese de causa pode ser registrada como hipótese."
+    ],
+    "group": [
+      "Definir missão em dois minutos.",
+      "Explorar cancelamento/re-reserva por cinco minutos e registrar notas.",
+      "Trocar papéis por cinco minutos para redigir BUG01; compartilhar uma evidência em três minutos."
+    ],
+    "individual": "Produza BUG01 em suas palavras, com esperado, observado e efeito no estado. Acrescente uma hipótese que você ainda não confirmou.",
+    "answer": "Versão com defeito, agenda vazia, espaços/H11, esperado nome_invalido/H11 livre, observado sucesso/H11 ocupado. Hipótese não deve ser apresentada como causa comprovada. A sessão completa de dez minutos e cinco sequências fica para casa.",
+    "interventions": [
+      [
+        "Reporte só diz 'não funciona'",
+        "Qual entrada permite repetir e qual resultado contrariou a regra?"
+      ],
+      [
+        "Declarar bug sem referência",
+        "O que estabelece o comportamento esperado? Precisamos confirmar ou registrar uma pergunta."
+      ]
+    ],
+    "home": "Realizar sessão exploratória completa de dez minutos, concluir cinco sequências e revisar BUG01 com colega que tentou reproduzir."
+  },
+  {
+    "id": "m04a04",
+    "goal": "distinguir reteste e regressão e emitir parecer limitado às evidências",
+    "materials": "referência, variantes, tabela de execução e cartões; não depende de conta Jira",
+    "opening": "O nome agora foi corrigido. Podemos concluir que reserva e cancelamento continuam corretos? Vamos separar a conferência do bug das verificações de efeitos da mudança.",
+    "talk": [
+      [
+        "Reteste e regressão",
+        "Reteste repete a situação que revelava o defeito na versão corrigida. Regressão investiga comportamentos existentes que a mudança pode prejudicar. O conjunto depende de impacto e risco, e não de repetir indiscriminadamente todos os casos."
+      ],
+      [
+        "Estado do trabalho",
+        "Aberto, em análise, corrigido e validado são estados de exemplo. Corrigido não significa validado: precisamos de reteste com versão. Jira e Azure DevOps organizam esse fluxo, com campos que variam. Cartões podem representar os mesmos acordos."
+      ],
+      [
+        "Automação e parecer",
+        "Automação prepara dados, executa e compara com esperado. Ela não escolhe risco nem investiga toda experiência. O parecer informa decisão, versão, evidências e limites. Não executado ou bloqueado não equivale a aprovado."
+      ]
+    ],
+    "visual": "BUG01 → correção → reteste; reserva/conflito/cancelamento → regressão; cartão com links RN03/TC03",
+    "demo": [
+      [
+        "Retestar espaços",
+        "Na referência nova, espero nome_invalido e H11 livre. Essa conferência responde ao bug específico."
+      ],
+      [
+        "Verificar adjacências",
+        "Executo reserva válida, conflito e cancelar/re-reservar. Explico o risco de cada escolha e registro versão."
+      ],
+      [
+        "Mostrar comparação",
+        "Criar Agenda e comparar status com nome_invalido ilustra asserção. Na variante, comparação falha. A evidência sustentará liberação somente do laboratório sequencial."
+      ]
+    ],
+    "check": [
+      "Posso fechar um bug só porque mudou para a coluna corrigido?",
+      "Não; exigir reteste e evidência da versão."
+    ],
+    "group": [
+      "Selecionar quatro sequências e justificar riscos.",
+      "Executar primeiro reteste e uma regressão.",
+      "Trocar revisão e desenhar transição de corrigido para validado."
+    ],
+    "individual": "Emita parecer para uma versão com nome corrigido, mas cancelamento crítico ainda não executado. Indique decisão e próxima ação.",
+    "answer": "Não afirmar aprovação completa. Condicionar ou bloquear a liberação do escopo dependente de RN06 até obter evidência. Explicar que laboratório não valida produção. As demais regressões devem ser concluídas em casa.",
+    "interventions": [
+      [
+        "Chamar um caso de regressão completa",
+        "Qual conjunto de comportamentos foi investigado e qual ficou fora?"
+      ],
+      [
+        "Script como substituto de raciocínio",
+        "Quem definiu o esperado e que risco a comparação cobre?"
+      ]
+    ],
+    "home": "Consolidar plano, oito casos, BUG01, reteste, regressão e parecer. Organizar cartões vinculados e concluir verificação conceitual de automação."
+  }
+]

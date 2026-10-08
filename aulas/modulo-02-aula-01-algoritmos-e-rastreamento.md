@@ -1,10 +1,12 @@
 # Roteiro de aula — Módulo 2, Aula 1
 
+**Condução com falas prontas:** [script do professor para até 90 minutos](scripts/modulo-02-aula-01-algoritmos-e-rastreamento.md). O script detalha o que falar, mostrar, perguntar e corrigir. Esta aula foi adaptada ao encontro semanal de 90 minutos; o professor usa a gravação para revisão posterior, sem exigir vídeos prévios.
+
 ## Tema e objetivo da aula
 
 **Tema:** Algoritmos e rastreamento.
 
-**Objetivo observável:** ao final, cada aluno produzirá e explicará: Desenhar o algoritmo de reserva sem escrever código.. A explicação deve citar a regra, a entrada ou premissa e o resultado; o professor pode conferir o artefato sem depender de memória da apresentação.
+**Objetivo observável:** ao final, cada aluno escreverá um algoritmo de reserva e rastreará tentativas válidas e recusadas, sem código. A explicação deve distinguir entrada, processamento, saída e estado; o professor pode conferir o artefato sem depender de memória da apresentação.
 
 **Leitura:** [E-book do módulo](../ebooks/modulo-02-logica-de-programacao.md), tópicos 1. **Pré-requisito:** mapa mental do Módulo 1 e capacidade de explicar entrada, processamento e saída.
 
@@ -12,27 +14,27 @@
 
 | Etapa | Minutos |
 |---|---:|
-| Abertura e diagnóstico | 10 |
-| Explicação teórica com exemplos | 20 |
-| Demonstração guiada | 15 |
-| Pausa | 10 |
-| Dinâmica em dupla ou grupo | 25 |
-| Exercício individual | 20 |
-| Perguntas, correção e fechamento | 15 |
-| Orientação da tarefa de casa | 5 |
-| Total | 120 |
+| Abertura e diagnóstico | 8 |
+| Conceitos e exemplos | 17 |
+| Demonstração guiada | 20 |
+| Pausa | 5 |
+| Dinâmica em dupla ou grupo | 15 |
+| Exercício individual | 12 |
+| Correção e dúvidas | 8 |
+| Fechamento e orientação da tarefa | 5 |
+| Total | 90 |
 
 Se a turma precisar de mais tempo, reduza a extensão da variação, preserve a prática individual e conclua a revisão na aula seguinte.
 
 ## Materiais necessários
 
-E-book, [caderno do caso](../atividades/caso-agenda-clara.md), editor de Markdown ou folha com tabela, quadro e acesso ao [simulador](../portfolio/agenda-clara/README.md). Para código: Python 3. Para versionamento: Git e, quando houver publicação, conta GitHub. Jira/Azure DevOps são opcionais e podem ser representados por cartões. Teste os recursos antes da aula e prepare uma cópia de saída para discussão se houver indisponibilidade.
+E-book, [caderno do caso](../atividades/caso-agenda-clara.md), editor de Markdown ou folha com tabela e quadro compartilhado. Esta aula usa rastreamento manual: não exige Python, Git, GitHub ou ferramenta de gestão. O [simulador](../portfolio/agenda-clara/README.md) é referência opcional para o professor, sem antecipar a leitura de código.
 
-## Abertura da aula — 10 minutos
+## Abertura da aula — 8 minutos
 
 Apresente a situação Agenda Clara e pergunte: “Se a segunda tentativa falhar, por que o estado anterior deve permanecer?” Dê dois minutos para cada aluno escrever sua previsão. Recolha duas respostas distintas e identifique a evidência que seria necessária para decidir. Retome um conceito da aula anterior e explique a entrega de hoje em linguagem simples.
 
-## Explicação teórica e exemplos práticos — 20 minutos
+## Explicação teórica e exemplos práticos — 17 minutos
 
 ### Algoritmos e lógica básica
 
@@ -50,13 +52,13 @@ Apresente a situação Agenda Clara e pergunte: “Se a segunda tentativa falhar
 
 Após cada conceito, peça ao aluno um exemplo com suas próprias palavras. Corrija uma generalização usando a regra do caso, sem antecipar todos os resultados.
 
-## Demonstração guiada — 15 minutos
+## Demonstração guiada — 20 minutos
 
 O professor modela a primeira atividade, pensando em voz alta. Se houver dois temas, faça uma passagem curta pelo segundo e deixe a resolução completa para a prática.
 
 **Demonstração 1: Desenhar o algoritmo de reserva sem escrever código.**
 
-1. Leia RN01 a RN05 no caderno do caso.
+1. Leia RN01 a RN05 e RN08 no caderno do caso.
 2. Escreva entradas, três verificações e saídas possíveis.
 3. Percorra Ana/H09 e depois Bruno/H09 mantendo a primeira reserva.
 4. Anote o estado do horário depois de cada tentativa.
@@ -65,35 +67,35 @@ O professor modela a primeira atividade, pensando em voz alta. Se houver dois te
 
 Antes de revelar o resultado, pare e peça uma previsão. Depois, marque no quadro qual passo sustenta a resposta. Se a saída diferir, registre e investigue a entrada ou estado em vez de ajustar a resposta verbalmente.
 
-## Dinâmica em grupo — 25 minutos
+## Dinâmica em grupo — 15 minutos
 
 **Nome:** Revisão cruzada — Algoritmos e rastreamento.
 
 **Contexto profissional:** o time precisa verificar uma decisão antes de entregar uma versão. Em duplas, uma pessoa produz e outra revisa; na metade do tempo, troquem os papéis. Em aula remota, usar salas ou comentários no documento. Em grupo maior, designar também uma pessoa para registrar decisões.
 
-1. Em 3 minutos, ler o enunciado de cada atividade e identificar a regra ou premissa.
-2. Em 10 minutos, executar as etapas abaixo e registrar o resultado.
-3. Em 7 minutos, revisar o colega: localizar uma evidência, uma lacuna e uma proposta de correção.
-4. Em 5 minutos, apresentar uma decisão e sua justificativa; com muitas duplas, selecionar duas e recolher as demais por escrito.
+1. Em 2 minutos, ler as regras e preparar a tabela.
+2. Em 5 minutos, rastrear Lia/H10 e Rui/H10 na mesma agenda, inicialmente vazia.
+3. Em 5 minutos, trocar os papéis, conferir nome somente com espaços/H11 e revisar.
+4. Em 3 minutos, recolher conclusões de duas duplas e receber as demais por escrito.
 
 **Atividade 1 — Desenhar o algoritmo de reserva sem escrever código.**
 
-1. Leia RN01 a RN05 no caderno do caso.
+1. Leia RN01 a RN05 e RN08 no caderno do caso.
 2. Escreva entradas, três verificações e saídas possíveis.
-3. Percorra Ana/H09 e depois Bruno/H09 mantendo a primeira reserva.
+3. Percorra Lia/H10 e depois Rui/H10 mantendo a primeira reserva; depois avalie nome somente com espaços/H11.
 4. Anote o estado do horário depois de cada tentativa.
 
 **Entrega:** tabela, algoritmo, documento ou registro de execução conforme o enunciado, com regra, resultado e justificativa. **Critérios:** cumprir as etapas e permitir conferência por outra pessoa. **Dica:** faça uma previsão antes de consultar a resposta. **Variação mais difícil:** Se a segunda tentativa falhar, por que o estado anterior deve permanecer?
 
-## Exercício individual — 20 minutos
+## Exercício individual — 12 minutos
 
 Cada aluno refaz a parte principal das atividades usando uma entrada nova ou uma decisão alternativa. Escreve o resultado esperado, a evidência e a razão. Não precisa reproduzir toda a entrega da dupla, mas deve demonstrar entendimento próprio.
 
-**Enunciado de transferência:** Se a segunda tentativa falhar, por que o estado anterior deve permanecer? Use uma regra do caso para responder e inclua um contraexemplo ou uma limitação.
+**Enunciado de transferência:** em uma nova agenda, H10 está ocupado por Carla; H09 e H11 estão livres. Rastrear Rui/H10, nome somente com espaços/H09 e Dani/H11, nessa ordem. Registrar o passo decisivo, a saída e o estado depois. Explicar uma decisão e uma recusa. A referência detalhada está no script do professor.
 
 **Critérios:** correção, completude, evidência e justificativa. Aplicar a [rubrica do E-book](../ebooks/modulo-02-logica-de-programacao.md). Se o aluno não conseguir começar, forneça a primeira entrada e peça somente a decisão seguinte; depois amplie. Registre a ajuda recebida para distinguir execução assistida de autonomia.
 
-## Perguntas para os alunos e correção — 15 minutos
+## Perguntas para os alunos e correção — 8 minutos
 
 - Se a segunda tentativa falhar, por que o estado anterior deve permanecer?
 - Qual evidência permitiria a outra pessoa discordar ou confirmar sua resposta?
@@ -123,5 +125,4 @@ Peça que cada aluno complete: “Hoje usei ___ para decidir ___ e confirmei com
 
 **Referência para comparação:** usar as respostas comentadas acima depois de tentar. **Desafio opcional:** Altere a política para permitir somente duas reservas por cliente. Descreva qual dado adicional falta; não invente uma solução que conte apenas horários.
 
-O professor verifica a revisão no início do próximo encontro. 
-
+O professor verifica a revisão no início do próximo encontro.

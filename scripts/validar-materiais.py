@@ -59,6 +59,36 @@ for numero in range(1, 9):
     conferir(len(list((ROOT / "aulas").glob(f"modulo-{numero:02d}-aula-*.md"))) == 4,
              f"Módulo {numero}: quantidade de aulas diferente de quatro")
 
+# Cobertura do professor e orçamento de tempo: cada aula precisa de um script
+# vinculado, com todos os blocos e uma agenda que realmente some 90 minutos.
+scripts_professor = sorted((ROOT / "aulas/scripts").glob("*.md")) + sorted((ROOT / "bonus/scripts").glob("*.md"))
+conferir(len(scripts_professor) == 34, f"Esperados 34 scripts; encontrados {len(scripts_professor)}")
+for aula in aulas + bonus:
+    script = aula.parent / "scripts" / aula.name
+    conferir(script.exists(), f"Script ausente: {aula.name}")
+    texto = aula.read_text(encoding="utf-8-sig")
+    conferir(f"scripts/{aula.name}" in texto, f"Aula sem vínculo ao script: {aula.name}")
+    conferir("| Total | 90 |" in texto, f"Tempo do roteiro divergente: {aula.name}")
+    if not script.exists():
+        continue
+    texto = script.read_text(encoding="utf-8-sig")
+    linhas = re.findall(r"^\| (\d{2})–(\d{2}) \|[^\n]*?\| (\d+) \|$", texto, re.M)
+    conferir(len(linhas) == 8, f"Agenda incompleta: {script.name}")
+    fim_anterior = 0
+    for inicio, fim, minutos in linhas:
+        inicio, fim, minutos = map(int, (inicio, fim, minutos))
+        conferir(inicio == fim_anterior and fim - inicio == minutos,
+                 f"Intervalo inconsistente: {script.name}, {inicio}–{fim}")
+        fim_anterior = fim
+    conferir(fim_anterior == 90 and sum(int(linha[2]) for linha in linhas) == 90,
+             f"Agenda não soma 90 minutos: {script.name}")
+    for intervalo in ("00–08", "08–25", "25–45", "45–50", "50–65", "65–77", "77–85", "85–90"):
+        conferir(f"## {intervalo}" in texto, f"Bloco de condução ausente: {script.name}, {intervalo}")
+    conferir(len(re.findall(r"^> ", texto, re.M)) >= 12, f"Falas insuficientes: {script.name}")
+    conferir("gabarito" in normalizar(texto), f"Gabarito ausente: {script.name}")
+    conferir("resposta esperada" in normalizar(texto), f"Resposta esperada ausente: {script.name}")
+    conferir("gravação" in texto, f"Orientação da gravação ausente: {script.name}")
+
 spec = importlib.util.spec_from_file_location("agenda", ROOT / "portfolio/agenda-clara/agenda_clara.py")
 modulo = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(modulo)
@@ -112,6 +142,7 @@ if erros:
     print("\n".join(erros))
     raise SystemExit(1)
 print(f"OK: {len(ebooks)} E-books, {len(aulas)} aulas, {len(bonus)} aulas de bônus")
+print(f"OK: {len(scripts_professor)} scripts vinculados; agendas e blocos de 90 minutos conferidos")
 print(f"OK: {len(arquivos)} arquivos Markdown; {links} links locais conferidos")
 print("OK: RN01–RN08, re-reserva, catálogo esgotado e BUG01")
 print("OK: cinco exemplos Python executados com as saídas documentadas")

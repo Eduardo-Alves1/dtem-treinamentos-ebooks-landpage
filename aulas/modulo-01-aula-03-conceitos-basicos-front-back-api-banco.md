@@ -1,6 +1,8 @@
 # ROTEIRO DE AULA - Módulo 1, Aula 3
 
-> **Revisão pedagógica — outubro de 2026:** Ao final, o aluno diferencia interface, regra, API e armazenamento e identifica o que é observação e o que é hipótese. Aplicar a atividade 3 do [caderno de prática](../atividades/modulo-01-caderno-de-pratica.md), com entrega, resposta de referência, rubrica e recuperação. Usar essa avaliação explícita para orientar a devolutiva das tarefas deste roteiro. Preservar o tempo de aula já indicado, distribuindo a prática dentro das etapas existentes.
+**Condução com falas prontas:** [script do professor](scripts/modulo-01-aula-03-conceitos-basicos-front-back-api-banco.md). Seguir a sequência de até 90 minutos. As atividades abaixo formam o caderno completo; o script define o recorte ao vivo e a conclusão em casa. A gravação serve para revisão posterior.
+
+> **Revisão pedagógica — outubro de 2026:** Ao final, o aluno diferencia interface, regra, API e armazenamento e identifica o que é observação e o que é hipótese. Aplicar a atividade 3 do [caderno de prática](../atividades/modulo-01-caderno-de-pratica.md), com entrega, resposta de referência, rubrica e recuperação. Usar essa avaliação explícita para orientar a devolutiva das tarefas deste roteiro. Usar o script para distribuir o encontro de até 90 minutos e orientar a conclusão em casa.
 
 # Conceitos Básicos: Front-end, Back-end, APIs e Banco de Dados
 
@@ -22,17 +24,17 @@ Ao final da aula, o aluno deverá conseguir:
 
 # Duração estimada
 
-| Etapa | Tempo |
+| Etapa | Minutos |
 |---|---:|
-| Abertura e revisão | 10 min |
-| Front-end vs back-end | 30 min |
-| APIs | 30 min |
-| Banco de dados | 30 min |
-| Demonstração prática com fluxo | 25 min |
-| Dinâmica em grupo | 25 min |
-| Exercício individual | 20 min |
-| Perguntas e fechamento | 10 min |
-| Total sugerido | 3h |
+| Abertura e diagnóstico | 8 |
+| Conceitos e exemplos | 17 |
+| Demonstração guiada | 20 |
+| Pausa | 5 |
+| Dinâmica em dupla ou grupo | 15 |
+| Exercício individual | 12 |
+| Correção e dúvidas | 8 |
+| Fechamento e orientação da tarefa | 5 |
+| Total | 90 |
 
 ---
 
@@ -246,7 +248,7 @@ Se um aluno se cadastra em uma plataforma, os dados dele precisam ficar guardado
 
 - nome;
 - e-mail;
-- senha criptografada;
+- hash de senha, em uma implementação de autenticação apropriada;
 - curso comprado;
 - progresso nas aulas;
 - certificado emitido;

@@ -1,5 +1,7 @@
 # Roteiro de aula — Módulo 2, Aula 4
 
+**Condução com falas prontas:** [script do professor](scripts/modulo-02-aula-04-funcoes-e-desafios.md). Seguir a sequência de até 90 minutos. As atividades abaixo formam o caderno completo; o script define o recorte ao vivo e a conclusão em casa. A gravação serve para revisão posterior.
+
 ## Tema e objetivo da aula
 
 **Tema:** Funções e resolução de problemas.
@@ -12,15 +14,15 @@
 
 | Etapa | Minutos |
 |---|---:|
-| Abertura e diagnóstico | 10 |
-| Explicação teórica com exemplos | 20 |
-| Demonstração guiada | 15 |
-| Pausa | 10 |
-| Dinâmica em dupla ou grupo | 25 |
-| Exercício individual | 20 |
-| Perguntas, correção e fechamento | 15 |
-| Orientação da tarefa de casa | 5 |
-| Total | 120 |
+| Abertura e diagnóstico | 8 |
+| Conceitos e exemplos | 17 |
+| Demonstração guiada | 20 |
+| Pausa | 5 |
+| Dinâmica em dupla ou grupo | 15 |
+| Exercício individual | 12 |
+| Correção e dúvidas | 8 |
+| Fechamento e orientação da tarefa | 5 |
+| Total | 90 |
 
 Se a turma precisar de mais tempo, reduza a extensão da variação, preserve a prática individual e conclua a revisão na aula seguinte.
 
@@ -28,11 +30,11 @@ Se a turma precisar de mais tempo, reduza a extensão da variação, preserve a 
 
 E-book, [caderno do caso](../atividades/caso-agenda-clara.md), editor de Markdown ou folha com tabela, quadro e acesso ao [simulador](../portfolio/agenda-clara/README.md). Para código: Python 3. Para versionamento: Git e, quando houver publicação, conta GitHub. Jira/Azure DevOps são opcionais e podem ser representados por cartões. Teste os recursos antes da aula e prepare uma cópia de saída para discussão se houver indisponibilidade.
 
-## Abertura da aula — 10 minutos
+## Abertura da aula — 8 minutos
 
 Apresente a situação Agenda Clara e pergunte: “Quem deve decidir reservar um horário: validar_nome ou a operação de reserva?” Dê dois minutos para cada aluno escrever sua previsão. Recolha duas respostas distintas e identifique a evidência que seria necessária para decidir. Retome um conceito da aula anterior e explique a entrega de hoje em linguagem simples.
 
-## Explicação teórica e exemplos práticos — 20 minutos
+## Explicação teórica e exemplos práticos — 17 minutos
 
 ### Funções e responsabilidade
 
@@ -64,7 +66,7 @@ Apresente a situação Agenda Clara e pergunte: “Quem deve decidir reservar um
 
 Após cada conceito, peça ao aluno um exemplo com suas próprias palavras. Corrija uma generalização usando a regra do caso, sem antecipar todos os resultados.
 
-## Demonstração guiada — 15 minutos
+## Demonstração guiada — 17 minutos
 
 O professor modela a primeira atividade, pensando em voz alta. Se houver dois temas, faça uma passagem curta pelo segundo e deixe a resolução completa para a prática.
 
@@ -90,16 +92,16 @@ Antes de revelar o resultado, pare e peça uma previsão. Depois, marque no quad
 
 Antes de revelar o resultado, pare e peça uma previsão. Depois, marque no quadro qual passo sustenta a resposta. Se a saída diferir, registre e investigue a entrada ou estado em vez de ajustar a resposta verbalmente.
 
-## Dinâmica em grupo — 25 minutos
+## Dinâmica em grupo — 20 minutos
 
 **Nome:** Revisão cruzada — Funções e resolução de problemas.
 
 **Contexto profissional:** o time precisa verificar uma decisão antes de entregar uma versão. Em duplas, uma pessoa produz e outra revisa; na metade do tempo, troquem os papéis. Em aula remota, usar salas ou comentários no documento. Em grupo maior, designar também uma pessoa para registrar decisões.
 
-1. Em 3 minutos, ler o enunciado de cada atividade e identificar a regra ou premissa.
-2. Em 10 minutos, executar as etapas abaixo e registrar o resultado.
-3. Em 7 minutos, revisar o colega: localizar uma evidência, uma lacuna e uma proposta de correção.
-4. Em 5 minutos, apresentar uma decisão e sua justificativa; com muitas duplas, selecionar duas e recolher as demais por escrito.
+1. Em 2 minutos, ler o recorte do enunciado no script e identificar a regra ou premissa.
+2. Em 5 minutos, executar o recorte principal e registrar o resultado.
+3. Em 5 minutos, trocar funções e revisar uma evidência, uma lacuna e uma correção.
+4. Em 3 minutos, selecionar duas duplas para apresentar; recolher as demais por escrito.
 
 **Atividade 1 — Implementar e validar uma função de nome.**
 
@@ -119,7 +121,7 @@ Antes de revelar o resultado, pare e peça uma previsão. Depois, marque no quad
 
 **Entrega:** tabela, algoritmo, documento ou registro de execução conforme o enunciado, com regra, resultado e justificativa. **Critérios:** cumprir as etapas e permitir conferência por outra pessoa. **Dica:** faça uma previsão antes de consultar a resposta. **Variação mais difícil:** Qual evidência confirma sua hipótese?
 
-## Exercício individual — 20 minutos
+## Exercício individual — 12 minutos
 
 Cada aluno refaz a parte principal das atividades usando uma entrada nova ou uma decisão alternativa. Escreve o resultado esperado, a evidência e a razão. Não precisa reproduzir toda a entrega da dupla, mas deve demonstrar entendimento próprio.
 
@@ -127,7 +129,7 @@ Cada aluno refaz a parte principal das atividades usando uma entrada nova ou uma
 
 **Critérios:** correção, completude, evidência e justificativa. Aplicar a [rubrica do E-book](../ebooks/modulo-02-logica-de-programacao.md). Se o aluno não conseguir começar, forneça a primeira entrada e peça somente a decisão seguinte; depois amplie. Registre a ajuda recebida para distinguir execução assistida de autonomia.
 
-## Perguntas para os alunos e correção — 15 minutos
+## Perguntas para os alunos e correção — 8 minutos
 
 - Quem deve decidir reservar um horário: validar_nome ou a operação de reserva?
 - Qual evidência confirma sua hipótese?
@@ -161,4 +163,3 @@ Peça que cada aluno complete: “Hoje usei ___ para decidir ___ e confirmei com
 **Referência para comparação:** usar as respostas comentadas acima depois de tentar. **Desafio opcional:** Altere a política para permitir somente duas reservas por cliente. Descreva qual dado adicional falta; não invente uma solução que conte apenas horários.
 
 O professor verifica a revisão no início do próximo encontro. Solicitar também a organização da entrega final e a reflexão individual.
-

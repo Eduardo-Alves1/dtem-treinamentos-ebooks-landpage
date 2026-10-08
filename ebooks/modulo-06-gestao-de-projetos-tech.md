@@ -38,7 +38,7 @@ Um projeto tem recorte e objetivo; um produto pode continuar evoluindo depois de
 | 3 | [Review, Retrospectiva e DoD](../aulas/modulo-06-aula-03-review-retrospectiva-e-dod.md) | 4 |
 | 4 | [Kanban e ferramentas](../aulas/modulo-06-aula-04-kanban-e-ferramentas.md) | 5, 6 |
 
-**Duração sugerida:** quatro aulas de 120 minutos, com pausa de 10 minutos por encontro: 8 horas por módulo. Reservar 30–45 minutos de revisão por aula e 60–90 minutos para organizar a entrega. Esta é uma proposta pedagógica, não uma carga comercial confirmada. Usar papel ou Markdown quando uma ferramenta estiver indisponível, completando posteriormente a evidência de execução exigida.
+**Duração sugerida:** quatro encontros de até 90 minutos, incluindo pausa de 5 minutos: até 6 horas ao vivo. O script delimita a prática do encontro; o restante do caderno é concluído depois. Usar papel ou Markdown se uma ferramenta estiver indisponível, identificando a simulação e concluindo posteriormente a execução exigida.
 
 ## Tópico 1 — Projetos, objetivos, riscos e capacidade
 
@@ -528,3 +528,15 @@ Guarde a primeira versão e a correção. Na apresentação, explique uma decis�
 
 [Ementa local](../ementa.md), [caso Agenda Clara](../atividades/caso-agenda-clara.md) e [laboratório](../portfolio/agenda-clara/README.md). Definições em [Scrum Guide](https://scrumguides.org/scrum-guide.html) e referência de fluxo em [Kanban Guide](https://kanbanguides.org/). Os casos, exercícios e rubricas são autorais.
 
+
+
+## Scripts com falas para o professor
+
+Usar o roteiro para planejar, o script para conduzir e este E-book para aprofundar. As falas são apoio adaptável, com exemplos, perguntas, gabaritos e intervenções. O aluno revê a gravação do encontro na plataforma.
+
+- [Aula 1 — script com falas](../aulas/scripts/modulo-06-aula-01-projetos-e-capacidade.md)
+- [Aula 2 — script com falas](../aulas/scripts/modulo-06-aula-02-scrum-planning-e-daily.md)
+- [Aula 3 — script com falas](../aulas/scripts/modulo-06-aula-03-review-retrospectiva-e-dod.md)
+- [Aula 4 — script com falas](../aulas/scripts/modulo-06-aula-04-kanban-e-ferramentas.md)
+
+Planejar inicialmente 30–45 minutos de revisão e conclusão por aula; exercícios técnicos, projeto final e portfólio podem exigir blocos maiores. Combinar essa carga e os prazos com a turma. Não comprimir toda a prática original em 90 minutos.

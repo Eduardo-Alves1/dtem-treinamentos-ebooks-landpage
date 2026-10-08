@@ -1,0 +1,173 @@
+[
+  {
+    "id": "m02a02",
+    "goal": "representar informações por tipos e conferir quatro combinações de validação",
+    "materials": "tabela de dados, quadro e exemplos Python do E-book; papel é suficiente para previsão",
+    "opening": "O valor 2 e o texto '2' representam a mesma coisa para uma operação? Vamos descobrir como dados e decisões mudam o comportamento de uma reserva.",
+    "talk": [
+      [
+        "Variáveis e tipos",
+        "Uma variável associa um nome a um valor. nome guarda texto; quantidade guarda número; horário H09 é identificador textual. O tipo depende do significado e da operação. Dois números podem ser somados; dois textos podem ser concatenados. Por isso, 2 mais 3 e os textos '2' mais '3' não dão a mesma saída."
+      ],
+      [
+        "Atribuir e comparar",
+        "Em Python, um sinal de igual atribui e dois comparam igualdade. Hoje vocês podem acompanhar em tabela sem dominar sintaxe. Texto, inteiro, booleano e lista atendem usos diferentes. Uma lista de horários mantém itens separados; um texto contendo vírgulas continua sendo um texto."
+      ],
+      [
+        "Condições e ordem",
+        "Uma decisão seleciona um caminho. Nosso exemplo verifica nome antes do catálogo e da ocupação. Nome formado por espaços fica vazio após remover as extremidades. Se nome e horário são inválidos ao mesmo tempo, a ordem define o primeiro motivo informado. Usar and exige ambas as condições; or exige ao menos uma."
+      ]
+    ],
+    "visual": "dicionário de dados e tabela Nome válido? / Horário no catálogo? / Decisão",
+    "demo": [
+      [
+        "Comparar entradas",
+        "Vou escrever 2 + 3 e '2' + '3'. Prevejam as saídas: 5 na soma; '23' na concatenação. A operação precisa considerar os tipos."
+      ],
+      [
+        "Completar quatro combinações",
+        "Nome válido/H09 segue para ocupação. Nome válido/H12 é horário inválido. Nome vazio/H09 é nome inválido. Nome vazio/H12 também é nome inválido quando validamos nome primeiro."
+      ],
+      [
+        "Relacionar regra e estado",
+        "Não confundir 'pode continuar' com reserva concluída. A disponibilidade ainda será verificada; entradas recusadas não devem ocupar horário."
+      ]
+    ],
+    "check": [
+      "Nome vazio e H12 inválido: qual recusa aparece na ordem escolhida?",
+      "Nome inválido, porque essa verificação vem primeiro; a decisão não ocupa nenhum horário."
+    ],
+    "group": [
+      "Criar quatro linhas de dicionário: nome, horário, quantidade, disponíveis.",
+      "Preencher quatro combinações de validação e trocar papéis.",
+      "Indicar o que não muda na agenda quando a entrada é recusada."
+    ],
+    "individual": "Escreva o tipo e uso de um identificador de reserva e de uma contagem. Depois explique espaços/H11 e Ana/H12, com esperado e estado.",
+    "answer": "Id no simulador é inteiro usado para identificar, não contar clientes; contagem é inteiro para quantidade. Espaços/H11 retorna nome_invalido; Ana/H12 retorna horario_invalido; agenda preservada. H09 continua texto do catálogo.",
+    "interventions": [
+      [
+        "Somar textos como números",
+        "Mostre os valores com aspas e explique qual operação acontece."
+      ],
+      [
+        "Reservar antes de validar",
+        "Em que passo uma entrada recusada deve encerrar a tentativa?"
+      ]
+    ],
+    "home": "Concluir dicionário e tabela de decisão. Executar os exemplos se houver Python ou registrar rastreamento manual identificado, e explicar uma previsão revista."
+  },
+  {
+    "id": "m02a03",
+    "goal": "rastrear um filtro de horários e explicar a parada de uma repetição",
+    "materials": "catálogo H09/H10/H11, tabela de iteração e exemplos for/while do E-book",
+    "opening": "Se o catálogo tiver cem horários, devemos escrever cem verificações separadas? Vamos aprender a repetir uma operação mantendo controle sobre o resultado e a parada.",
+    "talk": [
+      [
+        "for e coleção",
+        "Um for percorre elementos de uma coleção. Para listar horários livres, examinamos cada horário e adicionamos ao resultado somente os que não estão ocupados. Uma lista vazia pode gerar zero passagens, e isso não é necessariamente falha."
+      ],
+      [
+        "while e progresso",
+        "Um while repete enquanto uma condição permanece verdadeira. Precisamos de progresso até a parada. Se o contador começa em zero, repetimos enquanto ele é menor que três e somamos um a cada passagem. Sem atualização, a condição pode nunca deixar de ser verdadeira."
+      ],
+      [
+        "Rastrear e comparar",
+        "Anotem o item atual, a condição e o resultado acumulado. Essa tabela ajuda a descobrir elementos esquecidos ou duplicados. range(3) percorre zero, um e dois; o limite final não é incluído. Não alterem uma coleção durante o percurso sem entender o efeito."
+      ]
+    ],
+    "visual": "tabela Iteração / Horário / Ocupado? / Lista acumulada e contador de tentativas",
+    "demo": [
+      [
+        "Preparar filtro",
+        "Catálogo H09/H10/H11; ocupado H10; lista de livres vazia. Vou visitar cada item uma vez."
+      ],
+      [
+        "Percorrer três itens",
+        "H09 livre: adiciono. H10 ocupado: não adiciono. H11 livre: adiciono. Resultado H09 e H11. Com todos ocupados, o resultado é lista vazia."
+      ],
+      [
+        "Percorrer contador",
+        "Zero é menor que três: incremento e mostro tentativa um. Depois dois e três. Ao voltar, três não é menor que três; encerra."
+      ]
+    ],
+    "check": [
+      "O que aconteceria sem incrementar tentativas?",
+      "A condição tentativas < 3 permaneceria verdadeira nesse exemplo e não haveria progresso para a parada."
+    ],
+    "group": [
+      "Rastrear o filtro com H09 e H11 ocupados.",
+      "Repetir com catálogo vazio e explicar zero iterações.",
+      "Trocar papéis e identificar início, condição e atualização do contador."
+    ],
+    "individual": "Use H09/H10/H11 com H11 ocupado. Escreva lista final e tabela. Explique quantas passagens ocorrem num contador de zero enquanto menor que dois, com incremento de um.",
+    "answer": "Livres H09 e H10. O contador realiza duas passagens e termina em dois. Uma coleção vazia produz nenhuma passagem, mantendo resultado vazio.",
+    "interventions": [
+      [
+        "Incluir horário ocupado na saída",
+        "Em qual decisão este item deveria ser descartado?"
+      ],
+      [
+        "Supor terceira passagem ao chegar em dois",
+        "Volte à condição antes de executar o corpo; dois é menor que dois?"
+      ]
+    ],
+    "home": "Concluir exemplos for/while e rastrear um caso novo. Indicar explicitamente condição de parada e comportamento de lista vazia."
+  },
+  {
+    "id": "m02a04",
+    "goal": "usar uma função com retorno e investigar uma validação que aceita espaços",
+    "materials": "exemplo validar_nome, quadro de entradas/retornos e Python opcional",
+    "opening": "Se repetimos a mesma validação em vários lugares, como evitar cópias divergentes? Vamos dar uma responsabilidade clara a uma função e investigar um erro lógico.",
+    "talk": [
+      [
+        "Parâmetros e retorno",
+        "Uma função recebe entradas por parâmetros e pode devolver resultado. validar_nome recebe um texto e responde se ele tem conteúdo após remover espaços. Ela não deve reservar o horário. Separar responsabilidades facilita conferir o comportamento."
+      ],
+      [
+        "print e return",
+        "Print exibe algo; return devolve o resultado para quem chamou. Se a função somente imprimir True, isso não significa que devolveu True. Em Python, sem retorno explícito, o resultado é None. A função pequena pode ser útil justamente por ter um propósito limitado."
+      ],
+      [
+        "Depuração com hipótese",
+        "Vamos comparar nome diferente de vazio com conteúdo depois de strip. Espaços são texto não vazio, mas não têm conteúdo útil. O programa pode executar sem travar e ainda violar a regra. Primeiro reproduzir, depois formular hipótese e conferir correção e casos anteriores."
+      ]
+    ],
+    "visual": "entrada → validar_nome → retorno, mais tabela Ana / vazio / espaços",
+    "demo": [
+      [
+        "Prever três retornos",
+        "Para Ana, esperamos True. Para texto vazio e espaços, False. Essas expectativas vêm da regra."
+      ],
+      [
+        "Comparar expressões",
+        "'   ' != '' é verdadeiro; bool('   '.strip()) é falso. Localizei a diferença que sustenta a hipótese."
+      ],
+      [
+        "Explicar responsabilidade",
+        "A função devolve decisão; a operação de reserva usa essa decisão. Vou repetir nome válido após a correção para evitar quebrar o que funcionava."
+      ]
+    ],
+    "check": [
+      "Mostrar um resultado na tela significa que a função o devolveu?",
+      "Não. Exibição e retorno são operações diferentes; conferir o valor recebido pelo chamador."
+    ],
+    "group": [
+      "Descrever entrada, responsabilidade e retorno de validar_nome.",
+      "Comparar duas validações com três entradas.",
+      "Trocar revisão e formular hipótese do erro de espaços."
+    ],
+    "individual": "Escreva função em Python ou pseudocódigo e três retornos. Explique por que corrigir somente o caso de espaços não encerra a conferência.",
+    "answer": "Para entrada textual, bool(nome.strip()) produz True para Ana e False para vazio/espaços. Repetir os três casos verifica correção e preservação do nome válido. Não afirmar tratamento de todos os tipos pela função simples.",
+    "interventions": [
+      [
+        "Função reserva e valida tudo",
+        "Que responsabilidade você consegue isolar e conferir separadamente?"
+      ],
+      [
+        "Mudar várias linhas sem hipótese",
+        "Qual entrada reproduz o problema e qual diferença explica a falha?"
+      ]
+    ],
+    "home": "Concluir as seis atividades de lógica e revisar entrega. O mini desafio de limite por cliente exige discutir identificador e contagem, não inventar controle baseado apenas em nome."
+  }
+]

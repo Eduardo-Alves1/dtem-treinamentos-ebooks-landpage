@@ -878,16 +878,7 @@ Apresentar a base do ecossistema de tecnologia para iniciantes, reduzindo confus
 
 ### Tempo sugerido
 
-| Etapa | Tempo sugerido |
-|---|---|
-| Abertura e contextualização | 15 min |
-| O que é tecnologia e mercado de TI | 20 min |
-| Áreas da tecnologia | 25 min |
-| Como funciona uma empresa tech | 20 min |
-| Front-end, back-end, API e banco de dados | 35 min |
-| Pensamento computacional | 20 min |
-| Exercício em grupo | 20 min |
-| Fechamento e entrega final | 15 min |
+Quatro encontros de até 90 minutos, incluindo pausa: até 6 horas ao vivo. Cada aula tem seu script com explicação, demonstração e prática. Consultar os quatro roteiros para a sequência; concluir o caderno de atividades fora do encontro.
 
 ### Estratégia de condução
 
@@ -966,3 +957,15 @@ O próximo passo é usar essa base para desenvolver raciocínio lógico com mais
 ## Fechamento
 
 Se você chegou até aqui, já deu um passo importante: saiu da visão superficial sobre tecnologia e começou a construir visão de mercado. Esse é o tipo de base que diferencia quem apenas consome conteúdo de quem começa a se preparar de verdade para atuar na área.
+
+
+## Scripts com falas para o professor
+
+Usar o roteiro para planejar, o script para conduzir e este E-book para aprofundar. As falas são apoio adaptável, com exemplos, perguntas, gabaritos e intervenções. O aluno revê a gravação do encontro na plataforma.
+
+- [Aula 1 — script com falas](../aulas/scripts/modulo-01-aula-01-mercado-tech-e-areas-de-ti.md)
+- [Aula 2 — script com falas](../aulas/scripts/modulo-01-aula-02-como-funciona-uma-empresa-tech.md)
+- [Aula 3 — script com falas](../aulas/scripts/modulo-01-aula-03-conceitos-basicos-front-back-api-banco.md)
+- [Aula 4 — script com falas](../aulas/scripts/modulo-01-aula-04-pensamento-computacional-e-mapa-mental.md)
+
+Planejar inicialmente 30–45 minutos de revisão e conclusão por aula; exercícios técnicos, projeto final e portfólio podem exigir blocos maiores. Combinar essa carga e os prazos com a turma. Não comprimir toda a prática original em 90 minutos.

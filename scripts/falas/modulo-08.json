@@ -1,0 +1,230 @@
+[
+  {
+    "id": "m08a01",
+    "goal": "definir escopo e critérios verificáveis para o projeto final",
+    "materials": "caso Agenda Clara, RN01–RN08 e modelo de brief",
+    "opening": "Nosso projeto final vai mostrar como vocês pensam e trabalham. O objetivo é entregar uma solução pequena, explicável e verificada, com limites claros.",
+    "talk": [
+      [
+        "Problema e hipótese",
+        "A recepção quer organizar horários e evitar confirmação duplicada. O caso fornece uma base fictícia de vinte por cento de conflitos. Usaremos esse dado para discutir hipótese; não afirmaremos redução real sem observar uma operação real."
+      ],
+      [
+        "Escopo",
+        "O MVP do laboratório consulta horários, reserva e cancela. Login, pagamento, notificações e proteção de concorrência estão fora deste recorte. Explicitar exclusões ajuda a construir critérios viáveis e uma apresentação honesta."
+      ],
+      [
+        "Requisitos",
+        "RN01 a RN08 orientam os comportamentos. US01 a US03 organizam consulta, reserva e cancelamento. Cada história precisa de critérios observáveis; escrever quero uma agenda sem definir conflito deixa o trabalho indefinido."
+      ]
+    ],
+    "visual": "Problema | Usuário | MVP | Fora do escopo | RN | US | Evidência esperada",
+    "demo": [
+      [
+        "Escrever brief",
+        "Vamos registrar quem usa, o problema e a hipótese. A hipótese ainda precisa de avaliação; não é resultado de negócio alcançado."
+      ],
+      [
+        "Delimitar MVP",
+        "Consulta, reserva e cancelamento sustentam o caso. Vou registrar notificações como possibilidade futura, sem incluí-las no compromisso desta rodada."
+      ],
+      [
+        "Criar critério",
+        "Se H10 já possui reserva ativa, outra reserva em H10 deve ser rejeitada e o estado anterior deve permanecer. Isso liga escopo a verificação."
+      ]
+    ],
+    "check": [
+      "Podemos declarar que nosso laboratório reduziu vinte por cento dos conflitos reais?",
+      "Não. A base é fictícia e não houve medição operacional que comprove redução."
+    ],
+    "group": [
+      "Produzir um brief de cinco linhas.",
+      "Definir três itens do MVP e três exclusões.",
+      "Escrever um critério de conflito e uma pergunta aberta."
+    ],
+    "individual": "Escreva um critério de cancelamento e indique a regra correspondente.",
+    "answer": "RN06: após cancelar uma reserva ativa de H10, H10 volta a estar disponível na consulta. Inclua identificador existente e estado inicial conhecido para permitir verificação.",
+    "interventions": [
+      [
+        "Escopo cresce com cada ideia",
+        "Essa ideia é necessária para demonstrar o problema central nesta rodada?"
+      ],
+      [
+        "Critério usa funciona corretamente",
+        "Que entrada, resultado e estado permitem observar o correto?"
+      ]
+    ],
+    "home": "Concluir requisitos e backlog do projeto previstos na aula. Esta entrega maior exige tempo próprio fora do encontro; combinar prazo e apoio com a turma."
+  },
+  {
+    "id": "m08a02",
+    "goal": "executar uma rodada simulada com meta, capacidade e evidências",
+    "materials": "backlog de seis itens, quadro WIP 2 e laboratório disponível",
+    "opening": "Agora o plano precisa encontrar a realidade. Vamos executar uma parte do projeto e registrar decisões, inclusive o que ficar pendente.",
+    "talk": [
+      [
+        "Rodada e meta",
+        "Uma simulação curta permite praticar colaboração, mas não equivale automaticamente a uma Sprint completa. Defina uma meta alcançável e selecione itens a partir da capacidade do grupo."
+      ],
+      [
+        "Trabalho integrado",
+        "Os papéis de produto, qualidade, desenvolvimento e facilitação ajudam a distribuir atenção. Alternem contribuições para aprender, sem declarar que uma pessoa só pode testar ou outra só pode conversar com o usuário."
+      ],
+      [
+        "Evidência e conclusão",
+        "A DoD determina quando concluir um item. Um cartão movido para concluído sem evidência produz uma imagem falsa de progresso. Registre execução local, revisão de documento e eventos simulados com seus nomes corretos."
+      ]
+    ],
+    "visual": "Meta | capacidade | seis itens ordenados | WIP 2 | evidência | pendência",
+    "demo": [
+      [
+        "Selecionar rodada",
+        "Vamos escolher consulta e uma reserva válida antes de tentar todos os fluxos. O restante permanece no backlog."
+      ],
+      [
+        "Executar e registrar",
+        "Uma dupla realiza o cenário, outra revisa critério e registra o resultado. Indiquem versão e ambiente; se não houver ambiente, descrevam a simulação sem dizer executado."
+      ],
+      [
+        "Adaptar plano",
+        "O cenário de conflito exige esclarecimento. Registramos a dúvida, buscamos decisão e ajustamos a seleção sem esconder a pendência."
+      ]
+    ],
+    "check": [
+      "Um evento encenado na aula deve ser descrito como reunião de um projeto de empresa?",
+      "Não. Deve ser identificado como simulação educacional."
+    ],
+    "group": [
+      "Definir meta de uma rodada e papéis.",
+      "Executar ou simular explicitamente um único fluxo, registrando a evidência correspondente.",
+      "Inspecionar o quadro e definir a próxima ação mantendo WIP 2."
+    ],
+    "individual": "Um item tem código, mas faltam testes exigidos pela DoD. Registre status e próximo passo.",
+    "answer": "Manter em andamento ou verificação conforme política, explicitar teste pendente e responsável. Não declarar concluído; avaliar o impacto na meta e adaptar o plano.",
+    "interventions": [
+      [
+        "Todos os seis itens precisam caber agora",
+        "Qual subconjunto entrega um resultado verificável dentro da capacidade?"
+      ],
+      [
+        "Documento de reunião comprova execução",
+        "Que resultado foi observado? Separe registro de decisão de evidência técnica."
+      ]
+    ],
+    "home": "Completar as duas rodadas simuladas e os registros previstos no roteiro, com rodízio de contribuições e pendências claras. Agendar tempo adicional quando a complexidade superar a janela de estudo."
+  },
+  {
+    "id": "m08a03",
+    "goal": "executar testes prioritários e registrar defeitos reproduzíveis",
+    "materials": "laboratório de referência, variante AgendaComDefeito e logs fictícios BUG02",
+    "opening": "Hoje a qualidade da evidência vale mais que uma lista longa de testes marcados como sucesso. Vamos executar poucos cenários com cuidado e aprender a registrar o que realmente vimos.",
+    "talk": [
+      [
+        "Seleção de testes",
+        "O projeto prevê oito casos e um caso autoral. No encontro executaremos um subconjunto prioritário; completar a bateria é tarefa posterior. Cada caso precisa de estado inicial, passos e resultado esperado."
+      ],
+      [
+        "Defeito reproduzível",
+        "Um relatório útil identifica regra violada, versão, ambiente, passos, esperado e observado. BUG01 pode ser reproduzido na variante que aceita espaços como nome. Isso não significa que o programa de referência tenha o mesmo defeito."
+      ],
+      [
+        "Limites de evidência",
+        "BUG02 fornece logs fictícios de cancelamento que não devolve H10. Use-os para analisar e registrar o problema, identificando a origem. Não existe autorização para declarar que esse defeito foi executado no código quando só recebemos o registro."
+      ]
+    ],
+    "visual": "Caso | versão | início | esperado | observado | status; BUG01 real no laboratório / BUG02 logs fictícios",
+    "demo": [
+      [
+        "Preparar cenário",
+        "Vou começar com uma agenda nova e confirmar o catálogo. Um estado herdado de outro teste pode tornar a conclusão inválida."
+      ],
+      [
+        "Comparar variantes",
+        "Reservar com espaços é rejeitado pela referência e aceito pela variante com defeito. Registramos qual classe foi usada e o estado observado depois."
+      ],
+      [
+        "Analisar BUG02",
+        "Os logs dizem: reserva H10, cancelamento confirmado, consulta sem H10. A violação é RN06. A evidência é fornecida e fictícia, não uma execução nossa."
+      ]
+    ],
+    "check": [
+      "Qual diferença existe entre BUG01 e BUG02 neste laboratório?",
+      "BUG01 possui variante executável; BUG02 é analisado a partir de logs fictícios fornecidos."
+    ],
+    "group": [
+      "Executar um caso prioritário com estado inicial novo.",
+      "Registrar resultado e ambiente ou identificar claramente simulação.",
+      "Escrever um relatório de defeito com regra e passos."
+    ],
+    "individual": "Proponha um caso autoral de rejeição e descreva o estado esperado após a tentativa.",
+    "answer": "Exemplo: tentar reservar um horário fora do catálogo com nome válido; esperar horário inválido e catálogo sem alteração. Aceite outros casos coerentes com RN01–RN08 e estado inicial definido.",
+    "interventions": [
+      [
+        "Falhou sem passos",
+        "Qual sequência outra pessoa deve repetir para observar o problema?"
+      ],
+      [
+        "Marcar os nove casos sem executar",
+        "Use não executado para pendências e preserve apenas os resultados observados."
+      ]
+    ],
+    "home": "Completar os oito casos previstos, o caso autoral, os relatórios e os vínculos. Registrar cada execução e separar resultados fornecidos, simulados e observados."
+  },
+  {
+    "id": "m08a04",
+    "goal": "apresentar um portfólio verificável e justificar limites da entrega",
+    "materials": "dossiê com os seis arquivos definidos no roteiro, checklist e matriz de rastreabilidade",
+    "opening": "Uma boa apresentação permite conferir suas afirmações. Vamos organizar o dossiê, demonstrar o que funciona e explicar as limitações sem inventar experiência profissional.",
+    "talk": [
+      [
+        "Dossiê",
+        "Os seis arquivos previstos no roteiro devem formar uma história coerente: problema, decisões, execução e avaliação precisam se conectar. Confira links, identificação da versão e consistência entre requisito, teste e resultado."
+      ],
+      [
+        "Apresentação",
+        "Um pitch de cinco minutos pode dividir o tempo em 45 segundos de problema, 60 de escopo, 90 de demonstração, 45 de colaboração e 60 de limites e próximos passos. Ensaiar evita perder todo o tempo abrindo arquivos."
+      ],
+      [
+        "Portfólio honesto",
+        "Descreva projeto educacional, contribuição pessoal e evidências. A execução local não comprova produção, clientes reais ou experiência contratada. Mostrar uma limitação bem compreendida também demonstra capacidade profissional."
+      ]
+    ],
+    "visual": "Problema → recorte → demonstração → contribuição → limites → próximos passos",
+    "demo": [
+      [
+        "Conferir dossiê",
+        "Escolho uma regra e sigo seus vínculos até a evidência. Se o teste está pendente, o slide não pode dizer que todos os critérios foram aprovados."
+      ],
+      [
+        "Demonstrar localmente",
+        "Mostro consulta, reserva e comportamento de conflito na referência. Explico que o estado fica em memória e que não há proteção real de concorrência."
+      ],
+      [
+        "Ensaiar pitch",
+        "Vou usar os cinco blocos e terminar dentro de cinco minutos. A turma revisará se minhas afirmações têm evidência."
+      ]
+    ],
+    "check": [
+      "Como mencionar esse trabalho no currículo?",
+      "Como projeto educacional, com contribuição e artefatos verificáveis, sem apresentá-lo como emprego ou resultado comercial real."
+    ],
+    "group": [
+      "Revisar um vínculo e um arquivo do dossiê em dupla.",
+      "Ouvir até duas apresentações voluntárias de cinco minutos na janela da dinâmica.",
+      "Dar feedback sobre clareza, evidência e limites."
+    ],
+    "individual": "Escreva o trecho final do pitch com uma limitação, seu impacto e um próximo passo.",
+    "answer": "Exemplo: as reservas ficam em memória e são perdidas ao reiniciar; para um uso operacional, precisaríamos avaliar persistência e recuperação e verificar esse comportamento. O próximo passo não deve ser apresentado como já implementado.",
+    "interventions": [
+      [
+        "Toda turma apresenta ao vivo em quinze minutos",
+        "Nesta janela cabem duas apresentações com feedback breve. As demais precisam de gravação pós-aula ou agenda adicional."
+      ],
+      [
+        "Inventar números de impacto",
+        "Que medição sustenta esse número? Se não existe, apresente como hipótese."
+      ]
+    ],
+    "home": "Concluir o dossiê e enviar o pitch de até cinco minutos gravado após a aula, com autoavaliação. Isso é entrega do aluno, não vídeo teórico prévio. Para defesa individual ao vivo de todos, reservar encontros adicionais explicitamente."
+  }
+]

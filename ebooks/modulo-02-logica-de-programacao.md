@@ -43,7 +43,8 @@ O módulo se conecta à ementa oficial local e usa as regras do [caso contínuo]
 | 3 | [Laços e listas](../aulas/modulo-02-aula-03-lacos-e-listas.md) | Tópicos 4 |
 | 4 | [Funções e resolução de problemas](../aulas/modulo-02-aula-04-funcoes-e-desafios.md) | Tópicos 5, 6 |
 
-**Tempo proposto:** quatro encontros de 120 minutos, com pausa incluída: 8 horas. Reservar mais 30–45 minutos de estudo por encontro e 60–90 minutos para revisar a entrega. Adaptar à turma; essa duração não confirma uma oferta comercial.
+**Tempo proposto:** quatro encontros de até 90 minutos, com pausa de 5 minutos incluída: até 6 horas ao vivo por módulo. Reservar estudo posterior para concluir atividades e revisar a entrega. A gravação é a do próprio encontro; não há vídeos teóricos prévios obrigatórios.
+
 
 ## Tópico 1 — Algoritmos e lógica básica
 
@@ -616,3 +617,15 @@ Altere uma entrada de cada bloco e preveja a saída antes de executar. Entregue 
 ## Referências e continuidade
 
 Consultar [ementa local](../ementa.md), [caderno do caso](../atividades/caso-agenda-clara.md) e [laboratório](../portfolio/agenda-clara/README.md). Referências técnicas: [Python](https://docs.python.org/3/tutorial/), [Git](https://git-scm.com/docs/gittutorial), [Scrum Guide](https://scrumguides.org/scrum-guide.html) e [ISTQB CTFL](https://istqb.org/certifications/certified-tester-foundation-level-ctfl-v4-0/). Use a documentação pertinente ao tema; os exemplos, atividades e rubricas são autorais.
+
+
+## Scripts com falas para o professor
+
+Usar o roteiro para planejar, o script para conduzir e este E-book para aprofundar. As falas são apoio adaptável, com exemplos, perguntas, gabaritos e intervenções. O aluno revê a gravação do encontro na plataforma.
+
+- [Aula 1 — script com falas](../aulas/scripts/modulo-02-aula-01-algoritmos-e-rastreamento.md)
+- [Aula 2 — script com falas](../aulas/scripts/modulo-02-aula-02-variaveis-e-condicoes.md)
+- [Aula 3 — script com falas](../aulas/scripts/modulo-02-aula-03-lacos-e-listas.md)
+- [Aula 4 — script com falas](../aulas/scripts/modulo-02-aula-04-funcoes-e-desafios.md)
+
+Planejar inicialmente 30–45 minutos de revisão e conclusão por aula; exercícios técnicos, projeto final e portfólio podem exigir blocos maiores. Combinar essa carga e os prazos com a turma. Não comprimir toda a prática original em 90 minutos.

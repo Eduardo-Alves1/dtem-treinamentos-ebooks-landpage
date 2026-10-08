@@ -1,0 +1,230 @@
+[
+  {
+    "id": "m01a01",
+    "goal": "relacionar seis áreas de TI a responsabilidades e artefatos e iniciar um mapa mental",
+    "materials": "quadro, tabela de seis áreas e caderno de prática do Módulo 1; não exige instalação",
+    "opening": "Quando uma reserva aparece duplicada, quem deveria investigar? Antes de escolher uma profissão, precisamos entender quais perguntas cada especialidade faz. Hoje vamos ligar as áreas de TI a entregas concretas.",
+    "talk": [
+      [
+        "Tecnologia e problema",
+        "Tecnologia aplicada a negócios começa com uma necessidade. Uma recepção quer organizar horários; um cliente quer confirmar atendimento. O produto digital precisa atender essas pessoas. Programar é uma das contribuições. Entender a necessidade, verificar comportamento, observar dados e manter o ambiente também fazem parte do trabalho."
+      ],
+      [
+        "Seis contribuições",
+        "Desenvolvimento constrói regras e interfaces. QA contribui para prevenir e identificar problemas. Produto investiga necessidade e prioridade. Dados organiza medidas e análise. Infraestrutura cuida de ambientes e observação. Gestão coordena objetivo, capacidade e dependências. Em uma empresa pequena, a mesma pessoa pode reunir atividades; as responsabilidades continuam existindo."
+      ],
+      [
+        "Artefato e carreira",
+        "Vamos relacionar cada área a algo que pode ser examinado: código, teste, requisito, métrica, plano de ambiente e plano de trabalho. Um nome de ferramenta não explica sozinho uma contribuição. Ao pesquisar vagas, registrem a fonte e distingam interesse de competência já demonstrada."
+      ]
+    ],
+    "visual": "tabela Área / Pergunta / Artefato, com seis linhas",
+    "demo": [
+      [
+        "Apresentar conflito em H09",
+        "Ana já está em H09 e Bruno pede o mesmo horário. Produto pergunta qual regra protege o atendimento; QA pergunta como verificar a recusa e a preservação de Ana."
+      ],
+      [
+        "Preencher duas linhas",
+        "Desenvolvimento pode implementar a verificação de ocupação. Dados pode medir tentativas com conflito, definindo período e denominador. Estou mostrando contribuições possíveis, não atribuindo processo interno a uma marca."
+      ],
+      [
+        "Conectar o mapa",
+        "Vou ligar Produto a regra, QA a teste e Dev a implementação. As setas precisam de uma explicação. Escrever somente três nomes não demonstra como as áreas colaboram."
+      ]
+    ],
+    "check": [
+      "Um caso de teste é um artefato de qual contribuição?",
+      "QA pode produzi-lo, com colaboração do time; qualidade não pertence exclusivamente a uma pessoa."
+    ],
+    "group": [
+      "Preencher as seis áreas com responsabilidade e artefato.",
+      "Explicar como duas delas tratariam uma reserva duplicada.",
+      "Trocar revisão e apontar uma linha vaga para melhorar."
+    ],
+    "individual": "Escolha uma área diferente da que sua dupla apresentou. Escreva sua pergunta, um artefato e uma colaboração com outra área. Acrescente uma conexão ao mapa.",
+    "answer": "Exemplo: Dados pergunta quantas tentativas tiveram conflito; define medida com período e denominador; colabora com Produto para avaliar uma hipótese. Aceitar outras respostas coerentes. Exigir atividade e evidência, sem pontuar preferência pessoal como domínio.",
+    "interventions": [
+      [
+        "Escolher área apenas por uma ferramenta",
+        "A ferramenta ajuda uma tarefa. Que problema essa pessoa resolve e o que entrega para outra área?"
+      ],
+      [
+        "Dizer que QA garante tudo",
+        "Vamos distribuir a contribuição: quem esclarece a regra, quem implementa e quem investiga os comportamentos?"
+      ]
+    ],
+    "home": "Completar mapa e tabela; comparar três descrições de vagas com link e data, ou identificar exemplos como simulação. Escrever um interesse e uma dúvida. A pesquisa fica para fora do encontro."
+  },
+  {
+    "id": "m01a02",
+    "goal": "desenhar a passagem de um problema à entrega com feedback e qualidade desde requisitos",
+    "materials": "quadro, exemplo de cadastro e cartões com papéis",
+    "opening": "Uma pessoa pede um botão de cancelamento. Será que basta desenhar e programar esse botão? Vamos descobrir quais decisões e contribuições estão escondidas nesse pedido.",
+    "talk": [
+      [
+        "Da necessidade ao comportamento",
+        "Primeiro precisamos entender por que cancelar é necessário. Depois explicamos quando o cancelamento é permitido e o que deve acontecer com a reserva. Essas decisões orientam solução e verificação. O time pode voltar a uma pergunta anterior quando encontra informação nova."
+      ],
+      [
+        "Papéis colaboram",
+        "Produto discute necessidade e prioridade; Dev avalia implementação; QA contribui com exemplos e riscos antes de construir e depois verifica comportamento. UX pode facilitar a jornada, Dados define medida, Infra pensa em disponibilização e suporte traz situações de uso. O desenho não deve colocar cada área em uma caixa sem conversa."
+      ],
+      [
+        "Feedback e organização",
+        "Após disponibilizar uma solução, ainda precisamos ouvir as pessoas e observar sinais. Backlog, tarefa e registro de bug ajudam a organizar, mas não substituem acordos. Hoje vamos representar esse caminho, sem aprofundar todas as regras de Scrum."
+      ]
+    ],
+    "visual": "fluxo Problema → Regra e exemplos → Construção → Verificação → Disponibilização → Feedback, com retorno",
+    "demo": [
+      [
+        "Descrever cancelamento",
+        "A recepção quer liberar um horário quando a pessoa cancela. Vou registrar necessidade e resultado esperado antes de escolher tela."
+      ],
+      [
+        "Adicionar critério e teste",
+        "Cancelar uma reserva ativa deve liberar o horário. Podemos preparar reserva, cancelar pelo identificador e consultar depois. QA pode sugerir esse exemplo antes do código."
+      ],
+      [
+        "Adicionar pergunta e retorno",
+        "Quem pode cancelar? Ainda falta uma decisão. Vou marcá-la como pendência. Se o suporte trouxer cancelamentos indevidos, esse feedback retorna à análise."
+      ]
+    ],
+    "check": [
+      "Qual contribuição de QA acontece antes da construção?",
+      "Revisar exemplos, ambiguidades e riscos da regra, sem substituir testes posteriores."
+    ],
+    "group": [
+      "Escolher uma funcionalidade simples: cadastro ou cancelamento.",
+      "Desenhar seis passagens e indicar contribuições em mais de uma etapa.",
+      "Registrar critério, resultado esperado e pergunta pendente."
+    ],
+    "individual": "Escolha recuperação de senha ou emissão de certificado. Descreva necessidade, contribuições de três áreas e uma pergunta que precisa ser esclarecida.",
+    "answer": "Para certificado, Produto define condição de emissão; Dev implementa; QA investiga aluno elegível e não elegível; Dados pode acompanhar emissões. Não presumir elegibilidade apenas por ver um vídeo. O fluxo deve retornar feedback e deixar pendências visíveis.",
+    "interventions": [
+      [
+        "Desenhar QA somente no fim",
+        "Onde um exemplo antecipado poderia evitar uma interpretação errada?"
+      ],
+      [
+        "Escrever critério 'funcionar corretamente'",
+        "Qual ação e qual resultado outra pessoa consegue conferir?"
+      ]
+    ],
+    "home": "Revisar fluxo com feedback e acrescentar uma contribuição de Dados ou Suporte. Atualizar mapa mental; concluir a análise completa no caderno."
+  },
+  {
+    "id": "m01a03",
+    "goal": "distinguir front-end, back-end, API e armazenamento e separar observação de hipótese",
+    "materials": "desenho de tela, quadro e exemplo de entrada/saída; não exige serviço web",
+    "opening": "Ao clicar em confirmar, você vê a tela mudar. Isso revela qual banco foi usado? Hoje vamos separar a interface observada das possíveis partes que trabalham por trás dela.",
+    "talk": [
+      [
+        "Interface e regra",
+        "Front-end é a parte com que o usuário interage. Back-end pode aplicar regras e coordenar operações. Uma tela exibir sucesso não comprova que todas as regras foram respeitadas. Precisamos de resultados e estados verificáveis. Estamos estudando papéis de componentes, não uma arquitetura única para qualquer sistema."
+      ],
+      [
+        "API e armazenamento",
+        "API é um contrato de interação entre componentes; banco de dados organiza armazenamento. Na proposta de uma aplicação web, a interface enviaria nome e horário a uma API e receberia uma resposta. O laboratório Agenda Clara recebe chamadas locais e guarda estado em memória: ainda não possui API HTTP nem banco persistente."
+      ],
+      [
+        "Informação e limite",
+        "Um cadastro pode conter identificador, nome e estado de acesso. Senha não deve ser guardada em texto legível; sistemas de autenticação usam mecanismos próprios, como hash de senha. Hoje não implementaremos login. Ao desenhar uma solução futura, marquem explicitamente que se trata de proposta."
+      ]
+    ],
+    "visual": "Usuário → Interface → API proposta → Regra → Armazenamento, destacando as partes não implementadas",
+    "demo": [
+      [
+        "Mostrar tela proposta de reserva",
+        "Vou desenhar nome, horário e botão. Isso é interface proposta, não prova de que existe um serviço."
+      ],
+      [
+        "Percorrer entrada e saída",
+        "Ana/H09 entra na operação. A regra confere nome, catálogo e ocupação. Sucesso é uma resposta possível; conflito é outra. O banco, quando existir, guardará o estado que precisamos preservar."
+      ],
+      [
+        "Separar laboratório e futuro",
+        "No simulador, um dicionário com status é saída de uma chamada Python. Não vou chamá-lo de resposta HTTP. Encerrar o programa perde dados em memória."
+      ]
+    ],
+    "check": [
+      "API e banco são a mesma coisa?",
+      "Não: contrato de comunicação e armazenamento cumprem papéis diferentes, ainda que se relacionem."
+    ],
+    "group": [
+      "Desenhar os componentes de uma reserva web futura.",
+      "Escrever papel de cada componente e exemplo de entrada/saída.",
+      "Marcar o que é proposta e o que existe no laboratório."
+    ],
+    "individual": "Explique onde localizar interface, regra e estado em um cadastro hipotético. Escreva uma conclusão que não pode ser obtida somente observando a tela.",
+    "answer": "Interface coleta; regra valida; estado precisa ser mantido. A tela não revela qual banco foi usado nem comprova unicidade. No laboratório, há regras e memória, sem API HTTP. Aceitar desenhos coerentes que distingam implementação de hipótese.",
+    "interventions": [
+      [
+        "Dizer que API guarda dados",
+        "O contrato pode encaminhar uma operação; onde a informação permanece depois da chamada?"
+      ],
+      [
+        "Afirmar arquitetura de app real pela aparência",
+        "Qual evidência você observou e qual parte está supondo?"
+      ]
+    ],
+    "home": "Revisar diagrama e explicar persistência versus memória. Completar a atividade 3 do caderno e incluir conceitos no mapa."
+  },
+  {
+    "id": "m01a04",
+    "goal": "aplicar quatro pilares do pensamento computacional e explicar conexões no mapa final",
+    "materials": "mapa iniciado, quadro e tabela dos quatro pilares",
+    "opening": "Um aluno não consegue abrir uma aula. Qual hipótese vocês investigariam primeiro? Hoje vamos organizar esse problema antes de escolher uma solução e concluir nosso mapa de tecnologia.",
+    "talk": [
+      [
+        "Decomposição e padrões",
+        "Decompor é dividir um problema em partes: acesso, permissão, navegação e reprodução. Procurar padrões é comparar situações: ocorre com todos ou com um grupo? Um padrão precisa de observação; 'talvez seja no celular' ainda é hipótese."
+      ],
+      [
+        "Abstração e algoritmo",
+        "Abstrair é selecionar o que importa para a pergunta atual. Para investigar acesso, precisamos de estado da matrícula e mensagem, não de todos os detalhes pessoais. Um algoritmo descreve passos para verificar hipóteses. A sequência deve indicar como reagir ao resultado de cada passo."
+      ],
+      [
+        "Mapa como explicação",
+        "O mapa final reúne áreas, componentes e raciocínio. Uma conexão precisa de significado: Produto define regra, Dev implementa, QA investiga. A aparência ajuda a leitura, mas a avaliação busca entendimento. Cada pessoa explica pelo menos três relações e uma dúvida que levará adiante."
+      ]
+    ],
+    "visual": "tabela Pilar / Aplicação / Evidência e mapa com setas explicadas",
+    "demo": [
+      [
+        "Dividir acesso à aula",
+        "Vou separar entrada na conta, curso liberado e reprodução. Isso evita tratar tudo como o mesmo problema."
+      ],
+      [
+        "Identificar hipótese e dado",
+        "Se só um aluno falha, verificar sua liberação é uma hipótese razoável. Precisamos conferir estado e mensagem antes de concluir."
+      ],
+      [
+        "Escrever passos e conexão",
+        "Confirmar acesso, verificar curso liberado e reproduzir ação. Se faltou permissão, registrar; se não, seguir investigação. Vou ligar esse trabalho a Suporte, Produto e QA no mapa."
+      ]
+    ],
+    "check": [
+      "Padrão e hipótese são iguais?",
+      "Não. Hipótese é explicação a investigar; padrão é regularidade observada, ainda sujeita a interpretação."
+    ],
+    "group": [
+      "Aplicar quatro pilares ao problema 'reserva não foi confirmada'.",
+      "Registrar dados mínimos e hipóteses separadas de fatos.",
+      "Escrever quatro passos com uma decisão e trocar revisão."
+    ],
+    "individual": "Finalize três conexões explicadas no mapa e justifique uma sequência de investigação. O mapa completo será revisado em casa; duas pessoas compartilham uma conexão agora.",
+    "answer": "Separar nome, horário, ocupação e resposta; não concluir falha do banco sem evidência. Relação válida: Produto define RN03, QA testa espaços, Dev implementa validação. O mapa final cobre seis áreas, componentes e quatro pilares.",
+    "interventions": [
+      [
+        "Enumerar pilares sem aplicação",
+        "Mostre qual parte foi dividida e qual decisão ficou mais clara."
+      ],
+      [
+        "Mapa só com nomes e sem relações",
+        "Escolha uma seta e escreva o verbo que explica a conexão."
+      ]
+    ],
+    "home": "Concluir as quatro atividades e o mapa; gravar ou escrever explicação de três minutos. Revisar com a rubrica do caderno e registrar uma dúvida."
+  }
+]

@@ -35,6 +35,7 @@ O Módulo 1 mantém seu E-book e suas quatro aulas, com revisão de objetivos, q
 ### Módulo 2 — Lógica de Programação
 
 1. [Algoritmos e rastreamento](../aulas/modulo-02-aula-01-algoritmos-e-rastreamento.md).
+   Condução: [script com falas do professor](../aulas/scripts/modulo-02-aula-01-algoritmos-e-rastreamento.md), adaptado para até 90 minutos.
 2. [Variáveis e condições](../aulas/modulo-02-aula-02-variaveis-e-condicoes.md).
 3. [Laços e listas](../aulas/modulo-02-aula-03-lacos-e-listas.md).
 4. [Funções e desafios](../aulas/modulo-02-aula-04-funcoes-e-desafios.md).
@@ -91,11 +92,11 @@ O bônus complementa os oito módulos. ATS e LinkedIn são tratados separadament
 
 ## Organização e tempo sugerido
 
-Para cada módulo novo: quatro encontros de 120 minutos, com pausa de 10 minutos incluída; total de 8 horas. Módulos 2–8: **56 horas sugeridas de encontros**. Bônus: 4 horas. As durações já presentes nos roteiros do Módulo 1 foram preservadas e devem ser consideradas ao fechar a carga total.
+Todos os oito módulos têm quatro encontros de até 90 minutos: **32 encontros e até 48 horas ao vivo**. Com as duas aulas de carreira, são **34 encontros e até 51 horas**, incluindo pausas. A sequência semanal corresponde a 34 semanas de conteúdo, antes de feriados, recessos, recuperação e encontros extras.
 
-Os quatro roteiros do Módulo 1 indicam 2h20, 2h40, 3h e 3h: total de 11 horas, sem pausas explicitadas. Somados aos módulos novos, são 67 horas sugeridas de encontros; com o bônus, 71 horas. Ao fechar o calendário, considerar pausas e ajuste de ritmo no Módulo 1.
+Consultar o [índice de scripts com falas](scripts-do-professor.md). A demonstração e a prática principal acontecem ao vivo; a gravação fica disponível para revisão. Não há vídeos teóricos prévios obrigatórios. O caderno completo continua nos roteiros e E-books, com conclusão fora do encontro.
 
-Estudo fora da aula: 30–45 minutos por encontro, mais revisão da entrega. Não interpretar essa proposta como calendário, preço ou carga comercial confirmados. O professor ajusta extensão e ritmo mantendo prática individual e feedback.
+Planejar 30–45 minutos iniciais de estudo posterior por aula e ampliar os blocos conforme a atividade, especialmente projeto final e portfólio. As apresentações de todos os alunos e defesas ao vivo podem exigir encontros adicionais. Combinar carga de tarefas, prazos e ritmo com a turma antes de fechar o calendário comercial.
 
 ## Como usar os materiais
 

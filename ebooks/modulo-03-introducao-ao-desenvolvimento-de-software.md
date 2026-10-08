@@ -42,7 +42,7 @@ O módulo se conecta à ementa oficial local e usa as regras do [caso contínuo]
 | 3 | [Git e histórico local](../aulas/modulo-03-aula-03-git-e-versionamento.md) | Tópicos 3 |
 | 4 | [GitHub, revisão e publicação](../aulas/modulo-03-aula-04-github-e-colaboracao.md) | Tópicos 4, 5 |
 
-**Tempo proposto:** quatro encontros de 120 minutos, com pausa incluída: 8 horas. Reservar mais 30–45 minutos de estudo por encontro e 60–90 minutos para revisar a entrega. Adaptar à turma; essa duração não confirma uma oferta comercial.
+**Tempo proposto:** quatro encontros de até 90 minutos, com pausa de 5 minutos incluída: até 6 horas ao vivo por módulo. Reservar estudo posterior para concluir atividades e revisar a entrega. A gravação é a do próprio encontro; não há vídeos teóricos prévios obrigatórios.
 
 ## Tópico 1 — O que é um sistema e como é construído
 
@@ -530,3 +530,15 @@ Na plataforma, criar a proposta de integração. Descrição de referência: “
 ## Referências e continuidade
 
 Consultar [ementa local](../ementa.md), [caderno do caso](../atividades/caso-agenda-clara.md) e [laboratório](../portfolio/agenda-clara/README.md). Referências técnicas: [Python](https://docs.python.org/3/tutorial/), [Git](https://git-scm.com/docs/gittutorial), [Scrum Guide](https://scrumguides.org/scrum-guide.html) e [ISTQB CTFL](https://istqb.org/certifications/certified-tester-foundation-level-ctfl-v4-0/). Use a documentação pertinente ao tema; os exemplos, atividades e rubricas são autorais.
+
+
+## Scripts com falas para o professor
+
+Usar o roteiro para planejar, o script para conduzir e este E-book para aprofundar. As falas são apoio adaptável, com exemplos, perguntas, gabaritos e intervenções. O aluno revê a gravação do encontro na plataforma.
+
+- [Aula 1 — script com falas](../aulas/scripts/modulo-03-aula-01-sistemas-e-construcao.md)
+- [Aula 2 — script com falas](../aulas/scripts/modulo-03-aula-02-leitura-de-codigo.md)
+- [Aula 3 — script com falas](../aulas/scripts/modulo-03-aula-03-git-e-versionamento.md)
+- [Aula 4 — script com falas](../aulas/scripts/modulo-03-aula-04-github-e-colaboracao.md)
+
+Planejar inicialmente 30–45 minutos de revisão e conclusão por aula; exercícios técnicos, projeto final e portfólio podem exigir blocos maiores. Combinar essa carga e os prazos com a turma. Não comprimir toda a prática original em 90 minutos.

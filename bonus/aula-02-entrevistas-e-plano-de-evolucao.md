@@ -1,20 +1,22 @@
 # Bônus — Aula 2: Entrevistas e plano de evolução
 
+**Condução com falas prontas:** [script do professor](scripts/aula-02-entrevistas-e-plano-de-evolucao.md). Seguir a sequência de até 90 minutos. As atividades abaixo formam o caderno completo; o script define o recorte ao vivo e a conclusão em casa. A gravação serve para revisão posterior.
+
 ## Objetivo, duração e materiais
 
 Explicar contribuição em 60 segundos, responder com evidências e produzir plano de quatro semanas. Pré-requisito: documentos da aula anterior. Materiais: dossiê, perguntas, editor e cronômetro. [Leitura](../ebooks/bonus-preparacao-para-o-mercado.md): tópico 3.
 
 | Etapa | Minutos |
 |---|---:|
-| Abertura | 10 |
-| Teoria e exemplos | 20 |
-| Demonstração | 15 |
-| Pausa | 10 |
-| Entrevista em dupla | 25 |
-| Revisão individual | 20 |
-| Perguntas e fechamento | 15 |
-| Orientação de casa | 5 |
-| Total | 120 |
+| Abertura e diagnóstico | 8 |
+| Conceitos e exemplos | 17 |
+| Demonstração guiada | 20 |
+| Pausa | 5 |
+| Dinâmica em dupla ou grupo | 15 |
+| Exercício individual | 12 |
+| Correção e dúvidas | 8 |
+| Fechamento e orientação da tarefa | 5 |
+| Total | 90 |
 
 ## Abertura e teoria
 
@@ -30,10 +32,10 @@ Peça aos alunos que identifiquem uma ação, uma evidência e uma limitação e
 
 **Nome:** entrevista com conferência. **Contexto:** processo seletivo simulado de QA ou análise de produto. **Objetivo:** sustentar respostas e receber feedback.
 
-1. Em 3 minutos, escolher perguntas e função.
-2. Em 8 minutos, entrevistar primeira pessoa: pitch, pergunta técnica e dificuldade.
-3. Em 8 minutos, trocar papéis.
-4. Em 6 minutos, registrar feedback de clareza, evidência e honestidade.
+1. Preparar as perguntas durante a demonstração, antes de iniciar a dinâmica.
+2. Em 5 minutos, entrevistar a primeira pessoa: pitch e perguntas selecionadas no script.
+3. Em 5 minutos, trocar papéis.
+4. Em 3 minutos, dar feedback de clareza, evidência e honestidade; usar os 2 minutos finais para registrar uma melhoria.
 
 Entrega: três respostas e feedback. Critérios: contribuição identificada, resposta coerente e limite declarado. Dica: use o artefato como apoio e explique com suas palavras. Exemplo: resposta de BUG01 acima. Variação: pergunta inesperada sobre produção.
 
@@ -56,4 +58,3 @@ Reescrever uma resposta após feedback e montar quatro semanas de prática. Cada
 ## Fechamento e tarefa para casa
 
 Cada aluno apresenta uma resposta revisada e um próximo passo. Aplicar rubrica por clareza, completude, evidência e justificativa. Em 30–45 minutos fora da aula, revisar pitch, respostas e plano; entregar versões e razão da mudança. O professor registra um acerto e uma lacuna prioritária.
-

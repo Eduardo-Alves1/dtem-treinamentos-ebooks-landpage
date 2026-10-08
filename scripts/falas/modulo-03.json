@@ -1,0 +1,230 @@
+[
+  {
+    "id": "m03a01",
+    "goal": "explicar componentes de um sistema e limites do laboratório",
+    "materials": "README do laboratório, diagrama e arquivo agenda_clara.py sem exigir edição",
+    "opening": "Um desenho de tela e um programa que reserva horário são a mesma entrega? Vamos identificar quais componentes existem e o que ainda é apenas proposta.",
+    "talk": [
+      [
+        "Entrada, regra e estado",
+        "Um sistema combina partes para realizar um objetivo. Na Agenda Clara, recebemos nome e horário, aplicamos regras e mantemos reservas durante a execução. A saída informa resultado. Uma interface é uma forma de usar essas operações, mas não precisa existir para investigarmos as regras."
+      ],
+      [
+        "Construção e revisão",
+        "Uma necessidade orienta requisitos; requisitos ajudam a implementar e conferir. A construção é iterativa: uma descoberta pode exigir revisar a regra. Produto, Dev e QA precisam saber qual parte será executável e qual ficará desenhada."
+      ],
+      [
+        "Memória e persistência",
+        "O laboratório guarda estado em memória. Encerrar o programa perde reservas. Um armazenamento persistente manteria dados entre execuções, com decisões e verificações adicionais. Não vamos chamar o protótipo de serviço pronto nem atribuir ao simulador uma API web inexistente."
+      ]
+    ],
+    "visual": "entrada → regra → estado → saída, com interface/API/banco futuros em outra cor",
+    "demo": [
+      [
+        "Ler README",
+        "Vou localizar propósito, instrução de execução e limitações antes de abrir o código. Esses itens ajudam outro colega a entender a entrega."
+      ],
+      [
+        "Identificar componentes",
+        "Classe Agenda reúne operações e estado em memória. A consulta devolve disponíveis. O programa de demonstração imprime resultados, sem tela web."
+      ],
+      [
+        "Comparar reinício",
+        "Uma nova instância começa sem reservas. Isso mostra uma diferença de estado, não a implementação de banco persistente."
+      ]
+    ],
+    "check": [
+      "Que evidência comprovaria que reservas sobrevivem ao reinício?",
+      "Precisaria executar armazenamento persistente e conferir dados após encerrar e reabrir; o laboratório não implementa isso."
+    ],
+    "group": [
+      "Mapear componentes implementados e ausentes.",
+      "Desenhar interface futura identificada como proposta.",
+      "Explicar o que acontece ao encerrar o processo."
+    ],
+    "individual": "Escreva uma descrição de quatro linhas do sistema que outra pessoa consiga conferir: propósito, entrada, comportamento e limite.",
+    "answer": "Reservas sequenciais em Python, com nomes e catálogo; resultados em dicionários; estado em memória; sem web, login ou persistência. A descrição não promete produto operacional.",
+    "interventions": [
+      [
+        "Chamar memória de banco persistente",
+        "Os dados permanecem depois de fechar a execução? Qual componente faz isso?"
+      ],
+      [
+        "Apresentar desenho como funcionalidade",
+        "Qual parte você executou e qual apenas representou?"
+      ]
+    ],
+    "home": "Completar mapa de componentes e README de estudo. Explicar uma diferença entre protótipo e comportamento executável."
+  },
+  {
+    "id": "m03a02",
+    "goal": "rastrear código de reserva e localizar o retorno que impede duplicidade",
+    "materials": "agenda_clara.py aberto com numeração de linhas e tabela de rastreamento",
+    "opening": "Você não precisa escrever o programa inteiro para acompanhar uma regra. Vamos ler uma operação com uma entrada concreta e observar onde ela termina.",
+    "talk": [
+      [
+        "Ler pelo contrato",
+        "Comece pelo que entra e sai. reservar recebe nome e horário; consultar informa horários livres; cancelar usa identificador. Depois acompanhe decisões. Não tente entender todas as linhas ao mesmo tempo."
+      ],
+      [
+        "Estado e retorno",
+        "self.reservas mantém reservas por identificador. Um return encerra a operação atual. Nas recusas, isso acontece antes de criar uma reserva. A classe reúne estado e operações; o objetivo de hoje é acompanhar comportamento, sem aprofundar toda orientação a objetos."
+      ],
+      [
+        "Variante e causa",
+        "AgendaComDefeito transforma um nome feito de espaços antes de chamar a referência. Podemos observar o efeito e localizar essa transformação. Ler a linha sustenta uma hipótese de causa; precisamos também comparar regra, entrada e saída."
+      ]
+    ],
+    "visual": "trecho reservar, com validações marcadas antes da escrita em reservas",
+    "demo": [
+      [
+        "Percorrer Ana/H09",
+        "Nome válido, catálogo válido e horário livre: chega ao registro e retorna sucesso. Vou anotar a mudança em reservas."
+      ],
+      [
+        "Percorrer Bruno/H09",
+        "Com a primeira reserva preservada, consultar não inclui H09. A condição retorna conflito e a criação não é executada."
+      ],
+      [
+        "Localizar variante",
+        "A entrada de espaços vira 'Nome não informado'. Depois a implementação base aceita esse novo texto. A divergência começa na transformação."
+      ]
+    ],
+    "check": [
+      "Qual evidência mostra que a segunda chamada não criou reserva?",
+      "Retorno antecipado de conflito e estado com a única reserva original."
+    ],
+    "group": [
+      "Percorrer reserva válida e conflito na mesma agenda.",
+      "Marcar a linha do retorno e o estado final.",
+      "Trocar papéis e investigar nome somente com espaços na variante."
+    ],
+    "individual": "Rastreie nome válido com H12 numa agenda vazia. Indique recusa, linha responsável e estado.",
+    "answer": "Horário fora do catálogo retorna horario_invalido antes do registro. Agenda continua vazia. Não precisa decorar números de linha; identificar trecho e decisão.",
+    "interventions": [
+      [
+        "Adivinhar pelo nome do método",
+        "Qual entrada você está usando e qual condição foi atendida?"
+      ],
+      [
+        "Continuar após return",
+        "A operação já terminou; quais linhas deixam de ser alcançadas?"
+      ]
+    ],
+    "home": "Completar tabela e comparar referência/variante. Executar quando disponível e identificar evidência manual ou executada."
+  },
+  {
+    "id": "m03a03",
+    "goal": "registrar três commits compreensíveis e distinguir trabalho, preparação e histórico",
+    "materials": "Git preparado antes da aula, pasta nova de exercício, README e simulador; alternativa de observação guiada",
+    "opening": "Salvar um arquivo cria um histórico que explica cada mudança? Vamos distinguir arquivo atual, mudanças selecionadas e versão registrada.",
+    "talk": [
+      [
+        "Três estados",
+        "Diretório de trabalho contém arquivos atuais. A área de preparação seleciona mudanças para o próximo commit. O histórico guarda versões registradas. git status ajuda a observar; git add seleciona; git commit registra. Salvamento sozinho não cria commit."
+      ],
+      [
+        "Diferenças e propósito",
+        "Git diff mostra alterações não preparadas; git diff --staged mostra as preparadas. Antes de registrar, confira o que entrará. Uma mensagem deve comunicar propósito. Separar apresentação, código e melhoria de instrução facilita revisar."
+      ],
+      [
+        "Autoria e limite",
+        "Git funciona localmente; GitHub será estudado na próxima aula. Configure autoria com seus dados escolhidos, sem copiar identidade alheia. Use uma pasta nova de laboratório. Não usaremos comandos de limpeza ou envio forçado para resolver dúvidas."
+      ]
+    ],
+    "visual": "Trabalho → git add → Preparação → git commit → Histórico, com status/diff como observação",
+    "demo": [
+      [
+        "Iniciar e conferir",
+        "Na pasta de exercício, vou executar git init e git status. Estes arquivos ainda precisam ser selecionados para registro."
+      ],
+      [
+        "Registrar apresentação e código",
+        "Adiciono README, confiro diff preparado e faço commit de apresentação. Depois adiciono simulador em outro commit. Cada registro explica uma mudança."
+      ],
+      [
+        "Melhorar instrução",
+        "Edito README, vejo diff e registro terceiro commit. git log --oneline mostra a sequência; os hashes variam entre repositórios."
+      ]
+    ],
+    "check": [
+      "git add já registra uma versão no histórico?",
+      "Não. Ele prepara mudanças; o commit cria o registro no histórico."
+    ],
+    "group": [
+      "Preparar primeiro commit e conferir seleção.",
+      "Trocar revisão antes de registrar o simulador.",
+      "Propor terceiro commit para melhorar instrução."
+    ],
+    "individual": "Produza o terceiro commit ou um registro assistido equivalente. Explique a diferença entre diff comum e preparado e identifique o propósito da mudança.",
+    "answer": "Histórico deve mostrar apresentação, adição do simulador e instrução melhorada. Evidência assistida precisa ser declarada e execução individual concluída depois. Não avaliar igualdade dos hashes.",
+    "interventions": [
+      [
+        "Adicionar tudo sem conferir",
+        "Vamos ler status e diff; quais arquivos deveriam entrar neste registro?"
+      ],
+      [
+        "Commit com mensagem 'coisas'",
+        "Qual problema ou melhoria esta mudança resolve para o leitor?"
+      ]
+    ],
+    "home": "Concluir três commits e guardar evidência de status/log. Se Git não estiver disponível, agendar execução assistida; não registrar simulação como histórico criado."
+  },
+  {
+    "id": "m03a04",
+    "goal": "compartilhar repositório e revisar uma melhoria com evidência",
+    "materials": "GitHub com acesso preparado, histórico local e README; diff local como alternativa temporária",
+    "opening": "Um colega recebeu o link do seu projeto. Ele consegue descobrir o que é, executar e entender uma mudança? Hoje vamos cuidar de compartilhamento e revisão.",
+    "talk": [
+      [
+        "Hospedagem e acesso",
+        "Git mantém histórico; GitHub hospeda e apoia colaboração. Ao criar remoto vazio para histórico local, evitar README automático simplifica o primeiro envio. Conferir conta, URL, branch e visibilidade. Repositório privado precisa estar acessível ao avaliador."
+      ],
+      [
+        "Branch e proposta",
+        "Uma branch permite preparar uma alteração separada. Uma proposta de integração explica problema, mudança e verificação. O colega lê diff e pede evidência; aprovação não substitui conferência. Documento também pode ser revisado."
+      ],
+      [
+        "Publicação e responsabilidade",
+        "Não incluir credenciais ou dados de clientes. Se houver histórico remoto divergente, investigar antes de agir; envio forçado não é solução automática. Quem revisa precisa conseguir localizar instrução e comprovar a afirmação do autor."
+      ]
+    ],
+    "visual": "README → histórico → remoto → branch de melhoria → diff e revisão",
+    "demo": [
+      [
+        "Conferir remoto e branch",
+        "Vou mostrar git branch --show-current e git remote -v. O endereço deve corresponder ao repositório criado, sem marcador literal."
+      ],
+      [
+        "Enviar e examinar",
+        "Após autenticação já preparada, envio a branch e confiro README e commits. Se a conta falhar, uso cópia de diff para manter a revisão e concluo publicação depois."
+      ],
+      [
+        "Propor melhoria",
+        "Crio branch docs/execucao, melhoro instrução e apresento diff. Descrição: problema de pasta atual, caminho esclarecido e evidência de execução."
+      ]
+    ],
+    "check": [
+      "Um link comprova que o avaliador consegue acessar?",
+      "Não; verificar visibilidade ou acesso concedido e abrir os arquivos disponíveis."
+    ],
+    "group": [
+      "Localizar instrução no README do colega.",
+      "Revisar um diff documental e pedir uma evidência.",
+      "Trocar funções e registrar resposta ao feedback."
+    ],
+    "individual": "Escreva descrição de proposta com problema, mudança e verificação. Registre o acesso ao repositório ou a pendência de publicação claramente.",
+    "answer": "Uma revisão útil liga mudança a problema e evidência. Publicação exige URL e acesso; diff local é alternativa de prática, não prova de publicação. Integração deve preservar intenção discutida.",
+    "interventions": [
+      [
+        "Aprovar sem ler",
+        "Qual linha mudou e o que confirma a afirmação do autor?"
+      ],
+      [
+        "Resolver rejeição com envio forçado",
+        "Vamos compreender os históricos e pedir orientação antes de substituir conteúdo remoto."
+      ]
+    ],
+    "home": "Concluir publicação, revisão e entrega do módulo. Pedir que um colega siga somente o README e registrar uma dúvida encontrada."
+  }
+]

@@ -12,7 +12,7 @@ O bônus transforma as entregas em uma narrativa profissional verificável. O ob
 
 Ao final, produzir currículo, proposta de perfil LinkedIn, apresentação pessoal e plano de evolução. Pré-requisito: dossiê do projeto final, com contribuição individual identificada.
 
-[Aula 1 — Currículo, LinkedIn e portfólio](../bonus/aula-01-curriculo-linkedin-e-portfolio.md) e [Aula 2 — Entrevistas e plano de evolução](../bonus/aula-02-entrevistas-e-plano-de-evolucao.md). Sugestão: dois encontros de 120 minutos, com pausa incluída; 30–45 minutos de revisão por encontro.
+[Aula 1 — Currículo, LinkedIn e portfólio](../bonus/aula-01-curriculo-linkedin-e-portfolio.md) e [Aula 2 — Entrevistas e plano de evolução](../bonus/aula-02-entrevistas-e-plano-de-evolucao.md). Formato: dois encontros de até 90 minutos, com pausa incluída; até 3 horas ao vivo. Concluir e revisar os rascunhos depois, usando a gravação do encontro como apoio.
 
 ## Tópico 1 — Mercado, recrutamento e leitura de vagas
 
@@ -128,3 +128,13 @@ O aluno termina com documentos revisáveis, consciência de limites e próximas 
 
 A frequência de candidaturas e estudos deve ser adaptada à disponibilidade e às oportunidades, sem tratar volume como substituto de adequação.
 
+
+
+## Scripts com falas para o professor
+
+Usar o roteiro para planejar, o script para conduzir e este E-book para aprofundar. As falas são apoio adaptável, com exemplos, perguntas, gabaritos e intervenções. O aluno revê a gravação do encontro na plataforma.
+
+- [Aula 1 — script com falas](../bonus/scripts/aula-01-curriculo-linkedin-e-portfolio.md)
+- [Aula 2 — script com falas](../bonus/scripts/aula-02-entrevistas-e-plano-de-evolucao.md)
+
+Planejar inicialmente 30–45 minutos de revisão e conclusão por aula; exercícios técnicos, projeto final e portfólio podem exigir blocos maiores. Combinar essa carga e os prazos com a turma. Não comprimir toda a prática original em 90 minutos.

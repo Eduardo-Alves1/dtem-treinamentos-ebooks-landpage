@@ -1,0 +1,230 @@
+[
+  {
+    "id": "m06a01",
+    "goal": "planejar trabalho usando capacidade disponível e margem explícita",
+    "materials": "quadro com três pessoas, 120 minutos fictícios por pessoa e cartões de tarefas",
+    "opening": "Ter dez tarefas na lista não significa ter tempo para dez tarefas. Hoje vamos transformar disponibilidade em um plano que possa ser explicado e renegociado.",
+    "talk": [
+      [
+        "Projeto e restrições",
+        "Um projeto busca um resultado com limites de prazo, recursos e escopo. Na Agenda Clara, entregar consulta e reserva exige combinar trabalho técnico, esclarecimentos e verificação. Uma lista de desejos ainda não é um plano."
+      ],
+      [
+        "Capacidade",
+        "Neste exercício fictício, três pessoas têm 120 minutos cada: 360 minutos de capacidade bruta. Reservamos 90 para eventos e revisão e 60 de margem. Restam 210 minutos estimados para tarefas. Esses números simulam um time; nosso encontro continua com 90 minutos."
+      ],
+      [
+        "Estimativa e risco",
+        "Estimativa é uma previsão apoiada em hipóteses. Se falta saber como cancelar uma reserva, registre essa dúvida antes de prometer prazo. Margem não autoriza esconder atrasos: torna a incerteza visível."
+      ]
+    ],
+    "visual": "360 − 90 − 60 = 210; cartões com estimativa, dependência e responsável",
+    "demo": [
+      [
+        "Calcular disponibilidade",
+        "Vou somar apenas o tempo que as pessoas realmente têm, sem contar a mesma hora duas vezes."
+      ],
+      [
+        "Selecionar trabalho",
+        "Consulta: 40; reserva: 80; testes: 60. São 180 minutos. Cabem no limite de 210, deixando 30 ainda disponíveis; não vou preencher automaticamente com mais escopo."
+      ],
+      [
+        "Replanejar",
+        "Uma pessoa perdeu 60 minutos. Mantidas as reservas de eventos e margem, temos 150. O plano de 180 não cabe: renegociamos escopo ou disponibilidade, com a decisão registrada."
+      ]
+    ],
+    "check": [
+      "Por que 360 minutos não são todos destinados a implementação?",
+      "Porque eventos, revisão e margem também consomem disponibilidade."
+    ],
+    "group": [
+      "Calcular capacidade líquida do cenário.",
+      "Escolher até três cartões que caibam nela.",
+      "Registrar uma dependência e uma decisão de corte."
+    ],
+    "individual": "O plano ocupa 180 minutos e a capacidade cai para 150. Proponha um ajuste que preserve a verificação do resultado.",
+    "answer": "Reduzir escopo de uma funcionalidade ou adiar item de menor prioridade, recalculando estimativas. Retirar testes sem avaliar risco não resolve o compromisso com qualidade. Aceite alternativas viáveis com hipótese explícita.",
+    "interventions": [
+      [
+        "Preencher toda capacidade",
+        "Quais interrupções foram consideradas? Explique sua margem antes de adicionar trabalho."
+      ],
+      [
+        "Tratar previsão como garantia",
+        "Qual hipótese pode mudar? Registre-a e diga quando revisaremos a previsão."
+      ]
+    ],
+    "home": "Concluir o plano da aula, com responsáveis, dependências, riscos e cenário de indisponibilidade; justificar o que foi adiado."
+  },
+  {
+    "id": "m06a02",
+    "goal": "simular Planning e Daily orientadas por uma meta compartilhada",
+    "materials": "backlog de consulta, reserva, cancelamento e relatório; quadro e papéis",
+    "opening": "Uma reunião útil muda o entendimento ou o plano. Vamos praticar decisões de uma Sprint, sem transformar a conversa em cobrança individual.",
+    "talk": [
+      [
+        "Responsabilidades",
+        "No Scrum, Product Owner cuida de valor e backlog; Scrum Master ajuda a estabelecer o Scrum e a eficácia do time; Developers criam o incremento. QA pode ser uma especialidade entre Developers: não é obrigatoriamente um papel separado no framework."
+      ],
+      [
+        "Planning",
+        "A Planning conversa sobre por que a Sprint vale a pena, o que pode ser feito e como realizar o trabalho. Uma meta como permitir reservar e cancelar horários orienta escolhas. Selecionar todo o backlog sem olhar capacidade deixa a meta frágil."
+      ],
+      [
+        "Daily",
+        "A Daily é um evento de até 15 minutos para Developers inspecionarem progresso rumo à meta e adaptarem o plano. As três perguntas tradicionais são uma opção, não uma obrigação. Aqui faremos uma simulação curta e guardaremos discussões técnicas longas para depois."
+      ]
+    ],
+    "visual": "Meta → seleção coerente → plano; impedimento → impacto → ação",
+    "demo": [
+      [
+        "Criar meta",
+        "Quero que a recepção consiga reservar e cancelar no cenário de estudo. Relatório pode esperar: não é necessário para essa meta."
+      ],
+      [
+        "Selecionar e decompor",
+        "Reserva envolve regra de nome, horário e conflito, além de teste. Vou explicitar o trabalho necessário em vez de chamar tudo de um único botão."
+      ],
+      [
+        "Adaptar após bloqueio",
+        "O ambiente de uma pessoa falhou. Ela pode revisar critérios com outra pessoa enquanto o impedimento é tratado; ajustamos o plano e comunicamos risco, sem fingir que o bloqueio sumiu."
+      ]
+    ],
+    "check": [
+      "A Daily precisa ser uma prestação de contas ao gestor?",
+      "Não. Ela permite ao time inspecionar a meta e adaptar o próprio plano."
+    ],
+    "group": [
+      "Definir uma meta e escolher dois itens coerentes.",
+      "Distribuir papéis e simular Planning em cinco minutos.",
+      "Simular Daily em cinco minutos com um bloqueio e registrar a adaptação."
+    ],
+    "individual": "Escreva uma intervenção de Daily para um teste bloqueado por falta de ambiente.",
+    "answer": "Exemplo: o teste de conflito ainda não foi executado e ameaça a meta de reserva. Vou revisar o caso com a dupla e pedir restauração do ambiente; depois combinaremos a execução. Deve aparecer impacto, ação e acompanhamento.",
+    "interventions": [
+      [
+        "Daily vira relatório de horas",
+        "Que decisão ajudará a atingir a meta hoje?"
+      ],
+      [
+        "PO determina sozinho o plano técnico",
+        "Peça ao time que explique como pode executar e verificar a seleção."
+      ]
+    ],
+    "home": "Completar os registros de Planning e Daily da aula, distinguindo simulação dos eventos de uma Sprint real."
+  },
+  {
+    "id": "m06a03",
+    "goal": "distinguir Review, Retrospectiva e critérios de conclusão",
+    "materials": "item de reserva, feedback fictício da recepção e proposta de Definition of Done",
+    "opening": "Terminar o código, demonstrar valor e melhorar o jeito de trabalhar são conversas diferentes. Vamos separar essas decisões para não aprovar uma entrega incompleta.",
+    "talk": [
+      [
+        "Review",
+        "Na Sprint Review, time e stakeholders inspecionam o resultado e discutem adaptações futuras. Não é apenas apresentação de slides. A recepção pode identificar que cancelar deve devolver o horário à consulta; esse feedback precisa produzir uma decisão."
+      ],
+      [
+        "Retrospectiva",
+        "A Retrospectiva inspeciona como o time trabalhou e busca melhorar sua eficácia. Em vez de culpar uma pessoa pelo retrabalho, investigue quando a regra ficou ambígua e como revisar critérios mais cedo."
+      ],
+      [
+        "Definition of Done",
+        "A Definition of Done descreve condições de qualidade para considerar o incremento concluído. Critérios de aceite são específicos de um item; a DoD estabelece um padrão comum. Um item que não atende à DoD não deve ser apresentado como incremento pronto."
+      ]
+    ],
+    "visual": "Review: resultado e valor; Retro: modo de trabalho; Aceite: item; DoD: padrão comum",
+    "demo": [
+      [
+        "Inspecionar entrega",
+        "A reserva funciona no exemplo feliz, mas o teste de conflito não foi executado. Vou registrar a pendência e evitar a palavra pronto."
+      ],
+      [
+        "Transformar feedback em backlog",
+        "A recepção pediu clareza na mensagem de conflito. Registramos necessidade, contexto e prioridade; o pedido não vira compromisso automático para amanhã."
+      ],
+      [
+        "Criar melhoria verificável",
+        "Na próxima rodada, uma dupla revisará critérios antes de iniciar cada item. Responsável: facilitador da rodada. Medida: itens iniciados com revisão registrada."
+      ]
+    ],
+    "check": [
+      "O critério devolver H10 após cancelamento é DoD ou aceite específico?",
+      "É aceite específico do cancelamento; a DoD pode exigir que critérios aplicáveis sejam verificados."
+    ],
+    "group": [
+      "Classificar quatro comentários como feedback de produto ou de processo.",
+      "Selecionar um feedback para adaptar o backlog.",
+      "Definir uma ação de melhoria com responsável e evidência."
+    ],
+    "individual": "Um item atende ao cenário feliz, mas falta verificação exigida pela DoD. Escreva como apresentá-lo na Review.",
+    "answer": "Apresente-o como trabalho incompleto, explicando o que foi feito e a verificação pendente. Não conte o item como incremento concluído; renegocie o próximo trabalho com transparência.",
+    "interventions": [
+      [
+        "Retro procura culpado",
+        "Que condição do processo permitiu o problema e qual mudança podemos experimentar?"
+      ],
+      [
+        "Pronto significa código escrito",
+        "Quais condições de qualidade foram satisfeitas e onde está a evidência?"
+      ]
+    ],
+    "home": "Completar a DoD e os registros de Review e Retrospectiva; revisar se cada ação possui responsável, prazo e critério observável."
+  },
+  {
+    "id": "m06a04",
+    "goal": "controlar fluxo com política de WIP e comunicar progresso com evidências",
+    "materials": "quadro em papel ou ferramenta disponível, seis cartões e política WIP 2",
+    "opening": "Um quadro só ajuda quando mostra o trabalho real. Hoje vamos usar limites e vínculos para descobrir o que precisa terminar antes de começar mais.",
+    "talk": [
+      [
+        "Fluxo",
+        "Kanban ajuda a visualizar e melhorar o fluxo de trabalho com políticas explícitas. Colunas sozinhas não garantem organização. Defina como um item entra, avança e termina, e como tratar bloqueios."
+      ],
+      [
+        "WIP",
+        "No nosso exercício, o limite é dois itens no conjunto Em andamento e Em verificação. Um item bloqueado continua contando nesse limite. Mover para uma coluna escondida apenas para iniciar mais trabalho mascara a carga."
+      ],
+      [
+        "Medidas e rastreabilidade",
+        "Tempo de ciclo observa o intervalo entre início e término de um item, com fronteiras definidas. Throughput conta itens concluídos em um período. Jira ou Azure DevOps podem registrar isso; papel também permite aprender o raciocínio. Vínculos entre história, teste e defeito dão contexto."
+      ]
+    ],
+    "visual": "Backlog | Em andamento + Em verificação: WIP 2 | Concluído; US02 → TC03 → BUG01",
+    "demo": [
+      [
+        "Explicitar política",
+        "Só entra em andamento um cartão com critério compreendido. Só termina quando sua DoD é atendida."
+      ],
+      [
+        "Respeitar limite",
+        "Temos reserva em andamento e conflito em verificação. São dois itens. Vamos ajudar a verificar antes de puxar cancelamento."
+      ],
+      [
+        "Comunicar decisão",
+        "Meta: reserva confiável. Progresso: consulta verificada. Risco: conflito pendente. Pedido: apoio na reprodução. Essas quatro linhas orientam uma ação."
+      ]
+    ],
+    "check": [
+      "Um item bloqueado libera espaço no WIP definido neste exercício?",
+      "Não. Continua sendo trabalho iniciado e conta no limite."
+    ],
+    "group": [
+      "Montar quadro com quatro cartões e limite explícito.",
+      "Inserir um bloqueio e decidir como ajudar a concluir.",
+      "Vincular uma história a um teste e redigir atualização de quatro linhas."
+    ],
+    "individual": "Dois itens estão iniciados, um bloqueado. Chega um pedido urgente. Registre a decisão sem esconder trabalho.",
+    "answer": "Avaliar urgência e risco, tentar resolver o bloqueio e negociar prioridade. Uma eventual exceção deve ser explícita e justificada; não declarar o bloqueado como concluído para abrir espaço.",
+    "interventions": [
+      [
+        "Ferramenta resolve o processo",
+        "Qual política existe por trás dessa coluna?"
+      ],
+      [
+        "Número de cartões mede produtividade individual",
+        "O que esses itens entregam e quais condições de conclusão foram usadas?"
+      ]
+    ],
+    "home": "Completar o quadro e os vínculos previstos na aula; registrar datas apenas quando observadas e identificar como simulação os dados de fluxo inventados para o exercício."
+  }
+]

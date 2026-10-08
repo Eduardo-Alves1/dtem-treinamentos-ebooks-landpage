@@ -27,7 +27,7 @@ Os roteiros existentes são utilizáveis e não precisam ser descartados. Entret
 1. Manter a ordem dos oito módulos da ementa. Produto antecede a execução integrada no projeto; em QA, usar requisitos fornecidos para não depender de conteúdo ainda não estudado.
 2. Usar o caso fictício Agenda Clara em todos os módulos novos. Seus dados e regras ficam no [caderno do caso](../atividades/caso-agenda-clara.md).
 3. Separar conteúdo para estudo, roteiro de condução e evidência de portfólio. Cada aula nova indica capítulo, objetivo observável, demonstração, prática e correção.
-4. Trabalhar com quatro aulas de 120 minutos por módulo novo, com pausa de 10 minutos incluída. O tempo é proposta pedagógica, não carga comercial confirmada.
+4. Seguir o formato definido para a mentoria: quatro encontros de até 90 minutos por módulo, incluindo pausa de 5 minutos. O script seleciona a prática principal ao vivo; as atividades completas são concluídas depois. São 34 encontros com o bônus; apresentações e recuperação podem exigir encontros adicionais.
 5. Dedicar prática em dupla e prática individual em todas as aulas. Primeiro prever uma resposta, depois observar, explicar e transferir para uma situação nova.
 6. Fornecer rubrica de 0 a 2 por critério, respostas de referência e nova tentativa. Avaliar o raciocínio e a evidência, sem privilegiar quem já conhece ferramentas.
 7. Permitir papel e arquivos Markdown quando não houver conta Jira/Azure DevOps. O objetivo é compreender o fluxo; demonstrações na ferramenta devem usar documentação oficial vigente.

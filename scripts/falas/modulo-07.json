@@ -1,0 +1,230 @@
+[
+  {
+    "id": "m07a01",
+    "goal": "relacionar etapas do ciclo de software e evidências de cada área",
+    "materials": "quadro do ciclo e caso Agenda Clara",
+    "opening": "A entrega atravessa várias áreas. Vamos seguir uma necessidade desde a conversa com a recepção até a revisão do resultado e descobrir onde cada especialidade contribui.",
+    "talk": [
+      [
+        "Ciclo",
+        "Entender, planejar, construir, verificar, disponibilizar e operar são atividades conectadas. Podem ocorrer em ciclos curtos e sobrepostos; não precisam ser departamentos passando documentos sem conversar."
+      ],
+      [
+        "Integração",
+        "Produto esclarece valor; desenvolvimento constrói; QA ajuda a avaliar riscos e qualidade; gestão torna dependências visíveis; infraestrutura apoia ambientes e operação. Essas contribuições não são fronteiras rígidas nem um organograma obrigatório."
+      ],
+      [
+        "Evidência",
+        "Uma regra escrita demonstra uma decisão; um resultado de teste demonstra uma observação sob determinadas condições. Rodar a Agenda Clara localmente não demonstra implantação em produção, uso por clientes ou monitoramento operacional."
+      ]
+    ],
+    "visual": "Necessidade → critérios → construção → verificação → disponibilização → feedback ↺",
+    "demo": [
+      [
+        "Partir do problema",
+        "A recepção sofre com dupla reserva. Vamos registrar usuário, problema e regra antes de escolher a solução."
+      ],
+      [
+        "Conectar artefatos",
+        "A regra de conflito origina critério, implementação e teste. Se um deles muda, precisamos conversar sobre os demais."
+      ],
+      [
+        "Fechar o ciclo",
+        "No laboratório temos observações locais. Operação com clientes é uma etapa simulada no planejamento; vou identificar essa diferença no relatório."
+      ]
+    ],
+    "check": [
+      "Um teste local aprovado comprova operação estável em produção?",
+      "Não. Comprova apenas o cenário observado no ambiente e versão registrados."
+    ],
+    "group": [
+      "Mapear quatro etapas e uma contribuição de área em cada uma.",
+      "Escolher um risco de passagem entre etapas.",
+      "Propor uma conversa que evite retrabalho."
+    ],
+    "individual": "A regra mudou após a implementação. Liste três artefatos que precisam ser revistos e explique por quê.",
+    "answer": "Requisito ou critério, implementação e casos de teste; também podem mudar documentação e plano de entrega. A regra orienta comportamento e verificação, então a atualização deve ser coerente.",
+    "interventions": [
+      [
+        "QA começa só no final",
+        "Que ambiguidade poderia ser descoberta antes de escrever código?"
+      ],
+      [
+        "Simulação vira experiência real",
+        "Descreva o que você executou e o que apenas planejou no exercício."
+      ]
+    ],
+    "home": "Completar o mapa de integração da aula e identificar evidências reais, simulações e pendências por etapa."
+  },
+  {
+    "id": "m07a02",
+    "goal": "rastrear uma mudança entre regra, história, teste e defeito",
+    "materials": "RN03, RN02, RN06; US02, TC03 e BUG01; hipótese de novo H12",
+    "opening": "Quando uma regra muda, como saber o que revisar? Hoje construiremos vínculos que permitem responder sem depender da memória de uma pessoa.",
+    "talk": [
+      [
+        "Rastreabilidade",
+        "Rastrear é relacionar uma necessidade às decisões, à construção e à verificação correspondentes. Não basta criar códigos: é preciso explicar o vínculo e manter a versão dos artefatos."
+      ],
+      [
+        "Impacto",
+        "Adicionar H12 ao catálogo afeta a regra de horários, a consulta, dados de teste e casos que antes tratavam H12 como inválido. Um teste antigo pode reprovar corretamente a versão antiga e ficar desatualizado na nova."
+      ],
+      [
+        "Defeito e reteste",
+        "Um defeito deve apontar comportamento esperado e observado, ambiente e evidência. Depois da correção, reteste verifica o problema original; regressão avalia comportamentos relacionados que poderiam ter sido afetados."
+      ]
+    ],
+    "visual": "Regra → História → Caso de teste → Resultado → Defeito → Reteste; coluna versão",
+    "demo": [
+      [
+        "Vincular conflito",
+        "RN02 diz que não pode haver duas reservas ativas no mesmo horário. US02 contém esse comportamento. Vou localizar o caso de conflito no kit, sem confundi-lo com TC03, que verifica nome com espaços. Cada vínculo precisa corresponder à regra realmente avaliada."
+      ],
+      [
+        "Vincular nome",
+        "BUG01 da variante com defeito aceita espaços. A relação central é RN03, a validação de nome; vou manter o vínculo com o caso que testa esse cenário."
+      ],
+      [
+        "Revisar mudança",
+        "Com H12 válido, o teste de horário inválido precisa usar outro valor fora do catálogo, e o cenário de consulta deve incluir o novo horário."
+      ]
+    ],
+    "check": [
+      "Pode existir um teste correto para uma versão e desatualizado para outra?",
+      "Sim. Registre a versão da regra e atualize dados e expectativas quando houver mudança."
+    ],
+    "group": [
+      "Construir uma linha de rastreabilidade para nome inválido.",
+      "Mapear três impactos de adicionar H12.",
+      "Escolher um reteste e uma regressão para a mudança."
+    ],
+    "individual": "Associe o defeito de cancelamento que não devolve H10 à regra aplicável e ao comportamento esperado.",
+    "answer": "RN06: cancelar reserva ativa deve liberar o horário. O teste deve reservar H10, cancelar o identificador e consultar H10 disponível. BUG02 é um registro fictício fornecido; não afirmar execução dele no código de referência.",
+    "interventions": [
+      [
+        "IDs substituem explicação",
+        "Conte em uma frase qual comportamento conecta esses dois artefatos."
+      ],
+      [
+        "Tudo exige retestar tudo sempre",
+        "Priorize pelo impacto e risco; justifique os cenários escolhidos."
+      ]
+    ],
+    "home": "Concluir a matriz de rastreabilidade da aula, incluindo versões, evidências e análise da alteração de catálogo."
+  },
+  {
+    "id": "m07a03",
+    "goal": "prevenir ambiguidades com revisão antecipada de critérios",
+    "materials": "pedido nome obrigatório e exemplos vazio, espaços, texto e dado não textual",
+    "opening": "Quanto trabalho podemos evitar fazendo uma boa pergunta antes de implementar? Vamos transformar um pedido curto em critérios que diferentes pessoas interpretem da mesma forma.",
+    "talk": [
+      [
+        "Shift-left",
+        "Antecipar atividades de qualidade significa avaliar riscos e ambiguidades mais cedo. Revisar uma regra antes da implementação pode prevenir um defeito; isso não elimina a necessidade de testar o software depois."
+      ],
+      [
+        "Critérios observáveis",
+        "Nome obrigatório ainda deixa dúvidas: espaços contam? Qual mensagem aparece? A agenda muda após rejeição? RN03 exige texto não vazio após remover espaços das extremidades. Precisamos registrar o resultado esperado e preservar estado quando a entrada é rejeitada."
+      ],
+      [
+        "Colaboração",
+        "Produto ajuda a avaliar valor e intenção, desenvolvimento viabilidade e implementação, QA testabilidade e risco. Uma conversa conjunta procura entendimento compartilhado, sem exigir que uma área tenha todas as respostas."
+      ]
+    ],
+    "visual": "Pedido ambíguo → exemplos → decisão → critérios → testes",
+    "demo": [
+      [
+        "Levantar dúvidas",
+        "Vou mostrar nome vazio e três espaços. Pergunto se ambos devem ser rejeitados e qual evidência comprova que nenhum horário foi ocupado."
+      ],
+      [
+        "Registrar decisão",
+        "Vamos escrever: texto que fique vazio após strip é inválido. A rejeição deve manter a disponibilidade anterior."
+      ],
+      [
+        "Preparar verificação",
+        "Seleciono nome normal, espaços e vazio. Dados não textuais exigem definição de contrato; não vou inventar uma regra silenciosamente durante o teste."
+      ]
+    ],
+    "check": [
+      "Revisão antecipada substitui o teste executado?",
+      "Não. Previne ambiguidades; o comportamento implementado ainda precisa ser observado."
+    ],
+    "group": [
+      "Levantar duas dúvidas sobre cancelamento.",
+      "Decidir um exemplo de sucesso e um de falha.",
+      "Escrever critérios e identificar uma pergunta ainda aberta."
+    ],
+    "individual": "Reescreva nome obrigatório em um critério verificável para espaços e diga que estado deve permanecer igual.",
+    "answer": "Dado um horário disponível, quando o nome contém apenas espaços, a reserva é rejeitada por nome inválido e o horário continua disponível. O critério indica entrada, resultado e preservação do estado.",
+    "interventions": [
+      [
+        "Antecipar é só escrever mais documentos",
+        "Qual pergunta neste registro evita uma implementação ambígua?"
+      ],
+      [
+        "QA decide sozinho a regra",
+        "Leve a dúvida às pessoas responsáveis e registre a decisão compartilhada."
+      ]
+    ],
+    "home": "Concluir a revisão antecipada com dúvidas, decisões, exemplos e critérios; preservar perguntas sem resposta como pendências."
+  },
+  {
+    "id": "m07a04",
+    "goal": "tomar uma decisão de liberação baseada em evidências e limitações",
+    "materials": "checklist de release local, resultados de reserva, conflito e cancelamento",
+    "opening": "Hoje vamos decidir se a entrega pode ser demonstrada com segurança no laboratório. Uma decisão profissional explica o que foi verificado, o que falta e como reagir a falhas.",
+    "talk": [
+      [
+        "Deploy e release",
+        "Deploy disponibiliza uma versão em um ambiente; release torna uma funcionalidade disponível ao público pretendido. Podem ocorrer juntos ou separadamente. Executar nosso programa localmente é uma entrega de laboratório, não um deploy de produção comprovado."
+      ],
+      [
+        "Critérios de liberação",
+        "Verifique os fluxos críticos: consulta, reserva válida, conflito, nome inválido e cancelamento. Registre versão, ambiente e resultados. Ausência de evidência não deve aparecer como aprovado."
+      ],
+      [
+        "Operação e recuperação",
+        "Defina sinais de falha e responsáveis. O laboratório guarda estado em memória: reiniciar perde reservas. Isso é limitação conhecida, não uma estratégia universal de rollback nem uma solução de continuidade para uma empresa."
+      ]
+    ],
+    "visual": "Critério | Evidência | Status | Risco | Decisão; liberar / interromper / investigar",
+    "demo": [
+      [
+        "Revisar checklist",
+        "A reserva foi executada, mas o cancelamento está pendente. Vou marcar não executado e avaliar o risco, sem converter pendência em sucesso."
+      ],
+      [
+        "Interromper por risco crítico",
+        "Se duas reservas ativas ocupam o mesmo horário, a necessidade central foi violada. Vamos interromper a liberação e investigar."
+      ],
+      [
+        "Explicar limite",
+        "Na demonstração local, os dados não persistem. A apresentação deve informar isso e não afirmar proteção contra concorrência que o laboratório não implementa."
+      ]
+    ],
+    "check": [
+      "O que fazer se falta resultado de um fluxo crítico?",
+      "Registrar pendência, avaliar risco e obter evidência ou justificar formalmente a decisão; não marcar aprovado."
+    ],
+    "group": [
+      "Revisar quatro itens do checklist.",
+      "Classificar uma falha crítica e uma limitação conhecida.",
+      "Redigir decisão com evidência, responsável e próximo passo."
+    ],
+    "individual": "O teste de conflito falhou e a apresentação começa em dez minutos. Escreva uma decisão de release.",
+    "answer": "Interromper a liberação do comportamento como pronto, informar a falha e demonstrar apenas o que foi verificado, com limitação explícita. Investigar, corrigir e retestar antes de reconsiderar.",
+    "interventions": [
+      [
+        "Rodou significa liberado",
+        "Em qual ambiente, versão e cenário foi observado?"
+      ],
+      [
+        "Reiniciar é rollback completo",
+        "O que acontece com reservas em memória e quais dados precisariam ser recuperados?"
+      ]
+    ],
+    "home": "Completar checklist e plano de operação simulado, distinguindo passos executados dos planejados."
+  }
+]

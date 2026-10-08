@@ -1,6 +1,8 @@
 # ROTEIRO DE AULA - Módulo 1, Aula 2
 
-> **Revisão pedagógica — outubro de 2026:** Ao final, o aluno desenha um fluxo com feedback e mostra contribuições de Produto, Dev e QA antes e depois da construção. Aplicar a atividade 2 do [caderno de prática](../atividades/modulo-01-caderno-de-pratica.md), com entrega, resposta de referência, rubrica e recuperação. Usar essa avaliação explícita para orientar a devolutiva das tarefas deste roteiro. Preservar o tempo de aula já indicado, distribuindo a prática dentro das etapas existentes.
+**Condução com falas prontas:** [script do professor](scripts/modulo-01-aula-02-como-funciona-uma-empresa-tech.md). Seguir a sequência de até 90 minutos. As atividades abaixo formam o caderno completo; o script define o recorte ao vivo e a conclusão em casa. A gravação serve para revisão posterior.
+
+> **Revisão pedagógica — outubro de 2026:** Ao final, o aluno desenha um fluxo com feedback e mostra contribuições de Produto, Dev e QA antes e depois da construção. Aplicar a atividade 2 do [caderno de prática](../atividades/modulo-01-caderno-de-pratica.md), com entrega, resposta de referência, rubrica e recuperação. Usar essa avaliação explícita para orientar a devolutiva das tarefas deste roteiro. Usar o script para distribuir o encontro de até 90 minutos e orientar a conclusão em casa.
 
 # Como Funciona uma Empresa de Tecnologia
 
@@ -21,16 +23,17 @@ Ao final da aula, o aluno deverá conseguir:
 
 # Duração estimada
 
-| Etapa | Tempo |
+| Etapa | Minutos |
 |---|---:|
-| Abertura e revisão da aula anterior | 10 min |
-| Explicação do fluxo de uma empresa tech | 30 min |
-| Papéis e responsabilidades | 35 min |
-| Exemplo corporativo guiado | 25 min |
-| Dinâmica em grupo | 30 min |
-| Exercício individual | 20 min |
-| Perguntas e fechamento | 10 min |
-| Total sugerido | 2h40 |
+| Abertura e diagnóstico | 8 |
+| Conceitos e exemplos | 17 |
+| Demonstração guiada | 20 |
+| Pausa | 5 |
+| Dinâmica em dupla ou grupo | 15 |
+| Exercício individual | 12 |
+| Correção e dúvidas | 8 |
+| Fechamento e orientação da tarefa | 5 |
+| Total | 90 |
 
 ---
 

@@ -1,0 +1,116 @@
+[
+  {
+    "id": "b01",
+    "goal": "redigir apresentação profissional honesta e relacionar requisitos de vaga a evidências",
+    "materials": "uma vaga selecionada com fonte e data, currículo e artefatos do projeto",
+    "opening": "Seu currículo precisa ajudar alguém a entender o que você já consegue demonstrar. Vamos partir de uma vaga e de evidências, sem inventar experiência para preencher espaço.",
+    "talk": [
+      [
+        "Posicionamento",
+        "Escolha uma direção inicial e compare responsabilidades com suas evidências. Uma pessoa em transição pode trazer competências anteriores relevantes, explicando o contexto e sem transformar uma simulação em emprego."
+      ],
+      [
+        "Currículo e ATS",
+        "Sistemas de candidatura variam. Texto claro, seções compreensíveis e termos compatíveis com conhecimentos reais ajudam a comunicação; não existe garantia de aprovação por repetir palavras-chave. Adapte o currículo à vaga preservando a verdade."
+      ],
+      [
+        "LinkedIn e portfólio",
+        "O título apresenta direção e competências demonstráveis. O Sobre conecta trajetória, aprendizado e evidências. Links precisam funcionar e identificar projeto educacional. Publicar é uma decisão do aluno; hoje trabalharemos em rascunhos."
+      ]
+    ],
+    "visual": "Requisito da vaga | evidência atual | lacuna | ação; título / Sobre / projeto",
+    "demo": [
+      [
+        "Analisar requisito",
+        "Se a vaga pede casos de teste, vou apontar o arquivo e explicar um cenário. Se pede uma ferramenta que não usei, marco lacuna em vez de acrescentá-la como domínio."
+      ],
+      [
+        "Redigir projeto",
+        "Projeto educacional Agenda Clara: elaborei critérios, executei cenários locais e registrei defeito reproduzível. A frase identifica contexto e contribuição sem simular vínculo empregatício."
+      ],
+      [
+        "Revisar apresentação",
+        "Um título como Em transição para QA | estudos de testes e projeto educacional é uma opção a adaptar. No Sobre, descreva ações concretas e direcione ao artefato acessível."
+      ]
+    ],
+    "check": [
+      "Uma palavra-chave da vaga deve entrar no currículo sem evidência de conhecimento?",
+      "Não. Pode virar lacuna no plano de estudo; no currículo, represente honestamente o nível demonstrável."
+    ],
+    "group": [
+      "Comparar um requisito de uma vaga à evidência da dupla.",
+      "Revisar um parágrafo de projeto sem números inventados.",
+      "Checar clareza de um título e acesso a um link."
+    ],
+    "individual": "Escreva três linhas sobre sua contribuição na Agenda Clara, indicando contexto, ação e evidência.",
+    "answer": "Uma resposta adequada declara projeto educacional, especifica contribuição pessoal e aponta um artefato existente. Exemplo: no estudo Agenda Clara, escrevi o caso de conflito e registrei a execução local; o caso e resultado estão no dossiê.",
+    "interventions": [
+      [
+        "Projeto vira cargo de empresa",
+        "Qual era o contexto real? Use projeto educacional e descreva sua contribuição."
+      ],
+      [
+        "Prometer passar no ATS",
+        "Podemos melhorar clareza e aderência verdadeira; não prever a decisão de qualquer sistema ou recrutador."
+      ]
+    ],
+    "home": "Completar a matriz com três vagas reais com fonte e data, ou exemplos explicitamente fictícios; revisar currículo, título, Sobre e links. Publicação fica a critério do aluno."
+  },
+  {
+    "id": "b02",
+    "goal": "responder a entrevista com evidências e planejar evolução observável",
+    "materials": "pitch de 60 segundos, roteiro de perguntas e plano de quatro semanas",
+    "opening": "Entrevista não exige uma trajetória inventada. Vamos praticar como explicar o que você fez, reconhecer o que ainda não sabe e mostrar como aprende.",
+    "talk": [
+      [
+        "Apresentação",
+        "Em sessenta segundos, conecte trajetória, direção atual, uma contribuição verificável e o tipo de oportunidade buscada. Evite listar tudo que estudou sem explicar o que consegue demonstrar."
+      ],
+      [
+        "Respostas com contexto",
+        "STAR organiza situação, tarefa, ação e resultado em perguntas comportamentais. É apoio para clareza, não um texto decorado. No projeto educacional, resultado pode ser um artefato ou observação técnica; não precisa virar economia fictícia para uma empresa."
+      ],
+      [
+        "Evolução",
+        "Um plano de quatro semanas precisa de entregas e critérios. Assistir vídeos é uma atividade; explicar um caso, executar um teste e revisar um relatório são evidências de aprendizado. Ajuste a carga à disponibilidade real."
+      ]
+    ],
+    "visual": "Contexto → contribuição → evidência → limite; lacuna → ação → artefato → critério",
+    "demo": [
+      [
+        "Responder sobre conflito",
+        "No laboratório, preparei uma agenda nova, reservei H10 e tentei repetir a reserva. Observei rejeição e comparei o estado. Explico a versão e não afirmo que testei concorrência real."
+      ],
+      [
+        "Responder sobre dificuldade",
+        "Eu confundia cancelamento com remoção de horário. Revisei RN06, desenhei o estado e refiz o caso. O resultado foi um critério mais preciso, não um ganho comercial inventado."
+      ],
+      [
+        "Construir plano",
+        "Semana um: revisar critérios; duas: executar três casos; três: redigir relatório; quatro: apresentar evidências. Em cada semana, definimos um artefato e como será revisado."
+      ]
+    ],
+    "check": [
+      "Como responder sobre uma ferramenta que você ainda não usou?",
+      "Dizer o que conhece, reconhecer o limite e explicar uma ação concreta para aprender; não declarar experiência inexistente."
+    ],
+    "group": [
+      "Entrevistar a dupla por cinco minutos com uma pergunta técnica e uma comportamental.",
+      "Trocar papéis por cinco minutos.",
+      "Usar três minutos para feedback de clareza, evidência e honestidade, e dois para registrar melhoria."
+    ],
+    "individual": "Escolha uma lacuna e escreva ação, artefato e critério verificável para a próxima semana.",
+    "answer": "Exemplo: lacuna em critérios de rejeição; ação revisar RN03 e executar dois cenários; artefato casos com resultados; critério apresentar esperado, observado e estado sem alteração. Aceite planos viáveis com evidência equivalente.",
+    "interventions": [
+      [
+        "Decorar resposta sem entender",
+        "Se eu mudar o horário do exemplo, você consegue explicar o resultado e por quê?"
+      ],
+      [
+        "Resultado exige número impressionante",
+        "Qual observação você consegue comprovar? Uma melhora no artefato também pode ser um resultado."
+      ]
+    ],
+    "home": "Concluir respostas técnicas e comportamentais previstas no roteiro, revisar o pitch e finalizar o plano de quatro semanas com disponibilidade, entregas e revisão."
+  }
+]

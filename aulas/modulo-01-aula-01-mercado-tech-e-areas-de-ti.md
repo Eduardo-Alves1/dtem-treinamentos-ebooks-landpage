@@ -1,6 +1,8 @@
 # ROTEIRO DE AULA - Módulo 1, Aula 1
 
-> **Revisão pedagógica — outubro de 2026:** Ao final, o aluno relaciona seis áreas a responsabilidades e artefatos; distingue interesse pessoal de competência demonstrada. Aplicar a atividade 1 do [caderno de prática](../atividades/modulo-01-caderno-de-pratica.md), com entrega, resposta de referência, rubrica e recuperação. Usar essa avaliação explícita para orientar a devolutiva das tarefas deste roteiro. Preservar o tempo de aula já indicado, distribuindo a prática dentro das etapas existentes.
+**Condução com falas prontas:** [script do professor](scripts/modulo-01-aula-01-mercado-tech-e-areas-de-ti.md). Seguir a sequência de até 90 minutos. As atividades abaixo formam o caderno completo; o script define o recorte ao vivo e a conclusão em casa. A gravação serve para revisão posterior.
+
+> **Revisão pedagógica — outubro de 2026:** Ao final, o aluno relaciona seis áreas a responsabilidades e artefatos; distingue interesse pessoal de competência demonstrada. Aplicar a atividade 1 do [caderno de prática](../atividades/modulo-01-caderno-de-pratica.md), com entrega, resposta de referência, rubrica e recuperação. Usar essa avaliação explícita para orientar a devolutiva das tarefas deste roteiro. Usar o script para distribuir o encontro de até 90 minutos e orientar a conclusão em casa.
 
 # Mercado Tech e Principais Áreas de TI
 
@@ -21,16 +23,17 @@ Ao final da aula, o aluno deverá conseguir:
 
 # Duração estimada
 
-| Etapa | Tempo |
+| Etapa | Minutos |
 |---|---:|
-| Abertura e quebra-gelo | 10 min |
-| Contextualização do mercado tech | 20 min |
-| Explicação das principais áreas | 35 min |
-| Exemplos reais e cenário corporativo | 20 min |
-| Dinâmica em grupo | 25 min |
-| Exercício individual | 20 min |
-| Perguntas e fechamento | 10 min |
-| Total sugerido | 2h20 |
+| Abertura e diagnóstico | 8 |
+| Conceitos e exemplos | 17 |
+| Demonstração guiada | 20 |
+| Pausa | 5 |
+| Dinâmica em dupla ou grupo | 15 |
+| Exercício individual | 12 |
+| Correção e dúvidas | 8 |
+| Fechamento e orientação da tarefa | 5 |
+| Total | 90 |
 
 ---
 

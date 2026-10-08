@@ -36,7 +36,7 @@ A empresa fictícia tem conflitos de agenda. O MVP consulta, reserva e cancela; 
 | 3 | [Testes e defeitos](../aulas/modulo-08-aula-03-testes-e-defeitos.md) | 3 |
 | 4 | [Release e apresentação](../aulas/modulo-08-aula-04-release-e-apresentacao.md) | 4 |
 
-**Duração sugerida:** quatro aulas de 120 minutos, com pausa de 10 minutos por encontro: 8 horas por módulo. Reservar 30–45 minutos de revisão por aula e 60–90 minutos para organizar a entrega. Esta é uma proposta pedagógica, não uma carga comercial confirmada. Usar papel ou Markdown quando uma ferramenta estiver indisponível, completando posteriormente a evidência de execução exigida.
+**Duração sugerida:** quatro encontros de até 90 minutos, incluindo pausa de 5 minutos: até 6 horas ao vivo. O script delimita a prática do encontro; o restante do caderno é concluído depois. Usar papel ou Markdown se uma ferramenta estiver indisponível, identificando a simulação e concluindo posteriormente a execução exigida.
 
 ## Tópico 1 — Problema, escopo e requisitos do projeto
 
@@ -525,3 +525,15 @@ O professor verifica: coerência entre regra e teste; oito casos executados; BUG
 
 **Exemplo de frase para portfólio:** “Projeto educacional Agenda Clara: elaborei critérios de reserva, executei testes sequenciais e documentei uma divergência simulada de validação. O laboratório usa Python e estado em memória; não implementei serviço de produção.”
 
+
+
+## Scripts com falas para o professor
+
+Usar o roteiro para planejar, o script para conduzir e este E-book para aprofundar. As falas são apoio adaptável, com exemplos, perguntas, gabaritos e intervenções. O aluno revê a gravação do encontro na plataforma.
+
+- [Aula 1 — script com falas](../aulas/scripts/modulo-08-aula-01-kickoff-e-requisitos.md)
+- [Aula 2 — script com falas](../aulas/scripts/modulo-08-aula-02-sprint-e-execucao.md)
+- [Aula 3 — script com falas](../aulas/scripts/modulo-08-aula-03-testes-e-defeitos.md)
+- [Aula 4 — script com falas](../aulas/scripts/modulo-08-aula-04-release-e-apresentacao.md)
+
+Planejar inicialmente 30–45 minutos de revisão e conclusão por aula; exercícios técnicos, projeto final e portfólio podem exigir blocos maiores. Combinar essa carga e os prazos com a turma. Não comprimir toda a prática original em 90 minutos.

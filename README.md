@@ -4,6 +4,8 @@
 
 Acesse o [índice de E-books, aulas e entregas](planejamento/trilha-e-indice.md), a [análise pedagógica](planejamento/analise-pedagogica.md) e o [caso contínuo Agenda Clara](atividades/caso-agenda-clara.md). Os módulos 2 a 8 têm quatro roteiros cada; o Módulo 1 recebeu critérios de prática e avaliação; o bônus inclui duas aulas de carreira. Todos os materiais finais estão em Markdown.
 
+As **34 aulas** possuem [scripts com falas do professor](planejamento/scripts-do-professor.md), com sequência de até 90 minutos, demonstrações, perguntas, respostas esperadas e tarefas. As gravações são dos encontros ao vivo e servem para revisão na plataforma.
+
 Bem-vindo ao repositório oficial da estrutura educacional da **DTEM Treinamentos**.
 
 Este projeto foi criado para estruturar, automatizar e escalar a criação de materiais didáticos premium voltados para formação inicial em tecnologia.
