@@ -1,5 +1,7 @@
 # ROTEIRO DE AULA - Módulo 1, Aula 1
 
+> **Revisão pedagógica — outubro de 2026:** Ao final, o aluno relaciona seis áreas a responsabilidades e artefatos; distingue interesse pessoal de competência demonstrada. Aplicar a atividade 1 do [caderno de prática](../atividades/modulo-01-caderno-de-pratica.md), com entrega, resposta de referência, rubrica e recuperação. Usar essa avaliação explícita para orientar a devolutiva das tarefas deste roteiro. Preservar o tempo de aula já indicado, distribuindo a prática dentro das etapas existentes.
+
 # Mercado Tech e Principais Áreas de TI
 
 ---

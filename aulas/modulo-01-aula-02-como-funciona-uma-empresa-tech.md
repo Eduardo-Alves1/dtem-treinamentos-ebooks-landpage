@@ -1,5 +1,7 @@
 # ROTEIRO DE AULA - Módulo 1, Aula 2
 
+> **Revisão pedagógica — outubro de 2026:** Ao final, o aluno desenha um fluxo com feedback e mostra contribuições de Produto, Dev e QA antes e depois da construção. Aplicar a atividade 2 do [caderno de prática](../atividades/modulo-01-caderno-de-pratica.md), com entrega, resposta de referência, rubrica e recuperação. Usar essa avaliação explícita para orientar a devolutiva das tarefas deste roteiro. Preservar o tempo de aula já indicado, distribuindo a prática dentro das etapas existentes.
+
 # Como Funciona uma Empresa de Tecnologia
 
 ---
@@ -136,6 +138,8 @@ Esses elementos ajudam o time a saber o que precisa ser feito, por que precisa s
 flowchart LR
     A[Problema do usuário] --> B[Produto entende a necessidade]
     B --> C[Time define solução]
+    Q[QA contribui com exemplos e riscos] -.-> B
+    Q -.-> C
     C --> D[Desenvolvimento constrói]
     D --> E[QA testa]
     E --> F[Deploy]

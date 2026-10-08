@@ -1,5 +1,15 @@
 # Módulo 1 — Fundamentos da Tecnologia
 
+> **Revisão pedagógica — outubro de 2026:** este E-book conta com um [caderno de prática e avaliação](../atividades/modulo-01-caderno-de-pratica.md). Ele complementa os exercícios abaixo com entregas verificáveis, respostas comentadas, rubrica e recuperação. Consulte também o [índice da formação](../planejamento/trilha-e-indice.md).
+
+## Contrato de aprendizagem e conexão com a trilha
+
+Ao concluir, o aluno explica seis áreas e seus artefatos, diferencia interface/regra/API/armazenamento, desenha um fluxo com feedback e aplica os quatro pilares do pensamento computacional. Evidência: quatro atividades e mapa mental com três conexões explicadas. O mapa deve demonstrar compreensão; estética não substitui clareza.
+
+As próximas práticas usam o [caso Agenda Clara](../atividades/caso-agenda-clara.md), empresa e dados fictícios. Exemplos de aplicativos e organizações neste material são aplicações ilustrativas; não descrevem processos internos verificados de marcas. Termos de vagas servem como vocabulário; pesquisas feitas pelo aluno devem indicar link e data.
+
+Qualidade é responsabilidade compartilhada. QA participa desde a revisão de requisitos e continua contribuindo após a construção. Um fluxo simplificado que coloca testes depois de código não significa que a contribuição de QA começa apenas no final.
+
 ## DTEM Treinamentos — Formação Inicial para Carreira em Tecnologia
 
 ### A base que transforma curiosidade em visão de mercado
@@ -158,7 +168,7 @@ As áreas mais comuns em empresas tech são organizadas por especialidade e resp
 | Área | Foco principal | Exemplo de responsabilidade |
 |---|---|---|
 | Desenvolvimento | Construir funcionalidades | Implementar tela, regra de negócio e integração |
-| QA | Garantir qualidade | Testar fluxos, validar correções e reportar bugs |
+| QA | Contribuir para qualidade compartilhada | Revisar regras, testar fluxos e reportar bugs |
 | Produto | Entender problema e priorizar solução | Criar requisitos, histórias e critérios de aceite |
 | Dados | Medir e gerar inteligência | Analisar métricas e apoiar decisões |
 | Infraestrutura | Sustentar ambiente e entrega | Hospedagem, deploy, monitoramento e estabilidade |
@@ -660,7 +670,9 @@ A empresa quer lançar agendamento online. Para isso, precisa de:
 ```mermaid
 flowchart LR
     Cliente[Cliente ou mercado] --> Produto[Produto identifica a necessidade]
+    Qualidade[Exemplos e riscos discutidos com QA] -.-> Produto
     Produto --> Planejamento[Planejamento e priorizacao]
+    Qualidade -.-> Planejamento
     Planejamento --> Dev[Desenvolvimento]
     Dev --> QA[QA valida]
     QA --> Deploy[Publicacao]
@@ -699,7 +711,9 @@ flowchart TD
 ```mermaid
 flowchart TD
     N[Necessidade do negocio] --> PO[Produto]
+    PREV[Qualidade compartilhada desde requisitos] -.-> PO
     PO --> DEV[Desenvolvimento]
+    PREV -.-> DEV
     DEV --> QA[Qualidade]
     QA --> INFRA[Infraestrutura]
     INFRA --> CLIENTE[Entrega ao cliente]
@@ -918,7 +932,7 @@ Dê um cenário simples, como "criar uma funcionalidade de agendamento", e peça
 
 | Dúvida | Explicação de apoio |
 |---|---|
-| Preciso saber programar para entrar em tecnologia? | Não necessariamente. Existem áreas como QA, Produto e Gestão que podem ser porta de entrada, embora entender lógica e contexto técnico ajude muito. |
+| Preciso saber programar para entrar em tecnologia? | As exigências variam por função. QA, Produto e Gestão requerem práticas e níveis de experiência diferentes; lógica e contexto técnico ajudam a explorar essas possibilidades. |
 | API é a mesma coisa que banco de dados? | Não. API comunica; banco de dados armazena. |
 | Front-end é menos técnico que back-end? | Não. São especialidades diferentes com desafios distintos. |
 | Pensamento computacional serve só para quem programa? | Não. Ele ajuda qualquer profissional a organizar raciocínio e resolver problemas. |

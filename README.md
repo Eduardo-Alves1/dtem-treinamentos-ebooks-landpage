@@ -1,5 +1,9 @@
 # 🚀 DTEM TREINAMENTOS — Formação Inicial para Carreira em Tecnologia
 
+## Materiais da formação
+
+Acesse o [índice de E-books, aulas e entregas](planejamento/trilha-e-indice.md), a [análise pedagógica](planejamento/analise-pedagogica.md) e o [caso contínuo Agenda Clara](atividades/caso-agenda-clara.md). Os módulos 2 a 8 têm quatro roteiros cada; o Módulo 1 recebeu critérios de prática e avaliação; o bônus inclui duas aulas de carreira. Todos os materiais finais estão em Markdown.
+
 Bem-vindo ao repositório oficial da estrutura educacional da **DTEM Treinamentos**.
 
 Este projeto foi criado para estruturar, automatizar e escalar a criação de materiais didáticos premium voltados para formação inicial em tecnologia.

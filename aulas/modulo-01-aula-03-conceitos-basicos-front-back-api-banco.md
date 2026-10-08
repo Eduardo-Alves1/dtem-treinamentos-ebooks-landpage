@@ -1,5 +1,7 @@
 # ROTEIRO DE AULA - Módulo 1, Aula 3
 
+> **Revisão pedagógica — outubro de 2026:** Ao final, o aluno diferencia interface, regra, API e armazenamento e identifica o que é observação e o que é hipótese. Aplicar a atividade 3 do [caderno de prática](../atividades/modulo-01-caderno-de-pratica.md), com entrega, resposta de referência, rubrica e recuperação. Usar essa avaliação explícita para orientar a devolutiva das tarefas deste roteiro. Preservar o tempo de aula já indicado, distribuindo a prática dentro das etapas existentes.
+
 # Conceitos Básicos: Front-end, Back-end, APIs e Banco de Dados
 
 ---
