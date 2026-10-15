@@ -12,7 +12,7 @@ O bônus transforma as entregas em uma narrativa profissional verificável. O ob
 
 Ao final, produzir currículo, proposta de perfil LinkedIn, apresentação pessoal e plano de evolução. Pré-requisito: dossiê do projeto final, com contribuição individual identificada.
 
-[Aula 1 — Currículo, LinkedIn e portfólio](../bonus/aula-01-curriculo-linkedin-e-portfolio.md) e [Aula 2 — Entrevistas e plano de evolução](../bonus/aula-02-entrevistas-e-plano-de-evolucao.md). Formato: dois encontros de até 90 minutos, com pausa incluída; até 3 horas ao vivo. Concluir e revisar os rascunhos depois, usando a gravação do encontro como apoio.
+Este bônus complementa a formação com atividades de currículo, LinkedIn, portfólio, entrevistas e plano de evolução. Use as aulas e a gravação como apoio para revisar os rascunhos.
 
 ## Tópico 1 — Mercado, recrutamento e leitura de vagas
 
@@ -111,9 +111,7 @@ Desafio: um avaliador pede experiência de produção que você não tem. Respon
 
 Entrega: matriz de três vagas, currículo, headline, Sobre, link de projeto, pitch, três respostas e plano. Aplicar [rubrica da formação](../planejamento/analise-pedagogica.md). Revisar se houver afirmação não sustentada por artefato.
 
-## Guia do professor e resumo do aluno
-
-Conduzir as duas aulas com revisão em dupla e defesa individual. Não avaliar número de contatos ou publicações. Evitar fórmulas de “burlar ATS”; conferir clareza e verdade das evidências. No feedback, apontar uma frase vaga e pedir um exemplo concreto.
+## Resumo final para o aluno
 
 O aluno termina com documentos revisáveis, consciência de limites e próximas práticas. A qualidade da apresentação depende da capacidade de explicar o que realizou.
 
@@ -127,14 +125,3 @@ O aluno termina com documentos revisáveis, consciência de limites e próximas 
 | 4 | Simular entrevista | Respostas revisadas e próxima lacuna |
 
 A frequência de candidaturas e estudos deve ser adaptada à disponibilidade e às oportunidades, sem tratar volume como substituto de adequação.
-
-
-
-## Scripts com falas para o professor
-
-Usar o roteiro para planejar, o script para conduzir e este E-book para aprofundar. As falas são apoio adaptável, com exemplos, perguntas, gabaritos e intervenções. O aluno revê a gravação do encontro na plataforma.
-
-- [Aula 1 — script com falas](../bonus/scripts/aula-01-curriculo-linkedin-e-portfolio.md)
-- [Aula 2 — script com falas](../bonus/scripts/aula-02-entrevistas-e-plano-de-evolucao.md)
-
-Planejar inicialmente 30–45 minutos de revisão e conclusão por aula; exercícios técnicos, projeto final e portfólio podem exigir blocos maiores. Combinar essa carga e os prazos com a turma. Não comprimir toda a prática original em 90 minutos.
