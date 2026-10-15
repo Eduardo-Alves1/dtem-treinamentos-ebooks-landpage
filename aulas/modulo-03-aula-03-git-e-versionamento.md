@@ -1,130 +1,126 @@
-# Roteiro de aula — Módulo 3, Aula 3
+# Roteiro de Aula — Módulo 3, Aula 3
 
-**Condução com falas prontas:** [script do professor](scripts/modulo-03-aula-03-git-e-versionamento.md). Seguir a sequência de até 90 minutos. As atividades abaixo formam o caderno completo; o script define o recorte ao vivo e a conclusão em casa. A gravação serve para revisão posterior.
+# Git e Histórico Local
 
-## Tema e objetivo da aula
+> **Papel deste documento:** definir o que será ensinado, praticado e avaliado.  
+> A condução minuto a minuto, falas sugeridas, respostas esperadas e intervenções ficam no [script do professor](scripts/modulo-03-aula-03-git-e-versionamento.md).
 
-**Tema:** Git e histórico local.
+## Objetivo da aula
 
-**Objetivo observável:** ao final, cada aluno produzirá e explicará: Criar três commits locais com intenção clara.. A explicação deve citar a regra, a entrada ou premissa e o resultado; o professor pode conferir o artefato sem depender de memória da apresentação.
+Ensinar versionamento local com Git, distinguindo diretório de trabalho, área de preparação e histórico de commits.
 
-**Leitura:** [E-book do módulo](../ebooks/modulo-03-introducao-ao-desenvolvimento-de-software.md), tópicos 3. **Pré-requisito:** entrega ou revisão da aula anterior; retomar qualquer lacuna com um exemplo simples.
+Ao final, o aluno deverá conseguir:
 
-## Duração sugerida
+- explicar por que salvar arquivo não é versionar
+- usar `git status`, `add`, `diff` e `commit`
+- criar commits com intenção clara
+- ler um histórico simples
+- separar mudanças de propósitos diferentes
 
-| Etapa | Minutos |
+## Conteúdos e conceitos
+
+### Estados do Git
+- working tree
+- staging area
+- commit
+
+### Diff e intenção
+- ver mudança
+- preparar mudança
+- mensagem explica propósito
+
+### Histórico
+- commit é registro
+- hash identifica
+- mensagem não substitui conteúdo
+
+## Duração e blocos
+
+| Bloco | Tempo previsto |
 |---|---:|
-| Abertura e diagnóstico | 8 |
-| Conceitos e exemplos | 17 |
-| Demonstração guiada | 20 |
-| Pausa | 5 |
-| Dinâmica em dupla ou grupo | 15 |
-| Exercício individual | 12 |
-| Correção e dúvidas | 8 |
-| Fechamento e orientação da tarefa | 5 |
-| Total | 90 |
-
-Se a turma precisar de mais tempo, reduza a extensão da variação, preserve a prática individual e conclua a revisão na aula seguinte.
+| Abertura e diagnóstico | 8 min |
+| Conceitos e exemplos | 17 min |
+| Demonstração guiada | 20 min |
+| Pausa | 5 min |
+| Dinâmica em dupla ou grupo | 15 min |
+| Exercício individual | 12 min |
+| Correção e dúvidas | 8 min |
+| Fechamento e tarefa | 5 min |
+| **Total** | **90 min** |
 
 ## Materiais necessários
 
-E-book, [caderno do caso](../atividades/caso-agenda-clara.md), editor de Markdown ou folha com tabela, quadro e acesso ao [simulador](../portfolio/agenda-clara/README.md). Para código: Python 3. Para versionamento: Git e, quando houver publicação, conta GitHub. Jira/Azure DevOps são opcionais e podem ser representados por cartões. Teste os recursos antes da aula e prepare uma cópia de saída para discussão se houver indisponibilidade.
+- E-book do Módulo 3
+- Git instalado
+- pasta de laboratório
+- terminal
 
-## Abertura da aula — 8 minutos
+## Exemplos planejados
 
-Apresente a situação Agenda Clara e pergunte: “O arquivo salvo já pertence a um commit?” Dê dois minutos para cada aluno escrever sua previsão. Recolha duas respostas distintas e identifique a evidência que seria necessária para decidir. Retome um conceito da aula anterior e explique a entrega de hoje em linguagem simples.
+### Exemplo 1
+README criado em um commit.
 
-## Explicação teórica e exemplos práticos — 17 minutos
+### Exemplo 2
+Código adicionado em outro.
 
-### Git e versionamento local
+### Exemplo 3
+Correção de instrução separada de alteração funcional.
 
-**Conceito:** Git mantém histórico de mudanças selecionadas em um repositório.
+## Demonstração planejada — Criar três commits locais com intenção clara
 
-**Explicação simples para falar à turma:** Salvar um arquivo muda seu conteúdo. Criar um commit registra uma versão que podemos identificar e comparar.
+1. Inicializar repositório.
+2. Conferir status.
+3. Criar commit de apresentação/README.
+4. Criar commit do simulador.
+5. Criar commit de melhoria de documentação.
+6. Ler log e diffs.
 
-**Aprofundamento necessário:** O diretório de trabalho contém seus arquivos; a área de preparação reúne o que entrará no próximo commit; o histórico guarda os commits. Execute git status para observar, git add para selecionar e git commit para registrar. git diff mostra mudanças ainda não preparadas; git diff --staged mostra as preparadas. git log --oneline ajuda a localizar versões. Um arquivo não rastreado ainda não pertence ao histórico. Faça tudo em uma pasta de exercício, sem usar operações destrutivas de limpeza. Configure identidade de autor conforme a preferência de privacidade da conta.
+**Resultado pedagógico esperado:** o aluno enxerga o ciclo editar → revisar → preparar → registrar.
 
-**Exemplo cotidiano:** Um texto sem histórico permite ver apenas a versão atual; com commits podemos explicar a evolução da regra.
+## Dinâmica em grupo — Organize o histórico
 
-**Situação de empresa:** Dev registra a correção de RN03 separadamente da reformatação do README, permitindo revisão focada.
+**Cenário:** A dupla recebe um conjunto de mudanças misturadas em README e código.
 
-**Alerta didático:** Usar git add . sem inspecionar; registrar credenciais; mensagens como “coisas”. Oriente: Verificar status e diff, selecionar arquivos explicitamente e escrever propósito no commit.
+1. Separar as mudanças por intenção.
+2. Escolher o que seria preparado primeiro.
+3. Propor mensagens de commit.
+4. Revisar se cada commit conta uma ideia.
 
-Após cada conceito, peça ao aluno um exemplo com suas próprias palavras. Corrija uma generalização usando a regra do caso, sem antecipar todos os resultados.
+**Entrega esperada:** plano de commits + evidência de status/diff
 
-## Demonstração guiada — 17 minutos
+**Critérios:** intenção clara; mudanças coerentes por commit; uso correto de status/diff.
 
-O professor modela a primeira atividade, pensando em voz alta. Se houver dois temas, faça uma passagem curta pelo segundo e deixe a resolução completa para a prática.
+## Exercício individual
 
-**Demonstração 1: Criar três commits locais com intenção clara.**
+Faça ou simule um terceiro commit de melhoria de documentação. Mostre o estado antes, o que foi preparado e a mensagem final. Explique a diferença entre `git diff` e `git diff --staged`.
 
-1. Crie uma pasta de laboratório e copie README e agenda_clara.py.
-2. Execute git init e git status.
-3. Adicione README e faça o primeiro commit.
-4. Adicione simulador em outro commit; melhore a instrução de execução no terceiro.
-5. Leia git log --oneline e explique cada versão.
+**Entrega:** registro do commit ou evidência equivalente
 
-**Resultado de referência:** Histórico esperado: apresentar projeto; adicionar simulador de reservas; esclarecer execução. Os hashes variam. O importante é que cada commit tenha mudança verificável e mensagem coerente.
+**Critérios:** estado conferido; mudança preparada conscientemente; mensagem coerente; diferença entre diffs explicada.
 
-Antes de revelar o resultado, pare e peça uma previsão. Depois, marque no quadro qual passo sustenta a resposta. Se a saída diferir, registre e investigue a entrada ou estado em vez de ajustar a resposta verbalmente.
+## Perguntas de verificação
 
-## Dinâmica em grupo — 20 minutos
+- Salvar um arquivo cria uma versão no Git?
+- Para que serve a staging area?
+- Um commit deve ser grande ou pequeno?
 
-**Nome:** Revisão cruzada — Git e histórico local.
+> As respostas esperadas e intervenções ficam exclusivamente no script do professor.
 
-**Contexto profissional:** o time precisa verificar uma decisão antes de entregar uma versão. Em duplas, uma pessoa produz e outra revisa; na metade do tempo, troquem os papéis. Em aula remota, usar salas ou comentários no documento. Em grupo maior, designar também uma pessoa para registrar decisões.
+## Tarefa para casa
 
-1. Em 2 minutos, ler o recorte do enunciado no script e identificar a regra ou premissa.
-2. Em 5 minutos, executar o recorte principal e registrar o resultado.
-3. Em 5 minutos, trocar funções e revisar uma evidência, uma lacuna e uma correção.
-4. Em 3 minutos, selecionar duas duplas para apresentar; recolher as demais por escrito.
+1. Revisar os commits.
+2. Corrigir mensagens se necessário em um laboratório descartável.
+3. Registrar `git log --oneline`.
+4. Entregar `m03-aula-03-revisao.md`.
 
-**Atividade 1 — Criar três commits locais com intenção clara.**
+**Entrega:** histórico local com explicação das intenções
 
-1. Crie uma pasta de laboratório e copie README e agenda_clara.py.
-2. Execute git init e git status.
-3. Adicione README e faça o primeiro commit.
-4. Adicione simulador em outro commit; melhore a instrução de execução no terceiro.
-5. Leia git log --oneline e explique cada versão.
+## Conexão com a trilha
 
-**Entrega:** tabela, algoritmo, documento ou registro de execução conforme o enunciado, com regra, resultado e justificativa. **Critérios:** cumprir as etapas e permitir conferência por outra pessoa. **Dica:** faça uma previsão antes de consultar a resposta. **Variação mais difícil:** O arquivo salvo já pertence a um commit?
+A Aula 4 leva o histórico local para o GitHub e introduz publicação, branch e revisão colaborativa.
 
-## Exercício individual — 12 minutos
+## Referências
 
-Cada aluno refaz a parte principal das atividades usando uma entrada nova ou uma decisão alternativa. Escreve o resultado esperado, a evidência e a razão. Não precisa reproduzir toda a entrega da dupla, mas deve demonstrar entendimento próprio.
-
-**Enunciado de transferência:** O arquivo salvo já pertence a um commit? Use uma regra do caso para responder e inclua um contraexemplo ou uma limitação.
-
-**Critérios:** correção, completude, evidência e justificativa. Aplicar a [rubrica do E-book](../ebooks/modulo-03-introducao-ao-desenvolvimento-de-software.md). Se o aluno não conseguir começar, forneça a primeira entrada e peça somente a decisão seguinte; depois amplie. Registre a ajuda recebida para distinguir execução assistida de autonomia.
-
-## Perguntas para os alunos e correção — 8 minutos
-
-- O arquivo salvo já pertence a um commit?
-- Qual evidência permitiria a outra pessoa discordar ou confirmar sua resposta?
-- Qual parte da sua primeira previsão você mudou, e por quê?
-
-**Referências de correção:**
-
-- **Git e versionamento local:** Histórico esperado: apresentar projeto; adicionar simulador de reservas; esclarecer execução. Os hashes variam. O importante é que cada commit tenha mudança verificável e mensagem coerente.
-
-Não exigir frase idêntica. Verificar se o aluno preserva o comportamento, explica o resultado e reconhece limites.
-
-## Possíveis dúvidas e como responder
-
-| Dúvida | Orientação |
-|---|---|
-| Git exige GitHub? | Não; o histórico local é criado e consultado sem hospedagem. |
-| Minha resposta precisa ser igual ao exemplo? | Não. Precisa ser coerente com as regras e permitir conferência. |
-| Não consegui usar a ferramenta. Como continuar? | Registre manualmente o raciocínio; complete a evidência de execução ou publicação com apoio depois. |
-
-## Fechamento e resumo da aula
-
-Peça que cada aluno complete: “Hoje usei ___ para decidir ___ e confirmei com ___”. Retome o objetivo e conecte o artefato à entrega final do módulo: repositório de portfólio com README, simulador, três commits com propósito e uma alteração revisada. A próxima aula amplia esse trabalho; mantenha as decisões e dúvidas registradas.
-
-## Tarefa para casa — orientação de 5 minutos
-
-**Tempo de execução fora da aula:** 30–45 minutos. Revisar a atividade com o feedback recebido, acrescentar um exemplo próprio e registrar o que mudou. Entregar `m03-aula-03-revisao.md`, com contexto fictício, regra, resposta inicial, resposta revisada e evidência. Não incluir dados pessoais de clientes.
-
-**Referência para comparação:** usar as respostas comentadas acima depois de tentar. **Desafio opcional:** Você alterou uma regra, mas o README continua descrevendo a versão anterior. Produza uma revisão que mantenha comportamento, documentação e evidência coerentes.
-
-O professor verifica a revisão no início do próximo encontro.
+- [E-book correspondente](../ebooks/modulo-03-introducao-ao-desenvolvimento-de-software.md)
+- [Laboratório Agenda Clara](../portfolio/agenda-clara/README.md)
+- [Script do professor](scripts/modulo-03-aula-03-git-e-versionamento.md)

@@ -1,161 +1,128 @@
-# Roteiro — Módulo 6, Aula 4
+# Roteiro de Aula — Módulo 6, Aula 4
 
-**Condução com falas prontas:** [script do professor](scripts/modulo-06-aula-04-kanban-e-ferramentas.md). Seguir a sequência de até 90 minutos. As atividades abaixo formam o caderno completo; o script define o recorte ao vivo e a conclusão em casa. A gravação serve para revisão posterior.
+# Kanban, WIP e Ferramentas de Gestão
 
-## Tema e objetivo da aula
+> **Papel deste documento:** definir o que será ensinado, praticado e avaliado.  
+> A condução minuto a minuto, falas sugeridas, respostas esperadas e intervenções ficam no [script do professor](scripts/modulo-06-aula-04-kanban-e-ferramentas.md).
 
-**Tema:** Kanban e ferramentas. **Objetivo observável:** aplicar WIP e comunicar uma decisão de projeto.
+## Objetivo da aula
 
-**Leitura:** [E-book do módulo](../ebooks/modulo-06-gestao-de-projetos-tech.md), tópicos 5, 6. **Pré-requisito:** atividade da aula anterior, com retomada da lacuna identificada no feedback.
+Usar princípios básicos de Kanban para visualizar trabalho, limitar WIP, tratar bloqueios e comunicar progresso com evidências.
 
-## Duração sugerida
+Ao final, o aluno deverá conseguir:
 
-| Etapa | Minutos |
+- explicar fluxo e WIP
+- aplicar limite simples de trabalho em andamento
+- distinguir throughput de produtividade individual
+- relacionar quadro a evidências reais
+- escrever atualização de projeto com pedido de decisão
+
+## Conteúdos e conceitos
+
+### Visualizar fluxo
+- estados explícitos
+- trabalho bloqueado visível
+- políticas claras
+
+### Limitar WIP
+- começar menos
+- terminar mais
+- ajudar a remover bloqueio
+
+### Métricas e comunicação
+- throughput
+- tempo de fluxo
+- não usar para ranking individual
+- status com contexto
+
+## Duração e blocos
+
+| Bloco | Tempo previsto |
 |---|---:|
-| Abertura e diagnóstico | 8 |
-| Conceitos e exemplos | 17 |
-| Demonstração guiada | 20 |
-| Pausa | 5 |
-| Dinâmica em dupla ou grupo | 15 |
-| Exercício individual | 12 |
-| Correção e dúvidas | 8 |
-| Fechamento e orientação da tarefa | 5 |
-| Total | 90 |
+| Abertura e diagnóstico | 8 min |
+| Conceitos e exemplos | 17 min |
+| Demonstração guiada | 20 min |
+| Pausa | 5 min |
+| Dinâmica em dupla ou grupo | 15 min |
+| Exercício individual | 12 min |
+| Correção e dúvidas | 8 min |
+| Fechamento e tarefa | 5 min |
+| **Total** | **90 min** |
 
 ## Materiais necessários
 
-quadro ou cartões e IDs. Usar [caderno do caso](../atividades/caso-agenda-clara.md), editor de Markdown ou papel e [laboratório](../portfolio/agenda-clara/README.md). Testar o ambiente antes da aula. Contas de ferramentas são opcionais quando houver alternativa documental; evidência de execução continua necessária quando o enunciado a solicitar.
+- E-book do Módulo 6
+- quadro Kanban simples
+- cards do Agenda Clara
+- Jira/Azure DevOps opcional
 
-## Abertura da aula
+## Exemplos planejados
 
-Mostre cinco itens iniciados e nenhum concluído. Dê dois minutos para registrar uma previsão individual, recolha duas respostas e pergunte qual evidência seria necessária. Retome um conceito anterior e anuncie a entrega de hoje.
+### Exemplo 1
+Dois itens ativos e um pedido urgente.
 
-## Explicação teórica e exemplos práticos
+### Exemplo 2
+Item bloqueado por ambiente.
 
-### Kanban, políticas e métricas de fluxo
+### Exemplo 3
+Atualização curta de meta, progresso, risco e pedido.
 
-**Conceito:** Kanban torna trabalho visível e orienta melhoria do fluxo com políticas explícitas.
+## Demonstração planejada — Aplicar política de WIP e comunicar uma decisão
 
-**Explicação simples:** Começar menos tarefas pode ajudar a terminar mais.
+1. Montar quadro com políticas.
+2. Colocar dois itens em andamento com WIP=2.
+3. Introduzir terceiro pedido.
+4. Escolher ajudar, concluir ou renegociar.
+5. Escrever atualização de quatro linhas.
 
-**Aprofundamento:** Um quadro é parte da prática, não Kanban completo por si só. Defina fluxo, ponto de início e fim, limites de WIP e políticas. Exemplo: pronto, em execução, em verificação e concluído; WIP de dois itens somando execução e verificação. Bloqueio deve permanecer visível e normalmente continua contando como trabalho iniciado. Lead time depende do ponto de compromisso escolhido; cycle time mede início até fim; throughput conta itens concluídos por período. Não comparar números de times diferentes sem contexto.
+**Resultado pedagógico esperado:** o aluno entende limite como política de fluxo, não proibição cega.
 
-**Exemplo cotidiano:** Dez pedidos iniciados e nenhum entregue não significam boa capacidade de atendimento.
+## Dinâmica em grupo — Concluir antes de começar
 
-**Cenário empresarial:** Time limita início para ajudar a concluir cancelamento antes de abrir relatório.
+**Cenário:** O quadro atingiu WIP; um item está bloqueado e chega pedido urgente.
 
-**Erros a observar:** Quadro sem políticas; mover bloqueado para esconder WIP; contar iniciado como entregue.
+1. Atualizar quadro com estado real.
+2. Aplicar política de WIP.
+3. Decidir como tratar o urgente.
+4. Registrar a razão.
+5. Escrever atualização curta para stakeholder.
 
-**Orientação:** Definir limites, observar gargalos e concluir antes de iniciar.
+**Entrega esperada:** quadro atualizado + mensagem de status
 
-### Ferramentas e comunicação de projeto
-
-**Conceito:** Ferramentas registram acordos e estados; gestão exige interpretar e agir sobre essas informações.
-
-**Explicação simples:** Mudar de Jira para Azure DevOps não deveria apagar o sentido do trabalho.
-
-**Aprofundamento:** Use título, objetivo, responsável, estado, dependências, evidência e motivo de bloqueio. Campos variam por ferramenta e configuração. Links devem ligar história, tarefa, bug e teste. Defina estados e política de transição antes de configurar a tela. O relatório de andamento deve comunicar objetivo, progresso, risco e decisão necessária, sem apenas enumerar tarefas. Cartões em papel ou Markdown são alternativas para o curso.
-
-**Exemplo cotidiano:** Uma lista de tarefas sem dependências não mostra que um atraso bloqueia outras entregas.
-
-**Cenário empresarial:** Time mantém US02, TC03 e BUG01 relacionados e comunica impacto na meta.
-
-**Erros a observar:** Ferramenta como substituta de conversa; estados contraditórios; relatório longo sem decisão.
-
-**Orientação:** Uma fonte de estado, vínculos e mensagens orientadas a ação.
-
-Distribua os 17 minutos entre os tópicos. Peça um exemplo com palavras do aluno antes de avançar; se houver uma contradição, retome a regra do caso.
-
-## Demonstração guiada
-
-Limite WIP e relacione história, teste e bug.
-
-**Exemplo 1:** Com dois itens ativos, não puxar terceiro; ajudar a verificar ou remover bloqueio. Throughput de dois itens em uma rodada informa conclusão, sem inferir produtividade individual.
-
-**Exemplo 2:** Meta: reserva íntegra. Progresso: sucesso/conflito verificados. Risco: RN03 falha na variante. Pedido: priorizar correção antes da liberação simulada. BUG01 ligado a US02 e TC03.
-
-Interrompa antes do resultado para pedir uma previsão. Revele uma etapa de cada vez, marque a regra e compare a resposta com a evidência. Não concluir correção apenas pela aparência do arquivo.
-
-## Dinâmica em grupo
-
-**Nome:** Concluir antes de começar. **Contexto:** a equipe precisa revisar uma decisão antes de avançar o MVP. Em duplas, uma pessoa produz e outra confere; trocar funções na metade do tempo. Em grupos maiores, adicionar um papel de registro.
-
-**Distribuição:** 2 minutos de leitura; 5 de execução; 5 de revisão cruzada; 3 de compartilhamento. Se houver mais de duas duplas, recolher as demais conclusões por escrito para caber no tempo.
-
-**Atividade 5: Simular quadro com limite de WIP**
-
-**Contexto profissional:** o time da empresa fictícia Agenda Clara precisa revisar esta decisão antes de entregar o MVP. Dados e regras no [caderno do caso](../atividades/caso-agenda-clara.md).
-
-**Objetivo:** Simular quadro com limite de WIP, com registro que permita conferência por outra pessoa.
-
-**Passo a passo:**
-
-1. Crie quatro colunas e políticas.
-2. Use cinco cartões do backlog.
-3. Defina WIP 2 para execução mais verificação.
-4. Introduza bloqueio e decida como manter visível.
-5. Conte concluídos e identifique gargalo.
-
-**Entrega esperada:** quadro antes/depois, políticas e análise de fluxo Identificar nome, versão ou premissas, regra utilizada e justificativa. Nome sugerido: `m06-atividade-05.md`.
-
-**Critérios específicos:** Limite respeitado; bloqueio visível; métrica com período definido.
-
-**Exemplo de resposta comentada:** Com dois itens ativos, não puxar terceiro; ajudar a verificar ou remover bloqueio. Throughput de dois itens em uma rodada informa conclusão, sem inferir produtividade individual.
-
-**Dica:** faça sua tentativa antes de ler a resposta e explique qualquer revisão.
-
-**Variação mais difícil:** Por que mover bloqueado para fora do limite pode distorcer a análise?
-
-**Atividade 6: Produzir quadro e atualização executiva**
-
-**Contexto profissional:** o time da empresa fictícia Agenda Clara precisa revisar esta decisão antes de entregar o MVP. Dados e regras no [caderno do caso](../atividades/caso-agenda-clara.md).
-
-**Objetivo:** Produzir quadro e atualização executiva, com registro que permita conferência por outra pessoa.
-
-**Passo a passo:**
-
-1. Represente história, tarefa, bug e teste com IDs.
-2. Vincule os quatro artefatos.
-3. Defina transição para concluído.
-4. Escreva atualização de quatro linhas: meta, progresso, risco e pedido.
-
-**Entrega esperada:** cartões vinculados e comunicação breve Identificar nome, versão ou premissas, regra utilizada e justificativa. Nome sugerido: `m06-atividade-06.md`.
-
-**Critérios específicos:** Rastreabilidade; estado coerente; pedido acionável.
-
-**Exemplo de resposta comentada:** Meta: reserva íntegra. Progresso: sucesso/conflito verificados. Risco: RN03 falha na variante. Pedido: priorizar correção antes da liberação simulada. BUG01 ligado a US02 e TC03.
-
-**Dica:** faça sua tentativa antes de ler a resposta e explique qualquer revisão.
-
-**Variação mais difícil:** Qual decisão seu relatório espera de quem recebe?
-
+**Critérios:** estado real visível; WIP considerado; trade-off registrado; pedido de decisão claro.
 
 ## Exercício individual
 
-Escreva atualização de quatro linhas com pedido de decisão.
+Dois itens estão iniciados, um está bloqueado e chega um pedido urgente. Escreva o que você faria sem esconder trabalho, qual política está usando e qual decisão precisa comunicar.
 
-**Tempo:** 12 minutos. **Entrega:** uma versão própria do artefato, incluindo regra, decisão e evidência. **Avaliação:** critérios específicos acima e rubrica do E-book. O professor verifica se houve transferência para o novo caso. Se houver ajuda, registrar qual etapa foi assistida.
+**Entrega:** decisão + atualização de quatro linhas
 
-## Perguntas para os alunos
+**Critérios:** WIP considerado; bloqueio visível; urgência justificada; comunicação objetiva.
 
-- Qual é o gargalo?
-- Bloqueio conta como trabalho iniciado?
-- Qual parte da sua previsão você reviu e qual evidência motivou a mudança?
+## Perguntas de verificação
 
-## Possíveis dúvidas e como responder
+- Limite de WIP significa nunca poder mudar prioridade?
+- Throughput mede produtividade individual?
+- Ferramenta de gestão substitui processo?
 
-| Dúvida | Resposta |
-|---|---|
-| Quadro basta para Kanban? | São necessárias políticas e gestão do fluxo. |
-| Preciso de conta? | Cartões ou Markdown permitem o exercício. |
-| Preciso copiar a resposta de referência? | Não; preserve as regras e explique sua decisão com evidência. |
-
-## Correção e fechamento
-
-As respostas de referência estão na demonstração. Não exigir frases idênticas; conferir critérios e raciocínio. Cada aluno completa: “Usei ___ para decidir ___ e confirmei com ___”. Relacionar à entrega do módulo: plano de Sprint simulada, quadro com políticas e limites, registros de Daily, Review e Retrospectiva e análise de capacidade. SDLC conecta decisões até operação.
+> As respostas esperadas e intervenções ficam exclusivamente no script do professor.
 
 ## Tarefa para casa
 
-Consolidar Sprint simulada e análise.
+1. Revisar quadro e políticas.
+2. Registrar um exemplo de bloqueio.
+3. Consolidar Planning/Daily/Review/Retro.
+4. Escrever análise de capacidade e fluxo.
+5. Entregar `m06-aula-04-revisao.md`.
 
-**Tempo sugerido:** 30–45 minutos. Entregar `m06-aula-04-revisao.md` com resposta inicial, feedback, versão revisada e explicação da mudança. O professor verifica a revisão no próximo encontro. Organizar também a entrega final e a reflexão individual.
+**Entrega:** entrega final do Módulo 6
+
+## Conexão com a trilha
+
+O Módulo 7 conecta Produto, Desenvolvimento, QA e Gestão pelo ciclo de vida de software, rastreabilidade, Shift Left e release.
+
+## Referências
+
+- [E-book correspondente](../ebooks/modulo-06-gestao-de-projetos-tech.md)
+- [Caso Agenda Clara](../atividades/caso-agenda-clara.md)
+- [Script do professor](scripts/modulo-06-aula-04-kanban-e-ferramentas.md)

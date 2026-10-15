@@ -1,120 +1,129 @@
-# Roteiro — Módulo 8, Aula 3
+# Roteiro de Aula — Módulo 8, Aula 3
 
-**Condução com falas prontas:** [script do professor](scripts/modulo-08-aula-03-testes-e-defeitos.md). Seguir a sequência de até 90 minutos. As atividades abaixo formam o caderno completo; o script define o recorte ao vivo e a conclusão em casa. A gravação serve para revisão posterior.
+# Testes, Defeitos e Evidências
 
-## Tema e objetivo da aula
+> **Papel deste documento:** definir o que será ensinado, praticado e avaliado.  
+> A condução minuto a minuto, falas sugeridas, respostas esperadas e intervenções ficam no [script do professor](scripts/modulo-08-aula-03-testes-e-defeitos.md).
 
-**Tema:** Testes e defeitos. **Objetivo observável:** executar oito casos e distinguir bugs executados e fornecidos.
+## Objetivo da aula
 
-**Leitura:** [E-book do módulo](../ebooks/modulo-08-projeto-final-hands-on.md), tópicos 3. **Pré-requisito:** atividade da aula anterior, com retomada da lacuna identificada no feedback.
+Executar e organizar as evidências do projeto final, distinguindo teste executado, BUG01 reproduzível e BUG02 fornecido como incidente fictício que não deve ser apresentado como execução.
 
-## Duração sugerida
+Ao final, o aluno deverá conseguir:
 
-| Etapa | Minutos |
+- executar os casos prioritários com estado controlado
+- registrar versão e resultado
+- reproduzir BUG01
+- analisar BUG02 sem fingir reprodução
+- emitir parecer limitado às evidências
+
+## Conteúdos e conceitos
+
+### Evidência de execução
+- versão
+- entrada/estado
+- esperado/observado
+- método de execução
+
+### BUG01 versus BUG02
+- BUG01 executável na variante
+- BUG02 é registro fictício fornecido
+- não inventar execução
+
+### Parecer proporcional
+- evidência sustenta decisão
+- pendência aparece
+- limites preservados
+
+## Duração e blocos
+
+| Bloco | Tempo previsto |
 |---|---:|
-| Abertura e diagnóstico | 8 |
-| Conceitos e exemplos | 17 |
-| Demonstração guiada | 20 |
-| Pausa | 5 |
-| Dinâmica em dupla ou grupo | 15 |
-| Exercício individual | 12 |
-| Correção e dúvidas | 8 |
-| Fechamento e orientação da tarefa | 5 |
-| Total | 90 |
+| Abertura e diagnóstico | 8 min |
+| Conceitos e exemplos | 17 min |
+| Demonstração guiada | 20 min |
+| Pausa | 5 min |
+| Dinâmica em dupla ou grupo | 15 min |
+| Exercício individual | 12 min |
+| Correção e dúvidas | 8 min |
+| Fechamento e tarefa | 5 min |
+| **Total** | **90 min** |
 
 ## Materiais necessários
 
-Python, duas classes e registro BUG02. Usar [caderno do caso](../atividades/caso-agenda-clara.md), editor de Markdown ou papel e [laboratório](../portfolio/agenda-clara/README.md). Testar o ambiente antes da aula. Contas de ferramentas são opcionais quando houver alternativa documental; evidência de execução continua necessária quando o enunciado a solicitar.
+- E-book do Módulo 8
+- oito casos do kit
+- referência e variante
+- registros BUG01/BUG02
 
-## Abertura da aula
+## Exemplos planejados
 
-Mostre duas evidências de origem diferente e peça classificação. Dê dois minutos para registrar uma previsão individual, recolha duas respostas e pergunte qual evidência seria necessária. Retome um conceito anterior e anuncie a entrega de hoje.
+### Exemplo 1
+TC03/BUG01.
 
-## Explicação teórica e exemplos práticos
+### Exemplo 2
+BUG02 de cancelamento em versão fictícia.
 
-### Testes, bugs e evidências do projeto
+### Exemplo 3
+Sequência autoral de rejeição.
 
-**Conceito:** A execução deve sustentar o que o projeto afirma sobre comportamento e qualidade.
+## Demonstração planejada — Executar BUG01 e analisar BUG02 corretamente
 
-**Explicação simples:** Mostre a entrada, o esperado, o observado e a versão; o leitor não deve depender da sua memória.
+1. Preparar estado e versão.
+2. Executar um caso de referência.
+3. Reproduzir BUG01 na variante.
+4. Ler BUG02 como documento fornecido.
+5. Montar plano de confirmação de BUG02 sem marcar como executado.
 
-**Aprofundamento:** Use oito casos do kit e acrescente uma sequência própria. Execute referência e variante, reiniciando estado quando previsto. BUG01 pode ser reproduzido; BUG02 é fornecido como um registro fictício de uma terceira versão inexistente no código. Documente esse tipo de evidência. Não afirmar execução de BUG02. Reteste de BUG01 usa referência; análise de BUG02 propõe passos e critério de correção sem tratar a proposta como executada. Distinga falha, dúvida e melhoria. Vincule regras, histórias e casos.
+**Resultado pedagógico esperado:** o aluno distingue fontes e força da evidência.
 
-**Exemplo cotidiano:** Um print isolado não prova todo o caminho nem identifica a versão.
+## Dinâmica em grupo — Provar comportamento
 
-**Cenário empresarial:** QA apresenta BUG01 e explica por que a ocupação de H11 reforça a evidência.
+**Cenário:** Cada dupla recebe um caso executável e um registro fornecido que precisa ser analisado.
 
-**Erros a observar:** Misturar simulação e execução; aprovar sem estado; contar caso não executado como passado.
+1. Executar o caso com versão/estado registrados.
+2. Separar observado de hipótese.
+3. Analisar o registro fornecido.
+4. Escrever o que seria necessário para reproduzi-lo.
+5. Trocar evidências com outra dupla para conferência.
 
-**Orientação:** Versões identificadas e registros honestos de cobertura.
+**Entrega esperada:** registro de execução + plano de investigação
 
-Distribua os 17 minutos entre os tópicos. Peça um exemplo com palavras do aluno antes de avançar; se houver uma contradição, retome a regra do caso.
-
-## Demonstração guiada
-
-Execute BUG01 e leia BUG02 como incidente fornecido.
-
-**Exemplo 1:** BUG01 viola RN03 na variante. BUG02 descreve RN06 violada em versão fictícia: cancelamento retorna sucesso, mas horário não reaparece. A referência fornecida não tem esse defeito; produzir plano de confirmação, não falso resultado.
-
-Interrompa antes do resultado para pedir uma previsão. Revele uma etapa de cada vez, marque a regra e compare a resposta com a evidência. Não concluir correção apenas pela aparência do arquivo.
-
-## Dinâmica em grupo
-
-**Nome:** Provar comportamento. **Contexto:** a equipe precisa revisar uma decisão antes de avançar o MVP. Em duplas, uma pessoa produz e outra confere; trocar funções na metade do tempo. Em grupos maiores, adicionar um papel de registro.
-
-**Distribuição:** 2 minutos de leitura; 5 de execução; 5 de revisão cruzada; 3 de compartilhamento. Se houver mais de duas duplas, recolher as demais conclusões por escrito para caber no tempo.
-
-**Atividade 3: Executar testes e produzir dois reportes**
-
-**Contexto profissional:** o time da empresa fictícia Agenda Clara precisa revisar esta decisão antes de entregar o MVP. Dados e regras no [caderno do caso](../atividades/caso-agenda-clara.md).
-
-**Objetivo:** Executar testes e produzir dois reportes, com registro que permita conferência por outra pessoa.
-
-**Passo a passo:**
-
-1. Execute oito casos de referência e a divergência de espaços.
-2. Registre entrada, retorno e estado.
-3. Produza BUG01.
-4. Analise registro fornecido de BUG02 e declare simulado.
-5. Adicione uma sequência própria e parecer de qualidade.
-
-**Entrega esperada:** testes.md e bugs.md com evidências identificadas Identificar nome, versão ou premissas, regra utilizada e justificativa. Nome sugerido: `m08-atividade-03.md`.
-
-**Critérios específicos:** Oito casos; dois tipos de bug diferenciados; nenhuma execução inventada.
-
-**Exemplo de resposta comentada:** BUG01 viola RN03 na variante. BUG02 descreve RN06 violada em versão fictícia: cancelamento retorna sucesso, mas horário não reaparece. A referência fornecida não tem esse defeito; produzir plano de confirmação, não falso resultado.
-
-**Dica:** faça sua tentativa antes de ler a resposta e explique qualquer revisão.
-
-**Variação mais difícil:** Que evidência adicional você pediria antes de confirmar BUG02 num produto real?
-
+**Critérios:** fonte da evidência clara; nenhuma execução inventada; estado/versão presentes; plano de confirmação reproduzível.
 
 ## Exercício individual
 
-Execute uma sequência nova e emita parecer.
+Crie uma sequência nova de rejeição, execute na versão disponível e registre entrada, estado, esperado, observado e resultado. Depois escreva uma frase dizendo o que essa evidência permite — e não permite — concluir.
 
-**Tempo:** 12 minutos. **Entrega:** uma versão própria do artefato, incluindo regra, decisão e evidência. **Avaliação:** critérios específicos acima e rubrica do E-book. O professor verifica se houve transferência para o novo caso. Se houver ajuda, registrar qual etapa foi assistida.
+**Entrega:** caso autoral executado + conclusão limitada
 
-## Perguntas para os alunos
+**Critérios:** execução verificável; esperado independente; limite da conclusão; versão identificada.
 
-- Qual versão foi executada?
-- Que confirmação falta para BUG02?
-- Qual parte da sua previsão você reviu e qual evidência motivou a mudança?
+## Perguntas de verificação
 
-## Possíveis dúvidas e como responder
+- Posso dizer que reproduzi BUG02?
+- Uma evidência de um caso prova todo o sistema?
+- Qual diferença entre ‘não encontrei falha’ e ‘não existe falha’?
 
-| Dúvida | Resposta |
-|---|---|
-| BUG02 existe no código? | Não; é registro fictício fornecido para análise. |
-| Copiar saída conta? | É preciso produzir ou declarar a origem da evidência. |
-| Preciso copiar a resposta de referência? | Não; preserve as regras e explique sua decisão com evidência. |
-
-## Correção e fechamento
-
-As respostas de referência estão na demonstração. Não exigir frases idênticas; conferir critérios e raciocínio. Cada aluno completa: “Usei ___ para decidir ___ e confirmei com ___”. Relacionar à entrega do módulo: dossiê Agenda Clara com requisitos, três histórias, backlog, oito casos executados, dois reportes simulados, Sprint, SDLC, release e apresentação de cinco minutos. A entrega final conecta decisões e demonstração.
+> As respostas esperadas e intervenções ficam exclusivamente no script do professor.
 
 ## Tarefa para casa
 
-Consolidar testes, bugs e reteste.
+1. Executar/conferir os oito casos previstos.
+2. Organizar BUG01 com reteste.
+3. Manter BUG02 como incidente fornecido com plano de confirmação.
+4. Atualizar matriz de rastreabilidade.
+5. Entregar `m08-aula-03-revisao.md`.
 
-**Tempo sugerido:** 30–45 minutos. Entregar `m08-aula-03-revisao.md` com resposta inicial, feedback, versão revisada e explicação da mudança. O professor verifica a revisão no próximo encontro.
+**Entrega:** bloco de qualidade do dossiê
+
+## Conexão com a trilha
+
+A Aula 4 fecha o projeto com decisão de release, dossiê, apresentação e limites do portfólio.
+
+## Referências
+
+- [E-book correspondente](../ebooks/modulo-08-projeto-final-hands-on.md)
+- [Caso Agenda Clara](../atividades/caso-agenda-clara.md)
+- [Laboratório Agenda Clara](../portfolio/agenda-clara/README.md)
+- [Script do professor](scripts/modulo-08-aula-03-testes-e-defeitos.md)

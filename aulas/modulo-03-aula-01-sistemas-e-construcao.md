@@ -1,128 +1,124 @@
-# Roteiro de aula — Módulo 3, Aula 1
+# Roteiro de Aula — Módulo 3, Aula 1
 
-**Condução com falas prontas:** [script do professor](scripts/modulo-03-aula-01-sistemas-e-construcao.md). Seguir a sequência de até 90 minutos. As atividades abaixo formam o caderno completo; o script define o recorte ao vivo e a conclusão em casa. A gravação serve para revisão posterior.
+# Sistemas e Construção de Software
 
-## Tema e objetivo da aula
+> **Papel deste documento:** definir o que será ensinado, praticado e avaliado.  
+> A condução minuto a minuto, falas sugeridas, respostas esperadas e intervenções ficam no [script do professor](scripts/modulo-03-aula-01-sistemas-e-construcao.md).
 
-**Tema:** Sistemas e construção de software.
+## Objetivo da aula
 
-**Objetivo observável:** ao final, cada aluno produzirá e explicará: Desenhar os componentes do laboratório.. A explicação deve citar a regra, a entrada ou premissa e o resultado; o professor pode conferir o artefato sem depender de memória da apresentação.
+Explicar como um sistema é formado por componentes que recebem entradas, aplicam regras, mantêm estado e produzem saídas, distinguindo o que existe no laboratório do que seria uma arquitetura futura.
 
-**Leitura:** [E-book do módulo](../ebooks/modulo-03-introducao-ao-desenvolvimento-de-software.md), tópicos 1. **Pré-requisito:** algoritmos e condições do Módulo 2; arquivo de texto salvo e localizado no computador.
+Ao final, o aluno deverá conseguir:
 
-## Duração sugerida
+- identificar entrada, regra, estado e saída em um sistema
+- distinguir interface, lógica e persistência
+- explicar limites do laboratório Agenda Clara
+- desenhar componentes de uma solução sem inventar infraestrutura inexistente
 
-| Etapa | Minutos |
+## Conteúdos e conceitos
+
+### Sistema e componentes
+- entrada
+- regra
+- estado
+- saída
+
+### Interface, lógica e estado
+- interface é interação
+- lógica decide
+- estado representa situação atual
+
+### Persistência e limite
+- memória durante a execução
+- persistência entre execuções
+- limite precisa ser declarado
+
+## Duração e blocos
+
+| Bloco | Tempo previsto |
 |---|---:|
-| Abertura e diagnóstico | 8 |
-| Conceitos e exemplos | 17 |
-| Demonstração guiada | 20 |
-| Pausa | 5 |
-| Dinâmica em dupla ou grupo | 15 |
-| Exercício individual | 12 |
-| Correção e dúvidas | 8 |
-| Fechamento e orientação da tarefa | 5 |
-| Total | 90 |
-
-Se a turma precisar de mais tempo, reduza a extensão da variação, preserve a prática individual e conclua a revisão na aula seguinte.
+| Abertura e diagnóstico | 8 min |
+| Conceitos e exemplos | 17 min |
+| Demonstração guiada | 20 min |
+| Pausa | 5 min |
+| Dinâmica em dupla ou grupo | 15 min |
+| Exercício individual | 12 min |
+| Correção e dúvidas | 8 min |
+| Fechamento e tarefa | 5 min |
+| **Total** | **90 min** |
 
 ## Materiais necessários
 
-E-book, [caderno do caso](../atividades/caso-agenda-clara.md), editor de Markdown ou folha com tabela, quadro e acesso ao [simulador](../portfolio/agenda-clara/README.md). Para código: Python 3. Para versionamento: Git e, quando houver publicação, conta GitHub. Jira/Azure DevOps são opcionais e podem ser representados por cartões. Teste os recursos antes da aula e prepare uma cópia de saída para discussão se houver indisponibilidade.
+- [E-book do Módulo 3](../ebooks/modulo-03-introducao-ao-desenvolvimento-de-software.md)
+- [Laboratório Agenda Clara](../portfolio/agenda-clara/README.md)
+- editor de código
+- terminal
 
-## Abertura da aula — 8 minutos
+## Exemplos planejados
 
-Apresente a situação Agenda Clara e pergunte: “Qual componente falta para preservar reservas entre execuções?” Dê dois minutos para cada aluno escrever sua previsão. Recolha duas respostas distintas e identifique a evidência que seria necessária para decidir. Retome um conceito da aula anterior e explique a entrega de hoje em linguagem simples.
+### Exemplo 1
+Agenda Clara executando regras sem interface web.
 
-## Explicação teórica e exemplos práticos — 17 minutos
+### Exemplo 2
+Aplicação futura com front-end chamando uma regra por API.
 
-### O que é um sistema e como é construído
+### Exemplo 3
+Sistema que perde estado ao reiniciar por não ter persistência.
 
-**Conceito:** Um sistema reúne componentes que recebem entradas, executam regras e produzem resultados para um objetivo.
+## Demonstração planejada — Mapear os componentes reais do laboratório
 
-**Explicação simples para falar à turma:** A tela é uma parte da solução. A reserva também depende de regras e de algum lugar onde o estado seja mantido.
+1. Ler o README.
+2. Localizar entradas, regra e estado.
+3. Executar uma reserva e observar a saída.
+4. Reiniciar e verificar perda de estado.
+5. Desenhar uma interface futura marcando-a como hipótese.
 
-**Aprofundamento necessário:** Separe interface, regra de negócio, integração e armazenamento. O simulador Agenda Clara implementa regras e estado em memória; não tem interface web nem banco persistente. Em um produto maior, requisitos orientam o desenho, código implementa o comportamento e testes verificam exemplos e riscos. Construção é iterativa: uma descoberta pode exigir voltar à regra. Um protótipo pode validar interação sem implementar toda a lógica, enquanto um programa de linha de comando pode executar regras sem uma tela gráfica.
+**Resultado pedagógico esperado:** o aluno separa o que está implementado do que é desenho futuro.
 
-**Exemplo cotidiano:** Em uma compra online, fechar o navegador não deveria apagar um pedido persistido; no simulador, encerrar o processo perde as reservas.
+## Dinâmica em grupo — Anatomia do laboratório
 
-**Situação de empresa:** Produto e Dev combinam qual parte do MVP será executável e qual parte continuará ilustrada; QA registra essa limitação no plano.
+**Cenário:** A dupla precisa explicar o Agenda Clara para uma pessoa que nunca viu o projeto.
 
-**Alerta didático:** Confundir protótipo com produto pronto; chamar armazenamento em memória de banco persistente. Oriente: Descrever componentes existentes, ausentes e dependências antes de demonstrar.
+1. Identificar entrada, regra, estado e saída.
+2. Marcar o que existe no código.
+3. Desenhar uma interface/API futura como hipótese.
+4. Listar dois limites do laboratório.
 
-Após cada conceito, peça ao aluno um exemplo com suas próprias palavras. Corrija uma generalização usando a regra do caso, sem antecipar todos os resultados.
+**Entrega esperada:** diagrama anotado do sistema
 
-## Demonstração guiada — 17 minutos
+**Critérios:** componentes reais separados de hipóteses; limites explícitos; relações coerentes.
 
-O professor modela a primeira atividade, pensando em voz alta. Se houver dois temas, faça uma passagem curta pelo segundo e deixe a resolução completa para a prática.
+## Exercício individual
 
-**Demonstração 1: Desenhar os componentes do laboratório.**
+Escreva uma descrição curta do Agenda Clara contendo propósito, entrada, comportamento principal, estado e um limite. Depois diga qual componente faltaria para manter reservas após reiniciar.
 
-1. Leia o README do simulador.
-2. Identifique entrada, regra e estado.
-3. Desenhe uma possível interface futura sem afirmar que existe.
-4. Registre o efeito de encerrar o processo.
+**Entrega:** descrição técnica curta + resposta sobre persistência
 
-**Resultado de referência:** Entrada por chamadas Python; regras na classe Agenda; estado em reservas; saída em dicionários. Uma interface futura chamaria a regra. Encerrar a execução perde o estado porque não há persistência.
+**Critérios:** propósito claro; entrada/estado identificados; limite correto; sem inventar implementação.
 
-Antes de revelar o resultado, pare e peça uma previsão. Depois, marque no quadro qual passo sustenta a resposta. Se a saída diferir, registre e investigue a entrada ou estado em vez de ajustar a resposta verbalmente.
+## Perguntas de verificação
 
-## Dinâmica em grupo — 20 minutos
+- Um desenho de tela significa que a interface foi implementada?
+- Estado em memória é o mesmo que banco de dados?
+- Como diferenciar observação de hipótese?
 
-**Nome:** Revisão cruzada — Sistemas e construção de software.
+> As respostas esperadas e intervenções ficam exclusivamente no script do professor.
 
-**Contexto profissional:** o time precisa verificar uma decisão antes de entregar uma versão. Em duplas, uma pessoa produz e outra revisa; na metade do tempo, troquem os papéis. Em aula remota, usar salas ou comentários no documento. Em grupo maior, designar também uma pessoa para registrar decisões.
+## Tarefa para casa
 
-1. Em 2 minutos, ler o recorte do enunciado no script e identificar a regra ou premissa.
-2. Em 5 minutos, executar o recorte principal e registrar o resultado.
-3. Em 5 minutos, trocar funções e revisar uma evidência, uma lacuna e uma correção.
-4. Em 3 minutos, selecionar duas duplas para apresentar; recolher as demais por escrito.
+1. Revisar o diagrama com feedback.
+2. Adicionar dois limites e uma hipótese de evolução.
+3. Entregar `m03-aula-01-revisao.md`.
 
-**Atividade 1 — Desenhar os componentes do laboratório.**
+**Entrega:** diagrama revisado + limites
 
-1. Leia o README do simulador.
-2. Identifique entrada, regra e estado.
-3. Desenhe uma possível interface futura sem afirmar que existe.
-4. Registre o efeito de encerrar o processo.
+## Conexão com a trilha
 
-**Entrega:** tabela, algoritmo, documento ou registro de execução conforme o enunciado, com regra, resultado e justificativa. **Critérios:** cumprir as etapas e permitir conferência por outra pessoa. **Dica:** faça uma previsão antes de consultar a resposta. **Variação mais difícil:** Qual componente falta para preservar reservas entre execuções?
+A Aula 2 usa o mesmo laboratório para aprender a ler código a partir do comportamento e introduz uma comparação controlada com JavaScript/TypeScript.
 
-## Exercício individual — 12 minutos
+## Referências
 
-Cada aluno refaz a parte principal das atividades usando uma entrada nova ou uma decisão alternativa. Escreve o resultado esperado, a evidência e a razão. Não precisa reproduzir toda a entrega da dupla, mas deve demonstrar entendimento próprio.
-
-**Enunciado de transferência:** Qual componente falta para preservar reservas entre execuções? Use uma regra do caso para responder e inclua um contraexemplo ou uma limitação.
-
-**Critérios:** correção, completude, evidência e justificativa. Aplicar a [rubrica do E-book](../ebooks/modulo-03-introducao-ao-desenvolvimento-de-software.md). Se o aluno não conseguir começar, forneça a primeira entrada e peça somente a decisão seguinte; depois amplie. Registre a ajuda recebida para distinguir execução assistida de autonomia.
-
-## Perguntas para os alunos e correção — 8 minutos
-
-- Qual componente falta para preservar reservas entre execuções?
-- Qual evidência permitiria a outra pessoa discordar ou confirmar sua resposta?
-- Qual parte da sua primeira previsão você mudou, e por quê?
-
-**Referências de correção:**
-
-- **O que é um sistema e como é construído:** Entrada por chamadas Python; regras na classe Agenda; estado em reservas; saída em dicionários. Uma interface futura chamaria a regra. Encerrar a execução perde o estado porque não há persistência.
-
-Não exigir frase idêntica. Verificar se o aluno preserva o comportamento, explica o resultado e reconhece limites.
-
-## Possíveis dúvidas e como responder
-
-| Dúvida | Orientação |
-|---|---|
-| Todo sistema tem tela? | Não; serviços e rotinas podem receber entradas por chamadas ou arquivos. |
-| Minha resposta precisa ser igual ao exemplo? | Não. Precisa ser coerente com as regras e permitir conferência. |
-| Não consegui usar a ferramenta. Como continuar? | Registre manualmente o raciocínio; complete a evidência de execução ou publicação com apoio depois. |
-
-## Fechamento e resumo da aula
-
-Peça que cada aluno complete: “Hoje usei ___ para decidir ___ e confirmei com ___”. Retome o objetivo e conecte o artefato à entrega final do módulo: repositório de portfólio com README, simulador, três commits com propósito e uma alteração revisada. A próxima aula amplia esse trabalho; mantenha as decisões e dúvidas registradas.
-
-## Tarefa para casa — orientação de 5 minutos
-
-**Tempo de execução fora da aula:** 30–45 minutos. Revisar a atividade com o feedback recebido, acrescentar um exemplo próprio e registrar o que mudou. Entregar `m03-aula-01-revisao.md`, com contexto fictício, regra, resposta inicial, resposta revisada e evidência. Não incluir dados pessoais de clientes.
-
-**Referência para comparação:** usar as respostas comentadas acima depois de tentar. **Desafio opcional:** Você alterou uma regra, mas o README continua descrevendo a versão anterior. Produza uma revisão que mantenha comportamento, documentação e evidência coerentes.
-
-O professor verifica a revisão no início do próximo encontro.
+- [E-book correspondente](../ebooks/modulo-03-introducao-ao-desenvolvimento-de-software.md)
+- [Laboratório Agenda Clara](../portfolio/agenda-clara/README.md)
+- [Script do professor](scripts/modulo-03-aula-01-sistemas-e-construcao.md)

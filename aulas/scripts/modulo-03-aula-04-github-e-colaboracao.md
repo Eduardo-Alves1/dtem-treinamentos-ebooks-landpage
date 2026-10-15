@@ -1,267 +1,217 @@
-# Script do professor — GitHub, revisão e publicação
+# Script do Professor — GitHub, Revisão e Publicação
 
-**DTEM Treinamentos · encontro ao vivo de até 90 minutos, gravado para revisão.**
+**DTEM Treinamentos · encontro ao vivo de até 90 minutos.**
 
-Este documento contém falas e ações de condução. Adaptar a linguagem ao próprio estilo, preservando conceitos,
-exemplos e critérios. Os intervalos incluem escrita, espera, interação e prática; não são 90 minutos de leitura.
-Não depende de vídeos prévios. O aluno pode consultar o E-book e rever a gravação depois.
+> **Papel deste documento:** orientar a condução da aula. O conteúdo e as atividades abaixo devem permanecer coerentes com o roteiro; o script não cria uma aula paralela.
 
-**Roteiro:** [planejamento da aula](../modulo-03-aula-04-github-e-colaboracao.md).  
-**Material de estudo:** [E-book correspondente](../../ebooks/modulo-03-introducao-ao-desenvolvimento-de-software.md).  
-**Caso:** [Agenda Clara](../../atividades/caso-agenda-clara.md), empresa e dados fictícios.
+**Roteiro:** [Módulo 3, Aula 4](../modulo-03-aula-04-github-e-colaboracao.md)  
+**Material do aluno:** [E-book correspondente](../../ebooks/modulo-03-introducao-ao-desenvolvimento-de-software.md)  
+**Laboratório:** [Agenda Clara](../../portfolio/agenda-clara/README.md)  
 
-## Objetivo e materiais
+## Alinhamento obrigatório
 
-**Objetivo observável:** compartilhar repositório e revisar uma melhoria com evidência.  
-**Materiais:** GitHub com acesso preparado, histórico local e README; diff local como alternativa temporária.
+- **Objetivo:** Publicar o primeiro projeto no GitHub e compreender como branch, proposta de mudança e revisão apoiam colaboração.
+- **Demonstração central:** Publicar e revisar uma melhoria de documentação.
+- **Prática em grupo:** Revisão de README.
+- **Exercício individual:** publicar/verificar projeto e descrever uma proposta.
+- **Tarefa:** finalizar publicação e revisar README.
 
-Antes do encontro, preparar o exemplo e conferir os recursos necessários. Em tarefas de ferramenta, preparar
-conta e ambiente com antecedência. Se a execução estiver indisponível, percorrer manualmente e declarar o método;
-publicação ou execução exigidas pela entrega devem ser concluídas depois com apoio. Não inventar evidência.
+Não substituir esses elementos por um exemplo genérico sem revisar também o roteiro.
+
+## Antes da aula
+
+- [ ] Confirmar conta GitHub e autenticação sem expor tokens.
+- [ ] Preparar repositório de demonstração descartável.
+- [ ] Testar fluxo de branch e push.
+- [ ] Deixar o roteiro e este script abertos.
+- [ ] Testar qualquer ferramenta, arquivo ou demonstração antes da turma entrar.
+- [ ] Separar o material que o aluno deverá entregar ao final.
 
 ## Agenda de condução
 
-| Intervalo | Etapa | Minutos |
-|---|---|---:|
-| 00–08 | Abertura e diagnóstico | 8 |
-| 08–25 | Conceitos e exemplos | 17 |
-| 25–45 | Demonstração guiada | 20 |
-| 45–50 | Pausa | 5 |
-| 50–65 | Dinâmica em dupla ou grupo | 15 |
-| 65–77 | Exercício individual | 12 |
-| 77–85 | Correção e dúvidas | 8 |
-| 85–90 | Fechamento e tarefa | 5 |
-| Total | | 90 |
-
-O roteiro original contém o caderno completo de atividades. Nesta versão, os enunciados de grupo e individual
-abaixo definem o recorte do encontro. A tarefa de casa conclui os itens restantes. Se precisar reduzir extensão,
-preservar demonstração, tentativa individual, feedback e orientação da entrega.
+| Intervalo | Etapa |
+|---|---|
+| 00–08 | Abertura e diagnóstico |
+| 08–25 | Conceitos e exemplos |
+| 25–45 | Demonstração guiada |
+| 45–50 | Pausa |
+| 50–65 | Dinâmica |
+| 65–77 | Exercício individual |
+| 77–85 | Correção e dúvidas |
+| 85–90 | Fechamento e tarefa |
 
 ## 00–08 — Abertura e diagnóstico
 
-**Mostrar:** título da aula e objetivo. **Fala de abertura:**
+**Fala de abertura:**
 
-> Um colega recebeu o link do seu projeto. Ele consegue descobrir o que é, executar e entender uma mudança? Hoje vamos cuidar de compartilhamento e revisão.
+> Um colega recebeu o link do seu projeto. Ele consegue descobrir o que é, como executar e por que uma mudança foi feita? Hoje vamos transformar um repositório em algo colaborativo.
 
-**Condução:** dar dois minutos para uma previsão individual no chat ou caderno. Colher duas respostas,
-sem exigir fala de todos. Esperar aproximadamente 30 segundos antes de completar a resposta.
-Não confundir silêncio inicial com falta de capacidade; oferecer a situação concreta novamente.
+**Pergunta diagnóstica:** Alterar o arquivo no computador atualiza o GitHub automaticamente?
 
-**Pergunta de diagnóstico:** “Um link comprova que o avaliador consegue acessar?”
+Dê cerca de dois minutos para respostas curtas. Escute pelo menos duas respostas antes de completar.
 
-**Referência para o professor:** Não; verificar visibilidade ou acesso concedido e abrir os arquivos disponíveis.
-
-**Transição para a explicação:**
-
-> Vamos transformar essa primeira resposta em um raciocínio que outra pessoa consiga conferir.
-> A cada exemplo, anotem a decisão e a informação que a sustenta.
-
-## 08–25 — Explicação teórica e exemplos
-
-Dividir os 17 minutos entre as três explicações, a escrita e duas perguntas breves.
-Usar as falas como apoio, sem acrescentar uma exposição inteira do E-book.
-
-### Explicação 1 — Hospedagem e acesso
-
-**Fala sugerida:**
-
-> Git mantém histórico; GitHub hospeda e apoia colaboração. Ao criar remoto vazio para histórico local, evitar README automático simplifica o primeiro envio. Conferir conta, URL, branch e visibilidade. Repositório privado precisa estar acessível ao avaliador.
-
-**Ação:** escrever uma palavra-chave e pedir um exemplo com palavras do aluno. Se houver dúvida, pedir a entrada, regra ou situação concreta que sustenta a resposta.
-### Explicação 2 — Branch e proposta
-
-**Fala sugerida:**
-
-> Uma branch permite preparar uma alteração separada. Uma proposta de integração explica problema, mudança e verificação. O colega lê diff e pede evidência; aprovação não substitui conferência. Documento também pode ser revisado.
-
-**Ação:** escrever uma palavra-chave e pedir um exemplo com palavras do aluno. Se houver dúvida, pedir a entrada, regra ou situação concreta que sustenta a resposta.
-### Explicação 3 — Publicação e responsabilidade
-
-**Fala sugerida:**
-
-> Não incluir credenciais ou dados de clientes. Se houver histórico remoto divergente, investigar antes de agir; envio forçado não é solução automática. Quem revisa precisa conseguir localizar instrução e comprovar a afirmação do autor.
-
-**Ação:** escrever uma palavra-chave e pedir um exemplo com palavras do aluno. Se houver dúvida, pedir a entrada, regra ou situação concreta que sustenta a resposta.
-
-**Mostrar no quadro:** README → histórico → remoto → branch de melhoria → diff e revisão.
-
-**Checagem de compreensão:** “Um link comprova que o avaliador consegue acessar?”  
-**Resposta esperada:** Não; verificar visibilidade ou acesso concedido e abrir os arquivos disponíveis.
+**Resposta de referência para o professor:** Não. Mudança precisa ser registrada em commit e enviada ao remoto.
 
 **Transição:**
 
-> Agora vou percorrer um exemplo pensando em voz alta. Antes de mostrar o resultado,
-> vou pedir uma previsão. Observem onde uma regra ou evidência muda a decisão.
+> Vamos ligar o histórico local que já conhecemos a um remoto e depois isolar uma melhoria para revisão.
 
-## 25–45 — Demonstração guiada
+## 08–25 — Conceitos e exemplos
 
-**Preparação:** abrir os dados, documento, código ou cartões indicados. Reservar aproximadamente cinco minutos
-por passo e os minutos finais para uma previsão e uma dúvida. Em comandos, executar uma operação de cada vez
-e conferir estado. Não substituir falha de ambiente por uma afirmação de execução bem-sucedida.
+### 1. Local e remoto
 
-### Passo 1 — Conferir remoto e branch
+**Fala sugerida:**
 
-**Fala durante a demonstração:**
+> O repositório local existe no seu computador. GitHub pode hospedar uma cópia remota para compartilhamento e colaboração.
 
-> Vou mostrar git branch --show-current e git remote -v. O endereço deve corresponder ao repositório criado, sem marcador literal.
+**Mostrar/fazer:** `git remote -v` e página do repositório.
 
-**Ação:** mostrar o registro correspondente antes de avançar; pedir uma previsão e conferir a resposta com a evidência.
-### Passo 2 — Enviar e examinar
+**Perguntar:** Alterar um arquivo local muda o GitHub imediatamente?
 
-**Fala durante a demonstração:**
+**Compreensão esperada:** não; é preciso commit e envio/sincronização.
 
-> Após autenticação já preparada, envio a branch e confiro README e commits. Se a conta falhar, uso cópia de diff para manter a revisão e concluo publicação depois.
+### 2. Branch e proposta
 
-**Ação:** mostrar o registro correspondente antes de avançar; pedir uma previsão e conferir a resposta com a evidência.
-### Passo 3 — Propor melhoria
+**Fala sugerida:**
 
-**Fala durante a demonstração:**
+> Branch permite desenvolver uma mudança sem alterar imediatamente a linha principal. Uma proposta de revisão explica problema, mudança e verificação.
 
-> Crio branch docs/execucao, melhoro instrução e apresento diff. Descrição: problema de pasta atual, caminho esclarecido e evidência de execução.
+**Mostrar/fazer:** fluxo main → branch → PR → revisão.
 
-**Ação:** mostrar o registro correspondente antes de avançar; pedir uma previsão e conferir a resposta com a evidência.
+**Perguntar:** Por que não trabalhar sempre direto na main?
 
-**Pergunta após a demonstração:** “Qual decisão vocês conseguem explicar sem copiar a frase que usei?”
+**Compreensão esperada:** para isolar mudanças, revisar e reduzir risco.
 
-**Referência:** a resposta precisa relacionar situação, decisão e fundamento.
-As falas de cada passo indicam o comportamento ou a interpretação que deve ser conferido.
+### 3. README e acessibilidade
 
-**Transição:**
+**Fala sugerida:**
 
-> Na prática, vocês vão alternar quem conduz e quem revisa. O objetivo é produzir algo
-> que o colega consiga conferir, e não somente repetir minha demonstração.
+> Um link não é portfólio suficiente se ninguém entende o projeto. README precisa explicar o que é, como executar e o que não está implementado.
+
+**Mostrar/fazer:** README do laboratório.
+
+**Perguntar:** Uma pessoa que não assistiu à aula consegue executar?
+
+**Compreensão esperada:** deve conseguir com instruções claras e acesso.
+
+Evite ler o E-book. Use-o como base e mantenha a explicação oral no recorte previsto pelo roteiro.
+
+## 25–45 — Demonstração guiada — Publicar e revisar uma melhoria de documentação
+
+### Passo 1 — Conferir remoto
+
+**Fazer:** Mostre `git remote -v` e página vazia/atual.
+
+**Fala sugerida:**
+
+> Antes de enviar, precisamos saber para onde estamos enviando. Credenciais e URL fazem parte da segurança do processo.
+
+**Checar com a turma:** Pergunte o que fazer se a URL remota estiver errada.
+
+### Passo 2 — Enviar e verificar
+
+**Fazer:** Faça push normal e confira no GitHub.
+
+**Fala sugerida:**
+
+> Não basta comando retornar sem erro. Vamos verificar se o histórico que esperamos realmente apareceu no remoto.
+
+**Checar com a turma:** Peça ao aluno para localizar commits e README.
+
+### Passo 3 — Criar proposta revisável
+
+**Fazer:** Use branch e alteração de README.
+
+**Fala sugerida:**
+
+> Uma boa proposta explica o problema, o que mudou e como confirmar. Isso é colaboração, não apenas ‘mandar código’.
+
+**Checar com a turma:** Peça uma frase de problema e uma de verificação.
+
+**Resultado de referência:** O projeto remoto deve conter histórico acessível, README coerente e uma mudança isolada/revisável. Repositório privado exige acesso apropriado ao avaliador.
+
+Peça previsão antes de executar ou revelar a resposta. Depois compare previsão, evidência e explicação.
 
 ## 45–50 — Pausa
 
-Deixar horário de retorno visível e não apresentar conteúdo obrigatório durante os cinco minutos.
-Na gravação, indicar o ponto em que a atividade seguinte começa.
+Informar o horário de retorno. Não usar a pausa para conteúdo obrigatório.
 
-## 50–65 — Dinâmica em dupla ou grupo
+## 50–65 — Dinâmica — Revisão de README
 
-**Nome:** Revisão com explicação — GitHub, revisão e publicação.  
-**Contexto profissional:** uma equipe precisa revisar seu trabalho antes de avançar.
-**Objetivo:** aplicar os conceitos e produzir um registro conferível no recorte da aula.
+**Cenário:** Uma pessoa publica instruções que funcionam apenas se o usuário já souber em qual pasta executar.
 
-**Fala de orientação:**
+**Orientação para a turma:**
 
-> Uma pessoa começa conduzindo e a outra confere as decisões. Na metade, troquem funções.
-> Registrem o que fizeram e qual informação justifica o resultado.
-> Se discordarem, expliquem a diferença usando regra ou evidência, em vez de escolher pela maioria.
+> Revisar não é reescrever o trabalho do colega. É apontar se a proposta está clara, verificável e segura.
 
-**Enunciado e passo a passo:**
+1. Identificar o problema de documentação.
+2. Propor mudança em branch.
+3. Escrever descrição com problema, mudança e verificação.
+4. Outra dupla revisa sem editar diretamente.
 
-1. Localizar instrução no README do colega.
-2. Revisar um diff documental e pedir uma evidência.
-3. Trocar funções e registrar resposta ao feedback.
+**Tempo sugerido:** 2 min organização, 8 min produção, 3 min revisão entre pares e 2 min compartilhamento.
 
-**Tempo:** 2 minutos para ler e organizar; 5 para produzir; 5 para trocar revisão; 3 para compartilhar.
-Selecionar duas duplas para falar e recolher as demais por escrito. Em aulas de entrevista ou apresentação,
-usar o mesmo tempo para a primeira participação, troca e feedback.
+**Entrega esperada:** proposta de mudança revisável
 
-**Entrega esperada:** registro da atividade com contexto, decisão, fundamento e uma revisão.
-**Critérios:** cumprir as etapas, preservar as regras e permitir que o colega confira.
-**Referência de correção:** usar os exemplos da demonstração e verificar o que mudou no novo caso,
-sem exigir palavras idênticas.
-
-**Perguntas ao circular:** “Qual passo está sendo executado?”, “Qual evidência sustenta isso?”
-e “O que precisaria mudar para sua conclusão ser diferente?”
-
-**Dica para a dupla:** separar o que observou do que está supondo.
-**Variação difícil:** formular um contraexemplo ou limite; transferir para casa se não couber.
+**O professor observa:** problema claro; mudança focada; verificação possível; limites honestos.
 
 ## 65–77 — Exercício individual
 
-**Fala do professor — enunciado:**
+**Enunciado para falar à turma:**
 
-> Escreva descrição de proposta com problema, mudança e verificação. Registre o acesso ao repositório ou a pendência de publicação claramente.
+> Verifique se outra pessoa consegue entender e executar seu projeto. Registre a URL ou pendência de acesso e escreva uma descrição curta de uma melhoria: problema, mudança e como verificar.
 
-**Tempo:** 2 minutos de leitura, 7 de resolução e 3 de revisão/entrega.
-Cada aluno entrega uma resposta própria, mesmo quando a atividade anterior foi em grupo.
+**Entrega:** link/verificação do repositório + descrição de proposta
 
-**Entrega:** artefato pedido no enunciado, acompanhado de uma explicação breve da decisão.
-**Critérios:** correção, completude do recorte, evidência e justificativa. Aplicar a
-[rubrica formativa](../../planejamento/analise-pedagogica.md), de 0 a 2 por critério. Referência proposta: 6/8, sem zero em correção ou evidência.
+**Critérios:** acesso conferido; README suficiente; proposta clara; sem inventar execução.
 
-**Ajuda graduada:** pedir que identifique primeiro a entrada, regra ou exigência; depois que escolha o próximo
-passo. Não resolver todas as etapas. Registrar qual parte foi assistida e conferir transferência em uma tentativa nova.
-
-**Gabarito comentado — revelar depois da tentativa:**
-
-> Uma revisão útil liga mudança a problema e evidência. Publicação exige URL e acesso; diff local é alternativa de prática, não prova de publicação. Integração deve preservar intenção discutida.
+**Se houver dificuldade:** se publicação estiver bloqueada, documente o bloqueio e conclua a parte local; não use força para ‘resolver’ histórico sem entender.
 
 ## 77–85 — Correção, intervenções e dúvidas
 
-**Fala para iniciar a correção:**
+Peça primeiro que o aluno explique o caminho usado. Só depois mostre referência ou correção.
 
-> Se sua resposta foi diferente, mantenha a primeira versão. Vamos descobrir em qual decisão
-> o raciocínio mudou. Corrigir e explicar a mudança faz parte da aprendizagem.
+**Se aparecer:** o aluno pensa que push é backup automático de qualquer arquivo
 
-**Se o aluno aprovar sem ler:**
+> Somente commits enviados chegam ao remoto. Arquivos não rastreados ou mudanças sem commit não aparecem.
 
-> Qual linha mudou e o que confirma a afirmação do autor?
+**Se aparecer:** o aluno sugere `--force` para qualquer rejeição
 
-**Se o aluno resolver rejeição com envio forçado:**
+> Pare e entenda por que o histórico divergiu. Forçar pode sobrescrever trabalho; não é solução padrão.
 
-> Vamos compreender os históricos e pedir orientação antes de substituir conteúdo remoto.
+**Se aparecer:** o aluno considera link privado inacessível como evidência suficiente
 
-**Dúvida central da aula:** “Um link comprova que o avaliador consegue acessar?”
+> Quem avalia consegue abrir? A evidência precisa ser acessível ao público definido.
 
-**Como responder:**
+### Perguntas de verificação
 
-> Não; verificar visibilidade ou acesso concedido e abrir os arquivos disponíveis.
+- **Git e GitHub são a mesma coisa?** — Não. Git é versionamento; GitHub é uma plataforma de hospedagem/colaboração.
+- **O que uma boa descrição de PR precisa explicar?** — Problema/contexto, mudança e forma de verificar, além de riscos quando relevantes.
+- **Por que README faz parte do projeto?** — Porque permite compreender propósito, execução, limites e evidências sem depender do autor.
 
-**Se perguntarem se a resposta precisa ser igual:**
-
-> Não precisa repetir minha frase. Precisa respeitar as regras e permitir que outra pessoa
-> confira como você chegou à decisão.
-
-**Se perguntarem como usar a gravação:**
-
-> Localize o trecho em que surgiu a dúvida, reveja o exemplo e depois tente uma entrada ou situação nova.
-> Assistir de novo ajuda; explicar sua própria decisão é o que vamos avaliar.
-
-**Modelo de devolutiva:**
-
-> Você acertou ao identificar a decisão principal. Falta mostrar a informação que a sustenta.
-> Acrescente essa evidência e explique o que mudou na sua revisão.
-
-Selecionar duas dúvidas para os oito minutos. Registrar as demais para resposta após a aula ou retomada.
-Não ampliar silenciosamente a duração do encontro.
-
-## 85–90 — Fechamento e tarefa para casa
+## 85–90 — Fechamento e tarefa
 
 **Fala de fechamento:**
 
-> Hoje trabalhamos como compartilhar repositório e revisar uma melhoria com evidência.
-> Para revisar, procure uma decisão, a evidência que a sustenta e uma limitação que ainda precisa de atenção.
-> Guardem a primeira versão e a correção; isso ajuda a explicar a evolução no portfólio.
+> Publicar é só o começo. Um projeto profissional precisa ser compreensível, verificável e seguro para outras pessoas colaborarem.
 
-**Pergunta de saída:** “O que você mudou na sua primeira previsão, e por quê?”
+**Tarefa para casa:**
 
-**Tarefa de casa — falar à turma:**
+1. Conferir acesso ao repositório.
+2. Revisar instruções do README.
+3. Registrar uma melhoria em branch/PR ou simulação documentada.
+4. Entregar `m03-aula-04-revisao.md` e organizar a entrega do módulo.
 
-> Concluir publicação, revisão e entrega do módulo. Pedir que um colega siga somente o README e registrar uma dúvida encontrada.
+**Entrega:** repositório verificável + revisão documentada
 
-**Tempo-base:** 30–45 minutos para revisão. Se o enunciado exigir concluir vários artefatos, execução pendente
-ou preparação da entrega final, combinar prazo e tempo adicional explicitamente; não prometer que tudo cabe
-nesse intervalo.
+**Ponte para a próxima aula:**
 
-**Entrega:** `modulo-03-aula-04-github-e-colaboracao-revisao.md`, ou arquivos específicos pedidos, contendo resposta inicial, feedback,
-versão revisada e explicação. O professor verifica a revisão no início do encontro seguinte.
+> No próximo módulo vamos olhar para esse software com a lente de qualidade: o que pode dar errado, como priorizar testes e como comunicar defeitos.
 
-**Dica:** usar E-book e gravação como apoio; identificar empresa fictícia e origem da evidência.
-**Variação difícil:** acrescentar uma situação nova ou uma dúvida de aplicação, com proposta de investigação.
+## Checklist pós-aula
 
-## Checklist do professor e uso da gravação
-
-- [ ] Preparar recursos e exemplo antes do encontro.
-- [ ] Pedir previsão antes de revelar referência.
-- [ ] Conferir compreensão por exemplo, não por memorização.
-- [ ] Alternar condução e revisão na dupla.
-- [ ] Preservar exercício individual.
-- [ ] Declarar execução, simulação e limites corretamente.
-- [ ] Registrar feedback, tarefa e dúvidas pendentes.
-- [ ] Disponibilizar gravação para revisão e indicar os blocos de demonstração e correção.
-
-Percentual de vídeo assistido é sinal de utilização, não prova de domínio.
-Usar artefato e explicação para avaliar aprendizagem; não penalizar o aluno por uma falha de registro de reprodução.
+- [ ] Disponibilizar a gravação.
+- [ ] Registrar dúvidas que precisam ser retomadas.
+- [ ] Conferir se atividade, demonstração e tarefa foram as mesmas do roteiro.
+- [ ] Anotar ajustes de tempo para a próxima turma.
+- [ ] Se uma regra ou resposta de referência mudar, atualizar roteiro e script juntos.

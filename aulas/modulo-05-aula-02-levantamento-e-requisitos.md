@@ -1,120 +1,126 @@
-# Roteiro — Módulo 5, Aula 2
+# Roteiro de Aula — Módulo 5, Aula 2
 
-**Condução com falas prontas:** [script do professor](scripts/modulo-05-aula-02-levantamento-e-requisitos.md). Seguir a sequência de até 90 minutos. As atividades abaixo formam o caderno completo; o script define o recorte ao vivo e a conclusão em casa. A gravação serve para revisão posterior.
+# Levantamento e Requisitos
 
-## Tema e objetivo da aula
+> **Papel deste documento:** definir o que será ensinado, praticado e avaliado.  
+> A condução minuto a minuto, falas sugeridas, respostas esperadas e intervenções ficam no [script do professor](scripts/modulo-05-aula-02-levantamento-e-requisitos.md).
 
-**Tema:** Levantamento e requisitos. **Objetivo observável:** realizar entrevista simulada e classificar requisitos.
+## Objetivo da aula
 
-**Leitura:** [E-book do módulo](../ebooks/modulo-05-product-owner-e-produto.md), tópicos 2. **Pré-requisito:** atividade da aula anterior, com retomada da lacuna identificada no feedback.
+Praticar levantamento de requisitos com perguntas abertas, registro de evidências e classificação entre requisito, restrição, hipótese e ambiguidade.
 
-## Duração sugerida
+Ao final, o aluno deverá conseguir:
 
-| Etapa | Minutos |
+- formular perguntas abertas
+- evitar perguntas indutivas
+- diferenciar requisito funcional, restrição e hipótese
+- registrar fonte e contexto
+- transformar termos vagos em perguntas verificáveis
+
+## Conteúdos e conceitos
+
+### Perguntas de descoberta
+- abertas
+- baseadas em situação real
+- evitam indução
+
+### Classificação de requisitos
+- funcional
+- não funcional/restrição
+- regra
+- hipótese
+
+### Fonte e rastreabilidade
+- quem disse
+- quando/contexto
+- evidência versus interpretação
+
+## Duração e blocos
+
+| Bloco | Tempo previsto |
 |---|---:|
-| Abertura e diagnóstico | 8 |
-| Conceitos e exemplos | 17 |
-| Demonstração guiada | 20 |
-| Pausa | 5 |
-| Dinâmica em dupla ou grupo | 15 |
-| Exercício individual | 12 |
-| Correção e dúvidas | 8 |
-| Fechamento e orientação da tarefa | 5 |
-| Total | 90 |
+| Abertura e diagnóstico | 8 min |
+| Conceitos e exemplos | 17 min |
+| Demonstração guiada | 20 min |
+| Pausa | 5 min |
+| Dinâmica em dupla ou grupo | 15 min |
+| Exercício individual | 12 min |
+| Correção e dúvidas | 8 min |
+| Fechamento e tarefa | 5 min |
+| **Total** | **90 min** |
 
 ## Materiais necessários
 
-roteiro de entrevista e regras. Usar [caderno do caso](../atividades/caso-agenda-clara.md), editor de Markdown ou papel e [laboratório](../portfolio/agenda-clara/README.md). Testar o ambiente antes da aula. Contas de ferramentas são opcionais quando houver alternativa documental; evidência de execução continua necessária quando o enunciado a solicitar.
+- E-book do Módulo 5
+- caso Agenda Clara
+- roteiro de entrevista
+- quadro de classificação
 
-## Abertura da aula
+## Exemplos planejados
 
-Peça uma pergunta que não sugira a resposta. Dê dois minutos para registrar uma previsão individual, recolha duas respostas e pergunte qual evidência seria necessária. Retome um conceito anterior e anuncie a entrega de hoje.
+### Exemplo 1
+Pergunta aberta sobre conflito.
 
-## Explicação teórica e exemplos práticos
+### Exemplo 2
+Classificação de RN02.
 
-### Levantamento de requisitos
+### Exemplo 3
+Termo ‘rápido’ transformado em questão mensurável.
 
-**Conceito:** Levantar requisitos é compreender necessidades, restrições e comportamentos esperados com os envolvidos.
+## Demonstração planejada — Transformar perguntas e classificar respostas
 
-**Explicação simples:** Perguntar sobre a última reserva duplicada produz mais informação que perguntar se a pessoa quer uma agenda bonita.
+1. Mostrar uma pergunta indutiva.
+2. Reescrever como pergunta aberta.
+3. Simular uma resposta da recepção.
+4. Separar fato, requisito, restrição e hipótese.
+5. Registrar uma ambiguidade para investigação.
 
-**Aprofundamento:** Use entrevista, observação e análise de chamados. Separe evidência, interpretação e hipótese. Funcionais descrevem comportamento; requisitos de qualidade descrevem características verificáveis; restrições limitam a solução. “Rápido” exige cenário, medida e condição. Confirme RN01–RN08 e marque concorrência real como questão de extensão. Evite perguntas indutivas que apresentam a solução antes de entender o problema.
+**Resultado pedagógico esperado:** o aluno coleta informação sem antecipar solução e sabe o que ainda não está decidido.
 
-**Exemplo cotidiano:** Um pedido de relatório pode esconder a necessidade de saber quem ainda não chegou.
+## Dinâmica em grupo — Recepção e analista
 
-**Cenário empresarial:** PO escuta recepção e consulta os testes para esclarecer cancelamento inexistente.
+**Cenário:** Em duplas, uma pessoa representa a recepção e a outra conduz uma entrevista curta sobre conflitos de agenda.
 
-**Erros a observar:** Inventar dados de usuário; requisitos sem fonte; esconder conflito entre interessados.
+1. Preparar três perguntas abertas.
+2. Conduzir entrevista de cinco minutos.
+3. Registrar fatos, hipóteses e dúvidas separadamente.
+4. Trocar papéis e revisar uma pergunta indutiva.
 
-**Orientação:** Perguntas abertas, exemplos e confirmação de entendimento.
+**Entrega esperada:** roteiro + notas classificadas
 
-Distribua os 17 minutos entre os tópicos. Peça um exemplo com palavras do aluno antes de avançar; se houver uma contradição, retome a regra do caso.
-
-## Demonstração guiada
-
-Transforme “agenda rápida” em uma pergunta de medida e cenário.
-
-**Exemplo 1:** “Conte a última situação de conflito” é aberta. RN02 é funcional; uso de dados fictícios é restrição educacional; “resposta rápida” precisa de cenário e limite antes de ser verificável.
-
-Interrompa antes do resultado para pedir uma previsão. Revele uma etapa de cada vez, marque a regra e compare a resposta com a evidência. Não concluir correção apenas pela aparência do arquivo.
-
-## Dinâmica em grupo
-
-**Nome:** Recepção e analista. **Contexto:** a equipe precisa revisar uma decisão antes de avançar o MVP. Em duplas, uma pessoa produz e outra confere; trocar funções na metade do tempo. Em grupos maiores, adicionar um papel de registro.
-
-**Distribuição:** 2 minutos de leitura; 5 de execução; 5 de revisão cruzada; 3 de compartilhamento. Se houver mais de duas duplas, recolher as demais conclusões por escrito para caber no tempo.
-
-**Atividade 2: Simular entrevista e classificar requisitos**
-
-**Contexto profissional:** o time da empresa fictícia Agenda Clara precisa revisar esta decisão antes de entregar o MVP. Dados e regras no [caderno do caso](../atividades/caso-agenda-clara.md).
-
-**Objetivo:** Simular entrevista e classificar requisitos, com registro que permita conferência por outra pessoa.
-
-**Passo a passo:**
-
-1. Escreva cinco perguntas abertas.
-2. Entrevistem em dupla usando o caso.
-3. Marque respostas adicionais como hipóteses.
-4. Classifique três requisitos e uma restrição.
-5. Registre uma ambiguidade e plano de validação.
-
-**Entrega esperada:** roteiro e registro de entrevista com classificação Identificar nome, versão ou premissas, regra utilizada e justificativa. Nome sugerido: `m05-atividade-02.md`.
-
-**Critérios específicos:** Cinco perguntas; fontes ou hipóteses explícitas; requisito verificável.
-
-**Exemplo de resposta comentada:** “Conte a última situação de conflito” é aberta. RN02 é funcional; uso de dados fictícios é restrição educacional; “resposta rápida” precisa de cenário e limite antes de ser verificável.
-
-**Dica:** faça sua tentativa antes de ler a resposta e explique qualquer revisão.
-
-**Variação mais difícil:** Qual pergunta ajudaria a descobrir uma exceção não mencionada?
-
+**Critérios:** perguntas abertas; fonte/contexto registrado; hipóteses separadas; ambiguidade identificada.
 
 ## Exercício individual
 
-Reescreva duas perguntas indutivas e registre uma ambiguidade.
+Reescreva duas perguntas indutivas como abertas. Depois classifique RN02, o uso de dados fictícios e a frase ‘o sistema precisa ser rápido’. Para a última, escreva uma pergunta de esclarecimento.
 
-**Tempo:** 12 minutos. **Entrega:** uma versão própria do artefato, incluindo regra, decisão e evidência. **Avaliação:** critérios específicos acima e rubrica do E-book. O professor verifica se houve transferência para o novo caso. Se houver ajuda, registrar qual etapa foi assistida.
+**Entrega:** quatro respostas classificadas
 
-## Perguntas para os alunos
+**Critérios:** perguntas não indutivas; classificação coerente; ambiguidade reconhecida; pergunta de validação útil.
 
-- O que é evidência?
-- Qual requisito ainda é vago?
-- Qual parte da sua previsão você reviu e qual evidência motivou a mudança?
+## Perguntas de verificação
 
-## Possíveis dúvidas e como responder
+- Pergunta fechada é sempre ruim?
+- Tudo que o usuário pede vira requisito?
+- Como lidar com ‘o sistema precisa ser rápido’?
 
-| Dúvida | Resposta |
-|---|---|
-| Posso inventar resposta? | Pode simular, marcando explicitamente como hipótese. |
-| Não funcional é secundário? | Não; qualidade pode ser crítica. |
-| Preciso copiar a resposta de referência? | Não; preserve as regras e explique sua decisão com evidência. |
-
-## Correção e fechamento
-
-As respostas de referência estão na demonstração. Não exigir frases idênticas; conferir critérios e raciocínio. Cada aluno completa: “Usei ___ para decidir ___ e confirmei com ___”. Relacionar à entrega do módulo: brief do problema, roteiro de entrevista, três histórias completas, backlog com seis itens e ata de refinamento. As histórias registram necessidades discutidas.
+> As respostas esperadas e intervenções ficam exclusivamente no script do professor.
 
 ## Tarefa para casa
 
-Revisar entrevista e classificação.
+1. Revisar as perguntas.
+2. Classificar respostas e pendências.
+3. Registrar uma nova dúvida de descoberta.
+4. Entregar `m05-aula-02-revisao.md`.
 
-**Tempo sugerido:** 30–45 minutos. Entregar `m05-aula-02-revisao.md` com resposta inicial, feedback, versão revisada e explicação da mudança. O professor verifica a revisão no próximo encontro.
+**Entrega:** roteiro de entrevista revisado + classificação
+
+## Conexão com a trilha
+
+A Aula 3 transforma necessidades em User Stories e critérios de aceite verificáveis.
+
+## Referências
+
+- [E-book correspondente](../ebooks/modulo-05-product-owner-e-produto.md)
+- [Caso Agenda Clara](../atividades/caso-agenda-clara.md)
+- [Script do professor](scripts/modulo-05-aula-02-levantamento-e-requisitos.md)

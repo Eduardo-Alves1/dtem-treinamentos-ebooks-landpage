@@ -1,406 +1,217 @@
-# Script do professor — Módulo 2, Aula 1
-## Algoritmos e rastreamento
+# Script do Professor — Algoritmos e Rastreamento
 
-**DTEM Treinamentos · duração máxima: 90 minutos · encontro ao vivo, gravado para revisão.**
+**DTEM Treinamentos · encontro ao vivo de até 90 minutos.**
 
-Este é um texto de apoio às falas e à condução. O professor pode adaptá-lo ao próprio jeito de falar, mantendo conceitos, regras e momentos de prática. Os intervalos incluem fala, escrita no quadro, espera e interação; não representam 90 minutos de leitura contínua.
+> **Papel deste documento:** orientar a condução da aula. O conteúdo e as atividades abaixo devem permanecer coerentes com o roteiro; o script não cria uma aula paralela.
 
-**Roteiro pedagógico:** [aula 1](../modulo-02-aula-01-algoritmos-e-rastreamento.md).  
-**Leitura do aluno:** [E-book do Módulo 2](../../ebooks/modulo-02-logica-de-programacao.md), tópico 1.  
-**Regras fornecidas:** [Agenda Clara](../../atividades/caso-agenda-clara.md).
+**Roteiro:** [Módulo 2, Aula 1](../modulo-02-aula-01-algoritmos-e-rastreamento.md)  
+**Material do aluno:** [E-book correspondente](../../ebooks/modulo-02-logica-de-programacao.md)  
+**Caso:** [Agenda Clara](../../atividades/caso-agenda-clara.md)  
 
-## Objetivo e preparação
+## Alinhamento obrigatório
 
-Ao final, cada aluno escreve passos de reserva, distingue entrada, processamento, saída e estado e rastreia uma tentativa válida e uma recusada. Não é necessário programar, instalar ferramentas ou dominar sintaxe.
+- **Objetivo:** Ensinar o aluno a descrever um algoritmo e rastrear manualmente entradas, decisões, saídas e estado antes de escrever código.
+- **Demonstração central:** Algoritmo de reserva sem código.
+- **Prática em grupo:** Rastreamento cruzado de reservas.
+- **Exercício individual:** rastrear três novas tentativas em sequência.
+- **Tarefa:** revisar o algoritmo e acrescentar um exemplo próprio.
 
-Antes do encontro, preparar um quadro ou documento compartilhado com:
+Não substituir esses elementos por um exemplo genérico sem revisar também o roteiro.
 
-- Catálogo: H09, H10 e H11.
-- Regra: um horário aceita no máximo uma reserva ativa.
-- Nome obrigatório com conteúdo após remover espaços das extremidades.
-- Reserva recusada não apaga nem altera uma reserva existente.
-- Três espaços desenhados entre aspas: “   ”, para tornar a entrada visível.
-- Tabela com tentativa, entrada, estado antes, resultado e estado depois.
+## Antes da aula
 
-H09 é um identificador do catálogo, não uma data real. Reserva e cancelamento não precisam ser demonstrados por código nesta aula; cancelamento será aprofundado depois. Usar nomes fictícios.
-
-**Materiais:** quadro ou editor compartilhado, caderno do caso e folha ou editor de texto por aluno. Salas de dupla são opcionais; se não houver, usar troca de arquivos ou comentários no chat.
+- [ ] Revisar RN01–RN05 e RN08.
+- [ ] Preparar a tabela de rastreamento vazia.
+- [ ] Não abrir código no início da aula; o objetivo é lógica antes de sintaxe.
+- [ ] Deixar o roteiro e este script abertos.
+- [ ] Testar qualquer ferramenta, arquivo ou demonstração antes da turma entrar.
+- [ ] Separar o material que o aluno deverá entregar ao final.
 
 ## Agenda de condução
 
-| Intervalo | Bloco | Minutos |
-|---|---|---:|
-| 00–08 | Abertura e diagnóstico | 8 |
-| 08–25 | Conceitos e exemplo cotidiano | 17 |
-| 25–45 | Algoritmo e rastreamento demonstrados | 20 |
-| 45–50 | Pausa | 5 |
-| 50–65 | Prática em dupla | 15 |
-| 65–77 | Exercício individual | 12 |
-| 77–85 | Correção e perguntas | 8 |
-| 85–90 | Fechamento e tarefa | 5 |
-| Total | | 90 |
-
-Se uma discussão ultrapassar o tempo, registrar a dúvida para retorno e transferir a variação opcional para casa. Preservar exercício individual e fechamento.
+| Intervalo | Etapa |
+|---|---|
+| 00–08 | Abertura e diagnóstico |
+| 08–25 | Conceitos e exemplos |
+| 25–45 | Demonstração guiada |
+| 45–50 | Pausa |
+| 50–65 | Dinâmica |
+| 65–77 | Exercício individual |
+| 77–85 | Correção e dúvidas |
+| 85–90 | Fechamento e tarefa |
 
 ## 00–08 — Abertura e diagnóstico
 
-**Mostrar:** “Hoje: transformar uma regra em passos e conferir o resultado.”
+**Fala de abertura:**
+
+> Hoje vamos organizar uma solução antes de escrever código. Se eu disser apenas ‘faça uma reserva’, essa instrução é suficiente para outra pessoa executar sem inventar regras?
+
+**Pergunta diagnóstica:** Quais informações entram em uma reserva e o que precisa ser verificado antes de confirmar?
+
+Dê cerca de dois minutos para respostas curtas no chat, voz ou caderno. Escute pelo menos duas respostas antes de completar.
+
+**Resposta de referência para o professor:** Nome/identidade e horário entram; é preciso validar os dados e o estado/disponibilidade antes de alterar a agenda.
+
+**Transição:**
+
+> Vamos transformar uma regra de negócio em passos que qualquer pessoa consiga rastrear no papel.
+
+## 08–25 — Conceitos e exemplos
+
+### 1. Algoritmo
 
 **Fala sugerida:**
 
-> Na aula de hoje, vamos aprender a organizar uma solução antes de escrever código. Ao final, vocês vão conseguir explicar quais informações entram, quais verificações acontecem e qual resultado deve sair.
->
-> Pensem em uma recepção que agenda atendimentos por mensagem. Ana pede um horário, a recepção confirma e, logo depois, Bruno pede o mesmo horário. O que precisa ser conferido antes de confirmar para Bruno?
+> Um algoritmo é uma descrição organizada de como resolver um problema. Antes de pensar em Python, precisamos deixar claro o que entra, o que é verificado e qual resultado sai.
 
-**Perguntar:** “Qual seria o primeiro passo de vocês?”
+**Mostrar/fazer:** escreva um algoritmo simples de reserva sem código.
 
-**Esperar:** aproximadamente 30 segundos; depois colher duas respostas. Pedir uma previsão individual no chat ou caderno. Não anunciar a resposta completa ainda.
+**Perguntar:** Qual é a entrada e qual é a primeira verificação?
 
-**Se alguém responder “olhar a agenda”:**
+**Compreensão esperada:** o aluno separa dados de entrada da regra.
 
-> Esse é um bom começo. Agora vamos tornar o passo mais preciso: olhar qual horário? O que fazemos se ele estiver ocupado? E o que respondemos para a pessoa?
+### 2. Rastreamento manual
 
-**Se responder “avisar que não pode”:**
+**Fala sugerida:**
 
-> Pode ser o resultado correto, mas ainda precisamos mostrar como chegamos a ele. Hoje vamos trabalhar justamente essa ligação entre informação, verificação e resposta.
+> Rastrear é executar a lógica no papel. Isso ajuda a entender comportamento sem depender de uma linguagem.
 
-**Transição:**
+**Mostrar/fazer:** tabela Passo / Entrada / Decisão / Estado.
 
-> A regra diz o que precisa ser respeitado. O algoritmo organiza os passos para respeitar essa regra. Vamos entender essa diferença com uma situação simples.
+**Perguntar:** Depois de uma reserva bem-sucedida, o que mudou no estado?
 
-## 08–25 — Explicação teórica com falas
+**Compreensão esperada:** o aluno reconhece que H09 passa a estar ocupado.
 
-### 08–13 — O que é um algoritmo
+### 3. Falha sem corrupção de estado
 
-**Escrever:** “Algoritmo = passos organizados para resolver um problema.”
+**Fala sugerida:**
 
-**Fala:**
+> Uma tentativa recusada também é um resultado. Ela não deve apagar ou alterar uma reserva válida anterior sem uma regra que permita isso.
 
-> Um algoritmo é uma sequência de passos que descreve uma solução. Podemos escrevê-lo em português, desenhar um fluxo ou, mais adiante, transformá-lo em código.
->
-> Imaginem que eu dê a instrução “reserve o horário para o cliente”. Para quem já trabalha na recepção, isso pode parecer suficiente. Para uma pessoa que acabou de começar, faltam informações: o nome foi informado? O horário existe? Está disponível? Qual resposta damos se uma dessas condições não for atendida?
->
-> Um algoritmo útil transforma essa instrução ampla em decisões e ações claras.
+**Mostrar/fazer:** compare Ana/H09 e Bruno/H09.
 
-**Perguntar:** “Uma lista de passos pode estar errada mesmo quando parece organizada?”
+**Perguntar:** O que precisa permanecer igual quando Bruno é recusado?
 
-**Resposta esperada:** sim, pode omitir uma verificação ou executar passos na ordem errada.
+**Compreensão esperada:** H09 continua associado à reserva de Ana.
 
-**Intervenção:**
+Evite transformar este bloco em leitura do E-book. Use o E-book como base e mantenha a explicação oral no recorte previsto pelo roteiro.
 
-> Exatamente. Organização ajuda, mas precisamos conferir se os passos atendem às regras. Uma lista que confirma a reserva e só depois verifica se o horário está ocupado pode causar problema.
+## 25–45 — Demonstração guiada — Algoritmo de reserva sem código
 
-### 13–19 — Entrada, processamento e saída
+### Passo 1 — Definir entradas e ordem
 
-**Mostrar:**
+**Fazer:** Escreva nome e horário; liste validações.
 
-| Parte | Pergunta | Exemplo |
-|---|---|---|
-| Entrada | O que recebemos? | Nome e horário |
-| Processamento | O que verificamos e fazemos? | Validar e conferir ocupação |
-| Saída | Qual resultado devolvemos? | Sucesso ou motivo de recusa |
+**Fala sugerida:**
 
-**Fala:**
+> Ainda não vamos programar. Primeiro vamos deixar a regra explícita e decidir em que ordem cada verificação acontece.
 
-> A entrada é a informação que recebemos para iniciar a operação. Aqui, nome e horário.
->
-> O processamento reúne as verificações e ações. Primeiro avaliamos os dados e a disponibilidade; só depois criamos a reserva.
->
-> A saída informa o resultado da tentativa. Pode ser sucesso, nome inválido, horário inválido ou conflito de horário.
->
-> Essas partes ajudam a explicar um sistema mesmo antes de conhecer uma linguagem de programação.
+**Checar com a turma:** Pergunte o que deve ser validado antes de alterar a agenda.
 
-**Exemplo cotidiano:**
+### Passo 2 — Rastrear Ana/H09
 
-> Ao tentar comprar um ingresso, escolher o assento é uma entrada. Conferir se ele ainda está disponível faz parte do processamento. A confirmação ou a recusa é uma saída. Apenas clicar no assento não garante que a compra foi concluída.
+**Fazer:** Percorra o algoritmo e marque H09 como ocupado.
 
-**Perguntar:** “Na reserva, o nome do cliente é entrada ou saída?”
+**Fala sugerida:**
 
-**Se houver confusão:**
+> A cada passo eu vou dizer o estado antes e depois. Isso é o que permite outra pessoa conferir meu raciocínio.
 
-> Perguntem de onde veio a informação. O cliente informou o nome, então ele é uma entrada. A confirmação foi produzida depois da análise, então é uma saída.
+**Checar com a turma:** Peça à turma para prever a saída antes de marcar a reserva.
 
-### 19–25 — Estado e rastreamento
+### Passo 3 — Rastrear Bruno/H09
 
-**Escrever:** “Estado = como a agenda está em determinado momento.”
+**Fazer:** Repita na mesma agenda.
 
-**Fala:**
+**Fala sugerida:**
 
-> Além da resposta, precisamos acompanhar o estado. Antes de reservar, H09 está livre. Depois de uma reserva válida, ele está ocupado.
->
-> Quando uma tentativa é recusada, a resposta muda para conflito, mas a reserva anterior deve continuar existindo.
->
-> Rastrear um algoritmo significa percorrer os passos com uma entrada concreta e anotar o que acontece. Assim, conseguimos conferir a resposta e as mudanças na agenda.
+> Agora o dado de entrada é válido, mas o estado mudou. A decisão depende do que já aconteceu.
 
-**Perguntar:** “Se o sistema disser conflito, mas apagar a reserva da Ana, a operação está correta?”
+**Checar com a turma:** Pergunte por que a recusa não pode remover a reserva de Ana.
 
-**Resposta esperada:** não, porque a recusa precisa preservar o estado anterior.
+**Resultado de referência:** Ana/H09 resulta em sucesso e H09 ocupado por Ana. Bruno/H09 resulta em conflito; H09 continua ocupado por Ana.
 
-**Conexão com o trabalho:**
-
-> Produto precisa esclarecer a regra. Desenvolvimento precisa implementá-la. QA pode testar a resposta e verificar se a reserva anterior foi preservada. O mesmo raciocínio ajuda essas especialidades a conversar.
-
-**Transição:**
-
-> Agora vamos acompanhar duas tentativas. Na primeira, o horário está livre. Na segunda, vamos usar a agenda que ficou depois da primeira tentativa.
-
-## 25–45 — Demonstração guiada
-
-### 25–31 — Construir os passos no quadro
-
-**Mostrar e ler as regras necessárias:** RN01–RN05 e RN08. Explicar que RN08 define a recusa de horário fora do catálogo.
-
-**Fala:**
-
-> Nosso catálogo tem H09, H10 e H11. O nome deve ter conteúdo depois de remover espaços das extremidades. Um horário aceita somente uma reserva ativa.
->
-> Vou escrever o algoritmo pensando em voz alta. Não vou ocupar o horário antes de terminar as verificações.
-
-**Escrever uma linha por vez:**
-
-```text
-1. Receber nome e horário.
-2. Verificar se o nome tem conteúdo após remover espaços das extremidades.
-   Se não tiver, responder nome inválido e encerrar a tentativa.
-3. Verificar se o horário pertence ao catálogo.
-   Se não pertencer, responder horário inválido e encerrar.
-4. Verificar se o horário já está ocupado.
-   Se estiver, responder conflito e preservar a reserva existente.
-5. Registrar a nova reserva no horário.
-6. Responder sucesso e encerrar.
-```
-
-**Fala:**
-
-> “Encerrar” significa que essa tentativa terminou. Depois de recusar um nome inválido, não continuamos até a etapa que cria a reserva.
->
-> Antes de registrar qualquer mudança, passamos pelas verificações. Essa ordem será importante quando transformarmos os passos em código.
-
-**Perguntar:** “Qual passo altera a agenda?”
-
-**Resposta:** passo 5. As recusas terminam sem criar reserva.
-
-### 31–37 — Primeira tentativa: Ana/H09
-
-**Estado inicial:** todos os horários livres.
-
-**Fala:**
-
-> Ana informa seu nome e pede H09. Primeiro: o nome tem conteúdo? Sim. Segundo: H09 está no catálogo? Sim. Terceiro: ele está ocupado? Ainda não.
->
-> Portanto, podemos registrar a reserva. A resposta é sucesso e o estado de H09 passa a ser ocupado por Ana.
-
-**Preencher:**
-
-| Tentativa | Entrada | Estado antes | Resultado | Estado depois |
-|---|---|---|---|---|
-| 1 | Ana/H09 | H09 livre | Sucesso | H09 ocupado por Ana |
-
-**Pedir:** um aluno explica o passo que justifica sucesso; outro explica a mudança de estado.
-
-**Se disser apenas “porque funcionou”:**
-
-> Vamos apontar a razão: qual verificação permitiu registrar? Precisamos explicar por que o resultado era esperado, não apenas repetir a resposta.
-
-### 37–42 — Segunda tentativa: Bruno/H09
-
-**Fala antes de revelar:**
-
-> Agora Bruno pede H09. A agenda não foi reiniciada: a reserva de Ana continua existindo. Qual resposta vocês preveem? E como H09 deve ficar depois?
-
-**Esperar:** um minuto para resposta individual.
-
-**Percorrer os passos:**
-
-> Bruno tem um nome válido e H09 pertence ao catálogo. Mas, quando verificamos a ocupação, encontramos a reserva de Ana. A tentativa de Bruno termina com conflito.
->
-> Não criamos outra reserva e não removemos a anterior. H09 continua ocupado por Ana.
-
-| Tentativa | Entrada | Estado antes | Resultado | Estado depois |
-|---|---|---|---|---|
-| 2 | Bruno/H09 | H09 ocupado por Ana | Conflito | H09 ocupado por Ana |
-
-**Perguntar:** “A resposta de erro significa que algo foi feito errado pelo sistema?”
-
-**Explicar:**
-
-> Nem sempre. Aqui, recusar é o comportamento correto. Uma regra pode exigir que o sistema impeça uma ação. O teste precisa conferir essa recusa e a preservação da agenda.
-
-### 42–45 — Antecipar uma entrada inválida
-
-**Mostrar:** nome “   ”, horário H11 livre.
-
-**Fala:**
-
-> Temos um nome formado apenas por espaços. Depois de remover esses espaços, sobra conteúdo? Não. Então a tentativa termina no passo 2. H11 permanece livre.
->
-> Na prática de vocês, anotem também o estado final. Essa informação mostra se a tentativa recusada alterou algo que deveria permanecer igual.
-
-**Transição para pausa:**
-
-> Vamos fazer cinco minutos de pausa. Na volta, vocês vão usar os mesmos passos com outras entradas, alternando quem conduz e quem confere.
+Antes de mostrar o resultado, peça uma previsão. Depois compare previsão, comportamento observado e explicação.
 
 ## 45–50 — Pausa
 
-**Ação do professor:** deixar o horário de retorno visível. Não acrescentar conteúdo obrigatório durante a pausa. Na gravação, o aluno pode avançar até o próximo bloco.
+Informar claramente o horário de retorno. Não usar a pausa para conteúdo obrigatório.
 
-## 50–65 — Dinâmica em dupla
+## 50–65 — Dinâmica — Rastreamento cruzado de reservas
 
-**Nome:** Uma pessoa conduz, outra confere.  
-**Contexto:** revisar uma regra antes de apresentar a solução ao time.  
-**Objetivo:** escrever algoritmo e rastrear entradas, incluindo recusa.  
-**Entrega:** passos e tabela de três tentativas.  
-**Critérios:** ordem correta, resultado justificado e preservação do estado nas recusas.
+**Cenário:** Agenda inicialmente vazia com H09, H10 e H11 disponíveis.
 
-**Fala de orientação:**
+**Orientação para a turma:**
 
-> Cada dupla começa com uma agenda nova, com H09, H10 e H11 livres. Uma pessoa percorre os passos e a outra pergunta qual regra sustenta cada decisão.
->
-> Primeiro, Lia pede H10. Depois, Rui pede H10 na mesma agenda. Por fim, uma pessoa com nome composto por espaços pede H11.
->
-> Vocês vão entregar o algoritmo e a tabela de antes e depois. Não precisam escrever código nem fazer um desenho bonito. Precisam permitir que outra pessoa acompanhe o raciocínio.
+> Uma pessoa executa e a outra confere cada mudança de estado. Troquem os papéis antes do terceiro caso.
 
-**Distribuição dos 15 minutos:**
+1. Rastrear Lia/H10.
+2. Rastrear Rui/H10 na mesma agenda.
+3. Trocar papéis de autor e revisor.
+4. Avaliar nome somente com espaços/H11 e justificar a saída.
 
-1. **2 minutos:** ler regras, escolher quem conduz e preparar a tabela.
-2. **5 minutos:** percorrer Lia/H10 e Rui/H10.
-3. **5 minutos:** trocar funções, conferir espaços/H11 e revisar passos.
-4. **3 minutos:** colher uma conclusão de duas duplas; as demais entregam por escrito.
+**Tempo sugerido:** 2 min para organização, 8 min para produção, 3 min para revisão entre pares e 2 min para compartilhamento.
 
-**Perguntas do professor ao acompanhar:**
+**Entrega esperada:** tabela de rastreamento com estado após cada tentativa
 
-- Em qual passo vocês estão?
-- De onde veio o resultado esperado?
-- A agenda foi reiniciada ou é a mesma?
-- O que mudou depois dessa tentativa?
-- O que precisa continuar igual?
-
-**Se o grupo aceitar Rui/H10:**
-
-> Antes dessa tentativa, quem já estava em H10? A regra permite duas reservas ativas? Voltem ao passo de ocupação e revisem o resultado.
-
-**Se ocupar H11 para o nome inválido:**
-
-> Em que etapa essa tentativa deveria terminar? Ela pode chegar ao registro da reserva depois de ser recusada?
-
-**Referência para correção:**
-
-| Entrada | Resultado | Estado final relevante |
-|---|---|---|
-| Lia/H10 | Sucesso | H10 ocupado por Lia |
-| Rui/H10 | Conflito | H10 continua com Lia |
-| Espaços/H11 | Nome inválido | H11 continua livre |
-
-**Dica para o aluno:** prever antes de percorrer; conferir resposta e estado.  
-**Variação difícil, somente se sobrar tempo:** incluir H12 e explicar por que o catálogo impede a reserva.
+**O professor observa:** ordem de validação explícita; saída coerente; estado preservado; revisão entre pares.
 
 ## 65–77 — Exercício individual
 
-**Mostrar o enunciado; não mostrar a referência ainda.**
+**Enunciado para falar à turma:**
 
-**Fala:**
+> Em nova agenda, H10 está ocupado por Carla e H09/H11 estão livres. Rastreie Rui/H10, nome somente com espaços/H09 e Dani/H11, nessa ordem. Para cada tentativa, registre o passo decisivo, a saída e o estado final.
 
-> Agora quero conferir como cada pessoa aplica a lógica. Considerem outra agenda: H10 está ocupado por Carla; H09 e H11 estão livres.
->
-> Percorram três tentativas nessa ordem: Rui pede H10; um nome composto por espaços pede H09; Dani pede H11. Anotem a etapa que decide a resposta e o estado final.
->
-> Depois escolham uma das tentativas e expliquem, em duas frases, por que o resultado respeita a regra.
+**Entrega:** rastreamento individual das três tentativas
 
-**Passo a passo para o aluno:**
+**Critérios:** decisão correta; estado coerente; explicação de uma aprovação e uma recusa.
 
-1. Registrar estado inicial.
-2. Aplicar os passos às três entradas, mantendo o estado entre elas.
-3. Preencher resultado e estado depois.
-4. Explicar uma decisão e uma recusa.
-5. Entregar a tabela com seu nome ou identificador de aluno.
+**Se houver dificuldade:** dê apenas a primeira entrada e peça que o aluno escreva ‘estado antes’ antes de decidir.
 
-**Tempo:** 2 minutos de leitura, 7 de resolução e 3 de revisão/entrega.
+## 77–85 — Correção, intervenções e dúvidas
 
-**Ajuda graduada para quem não inicia:**
+Comece pedindo que o aluno explique como chegou à resposta antes de mostrar uma referência.
 
-> Comece pela primeira entrada. O nome tem conteúdo? O horário existe? Quem já está nele?
+**Se aparecer:** “Se deu erro, volta tudo para vazio.”
 
-Depois da primeira tentativa assistida, pedir que faça a segunda sozinho. Registrar a ajuda para orientar recuperação.
+> Erro da nova tentativa não significa apagar um estado válido anterior. Qual regra autorizaria essa alteração?
 
-**Gabarito — referência reservada ao professor:**
+**Se aparecer:** “Algoritmo é o código em Python.”
 
-| Entrada | Passo decisivo | Resultado | Estado relevante |
-|---|---|---|---|
-| Rui/H10 | 4: ocupação | Conflito | Carla permanece em H10 |
-| Espaços/H09 | 2: nome | Nome inválido | H09 permanece livre |
-| Dani/H11 | 5: registro após validações | Sucesso | Dani ocupa H11 |
+> Python será uma ferramenta depois. Primeiro estamos descrevendo a lógica de forma independente da linguagem.
 
-**Rubrica:** correção, completude, evidência e justificativa, de 0 a 2. Referência completa no E-book. Para esta aula, evidência é a tabela de rastreamento; não é necessário executar Python.
+**Se aparecer:** o aluno pula direto para a saída
 
-## 77–85 — Correção dialogada e dúvidas
+> Mostre o estado inicial e peça para apontar qual verificação decidiu o caminho.
 
-**Fala:**
+### Perguntas de verificação
 
-> Vamos comparar os resultados. Se sua resposta foi diferente, não apague imediatamente. Primeiro identifique em qual passo seu raciocínio mudou. Depois registre a correção e a razão.
->
-> Na primeira tentativa, Carla continua em H10. Na segunda, H09 permanece livre. Na terceira, H11 passa a ser ocupado por Dani. As duas primeiras são recusadas corretamente; a última altera a agenda porque passou pelas verificações.
+- **Se a segunda tentativa falhar, por que o estado anterior deve permanecer?** — Porque a regra de conflito recusa a nova operação sem apagar a reserva existente.
+- **Algoritmo precisa estar em Python?** — Não. Pode ser linguagem natural, fluxograma ou pseudocódigo.
+- **O que muda entre duas execuções com as mesmas entradas quando o estado é diferente?** — A decisão pode mudar porque o sistema considera o estado atual.
 
-**Selecionar duas perguntas para caber no tempo:**
-
-- Qual a diferença entre saída e estado?
-- Em que passo a tentativa com nome inválido termina?
-- Por que a recusa de Rui não pode apagar Carla?
-- Como você explicaria o algoritmo para alguém que não assistiu à aula?
-
-### Respostas prontas para dúvidas recorrentes
-
-| Pergunta do aluno | Fala sugerida do professor |
-|---|---|
-| Algoritmo é código? | “Algoritmo descreve a solução. Código é uma forma de implementar essa solução em uma linguagem. Hoje estamos trabalhando os passos.” |
-| Tenho que decorar os passos? | “Você precisa compreender as regras e conseguir reconstruir uma sequência coerente. Usar o caderno como apoio faz parte da prática.” |
-| Posso começar pelo fluxograma? | “Pode. Confira se cada decisão tem caminhos claros e se uma recusa termina sem alterar a agenda.” |
-| Conflito é um bug? | “Neste caso, conflito é a resposta prevista quando o horário está ocupado. Aceitar uma segunda reserva é que violaria a regra.” |
-| O horário escolhido já fica ocupado? | “Neste algoritmo, não. Ele fica ocupado somente após todas as verificações e o registro da reserva.” |
-| Posso conferir disponibilidade antes do nome? | “Existem outras ordens possíveis, mas elas podem mudar qual motivo de recusa aparece quando mais de um dado é inválido. Hoje usamos nome, catálogo e ocupação, alinhados à referência do curso.” |
-| E se duas pessoas tentarem ao mesmo tempo? | “Hoje estamos percorrendo tentativas em sequência. Garantir reserva única com chamadas simultâneas exige controles e testes adicionais; nossa simulação não comprova isso.” |
-
-**Feedback de exemplo:**
-
-> Você identificou corretamente o conflito. Falta registrar quem continua no horário depois da recusa. Acrescente essa informação para que outra pessoa consiga conferir a preservação da reserva.
-
-## 85–90 — Fechamento e tarefa para casa
+## 85–90 — Fechamento e tarefa
 
 **Fala de fechamento:**
 
-> Hoje vocês transformaram uma regra de negócio em passos e conferiram esses passos com entradas diferentes. Aprenderam a distinguir o que recebemos, o que verificamos, o que respondemos e como a agenda fica depois.
->
-> Guardem essa ideia: para conferir uma solução, precisamos de uma regra, de uma entrada concreta e de um resultado que possa ser explicado.
->
-> Na próxima aula, vamos representar informações com variáveis e tipos de dados e aprofundar decisões. O raciocínio de hoje será a base.
+> Se vocês conseguem explicar a sequência e o estado sem depender de código, já construíram a base que depois poderá ser implementada em qualquer linguagem.
 
-**Pedir uma resposta curta no chat ou caderno:**
+**Tarefa para casa:**
 
-> Complete: “A tentativa foi recusada porque ___, e a agenda ficou ___.”
+1. Revisar a atividade com o feedback.
+2. Adicionar um caso novo de sucesso ou recusa.
+3. Registrar o que mudou entre a primeira e a segunda versão.
+4. Entregar `m02-aula-01-revisao.md`.
 
-**Tarefa — entrega para a próxima aula, 30–45 minutos:**
+**Entrega:** algoritmo e rastreamento revisados
 
-1. Revisar algoritmo e tabela com o feedback.
-2. Criar uma tentativa nova que não repita exatamente as entradas da aula.
-3. Registrar estado inicial, entrada, resultado esperado, passo decisivo e estado final.
-4. Explicar uma mudança entre a primeira versão e a revisada.
-5. Salvar como `m02-aula-01-revisao.md`.
+**Ponte para a próxima aula:**
 
-**Fala de orientação:**
+> Na próxima aula vamos começar a representar essas informações em Python e entender como tipos e condições mudam o comportamento.
 
-> Usem a gravação para rever o trecho em que tiveram dúvida. Depois tentem resolver sem acompanhar a resposta pronta. Entreguem a primeira versão e a revisão; assim conseguimos observar o que vocês compreenderam e o que ainda precisa de apoio.
+## Checklist pós-aula
 
-**Exemplo para conferir depois da tentativa:** H12 não pertence ao catálogo; com nome válido, deve ser recusado por horário inválido, sem alterar a agenda.  
-**Desafio opcional:** explicar quais dados faltam para limitar reservas por cliente; nomes podem se repetir, então não assumir nome como identificador único.
-
-## Checklist final do professor
-
-- [ ] Alunos distinguiram entrada, processamento, saída e estado.
-- [ ] Demonstração mostrou sucesso e recusa na mesma agenda.
-- [ ] Prática em dupla alternou condução e revisão.
-- [ ] Exercício individual usou entradas diferentes.
-- [ ] Correção conferiu estado e resultado, sem exigir frase idêntica.
-- [ ] Ficou claro que esta aula não exige execução de código.
-- [ ] Tarefa e formato de entrega foram explicados.
-- [ ] Dúvidas pendentes foram registradas para retorno.
-
-**Após o encontro:** disponibilizar a gravação e indicar os trechos de conceitos, demonstração e correção. Usar o início da próxima aula para retomar a lacuna mais frequente nas entregas. A plataforma registra visualização; a tabela e a explicação demonstram a compreensão.
+- [ ] Disponibilizar a gravação.
+- [ ] Registrar dúvidas que precisam ser retomadas.
+- [ ] Conferir se a atividade usada foi a mesma definida no roteiro.
+- [ ] Anotar qualquer ajuste de tempo para a próxima turma.
+- [ ] Não alterar critérios ou respostas de referência apenas na fala; se a regra mudar, atualizar roteiro e script juntos.

@@ -1,120 +1,128 @@
-# Roteiro — Módulo 4, Aula 1
+# Roteiro de Aula — Módulo 4, Aula 1
 
-**Condução com falas prontas:** [script do professor](scripts/modulo-04-aula-01-qualidade-riscos-e-plano.md). Seguir a sequência de até 90 minutos. As atividades abaixo formam o caderno completo; o script define o recorte ao vivo e a conclusão em casa. A gravação serve para revisão posterior.
+# Qualidade, Riscos e Plano de Testes
 
-## Tema e objetivo da aula
+> **Papel deste documento:** definir o que será ensinado, praticado e avaliado.  
+> A condução minuto a minuto, falas sugeridas, respostas esperadas e intervenções ficam no [script do professor](scripts/modulo-04-aula-01-qualidade-riscos-e-plano.md).
 
-**Tema:** Qualidade, riscos e plano. **Objetivo observável:** produzir um plano de uma página com riscos e limites.
+## Objetivo da aula
 
-**Leitura:** [E-book do módulo](../ebooks/modulo-04-qualidade-de-software.md), tópicos 1. **Pré-requisito:** lógica, leitura de código e execução do laboratório dos módulos 2 e 3.
+Introduzir qualidade orientada a risco e produzir um plano de testes enxuto com escopo, prioridades, estratégia e limites.
 
-## Duração sugerida
+Ao final, o aluno deverá conseguir:
 
-| Etapa | Minutos |
+- explicar qualidade como responsabilidade compartilhada
+- identificar riscos do produto
+- priorizar o que testar
+- produzir plano de uma página
+- declarar limites do laboratório
+
+## Conteúdos e conceitos
+
+### Qualidade compartilhada
+- prevenção antes do código
+- verificação depois
+- QA não trabalha isolado
+
+### Risco
+- probabilidade e impacto
+- prioridade
+- contexto
+
+### Plano de testes
+- objetivo
+- escopo
+- estratégia
+- ambiente/dados
+- entrada/saída
+- limites
+
+## Duração e blocos
+
+| Bloco | Tempo previsto |
 |---|---:|
-| Abertura e diagnóstico | 8 |
-| Conceitos e exemplos | 17 |
-| Demonstração guiada | 20 |
-| Pausa | 5 |
-| Dinâmica em dupla ou grupo | 15 |
-| Exercício individual | 12 |
-| Correção e dúvidas | 8 |
-| Fechamento e orientação da tarefa | 5 |
-| Total | 90 |
+| Abertura e diagnóstico | 8 min |
+| Conceitos e exemplos | 17 min |
+| Demonstração guiada | 20 min |
+| Pausa | 5 min |
+| Dinâmica em dupla ou grupo | 15 min |
+| Exercício individual | 12 min |
+| Correção e dúvidas | 8 min |
+| Fechamento e tarefa | 5 min |
+| **Total** | **90 min** |
 
 ## Materiais necessários
 
-quadro, regras RN01–RN08 e modelo de plano. Usar [caderno do caso](../atividades/caso-agenda-clara.md), editor de Markdown ou papel e [laboratório](../portfolio/agenda-clara/README.md). Testar o ambiente antes da aula. Contas de ferramentas são opcionais quando houver alternativa documental; evidência de execução continua necessária quando o enunciado a solicitar.
+- E-book do Módulo 4
+- caso RN01–RN08
+- modelo de plano de testes
+- laboratório
 
-## Abertura da aula
+## Exemplos planejados
 
-Mostre duas reservas no mesmo horário e peça uma consequência operacional. Dê dois minutos para registrar uma previsão individual, recolha duas respostas e pergunte qual evidência seria necessária. Retome um conceito anterior e anuncie a entrega de hoje.
+### Exemplo 1
+Risco de reserva duplicada.
 
-## Explicação teórica e exemplos práticos
+### Exemplo 2
+Risco de cancelamento incorreto.
 
-### Qualidade, riscos e plano de testes
+### Exemplo 3
+Limites de um laboratório educacional.
 
-**Conceito:** QA contribui para prevenir e identificar problemas; qualidade depende de decisões compartilhadas pelo time.
+## Demonstração planejada — Construir um plano de testes de uma página
 
-**Explicação simples:** Discutir uma regra confusa antes de construir pode evitar um defeito que seria caro descobrir no final.
+1. Definir objetivo e escopo RN01–RN08.
+2. Listar três riscos e justificar prioridade.
+3. Definir estratégia e dados.
+4. Definir condições de início e encerramento.
+5. Registrar explicitamente o que está fora do escopo.
 
-**Aprofundamento:** Um plano define objetivo, escopo, riscos, estratégia, ambiente, dados, responsabilidades e condições de início e encerramento. Não é necessário um documento enorme, mas deve orientar decisões. Priorize impacto e probabilidade com justificativa. Testes podem revelar falhas e aumentar confiança, sem provar ausência de todo defeito. No laboratório, RN02 importa por conflito operacional; persistência, segurança e concorrência real estão fora do escopo. Registre essas limitações para que um resultado aprovado não seja interpretado como autorização para uso em produção.
+**Resultado pedagógico esperado:** o aluno produz um plano que orienta decisão e não apenas lista ferramentas.
 
-**Exemplo cotidiano:** Uma agenda bonita ainda pode permitir duas pessoas no mesmo horário.
+## Dinâmica em grupo — Planejar antes de executar
 
-**Cenário empresarial:** Produto explica o impacto, Dev discute controles e QA prepara cenários desde a conversa sobre regras.
+**Cenário:** A equipe precisa decidir o foco de testes do MVP Agenda Clara antes de iniciar execução.
 
-**Erros a observar:** Esperar tudo ficar pronto; escrever plano como lista de ferramentas; prometer zero defeitos.
+1. Escolher três riscos.
+2. Ordená-los com justificativa.
+3. Relacionar cada risco a um tipo de evidência/teste.
+4. Registrar um limite que a estratégia não cobre.
 
-**Orientação:** Relacionar cada risco à evidência necessária e documentar limites.
+**Entrega esperada:** recorte de plano de testes
 
-Distribua os 17 minutos entre os tópicos. Peça um exemplo com palavras do aluno antes de avançar; se houver uma contradição, retome a regra do caso.
-
-## Demonstração guiada
-
-Escreva objetivo, risco de duplicidade e teste correspondente. Modele uma condição de encerramento mensurável.
-
-**Exemplo 1:** Prioridade maior para integridade da reserva por conflito operacional. Executar testes sequenciais nas duas classes; persistência e acesso simultâneo não são comprovados. Não liberar um produto real com base apenas neste laboratório.
-
-Interrompa antes do resultado para pedir uma previsão. Revele uma etapa de cada vez, marque a regra e compare a resposta com a evidência. Não concluir correção apenas pela aparência do arquivo.
-
-## Dinâmica em grupo
-
-**Nome:** Planejar antes de executar. **Contexto:** a equipe precisa revisar uma decisão antes de avançar o MVP. Em duplas, uma pessoa produz e outra confere; trocar funções na metade do tempo. Em grupos maiores, adicionar um papel de registro.
-
-**Distribuição:** 2 minutos de leitura; 5 de execução; 5 de revisão cruzada; 3 de compartilhamento. Se houver mais de duas duplas, recolher as demais conclusões por escrito para caber no tempo.
-
-**Atividade 1: Criar plano de testes de uma página**
-
-**Contexto profissional:** o time da empresa fictícia Agenda Clara precisa revisar esta decisão antes de entregar o MVP. Dados e regras no [caderno do caso](../atividades/caso-agenda-clara.md).
-
-**Objetivo:** Criar plano de testes de uma página, com registro que permita conferência por outra pessoa.
-
-**Passo a passo:**
-
-1. Defina escopo RN01–RN08 e o que está fora.
-2. Liste duplicidade, nome inválido e cancelamento incorreto como riscos.
-3. Identifique versões, dados e ambiente.
-4. Defina início: regras e laboratório disponíveis.
-5. Defina encerramento: casos críticos executados, sem defeito impeditivo aberto no escopo.
-
-**Entrega esperada:** plano com objetivo, riscos, estratégia e critérios Identificar nome, versão ou premissas, regra utilizada e justificativa. Nome sugerido: `m04-atividade-01.md`.
-
-**Critérios específicos:** Riscos justificados; escopo delimitado; condições observáveis de início e fim.
-
-**Exemplo de resposta comentada:** Prioridade maior para integridade da reserva por conflito operacional. Executar testes sequenciais nas duas classes; persistência e acesso simultâneo não são comprovados. Não liberar um produto real com base apenas neste laboratório.
-
-**Dica:** faça sua tentativa antes de ler a resposta e explique qualquer revisão.
-
-**Variação mais difícil:** Qual risco não pode ser investigado pelo simulador e o que seria necessário para testá-lo?
-
+**Critérios:** risco justificado; evidência relacionada; limite explícito; sem promessa de ‘zero bugs’.
 
 ## Exercício individual
 
-Escolha o risco de cancelamento e detalhe uma evidência que permita investigar seu impacto.
+Escolha o risco de cancelamento e escreva objetivo, dados necessários, sequência de investigação, evidência esperada e uma limitação do teste.
 
-**Tempo:** 12 minutos. **Entrega:** uma versão própria do artefato, incluindo regra, decisão e evidência. **Avaliação:** critérios específicos acima e rubrica do E-book. O professor verifica se houve transferência para o novo caso. Se houver ajuda, registrar qual etapa foi assistida.
+**Entrega:** bloco individual do plano
 
-## Perguntas para os alunos
+**Critérios:** risco claro; evidência observável; sequência coerente; limite declarado.
 
-- Quem contribui para qualidade antes do código?
-- O que não será comprovado por este plano?
-- Qual parte da sua previsão você reviu e qual evidência motivou a mudança?
+## Perguntas de verificação
 
-## Possíveis dúvidas e como responder
+- Testes provam que não existem bugs?
+- Plano de testes precisa ser um documento enorme?
+- Quem é responsável pela qualidade?
 
-| Dúvida | Resposta |
-|---|---|
-| Plano precisa ser longo? | Precisa orientar decisões; uma página pode ser suficiente. |
-| Testar prova ausência de bugs? | Não; define confiança no escopo e nas condições investigadas. |
-| Preciso copiar a resposta de referência? | Não; preserve as regras e explique sua decisão com evidência. |
-
-## Correção e fechamento
-
-As respostas de referência estão na demonstração. Não exigir frases idênticas; conferir critérios e raciocínio. Cada aluno completa: “Usei ___ para decidir ___ e confirmei com ___”. Relacionar à entrega do módulo: plano de testes, oito casos ligados a RN01–RN08, registro de execução das duas versões, BUG01 e evidência de reteste. A próxima aula transforma regras em casos.
+> As respostas esperadas e intervenções ficam exclusivamente no script do professor.
 
 ## Tarefa para casa
 
-Revisar o plano e acrescentar uma limitação relevante.
+1. Revisar o plano com feedback.
+2. Acrescentar pelo menos uma limitação relevante.
+3. Entregar `m04-aula-01-revisao.md`.
 
-**Tempo sugerido:** 30–45 minutos. Entregar `m04-aula-01-revisao.md` com resposta inicial, feedback, versão revisada e explicação da mudança. O professor verifica a revisão no próximo encontro.
+**Entrega:** plano de testes revisado
+
+## Conexão com a trilha
+
+A Aula 2 transforma regras em cenários e casos funcionais reproduzíveis.
+
+## Referências
+
+- [E-book correspondente](../ebooks/modulo-04-qualidade-de-software.md)
+- [Caso Agenda Clara](../atividades/caso-agenda-clara.md)
+- [Laboratório](../portfolio/agenda-clara/README.md)
+- [Script do professor](scripts/modulo-04-aula-01-qualidade-riscos-e-plano.md)

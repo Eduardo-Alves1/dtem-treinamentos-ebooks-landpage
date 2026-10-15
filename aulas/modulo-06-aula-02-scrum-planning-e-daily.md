@@ -1,161 +1,128 @@
-# Roteiro — Módulo 6, Aula 2
+# Roteiro de Aula — Módulo 6, Aula 2
 
-**Condução com falas prontas:** [script do professor](scripts/modulo-06-aula-02-scrum-planning-e-daily.md). Seguir a sequência de até 90 minutos. As atividades abaixo formam o caderno completo; o script define o recorte ao vivo e a conclusão em casa. A gravação serve para revisão posterior.
+# Scrum, Planning e Daily
 
-## Tema e objetivo da aula
+> **Papel deste documento:** definir o que será ensinado, praticado e avaliado.  
+> A condução minuto a minuto, falas sugeridas, respostas esperadas e intervenções ficam no [script do professor](scripts/modulo-06-aula-02-scrum-planning-e-daily.md).
 
-**Tema:** Scrum, Planning e Daily. **Objetivo observável:** mapear responsabilidades e adaptar um plano.
+## Objetivo da aula
 
-**Leitura:** [E-book do módulo](../ebooks/modulo-06-gestao-de-projetos-tech.md), tópicos 2, 3. **Pré-requisito:** atividade da aula anterior, com retomada da lacuna identificada no feedback.
+Apresentar responsabilidades do Scrum e praticar Planning e Daily como eventos de alinhamento e adaptação orientados por objetivo.
 
-## Duração sugerida
+Ao final, o aluno deverá conseguir:
 
-| Etapa | Minutos |
+- diferenciar responsabilidades de PO, Developers e Scrum Master
+- formular meta de Sprint
+- selecionar trabalho coerente com a meta
+- explicar Daily como inspeção/adaptação
+- registrar impedimento com impacto e próximo passo
+
+## Conteúdos e conceitos
+
+### Responsabilidades no Scrum
+- Product Owner
+- Developers
+- Scrum Master
+- accountabilities colaboram
+
+### Sprint Planning
+- por que
+- o que
+- como
+- Sprint Goal
+
+### Daily Scrum
+- inspecionar progresso rumo à meta
+- adaptar plano
+- não é status para chefe
+
+## Duração e blocos
+
+| Bloco | Tempo previsto |
 |---|---:|
-| Abertura e diagnóstico | 8 |
-| Conceitos e exemplos | 17 |
-| Demonstração guiada | 20 |
-| Pausa | 5 |
-| Dinâmica em dupla ou grupo | 15 |
-| Exercício individual | 12 |
-| Correção e dúvidas | 8 |
-| Fechamento e orientação da tarefa | 5 |
-| Total | 90 |
+| Abertura e diagnóstico | 8 min |
+| Conceitos e exemplos | 17 min |
+| Demonstração guiada | 20 min |
+| Pausa | 5 min |
+| Dinâmica em dupla ou grupo | 15 min |
+| Exercício individual | 12 min |
+| Correção e dúvidas | 8 min |
+| Fechamento e tarefa | 5 min |
+| **Total** | **90 min** |
 
 ## Materiais necessários
 
-papéis e cartões do MVP. Usar [caderno do caso](../atividades/caso-agenda-clara.md), editor de Markdown ou papel e [laboratório](../portfolio/agenda-clara/README.md). Testar o ambiente antes da aula. Contas de ferramentas são opcionais quando houver alternativa documental; evidência de execução continua necessária quando o enunciado a solicitar.
+- E-book do Módulo 6
+- Scrum Guide como referência
+- backlog/capacidade
+- quadro de Sprint
 
-## Abertura da aula
+## Exemplos planejados
 
-Pergunte quem decide prioridade e quem planeja como construir. Dê dois minutos para registrar uma previsão individual, recolha duas respostas e pergunte qual evidência seria necessária. Retome um conceito anterior e anuncie a entrega de hoje.
+### Exemplo 1
+Meta de reserva íntegra.
 
-## Explicação teórica e exemplos práticos
+### Exemplo 2
+Bloqueio por ambiente indisponível.
 
-### Scrum e responsabilidades no time
+### Exemplo 3
+Reorganização sem reduzir critério de qualidade.
 
-**Conceito:** Scrum estrutura colaboração e adaptação para produzir incrementos úteis em Sprints.
+## Demonstração planejada — Simular Planning e adaptar após uma Daily
 
-**Explicação simples:** O time escolhe uma meta, entrega um recorte verificável e aprende para o próximo ciclo.
+1. Definir Sprint Goal.
+2. Selecionar itens coerentes com capacidade.
+3. Decompor trabalho de forma simples.
+4. Introduzir bloqueio de ambiente.
+5. Registrar impacto e adaptação.
 
-**Aprofundamento:** As responsabilidades formais são Product Owner, Scrum Master e Developers. No contexto do framework, Developers inclui especialistas que constroem qualquer parte do incremento, inclusive testes. QA e Dev continuam especialidades úteis, sem virar subequipes obrigatórias. PO responde por valor; Scrum Master ajuda efetividade e compreensão do framework; Developers planejam e adaptam o trabalho. Uma Sprint tem duração fixa de até um mês. O exercício comprime eventos para aprendizagem e não deve ser apresentado como uso completo em produção.
+**Resultado pedagógico esperado:** o aluno distingue evento, responsabilidade e decisão prática.
 
-**Exemplo cotidiano:** Uma equipe precisa coordenar especialidades sem criar uma cadeia em que cada pessoa só se preocupa com sua parte.
+## Dinâmica em grupo — Planejar e adaptar
 
-**Cenário empresarial:** QA participa de critérios e teste, Dev de implementação e todos do padrão de qualidade.
+**Cenário:** A equipe inicia uma Sprint com meta clara e recebe um bloqueio no segundo momento.
 
-**Erros a observar:** Scrum Master como distribuidor de tarefas; QA somente no final; PO impondo plano técnico.
+1. Escrever Sprint Goal.
+2. Escolher três itens.
+3. Definir um plano simples.
+4. Sortear um bloqueio.
+5. Adaptar sem abandonar a meta.
 
-**Orientação:** Colaboração, objetivo comum e responsabilidades compreendidas.
+**Entrega esperada:** meta + plano inicial + plano adaptado
 
-### Planning e Daily
-
-**Conceito:** Planning define por que, o que e como trabalhar; Daily inspeciona progresso e adapta plano.
-
-**Explicação simples:** Planejar é escolher um objetivo viável. Conversar diariamente é ajustar o caminho até ele.
-
-**Aprofundamento:** Planning reúne objetivo, seleção e plano. Developers selecionam trabalho considerando capacidade e DoD em colaboração com PO. Daily Scrum é evento de 15 minutos para Developers; não uma prestação de contas ao gerente. O formato pode variar e os três relatos tradicionais não são obrigatórios. No exercício, usar cinco minutos para simular e indicar a compressão. Reportar bloqueio precisa de impacto e próximo passo. Durante a Sprint, escopo pode ser esclarecido e negociado sem colocar a meta em risco.
-
-**Exemplo cotidiano:** Dizer “trabalhei ontem” informa atividade, mas não mostra progresso até o objetivo.
-
-**Cenário empresarial:** Um bloqueio no teste de cancelamento faz o time revisar a ordem das tarefas.
-
-**Erros a observar:** Daily como relatório individual; planejar sem meta; esconder bloqueio.
-
-**Orientação:** Foco em objetivo, trabalho restante e adaptação.
-
-Distribua os 17 minutos entre os tópicos. Peça um exemplo com palavras do aluno antes de avançar; se houver uma contradição, retome a regra do caso.
-
-## Demonstração guiada
-
-Faça uma Planning breve e simule um bloqueio na Daily.
-
-**Exemplo 1:** PO ordena backlog; Developers planejam como entregar; time mantém qualidade. Scrum Master facilita compreensão e remoção de impedimentos sem comandar tecnicamente cada tarefa.
-
-**Exemplo 2:** Reorganizar dupla para execução em ambiente disponível, adiando melhoria de relatório. Bloqueio inclui quem precisa de apoio e horário de revisão da solução. Não marcar tarefa bloqueada como concluída.
-
-Interrompa antes do resultado para pedir uma previsão. Revele uma etapa de cada vez, marque a regra e compare a resposta com a evidência. Não concluir correção apenas pela aparência do arquivo.
-
-## Dinâmica em grupo
-
-**Nome:** Planejar e adaptar. **Contexto:** a equipe precisa revisar uma decisão antes de avançar o MVP. Em duplas, uma pessoa produz e outra confere; trocar funções na metade do tempo. Em grupos maiores, adicionar um papel de registro.
-
-**Distribuição:** 2 minutos de leitura; 5 de execução; 5 de revisão cruzada; 3 de compartilhamento. Se houver mais de duas duplas, recolher as demais conclusões por escrito para caber no tempo.
-
-**Atividade 2: Mapear responsabilidades em três decisões**
-
-**Contexto profissional:** o time da empresa fictícia Agenda Clara precisa revisar esta decisão antes de entregar o MVP. Dados e regras no [caderno do caso](../atividades/caso-agenda-clara.md).
-
-**Objetivo:** Mapear responsabilidades em três decisões, com registro que permita conferência por outra pessoa.
-
-**Passo a passo:**
-
-1. Escolha prioridade, plano técnico e qualidade.
-2. Identifique quem contribui e quem responde pela decisão.
-3. Inclua especialidades QA e Dev no trabalho conjunto.
-4. Registre uma situação que exige colaboração.
-
-**Entrega esperada:** matriz comentada de responsabilidades Identificar nome, versão ou premissas, regra utilizada e justificativa. Nome sugerido: `m06-atividade-02.md`.
-
-**Critérios específicos:** PO/SM/Developers corretos; qualidade compartilhada; especialidade sem subequipe obrigatória.
-
-**Exemplo de resposta comentada:** PO ordena backlog; Developers planejam como entregar; time mantém qualidade. Scrum Master facilita compreensão e remoção de impedimentos sem comandar tecnicamente cada tarefa.
-
-**Dica:** faça sua tentativa antes de ler a resposta e explique qualquer revisão.
-
-**Variação mais difícil:** Como uma pessoa de QA pode contribuir antes da implementação?
-
-**Atividade 3: Simular Planning e Daily com bloqueio**
-
-**Contexto profissional:** o time da empresa fictícia Agenda Clara precisa revisar esta decisão antes de entregar o MVP. Dados e regras no [caderno do caso](../atividades/caso-agenda-clara.md).
-
-**Objetivo:** Simular Planning e Daily com bloqueio, com registro que permita conferência por outra pessoa.
-
-**Passo a passo:**
-
-1. Defina meta: reserva correta e cancelamento verificado.
-2. Selecione tarefas que cabem na capacidade.
-3. Introduza bloqueio: ambiente de um participante indisponível.
-4. Faça Daily focada em impacto e próximo passo.
-5. Registre ajuste e responsável.
-
-**Entrega esperada:** meta, tarefas, bloqueio e decisão registrada Identificar nome, versão ou premissas, regra utilizada e justificativa. Nome sugerido: `m06-atividade-03.md`.
-
-**Critérios específicos:** Meta útil; plano viável; ajuste preserva objetivo e qualidade.
-
-**Exemplo de resposta comentada:** Reorganizar dupla para execução em ambiente disponível, adiando melhoria de relatório. Bloqueio inclui quem precisa de apoio e horário de revisão da solução. Não marcar tarefa bloqueada como concluída.
-
-**Dica:** faça sua tentativa antes de ler a resposta e explique qualquer revisão.
-
-**Variação mais difícil:** Um pedido urgente não ajuda a meta. Como discutir com PO?
-
+**Critérios:** meta clara; responsabilidades coerentes; adaptação explícita; qualidade preservada.
 
 ## Exercício individual
 
-Escreva atualização de impedimento com impacto e próximo passo.
+Escreva uma atualização para um teste bloqueado por falta de ambiente. Inclua impacto na meta, o que já foi verificado, pedido de ajuda e próximo passo.
 
-**Tempo:** 12 minutos. **Entrega:** uma versão própria do artefato, incluindo regra, decisão e evidência. **Avaliação:** critérios específicos acima e rubrica do E-book. O professor verifica se houve transferência para o novo caso. Se houver ajuda, registrar qual etapa foi assistida.
+**Entrega:** registro de impedimento
 
-## Perguntas para os alunos
+**Critérios:** impacto claro; pedido objetivo; próxima ação; sem culpabilização.
 
-- Qual meta orienta o ajuste?
-- Daily é prestação de contas?
-- Qual parte da sua previsão você reviu e qual evidência motivou a mudança?
+## Perguntas de verificação
 
-## Possíveis dúvidas e como responder
+- Daily é reunião de status para gerente?
+- Scrum Master é chefe técnico?
+- PO define como o código deve ser implementado?
 
-| Dúvida | Resposta |
-|---|---|
-| QA é papel formal separado? | É especialidade; no Scrum pode integrar Developers. |
-| Três perguntas são obrigatórias? | Não; o formato da Daily pode variar. |
-| Preciso copiar a resposta de referência? | Não; preserve as regras e explique sua decisão com evidência. |
-
-## Correção e fechamento
-
-As respostas de referência estão na demonstração. Não exigir frases idênticas; conferir critérios e raciocínio. Cada aluno completa: “Usei ___ para decidir ___ e confirmei com ___”. Relacionar à entrega do módulo: plano de Sprint simulada, quadro com políticas e limites, registros de Daily, Review e Retrospectiva e análise de capacidade. Resultado e processo serão inspecionados separadamente.
+> As respostas esperadas e intervenções ficam exclusivamente no script do professor.
 
 ## Tarefa para casa
 
-Revisar meta, plano e registro de Daily.
+1. Revisar Sprint Goal.
+2. Atualizar plano após bloqueio.
+3. Registrar uma Daily simulada com decisão.
+4. Entregar `m06-aula-02-revisao.md`.
 
-**Tempo sugerido:** 30–45 minutos. Entregar `m06-aula-02-revisao.md` com resposta inicial, feedback, versão revisada e explicação da mudança. O professor verifica a revisão no próximo encontro.
+**Entrega:** meta/plano/registro revisados
+
+## Conexão com a trilha
+
+A Aula 3 diferencia Review, Retrospectiva e Definition of Done.
+
+## Referências
+
+- [E-book correspondente](../ebooks/modulo-06-gestao-de-projetos-tech.md)
+- [Caso Agenda Clara](../atividades/caso-agenda-clara.md)
+- [Script do professor](scripts/modulo-06-aula-02-scrum-planning-e-daily.md)

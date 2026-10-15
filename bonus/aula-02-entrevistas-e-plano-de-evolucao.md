@@ -1,60 +1,119 @@
-# Bônus — Aula 2: Entrevistas e plano de evolução
+# Roteiro de Aula — Bônus — Aula 2
 
-**Condução com falas prontas:** [script do professor](scripts/aula-02-entrevistas-e-plano-de-evolucao.md). Seguir a sequência de até 90 minutos. As atividades abaixo formam o caderno completo; o script define o recorte ao vivo e a conclusão em casa. A gravação serve para revisão posterior.
+# Entrevistas e Plano de Evolução
 
-## Objetivo, duração e materiais
+> **Papel deste documento:** definir o que será ensinado, praticado e avaliado.  
+> A condução minuto a minuto, falas sugeridas, respostas esperadas e intervenções ficam no [script do professor](scripts/aula-02-entrevistas-e-plano-de-evolucao.md).
 
-Explicar contribuição em 60 segundos, responder com evidências e produzir plano de quatro semanas. Pré-requisito: documentos da aula anterior. Materiais: dossiê, perguntas, editor e cronômetro. [Leitura](../ebooks/bonus-preparacao-para-o-mercado.md): tópico 3.
+## Objetivo da aula
 
-| Etapa | Minutos |
+Praticar apresentação pessoal e respostas de entrevista baseadas em situações e evidências, reconhecendo limites e transformando lacunas em um plano de evolução de quatro semanas.
+
+Ao final, o aluno deverá conseguir:
+
+- fazer apresentação de cerca de 60 segundos
+- responder pergunta técnica com evidência
+- organizar resposta comportamental sem decorar roteiro
+- admitir limite e explicar como investigaria
+- produzir plano de evolução com entregas observáveis
+
+## Conteúdos e conceitos
+
+### Apresentação curta
+- trajetória
+- direção
+- evidência
+- objetivo
+
+### Respostas com contexto e evidência
+- situação
+- ação
+- resultado observável/aprendizado
+- limite
+
+### Plano de evolução
+- lacuna específica
+- prática
+- artefato
+- critério de revisão
+
+## Duração e blocos
+
+| Bloco | Tempo previsto |
 |---|---:|
-| Abertura e diagnóstico | 8 |
-| Conceitos e exemplos | 17 |
-| Demonstração guiada | 20 |
-| Pausa | 5 |
-| Dinâmica em dupla ou grupo | 15 |
-| Exercício individual | 12 |
-| Correção e dúvidas | 8 |
-| Fechamento e orientação da tarefa | 5 |
-| Total | 90 |
+| Abertura e diagnóstico | 8 min |
+| Conceitos e exemplos | 17 min |
+| Demonstração guiada | 20 min |
+| Pausa | 5 min |
+| Dinâmica em dupla ou grupo | 15 min |
+| Exercício individual | 12 min |
+| Correção e dúvidas | 8 min |
+| Fechamento e tarefa | 5 min |
+| **Total** | **90 min** |
 
-## Abertura e teoria
+## Materiais necessários
 
-Pergunte: “Qual decisão você consegue explicar sem ler seu arquivo?”. Dê dois minutos de preparação. Apresentar situação, tarefa, ação e resultado como apoio, sem decorar respostas. Resultado do laboratório é educacional. Não atribuir redução real de conflitos a dados fictícios. Quando não souber, dizer o limite e indicar como investigaria.
+- E-book do bônus
+- currículo/LinkedIn da aula anterior
+- dossiê Agenda Clara
+- lista de perguntas
+- cronômetro
 
-## Demonstração prática
+## Demonstração planejada — Responder com evidência e construir um próximo passo
 
-Professor interpreta candidato e responde sobre BUG01: “RN03 rejeita espaços. A variante aceitou e ocupou H11. Registrei passos, esperado e observado; retestei na referência. Não testei concorrência real.” Depois interpreta pergunta de Produto: “Por que adiar pagamento?” Responder com risco demonstrado, MVP e necessidade de investigação.
+1. Fazer um pitch de 60 segundos.
+2. Responder pergunta sobre BUG01.
+3. Responder pergunta de Produto/priorização.
+4. Demonstrar como dizer ‘não sei’ com plano de investigação.
+5. Transformar uma lacuna em prática de uma semana.
 
-Peça aos alunos que identifiquem uma ação, uma evidência e uma limitação em cada resposta.
+**Resultado pedagógico esperado:** o aluno comunica o que sabe sem exagerar e mostra método para evoluir.
 
-## Dinâmica em grupo
+## Dinâmica em grupo — Entrevista com conferência
 
-**Nome:** entrevista com conferência. **Contexto:** processo seletivo simulado de QA ou análise de produto. **Objetivo:** sustentar respostas e receber feedback.
+**Cenário:** Duplas simulam entrevista inicial para QA ou análise de Produto, com feedback curto após cada rodada.
 
-1. Preparar as perguntas durante a demonstração, antes de iniciar a dinâmica.
-2. Em 5 minutos, entrevistar a primeira pessoa: pitch e perguntas selecionadas no script.
-3. Em 5 minutos, trocar papéis.
-4. Em 3 minutos, dar feedback de clareza, evidência e honestidade; usar os 2 minutos finais para registrar uma melhoria.
+1. Primeira pessoa faz pitch de até 60 segundos.
+2. Entrevistador faz uma pergunta técnica e uma comportamental.
+3. Entrevistado mostra ou cita uma evidência.
+4. Entrevistador dá feedback sobre clareza, evidência e limite.
+5. Trocar papéis.
 
-Entrega: três respostas e feedback. Critérios: contribuição identificada, resposta coerente e limite declarado. Dica: use o artefato como apoio e explique com suas palavras. Exemplo: resposta de BUG01 acima. Variação: pergunta inesperada sobre produção.
+**Entrega esperada:** feedback estruturado de cada rodada
+
+**Critérios:** resposta contextualizada; evidência citada; limite honesto; feedback específico.
 
 ## Exercício individual
 
-Reescrever uma resposta após feedback e montar quatro semanas de prática. Cada semana precisa de tarefa, artefato e critério de revisão. Não preencher somente com “estudar Python”. Exemplo: “escrever função de validação, testar três entradas e pedir revisão”.
+Escolha uma lacuna real. Escreva uma ação prática, o artefato que produzirá, o critério de conclusão e como receberá revisão. Evite frases genéricas como ‘estudar mais’.
 
-## Perguntas e possíveis dúvidas
+**Entrega:** bloco de plano semanal
 
-- Qual evidência foi mais convincente?
-- Qual parte você ainda não sabe explicar?
-- Que próxima tarefa resolve essa lacuna?
+**Critérios:** lacuna específica; ação executável; artefato; critério verificável.
 
-| Dúvida | Resposta |
-|---|---|
-| Posso dizer que não sei? | Sim; reconheça limite e proponha investigação |
-| Preciso decorar? | Prepare ideias e exemplos; responda ao que foi perguntado |
-| Posso contar trabalho do grupo como meu? | Explique o que produziu, revisou e aprendeu |
+## Perguntas de verificação
 
-## Fechamento e tarefa para casa
+- É errado dizer ‘não sei’ numa entrevista?
+- STAR precisa ser decorado palavra por palavra?
+- Plano de evolução deve ser medido só por horas de estudo?
 
-Cada aluno apresenta uma resposta revisada e um próximo passo. Aplicar rubrica por clareza, completude, evidência e justificativa. Em 30–45 minutos fora da aula, revisar pitch, respostas e plano; entregar versões e razão da mudança. O professor registra um acerto e uma lacuna prioritária.
+> As respostas esperadas e intervenções ficam exclusivamente no script do professor.
+
+## Tarefa para casa
+
+1. Revisar o pitch de 60 segundos.
+2. Escrever três respostas usando experiências reais/projeto educacional.
+3. Montar quatro semanas com prática, artefato e critério.
+4. Registrar um feedback recebido e uma mudança feita.
+
+**Entrega:** pitch + respostas + plano de quatro semanas
+
+## Conexão com a trilha
+
+O bônus encerra a formação com um plano individual de continuidade; os próximos passos devem ser ajustados à área de interesse e às oportunidades reais.
+
+## Referências
+
+- [E-book do bônus](../ebooks/bonus-preparacao-para-o-mercado.md)
+- [Projeto Agenda Clara](../portfolio/agenda-clara/README.md)
+- [Script do professor](scripts/aula-02-entrevistas-e-plano-de-evolucao.md)

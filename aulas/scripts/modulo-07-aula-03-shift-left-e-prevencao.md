@@ -1,267 +1,203 @@
-# Script do professor — Shift Left e prevenção
+# Script do Professor — Shift Left e Prevenção
 
-**DTEM Treinamentos · encontro ao vivo de até 90 minutos, gravado para revisão.**
+**DTEM Treinamentos · encontro ao vivo de até 90 minutos.**
 
-Este documento contém falas e ações de condução. Adaptar a linguagem ao próprio estilo, preservando conceitos,
-exemplos e critérios. Os intervalos incluem escrita, espera, interação e prática; não são 90 minutos de leitura.
-Não depende de vídeos prévios. O aluno pode consultar o E-book e rever a gravação depois.
+> **Papel deste documento:** orientar a condução da aula. O script operacionaliza o roteiro correspondente; não deve criar uma aula paralela.
 
-**Roteiro:** [planejamento da aula](../modulo-07-aula-03-shift-left-e-prevencao.md).  
-**Material de estudo:** [E-book correspondente](../../ebooks/modulo-07-ciclo-de-vida-do-software.md).  
-**Caso:** [Agenda Clara](../../atividades/caso-agenda-clara.md), empresa e dados fictícios.
+**Roteiro:** [Módulo 7, Aula 3](../modulo-07-aula-03-shift-left-e-prevencao.md)  
+**Material do aluno:** [E-book correspondente](../../ebooks/modulo-07-ciclo-de-vida-do-software.md)  
+**Caso:** [Agenda Clara](../../atividades/caso-agenda-clara.md)  
+**Laboratório:** [Agenda Clara](../../portfolio/agenda-clara/README.md)  
 
-## Objetivo e materiais
+## Alinhamento obrigatório
 
-**Objetivo observável:** prevenir ambiguidades com revisão antecipada de critérios.  
-**Materiais:** pedido nome obrigatório e exemplos vazio, espaços, texto e dado não textual.
+- **Objetivo:** Aplicar Shift Left como antecipação de qualidade, refinando regras e exemplos antes da implementação sem abandonar verificações posteriores.
+- **Demonstração central:** Refinar ‘nome obrigatório’ antes do código.
+- **Prática em grupo:** Três perspectivas.
+- **Exercício individual:** refinar ‘cancelamento simples’.
+- **Tarefa:** revisar uma regra com exemplos e decisão registrada.
 
-Antes do encontro, preparar o exemplo e conferir os recursos necessários. Em tarefas de ferramenta, preparar
-conta e ambiente com antecedência. Se a execução estiver indisponível, percorrer manualmente e declarar o método;
-publicação ou execução exigidas pela entrega devem ser concluídas depois com apoio. Não inventar evidência.
+## Antes da aula
 
-## Agenda de condução
+- [ ] Separar regras vagas.
+- [ ] Preparar tabela Produto/Dev/QA.
+- [ ] Evitar apresentar Shift Left como responsabilidade exclusiva de QA.
+- [ ] Deixar roteiro e script abertos.
+- [ ] Conferir materiais, dados e exemplos.
+- [ ] Separar a entrega esperada da aula.
 
-| Intervalo | Etapa | Minutos |
-|---|---|---:|
-| 00–08 | Abertura e diagnóstico | 8 |
-| 08–25 | Conceitos e exemplos | 17 |
-| 25–45 | Demonstração guiada | 20 |
-| 45–50 | Pausa | 5 |
-| 50–65 | Dinâmica em dupla ou grupo | 15 |
-| 65–77 | Exercício individual | 12 |
-| 77–85 | Correção e dúvidas | 8 |
-| 85–90 | Fechamento e tarefa | 5 |
-| Total | | 90 |
+## Agenda
 
-O roteiro original contém o caderno completo de atividades. Nesta versão, os enunciados de grupo e individual
-abaixo definem o recorte do encontro. A tarefa de casa conclui os itens restantes. Se precisar reduzir extensão,
-preservar demonstração, tentativa individual, feedback e orientação da entrega.
+| Intervalo | Etapa |
+|---|---|
+| 00–08 | Abertura e diagnóstico |
+| 08–25 | Conceitos e exemplos |
+| 25–45 | Demonstração guiada |
+| 45–50 | Pausa |
+| 50–65 | Dinâmica |
+| 65–77 | Exercício individual |
+| 77–85 | Correção e dúvidas |
+| 85–90 | Fechamento e tarefa |
 
 ## 00–08 — Abertura e diagnóstico
 
-**Mostrar:** título da aula e objetivo. **Fala de abertura:**
+> Quanto trabalho podemos evitar fazendo uma boa pergunta antes de implementar? Hoje vamos transformar regras curtas em decisões compartilhadas e testáveis.
 
-> Quanto trabalho podemos evitar fazendo uma boa pergunta antes de implementar? Vamos transformar um pedido curto em critérios que diferentes pessoas interpretem da mesma forma.
+**Pergunta diagnóstica:** Shift Left significa testar tudo antes de programar?
 
-**Condução:** dar dois minutos para uma previsão individual no chat ou caderno. Colher duas respostas,
-sem exigir fala de todos. Esperar aproximadamente 30 segundos antes de completar a resposta.
-Não confundir silêncio inicial com falta de capacidade; oferecer a situação concreta novamente.
+Ouça pelo menos duas respostas antes de completar.
 
-**Pergunta de diagnóstico:** “Revisão antecipada substitui o teste executado?”
-
-**Referência para o professor:** Não. Previne ambiguidades; o comportamento implementado ainda precisa ser observado.
-
-**Transição para a explicação:**
-
-> Vamos transformar essa primeira resposta em um raciocínio que outra pessoa consiga conferir.
-> A cada exemplo, anotem a decisão e a informação que a sustenta.
-
-## 08–25 — Explicação teórica e exemplos
-
-Dividir os 17 minutos entre as três explicações, a escrita e duas perguntas breves.
-Usar as falas como apoio, sem acrescentar uma exposição inteira do E-book.
-
-### Explicação 1 — Shift-left
-
-**Fala sugerida:**
-
-> Antecipar atividades de qualidade significa avaliar riscos e ambiguidades mais cedo. Revisar uma regra antes da implementação pode prevenir um defeito; isso não elimina a necessidade de testar o software depois.
-
-**Ação:** escrever uma palavra-chave e pedir um exemplo com palavras do aluno. Se houver dúvida, pedir a entrada, regra ou situação concreta que sustenta a resposta.
-### Explicação 2 — Critérios observáveis
-
-**Fala sugerida:**
-
-> Nome obrigatório ainda deixa dúvidas: espaços contam? Qual mensagem aparece? A agenda muda após rejeição? RN03 exige texto não vazio após remover espaços das extremidades. Precisamos registrar o resultado esperado e preservar estado quando a entrada é rejeitada.
-
-**Ação:** escrever uma palavra-chave e pedir um exemplo com palavras do aluno. Se houver dúvida, pedir a entrada, regra ou situação concreta que sustenta a resposta.
-### Explicação 3 — Colaboração
-
-**Fala sugerida:**
-
-> Produto ajuda a avaliar valor e intenção, desenvolvimento viabilidade e implementação, QA testabilidade e risco. Uma conversa conjunta procura entendimento compartilhado, sem exigir que uma área tenha todas as respostas.
-
-**Ação:** escrever uma palavra-chave e pedir um exemplo com palavras do aluno. Se houver dúvida, pedir a entrada, regra ou situação concreta que sustenta a resposta.
-
-**Mostrar no quadro:** Pedido ambíguo → exemplos → decisão → critérios → testes.
-
-**Checagem de compreensão:** “Revisão antecipada substitui o teste executado?”  
-**Resposta esperada:** Não. Previne ambiguidades; o comportamento implementado ainda precisa ser observado.
+**Referência para o professor:** Não. Significa antecipar atividades e perguntas de qualidade/risk; verificação posterior continua necessária.
 
 **Transição:**
 
-> Agora vou percorrer um exemplo pensando em voz alta. Antes de mostrar o resultado,
-> vou pedir uma previsão. Observem onde uma regra ou evidência muda a decisão.
+> Vamos começar com uma frase aparentemente simples e descobrir quantas interpretações ela permite.
 
-## 25–45 — Demonstração guiada
+## 08–25 — Conceitos e exemplos
 
-**Preparação:** abrir os dados, documento, código ou cartões indicados. Reservar aproximadamente cinco minutos
-por passo e os minutos finais para uma previsão e uma dúvida. Em comandos, executar uma operação de cada vez
-e conferir estado. Não substituir falha de ambiente por uma afirmação de execução bem-sucedida.
+### 1. Shift Left como antecipação
 
-### Passo 1 — Levantar dúvidas
+**Fala sugerida:**
 
-**Fala durante a demonstração:**
+> Shift Left não significa mover todos os testes para o começo. Significa trazer perguntas de qualidade e risco para decisões anteriores, quando mudar é mais barato.
 
-> Vou mostrar nome vazio e três espaços. Pergunto se ambos devem ser rejeitados e qual evidência comprova que nenhum horário foi ocupado.
+**Mostrar/fazer:** regra ‘nome obrigatório’.
 
-**Ação:** mostrar o registro correspondente antes de avançar; pedir uma previsão e conferir a resposta com a evidência.
-### Passo 2 — Registrar decisão
+**Perguntar:** Que ambiguidade existe se não definirmos espaços?
 
-**Fala durante a demonstração:**
+**Compreensão esperada:** nome com apenas espaços pode ser interpretado de formas diferentes.
 
-> Vamos escrever: texto que fique vazio após strip é inválido. A rejeição deve manter a disponibilidade anterior.
+### 2. Exemplos e critérios
 
-**Ação:** mostrar o registro correspondente antes de avançar; pedir uma previsão e conferir a resposta com a evidência.
-### Passo 3 — Preparar verificação
+**Fala sugerida:**
 
-**Fala durante a demonstração:**
+> Uma frase curta melhora quando adicionamos exemplos que pessoas diferentes conseguem verificar.
 
-> Seleciono nome normal, espaços e vazio. Dados não textuais exigem definição de contrato; não vou inventar uma regra silenciosamente durante o teste.
+**Mostrar/fazer:** Ana aceita; vazio/espaços recusados.
 
-**Ação:** mostrar o registro correspondente antes de avançar; pedir uma previsão e conferir a resposta com a evidência.
+**Perguntar:** Depois de recusar, o que deve acontecer com o estado?
 
-**Pergunta após a demonstração:** “Qual decisão vocês conseguem explicar sem copiar a frase que usei?”
+**Compreensão esperada:** não deve criar reserva.
 
-**Referência:** a resposta precisa relacionar situação, decisão e fundamento.
-As falas de cada passo indicam o comportamento ou a interpretação que deve ser conferido.
+### 3. Três perspectivas
 
-**Transição:**
+**Fala sugerida:**
 
-> Na prática, vocês vão alternar quem conduz e quem revisa. O objetivo é produzir algo
-> que o colega consiga conferir, e não somente repetir minha demonstração.
+> Colaboração antecipada não significa QA escrever tudo. Cada área traz uma perspectiva para reduzir lacunas antes da implementação.
+
+**Mostrar/fazer:** perguntas de cada papel.
+
+**Perguntar:** Que pergunta técnica Dev faria? E que risco QA levantaria?
+
+**Compreensão esperada:** respostas diferentes, complementares.
+
+## 25–45 — Demonstração guiada — Refinar ‘nome obrigatório’ antes do código
+
+### Passo 1 — Expor a ambiguidade
+
+**Fazer:** Escreva apenas ‘nome obrigatório’.
+
+**Fala sugerida:**
+
+> Parece claro até duas pessoas implementarem interpretações diferentes. Vamos descobrir o que ainda não está definido.
+
+**Checar com a turma:** Pergunte sobre vazio, espaços e tipo inválido.
+
+### Passo 2 — Criar exemplos
+
+**Fazer:** Monte tabela entrada/esperado/estado.
+
+**Fala sugerida:**
+
+> Exemplos ajudam Produto, Dev e QA a discutir a mesma coisa antes de existir código.
+
+**Checar com a turma:** Peça um caso positivo e dois negativos.
+
+### Passo 3 — Preservar verificação posterior
+
+**Fazer:** Anote quais casos serão executados depois.
+
+**Fala sugerida:**
+
+> Antecipar não substitui testar a implementação. Primeiro reduzimos ambiguidade; depois verificamos se o código respeitou a decisão.
+
+**Checar com a turma:** Pergunte que evidência confirmaria a implementação.
+
+**Resultado de referência:** Critério exemplo: nome textual com conteúdo após remoção de espaços; ‘Ana’ aceita; vazio/espaços recusados; recusa não altera estado da agenda.
+
+Peça previsão antes de revelar decisões ou resultados.
 
 ## 45–50 — Pausa
 
-Deixar horário de retorno visível e não apresentar conteúdo obrigatório durante os cinco minutos.
-Na gravação, indicar o ponto em que a atividade seguinte começa.
+Informar horário de retorno e não inserir conteúdo obrigatório.
 
-## 50–65 — Dinâmica em dupla ou grupo
+## 50–65 — Dinâmica — Três perspectivas
 
-**Nome:** Revisão com explicação — Shift Left e prevenção.  
-**Contexto profissional:** uma equipe precisa revisar seu trabalho antes de avançar.
-**Objetivo:** aplicar os conceitos e produzir um registro conferível no recorte da aula.
+**Cenário:** Cada trio recebe uma regra curta e distribui Produto, Dev e QA para refiná-la.
 
-**Fala de orientação:**
+> Não tentem fazer QA decidir produto nem Produto desenhar código. Usem as perspectivas para construir entendimento compartilhado.
 
-> Uma pessoa começa conduzindo e a outra confere as decisões. Na metade, troquem funções.
-> Registrem o que fizeram e qual informação justifica o resultado.
-> Se discordarem, expliquem a diferença usando regra ou evidência, em vez de escolher pela maioria.
+1. Produto explica objetivo e contexto.
+2. Dev aponta decisão/limitação técnica a esclarecer.
+3. QA propõe riscos e exemplos.
+4. O trio escreve critérios verificáveis.
+5. Trocar regra com outro trio para revisão.
 
-**Enunciado e passo a passo:**
+**Entrega:** regra refinada + exemplos
 
-1. Levantar duas dúvidas sobre cancelamento.
-2. Decidir um exemplo de sucesso e um de falha.
-3. Escrever critérios e identificar uma pergunta ainda aberta.
-
-**Tempo:** 2 minutos para ler e organizar; 5 para produzir; 5 para trocar revisão; 3 para compartilhar.
-Selecionar duas duplas para falar e recolher as demais por escrito. Em aulas de entrevista ou apresentação,
-usar o mesmo tempo para a primeira participação, troca e feedback.
-
-**Entrega esperada:** registro da atividade com contexto, decisão, fundamento e uma revisão.
-**Critérios:** cumprir as etapas, preservar as regras e permitir que o colega confira.
-**Referência de correção:** usar os exemplos da demonstração e verificar o que mudou no novo caso,
-sem exigir palavras idênticas.
-
-**Perguntas ao circular:** “Qual passo está sendo executado?”, “Qual evidência sustenta isso?”
-e “O que precisaria mudar para sua conclusão ser diferente?”
-
-**Dica para a dupla:** separar o que observou do que está supondo.
-**Variação difícil:** formular um contraexemplo ou limite; transferir para casa se não couber.
+**Observar:** perspectivas distintas; ambiguidade reduzida; critério verificável; teste posterior previsto.
 
 ## 65–77 — Exercício individual
 
-**Fala do professor — enunciado:**
+> A frase ‘o usuário pode cancelar uma reserva’ é vaga. Escreva duas perguntas de esclarecimento e dois critérios verificáveis, incluindo um cenário de ID inexistente.
 
-> Reescreva nome obrigatório em um critério verificável para espaços e diga que estado deve permanecer igual.
+**Entrega:** perguntas + critérios
 
-**Tempo:** 2 minutos de leitura, 7 de resolução e 3 de revisão/entrega.
-Cada aluno entrega uma resposta própria, mesmo quando a atividade anterior foi em grupo.
+**Critérios:** ambiguidades reais; positivo/negativo; estado esperado; sem inventar autorização não definida.
 
-**Entrega:** artefato pedido no enunciado, acompanhado de uma explicação breve da decisão.
-**Critérios:** correção, completude do recorte, evidência e justificativa. Aplicar a
-[rubrica formativa](../../planejamento/analise-pedagogica.md), de 0 a 2 por critério. Referência proposta: 6/8, sem zero em correção ou evidência.
+**Ajuda graduada:** pergunte ‘quem pode cancelar? qual reserva? o que acontece se ela não existir?’.
 
-**Ajuda graduada:** pedir que identifique primeiro a entrada, regra ou exigência; depois que escolha o próximo
-passo. Não resolver todas as etapas. Registrar qual parte foi assistida e conferir transferência em uma tentativa nova.
+## 77–85 — Correção e intervenções
 
-**Gabarito comentado — revelar depois da tentativa:**
+Peça que a pessoa explique sua decisão antes da resposta de referência.
 
-> Dado um horário disponível, quando o nome contém apenas espaços, a reserva é rejeitada por nome inválido e o horário continua disponível. O critério indica entrada, resultado e preservação do estado.
+**Se aparecer:** o aluno traduz Shift Left como ‘rodar automação mais cedo’
 
-## 77–85 — Correção, intervenções e dúvidas
+> Automação pode participar, mas o conceito é mais amplo: requisitos, design, segurança, testabilidade e exemplos também podem ser antecipados.
 
-**Fala para iniciar a correção:**
+**Se aparecer:** QA passa a definir regra de negócio sozinho
 
-> Se sua resposta foi diferente, mantenha a primeira versão. Vamos descobrir em qual decisão
-> o raciocínio mudou. Corrigir e explicar a mudança faz parte da aprendizagem.
+> Quem possui contexto de valor e decisão de produto? QA ajuda a revelar lacunas; a regra é construída/decidida colaborativamente.
 
-**Se o aluno antecipar é só escrever mais documentos:**
+**Se aparecer:** os critérios não falam do estado após falha
 
-> Qual pergunta neste registro evita uma implementação ambígua?
+> A saída está descrita, mas o que não pode mudar? Inclua o estado relevante.
 
-**Se o aluno qa decide sozinho a regra:**
+### Perguntas de verificação
 
-> Leve a dúvida às pessoas responsáveis e registre a decisão compartilhada.
+- **Shift Left elimina necessidade de testes depois do código?** — Não. Antecipação reduz ambiguidades e riscos; a implementação ainda precisa ser verificada.
+- **QA deve ser dono de todos os critérios?** — Não. Critérios são colaborativos; Produto, Dev e QA trazem perspectivas complementares.
+- **Perguntar cedo garante que nenhum bug ocorrerá?** — Não. Reduz certos riscos, mas não elimina defeitos nem incerteza.
 
-**Dúvida central da aula:** “Revisão antecipada substitui o teste executado?”
+## 85–90 — Fechamento e tarefa
 
-**Como responder:**
+> Prevenção não substitui detecção. Shift Left melhora a qualidade das decisões antes do código e prepara verificações mais fortes depois.
 
-> Não. Previne ambiguidades; o comportamento implementado ainda precisa ser observado.
+1. Escolher uma regra do projeto.
+2. Registrar pergunta antes da solução.
+3. Criar exemplos positivos e negativos.
+4. Definir evidência futura.
+5. Entregar `m07-aula-03-revisao.md`.
 
-**Se perguntarem se a resposta precisa ser igual:**
+**Entrega:** regra refinada + exemplos + plano de verificação
 
-> Não precisa repetir minha frase. Precisa respeitar as regras e permitir que outra pessoa
-> confira como você chegou à decisão.
+**Ponte:**
 
-**Se perguntarem como usar a gravação:**
+> Na próxima aula vamos usar tudo isso para uma decisão concreta: podemos liberar? E o que fazemos se uma verificação crítica falhar?
 
-> Localize o trecho em que surgiu a dúvida, reveja o exemplo e depois tente uma entrada ou situação nova.
-> Assistir de novo ajuda; explicar sua própria decisão é o que vamos avaliar.
+## Pós-aula
 
-**Modelo de devolutiva:**
-
-> Você acertou ao identificar a decisão principal. Falta mostrar a informação que a sustenta.
-> Acrescente essa evidência e explique o que mudou na sua revisão.
-
-Selecionar duas dúvidas para os oito minutos. Registrar as demais para resposta após a aula ou retomada.
-Não ampliar silenciosamente a duração do encontro.
-
-## 85–90 — Fechamento e tarefa para casa
-
-**Fala de fechamento:**
-
-> Hoje trabalhamos como prevenir ambiguidades com revisão antecipada de critérios.
-> Para revisar, procure uma decisão, a evidência que a sustenta e uma limitação que ainda precisa de atenção.
-> Guardem a primeira versão e a correção; isso ajuda a explicar a evolução no portfólio.
-
-**Pergunta de saída:** “O que você mudou na sua primeira previsão, e por quê?”
-
-**Tarefa de casa — falar à turma:**
-
-> Concluir a revisão antecipada com dúvidas, decisões, exemplos e critérios; preservar perguntas sem resposta como pendências.
-
-**Tempo-base:** 30–45 minutos para revisão. Se o enunciado exigir concluir vários artefatos, execução pendente
-ou preparação da entrega final, combinar prazo e tempo adicional explicitamente; não prometer que tudo cabe
-nesse intervalo.
-
-**Entrega:** `modulo-07-aula-03-shift-left-e-prevencao-revisao.md`, ou arquivos específicos pedidos, contendo resposta inicial, feedback,
-versão revisada e explicação. O professor verifica a revisão no início do encontro seguinte.
-
-**Dica:** usar E-book e gravação como apoio; identificar empresa fictícia e origem da evidência.
-**Variação difícil:** acrescentar uma situação nova ou uma dúvida de aplicação, com proposta de investigação.
-
-## Checklist do professor e uso da gravação
-
-- [ ] Preparar recursos e exemplo antes do encontro.
-- [ ] Pedir previsão antes de revelar referência.
-- [ ] Conferir compreensão por exemplo, não por memorização.
-- [ ] Alternar condução e revisão na dupla.
-- [ ] Preservar exercício individual.
-- [ ] Declarar execução, simulação e limites corretamente.
-- [ ] Registrar feedback, tarefa e dúvidas pendentes.
-- [ ] Disponibilizar gravação para revisão e indicar os blocos de demonstração e correção.
-
-Percentual de vídeo assistido é sinal de utilização, não prova de domínio.
-Usar artefato e explicação para avaliar aprendizagem; não penalizar o aluno por uma falha de registro de reprodução.
+- [ ] Disponibilizar gravação.
+- [ ] Registrar dúvidas e lacunas recorrentes.
+- [ ] Conferir se demonstração, prática e tarefa seguiram o roteiro.
+- [ ] Atualizar roteiro e script juntos se alguma regra mudar.

@@ -1,267 +1,219 @@
-# Script do professor — Regressão, ferramentas e automação
+# Script do Professor — Regressão, Ferramentas e Automação
 
-**DTEM Treinamentos · encontro ao vivo de até 90 minutos, gravado para revisão.**
+**DTEM Treinamentos · encontro ao vivo de até 90 minutos.**
 
-Este documento contém falas e ações de condução. Adaptar a linguagem ao próprio estilo, preservando conceitos,
-exemplos e critérios. Os intervalos incluem escrita, espera, interação e prática; não são 90 minutos de leitura.
-Não depende de vídeos prévios. O aluno pode consultar o E-book e rever a gravação depois.
+> **Papel deste documento:** orientar a condução da aula. O conteúdo e as atividades abaixo devem permanecer coerentes com o roteiro; o script não cria uma aula paralela.
 
-**Roteiro:** [planejamento da aula](../modulo-04-aula-04-regressao-ferramentas-e-automacao.md).  
-**Material de estudo:** [E-book correspondente](../../ebooks/modulo-04-qualidade-de-software.md).  
-**Caso:** [Agenda Clara](../../atividades/caso-agenda-clara.md), empresa e dados fictícios.
+**Roteiro:** [Módulo 4, Aula 4](../modulo-04-aula-04-regressao-ferramentas-e-automacao.md)  
+**Material do aluno:** [E-book correspondente](../../ebooks/modulo-04-qualidade-de-software.md)  
+**Caso:** [Agenda Clara](../../atividades/caso-agenda-clara.md)  
+**Laboratório:** [Agenda Clara](../../portfolio/agenda-clara/README.md)  
 
-## Objetivo e materiais
+## Alinhamento obrigatório
 
-**Objetivo observável:** distinguir reteste e regressão e emitir parecer limitado às evidências.  
-**Materiais:** referência, variantes, tabela de execução e cartões; não depende de conta Jira.
+- **Objetivo:** Distinguir reteste e regressão, organizar evidências em ferramentas e apresentar automação como forma de repetir verificações úteis, não como substituta do raciocínio de QA.
+- **Demonstração central:** Do reteste ao parecer de regressão.
+- **Prática em grupo:** Da correção à decisão.
+- **Exercício individual:** emitir parecer com um caso crítico pendente.
+- **Tarefa:** consolidar plano, casos, bug, reteste e parecer.
 
-Antes do encontro, preparar o exemplo e conferir os recursos necessários. Em tarefas de ferramenta, preparar
-conta e ambiente com antecedência. Se a execução estiver indisponível, percorrer manualmente e declarar o método;
-publicação ou execução exigidas pela entrega devem ser concluídas depois com apoio. Não inventar evidência.
+Não substituir esses elementos por um exemplo genérico sem revisar também o roteiro.
+
+## Antes da aula
+
+- [ ] Preparar versão com comportamento corrigido/referência.
+- [ ] Selecionar cenários adjacentes.
+- [ ] Separar trecho curto de automação apenas para ilustração, sem instalação obrigatória.
+- [ ] Deixar o roteiro e este script abertos.
+- [ ] Testar qualquer ferramenta, arquivo ou demonstração antes da turma entrar.
+- [ ] Separar o material que o aluno deverá entregar ao final.
 
 ## Agenda de condução
 
-| Intervalo | Etapa | Minutos |
-|---|---|---:|
-| 00–08 | Abertura e diagnóstico | 8 |
-| 08–25 | Conceitos e exemplos | 17 |
-| 25–45 | Demonstração guiada | 20 |
-| 45–50 | Pausa | 5 |
-| 50–65 | Dinâmica em dupla ou grupo | 15 |
-| 65–77 | Exercício individual | 12 |
-| 77–85 | Correção e dúvidas | 8 |
-| 85–90 | Fechamento e tarefa | 5 |
-| Total | | 90 |
-
-O roteiro original contém o caderno completo de atividades. Nesta versão, os enunciados de grupo e individual
-abaixo definem o recorte do encontro. A tarefa de casa conclui os itens restantes. Se precisar reduzir extensão,
-preservar demonstração, tentativa individual, feedback e orientação da entrega.
+| Intervalo | Etapa |
+|---|---|
+| 00–08 | Abertura e diagnóstico |
+| 08–25 | Conceitos e exemplos |
+| 25–45 | Demonstração guiada |
+| 45–50 | Pausa |
+| 50–65 | Dinâmica |
+| 65–77 | Exercício individual |
+| 77–85 | Correção e dúvidas |
+| 85–90 | Fechamento e tarefa |
 
 ## 00–08 — Abertura e diagnóstico
 
-**Mostrar:** título da aula e objetivo. **Fala de abertura:**
+**Fala de abertura:**
 
-> O nome agora foi corrigido. Podemos concluir que reserva e cancelamento continuam corretos? Vamos separar a conferência do bug das verificações de efeitos da mudança.
+> O bug de nome foi corrigido. Isso significa que podemos declarar todo o sistema aprovado? Hoje vamos separar confirmação da correção, regressão e automação.
 
-**Condução:** dar dois minutos para uma previsão individual no chat ou caderno. Colher duas respostas,
-sem exigir fala de todos. Esperar aproximadamente 30 segundos antes de completar a resposta.
-Não confundir silêncio inicial com falta de capacidade; oferecer a situação concreta novamente.
+**Pergunta diagnóstica:** Qual diferença entre repetir exatamente o caso do bug e testar outros fluxos depois da mudança?
 
-**Pergunta de diagnóstico:** “Posso fechar um bug só porque mudou para a coluna corrigido?”
+Dê cerca de dois minutos para respostas curtas. Escute pelo menos duas respostas antes de completar.
 
-**Referência para o professor:** Não; exigir reteste e evidência da versão.
-
-**Transição para a explicação:**
-
-> Vamos transformar essa primeira resposta em um raciocínio que outra pessoa consiga conferir.
-> A cada exemplo, anotem a decisão e a informação que a sustenta.
-
-## 08–25 — Explicação teórica e exemplos
-
-Dividir os 17 minutos entre as três explicações, a escrita e duas perguntas breves.
-Usar as falas como apoio, sem acrescentar uma exposição inteira do E-book.
-
-### Explicação 1 — Reteste e regressão
-
-**Fala sugerida:**
-
-> Reteste repete a situação que revelava o defeito na versão corrigida. Regressão investiga comportamentos existentes que a mudança pode prejudicar. O conjunto depende de impacto e risco, e não de repetir indiscriminadamente todos os casos.
-
-**Ação:** escrever uma palavra-chave e pedir um exemplo com palavras do aluno. Se houver dúvida, pedir a entrada, regra ou situação concreta que sustenta a resposta.
-### Explicação 2 — Estado do trabalho
-
-**Fala sugerida:**
-
-> Aberto, em análise, corrigido e validado são estados de exemplo. Corrigido não significa validado: precisamos de reteste com versão. Jira e Azure DevOps organizam esse fluxo, com campos que variam. Cartões podem representar os mesmos acordos.
-
-**Ação:** escrever uma palavra-chave e pedir um exemplo com palavras do aluno. Se houver dúvida, pedir a entrada, regra ou situação concreta que sustenta a resposta.
-### Explicação 3 — Automação e parecer
-
-**Fala sugerida:**
-
-> Automação prepara dados, executa e compara com esperado. Ela não escolhe risco nem investiga toda experiência. O parecer informa decisão, versão, evidências e limites. Não executado ou bloqueado não equivale a aprovado.
-
-**Ação:** escrever uma palavra-chave e pedir um exemplo com palavras do aluno. Se houver dúvida, pedir a entrada, regra ou situação concreta que sustenta a resposta.
-
-**Mostrar no quadro:** BUG01 → correção → reteste; reserva/conflito/cancelamento → regressão; cartão com links RN03/TC03.
-
-**Checagem de compreensão:** “Posso fechar um bug só porque mudou para a coluna corrigido?”  
-**Resposta esperada:** Não; exigir reteste e evidência da versão.
+**Resposta de referência para o professor:** o primeiro é reteste; os demais compõem regressão para investigar efeitos colaterais.
 
 **Transição:**
 
-> Agora vou percorrer um exemplo pensando em voz alta. Antes de mostrar o resultado,
-> vou pedir uma previsão. Observem onde uma regra ou evidência muda a decisão.
+> Vamos começar pelo defeito conhecido, ampliar para riscos próximos e só então discutir como repetir parte dessas verificações com código.
 
-## 25–45 — Demonstração guiada
+## 08–25 — Conceitos e exemplos
 
-**Preparação:** abrir os dados, documento, código ou cartões indicados. Reservar aproximadamente cinco minutos
-por passo e os minutos finais para uma previsão e uma dúvida. Em comandos, executar uma operação de cada vez
-e conferir estado. Não substituir falha de ambiente por uma afirmação de execução bem-sucedida.
+### 1. Reteste e regressão
 
-### Passo 1 — Retestar espaços
+**Fala sugerida:**
 
-**Fala durante a demonstração:**
+> Reteste responde ‘o bug específico foi corrigido?’. Regressão pergunta ‘a mudança que corrigiu isso afetou algo que funcionava?’.
 
-> Na referência nova, espero nome_invalido e H11 livre. Essa conferência responde ao bug específico.
+**Mostrar/fazer:** BUG01 + reserva/cancelamento.
 
-**Ação:** mostrar o registro correspondente antes de avançar; pedir uma previsão e conferir a resposta com a evidência.
-### Passo 2 — Verificar adjacências
+**Perguntar:** Depois de corrigir nome, qual comportamento adjacente você verificaria?
 
-**Fala durante a demonstração:**
+**Compreensão esperada:** cenários relevantes como reserva válida e conflito/cancelamento.
 
-> Executo reserva válida, conflito e cancelar/re-reservar. Explico o risco de cada escolha e registro versão.
+### 2. Ferramentas e rastreabilidade
 
-**Ação:** mostrar o registro correspondente antes de avançar; pedir uma previsão e conferir a resposta com a evidência.
-### Passo 3 — Mostrar comparação
+**Fala sugerida:**
 
-**Fala durante a demonstração:**
+> Ferramentas ajudam a organizar trabalho, mas um status ‘Passed’ sem saber versão, dados e evidência é fraco.
 
-> Criar Agenda e comparar status com nome_invalido ilustra asserção. Na variante, comparação falha. A evidência sustentará liberação somente do laboratório sequencial.
+**Mostrar/fazer:** fluxo requisito → caso → bug → reteste.
 
-**Ação:** mostrar o registro correspondente antes de avançar; pedir uma previsão e conferir a resposta com a evidência.
+**Perguntar:** Que dado você precisa para confiar em um ‘aprovado’?
 
-**Pergunta após a demonstração:** “Qual decisão vocês conseguem explicar sem copiar a frase que usei?”
+**Compreensão esperada:** versão, caso, resultado/evidência e contexto.
 
-**Referência:** a resposta precisa relacionar situação, decisão e fundamento.
-As falas de cada passo indicam o comportamento ou a interpretação que deve ser conferido.
+### 3. Automação
 
-**Transição:**
+**Fala sugerida:**
 
-> Na prática, vocês vão alternar quem conduz e quem revisa. O objetivo é produzir algo
-> que o colega consiga conferir, e não somente repetir minha demonstração.
+> Automação é código que executa verificações. Não transforma teste ruim em teste bom. Playwright e Cypress frequentemente usam JavaScript/TypeScript; Python também possui ecossistemas de automação.
+
+**Mostrar/fazer:** comparação conceitual manual x automatizado.
+
+**Perguntar:** Qual teste vale automatizar primeiro: algo raro e instável ou um fluxo crítico repetido?
+
+**Compreensão esperada:** tende a fazer mais sentido o crítico/repetitivo/estável, avaliando contexto.
+
+Evite ler o E-book. Use-o como base e mantenha a explicação oral no recorte previsto pelo roteiro.
+
+## 25–45 — Demonstração guiada — Do reteste ao parecer de regressão
+
+### Passo 1 — Retestar BUG01
+
+**Fazer:** Execute exatamente a entrada que reproduzia o bug.
+
+**Fala sugerida:**
+
+> Não vamos começar por toda a regressão. Primeiro confirmamos se a correção atacou o problema original.
+
+**Checar com a turma:** Peça esperado, observado e versão.
+
+### Passo 2 — Selecionar regressão
+
+**Fazer:** Execute dois ou três fluxos adjacentes.
+
+**Fala sugerida:**
+
+> Não é necessário repetir tudo cegamente. Vamos escolher cenários que podem ter sido afetados pela validação.
+
+**Checar com a turma:** Peça justificativa para cada cenário.
+
+### Passo 3 — Conectar à automação
+
+**Fazer:** Mostre pseudocódigo ou trecho curto de teste.
+
+**Fala sugerida:**
+
+> A automação repete a verificação que já sabemos explicar. Mais adiante, ferramentas como Playwright usam muito JS/TS; a lógica de dado, ação e esperado continua a mesma.
+
+**Checar com a turma:** Pergunte o que ainda precisa ser decidido por uma pessoa.
+
+**Resultado de referência:** Parecer deve indicar o que foi retestado/regredido, em qual versão, quais evidências passaram/falharam e quais riscos permanecem fora do escopo.
+
+Peça previsão antes de executar ou revelar a resposta. Depois compare previsão, evidência e explicação.
 
 ## 45–50 — Pausa
 
-Deixar horário de retorno visível e não apresentar conteúdo obrigatório durante os cinco minutos.
-Na gravação, indicar o ponto em que a atividade seguinte começa.
+Informar o horário de retorno. Não usar a pausa para conteúdo obrigatório.
 
-## 50–65 — Dinâmica em dupla ou grupo
+## 50–65 — Dinâmica — Da correção à decisão
 
-**Nome:** Revisão com explicação — Regressão, ferramentas e automação.  
-**Contexto profissional:** uma equipe precisa revisar seu trabalho antes de avançar.
-**Objetivo:** aplicar os conceitos e produzir um registro conferível no recorte da aula.
+**Cenário:** A equipe recebeu uma correção para BUG01 e precisa decidir o mínimo de regressão antes de uma demonstração.
 
-**Fala de orientação:**
+**Orientação para a turma:**
 
-> Uma pessoa começa conduzindo e a outra confere as decisões. Na metade, troquem funções.
-> Registrem o que fizeram e qual informação justifica o resultado.
-> Se discordarem, expliquem a diferença usando regra ou evidência, em vez de escolher pela maioria.
+> Não escrevam ‘aprovado’ de forma absoluta. Digam exatamente o que foi verificado e qual decisão esse recorte sustenta.
 
-**Enunciado e passo a passo:**
+1. Definir o reteste obrigatório.
+2. Escolher três casos de regressão e justificar.
+3. Registrar o que permanece fora do escopo.
+4. Emitir parecer limitado às evidências.
 
-1. Selecionar quatro sequências e justificar riscos.
-2. Executar primeiro reteste e uma regressão.
-3. Trocar revisão e desenhar transição de corrigido para validado.
+**Tempo sugerido:** 2 min organização, 8 min produção, 3 min revisão entre pares e 2 min compartilhamento.
 
-**Tempo:** 2 minutos para ler e organizar; 5 para produzir; 5 para trocar revisão; 3 para compartilhar.
-Selecionar duas duplas para falar e recolher as demais por escrito. Em aulas de entrevista ou apresentação,
-usar o mesmo tempo para a primeira participação, troca e feedback.
+**Entrega esperada:** mini plano de reteste/regressão + parecer
 
-**Entrega esperada:** registro da atividade com contexto, decisão, fundamento e uma revisão.
-**Critérios:** cumprir as etapas, preservar as regras e permitir que o colega confira.
-**Referência de correção:** usar os exemplos da demonstração e verificar o que mudou no novo caso,
-sem exigir palavras idênticas.
-
-**Perguntas ao circular:** “Qual passo está sendo executado?”, “Qual evidência sustenta isso?”
-e “O que precisaria mudar para sua conclusão ser diferente?”
-
-**Dica para a dupla:** separar o que observou do que está supondo.
-**Variação difícil:** formular um contraexemplo ou limite; transferir para casa se não couber.
+**O professor observa:** reteste separado de regressão; seleção justificada; limites declarados; parecer coerente.
 
 ## 65–77 — Exercício individual
 
-**Fala do professor — enunciado:**
+**Enunciado para falar à turma:**
 
-> Emita parecer para uma versão com nome corrigido, mas cancelamento crítico ainda não executado. Indique decisão e próxima ação.
+> Imagine que nome foi corrigido, mas o caso crítico de cancelamento ainda não foi executado. Escreva um parecer de três a cinco linhas com decisão, risco e próxima ação.
 
-**Tempo:** 2 minutos de leitura, 7 de resolução e 3 de revisão/entrega.
-Cada aluno entrega uma resposta própria, mesmo quando a atividade anterior foi em grupo.
+**Entrega:** parecer individual
 
-**Entrega:** artefato pedido no enunciado, acompanhado de uma explicação breve da decisão.
-**Critérios:** correção, completude do recorte, evidência e justificativa. Aplicar a
-[rubrica formativa](../../planejamento/analise-pedagogica.md), de 0 a 2 por critério. Referência proposta: 6/8, sem zero em correção ou evidência.
+**Critérios:** não inventa aprovação; risco explícito; próxima ação objetiva.
 
-**Ajuda graduada:** pedir que identifique primeiro a entrada, regra ou exigência; depois que escolha o próximo
-passo. Não resolver todas as etapas. Registrar qual parte foi assistida e conferir transferência em uma tentativa nova.
-
-**Gabarito comentado — revelar depois da tentativa:**
-
-> Não afirmar aprovação completa. Condicionar ou bloquear a liberação do escopo dependente de RN06 até obter evidência. Explicar que laboratório não valida produção. As demais regressões devem ser concluídas em casa.
+**Se houver dificuldade:** use estrutura ‘verificado / pendente / impacto / decisão’.
 
 ## 77–85 — Correção, intervenções e dúvidas
 
-**Fala para iniciar a correção:**
+Peça primeiro que o aluno explique o caminho usado. Só depois mostre referência ou correção.
 
-> Se sua resposta foi diferente, mantenha a primeira versão. Vamos descobrir em qual decisão
-> o raciocínio mudou. Corrigir e explicar a mudança faz parte da aprendizagem.
+**Se aparecer:** “BUG corrigido = versão aprovada.”
 
-**Se o aluno chamar um caso de regressão completa:**
+> O reteste confirma apenas o defeito específico. Que outros riscos relevantes a mudança pode afetar?
 
-> Qual conjunto de comportamentos foi investigado e qual ficou fora?
+**Se aparecer:** “Automatizado é sempre melhor.”
 
-**Se o aluno script como substituto de raciocínio:**
+> Qual o custo de criar/manter e qual valor da repetição? Automação é uma decisão de investimento.
 
-> Quem definiu o esperado e que risco a comparação cobre?
+**Se aparecer:** “Para Playwright preciso esquecer Python e reaprender lógica.”
 
-**Dúvida central da aula:** “Posso fechar um bug só porque mudou para a coluna corrigido?”
+> Não. Condições, funções, dados e asserts seguem a mesma lógica; o que muda é a linguagem e a API da ferramenta.
 
-**Como responder:**
+### Perguntas de verificação
 
-> Não; exigir reteste e evidência da versão.
+- **Reteste e regressão são sinônimos?** — Não. Reteste verifica a correção específica; regressão verifica possíveis efeitos em comportamentos existentes.
+- **Automação substitui teste exploratório?** — Não. Automatiza verificações programadas; exploração e raciocínio continuam necessários.
+- **Por que introduzir JS/TS aqui sem trocar a linguagem do módulo de lógica?** — Porque JS/TS aparecem muito em automação moderna; a base de lógica aprendida em Python transfere para essas ferramentas.
 
-**Se perguntarem se a resposta precisa ser igual:**
-
-> Não precisa repetir minha frase. Precisa respeitar as regras e permitir que outra pessoa
-> confira como você chegou à decisão.
-
-**Se perguntarem como usar a gravação:**
-
-> Localize o trecho em que surgiu a dúvida, reveja o exemplo e depois tente uma entrada ou situação nova.
-> Assistir de novo ajuda; explicar sua própria decisão é o que vamos avaliar.
-
-**Modelo de devolutiva:**
-
-> Você acertou ao identificar a decisão principal. Falta mostrar a informação que a sustenta.
-> Acrescente essa evidência e explique o que mudou na sua revisão.
-
-Selecionar duas dúvidas para os oito minutos. Registrar as demais para resposta após a aula ou retomada.
-Não ampliar silenciosamente a duração do encontro.
-
-## 85–90 — Fechamento e tarefa para casa
+## 85–90 — Fechamento e tarefa
 
 **Fala de fechamento:**
 
-> Hoje trabalhamos como distinguir reteste e regressão e emitir parecer limitado às evidências.
-> Para revisar, procure uma decisão, a evidência que a sustenta e uma limitação que ainda precisa de atenção.
-> Guardem a primeira versão e a correção; isso ajuda a explicar a evolução no portfólio.
+> Automação é uma evolução natural de testes bem pensados. O valor vem da regra, do risco e do esperado; a ferramenta vem depois.
 
-**Pergunta de saída:** “O que você mudou na sua primeira previsão, e por quê?”
+**Tarefa para casa:**
 
-**Tarefa de casa — falar à turma:**
+1. Organizar o plano de testes.
+2. Consolidar oito casos e execuções.
+3. Revisar BUG01 e reteste.
+4. Anexar parecer de regressão.
+5. Registrar uma nota: que verificação você automatizaria primeiro e por quê?
 
-> Consolidar plano, oito casos, BUG01, reteste, regressão e parecer. Organizar cartões vinculados e concluir verificação conceitual de automação.
+**Entrega:** entrega final do Módulo 4
 
-**Tempo-base:** 30–45 minutos para revisão. Se o enunciado exigir concluir vários artefatos, execução pendente
-ou preparação da entrega final, combinar prazo e tempo adicional explicitamente; não prometer que tudo cabe
-nesse intervalo.
+**Ponte para a próxima aula:**
 
-**Entrega:** `modulo-04-aula-04-regressao-ferramentas-e-automacao-revisao.md`, ou arquivos específicos pedidos, contendo resposta inicial, feedback,
-versão revisada e explicação. O professor verifica a revisão no início do encontro seguinte.
+> No próximo módulo vamos olhar para a mesma solução do ponto de vista de Produto: por que construir, para quem e como transformar necessidade em decisões verificáveis.
 
-**Dica:** usar E-book e gravação como apoio; identificar empresa fictícia e origem da evidência.
-**Variação difícil:** acrescentar uma situação nova ou uma dúvida de aplicação, com proposta de investigação.
+## Checklist pós-aula
 
-## Checklist do professor e uso da gravação
-
-- [ ] Preparar recursos e exemplo antes do encontro.
-- [ ] Pedir previsão antes de revelar referência.
-- [ ] Conferir compreensão por exemplo, não por memorização.
-- [ ] Alternar condução e revisão na dupla.
-- [ ] Preservar exercício individual.
-- [ ] Declarar execução, simulação e limites corretamente.
-- [ ] Registrar feedback, tarefa e dúvidas pendentes.
-- [ ] Disponibilizar gravação para revisão e indicar os blocos de demonstração e correção.
-
-Percentual de vídeo assistido é sinal de utilização, não prova de domínio.
-Usar artefato e explicação para avaliar aprendizagem; não penalizar o aluno por uma falha de registro de reprodução.
+- [ ] Disponibilizar a gravação.
+- [ ] Registrar dúvidas que precisam ser retomadas.
+- [ ] Conferir se atividade, demonstração e tarefa foram as mesmas do roteiro.
+- [ ] Anotar ajustes de tempo para a próxima turma.
+- [ ] Se uma regra ou resposta de referência mudar, atualizar roteiro e script juntos.

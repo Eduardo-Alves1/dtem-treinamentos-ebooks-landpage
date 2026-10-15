@@ -1,267 +1,217 @@
-# Script do professor — Laços e listas
+# Script do Professor — Laços e Listas
 
-**DTEM Treinamentos · encontro ao vivo de até 90 minutos, gravado para revisão.**
+**DTEM Treinamentos · encontro ao vivo de até 90 minutos.**
 
-Este documento contém falas e ações de condução. Adaptar a linguagem ao próprio estilo, preservando conceitos,
-exemplos e critérios. Os intervalos incluem escrita, espera, interação e prática; não são 90 minutos de leitura.
-Não depende de vídeos prévios. O aluno pode consultar o E-book e rever a gravação depois.
+> **Papel deste documento:** orientar a condução da aula. O conteúdo e as atividades abaixo devem permanecer coerentes com o roteiro; o script não cria uma aula paralela.
 
-**Roteiro:** [planejamento da aula](../modulo-02-aula-03-lacos-e-listas.md).  
-**Material de estudo:** [E-book correspondente](../../ebooks/modulo-02-logica-de-programacao.md).  
-**Caso:** [Agenda Clara](../../atividades/caso-agenda-clara.md), empresa e dados fictícios.
+**Roteiro:** [Módulo 2, Aula 3](../modulo-02-aula-03-lacos-e-listas.md)  
+**Material do aluno:** [E-book correspondente](../../ebooks/modulo-02-logica-de-programacao.md)  
+**Caso:** [Agenda Clara](../../atividades/caso-agenda-clara.md)  
 
-## Objetivo e materiais
+## Alinhamento obrigatório
 
-**Objetivo observável:** rastrear um filtro de horários e explicar a parada de uma repetição.  
-**Materiais:** catálogo H09/H10/H11, tabela de iteração e exemplos for/while do E-book.
+- **Objetivo:** Usar listas e estruturas de repetição para percorrer dados, filtrar horários e compreender condição de parada.
+- **Demonstração central:** Filtrar horários livres e controlar tentativas.
+- **Prática em grupo:** Rastreie o filtro.
+- **Exercício individual:** resolver um filtro novo e explicar um contador.
+- **Tarefa:** revisar os laços e criar um caso novo.
 
-Antes do encontro, preparar o exemplo e conferir os recursos necessários. Em tarefas de ferramenta, preparar
-conta e ambiente com antecedência. Se a execução estiver indisponível, percorrer manualmente e declarar o método;
-publicação ou execução exigidas pela entrega devem ser concluídas depois com apoio. Não inventar evidência.
+Não substituir esses elementos por um exemplo genérico sem revisar também o roteiro.
+
+## Antes da aula
+
+- [ ] Preparar duas tabelas de rastreamento.
+- [ ] Confirmar editor Python.
+- [ ] Ter um exemplo de lista vazia pronto.
+- [ ] Deixar o roteiro e este script abertos.
+- [ ] Testar qualquer ferramenta, arquivo ou demonstração antes da turma entrar.
+- [ ] Separar o material que o aluno deverá entregar ao final.
 
 ## Agenda de condução
 
-| Intervalo | Etapa | Minutos |
-|---|---|---:|
-| 00–08 | Abertura e diagnóstico | 8 |
-| 08–25 | Conceitos e exemplos | 17 |
-| 25–45 | Demonstração guiada | 20 |
-| 45–50 | Pausa | 5 |
-| 50–65 | Dinâmica em dupla ou grupo | 15 |
-| 65–77 | Exercício individual | 12 |
-| 77–85 | Correção e dúvidas | 8 |
-| 85–90 | Fechamento e tarefa | 5 |
-| Total | | 90 |
-
-O roteiro original contém o caderno completo de atividades. Nesta versão, os enunciados de grupo e individual
-abaixo definem o recorte do encontro. A tarefa de casa conclui os itens restantes. Se precisar reduzir extensão,
-preservar demonstração, tentativa individual, feedback e orientação da entrega.
+| Intervalo | Etapa |
+|---|---|
+| 00–08 | Abertura e diagnóstico |
+| 08–25 | Conceitos e exemplos |
+| 25–45 | Demonstração guiada |
+| 45–50 | Pausa |
+| 50–65 | Dinâmica |
+| 65–77 | Exercício individual |
+| 77–85 | Correção e dúvidas |
+| 85–90 | Fechamento e tarefa |
 
 ## 00–08 — Abertura e diagnóstico
 
-**Mostrar:** título da aula e objetivo. **Fala de abertura:**
+**Fala de abertura:**
 
-> Se o catálogo tiver cem horários, devemos escrever cem verificações separadas? Vamos aprender a repetir uma operação mantendo controle sobre o resultado e a parada.
+> Se o catálogo tiver cem horários, faz sentido escrever cem verificações separadas? Hoje vamos aprender a repetir uma operação sem perder controle sobre cada decisão.
 
-**Condução:** dar dois minutos para uma previsão individual no chat ou caderno. Colher duas respostas,
-sem exigir fala de todos. Esperar aproximadamente 30 segundos antes de completar a resposta.
-Não confundir silêncio inicial com falta de capacidade; oferecer a situação concreta novamente.
+**Pergunta diagnóstica:** O que aconteceria com um `while` se a variável usada na condição nunca mudasse?
 
-**Pergunta de diagnóstico:** “O que aconteceria sem incrementar tentativas?”
+Dê cerca de dois minutos para respostas curtas no chat, voz ou caderno. Escute pelo menos duas respostas antes de completar.
 
-**Referência para o professor:** A condição tentativas < 3 permaneceria verdadeira nesse exemplo e não haveria progresso para a parada.
-
-**Transição para a explicação:**
-
-> Vamos transformar essa primeira resposta em um raciocínio que outra pessoa consiga conferir.
-> A cada exemplo, anotem a decisão e a informação que a sustenta.
-
-## 08–25 — Explicação teórica e exemplos
-
-Dividir os 17 minutos entre as três explicações, a escrita e duas perguntas breves.
-Usar as falas como apoio, sem acrescentar uma exposição inteira do E-book.
-
-### Explicação 1 — for e coleção
-
-**Fala sugerida:**
-
-> Um for percorre elementos de uma coleção. Para listar horários livres, examinamos cada horário e adicionamos ao resultado somente os que não estão ocupados. Uma lista vazia pode gerar zero passagens, e isso não é necessariamente falha.
-
-**Ação:** escrever uma palavra-chave e pedir um exemplo com palavras do aluno. Se houver dúvida, pedir a entrada, regra ou situação concreta que sustenta a resposta.
-### Explicação 2 — while e progresso
-
-**Fala sugerida:**
-
-> Um while repete enquanto uma condição permanece verdadeira. Precisamos de progresso até a parada. Se o contador começa em zero, repetimos enquanto ele é menor que três e somamos um a cada passagem. Sem atualização, a condição pode nunca deixar de ser verdadeira.
-
-**Ação:** escrever uma palavra-chave e pedir um exemplo com palavras do aluno. Se houver dúvida, pedir a entrada, regra ou situação concreta que sustenta a resposta.
-### Explicação 3 — Rastrear e comparar
-
-**Fala sugerida:**
-
-> Anotem o item atual, a condição e o resultado acumulado. Essa tabela ajuda a descobrir elementos esquecidos ou duplicados. range(3) percorre zero, um e dois; o limite final não é incluído. Não alterem uma coleção durante o percurso sem entender o efeito.
-
-**Ação:** escrever uma palavra-chave e pedir um exemplo com palavras do aluno. Se houver dúvida, pedir a entrada, regra ou situação concreta que sustenta a resposta.
-
-**Mostrar no quadro:** tabela Iteração / Horário / Ocupado? / Lista acumulada e contador de tentativas.
-
-**Checagem de compreensão:** “O que aconteceria sem incrementar tentativas?”  
-**Resposta esperada:** A condição tentativas < 3 permaneceria verdadeira nesse exemplo e não haveria progresso para a parada.
+**Resposta de referência para o professor:** A condição pode permanecer verdadeira e causar repetição indefinida.
 
 **Transição:**
 
-> Agora vou percorrer um exemplo pensando em voz alta. Antes de mostrar o resultado,
-> vou pedir uma previsão. Observem onde uma regra ou evidência muda a decisão.
+> Vamos começar com uma coleção pequena e acompanhar cada passagem antes de deixar o computador executar por nós.
 
-## 25–45 — Demonstração guiada
+## 08–25 — Conceitos e exemplos
 
-**Preparação:** abrir os dados, documento, código ou cartões indicados. Reservar aproximadamente cinco minutos
-por passo e os minutos finais para uma previsão e uma dúvida. Em comandos, executar uma operação de cada vez
-e conferir estado. Não substituir falha de ambiente por uma afirmação de execução bem-sucedida.
+### 1. Listas e coleções
 
-### Passo 1 — Preparar filtro
+**Fala sugerida:**
 
-**Fala durante a demonstração:**
+> Uma lista nos permite representar vários valores relacionados. Se não houver horários livres, uma lista vazia pode ser exatamente o resultado correto.
 
-> Catálogo H09/H10/H11; ocupado H10; lista de livres vazia. Vou visitar cada item uma vez.
+**Mostrar/fazer:** `['H09','H10','H11']` e `[]`.
 
-**Ação:** mostrar o registro correspondente antes de avançar; pedir uma previsão e conferir a resposta com a evidência.
-### Passo 2 — Percorrer três itens
+**Perguntar:** Lista vazia significa erro?
 
-**Fala durante a demonstração:**
+**Compreensão esperada:** Não necessariamente; pode significar que nenhum item atende ao filtro.
 
-> H09 livre: adiciono. H10 ocupado: não adiciono. H11 livre: adiciono. Resultado H09 e H11. Com todos ocupados, o resultado é lista vazia.
+### 2. `for` e rastreamento
 
-**Ação:** mostrar o registro correspondente antes de avançar; pedir uma previsão e conferir a resposta com a evidência.
-### Passo 3 — Percorrer contador
+**Fala sugerida:**
 
-**Fala durante a demonstração:**
+> O `for` percorre cada elemento. Para filtrar horários, decidimos em cada passagem se o item entra na lista de livres.
 
-> Zero é menor que três: incremento e mostro tentativa um. Depois dois e três. Ao voltar, três não é menor que três; encerra.
+**Mostrar/fazer:** tabela item/ocupado?/livres.
 
-**Ação:** mostrar o registro correspondente antes de avançar; pedir uma previsão e conferir a resposta com a evidência.
+**Perguntar:** Quantas passagens teremos com três horários?
 
-**Pergunta após a demonstração:** “Qual decisão vocês conseguem explicar sem copiar a frase que usei?”
+**Compreensão esperada:** três, uma por item.
 
-**Referência:** a resposta precisa relacionar situação, decisão e fundamento.
-As falas de cada passo indicam o comportamento ou a interpretação que deve ser conferido.
+### 3. `while` e progresso
 
-**Transição:**
+**Fala sugerida:**
 
-> Na prática, vocês vão alternar quem conduz e quem revisa. O objetivo é produzir algo
-> que o colega consiga conferir, e não somente repetir minha demonstração.
+> No `while`, nós controlamos a condição de parada. Se nada muda, a repetição pode nunca terminar.
+
+**Mostrar/fazer:** contador de 0 até 3.
+
+**Perguntar:** O que acontece se esquecermos o incremento?
+
+**Compreensão esperada:** a condição pode permanecer verdadeira indefinidamente.
+
+Evite transformar este bloco em leitura do E-book. Use o E-book como base e mantenha a explicação oral no recorte previsto pelo roteiro.
+
+## 25–45 — Demonstração guiada — Filtrar horários livres e controlar tentativas
+
+### Passo 1 — Rastrear o `for`
+
+**Fazer:** Monte tabela com H09, H10 e H11.
+
+**Fala sugerida:**
+
+> Não vamos saltar direto para a saída. Vamos observar cada passagem e como a lista `livres` muda.
+
+**Checar com a turma:** Peça a lista após cada item.
+
+### Passo 2 — Testar lista vazia
+
+**Fazer:** Marque todos os horários como ocupados.
+
+**Fala sugerida:**
+
+> Zero resultados também é um resultado. O importante é diferenciar ‘nenhum item atende’ de ‘o código falhou’.
+
+**Checar com a turma:** Pergunte se o `for` com catálogo vazio executa alguma passagem.
+
+### Passo 3 — Rastrear o `while`
+
+**Fazer:** Use contador 0, condição `< 3` e incremento.
+
+**Fala sugerida:**
+
+> Aqui a pergunta principal é: o que muda a cada passagem para nos aproximar da parada?
+
+**Checar com a turma:** Remova o incremento e peça previsão.
+
+**Resultado de referência:** Com H10 ocupado, livres = [H09, H11]. Com todos ocupados, livres = []. Um contador 0 enquanto <3, incrementando 1, executa três vezes.
+
+Antes de mostrar o resultado, peça uma previsão. Depois compare previsão, comportamento observado e explicação.
 
 ## 45–50 — Pausa
 
-Deixar horário de retorno visível e não apresentar conteúdo obrigatório durante os cinco minutos.
-Na gravação, indicar o ponto em que a atividade seguinte começa.
+Informar claramente o horário de retorno. Não usar a pausa para conteúdo obrigatório.
 
-## 50–65 — Dinâmica em dupla ou grupo
+## 50–65 — Dinâmica — Rastreie o filtro
 
-**Nome:** Revisão com explicação — Laços e listas.  
-**Contexto profissional:** uma equipe precisa revisar seu trabalho antes de avançar.
-**Objetivo:** aplicar os conceitos e produzir um registro conferível no recorte da aula.
+**Cenário:** Cada dupla recebe um conjunto de horários e ocupações diferente.
 
-**Fala de orientação:**
+**Orientação para a turma:**
 
-> Uma pessoa começa conduzindo e a outra confere as decisões. Na metade, troquem funções.
-> Registrem o que fizeram e qual informação justifica o resultado.
-> Se discordarem, expliquem a diferença usando regra ou evidência, em vez de escolher pela maioria.
+> Não aceitem apenas a lista final. O objetivo é mostrar como ela foi construída.
 
-**Enunciado e passo a passo:**
+1. Rastrear o filtro item a item.
+2. Registrar a lista parcial após cada passo.
+3. Trocar o conjunto com outra dupla para revisão.
+4. Explicar o comportamento se a coleção estiver vazia.
 
-1. Rastrear o filtro com H09 e H11 ocupados.
-2. Repetir com catálogo vazio e explicar zero iterações.
-3. Trocar papéis e identificar início, condição e atualização do contador.
+**Tempo sugerido:** 2 min para organização, 8 min para produção, 3 min para revisão entre pares e 2 min para compartilhamento.
 
-**Tempo:** 2 minutos para ler e organizar; 5 para produzir; 5 para trocar revisão; 3 para compartilhar.
-Selecionar duas duplas para falar e recolher as demais por escrito. Em aulas de entrevista ou apresentação,
-usar o mesmo tempo para a primeira participação, troca e feedback.
+**Entrega esperada:** tabela de rastreamento do filtro
 
-**Entrega esperada:** registro da atividade com contexto, decisão, fundamento e uma revisão.
-**Critérios:** cumprir as etapas, preservar as regras e permitir que o colega confira.
-**Referência de correção:** usar os exemplos da demonstração e verificar o que mudou no novo caso,
-sem exigir palavras idênticas.
-
-**Perguntas ao circular:** “Qual passo está sendo executado?”, “Qual evidência sustenta isso?”
-e “O que precisaria mudar para sua conclusão ser diferente?”
-
-**Dica para a dupla:** separar o que observou do que está supondo.
-**Variação difícil:** formular um contraexemplo ou limite; transferir para casa se não couber.
+**O professor observa:** uma linha por passagem; lista parcial correta; lista vazia interpretada corretamente; revisão feita por outra pessoa.
 
 ## 65–77 — Exercício individual
 
-**Fala do professor — enunciado:**
+**Enunciado para falar à turma:**
 
-> Use H09/H10/H11 com H11 ocupado. Escreva lista final e tabela. Explique quantas passagens ocorrem num contador de zero enquanto menor que dois, com incremento de um.
+> Use H09/H10/H11 com H11 ocupado. Registre a lista final e uma tabela de passagens. Depois explique quantas vezes executa um contador iniciado em 0 enquanto menor que 2, incrementando 1.
 
-**Tempo:** 2 minutos de leitura, 7 de resolução e 3 de revisão/entrega.
-Cada aluno entrega uma resposta própria, mesmo quando a atividade anterior foi em grupo.
+**Entrega:** rastreamento individual de `for` e `while`
 
-**Entrega:** artefato pedido no enunciado, acompanhado de uma explicação breve da decisão.
-**Critérios:** correção, completude do recorte, evidência e justificativa. Aplicar a
-[rubrica formativa](../../planejamento/analise-pedagogica.md), de 0 a 2 por critério. Referência proposta: 6/8, sem zero em correção ou evidência.
+**Critérios:** lista correta; passagens visíveis; condição de parada explicada.
 
-**Ajuda graduada:** pedir que identifique primeiro a entrada, regra ou exigência; depois que escolha o próximo
-passo. Não resolver todas as etapas. Registrar qual parte foi assistida e conferir transferência em uma tentativa nova.
-
-**Gabarito comentado — revelar depois da tentativa:**
-
-> Livres H09 e H10. O contador realiza duas passagens e termina em dois. Uma coleção vazia produz nenhuma passagem, mantendo resultado vazio.
+**Se houver dificuldade:** dê a primeira linha da tabela e peça que o aluno repita o padrão.
 
 ## 77–85 — Correção, intervenções e dúvidas
 
-**Fala para iniciar a correção:**
+Comece pedindo que o aluno explique como chegou à resposta antes de mostrar uma referência.
 
-> Se sua resposta foi diferente, mantenha a primeira versão. Vamos descobrir em qual decisão
-> o raciocínio mudou. Corrigir e explicar a mudança faz parte da aprendizagem.
+**Se aparecer:** o aluno inclui um horário ocupado na lista final
 
-**Se o aluno incluir horário ocupado na saída:**
+> Em qual passagem essa decisão aconteceu? Volte à condição daquele item.
 
-> Em qual decisão este item deveria ser descartado?
+**Se aparecer:** o aluno considera lista vazia como erro automático
 
-**Se o aluno supor terceira passagem ao chegar em dois:**
+> A regra pede pelo menos um resultado ou apenas os itens que atendem ao filtro? Se nenhum atende, `[]` pode estar correto.
 
-> Volte à condição antes de executar o corpo; dois é menor que dois?
+**Se aparecer:** o aluno prevê uma passagem extra no `while`
 
-**Dúvida central da aula:** “O que aconteceria sem incrementar tentativas?”
+> A condição é verificada antes de entrar no corpo. Quando o contador chega a 2, `2 < 2` é verdadeiro ou falso?
 
-**Como responder:**
+### Perguntas de verificação
 
-> A condição tentativas < 3 permaneceria verdadeira nesse exemplo e não haveria progresso para a parada.
+- **O que acontece quando a lista de entrada está vazia?** — O `for` executa zero passagens; isso pode ser comportamento normal.
+- **O que torna um `while` perigoso?** — Uma condição que nunca se torna falsa, normalmente porque o estado de controle não muda.
+- **Por que rastrear antes de executar ajuda?** — Permite prever comportamento e localizar em qual passagem o raciocínio diverge.
 
-**Se perguntarem se a resposta precisa ser igual:**
-
-> Não precisa repetir minha frase. Precisa respeitar as regras e permitir que outra pessoa
-> confira como você chegou à decisão.
-
-**Se perguntarem como usar a gravação:**
-
-> Localize o trecho em que surgiu a dúvida, reveja o exemplo e depois tente uma entrada ou situação nova.
-> Assistir de novo ajuda; explicar sua própria decisão é o que vamos avaliar.
-
-**Modelo de devolutiva:**
-
-> Você acertou ao identificar a decisão principal. Falta mostrar a informação que a sustenta.
-> Acrescente essa evidência e explique o que mudou na sua revisão.
-
-Selecionar duas dúvidas para os oito minutos. Registrar as demais para resposta após a aula ou retomada.
-Não ampliar silenciosamente a duração do encontro.
-
-## 85–90 — Fechamento e tarefa para casa
+## 85–90 — Fechamento e tarefa
 
 **Fala de fechamento:**
 
-> Hoje trabalhamos como rastrear um filtro de horários e explicar a parada de uma repetição.
-> Para revisar, procure uma decisão, a evidência que a sustenta e uma limitação que ainda precisa de atenção.
-> Guardem a primeira versão e a correção; isso ajuda a explicar a evolução no portfólio.
+> Laços economizam repetição de código, mas só são seguros quando entendemos o que acontece em cada passagem e como a repetição termina.
 
-**Pergunta de saída:** “O que você mudou na sua primeira previsão, e por quê?”
+**Tarefa para casa:**
 
-**Tarefa de casa — falar à turma:**
+1. Revisar o filtro e o contador.
+2. Criar um conjunto diferente de horários.
+3. Prever a saída antes de executar.
+4. Entregar `m02-aula-03-revisao.md` com previsão, resultado e explicação.
 
-> Concluir exemplos for/while e rastrear um caso novo. Indicar explicitamente condição de parada e comportamento de lista vazia.
+**Entrega:** rastreamento revisado + novo caso executado
 
-**Tempo-base:** 30–45 minutos para revisão. Se o enunciado exigir concluir vários artefatos, execução pendente
-ou preparação da entrega final, combinar prazo e tempo adicional explicitamente; não prometer que tudo cabe
-nesse intervalo.
+**Ponte para a próxima aula:**
 
-**Entrega:** `modulo-02-aula-03-lacos-e-listas-revisao.md`, ou arquivos específicos pedidos, contendo resposta inicial, feedback,
-versão revisada e explicação. O professor verifica a revisão no início do encontro seguinte.
+> Na próxima aula vamos dar responsabilidades claras a funções e aprender a investigar quando o resultado não bate com a regra.
 
-**Dica:** usar E-book e gravação como apoio; identificar empresa fictícia e origem da evidência.
-**Variação difícil:** acrescentar uma situação nova ou uma dúvida de aplicação, com proposta de investigação.
+## Checklist pós-aula
 
-## Checklist do professor e uso da gravação
-
-- [ ] Preparar recursos e exemplo antes do encontro.
-- [ ] Pedir previsão antes de revelar referência.
-- [ ] Conferir compreensão por exemplo, não por memorização.
-- [ ] Alternar condução e revisão na dupla.
-- [ ] Preservar exercício individual.
-- [ ] Declarar execução, simulação e limites corretamente.
-- [ ] Registrar feedback, tarefa e dúvidas pendentes.
-- [ ] Disponibilizar gravação para revisão e indicar os blocos de demonstração e correção.
-
-Percentual de vídeo assistido é sinal de utilização, não prova de domínio.
-Usar artefato e explicação para avaliar aprendizagem; não penalizar o aluno por uma falha de registro de reprodução.
+- [ ] Disponibilizar a gravação.
+- [ ] Registrar dúvidas que precisam ser retomadas.
+- [ ] Conferir se a atividade usada foi a mesma definida no roteiro.
+- [ ] Anotar qualquer ajuste de tempo para a próxima turma.
+- [ ] Não alterar critérios ou respostas de referência apenas na fala; se a regra mudar, atualizar roteiro e script juntos.

@@ -4,7 +4,7 @@
 
 ## Começar por aqui
 
-Leia também a [arquitetura dos materiais](arquitetura-materiais.md), que define a separação oficial entre E-book do aluno, roteiro pedagógico e script interno do professor.
+Leia também a [arquitetura dos materiais](arquitetura-materiais.md), o [índice e regras dos scripts](scripts-do-professor.md) e a [auditoria Roteiro × Script](auditoria-roteiros-scripts.md). Esses documentos definem a separação e o alinhamento oficial entre material do aluno, planejamento pedagógico e condução do professor.
 
 Leia a [análise pedagógica](analise-pedagogica.md), confira a [ementa local](../ementa.md) e use o [caso Agenda Clara](../atividades/caso-agenda-clara.md). A ementa publicada foi acessada pelo terminal e confirma os oito módulos e o bônus. O plano utiliza o detalhamento local para desenvolver os tópicos e entregas.
 
@@ -36,6 +36,8 @@ O Módulo 1 mantém seu E-book e suas quatro aulas, com revisão de objetivos, q
 
 ### Módulo 2 — Lógica de Programação
 
+**Linguagem didática principal:** Python. O objetivo é aprender lógica; JavaScript e TypeScript aparecem posteriormente como comparação/evolução, não como linguagens concorrentes neste módulo.
+
 1. [Algoritmos e rastreamento](../aulas/modulo-02-aula-01-algoritmos-e-rastreamento.md).
    Condução: [script com falas do professor](../aulas/scripts/modulo-02-aula-01-algoritmos-e-rastreamento.md), adaptado para até 90 minutos.
 2. [Variáveis e condições](../aulas/modulo-02-aula-02-variaveis-e-condicoes.md).
@@ -45,7 +47,7 @@ O Módulo 1 mantém seu E-book e suas quatro aulas, com revisão de objetivos, q
 ### Módulo 3 — Introdução ao Desenvolvimento de Software
 
 1. [Sistemas e construção](../aulas/modulo-03-aula-01-sistemas-e-construcao.md).
-2. [Leitura de código](../aulas/modulo-03-aula-02-leitura-de-codigo.md).
+2. [Leitura de código](../aulas/modulo-03-aula-02-leitura-de-codigo.md) — inclui comparação introdutória da mesma lógica em Python, JavaScript e TypeScript.
 3. [Git e versionamento](../aulas/modulo-03-aula-03-git-e-versionamento.md).
 4. [GitHub e colaboração](../aulas/modulo-03-aula-04-github-e-colaboracao.md).
 
@@ -54,7 +56,7 @@ O Módulo 1 mantém seu E-book e suas quatro aulas, com revisão de objetivos, q
 1. [Qualidade, riscos e plano](../aulas/modulo-04-aula-01-qualidade-riscos-e-plano.md).
 2. [Cenários e testes funcionais](../aulas/modulo-04-aula-02-cenarios-e-testes-funcionais.md).
 3. [Exploração e reporte de bugs](../aulas/modulo-04-aula-03-exploracao-e-bugs.md).
-4. [Regressão, ferramentas e automação](../aulas/modulo-04-aula-04-regressao-ferramentas-e-automacao.md).
+4. [Regressão, ferramentas e automação](../aulas/modulo-04-aula-04-regressao-ferramentas-e-automacao.md) — faz a ponte conceitual para automação e contextualiza JS/TS em ferramentas modernas.
 
 ### Módulo 5 — Product Owner e Produto
 
@@ -102,12 +104,12 @@ Planejar 30–45 minutos iniciais de estudo posterior por aula e ampliar os bloc
 
 ## Como usar os materiais
 
-1. Professor lê o E-book, revisa o roteiro pedagógico e usa o script interno para preparar respostas de referência e intervenções antes da aula.
-2. Aluno recebe o problema e faz uma previsão antes da demonstração.
-3. Dupla produz e revisa; o exercício individual muda entrada ou premissa.
-4. Professor devolve um acerto, uma lacuna e uma ação.
-5. Aluno revisa e registra a diferença, preservando versões.
-6. Entregas seguem para o dossiê do projeto final.
+1. Professor consulta a trilha e abre o **Roteiro** para entender o recorte, objetivo, demonstração, atividade e entrega da próxima aula.
+2. Professor revisa no **E-book** os conceitos correspondentes àquele recorte.
+3. Professor percorre o **Script** para preparar falas, respostas, intervenções, ferramentas e controle de tempo.
+4. Durante o encontro, a demonstração, a dinâmica e o exercício seguem o contrato definido no Roteiro; a forma de conduzir vem do Script.
+5. Professor devolve feedback com base nos critérios da atividade; o aluno revisa o artefato preservando a primeira versão quando isso ajudar a mostrar evolução.
+6. Entregas relevantes seguem para o dossiê do projeto final.
 
 ## Continuidade das evidências
 

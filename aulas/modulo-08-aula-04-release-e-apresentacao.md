@@ -1,120 +1,134 @@
-# Roteiro — Módulo 8, Aula 4
+# Roteiro de Aula — Módulo 8, Aula 4
 
-**Condução com falas prontas:** [script do professor](scripts/modulo-08-aula-04-release-e-apresentacao.md). Seguir a sequência de até 90 minutos. As atividades abaixo formam o caderno completo; o script define o recorte ao vivo e a conclusão em casa. A gravação serve para revisão posterior.
+# Release, Dossiê e Apresentação
 
-## Tema e objetivo da aula
+> **Papel deste documento:** definir o que será ensinado, praticado e avaliado.  
+> A condução minuto a minuto, falas sugeridas, respostas esperadas e intervenções ficam no [script do professor](scripts/modulo-08-aula-04-release-e-apresentacao.md).
 
-**Tema:** Release e apresentação. **Objetivo observável:** apresentar dossiê e responder sobre decisão e limite.
+## Objetivo da aula
 
-**Leitura:** [E-book do módulo](../ebooks/modulo-08-projeto-final-hands-on.md), tópicos 4. **Pré-requisito:** atividade da aula anterior, com retomada da lacuna identificada no feedback.
+Consolidar o dossiê do projeto, sustentar uma decisão de release simulada e apresentar contribuição, evidências, limites e próximos passos em formato profissional e honesto.
 
-## Duração sugerida
+Ao final, o aluno deverá conseguir:
 
-| Etapa | Minutos |
+- conferir coerência do dossiê
+- seguir uma cadeia de rastreabilidade
+- emitir decisão de release simulada
+- apresentar o projeto em até cinco minutos
+- explicar contribuição individual e limites sem inventar experiência
+
+## Conteúdos e conceitos
+
+### Dossiê coerente
+- problema
+- requisitos
+- execução
+- evidências
+- decisão
+
+### Decisão de release simulada
+- escopo autorizado
+- casos críticos
+- limites
+- não confundir demo com produção
+
+### Apresentação profissional
+- problema
+- recorte
+- demonstração
+- contribuição
+- limites/próximos passos
+
+## Duração e blocos
+
+| Bloco | Tempo previsto |
 |---|---:|
-| Abertura e diagnóstico | 8 |
-| Conceitos e exemplos | 17 |
-| Demonstração guiada | 20 |
-| Pausa | 5 |
-| Dinâmica em dupla ou grupo | 15 |
-| Exercício individual | 12 |
-| Correção e dúvidas | 8 |
-| Fechamento e orientação da tarefa | 5 |
-| Total | 90 |
+| Abertura e diagnóstico | 8 min |
+| Conceitos e exemplos | 17 min |
+| Demonstração guiada | 20 min |
+| Pausa | 5 min |
+| Dinâmica em dupla ou grupo | 15 min |
+| Exercício individual | 12 min |
+| Correção e dúvidas | 8 min |
+| Fechamento e tarefa | 5 min |
+| **Total** | **90 min** |
 
 ## Materiais necessários
 
-dossiê, checklist e cronômetro. Usar [caderno do caso](../atividades/caso-agenda-clara.md), editor de Markdown ou papel e [laboratório](../portfolio/agenda-clara/README.md). Testar o ambiente antes da aula. Contas de ferramentas são opcionais quando houver alternativa documental; evidência de execução continua necessária quando o enunciado a solicitar.
+- E-book do Módulo 8
+- dossiê completo
+- checklist de release
+- cronômetro
+- laboratório
 
-## Abertura da aula
+## Exemplos planejados
 
-Peça uma frase que descreva o projeto sem exagerar experiência. Dê dois minutos para registrar uma previsão individual, recolha duas respostas e pergunte qual evidência seria necessária. Retome um conceito anterior e anuncie a entrega de hoje.
+### Exemplo 1
+Pitch de cinco minutos.
 
-## Explicação teórica e exemplos práticos
+### Exemplo 2
+Uma cadeia RN03→TC03→BUG01→reteste.
 
-### SDLC, release e apresentação profissional
+### Exemplo 3
+Limitação de persistência/concorrência.
 
-**Conceito:** Uma entrega profissional conecta decisões, execução, limites e próximo passo.
+## Demonstração planejada — Conferir dossiê e ensaiar um pitch verificável
 
-**Explicação simples:** Conte o problema, mostre uma decisão e uma evidência e explique o que ainda precisa melhorar.
+1. Escolher uma afirmação e seguir sua rastreabilidade.
+2. Conferir checklist e decisão de release.
+3. Demonstrar um comportamento implementado.
+4. Montar pitch de cinco blocos.
+5. Encerrar com limite e próximo passo.
 
-**Aprofundamento:** O dossiê liga RN03 a US02, TC03, BUG01 e reteste. A release é simulada: selecionar referência, executar verificações e emitir parecer limitado ao laboratório. Plano de parada indica interromper se regra crítica divergir. A apresentação de cinco minutos cobre problema (45s), escopo e decisão (60s), demonstração/evidência (90s), colaboração (45s) e limites/próximos passos (60s). A defesa individual pergunta por uma regra ou decisão para avaliar entendimento além do arquivo do grupo.
+**Resultado pedagógico esperado:** o aluno apresenta sem exagerar escopo ou experiência.
 
-**Exemplo cotidiano:** Em entrevista, explicar uma escolha e seus limites oferece evidência melhor que listar ferramentas usadas.
+## Dinâmica em grupo — Review e retrospectiva final
 
-**Cenário empresarial:** O aluno demonstra conflito e cancelamento, reconhecendo ausência de banco persistente.
+**Cenário:** As duplas revisam os dossiês antes da apresentação final.
 
-**Erros a observar:** Portfólio como experiência profissional fictícia; roteiro sem prova; links inacessíveis.
+1. Conferir uma cadeia de rastreabilidade.
+2. Revisar uma afirmação do pitch.
+3. Identificar um limite que precisa aparecer.
+4. Dar feedback sobre clareza/evidência.
+5. Registrar uma melhoria final no dossiê.
 
-**Orientação:** Declaração educacional, evidências acessíveis e contribuição própria.
+**Entrega esperada:** checklist de revisão + ajuste final
 
-Distribua os 17 minutos entre os tópicos. Peça um exemplo com palavras do aluno antes de avançar; se houver uma contradição, retome a regra do caso.
-
-## Demonstração guiada
-
-Mostre uma cadeia de rastreabilidade e uma limitação.
-
-**Exemplo 1:** Liberar apenas demonstração sequencial da referência com evidências dos casos críticos. Próximos passos: persistência, identidade e concorrência requerem novos requisitos e desenho, antes de prometer produto operacional.
-
-Interrompa antes do resultado para pedir uma previsão. Revele uma etapa de cada vez, marque a regra e compare a resposta com a evidência. Não concluir correção apenas pela aparência do arquivo.
-
-## Dinâmica em grupo
-
-**Nome:** Review e retrospectiva final. **Contexto:** a equipe precisa revisar uma decisão antes de avançar o MVP. Em duplas, uma pessoa produz e outra confere; trocar funções na metade do tempo. Em grupos maiores, adicionar um papel de registro.
-
-**Distribuição:** 2 minutos de leitura; 5 de execução; 5 de revisão cruzada; 3 de compartilhamento. Se houver mais de duas duplas, recolher as demais conclusões por escrito para caber no tempo.
-
-**Atividade 4: Preparar release e apresentação**
-
-**Contexto profissional:** o time da empresa fictícia Agenda Clara precisa revisar esta decisão antes de entregar o MVP. Dados e regras no [caderno do caso](../atividades/caso-agenda-clara.md).
-
-**Objetivo:** Preparar release e apresentação, com registro que permita conferência por outra pessoa.
-
-**Passo a passo:**
-
-1. Desenhe SDLC do recorte.
-2. Monte checklist e decisão de release simulada.
-3. Revise README e acesso aos arquivos.
-4. Prepare apresentação com tempos definidos.
-5. Responda uma pergunta sobre risco e limitação.
-
-**Entrega esperada:** release.md, diagrama e roteiro de apresentação Identificar nome, versão ou premissas, regra utilizada e justificativa. Nome sugerido: `m08-atividade-04.md`.
-
-**Critérios específicos:** Decisão sustentada; demonstração limitada ao implementado; contribuição individual.
-
-**Exemplo de resposta comentada:** Liberar apenas demonstração sequencial da referência com evidências dos casos críticos. Próximos passos: persistência, identidade e concorrência requerem novos requisitos e desenho, antes de prometer produto operacional.
-
-**Dica:** faça sua tentativa antes de ler a resposta e explique qualquer revisão.
-
-**Variação mais difícil:** Se o avaliador discordar da prioridade, como responder com evidências?
-
+**Critérios:** afirmações sustentadas; limites explícitos; contribuição individual clara; feedback acionável.
 
 ## Exercício individual
 
-Apresente contribuição em cinco minutos ou grave roteiro equivalente; o professor faz uma pergunta adicional.
+Prepare um pitch de até cinco minutos com problema, escopo, uma demonstração/evidência, sua contribuição, uma limitação e um próximo passo. Se não houver tempo para todos apresentarem ao vivo, grave o pitch para revisão posterior.
 
-**Tempo:** 12 minutos. **Entrega:** uma versão própria do artefato, incluindo regra, decisão e evidência. **Avaliação:** critérios específicos acima e rubrica do E-book. O professor verifica se houve transferência para o novo caso. Se houver ajuda, registrar qual etapa foi assistida.
+**Entrega:** pitch + roteiro/registro de evidências
 
-## Perguntas para os alunos
+**Critérios:** tempo respeitado; contribuição própria; afirmações verificáveis; limites claros.
 
-- Qual decisão mudou?
-- O que a evidência não comprova?
-- Qual parte da sua previsão você reviu e qual evidência motivou a mudança?
+## Perguntas de verificação
 
-## Possíveis dúvidas e como responder
+- Como mencionar o projeto no currículo?
+- Precisamos esconder limitações para parecer mais profissional?
+- Todos conseguem apresentar ao vivo em 15 minutos?
 
-| Dúvida | Resposta |
-|---|---|
-| É experiência de empresa? | É projeto educacional com cenário fictício. |
-| Deploy foi real? | Não; execução é local e release é simulada. |
-| Preciso copiar a resposta de referência? | Não; preserve as regras e explique sua decisão com evidência. |
-
-## Correção e fechamento
-
-As respostas de referência estão na demonstração. Não exigir frases idênticas; conferir critérios e raciocínio. Cada aluno completa: “Usei ___ para decidir ___ e confirmei com ___”. Relacionar à entrega do módulo: dossiê Agenda Clara com requisitos, três histórias, backlog, oito casos executados, dois reportes simulados, Sprint, SDLC, release e apresentação de cinco minutos. O bônus ajuda a comunicar a prática em processos seletivos.
+> As respostas esperadas e intervenções ficam exclusivamente no script do professor.
 
 ## Tarefa para casa
 
-Revisar dossiê e registrar plano de evolução.
+1. Aplicar feedback final.
+2. Conferir links e arquivos.
+3. Gravar pitch se não apresentou ao vivo.
+4. Escrever autoavaliação com um acerto, uma lacuna e próximo estudo.
+5. Organizar a entrega final do projeto.
 
-**Tempo sugerido:** 30–45 minutos. Entregar `m08-aula-04-revisao.md` com resposta inicial, feedback, versão revisada e explicação da mudança. O professor verifica a revisão no próximo encontro. Organizar também a entrega final e a reflexão individual.
+**Entrega:** dossiê final + pitch + autoavaliação
+
+## Conexão com a trilha
+
+O bônus de carreira usa o dossiê para currículo, LinkedIn, entrevistas e plano de evolução.
+
+## Referências
+
+- [E-book correspondente](../ebooks/modulo-08-projeto-final-hands-on.md)
+- [Caso Agenda Clara](../atividades/caso-agenda-clara.md)
+- [Laboratório Agenda Clara](../portfolio/agenda-clara/README.md)
+- [Script do professor](scripts/modulo-08-aula-04-release-e-apresentacao.md)

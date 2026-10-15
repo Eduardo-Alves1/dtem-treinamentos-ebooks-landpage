@@ -1,120 +1,128 @@
-# Roteiro — Módulo 7, Aula 3
+# Roteiro de Aula — Módulo 7, Aula 3
 
-**Condução com falas prontas:** [script do professor](scripts/modulo-07-aula-03-shift-left-e-prevencao.md). Seguir a sequência de até 90 minutos. As atividades abaixo formam o caderno completo; o script define o recorte ao vivo e a conclusão em casa. A gravação serve para revisão posterior.
+# Shift Left e Prevenção
 
-## Tema e objetivo da aula
+> **Papel deste documento:** definir o que será ensinado, praticado e avaliado.  
+> A condução minuto a minuto, falas sugeridas, respostas esperadas e intervenções ficam no [script do professor](scripts/modulo-07-aula-03-shift-left-e-prevencao.md).
 
-**Tema:** Shift Left e prevenção. **Objetivo observável:** refinar regra antes do código e manter plano de verificação.
+## Objetivo da aula
 
-**Leitura:** [E-book do módulo](../ebooks/modulo-07-ciclo-de-vida-do-software.md), tópicos 3. **Pré-requisito:** atividade da aula anterior, com retomada da lacuna identificada no feedback.
+Aplicar Shift Left como antecipação de qualidade, refinando regras e exemplos antes da implementação sem abandonar verificações posteriores.
 
-## Duração sugerida
+Ao final, o aluno deverá conseguir:
 
-| Etapa | Minutos |
+- explicar Shift Left sem reduzi-lo a ‘testar cedo’
+- identificar ambiguidades antes do código
+- produzir critérios observáveis
+- mostrar colaboração Produto–Dev–QA
+- manter plano de verificação após a implementação
+
+## Conteúdos e conceitos
+
+### Shift Left como antecipação
+- qualidade discutida cedo
+- risco e testabilidade
+- não elimina teste posterior
+
+### Exemplos e critérios
+- exemplo concreto reduz interpretação
+- positivo/negativo
+- estado também importa
+
+### Três perspectivas
+- Produto: valor/regra
+- Dev: implementação/viabilidade
+- QA: risco/exemplos
+
+## Duração e blocos
+
+| Bloco | Tempo previsto |
 |---|---:|
-| Abertura e diagnóstico | 8 |
-| Conceitos e exemplos | 17 |
-| Demonstração guiada | 20 |
-| Pausa | 5 |
-| Dinâmica em dupla ou grupo | 15 |
-| Exercício individual | 12 |
-| Correção e dúvidas | 8 |
-| Fechamento e orientação da tarefa | 5 |
-| Total | 90 |
+| Abertura e diagnóstico | 8 min |
+| Conceitos e exemplos | 17 min |
+| Demonstração guiada | 20 min |
+| Pausa | 5 min |
+| Dinâmica em dupla ou grupo | 15 min |
+| Exercício individual | 12 min |
+| Correção e dúvidas | 8 min |
+| Fechamento e tarefa | 5 min |
+| **Total** | **90 min** |
 
 ## Materiais necessários
 
-enunciado vago e exemplos. Usar [caderno do caso](../atividades/caso-agenda-clara.md), editor de Markdown ou papel e [laboratório](../portfolio/agenda-clara/README.md). Testar o ambiente antes da aula. Contas de ferramentas são opcionais quando houver alternativa documental; evidência de execução continua necessária quando o enunciado a solicitar.
+- E-book do Módulo 7
+- regras Agenda Clara
+- quadro de refinamento
 
-## Abertura da aula
+## Exemplos planejados
 
-Apresente “nome obrigatório” e peça interpretações. Dê dois minutos para registrar uma previsão individual, recolha duas respostas e pergunte qual evidência seria necessária. Retome um conceito anterior e anuncie a entrega de hoje.
+### Exemplo 1
+Nome obrigatório e espaços.
 
-## Explicação teórica e exemplos práticos
+### Exemplo 2
+Cancelamento ‘simples’ sem regra de ID.
 
-### Testes antecipados e Shift Left
+### Exemplo 3
+Conflito de horário discutido antes da implementação.
 
-**Conceito:** Shift left antecipa feedback e prevenção de defeitos para momentos anteriores da construção.
+## Demonstração planejada — Refinar ‘nome obrigatório’ antes do código
 
-**Explicação simples:** Pergunte sobre nomes compostos por espaços antes de implementar a reserva.
+1. Apresentar a frase vaga.
+2. Pedir perguntas de Produto, Dev e QA.
+3. Criar exemplos válidos e inválidos.
+4. Definir comportamento do estado.
+5. Transformar em critério verificável.
+6. Planejar como testar depois.
 
-**Aprofundamento:** Revisar requisitos, exemplos, protótipos e código gera informação antes do teste final. Antecipar não significa remover testes posteriores. No caso, uma conversa sobre nome útil revelaria a diferença entre não vazio e não composto por espaços. Testabilidade pede condição observável; requisito vago precisa de refinamento. Organize uma revisão em três perspectivas: valor, viabilidade e verificabilidade. Avalie o custo de detectar ambiguidade cedo, sem inventar percentuais universais de economia.
+**Resultado pedagógico esperado:** o aluno vê prevenção e verificação como partes complementares.
 
-**Exemplo cotidiano:** Revisar uma instrução antes de imprimir evita repetir o erro em todos os exemplares.
+## Dinâmica em grupo — Três perspectivas
 
-**Cenário empresarial:** PO, Dev e QA alinham exemplos de RN03; depois verificam execução na versão entregue.
+**Cenário:** Cada trio recebe uma regra curta e distribui Produto, Dev e QA para refiná-la.
 
-**Erros a observar:** Shift left como ferramenta específica; usar revisão para dispensar execução.
+1. Produto explica objetivo e contexto.
+2. Dev aponta decisão/limitação técnica a esclarecer.
+3. QA propõe riscos e exemplos.
+4. O trio escreve critérios verificáveis.
+5. Trocar regra com outro trio para revisão.
 
-**Orientação:** Exemplos cedo, hipóteses explícitas e testes posteriores relevantes.
+**Entrega esperada:** regra refinada + exemplos
 
-Distribua os 17 minutos entre os tópicos. Peça um exemplo com palavras do aluno antes de avançar; se houver uma contradição, retome a regra do caso.
-
-## Demonstração guiada
-
-Mostre vazio, espaços e nome válido; escreva critério.
-
-**Exemplo 1:** Nome textual com conteúdo após strip. Exemplos: Ana aceita; vazio e espaços recusados. Rever antes do código e testar depois retorno e ausência de alteração de estado.
-
-Interrompa antes do resultado para pedir uma previsão. Revele uma etapa de cada vez, marque a regra e compare a resposta com a evidência. Não concluir correção apenas pela aparência do arquivo.
-
-## Dinâmica em grupo
-
-**Nome:** Três perspectivas. **Contexto:** a equipe precisa revisar uma decisão antes de avançar o MVP. Em duplas, uma pessoa produz e outra confere; trocar funções na metade do tempo. Em grupos maiores, adicionar um papel de registro.
-
-**Distribuição:** 2 minutos de leitura; 5 de execução; 5 de revisão cruzada; 3 de compartilhamento. Se houver mais de duas duplas, recolher as demais conclusões por escrito para caber no tempo.
-
-**Atividade 3: Realizar revisão antecipada de uma regra**
-
-**Contexto profissional:** o time da empresa fictícia Agenda Clara precisa revisar esta decisão antes de entregar o MVP. Dados e regras no [caderno do caso](../atividades/caso-agenda-clara.md).
-
-**Objetivo:** Realizar revisão antecipada de uma regra, com registro que permita conferência por outra pessoa.
-
-**Passo a passo:**
-
-1. Leia “nome obrigatório” sem exemplos.
-2. Liste ambiguidades de vazio, espaços e tipos.
-3. Proponha critérios verificáveis.
-4. Defina testes e quem precisa participar.
-5. Registre o que ainda será conferido após implementar.
-
-**Entrega esperada:** regra refinada, exemplos e plano de verificação Identificar nome, versão ou premissas, regra utilizada e justificativa. Nome sugerido: `m07-atividade-03.md`.
-
-**Critérios específicos:** Ambiguidade identificada; exemplo verificável; execução posterior preservada.
-
-**Exemplo de resposta comentada:** Nome textual com conteúdo após strip. Exemplos: Ana aceita; vazio e espaços recusados. Rever antes do código e testar depois retorno e ausência de alteração de estado.
-
-**Dica:** faça sua tentativa antes de ler a resposta e explique qualquer revisão.
-
-**Variação mais difícil:** Qual ambiguidade só seria descoberta ao observar a operação?
-
+**Critérios:** perspectivas distintas; ambiguidade reduzida; critério verificável; teste posterior previsto.
 
 ## Exercício individual
 
-Revise “cancelamento simples” com dois critérios verificáveis.
+A frase ‘o usuário pode cancelar uma reserva’ é vaga. Escreva duas perguntas de esclarecimento e dois critérios verificáveis, incluindo um cenário de ID inexistente.
 
-**Tempo:** 12 minutos. **Entrega:** uma versão própria do artefato, incluindo regra, decisão e evidência. **Avaliação:** critérios específicos acima e rubrica do E-book. O professor verifica se houve transferência para o novo caso. Se houver ajuda, registrar qual etapa foi assistida.
+**Entrega:** perguntas + critérios
 
-## Perguntas para os alunos
+**Critérios:** ambiguidades reais; positivo/negativo; estado esperado; sem inventar autorização não definida.
 
-- Qual ambiguidade foi removida?
-- Qual teste posterior permanece?
-- Qual parte da sua previsão você reviu e qual evidência motivou a mudança?
+## Perguntas de verificação
 
-## Possíveis dúvidas e como responder
+- Shift Left elimina necessidade de testes depois do código?
+- QA deve ser dono de todos os critérios?
+- Perguntar cedo garante que nenhum bug ocorrerá?
 
-| Dúvida | Resposta |
-|---|---|
-| Shift left é ferramenta? | É antecipação de feedback e prevenção. |
-| Substitui teste final? | Não; complementa verificações posteriores. |
-| Preciso copiar a resposta de referência? | Não; preserve as regras e explique sua decisão com evidência. |
-
-## Correção e fechamento
-
-As respostas de referência estão na demonstração. Não exigir frases idênticas; conferir critérios e raciocínio. Cada aluno completa: “Usei ___ para decidir ___ e confirmei com ___”. Relacionar à entrega do módulo: diagrama completo de SDLC, matriz de rastreabilidade, checklist de release simulada e plano de resposta a falha. Release exige critérios e resposta a falhas.
+> As respostas esperadas e intervenções ficam exclusivamente no script do professor.
 
 ## Tarefa para casa
 
-Revisar regra e registrar decisão.
+1. Escolher uma regra do projeto.
+2. Registrar pergunta antes da solução.
+3. Criar exemplos positivos e negativos.
+4. Definir evidência futura.
+5. Entregar `m07-aula-03-revisao.md`.
 
-**Tempo sugerido:** 30–45 minutos. Entregar `m07-aula-03-revisao.md` com resposta inicial, feedback, versão revisada e explicação da mudança. O professor verifica a revisão no próximo encontro.
+**Entrega:** regra refinada + exemplos + plano de verificação
+
+## Conexão com a trilha
+
+A Aula 4 fecha o módulo com release, operação, critérios de liberação e resposta a falhas.
+
+## Referências
+
+- [E-book correspondente](../ebooks/modulo-07-ciclo-de-vida-do-software.md)
+- [Caso Agenda Clara](../atividades/caso-agenda-clara.md)
+- [Laboratório Agenda Clara](../portfolio/agenda-clara/README.md)
+- [Script do professor](scripts/modulo-07-aula-03-shift-left-e-prevencao.md)

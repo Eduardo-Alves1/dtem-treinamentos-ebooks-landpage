@@ -2,65 +2,40 @@
 
 # Mercado Tech e Principais Áreas de TI
 
-> **Papel deste documento:** definir o que será ensinado, praticado e avaliado nesta aula.
-> A condução detalhada, as falas sugeridas, respostas esperadas, intervenções e transições ficam no
-> [script do professor](scripts/modulo-01-aula-01-mercado-tech-e-areas-de-ti.md).
+> **Papel deste documento:** definir o que será ensinado, praticado e avaliado.  
+> A condução minuto a minuto, falas sugeridas, respostas esperadas e intervenções ficam no [script do professor](scripts/modulo-01-aula-01-mercado-tech-e-areas-de-ti.md).
 
 ## Objetivo da aula
 
-Apresentar ao aluno iniciante como o mercado de tecnologia funciona, quais são as principais áreas de atuação e como cada área contribui para a construção e evolução de produtos digitais.
+Apresentar o mercado de tecnologia e mostrar que uma solução digital envolve diferentes áreas e responsabilidades, não apenas programação.
 
-Ao final da aula, o aluno deverá conseguir:
+Ao final, o aluno deverá conseguir:
 
-- explicar com suas palavras o que é tecnologia no contexto profissional;
-- diferenciar Desenvolvimento, QA, Produto, Dados, Infraestrutura e Gestão;
-- relacionar cada área a responsabilidades e artefatos;
-- reconhecer que produtos digitais são construídos de forma colaborativa;
-- iniciar o mapa mental das áreas de TI, que será desenvolvido ao longo do módulo.
+- explicar tecnologia no contexto profissional
+- diferenciar Desenvolvimento, QA, Produto, Dados, Infraestrutura e Gestão
+- relacionar cada área a responsabilidades, cargos e artefatos
+- identificar colaboração entre áreas
+- iniciar o mapa mental das áreas de TI
 
-## Conteúdos da aula
+## Conteúdos e conceitos
 
-### 1. Tecnologia no contexto profissional
+### Tecnologia no contexto profissional
+- tecnologia como solução para problemas
+- produto digital, processo e serviço
+- diferença entre tecnologia e programação
 
-- tecnologia como solução para problemas;
-- pessoas, processos, sistemas e ferramentas;
-- produtos e serviços digitais;
-- diferença entre tecnologia e programação.
+### Principais áreas de TI
+- Desenvolvimento
+- QA
+- Produto
+- Dados
+- Infraestrutura
+- Gestão
 
-### 2. Mercado de TI
-
-- empresas de tecnologia e empresas que utilizam tecnologia;
-- produtos digitais;
-- times multidisciplinares;
-- possibilidades de entrada na área.
-
-### 3. Principais áreas
-
-- Desenvolvimento;
-- Qualidade de Software — QA;
-- Produto;
-- Dados;
-- Infraestrutura;
-- Gestão.
-
-Para cada área, trabalhar:
-
-- responsabilidade principal;
-- exemplos de atividades;
-- artefatos produzidos;
-- interação com outras áreas;
-- exemplos de cargos encontrados no mercado.
-
-### 4. Colaboração entre áreas
-
-Usar um produto digital simples para demonstrar que uma mesma necessidade pode envolver várias contribuições profissionais.
-
-Exemplos possíveis:
-
-- aplicativo de delivery;
-- sistema de agendamento;
-- banco digital;
-- e-commerce.
+### Colaboração entre áreas
+- nenhuma área trabalha totalmente isolada
+- artefatos passam entre pessoas
+- qualidade é responsabilidade compartilhada
 
 ## Duração e blocos
 
@@ -72,148 +47,84 @@ Exemplos possíveis:
 | Pausa | 5 min |
 | Dinâmica em dupla ou grupo | 15 min |
 | Exercício individual | 12 min |
-| Revisão e dúvidas | 8 min |
+| Correção e dúvidas | 8 min |
 | Fechamento e tarefa | 5 min |
 | **Total** | **90 min** |
 
-O script do professor detalha como utilizar esses blocos durante o encontro.
-
 ## Materiais necessários
 
-- [E-book do Módulo 1](../ebooks/modulo-01-fundamentos.md);
-- [caderno de prática do Módulo 1](../atividades/modulo-01-caderno-de-pratica.md);
-- quadro branco, Miro, FigJam, Canva ou ferramenta equivalente;
-- exemplos de descrições de vagas;
-- modelo simples de mapa mental;
-- caso fictício [Agenda Clara](../atividades/caso-agenda-clara.md), quando necessário.
+- [E-book do Módulo 1](../ebooks/modulo-01-fundamentos.md)
+- [Caderno de prática do Módulo 1](../atividades/modulo-01-caderno-de-pratica.md)
+- quadro branco ou ferramenta visual
+- navegador
+- exemplos de descrições de vagas
+- template simples de mapa mental
 
 ## Exemplos planejados
 
-### Exemplo 1 — Sistema de agendamento
+### Exemplo 1
+Aplicativo de delivery: necessidade do cliente, construção, testes, dados e operação.
 
-Relacionar uma necessidade de agendamento às contribuições de Produto, Desenvolvimento, QA, Dados, Infraestrutura e Gestão.
+### Exemplo 2
+Sistema de agendamento: Produto esclarece regras, Dev implementa, QA investiga comportamentos e outras áreas apoiam.
 
-### Exemplo 2 — Produto digital conhecido
+### Exemplo 3
+Descrição de vaga: separar cargo, responsabilidade e ferramenta.
 
-Escolher um serviço conhecido pelos alunos e identificar diferentes responsabilidades necessárias para mantê-lo funcionando.
+## Demonstração planejada — Tabela Área × Pergunta × Responsabilidade × Artefato
 
-### Exemplo 3 — Descrição de vaga
+1. Escolher um produto digital conhecido pela turma.
+2. Preencher Desenvolvimento, QA, Produto, Dados, Infraestrutura e Gestão.
+3. Para cada área, registrar uma pergunta principal e uma responsabilidade.
+4. Associar um exemplo de artefato sem transformar ferramenta em profissão.
 
-Analisar uma descrição de vaga e identificar:
+**Resultado pedagógico esperado:** a turma consegue explicar por que áreas diferentes contribuem para o mesmo produto.
 
-- área;
-- responsabilidade;
-- ferramentas citadas;
-- termos técnicos;
-- possíveis relações com outras áreas.
+## Dinâmica em grupo — Monte o time tech
 
-## Demonstração planejada
+**Cenário:** Uma empresa quer criar um aplicativo de delivery para pequenos restaurantes.
 
-### Objetivo
+1. Definir qual problema principal o aplicativo resolve.
+2. Selecionar as áreas que precisam participar.
+3. Registrar uma responsabilidade e uma entrega de cada área.
+4. Descrever pelo menos duas relações de colaboração.
 
-Construir com a turma uma tabela relacionando área, pergunta principal, responsabilidade e artefato.
+**Entrega esperada:** tabela, quadro ou mapa simples com o time e suas contribuições
 
-### Estrutura
-
-| Área | Pergunta principal | Responsabilidade | Exemplo de artefato |
-|---|---|---|---|
-| Desenvolvimento | | | |
-| QA | | | |
-| Produto | | | |
-| Dados | | | |
-| Infraestrutura | | | |
-| Gestão | | | |
-
-A demonstração deve permitir que o aluno perceba que ferramentas e cargos não substituem a compreensão da contribuição de cada área.
-
-## Dinâmica em grupo
-
-### Monte o time tech
-
-**Cenário:** uma empresa quer criar um aplicativo de delivery para pequenos restaurantes.
-
-Cada grupo deverá identificar:
-
-1. problema que o produto pretende resolver;
-2. áreas de tecnologia envolvidas;
-3. responsabilidade de cada área;
-4. uma possível entrega de cada área;
-5. duas relações de colaboração entre áreas.
-
-### Entrega esperada
-
-Tabela, quadro ou mapa simples com as decisões do grupo.
-
-### Critérios
-
-- coerência entre área e responsabilidade;
-- presença de pelo menos uma entrega por área selecionada;
-- explicação de pelo menos duas relações de colaboração;
-- uso de linguagem própria do grupo.
+**Critérios:** coerência entre área e responsabilidade; pelo menos uma entrega por área; duas relações de colaboração explicadas; linguagem própria do grupo.
 
 ## Exercício individual
 
-Criar a primeira versão do mapa mental das áreas de TI.
+Crie a primeira versão do seu mapa mental com Desenvolvimento, QA, Produto, Dados, Infraestrutura e Gestão. Para cada área, escreva uma frase, um cargo relacionado e uma conexão com outra área. Acrescente uma dúvida que ainda tenha.
 
-O mapa deverá conter:
+**Entrega:** primeira versão do mapa mental
 
-- Desenvolvimento;
-- QA;
-- Produto;
-- Dados;
-- Infraestrutura;
-- Gestão;
-- uma frase explicando cada área;
-- um cargo relacionado;
-- uma conexão entre pelo menos duas áreas;
-- uma dúvida que o aluno ainda tenha.
+**Critérios:** seis áreas identificadas; descrições coerentes; ao menos uma conexão explicada; dúvida registrada.
 
 ## Perguntas de verificação
 
 - Trabalhar com tecnologia significa necessariamente programar?
 - Qual é a diferença entre cargo, ferramenta e responsabilidade?
-- Como duas áreas diferentes podem contribuir para o mesmo problema?
-- Qual área chamou mais atenção e por quê?
-- Que evidência ajudaria a entender melhor o trabalho de determinada área?
+- QA é a única pessoa responsável pela qualidade?
 
-> As respostas esperadas, intervenções e formas de conduzir essas perguntas ficam no script do professor.
-
-## Avaliação formativa
-
-A atividade deve observar:
-
-- identificação correta das áreas;
-- relação coerente entre responsabilidades e artefatos;
-- capacidade de explicar conexões entre áreas;
-- clareza do mapa mental;
-- registro de dúvidas e revisão após feedback.
-
-A avaliação detalhada utiliza o [caderno de prática do Módulo 1](../atividades/modulo-01-caderno-de-pratica.md).
+> As respostas esperadas e intervenções ficam exclusivamente no script do professor.
 
 ## Tarefa para casa
 
-Pesquisar três descrições de vagas reais:
+1. Pesquisar uma vaga de QA.
+2. Pesquisar uma vaga de Produto.
+3. Pesquisar uma vaga de Desenvolvimento, Dados ou Infraestrutura.
+4. Registrar título, link/data, responsabilidades, ferramentas e termos desconhecidos.
+5. Atualizar o mapa mental com pelo menos cinco termos encontrados.
 
-- uma de QA;
-- uma de Produto;
-- uma de Desenvolvimento, Dados ou Infraestrutura.
+**Entrega:** mapa mental atualizado + registro das três vagas
 
-Registrar:
+## Conexão com a trilha
 
-- título da vaga;
-- link e data da consulta;
-- responsabilidades citadas;
-- ferramentas ou termos técnicos;
-- palavras ainda desconhecidas.
-
-Depois, atualizar o mapa mental com pelo menos cinco termos encontrados na pesquisa.
-
-## Conexão com a próxima aula
-
-A próxima aula aprofunda como uma empresa de tecnologia organiza pessoas, responsabilidades, decisões e fluxo de trabalho.
+A Aula 2 mostra como essas áreas se organizam dentro de uma empresa e como uma necessidade percorre o ciclo até virar uma entrega.
 
 ## Referências
 
-- [E-book — Fundamentos da Tecnologia](../ebooks/modulo-01-fundamentos.md)
-- [Caderno de prática — Módulo 1](../atividades/modulo-01-caderno-de-pratica.md)
-- [Script do professor — Aula 1](scripts/modulo-01-aula-01-mercado-tech-e-areas-de-ti.md)
+- [E-book correspondente](../ebooks/modulo-01-fundamentos.md)
+- [Caderno de prática](../atividades/modulo-01-caderno-de-pratica.md)
+- [Script do professor](scripts/modulo-01-aula-01-mercado-tech-e-areas-de-ti.md)

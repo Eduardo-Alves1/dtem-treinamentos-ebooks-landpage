@@ -1,119 +1,126 @@
-# Roteiro — Módulo 5, Aula 1
+# Roteiro de Aula — Módulo 5, Aula 1
 
-**Condução com falas prontas:** [script do professor](scripts/modulo-05-aula-01-produto-problema-e-po.md). Seguir a sequência de até 90 minutos. As atividades abaixo formam o caderno completo; o script define o recorte ao vivo e a conclusão em casa. A gravação serve para revisão posterior.
+# Produto, Problema e Product Owner
 
-## Tema e objetivo da aula
+> **Papel deste documento:** definir o que será ensinado, praticado e avaliado.  
+> A condução minuto a minuto, falas sugeridas, respostas esperadas e intervenções ficam no [script do professor](scripts/modulo-05-aula-01-produto-problema-e-po.md).
 
-**Tema:** Produto, problema e PO. **Objetivo observável:** escrever brief e distinguir entrega de resultado.
+## Objetivo da aula
 
-**Leitura:** [E-book do módulo](../ebooks/modulo-05-product-owner-e-produto.md), tópicos 1. **Pré-requisito:** regras e testes do Módulo 4; colaboração apresentada no Módulo 1.
+Ensinar o aluno a separar problema, solução, entrega e resultado, entendendo o papel de Produto e do Product Owner na organização de valor e prioridade.
 
-## Duração sugerida
+Ao final, o aluno deverá conseguir:
 
-| Etapa | Minutos |
+- escrever um brief simples de problema
+- distinguir output de outcome
+- formular hipótese sem tratá-la como fato
+- propor uma métrica coerente
+- explicar o papel do PO sem tratá-lo como chefe do time
+
+## Conteúdos e conceitos
+
+### Problema antes da solução
+- dor/necessidade
+- usuário/contexto
+- solução é hipótese
+
+### Output versus outcome
+- output é entrega
+- outcome é mudança observada
+- resultado exige medida
+
+### Papel do Product Owner
+- ordenar backlog
+- maximizar valor
+- comunicar objetivo
+- não comandar tecnicamente
+
+## Duração e blocos
+
+| Bloco | Tempo previsto |
 |---|---:|
-| Abertura e diagnóstico | 8 |
-| Conceitos e exemplos | 17 |
-| Demonstração guiada | 20 |
-| Pausa | 5 |
-| Dinâmica em dupla ou grupo | 15 |
-| Exercício individual | 12 |
-| Correção e dúvidas | 8 |
-| Fechamento e orientação da tarefa | 5 |
-| Total | 90 |
+| Abertura e diagnóstico | 8 min |
+| Conceitos e exemplos | 17 min |
+| Demonstração guiada | 20 min |
+| Pausa | 5 min |
+| Dinâmica em dupla ou grupo | 15 min |
+| Exercício individual | 12 min |
+| Correção e dúvidas | 8 min |
+| Fechamento e tarefa | 5 min |
+| **Total** | **90 min** |
 
 ## Materiais necessários
 
-dados fictícios e quadro. Usar [caderno do caso](../atividades/caso-agenda-clara.md), editor de Markdown ou papel e [laboratório](../portfolio/agenda-clara/README.md). Testar o ambiente antes da aula. Contas de ferramentas são opcionais quando houver alternativa documental; evidência de execução continua necessária quando o enunciado a solicitar.
+- E-book do Módulo 5
+- caso Agenda Clara
+- modelo de brief
+- calculadora ou planilha simples
 
-## Abertura da aula
+## Exemplos planejados
 
-Compare “entregar três telas” com “reduzir conflitos”. Dê dois minutos para registrar uma previsão individual, recolha duas respostas e pergunte qual evidência seria necessária. Retome um conceito anterior e anuncie a entrega de hoje.
+### Exemplo 1
+Hipótese de reduzir conflitos de agenda.
 
-## Explicação teórica e exemplos práticos
+### Exemplo 2
+Métrica conflito/tentativas.
 
-### Produto digital e papel do PO
+### Exemplo 3
+Escolha entre corrigir fluxo central e adicionar uma funcionalidade nova.
 
-**Conceito:** Produto entrega valor ao longo do tempo; o PO ajuda a orientar objetivo e decisões sobre o trabalho.
+## Demonstração planejada — Do problema à hipótese mensurável
 
-**Explicação simples:** Antes de pedir mais telas, entenda quem precisa delas e qual problema será resolvido.
+1. Descrever o problema da recepção.
+2. Escrever usuário/contexto e impacto.
+3. Formular hipótese de melhoria.
+4. Calcular taxa base de exemplo.
+5. Definir o que precisaria ser medido depois.
 
-**Aprofundamento:** Distinga output, aquilo entregue, e outcome, efeito gerado para usuário ou negócio. Três telas são saída; redução de conflitos é resultado a avaliar. No Scrum, PO responde por valor e gestão do backlog; não é chefe de Dev e QA. A função concreta varia entre empresas. No caso, 10 conflitos em 50 tentativas representam 20% numa semana fictícia. Para medir evolução, mantenha definição, período e denominador, sem afirmar melhora antes de novas observações.
+**Resultado pedagógico esperado:** o aluno separa evidência atual de resultado futuro.
 
-**Exemplo cotidiano:** Muitos cliques em uma função não provam que ela resolveu a reclamação principal.
+## Dinâmica em grupo — Problema antes da solução
 
-**Cenário empresarial:** PO consulta recepção e time antes de escolher o recorte de agenda.
+**Cenário:** A recepção relata conflitos, demora e retrabalho; cada dupla deve construir um brief sem escolher a solução cedo demais.
 
-**Erros a observar:** Medir sucesso apenas por funcionalidades; atribuir toda decisão técnica ao PO.
+1. Descrever problema e usuário afetado.
+2. Separar fato observado de hipótese.
+3. Propor uma métrica.
+4. Escrever uma solução candidata apenas depois do problema.
 
-**Orientação:** Definir usuário, problema, hipótese, métrica e limites.
+**Entrega esperada:** brief de uma página
 
-Distribua os 17 minutos entre os tópicos. Peça um exemplo com palavras do aluno antes de avançar; se houver uma contradição, retome a regra do caso.
-
-## Demonstração guiada
-
-Calcule 10/50 e formule uma hipótese sem afirmar resultado futuro.
-
-**Exemplo 1:** Hipótese: controle de ocupação reduz conflitos. Métrica: tentativas com conflito operacional / tentativas totais por semana. Base 20%, sem resultado posterior comprovado.
-
-Interrompa antes do resultado para pedir uma previsão. Revele uma etapa de cada vez, marque a regra e compare a resposta com a evidência. Não concluir correção apenas pela aparência do arquivo.
-
-## Dinâmica em grupo
-
-**Nome:** Problema antes da solução. **Contexto:** a equipe precisa revisar uma decisão antes de avançar o MVP. Em duplas, uma pessoa produz e outra confere; trocar funções na metade do tempo. Em grupos maiores, adicionar um papel de registro.
-
-**Distribuição:** 2 minutos de leitura; 5 de execução; 5 de revisão cruzada; 3 de compartilhamento. Se houver mais de duas duplas, recolher as demais conclusões por escrito para caber no tempo.
-
-**Atividade 1: Escrever brief do produto**
-
-**Contexto profissional:** o time da empresa fictícia Agenda Clara precisa revisar esta decisão antes de entregar o MVP. Dados e regras no [caderno do caso](../atividades/caso-agenda-clara.md).
-
-**Objetivo:** Escrever brief do produto, com registro que permita conferência por outra pessoa.
-
-**Passo a passo:**
-
-1. Defina público e problema.
-2. Use a base fictícia de 10 conflitos em 50 tentativas.
-3. Escreva uma hipótese e uma medida.
-4. Indique uma pergunta ainda não respondida.
-
-**Entrega esperada:** brief com contexto, hipótese e métrica Identificar nome, versão ou premissas, regra utilizada e justificativa. Nome sugerido: `m05-atividade-01.md`.
-
-**Critérios específicos:** Separar resultado de entrega; identificar base fictícia e denominador.
-
-**Exemplo de resposta comentada:** Hipótese: controle de ocupação reduz conflitos. Métrica: tentativas com conflito operacional / tentativas totais por semana. Base 20%, sem resultado posterior comprovado.
-
-**Dica:** faça sua tentativa antes de ler a resposta e explique qualquer revisão.
-
-**Variação mais difícil:** Uma queda em conflitos ocorreu junto com queda no uso. Como isso afeta sua interpretação?
-
+**Critérios:** problema claro; hipótese identificada; métrica definida; solução não tratada como certeza.
 
 ## Exercício individual
 
-Proponha uma medida que não confunda queda de uso com melhoria.
+Uma semana teve 5 conflitos em 10 tentativas. Compare com uma base de 10 conflitos em 50 tentativas. Explique por que olhar só a quantidade pode levar a uma conclusão errada.
 
-**Tempo:** 12 minutos. **Entrega:** uma versão própria do artefato, incluindo regra, decisão e evidência. **Avaliação:** critérios específicos acima e rubrica do E-book. O professor verifica se houve transferência para o novo caso. Se houver ajuda, registrar qual etapa foi assistida.
+**Entrega:** cálculo + interpretação curta
 
-## Perguntas para os alunos
+**Critérios:** taxas corretas; interpretação sem inventar causalidade; diferença entre volume e proporção.
 
-- Qual é o resultado desejado?
-- Qual dado ainda falta?
-- Qual parte da sua previsão você reviu e qual evidência motivou a mudança?
+## Perguntas de verificação
 
-## Possíveis dúvidas e como responder
+- Entregar funcionalidade significa gerar resultado?
+- Hipótese é uma promessa?
+- PO é chefe dos desenvolvedores?
 
-| Dúvida | Resposta |
-|---|---|
-| PO é chefe do time? | Não no Scrum; responsabilidades são diferentes. |
-| PO sempre é primeira vaga? | Não; exigências variam e a formação é inicial. |
-| Preciso copiar a resposta de referência? | Não; preserve as regras e explique sua decisão com evidência. |
-
-## Correção e fechamento
-
-As respostas de referência estão na demonstração. Não exigir frases idênticas; conferir critérios e raciocínio. Cada aluno completa: “Usei ___ para decidir ___ e confirmei com ___”. Relacionar à entrega do módulo: brief do problema, roteiro de entrevista, três histórias completas, backlog com seis itens e ata de refinamento. A entrevista aprofunda evidências.
+> As respostas esperadas e intervenções ficam exclusivamente no script do professor.
 
 ## Tarefa para casa
 
-Revisar brief com métrica e uma dúvida.
+1. Revisar o brief.
+2. Definir linha de base e fórmula da métrica.
+3. Registrar uma dúvida ainda não respondida.
+4. Entregar `m05-aula-01-revisao.md`.
 
-**Tempo sugerido:** 30–45 minutos. Entregar `m05-aula-01-revisao.md` com resposta inicial, feedback, versão revisada e explicação da mudança. O professor verifica a revisão no próximo encontro.
+**Entrega:** brief revisado
+
+## Conexão com a trilha
+
+A Aula 2 aprofunda descoberta e levantamento de requisitos por meio de perguntas, observação e classificação.
+
+## Referências
+
+- [E-book correspondente](../ebooks/modulo-05-product-owner-e-produto.md)
+- [Caso Agenda Clara](../atividades/caso-agenda-clara.md)
+- [Script do professor](scripts/modulo-05-aula-01-produto-problema-e-po.md)

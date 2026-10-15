@@ -1,267 +1,199 @@
-# Script do professor — Bônus — Aula 1: Currículo, LinkedIn e portfólio
+# Script do Professor — Currículo, LinkedIn e Portfólio
 
-**DTEM Treinamentos · encontro ao vivo de até 90 minutos, gravado para revisão.**
+**DTEM Treinamentos · encontro ao vivo de até 90 minutos.**
 
-Este documento contém falas e ações de condução. Adaptar a linguagem ao próprio estilo, preservando conceitos,
-exemplos e critérios. Os intervalos incluem escrita, espera, interação e prática; não são 90 minutos de leitura.
-Não depende de vídeos prévios. O aluno pode consultar o E-book e rever a gravação depois.
+> **Papel deste documento:** orientar a condução da aula. O script operacionaliza o roteiro correspondente; não deve criar uma aula paralela.
 
-**Roteiro:** [planejamento da aula](../aula-01-curriculo-linkedin-e-portfolio.md).  
-**Material de estudo:** [E-book correspondente](../../ebooks/bonus-preparacao-para-o-mercado.md).  
-**Caso:** [Agenda Clara](../../atividades/caso-agenda-clara.md), empresa e dados fictícios.
+**Roteiro:** [Bônus — Aula 1](../aula-01-curriculo-linkedin-e-portfolio.md)  
+**Material do aluno:** [E-book do bônus](../../ebooks/bonus-preparacao-para-o-mercado.md)  
+**Projeto:** [Agenda Clara](../../portfolio/agenda-clara/README.md)
 
-## Objetivo e materiais
+## Alinhamento obrigatório
 
-**Objetivo observável:** redigir apresentação profissional honesta e relacionar requisitos de vaga a evidências.  
-**Materiais:** uma vaga selecionada com fonte e data, currículo e artefatos do projeto.
+- **Objetivo:** Transformar evidências reais da formação em currículo, proposta de perfil LinkedIn e portfólio coerentes com uma oportunidade, sem inventar experiência ou depender de fórmulas universais de ATS.
+- **Demonstração central:** Da exigência da vaga à frase verificável.
+- **Prática em grupo:** Revisão por evidência.
+- **Exercício individual:** produzir um bloco profissional baseado no projeto.
+- **Tarefa:** revisar currículo, LinkedIn e links com feedback.
 
-Antes do encontro, preparar o exemplo e conferir os recursos necessários. Em tarefas de ferramenta, preparar
-conta e ambiente com antecedência. Se a execução estiver indisponível, percorrer manualmente e declarar o método;
-publicação ou execução exigidas pela entrega devem ser concluídas depois com apoio. Não inventar evidência.
+## Antes da aula
 
-## Agenda de condução
+- [ ] Separar uma vaga real e uma descrição de exemplo.
+- [ ] Preparar matriz de aderência.
+- [ ] Abrir um artefato verificável do Agenda Clara.
+- [ ] Evitar afirmar regras universais de ATS.
+- [ ] Deixar roteiro e script abertos.
+- [ ] Conferir os artefatos do projeto usados como evidência.
+- [ ] Separar a entrega esperada.
 
-| Intervalo | Etapa | Minutos |
-|---|---|---:|
-| 00–08 | Abertura e diagnóstico | 8 |
-| 08–25 | Conceitos e exemplos | 17 |
-| 25–45 | Demonstração guiada | 20 |
-| 45–50 | Pausa | 5 |
-| 50–65 | Dinâmica em dupla ou grupo | 15 |
-| 65–77 | Exercício individual | 12 |
-| 77–85 | Correção e dúvidas | 8 |
-| 85–90 | Fechamento e tarefa | 5 |
-| Total | | 90 |
+## Agenda
 
-O roteiro original contém o caderno completo de atividades. Nesta versão, os enunciados de grupo e individual
-abaixo definem o recorte do encontro. A tarefa de casa conclui os itens restantes. Se precisar reduzir extensão,
-preservar demonstração, tentativa individual, feedback e orientação da entrega.
+| Intervalo | Etapa |
+|---|---|
+| 00–08 | Abertura e diagnóstico |
+| 08–25 | Conceitos e exemplos |
+| 25–45 | Demonstração guiada |
+| 45–50 | Pausa |
+| 50–65 | Dinâmica |
+| 65–77 | Exercício individual |
+| 77–85 | Correção e dúvidas |
+| 85–90 | Fechamento e tarefa |
 
 ## 00–08 — Abertura e diagnóstico
 
-**Mostrar:** título da aula e objetivo. **Fala de abertura:**
+> Seu currículo não precisa parecer maior do que sua experiência. Ele precisa ajudar outra pessoa a entender o que você realmente consegue demonstrar.
 
-> Seu currículo precisa ajudar alguém a entender o que você já consegue demonstrar. Vamos partir de uma vaga e de evidências, sem inventar experiência para preencher espaço.
+**Pergunta diagnóstica:** Se uma vaga pede uma habilidade que você ainda não praticou, é melhor adicionar a palavra ou registrar a lacuna?
 
-**Condução:** dar dois minutos para uma previsão individual no chat ou caderno. Colher duas respostas,
-sem exigir fala de todos. Esperar aproximadamente 30 segundos antes de completar a resposta.
-Não confundir silêncio inicial com falta de capacidade; oferecer a situação concreta novamente.
+Ouça pelo menos duas respostas antes de completar.
 
-**Pergunta de diagnóstico:** “Uma palavra-chave da vaga deve entrar no currículo sem evidência de conhecimento?”
-
-**Referência para o professor:** Não. Pode virar lacuna no plano de estudo; no currículo, represente honestamente o nível demonstrável.
-
-**Transição para a explicação:**
-
-> Vamos transformar essa primeira resposta em um raciocínio que outra pessoa consiga conferir.
-> A cada exemplo, anotem a decisão e a informação que a sustenta.
-
-## 08–25 — Explicação teórica e exemplos
-
-Dividir os 17 minutos entre as três explicações, a escrita e duas perguntas breves.
-Usar as falas como apoio, sem acrescentar uma exposição inteira do E-book.
-
-### Explicação 1 — Posicionamento
-
-**Fala sugerida:**
-
-> Escolha uma direção inicial e compare responsabilidades com suas evidências. Uma pessoa em transição pode trazer competências anteriores relevantes, explicando o contexto e sem transformar uma simulação em emprego.
-
-**Ação:** escrever uma palavra-chave e pedir um exemplo com palavras do aluno. Se houver dúvida, pedir a entrada, regra ou situação concreta que sustenta a resposta.
-### Explicação 2 — Currículo e ATS
-
-**Fala sugerida:**
-
-> Sistemas de candidatura variam. Texto claro, seções compreensíveis e termos compatíveis com conhecimentos reais ajudam a comunicação; não existe garantia de aprovação por repetir palavras-chave. Adapte o currículo à vaga preservando a verdade.
-
-**Ação:** escrever uma palavra-chave e pedir um exemplo com palavras do aluno. Se houver dúvida, pedir a entrada, regra ou situação concreta que sustenta a resposta.
-### Explicação 3 — LinkedIn e portfólio
-
-**Fala sugerida:**
-
-> O título apresenta direção e competências demonstráveis. O Sobre conecta trajetória, aprendizado e evidências. Links precisam funcionar e identificar projeto educacional. Publicar é uma decisão do aluno; hoje trabalharemos em rascunhos.
-
-**Ação:** escrever uma palavra-chave e pedir um exemplo com palavras do aluno. Se houver dúvida, pedir a entrada, regra ou situação concreta que sustenta a resposta.
-
-**Mostrar no quadro:** Requisito da vaga | evidência atual | lacuna | ação; título / Sobre / projeto.
-
-**Checagem de compreensão:** “Uma palavra-chave da vaga deve entrar no currículo sem evidência de conhecimento?”  
-**Resposta esperada:** Não. Pode virar lacuna no plano de estudo; no currículo, represente honestamente o nível demonstrável.
+**Referência para o professor:** Registrar a lacuna e planejar prática; não afirmar uma competência sem evidência.
 
 **Transição:**
 
-> Agora vou percorrer um exemplo pensando em voz alta. Antes de mostrar o resultado,
-> vou pedir uma previsão. Observem onde uma regra ou evidência muda a decisão.
+> Vamos sair de palavras genéricas e ligar cada afirmação a algo que vocês produziram ou conseguem explicar.
 
-## 25–45 — Demonstração guiada
+## 08–25 — Conceitos e exemplos
 
-**Preparação:** abrir os dados, documento, código ou cartões indicados. Reservar aproximadamente cinco minutos
-por passo e os minutos finais para uma previsão e uma dúvida. Em comandos, executar uma operação de cada vez
-e conferir estado. Não substituir falha de ambiente por uma afirmação de execução bem-sucedida.
+### 1. Aderência entre vaga e evidência
 
-### Passo 1 — Analisar requisito
+**Fala sugerida:**
 
-**Fala durante a demonstração:**
+> O objetivo não é copiar todas as palavras da vaga. É identificar o que ela pede e mostrar, quando existir, uma evidência que você consegue explicar.
 
-> Se a vaga pede casos de teste, vou apontar o arquivo e explicar um cenário. Se pede uma ferramenta que não usei, marco lacuna em vez de acrescentá-la como domínio.
+**Mostrar/fazer:** matriz requisito/evidência/lacuna/ação.
 
-**Ação:** mostrar o registro correspondente antes de avançar; pedir uma previsão e conferir a resposta com a evidência.
-### Passo 2 — Redigir projeto
+**Perguntar:** Se uma vaga pede reporte de bugs, que evidência do projeto pode sustentar isso?
 
-**Fala durante a demonstração:**
+**Compreensão esperada:** BUG01 e o processo de reprodução/documentação, apresentados como projeto educacional.
 
-> Projeto educacional Agenda Clara: elaborei critérios, executei cenários locais e registrei defeito reproduzível. A frase identifica contexto e contribuição sem simular vínculo empregatício.
+### 2. Currículo e ATS
 
-**Ação:** mostrar o registro correspondente antes de avançar; pedir uma previsão e conferir a resposta com a evidência.
-### Passo 3 — Revisar apresentação
+**Fala sugerida:**
 
-**Fala durante a demonstração:**
+> Alguns ATS fazem parsing do currículo, mas não existe uma fórmula universal para ‘passar no robô’. Clareza, formato adequado e coerência com a vaga são escolhas mais seguras do que tentar burlar sistemas.
 
-> Um título como Em transição para QA | estudos de testes e projeto educacional é uma opção a adaptar. No Sobre, descreva ações concretas e direcione ao artefato acessível.
+**Mostrar/fazer:** currículo simples em Markdown/texto.
 
-**Ação:** mostrar o registro correspondente antes de avançar; pedir uma previsão e conferir a resposta com a evidência.
+**Perguntar:** Que problema um layout só em imagem pode causar?
 
-**Pergunta após a demonstração:** “Qual decisão vocês conseguem explicar sem copiar a frase que usei?”
+**Compreensão esperada:** dificuldade de extração/leitura por alguns sistemas e acessibilidade.
 
-**Referência:** a resposta precisa relacionar situação, decisão e fundamento.
-As falas de cada passo indicam o comportamento ou a interpretação que deve ser conferido.
+### 3. LinkedIn e portfólio
 
-**Transição:**
+**Fala sugerida:**
 
-> Na prática, vocês vão alternar quem conduz e quem revisa. O objetivo é produzir algo
-> que o colega consiga conferir, e não somente repetir minha demonstração.
+> Perfil profissional deve contar a mesma história do currículo. Projeto educacional é válido, desde que seja chamado pelo nome correto e a contribuição seja demonstrável.
+
+**Mostrar/fazer:** exemplo de descrição do Agenda Clara.
+
+**Perguntar:** Qual diferença entre ‘atuei como QA’ e ‘no projeto educacional executei testes’?
+
+**Compreensão esperada:** a primeira pode implicar cargo/experiência profissional; a segunda descreve a prática real.
+
+## 25–45 — Demonstração guiada — Da exigência da vaga à frase verificável
+
+### Passo 1 — Ler a vaga
+
+**Fazer:** Separe responsabilidade essencial de desejável quando a descrição permitir.
+
+**Fala sugerida:**
+
+> Não vamos adivinhar o algoritmo do recrutador. Vamos entender o que a função pede e onde temos aderência real.
+
+**Checar com a turma:** Peça uma exigência para a qual o aluno tem evidência.
+
+### Passo 2 — Transformar evidência em frase
+
+**Fazer:** Use BUG01 ou User Story do projeto.
+
+**Fala sugerida:**
+
+> A frase precisa dizer o que você fez, em que contexto e qual artefato sustenta a afirmação.
+
+**Checar com a turma:** Peça que retire qualquer termo que implique emprego real.
+
+### Passo 3 — Reconhecer lacuna
+
+**Fazer:** Escolha exigência sem evidência.
+
+**Fala sugerida:**
+
+> Dizer ‘ainda não pratiquei’ não enfraquece o perfil; ajuda a criar um plano de evolução em vez de inventar domínio.
+
+**Checar com a turma:** Peça uma prática concreta para reduzir a lacuna.
+
+**Resultado de referência:** Exemplo: ‘Projeto educacional Agenda Clara: escrevi e executei casos funcionais, documentei uma divergência simulada de validação e registrei evidências de reteste.’
 
 ## 45–50 — Pausa
 
-Deixar horário de retorno visível e não apresentar conteúdo obrigatório durante os cinco minutos.
-Na gravação, indicar o ponto em que a atividade seguinte começa.
+Informar horário de retorno e não inserir conteúdo obrigatório.
 
-## 50–65 — Dinâmica em dupla ou grupo
+## 50–65 — Dinâmica — Revisão por evidência
 
-**Nome:** Revisão com explicação — Bônus — Aula 1: Currículo, LinkedIn e portfólio.  
-**Contexto profissional:** uma equipe precisa revisar seu trabalho antes de avançar.
-**Objetivo:** aplicar os conceitos e produzir um registro conferível no recorte da aula.
+**Cenário:** Em duplas, uma pessoa revisa uma seção do currículo/LinkedIn da outra buscando frases vagas ou maiores que a evidência.
 
-**Fala de orientação:**
+> A revisão não é para deixar o texto mais ‘bonito’. Primeiro tornem cada afirmação verdadeira, clara e verificável.
 
-> Uma pessoa começa conduzindo e a outra confere as decisões. Na metade, troquem funções.
-> Registrem o que fizeram e qual informação justifica o resultado.
-> Se discordarem, expliquem a diferença usando regra ou evidência, em vez de escolher pela maioria.
+1. Escolher uma frase.
+2. Perguntar ‘qual evidência sustenta isso?’.
+3. Reescrever com ação, contexto e limite.
+4. Trocar papéis.
+5. Conferir se o link citado abre.
 
-**Enunciado e passo a passo:**
+**Entrega:** tabela frase original / evidência / frase revisada
 
-1. Comparar um requisito de uma vaga à evidência da dupla.
-2. Revisar um parágrafo de projeto sem números inventados.
-3. Checar clareza de um título e acesso a um link.
-
-**Tempo:** 2 minutos para ler e organizar; 5 para produzir; 5 para trocar revisão; 3 para compartilhar.
-Selecionar duas duplas para falar e recolher as demais por escrito. Em aulas de entrevista ou apresentação,
-usar o mesmo tempo para a primeira participação, troca e feedback.
-
-**Entrega esperada:** registro da atividade com contexto, decisão, fundamento e uma revisão.
-**Critérios:** cumprir as etapas, preservar as regras e permitir que o colega confira.
-**Referência de correção:** usar os exemplos da demonstração e verificar o que mudou no novo caso,
-sem exigir palavras idênticas.
-
-**Perguntas ao circular:** “Qual passo está sendo executado?”, “Qual evidência sustenta isso?”
-e “O que precisaria mudar para sua conclusão ser diferente?”
-
-**Dica para a dupla:** separar o que observou do que está supondo.
-**Variação difícil:** formular um contraexemplo ou limite; transferir para casa se não couber.
+**Observar:** afirmação verificável; contexto educacional claro; sem números inventados; link acessível.
 
 ## 65–77 — Exercício individual
 
-**Fala do professor — enunciado:**
+> Escreva três linhas sobre sua contribuição no Agenda Clara, uma headline e duas frases para o Sobre. Identifique explicitamente o projeto como educacional e cite pelo menos um artefato que possa ser conferido.
 
-> Escreva três linhas sobre sua contribuição na Agenda Clara, indicando contexto, ação e evidência.
+**Entrega:** bloco de currículo + headline + trecho Sobre
 
-**Tempo:** 2 minutos de leitura, 7 de resolução e 3 de revisão/entrega.
-Cada aluno entrega uma resposta própria, mesmo quando a atividade anterior foi em grupo.
+**Critérios:** honestidade; clareza; evidência; coerência entre documentos.
 
-**Entrega:** artefato pedido no enunciado, acompanhado de uma explicação breve da decisão.
-**Critérios:** correção, completude do recorte, evidência e justificativa. Aplicar a
-[rubrica formativa](../../planejamento/analise-pedagogica.md), de 0 a 2 por critério. Referência proposta: 6/8, sem zero em correção ou evidência.
+**Ajuda graduada:** use estrutura ‘contexto educacional / ação / artefato ou resultado verificável’.
 
-**Ajuda graduada:** pedir que identifique primeiro a entrada, regra ou exigência; depois que escolha o próximo
-passo. Não resolver todas as etapas. Registrar qual parte foi assistida e conferir transferência em uma tentativa nova.
+## 77–85 — Correção e intervenções
 
-**Gabarito comentado — revelar depois da tentativa:**
+**Se aparecer:** o aluno escreve números de impacto não medidos
 
-> Uma resposta adequada declara projeto educacional, especifica contribuição pessoal e aponta um artefato existente. Exemplo: no estudo Agenda Clara, escrevi o caso de conflito e registrei a execução local; o caso e resultado estão no dossiê.
+> Que fonte sustenta esse resultado? Se não medimos, remova ou apresente como hipótese, não conquista.
 
-## 77–85 — Correção, intervenções e dúvidas
+**Se aparecer:** o aluno tenta esconder palavras-chave em branco
 
-**Fala para iniciar a correção:**
+> Evite técnicas de manipulação. Foque conteúdo legível, verdadeiro e pertinente à vaga.
 
-> Se sua resposta foi diferente, mantenha a primeira versão. Vamos descobrir em qual decisão
-> o raciocínio mudou. Corrigir e explicar a mudança faz parte da aprendizagem.
+**Se aparecer:** o aluno descreve Agenda Clara como cliente real
 
-**Se o aluno projeto vira cargo de empresa:**
+> Nomeie como projeto educacional e explique a simulação. Isso mantém credibilidade.
 
-> Qual era o contexto real? Use projeto educacional e descreva sua contribuição.
+### Perguntas de verificação
 
-**Se o aluno prometer passar no ats:**
+- **Existe quantidade ideal de palavras-chave que garante passar no ATS?** — Não. Sistemas e processos variam; não há garantia universal.
+- **Posso colocar ‘QA’ como experiência profissional por ter feito o projeto?** — Não se não houve emprego/atuação profissional. Pode descrever prática de QA em projeto educacional.
+- **Um portfólio privado serve?** — Pode servir se o avaliador tiver acesso; o importante é conferir permissões e links.
 
-> Podemos melhorar clareza e aderência verdadeira; não prever a decisão de qualquer sistema ou recrutador.
+## 85–90 — Fechamento e tarefa
 
-**Dúvida central da aula:** “Uma palavra-chave da vaga deve entrar no currículo sem evidência de conhecimento?”
+> Currículo, LinkedIn e portfólio são versões da mesma história. Quanto mais coerentes com evidências, menos você precisa ‘decorar’ uma persona para entrevista.
 
-**Como responder:**
+1. Montar matriz de três vagas com links e data.
+2. Revisar currículo em formato simples.
+3. Revisar headline e Sobre.
+4. Conferir links do portfólio.
+5. Guardar versão inicial e revisada.
 
-> Não. Pode virar lacuna no plano de estudo; no currículo, represente honestamente o nível demonstrável.
+**Entrega:** matriz + currículo + rascunho de perfil + links conferidos
 
-**Se perguntarem se a resposta precisa ser igual:**
+**Ponte:**
 
-> Não precisa repetir minha frase. Precisa respeitar as regras e permitir que outra pessoa
-> confira como você chegou à decisão.
+> Na próxima aula vamos transformar essa história escrita em respostas faladas e descobrir como lidar com perguntas sobre coisas que você ainda não sabe.
 
-**Se perguntarem como usar a gravação:**
+## Pós-aula
 
-> Localize o trecho em que surgiu a dúvida, reveja o exemplo e depois tente uma entrada ou situação nova.
-> Assistir de novo ajuda; explicar sua própria decisão é o que vamos avaliar.
-
-**Modelo de devolutiva:**
-
-> Você acertou ao identificar a decisão principal. Falta mostrar a informação que a sustenta.
-> Acrescente essa evidência e explique o que mudou na sua revisão.
-
-Selecionar duas dúvidas para os oito minutos. Registrar as demais para resposta após a aula ou retomada.
-Não ampliar silenciosamente a duração do encontro.
-
-## 85–90 — Fechamento e tarefa para casa
-
-**Fala de fechamento:**
-
-> Hoje trabalhamos como redigir apresentação profissional honesta e relacionar requisitos de vaga a evidências.
-> Para revisar, procure uma decisão, a evidência que a sustenta e uma limitação que ainda precisa de atenção.
-> Guardem a primeira versão e a correção; isso ajuda a explicar a evolução no portfólio.
-
-**Pergunta de saída:** “O que você mudou na sua primeira previsão, e por quê?”
-
-**Tarefa de casa — falar à turma:**
-
-> Completar a matriz com três vagas reais com fonte e data, ou exemplos explicitamente fictícios; revisar currículo, título, Sobre e links. Publicação fica a critério do aluno.
-
-**Tempo-base:** 30–45 minutos para revisão. Se o enunciado exigir concluir vários artefatos, execução pendente
-ou preparação da entrega final, combinar prazo e tempo adicional explicitamente; não prometer que tudo cabe
-nesse intervalo.
-
-**Entrega:** `aula-01-curriculo-linkedin-e-portfolio-revisao.md`, ou arquivos específicos pedidos, contendo resposta inicial, feedback,
-versão revisada e explicação. O professor verifica a revisão no início do encontro seguinte.
-
-**Dica:** usar E-book e gravação como apoio; identificar empresa fictícia e origem da evidência.
-**Variação difícil:** acrescentar uma situação nova ou uma dúvida de aplicação, com proposta de investigação.
-
-## Checklist do professor e uso da gravação
-
-- [ ] Preparar recursos e exemplo antes do encontro.
-- [ ] Pedir previsão antes de revelar referência.
-- [ ] Conferir compreensão por exemplo, não por memorização.
-- [ ] Alternar condução e revisão na dupla.
-- [ ] Preservar exercício individual.
-- [ ] Declarar execução, simulação e limites corretamente.
-- [ ] Registrar feedback, tarefa e dúvidas pendentes.
-- [ ] Disponibilizar gravação para revisão e indicar os blocos de demonstração e correção.
-
-Percentual de vídeo assistido é sinal de utilização, não prova de domínio.
-Usar artefato e explicação para avaliar aprendizagem; não penalizar o aluno por uma falha de registro de reprodução.
+- [ ] Disponibilizar gravação.
+- [ ] Registrar dúvidas e lacunas.
+- [ ] Conferir se exemplos e orientações continuam verdadeiros para os artefatos do aluno.
+- [ ] Não publicar alterações de currículo/LinkedIn em nome do aluno sem escolha explícita dele.

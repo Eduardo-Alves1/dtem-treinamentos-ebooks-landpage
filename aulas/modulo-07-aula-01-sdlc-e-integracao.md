@@ -1,119 +1,132 @@
-# Roteiro — Módulo 7, Aula 1
+# Roteiro de Aula — Módulo 7, Aula 1
 
-**Condução com falas prontas:** [script do professor](scripts/modulo-07-aula-01-sdlc-e-integracao.md). Seguir a sequência de até 90 minutos. As atividades abaixo formam o caderno completo; o script define o recorte ao vivo e a conclusão em casa. A gravação serve para revisão posterior.
+# SDLC e Integração entre Áreas
 
-## Tema e objetivo da aula
+> **Papel deste documento:** definir o que será ensinado, praticado e avaliado.  
+> A condução minuto a minuto, falas sugeridas, respostas esperadas e intervenções ficam no [script do professor](scripts/modulo-07-aula-01-sdlc-e-integracao.md).
 
-**Tema:** SDLC e integração. **Objetivo observável:** desenhar ciclo com feedback e papéis.
+## Objetivo da aula
 
-**Leitura:** [E-book do módulo](../ebooks/modulo-07-ciclo-de-vida-do-software.md), tópicos 1. **Pré-requisito:** entregas de QA, Produto e Gestão dos módulos 4–6.
+Conectar Produto, Desenvolvimento, QA, Dados, Infraestrutura e Gestão ao longo do ciclo de vida do software, mostrando que o SDLC possui feedback e não é uma linha rígida.
 
-## Duração sugerida
+Ao final, o aluno deverá conseguir:
 
-| Etapa | Minutos |
+- desenhar um SDLC básico com feedback
+- relacionar áreas e artefatos às etapas
+- identificar contribuição de QA antes, durante e depois da construção
+- diferenciar etapa de atividade isolada
+- explicar limites entre laboratório educacional e operação real
+
+## Conteúdos e conceitos
+
+### SDLC como ciclo
+- necessidade e descoberta
+- requisitos e planejamento
+- construção e verificação
+- release/operação
+- feedback
+
+### Integração entre áreas
+- Produto esclarece valor
+- Dev constrói
+- QA antecipa e verifica riscos
+- Dados/Infra apoiam observação e operação
+
+### Artefatos e evidências
+- brief/história
+- código/commit
+- caso/bug
+- release/checklist
+- feedback
+
+## Duração e blocos
+
+| Bloco | Tempo previsto |
 |---|---:|
-| Abertura e diagnóstico | 8 |
-| Conceitos e exemplos | 17 |
-| Demonstração guiada | 20 |
-| Pausa | 5 |
-| Dinâmica em dupla ou grupo | 15 |
-| Exercício individual | 12 |
-| Correção e dúvidas | 8 |
-| Fechamento e orientação da tarefa | 5 |
-| Total | 90 |
+| Abertura e diagnóstico | 8 min |
+| Conceitos e exemplos | 17 min |
+| Demonstração guiada | 20 min |
+| Pausa | 5 min |
+| Dinâmica em dupla ou grupo | 15 min |
+| Exercício individual | 12 min |
+| Correção e dúvidas | 8 min |
+| Fechamento e tarefa | 5 min |
+| **Total** | **90 min** |
 
 ## Materiais necessários
 
-artefatos dos módulos anteriores e quadro. Usar [caderno do caso](../atividades/caso-agenda-clara.md), editor de Markdown ou papel e [laboratório](../portfolio/agenda-clara/README.md). Testar o ambiente antes da aula. Contas de ferramentas são opcionais quando houver alternativa documental; evidência de execução continua necessária quando o enunciado a solicitar.
+- E-book do Módulo 7
+- artefatos de Produto, QA e Gestão dos módulos anteriores
+- quadro para diagrama SDLC
 
-## Abertura da aula
+## Exemplos planejados
 
-Pergunte o que ocorre antes do primeiro código e depois da entrega. Dê dois minutos para registrar uma previsão individual, recolha duas respostas e pergunte qual evidência seria necessária. Retome um conceito anterior e anuncie a entrega de hoje.
+### Exemplo 1
+Reclamação da recepção voltando a requisito.
 
-## Explicação teórica e exemplos práticos
+### Exemplo 2
+BUG01 levando a correção e reteste.
 
-### SDLC e integração entre áreas
+### Exemplo 3
+Feedback de uso alimentando nova priorização.
 
-**Conceito:** SDLC reúne atividades necessárias para criar, entregar, operar e evoluir software.
+## Demonstração planejada — Construir o ciclo completo do Agenda Clara
 
-**Explicação simples:** A vida do sistema começa antes do código e continua depois que ele é entregue.
+1. Começar pelo problema da recepção.
+2. Adicionar requisito/história.
+3. Adicionar desenvolvimento e versionamento.
+4. Adicionar verificação e decisão de release.
+5. Adicionar uso/feedback.
+6. Marcar onde Produto, QA, Dev, Dados, Infra e Gestão contribuem.
 
-**Aprofundamento:** Descoberta identifica necessidade; requisitos tornam comportamento explícito; planejamento define recorte; construção implementa; testes geram evidências; entrega disponibiliza; operação observa e aprende. Não são departamentos que passam uma caixa sem conversar. Métodos iterativos repetem essas atividades em recortes; algumas acontecem em paralelo. Produto, Dev, QA, Dados e Infra contribuem conforme contexto. O laboratório cobre regras e verificação local; operação e infraestrutura são discutidas e simuladas.
+**Resultado pedagógico esperado:** o aluno visualiza um ciclo integrado e iterativo.
 
-**Exemplo cotidiano:** Um app continua sendo corrigido e melhorado depois de instalado pelos primeiros usuários.
+## Dinâmica em grupo — Conectar áreas
 
-**Cenário empresarial:** Uma reclamação na recepção retorna a Produto e QA para revisar o fluxo de cancelamento.
+**Cenário:** A equipe recebe uma reclamação pós-entrega e precisa mostrar por onde a informação passa até virar uma melhoria verificada.
 
-**Erros a observar:** Tratar etapas como sequência rígida universal; achar que depois do deploy acabou.
+1. Desenhar o ciclo da reclamação até nova decisão.
+2. Marcar pelo menos quatro áreas participantes.
+3. Associar um artefato a cada passagem relevante.
+4. Incluir um ponto em que o fluxo pode voltar para trás.
 
-**Orientação:** Mostrar retorno de feedback e participação compartilhada.
+**Entrega esperada:** diagrama SDLC anotado
 
-Distribua os 17 minutos entre os tópicos. Peça um exemplo com palavras do aluno antes de avançar; se houver uma contradição, retome a regra do caso.
-
-## Demonstração guiada
-
-Construa fluxo e marque participação de QA antes dos testes.
-
-**Exemplo 1:** Feedback da recepção retorna a requisitos. QA contribui em exemplos e execução; Dados define medida; Infra discute observação futura. No laboratório, deploy real e monitoramento não existem.
-
-Interrompa antes do resultado para pedir uma previsão. Revele uma etapa de cada vez, marque a regra e compare a resposta com a evidência. Não concluir correção apenas pela aparência do arquivo.
-
-## Dinâmica em grupo
-
-**Nome:** Conectar áreas. **Contexto:** a equipe precisa revisar uma decisão antes de avançar o MVP. Em duplas, uma pessoa produz e outra confere; trocar funções na metade do tempo. Em grupos maiores, adicionar um papel de registro.
-
-**Distribuição:** 2 minutos de leitura; 5 de execução; 5 de revisão cruzada; 3 de compartilhamento. Se houver mais de duas duplas, recolher as demais conclusões por escrito para caber no tempo.
-
-**Atividade 1: Desenhar fluxo completo do sistema**
-
-**Contexto profissional:** o time da empresa fictícia Agenda Clara precisa revisar esta decisão antes de entregar o MVP. Dados e regras no [caderno do caso](../atividades/caso-agenda-clara.md).
-
-**Objetivo:** Desenhar fluxo completo do sistema, com registro que permita conferência por outra pessoa.
-
-**Passo a passo:**
-
-1. Liste necessidade, requisitos, planejamento, código, teste, entrega e operação.
-2. Ligue etapas e inclua retorno de feedback.
-3. Indique contribuição de cinco áreas.
-4. Marque o que é executado e o que é simulado.
-
-**Entrega esperada:** diagrama com papéis, retornos e limites Identificar nome, versão ou premissas, regra utilizada e justificativa. Nome sugerido: `m07-atividade-01.md`.
-
-**Critérios específicos:** Cobertura do ciclo; feedback; distinção de execução e simulação.
-
-**Exemplo de resposta comentada:** Feedback da recepção retorna a requisitos. QA contribui em exemplos e execução; Dados define medida; Infra discute observação futura. No laboratório, deploy real e monitoramento não existem.
-
-**Dica:** faça sua tentativa antes de ler a resposta e explique qualquer revisão.
-
-**Variação mais difícil:** Que retorno falta em um fluxo que termina nos testes?
-
+**Critérios:** ciclo com feedback; áreas distribuídas sem silos rígidos; artefatos coerentes; retorno/iteração explícito.
 
 ## Exercício individual
 
-Adicione retorno de uma reclamação a uma regra.
+Uma pessoa da recepção relata que o cancelamento está confuso. Descreva quais artefatos ou decisões você revisaria antes de mudar código e como verificaria a mudança depois.
 
-**Tempo:** 12 minutos. **Entrega:** uma versão própria do artefato, incluindo regra, decisão e evidência. **Avaliação:** critérios específicos acima e rubrica do E-book. O professor verifica se houve transferência para o novo caso. Se houver ajuda, registrar qual etapa foi assistida.
+**Entrega:** sequência curta de impacto no SDLC
 
-## Perguntas para os alunos
+**Critérios:** feedback ligado a requisito; revisão antes do código; verificação posterior; áreas relacionadas.
 
-- Onde entra feedback?
-- Quais partes são simuladas?
-- Qual parte da sua previsão você reviu e qual evidência motivou a mudança?
+## Perguntas de verificação
 
-## Possíveis dúvidas e como responder
+- SDLC é sempre uma sequência fixa e linear?
+- QA começa somente depois do desenvolvimento?
+- Deploy significa fim do ciclo?
 
-| Dúvida | Resposta |
-|---|---|
-| É sempre sequencial? | Atividades podem se repetir e sobrepor. |
-| Deploy encerra trabalho? | Operação e evolução continuam. |
-| Preciso copiar a resposta de referência? | Não; preserve as regras e explique sua decisão com evidência. |
-
-## Correção e fechamento
-
-As respostas de referência estão na demonstração. Não exigir frases idênticas; conferir critérios e raciocínio. Cada aluno completa: “Usei ___ para decidir ___ e confirmei com ___”. Relacionar à entrega do módulo: diagrama completo de SDLC, matriz de rastreabilidade, checklist de release simulada e plano de resposta a falha. Rastreabilidade conecta decisões a evidências.
+> As respostas esperadas e intervenções ficam exclusivamente no script do professor.
 
 ## Tarefa para casa
 
-Revisar diagrama com limites.
+1. Revisar o diagrama SDLC.
+2. Adicionar pelo menos uma contribuição antecipada de QA.
+3. Adicionar feedback pós-entrega.
+4. Registrar o que é simulação no laboratório.
+5. Entregar `m07-aula-01-revisao.md`.
 
-**Tempo sugerido:** 30–45 minutos. Entregar `m07-aula-01-revisao.md` com resposta inicial, feedback, versão revisada e explicação da mudança. O professor verifica a revisão no próximo encontro.
+**Entrega:** diagrama SDLC revisado
+
+## Conexão com a trilha
+
+A Aula 2 aprofunda rastreabilidade e análise de impacto entre regra, história, teste, bug e versão.
+
+## Referências
+
+- [E-book correspondente](../ebooks/modulo-07-ciclo-de-vida-do-software.md)
+- [Caso Agenda Clara](../atividades/caso-agenda-clara.md)
+- [Laboratório Agenda Clara](../portfolio/agenda-clara/README.md)
+- [Script do professor](scripts/modulo-07-aula-01-sdlc-e-integracao.md)

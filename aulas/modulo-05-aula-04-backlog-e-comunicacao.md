@@ -1,162 +1,129 @@
-# Roteiro — Módulo 5, Aula 4
+# Roteiro de Aula — Módulo 5, Aula 4
 
-**Condução com falas prontas:** [script do professor](scripts/modulo-05-aula-04-backlog-e-comunicacao.md). Seguir a sequência de até 90 minutos. As atividades abaixo formam o caderno completo; o script define o recorte ao vivo e a conclusão em casa. A gravação serve para revisão posterior.
+# Backlog, Priorização e Comunicação
 
-## Tema e objetivo da aula
+> **Papel deste documento:** definir o que será ensinado, praticado e avaliado.  
+> A condução minuto a minuto, falas sugeridas, respostas esperadas e intervenções ficam no [script do professor](scripts/modulo-05-aula-04-backlog-e-comunicacao.md).
 
-**Tema:** Backlog e comunicação. **Objetivo observável:** ordenar backlog e registrar refinamento.
+## Objetivo da aula
 
-**Leitura:** [E-book do módulo](../ebooks/modulo-05-product-owner-e-produto.md), tópicos 5, 6. **Pré-requisito:** atividade da aula anterior, com retomada da lacuna identificada no feedback.
+Ordenar backlog com base em valor, risco, dependência e evidência, registrando decisões de refinamento e custo de oportunidade.
 
-## Duração sugerida
+Ao final, o aluno deverá conseguir:
 
-| Etapa | Minutos |
+- explicar que backlog ordenado não é fila imutável
+- identificar dependências
+- justificar prioridade
+- registrar decisão e pendência
+- comunicar item adiado sem tratá-lo como descartado
+
+## Conteúdos e conceitos
+
+### Ordenação do backlog
+- valor
+- risco
+- dependência
+- aprendizado
+
+### Custo de oportunidade
+- escolher é adiar algo
+- capacidade é limitada
+- adiamento precisa ser explícito
+
+### Refinamento e comunicação
+- esclarecer
+- quebrar
+- registrar decisão
+- pendência não some
+
+## Duração e blocos
+
+| Bloco | Tempo previsto |
 |---|---:|
-| Abertura e diagnóstico | 8 |
-| Conceitos e exemplos | 17 |
-| Demonstração guiada | 20 |
-| Pausa | 5 |
-| Dinâmica em dupla ou grupo | 15 |
-| Exercício individual | 12 |
-| Correção e dúvidas | 8 |
-| Fechamento e orientação da tarefa | 5 |
-| Total | 90 |
+| Abertura e diagnóstico | 8 min |
+| Conceitos e exemplos | 17 min |
+| Demonstração guiada | 20 min |
+| Pausa | 5 min |
+| Dinâmica em dupla ou grupo | 15 min |
+| Exercício individual | 12 min |
+| Correção e dúvidas | 8 min |
+| Fechamento e tarefa | 5 min |
+| **Total** | **90 min** |
 
 ## Materiais necessários
 
-cartões de itens e tabela de prioridades. Usar [caderno do caso](../atividades/caso-agenda-clara.md), editor de Markdown ou papel e [laboratório](../portfolio/agenda-clara/README.md). Testar o ambiente antes da aula. Contas de ferramentas são opcionais quando houver alternativa documental; evidência de execução continua necessária quando o enunciado a solicitar.
+- E-book do Módulo 5
+- backlog do Agenda Clara
+- quadro de priorização
+- modelo de ata de refinamento
 
-## Abertura da aula
+## Exemplos planejados
 
-Apresente o pedido de pagamento e a evidência de duplicidade. Dê dois minutos para registrar uma previsão individual, recolha duas respostas e pergunte qual evidência seria necessária. Retome um conceito anterior e anuncie a entrega de hoje.
+### Exemplo 1
+Corrigir RN03 antes de expandir reserva.
 
-## Explicação teórica e exemplos práticos
+### Exemplo 2
+Consulta/reserva como dependências de cancelamento.
 
-### Backlog e priorização
+### Exemplo 3
+Pagamento como pedido fora do MVP atual.
 
-**Conceito:** Backlog é uma lista ordenada e evolutiva de trabalho do produto.
+## Demonstração planejada — Priorizar o MVP e registrar trade-offs
 
-**Explicação simples:** Uma lista de desejos precisa virar uma ordem explicável.
+1. Listar itens do backlog.
+2. Marcar dependências.
+3. Adicionar BUG01 como risco conhecido.
+4. Comparar pagamento/relatório com correção do fluxo central.
+5. Registrar decisão, razão e item adiado.
 
-**Aprofundamento:** Compare valor, risco, esforço e dependências. Matriz impacto/esforço ajuda conversa, mas notas sem evidência não são verdade objetiva. MoSCoW separa Must, Should, Could e Won't para um horizonte; ainda é preciso ordenar dentro das categorias. Capacidade limita o recorte. Registrar custo de oportunidade mostra o que foi adiado. Mudança de evidência pode justificar nova ordem. No MVP, cancelar depende de reserva identificada; pagamento e relatórios continuam fora.
+**Resultado pedagógico esperado:** o aluno produz uma ordem explicável, não apenas uma lista subjetiva.
 
-**Exemplo cotidiano:** Tema visual tem valor, mas não resolve um bloqueio que impede compra.
+## Dinâmica em grupo — Negociar o MVP
 
-**Cenário empresarial:** PO prioriza integridade de reserva antes de relatório por impacto operacional.
+**Cenário:** Patrocinador pede pagamento; recepção ainda sofre com risco de reserva inválida.
 
-**Erros a observar:** Tudo urgente; pontuação sem base; ignorar dependência.
+1. Ordenar seis itens.
+2. Marcar duas dependências.
+3. Decidir o que entra no MVP.
+4. Registrar um item adiado e o porquê.
+5. Produzir ata curta de refinamento.
 
-**Orientação:** Evidência, horizonte, capacidade e razões de adiamento.
+**Entrega esperada:** backlog ordenado + ata
 
-### Comunicação com times técnicos
-
-**Conceito:** Refinamento esclarece e divide itens com colaboração.
-
-**Explicação simples:** Alinhe o que será feito, como conferir e o que ainda falta saber.
-
-**Aprofundamento:** PO traz objetivo e prioridade; Dev discute viabilidade; QA questiona exemplos e riscos. Registre decisões e pendências com responsável. Não imponha prazo sem capacidade nem descreva tudo como “só um botão”. O laboratório confirma unicidade sequencial, sem garantir chamadas simultâneas. Esse limite precisa aparecer no escopo e na comunicação. Refinamento é atividade contínua; não um evento formal obrigatório do Scrum.
-
-**Exemplo cotidiano:** Um botão pode envolver regra, integração e estados.
-
-**Cenário empresarial:** O time identifica ausência de identidade e não promete controle de acesso inexistente.
-
-**Erros a observar:** Não registrar decisão; esconder dúvida; prometer capacidade não discutida.
-
-**Orientação:** Objetivo, exemplos, acordos e retorno com evidência.
-
-Distribua os 17 minutos entre os tópicos. Peça um exemplo com palavras do aluno antes de avançar; se houver uma contradição, retome a regra do caso.
-
-## Demonstração guiada
-
-Compare riscos e dependências e registre custo de oportunidade.
-
-**Exemplo 1:** Consultar e reservar sustentam cancelar. Corrigir RN03 antes da liberação da reserva. Persistência exige mudança de desenho; relatório e pagamento ficam fora do MVP atual.
-
-**Exemplo 2:** Decisões: aplicar strip ao nome; recusa preserva estado; catálogo fixo. Pendência: concorrência real exige desenho e testes adicionais, fora do laboratório.
-
-Interrompa antes do resultado para pedir uma previsão. Revele uma etapa de cada vez, marque a regra e compare a resposta com a evidência. Não concluir correção apenas pela aparência do arquivo.
-
-## Dinâmica em grupo
-
-**Nome:** Negociar o MVP. **Contexto:** a equipe precisa revisar uma decisão antes de avançar o MVP. Em duplas, uma pessoa produz e outra confere; trocar funções na metade do tempo. Em grupos maiores, adicionar um papel de registro.
-
-**Distribuição:** 2 minutos de leitura; 5 de execução; 5 de revisão cruzada; 3 de compartilhamento. Se houver mais de duas duplas, recolher as demais conclusões por escrito para caber no tempo.
-
-**Atividade 5: Ordenar backlog com seis itens**
-
-**Contexto profissional:** o time da empresa fictícia Agenda Clara precisa revisar esta decisão antes de entregar o MVP. Dados e regras no [caderno do caso](../atividades/caso-agenda-clara.md).
-
-**Objetivo:** Ordenar backlog com seis itens, com registro que permita conferência por outra pessoa.
-
-**Passo a passo:**
-
-1. Liste consultar, reservar, cancelar, persistência, relatório e pagamento.
-2. Identifique MVP e fora do recorte.
-3. Justifique cada posição.
-4. Registre dependências.
-5. Inclua a correção de RN03 e reavalie a ordem.
-
-**Entrega esperada:** backlog ordenado com seis itens e correção justificada Identificar nome, versão ou premissas, regra utilizada e justificativa. Nome sugerido: `m05-atividade-05.md`.
-
-**Critérios específicos:** Ordem explicada; dependências; adiamentos e correção considerados.
-
-**Exemplo de resposta comentada:** Consultar e reservar sustentam cancelar. Corrigir RN03 antes da liberação da reserva. Persistência exige mudança de desenho; relatório e pagamento ficam fora do MVP atual.
-
-**Dica:** faça sua tentativa antes de ler a resposta e explique qualquer revisão.
-
-**Variação mais difícil:** O que você adiou e qual foi o custo dessa decisão?
-
-**Atividade 6: Conduzir refinamento de US02**
-
-**Contexto profissional:** o time da empresa fictícia Agenda Clara precisa revisar esta decisão antes de entregar o MVP. Dados e regras no [caderno do caso](../atividades/caso-agenda-clara.md).
-
-**Objetivo:** Conduzir refinamento de US02, com registro que permita conferência por outra pessoa.
-
-**Passo a passo:**
-
-1. Distribua papéis PO, Dev e QA.
-2. Leia história e critérios.
-3. Cada papel faz duas perguntas.
-4. Registre três decisões e uma pendência.
-5. Reescreva um critério após a conversa.
-
-**Entrega esperada:** ata breve e critério revisado Identificar nome, versão ou premissas, regra utilizada e justificativa. Nome sugerido: `m05-atividade-06.md`.
-
-**Critérios específicos:** Perguntas úteis; decisões claras; pendência com responsável.
-
-**Exemplo de resposta comentada:** Decisões: aplicar strip ao nome; recusa preserva estado; catálogo fixo. Pendência: concorrência real exige desenho e testes adicionais, fora do laboratório.
-
-**Dica:** faça sua tentativa antes de ler a resposta e explique qualquer revisão.
-
-**Variação mais difícil:** Qual dúvida impede iniciar e qual pode ficar fora do MVP?
-
+**Critérios:** ordem justificada; dependências visíveis; trade-off explícito; pendência registrada.
 
 ## Exercício individual
 
-Justifique qual item adiar e qual dúvida investigar primeiro.
+Escolha um item para adiar e explique o custo. Depois mostre como BUG01 poderia alterar a ordem do backlog e qual evidência sustenta a mudança.
 
-**Tempo:** 12 minutos. **Entrega:** uma versão própria do artefato, incluindo regra, decisão e evidência. **Avaliação:** critérios específicos acima e rubrica do E-book. O professor verifica se houve transferência para o novo caso. Se houver ajuda, registrar qual etapa foi assistida.
+**Entrega:** justificativa de prioridade
 
-## Perguntas para os alunos
+**Critérios:** trade-off claro; risco/evidência usados; sem tratar opinião como fato.
 
-- Por que essa ordem?
-- Qual dependência muda o plano?
-- Qual parte da sua previsão você reviu e qual evidência motivou a mudança?
+## Perguntas de verificação
 
-## Possíveis dúvidas e como responder
+- Backlog é uma fila fixa?
+- Prioridade é responsabilidade só do PO?
+- Adiamento significa que o item não tem valor?
 
-| Dúvida | Resposta |
-|---|---|
-| Tudo pode ser Must? | Isso elimina a distinção; reveja o horizonte e a capacidade. |
-| Matriz decide sozinha? | Não; torna critérios visíveis para análise. |
-| Preciso copiar a resposta de referência? | Não; preserve as regras e explique sua decisão com evidência. |
-
-## Correção e fechamento
-
-As respostas de referência estão na demonstração. Não exigir frases idênticas; conferir critérios e raciocínio. Cada aluno completa: “Usei ___ para decidir ___ e confirmei com ___”. Relacionar à entrega do módulo: brief do problema, roteiro de entrevista, três histórias completas, backlog com seis itens e ata de refinamento. Gestão organiza a execução do recorte.
+> As respostas esperadas e intervenções ficam exclusivamente no script do professor.
 
 ## Tarefa para casa
 
-Consolidar brief, histórias, backlog e ata.
+1. Revisar ordem do backlog.
+2. Revisar histórias/critérios.
+3. Finalizar ata de refinamento.
+4. Organizar entrega final do Módulo 5.
+5. Entregar `m05-aula-04-revisao.md`.
 
-**Tempo sugerido:** 30–45 minutos. Entregar `m05-aula-04-revisao.md` com resposta inicial, feedback, versão revisada e explicação da mudança. O professor verifica a revisão no próximo encontro. Organizar também a entrega final e a reflexão individual.
+**Entrega:** pacote de Produto do Agenda Clara
+
+## Conexão com a trilha
+
+O Módulo 6 usa backlog e critérios para trabalhar capacidade, Scrum, Kanban e organização de projetos.
+
+## Referências
+
+- [E-book correspondente](../ebooks/modulo-05-product-owner-e-produto.md)
+- [Caso Agenda Clara](../atividades/caso-agenda-clara.md)
+- [Script do professor](scripts/modulo-05-aula-04-backlog-e-comunicacao.md)
