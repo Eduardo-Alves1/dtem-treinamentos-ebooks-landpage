@@ -96,7 +96,6 @@ Ajuda a comunicar previsão e limitações com responsabilidade.
 
 **Critérios específicos:** Cálculo coerente; distinção entre disponibilidade e esforço; margem explícita.
 
-**Exemplo de resposta comentada:** 360 minutos brutos − 90 − 60 = 210 minutos estimados para tarefas. Distribuir respeitando competências e dependências; não somar trabalho paralelo como se todos pudessem fazer qualquer tarefa.
 
 **Dica:** faça sua tentativa antes de ler a resposta e explique qualquer revisão.
 
@@ -160,7 +159,6 @@ Ajuda a participar de conversas sem confundir cargo e responsabilidade.
 
 **Critérios específicos:** PO/SM/Developers corretos; qualidade compartilhada; especialidade sem subequipe obrigatória.
 
-**Exemplo de resposta comentada:** PO ordena backlog; Developers planejam como entregar; time mantém qualidade. Scrum Master facilita compreensão e remoção de impedimentos sem comandar tecnicamente cada tarefa.
 
 **Dica:** faça sua tentativa antes de ler a resposta e explique qualquer revisão.
 
@@ -225,7 +223,6 @@ Melhora comunicação objetiva em equipe.
 
 **Critérios específicos:** Meta útil; plano viável; ajuste preserva objetivo e qualidade.
 
-**Exemplo de resposta comentada:** Reorganizar dupla para execução em ambiente disponível, adiando melhoria de relatório. Bloqueio inclui quem precisa de apoio e horário de revisão da solução. Não marcar tarefa bloqueada como concluída.
 
 **Dica:** faça sua tentativa antes de ler a resposta e explique qualquer revisão.
 
@@ -289,7 +286,6 @@ Demonstra capacidade de receber feedback e melhorar processo.
 
 **Critérios específicos:** Distinguir eventos; não concluir item sem padrão; melhoria verificável.
 
-**Exemplo de resposta comentada:** DoD: regra atendida, cenários relevantes executados e README coerente. Ação: revisar critérios em dupla antes de iniciar; medir quantos itens voltaram por ambiguidade no próximo exercício.
 
 **Dica:** faça sua tentativa antes de ler a resposta e explique qualquer revisão.
 
@@ -354,7 +350,6 @@ Ajuda a comunicar gargalos e decisões de trabalho.
 
 **Critérios específicos:** Limite respeitado; bloqueio visível; métrica com período definido.
 
-**Exemplo de resposta comentada:** Com dois itens ativos, não puxar terceiro; ajudar a verificar ou remover bloqueio. Throughput de dois itens em uma rodada informa conclusão, sem inferir produtividade individual.
 
 **Dica:** faça sua tentativa antes de ler a resposta e explique qualquer revisão.
 
@@ -418,7 +413,6 @@ Facilita colaboração em organizações com ferramentas diferentes.
 
 **Critérios específicos:** Rastreabilidade; estado coerente; pedido acionável.
 
-**Exemplo de resposta comentada:** Meta: reserva íntegra. Progresso: sucesso/conflito verificados. Risco: RN03 falha na variante. Pedido: priorizar correção antes da liberação simulada. BUG01 ligado a US02 e TC03.
 
 **Dica:** faça sua tentativa antes de ler a resposta e explique qualquer revisão.
 
@@ -472,7 +466,7 @@ Explique cada passagem e indique onde uma evidência pode obrigar o time a volta
 
 As atividades dos tópicos formam o caderno de prática. Além delas, resolva: **Uma pessoa ficará ausente e surge um bug que afeta a reserva. Replaneje sem abandonar qualidade nem fingir capacidade inexistente.**
 
-Entregue situação inicial, decisão, evidência, consequência e uma limitação. **Referência para correção:** Recalcular capacidade, discutir impacto na meta, negociar escopo com PO e priorizar o risco. Manter critérios de qualidade; adiar item menos valioso e registrar razão. Ausência não é compensada automaticamente por pressão sobre o restante do time.
+Entregue situação inicial, decisão, evidência, consequência e uma limitação.
 
 ## Entrega final do módulo
 
