@@ -1,267 +1,200 @@
-# Script do professor — Produto, problema e PO
+# Script do Professor — Produto, Problema e Product Owner
 
-**DTEM Treinamentos · encontro ao vivo de até 90 minutos, gravado para revisão.**
+**DTEM Treinamentos · encontro ao vivo de até 90 minutos.**
 
-Este documento contém falas e ações de condução. Adaptar a linguagem ao próprio estilo, preservando conceitos,
-exemplos e critérios. Os intervalos incluem escrita, espera, interação e prática; não são 90 minutos de leitura.
-Não depende de vídeos prévios. O aluno pode consultar o E-book e rever a gravação depois.
+> **Papel deste documento:** orientar a condução da aula. O script operacionaliza o roteiro correspondente; não deve criar outra aula paralela.
 
-**Roteiro:** [planejamento da aula](../modulo-05-aula-01-produto-problema-e-po.md).  
-**Material de estudo:** [E-book correspondente](../../ebooks/modulo-05-product-owner-e-produto.md).  
-**Caso:** [Agenda Clara](../../atividades/caso-agenda-clara.md), empresa e dados fictícios.
+**Roteiro:** [Módulo 5, Aula 1](../modulo-05-aula-01-produto-problema-e-po.md)  
+**Material do aluno:** [E-book correspondente](../../ebooks/modulo-05-product-owner-e-produto.md)  
+**Caso:** [Agenda Clara](../../atividades/caso-agenda-clara.md)  
 
-## Objetivo e materiais
+## Alinhamento obrigatório
 
-**Objetivo observável:** escrever brief e distinguir funcionalidade entregue de resultado avaliado.  
-**Materiais:** dados fictícios 10 conflitos/50 tentativas, quadro e brief.
+- **Objetivo:** Ensinar o aluno a separar problema, solução, entrega e resultado, entendendo o papel de Produto e do Product Owner na organização de valor e prioridade.
+- **Demonstração central:** Do problema à hipótese mensurável.
+- **Prática em grupo:** Problema antes da solução.
+- **Exercício individual:** comparar quantidade e taxa.
+- **Tarefa:** revisar brief com métrica e uma dúvida.
 
-Antes do encontro, preparar o exemplo e conferir os recursos necessários. Em tarefas de ferramenta, preparar
-conta e ambiente com antecedência. Se a execução estiver indisponível, percorrer manualmente e declarar o método;
-publicação ou execução exigidas pela entrega devem ser concluídas depois com apoio. Não inventar evidência.
+## Antes da aula
 
-## Agenda de condução
+- [ ] Preparar exemplo 10/50.
+- [ ] Separar um brief vazio.
+- [ ] Revisar diferença entre Product Owner e Product Manager para não simplificar em excesso.
+- [ ] Deixar roteiro e script abertos.
+- [ ] Conferir materiais, dados e exemplos.
+- [ ] Separar a entrega esperada da aula.
 
-| Intervalo | Etapa | Minutos |
-|---|---|---:|
-| 00–08 | Abertura e diagnóstico | 8 |
-| 08–25 | Conceitos e exemplos | 17 |
-| 25–45 | Demonstração guiada | 20 |
-| 45–50 | Pausa | 5 |
-| 50–65 | Dinâmica em dupla ou grupo | 15 |
-| 65–77 | Exercício individual | 12 |
-| 77–85 | Correção e dúvidas | 8 |
-| 85–90 | Fechamento e tarefa | 5 |
-| Total | | 90 |
+## Agenda
 
-O roteiro original contém o caderno completo de atividades. Nesta versão, os enunciados de grupo e individual
-abaixo definem o recorte do encontro. A tarefa de casa conclui os itens restantes. Se precisar reduzir extensão,
-preservar demonstração, tentativa individual, feedback e orientação da entrega.
+| Intervalo | Etapa |
+|---|---|
+| 00–08 | Abertura e diagnóstico |
+| 08–25 | Conceitos e exemplos |
+| 25–45 | Demonstração guiada |
+| 45–50 | Pausa |
+| 50–65 | Dinâmica |
+| 65–77 | Exercício individual |
+| 77–85 | Correção e dúvidas |
+| 85–90 | Fechamento e tarefa |
 
 ## 00–08 — Abertura e diagnóstico
 
-**Mostrar:** título da aula e objetivo. **Fala de abertura:**
+> Se entregarmos três telas, podemos afirmar que o problema da recepção foi resolvido? Hoje vamos separar o que o time entrega do efeito que ainda precisa ser observado.
 
-> Se entregarmos três telas, o problema da recepção estará resolvido? Vamos separar quantidade de trabalho entregue de benefício que ainda precisa ser observado.
+**Pergunta diagnóstica:** Qual é o problema do Agenda Clara antes de falarmos em funcionalidades?
 
-**Condução:** dar dois minutos para uma previsão individual no chat ou caderno. Colher duas respostas,
-sem exigir fala de todos. Esperar aproximadamente 30 segundos antes de completar a resposta.
-Não confundir silêncio inicial com falta de capacidade; oferecer a situação concreta novamente.
+Ouça pelo menos duas respostas antes de completar.
 
-**Pergunta de diagnóstico:** “Reduzir número de conflitos sempre indica melhora?”
-
-**Referência para o professor:** Não; pode haver menos uso. Conferir denominador, definição e contexto.
-
-**Transição para a explicação:**
-
-> Vamos transformar essa primeira resposta em um raciocínio que outra pessoa consiga conferir.
-> A cada exemplo, anotem a decisão e a informação que a sustenta.
-
-## 08–25 — Explicação teórica e exemplos
-
-Dividir os 17 minutos entre as três explicações, a escrita e duas perguntas breves.
-Usar as falas como apoio, sem acrescentar uma exposição inteira do E-book.
-
-### Explicação 1 — Produto e valor
-
-**Fala sugerida:**
-
-> Um produto digital atende pessoas e continua evoluindo. Antes de escolher telas, identifique usuário e problema. O pedido de solução pode esconder outra necessidade. No caso, conflitos de agenda prejudicam recepção e clientes.
-
-**Ação:** escrever uma palavra-chave e pedir um exemplo com palavras do aluno. Se houver dúvida, pedir a entrada, regra ou situação concreta que sustenta a resposta.
-### Explicação 2 — Hipótese e medida
-
-**Fala sugerida:**
-
-> Dez conflitos em cinquenta tentativas são vinte por cento na semana fictícia. Isso é base fornecida, não resultado da nossa implementação. A hipótese é que controle de ocupação reduza conflito operacional. Precisamos de definição, período e denominador para avaliar depois.
-
-**Ação:** escrever uma palavra-chave e pedir um exemplo com palavras do aluno. Se houver dúvida, pedir a entrada, regra ou situação concreta que sustenta a resposta.
-### Explicação 3 — Papel do PO
-
-**Fala sugerida:**
-
-> No Scrum, PO responde por valor e gestão eficaz do backlog. Não é chefe técnico de toda especialidade. Consulta usuários, coopera com o time e torna decisões compreensíveis. As exigências reais da função variam; a formação oferece base para explorar produto.
-
-**Ação:** escrever uma palavra-chave e pedir um exemplo com palavras do aluno. Se houver dúvida, pedir a entrada, regra ou situação concreta que sustenta a resposta.
-
-**Mostrar no quadro:** brief Usuário / Problema / Hipótese / Medida / Pergunta pendente.
-
-**Checagem de compreensão:** “Reduzir número de conflitos sempre indica melhora?”  
-**Resposta esperada:** Não; pode haver menos uso. Conferir denominador, definição e contexto.
+**Referência para o professor:** Conflitos e dificuldades operacionais de agendamento, não a ausência de uma tela específica.
 
 **Transição:**
 
-> Agora vou percorrer um exemplo pensando em voz alta. Antes de mostrar o resultado,
-> vou pedir uma previsão. Observem onde uma regra ou evidência muda a decisão.
+> Vamos escrever o problema primeiro, formular uma hipótese e só então pensar em como medir se alguma mudança ajudou.
 
-## 25–45 — Demonstração guiada
+## 08–25 — Conceitos e exemplos
 
-**Preparação:** abrir os dados, documento, código ou cartões indicados. Reservar aproximadamente cinco minutos
-por passo e os minutos finais para uma previsão e uma dúvida. Em comandos, executar uma operação de cada vez
-e conferir estado. Não substituir falha de ambiente por uma afirmação de execução bem-sucedida.
+### 1. Problema antes da solução
 
-### Passo 1 — Definir necessidade
+**Fala sugerida:**
 
-**Fala durante a demonstração:**
+> Produto começa tentando compreender o problema. ‘Criar uma tela’ é uma solução possível; não é o problema em si.
 
-> Recepção precisa evitar confirmação duplicada. Vou descrever efeito antes de escolher botão ou integração.
+**Mostrar/fazer:** conflitos de agenda como problema e ‘botão’ como solução possível.
 
-**Ação:** mostrar o registro correspondente antes de avançar; pedir uma previsão e conferir a resposta com a evidência.
-### Passo 2 — Calcular e rotular
+**Perguntar:** Qual dor existe antes de qualquer tela?
 
-**Fala durante a demonstração:**
+**Compreensão esperada:** conflitos, perda de tempo, retrabalho ou dificuldade operacional.
 
-> 10 dividido por 50 é 0,2, ou 20%. Vou escrever 'dados fictícios' e a janela de uma semana.
+### 2. Output versus outcome
 
-**Ação:** mostrar o registro correspondente antes de avançar; pedir uma previsão e conferir a resposta com a evidência.
-### Passo 3 — Evitar resultado inventado
+**Fala sugerida:**
 
-**Fala durante a demonstração:**
+> Entregar três telas é output. Reduzir conflito ou tempo de atendimento é outcome, e precisa ser observado com dado.
 
-> Não direi que reduzimos conflitos porque ainda não medimos operação. Entregar controle e comprovar resultado são passos distintos.
+**Mostrar/fazer:** 10 conflitos em 50 tentativas = 20%.
 
-**Ação:** mostrar o registro correspondente antes de avançar; pedir uma previsão e conferir a resposta com a evidência.
+**Perguntar:** Se entregamos uma funcionalidade, já podemos afirmar que o problema melhorou?
 
-**Pergunta após a demonstração:** “Qual decisão vocês conseguem explicar sem copiar a frase que usei?”
+**Compreensão esperada:** não; é preciso medir/observar.
 
-**Referência:** a resposta precisa relacionar situação, decisão e fundamento.
-As falas de cada passo indicam o comportamento ou a interpretação que deve ser conferido.
+### 3. Papel do Product Owner
 
-**Transição:**
+**Fala sugerida:**
 
-> Na prática, vocês vão alternar quem conduz e quem revisa. O objetivo é produzir algo
-> que o colega consiga conferir, e não somente repetir minha demonstração.
+> PO ajuda a organizar valor e prioridade, mas não decide sozinho como o time implementa nem é automaticamente chefe de Dev ou QA.
+
+**Mostrar/fazer:** backlog pequeno com itens concorrentes.
+
+**Perguntar:** Quem ajuda a discutir viabilidade técnica?
+
+**Compreensão esperada:** time de desenvolvimento e outras especialidades, em colaboração.
+
+## 25–45 — Demonstração guiada — Do problema à hipótese mensurável
+
+### Passo 1 — Escrever o problema
+
+**Fazer:** Use a situação de conflito de agenda sem propor tela.
+
+**Fala sugerida:**
+
+> Se eu começo dizendo ‘precisamos de um botão’, já pulei para a solução. Quero primeiro entender o que está acontecendo e para quem.
+
+**Checar com a turma:** Peça uma frase de problema sem usar nomes de funcionalidades.
+
+### Passo 2 — Criar hipótese
+
+**Fazer:** Escreva ‘se controlarmos ocupação, esperamos reduzir conflitos’.
+
+**Fala sugerida:**
+
+> Hipótese é uma aposta testável. Ainda não é resultado.
+
+**Checar com a turma:** Pergunte o que precisaria mudar para considerar a hipótese promissora.
+
+### Passo 3 — Definir medida
+
+**Fazer:** Calcule 10/50 e rotule como linha de base.
+
+**Fala sugerida:**
+
+> O número só faz sentido com definição: período, numerador e denominador. E a linha de base não prova melhoria futura.
+
+**Checar com a turma:** Troque 10/50 por 5/10 e peça comparação de taxa, não só quantidade.
+
+**Resultado de referência:** Brief contendo problema, usuário/contexto, impacto, hipótese e métrica. Exemplo de linha base: 10 conflitos/50 tentativas = 20%, sem afirmar redução posterior.
+
+Peça previsão antes de revelar decisões ou resultados.
 
 ## 45–50 — Pausa
 
-Deixar horário de retorno visível e não apresentar conteúdo obrigatório durante os cinco minutos.
-Na gravação, indicar o ponto em que a atividade seguinte começa.
+Informar horário de retorno e não inserir conteúdo obrigatório.
 
-## 50–65 — Dinâmica em dupla ou grupo
+## 50–65 — Dinâmica — Problema antes da solução
 
-**Nome:** Revisão com explicação — Produto, problema e PO.  
-**Contexto profissional:** uma equipe precisa revisar seu trabalho antes de avançar.
-**Objetivo:** aplicar os conceitos e produzir um registro conferível no recorte da aula.
+**Cenário:** A recepção relata conflitos, demora e retrabalho; cada dupla deve construir um brief sem escolher a solução cedo demais.
 
-**Fala de orientação:**
+> Se a frase puder ser reescrita sem mencionar tela, botão ou tecnologia, provavelmente estamos mais perto do problema.
 
-> Uma pessoa começa conduzindo e a outra confere as decisões. Na metade, troquem funções.
-> Registrem o que fizeram e qual informação justifica o resultado.
-> Se discordarem, expliquem a diferença usando regra ou evidência, em vez de escolher pela maioria.
+1. Descrever problema e usuário afetado.
+2. Separar fato observado de hipótese.
+3. Propor uma métrica.
+4. Escrever uma solução candidata apenas depois do problema.
 
-**Enunciado e passo a passo:**
+**Entrega:** brief de uma página
 
-1. Escrever público e problema.
-2. Formular hipótese e medida com período.
-3. Trocar revisão e indicar uma informação ausente.
-
-**Tempo:** 2 minutos para ler e organizar; 5 para produzir; 5 para trocar revisão; 3 para compartilhar.
-Selecionar duas duplas para falar e recolher as demais por escrito. Em aulas de entrevista ou apresentação,
-usar o mesmo tempo para a primeira participação, troca e feedback.
-
-**Entrega esperada:** registro da atividade com contexto, decisão, fundamento e uma revisão.
-**Critérios:** cumprir as etapas, preservar as regras e permitir que o colega confira.
-**Referência de correção:** usar os exemplos da demonstração e verificar o que mudou no novo caso,
-sem exigir palavras idênticas.
-
-**Perguntas ao circular:** “Qual passo está sendo executado?”, “Qual evidência sustenta isso?”
-e “O que precisaria mudar para sua conclusão ser diferente?”
-
-**Dica para a dupla:** separar o que observou do que está supondo.
-**Variação difícil:** formular um contraexemplo ou limite; transferir para casa se não couber.
+**Observar:** problema claro; hipótese identificada; métrica definida; solução não tratada como certeza.
 
 ## 65–77 — Exercício individual
 
-**Fala do professor — enunciado:**
+> Uma semana teve 5 conflitos em 10 tentativas. Compare com uma base de 10 conflitos em 50 tentativas. Explique por que olhar só a quantidade pode levar a uma conclusão errada.
 
-> Uma semana teve cinco conflitos em dez tentativas. Compare com a base e explique sem confundir quantidade com taxa.
+**Entrega:** cálculo + interpretação curta
 
-**Tempo:** 2 minutos de leitura, 7 de resolução e 3 de revisão/entrega.
-Cada aluno entrega uma resposta própria, mesmo quando a atividade anterior foi em grupo.
+**Critérios:** taxas corretas; interpretação sem inventar causalidade; diferença entre volume e proporção.
 
-**Entrega:** artefato pedido no enunciado, acompanhado de uma explicação breve da decisão.
-**Critérios:** correção, completude do recorte, evidência e justificativa. Aplicar a
-[rubrica formativa](../../planejamento/analise-pedagogica.md), de 0 a 2 por critério. Referência proposta: 6/8, sem zero em correção ou evidência.
+**Ajuda graduada:** peça primeiro que calcule conflitos/tentativas em cada período.
 
-**Ajuda graduada:** pedir que identifique primeiro a entrada, regra ou exigência; depois que escolha o próximo
-passo. Não resolver todas as etapas. Registrar qual parte foi assistida e conferir transferência em uma tentativa nova.
+## 77–85 — Correção e intervenções
 
-**Gabarito comentado — revelar depois da tentativa:**
+Peça que a pessoa explique sua decisão antes da resposta de referência.
 
-> Cinco é menor que dez em número absoluto, mas 5/10 = 50%, acima da base fictícia de 20%. Mudanças de amostra e contexto exigem análise; não concluir melhora pelo número bruto.
+**Se aparecer:** o aluno escreve ‘o problema é não ter aplicativo’
 
-## 77–85 — Correção, intervenções e dúvidas
+> Isso descreve ausência de uma solução. Qual dificuldade real existe para a pessoa ou operação?
 
-**Fala para iniciar a correção:**
+**Se aparecer:** o aluno afirma ‘reduziu 50%’ sem dado posterior
 
-> Se sua resposta foi diferente, mantenha a primeira versão. Vamos descobrir em qual decisão
-> o raciocínio mudou. Corrigir e explicar a mudança faz parte da aprendizagem.
+> Que medição sustenta essa redução? Sem observação, mantenha como hipótese.
 
-**Se o aluno meta é três telas:**
+**Se aparecer:** o aluno usa número absoluto para comparar períodos diferentes
 
-> Que efeito para usuário você pretende avaliar depois da entrega?
+> Qual era o total de oportunidades em cada período? Compare uma taxa definida.
 
-**Se o aluno afirmar redução sem dados novos:**
+### Perguntas de verificação
 
-> Qual observação sustenta esse resultado? Registre como hipótese enquanto não houver evidência.
+- **Entregar funcionalidade significa gerar resultado?** — Não. A entrega é output; resultado precisa ser observado no comportamento/indicador.
+- **Hipótese é uma promessa?** — Não. É uma afirmação testável sujeita a validação.
+- **PO é chefe dos desenvolvedores?** — Não. PO organiza valor/prioridade; o time colabora sobre solução e execução.
 
-**Dúvida central da aula:** “Reduzir número de conflitos sempre indica melhora?”
+## 85–90 — Fechamento e tarefa
 
-**Como responder:**
+> Produto não é uma fábrica de requisitos. É uma disciplina de decisão sobre problema, valor, prioridade e aprendizado.
 
-> Não; pode haver menos uso. Conferir denominador, definição e contexto.
+1. Revisar o brief.
+2. Definir linha de base e fórmula da métrica.
+3. Registrar uma dúvida ainda não respondida.
+4. Entregar `m05-aula-01-revisao.md`.
 
-**Se perguntarem se a resposta precisa ser igual:**
+**Entrega:** brief revisado
 
-> Não precisa repetir minha frase. Precisa respeitar as regras e permitir que outra pessoa
-> confira como você chegou à decisão.
+**Ponte:**
 
-**Se perguntarem como usar a gravação:**
+> Na próxima aula vamos parar de supor o que o usuário precisa e praticar perguntas que ajudam a descobrir requisitos sem induzir a resposta.
 
-> Localize o trecho em que surgiu a dúvida, reveja o exemplo e depois tente uma entrada ou situação nova.
-> Assistir de novo ajuda; explicar sua própria decisão é o que vamos avaliar.
+## Pós-aula
 
-**Modelo de devolutiva:**
-
-> Você acertou ao identificar a decisão principal. Falta mostrar a informação que a sustenta.
-> Acrescente essa evidência e explique o que mudou na sua revisão.
-
-Selecionar duas dúvidas para os oito minutos. Registrar as demais para resposta após a aula ou retomada.
-Não ampliar silenciosamente a duração do encontro.
-
-## 85–90 — Fechamento e tarefa para casa
-
-**Fala de fechamento:**
-
-> Hoje trabalhamos como escrever brief e distinguir funcionalidade entregue de resultado avaliado.
-> Para revisar, procure uma decisão, a evidência que a sustenta e uma limitação que ainda precisa de atenção.
-> Guardem a primeira versão e a correção; isso ajuda a explicar a evolução no portfólio.
-
-**Pergunta de saída:** “O que você mudou na sua primeira previsão, e por quê?”
-
-**Tarefa de casa — falar à turma:**
-
-> Revisar brief e acrescentar pergunta de investigação. Completar descrição de objetivo e métrica sem inventar impacto.
-
-**Tempo-base:** 30–45 minutos para revisão. Se o enunciado exigir concluir vários artefatos, execução pendente
-ou preparação da entrega final, combinar prazo e tempo adicional explicitamente; não prometer que tudo cabe
-nesse intervalo.
-
-**Entrega:** `modulo-05-aula-01-produto-problema-e-po-revisao.md`, ou arquivos específicos pedidos, contendo resposta inicial, feedback,
-versão revisada e explicação. O professor verifica a revisão no início do encontro seguinte.
-
-**Dica:** usar E-book e gravação como apoio; identificar empresa fictícia e origem da evidência.
-**Variação difícil:** acrescentar uma situação nova ou uma dúvida de aplicação, com proposta de investigação.
-
-## Checklist do professor e uso da gravação
-
-- [ ] Preparar recursos e exemplo antes do encontro.
-- [ ] Pedir previsão antes de revelar referência.
-- [ ] Conferir compreensão por exemplo, não por memorização.
-- [ ] Alternar condução e revisão na dupla.
-- [ ] Preservar exercício individual.
-- [ ] Declarar execução, simulação e limites corretamente.
-- [ ] Registrar feedback, tarefa e dúvidas pendentes.
-- [ ] Disponibilizar gravação para revisão e indicar os blocos de demonstração e correção.
-
-Percentual de vídeo assistido é sinal de utilização, não prova de domínio.
-Usar artefato e explicação para avaliar aprendizagem; não penalizar o aluno por uma falha de registro de reprodução.
+- [ ] Disponibilizar gravação.
+- [ ] Registrar dúvidas e lacunas recorrentes.
+- [ ] Conferir se demonstração, prática e tarefa seguiram o roteiro.
+- [ ] Atualizar roteiro e script juntos se alguma regra mudar.

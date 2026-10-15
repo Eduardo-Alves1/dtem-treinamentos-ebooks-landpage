@@ -1,119 +1,125 @@
-# Roteiro — Módulo 6, Aula 3
+# Roteiro de Aula — Módulo 6, Aula 3
 
-**Condução com falas prontas:** [script do professor](scripts/modulo-06-aula-03-review-retrospectiva-e-dod.md). Seguir a sequência de até 90 minutos. As atividades abaixo formam o caderno completo; o script define o recorte ao vivo e a conclusão em casa. A gravação serve para revisão posterior.
+# Review, Retrospectiva e Definition of Done
 
-## Tema e objetivo da aula
+> **Papel deste documento:** definir o que será ensinado, praticado e avaliado.  
+> A condução minuto a minuto, falas sugeridas, respostas esperadas e intervenções ficam no [script do professor](scripts/modulo-06-aula-03-review-retrospectiva-e-dod.md).
 
-**Tema:** Review, Retrospectiva e DoD. **Objetivo observável:** distinguir resultado e processo e definir conclusão.
+## Objetivo da aula
 
-**Leitura:** [E-book do módulo](../ebooks/modulo-06-gestao-de-projetos-tech.md), tópicos 4. **Pré-requisito:** atividade da aula anterior, com retomada da lacuna identificada no feedback.
+Diferenciar inspeção de produto, melhoria de processo e critério de conclusão, usando Review, Retrospectiva e Definition of Done de forma coerente.
 
-## Duração sugerida
+Ao final, o aluno deverá conseguir:
 
-| Etapa | Minutos |
+- explicar propósito da Sprint Review
+- explicar propósito da Retrospectiva
+- usar DoD para decidir se trabalho está concluído
+- transformar feedback em backlog
+- definir ação de melhoria observável
+
+## Conteúdos e conceitos
+
+### Sprint Review
+- inspecionar resultado
+- colaborar sobre próximos passos
+- não é apenas apresentação
+
+### Retrospectiva
+- inspecionar modo de trabalhar
+- escolher melhoria
+- ação concreta
+
+### Definition of Done
+- critério compartilhado de conclusão
+- qualidade mínima
+- não adaptar silenciosamente por pressão
+
+## Duração e blocos
+
+| Bloco | Tempo previsto |
 |---|---:|
-| Abertura e diagnóstico | 8 |
-| Conceitos e exemplos | 17 |
-| Demonstração guiada | 20 |
-| Pausa | 5 |
-| Dinâmica em dupla ou grupo | 15 |
-| Exercício individual | 12 |
-| Correção e dúvidas | 8 |
-| Fechamento e orientação da tarefa | 5 |
-| Total | 90 |
+| Abertura e diagnóstico | 8 min |
+| Conceitos e exemplos | 17 min |
+| Demonstração guiada | 20 min |
+| Pausa | 5 min |
+| Dinâmica em dupla ou grupo | 15 min |
+| Exercício individual | 12 min |
+| Correção e dúvidas | 8 min |
+| Fechamento e tarefa | 5 min |
+| **Total** | **90 min** |
 
 ## Materiais necessários
 
-entregas e evidências. Usar [caderno do caso](../atividades/caso-agenda-clara.md), editor de Markdown ou papel e [laboratório](../portfolio/agenda-clara/README.md). Testar o ambiente antes da aula. Contas de ferramentas são opcionais quando houver alternativa documental; evidência de execução continua necessária quando o enunciado a solicitar.
+- E-book do Módulo 6
+- quadro de Sprint
+- exemplo de DoD
+- notas de Review/Retro
 
-## Abertura da aula
+## Exemplos planejados
 
-Apresente um item com aceite atendido, mas documentação desatualizada. Dê dois minutos para registrar uma previsão individual, recolha duas respostas e pergunte qual evidência seria necessária. Retome um conceito anterior e anuncie a entrega de hoje.
+### Exemplo 1
+Item com cenário feliz mas sem regressão exigida.
 
-## Explicação teórica e exemplos práticos
+### Exemplo 2
+Feedback de Review virando backlog.
 
-### Review, Retrospectiva e Definition of Done
+### Exemplo 3
+Ação de Retro com critério verificável.
 
-**Conceito:** Review inspeciona produto; Retrospectiva inspeciona o modo de trabalhar; DoD define padrão comum de conclusão.
+## Demonstração planejada — Classificar item e transformar feedback em ação
 
-**Explicação simples:** Uma conversa pergunta se entregamos algo útil; a outra pergunta como melhorar nossa forma de trabalhar.
+1. Aplicar DoD a um item.
+2. Decidir concluído/incompleto.
+3. Simular feedback de Review.
+4. Converter feedback em backlog.
+5. Escolher uma melhoria de Retro com sinal de verificação.
 
-**Aprofundamento:** Review envolve resultado e feedback para ajustar próximos passos, não apenas apresentação ou aprovação formal. Retrospectiva identifica melhoria concreta para efetividade e qualidade. DoD aplica padrão comum: código ou artefato revisto, evidência relevante e documentação atualizada no laboratório. Critérios de aceite são específicos por história. Item que não atende DoD não integra incremento concluído. Registrar estado real evita demonstrar documentação como se fosse funcionalidade implementada.
+**Resultado pedagógico esperado:** o aluno não mistura inspeção do produto com melhoria do processo.
 
-**Exemplo cotidiano:** Uma demonstração pode agradar, mas a equipe ainda precisa discutir atrasos e causas de retrabalho em outro momento.
+## Dinâmica em grupo — Inspecionar e melhorar
 
-**Cenário empresarial:** Na Review, recepção pede clareza do cancelamento; na Retrospectiva, time decide revisar critérios antes de iniciar.
+**Cenário:** A equipe encerra uma rodada com um item incompleto e recebeu feedback de negócio.
 
-**Erros a observar:** Misturar produto e processo; concluir por pressão de prazo; aceitar teste sem versão.
+1. Aplicar DoD.
+2. Preparar como apresentar na Review.
+3. Registrar feedback no backlog.
+4. Definir uma ação de Retro.
 
-**Orientação:** Resultado verificável e ação de melhoria com responsável e medida.
+**Entrega esperada:** decisão de DoD + nota de Review + ação de Retro
 
-Distribua os 17 minutos entre os tópicos. Peça um exemplo com palavras do aluno antes de avançar; se houver uma contradição, retome a regra do caso.
-
-## Demonstração guiada
-
-Aplique DoD e classifique concluído/incompleto.
-
-**Exemplo 1:** DoD: regra atendida, cenários relevantes executados e README coerente. Ação: revisar critérios em dupla antes de iniciar; medir quantos itens voltaram por ambiguidade no próximo exercício.
-
-Interrompa antes do resultado para pedir uma previsão. Revele uma etapa de cada vez, marque a regra e compare a resposta com a evidência. Não concluir correção apenas pela aparência do arquivo.
-
-## Dinâmica em grupo
-
-**Nome:** Inspecionar e melhorar. **Contexto:** a equipe precisa revisar uma decisão antes de avançar o MVP. Em duplas, uma pessoa produz e outra confere; trocar funções na metade do tempo. Em grupos maiores, adicionar um papel de registro.
-
-**Distribuição:** 2 minutos de leitura; 5 de execução; 5 de revisão cruzada; 3 de compartilhamento. Se houver mais de duas duplas, recolher as demais conclusões por escrito para caber no tempo.
-
-**Atividade 4: Conduzir Review e Retrospectiva**
-
-**Contexto profissional:** o time da empresa fictícia Agenda Clara precisa revisar esta decisão antes de entregar o MVP. Dados e regras no [caderno do caso](../atividades/caso-agenda-clara.md).
-
-**Objetivo:** Conduzir Review e Retrospectiva, com registro que permita conferência por outra pessoa.
-
-**Passo a passo:**
-
-1. Defina DoD com três condições verificáveis.
-2. Demonstre um item concluído e um incompleto.
-3. Registre feedback sobre produto.
-4. Escolha uma melhoria de processo, responsável e sinal de sucesso.
-
-**Entrega esperada:** DoD, notas de Review e uma ação de Retrospectiva Identificar nome, versão ou premissas, regra utilizada e justificativa. Nome sugerido: `m06-atividade-04.md`.
-
-**Critérios específicos:** Distinguir eventos; não concluir item sem padrão; melhoria verificável.
-
-**Exemplo de resposta comentada:** DoD: regra atendida, cenários relevantes executados e README coerente. Ação: revisar critérios em dupla antes de iniciar; medir quantos itens voltaram por ambiguidade no próximo exercício.
-
-**Dica:** faça sua tentativa antes de ler a resposta e explique qualquer revisão.
-
-**Variação mais difícil:** Um item atende aceite, mas não tem evidência de teste. Pode ser concluído pela DoD proposta?
-
+**Critérios:** eventos não confundidos; DoD aplicada; feedback separado de defeito; ação verificável.
 
 ## Exercício individual
 
-Defina uma ação de melhoria com responsável e sinal verificável.
+Defina uma ação de melhoria para reduzir itens que chegam à execução com critérios ambíguos. Inclua responsável pelo acompanhamento, quando será feita e qual sinal permitirá verificar se aconteceu.
 
-**Tempo:** 12 minutos. **Entrega:** uma versão própria do artefato, incluindo regra, decisão e evidência. **Avaliação:** critérios específicos acima e rubrica do E-book. O professor verifica se houve transferência para o novo caso. Se houver ajuda, registrar qual etapa foi assistida.
+**Entrega:** ação de melhoria
 
-## Perguntas para os alunos
+**Critérios:** ação específica; momento definido; sinal verificável; sem culpar pessoa.
 
-- O que mudou no produto?
-- O que mudará no processo?
-- Qual parte da sua previsão você reviu e qual evidência motivou a mudança?
+## Perguntas de verificação
 
-## Possíveis dúvidas e como responder
+- Review e Retrospectiva discutem a mesma coisa?
+- DoD pode ser ignorada porque o prazo apertou?
+- Feedback novo significa que o item anterior estava errado?
 
-| Dúvida | Resposta |
-|---|---|
-| Review é só demo? | É discussão sobre resultado e próximos passos. |
-| DoD é aceite? | DoD é padrão comum; aceite é específico. |
-| Preciso copiar a resposta de referência? | Não; preserve as regras e explique sua decisão com evidência. |
-
-## Correção e fechamento
-
-As respostas de referência estão na demonstração. Não exigir frases idênticas; conferir critérios e raciocínio. Cada aluno completa: “Usei ___ para decidir ___ e confirmei com ___”. Relacionar à entrega do módulo: plano de Sprint simulada, quadro com políticas e limites, registros de Daily, Review e Retrospectiva e análise de capacidade. Fluxo e ferramentas apoiam visibilidade.
+> As respostas esperadas e intervenções ficam exclusivamente no script do professor.
 
 ## Tarefa para casa
 
-Revisar notas dos eventos.
+1. Revisar a aplicação da DoD.
+2. Registrar um feedback de Review.
+3. Registrar uma ação de Retro.
+4. Entregar `m06-aula-03-revisao.md`.
 
-**Tempo sugerido:** 30–45 minutos. Entregar `m06-aula-03-revisao.md` com resposta inicial, feedback, versão revisada e explicação da mudança. O professor verifica a revisão no próximo encontro.
+**Entrega:** pacote de eventos revisado
+
+## Conexão com a trilha
+
+A Aula 4 introduz Kanban, WIP, métricas de fluxo e comunicação visual do trabalho.
+
+## Referências
+
+- [E-book correspondente](../ebooks/modulo-06-gestao-de-projetos-tech.md)
+- [Caso Agenda Clara](../atividades/caso-agenda-clara.md)
+- [Script do professor](scripts/modulo-06-aula-03-review-retrospectiva-e-dod.md)

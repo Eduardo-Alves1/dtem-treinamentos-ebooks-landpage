@@ -1,267 +1,200 @@
-# Script do professor — Levantamento e requisitos
+# Script do Professor — Levantamento e Requisitos
 
-**DTEM Treinamentos · encontro ao vivo de até 90 minutos, gravado para revisão.**
+**DTEM Treinamentos · encontro ao vivo de até 90 minutos.**
 
-Este documento contém falas e ações de condução. Adaptar a linguagem ao próprio estilo, preservando conceitos,
-exemplos e critérios. Os intervalos incluem escrita, espera, interação e prática; não são 90 minutos de leitura.
-Não depende de vídeos prévios. O aluno pode consultar o E-book e rever a gravação depois.
+> **Papel deste documento:** orientar a condução da aula. O script operacionaliza o roteiro correspondente; não deve criar outra aula paralela.
 
-**Roteiro:** [planejamento da aula](../modulo-05-aula-02-levantamento-e-requisitos.md).  
-**Material de estudo:** [E-book correspondente](../../ebooks/modulo-05-product-owner-e-produto.md).  
-**Caso:** [Agenda Clara](../../atividades/caso-agenda-clara.md), empresa e dados fictícios.
+**Roteiro:** [Módulo 5, Aula 2](../modulo-05-aula-02-levantamento-e-requisitos.md)  
+**Material do aluno:** [E-book correspondente](../../ebooks/modulo-05-product-owner-e-produto.md)  
+**Caso:** [Agenda Clara](../../atividades/caso-agenda-clara.md)  
 
-## Objetivo e materiais
+## Alinhamento obrigatório
 
-**Objetivo observável:** realizar entrevista simulada e classificar requisitos e hipóteses.  
-**Materiais:** perguntas abertas, caso Agenda Clara e tabela Fonte / Informação / Classificação.
+- **Objetivo:** Praticar levantamento de requisitos com perguntas abertas, registro de evidências e classificação entre requisito, restrição, hipótese e ambiguidade.
+- **Demonstração central:** Transformar perguntas e classificar respostas.
+- **Prática em grupo:** Recepção e analista.
+- **Exercício individual:** reescrever perguntas indutivas e classificar requisitos.
+- **Tarefa:** revisar entrevista e classificação.
 
-Antes do encontro, preparar o exemplo e conferir os recursos necessários. Em tarefas de ferramenta, preparar
-conta e ambiente com antecedência. Se a execução estiver indisponível, percorrer manualmente e declarar o método;
-publicação ou execução exigidas pela entrega devem ser concluídas depois com apoio. Não inventar evidência.
+## Antes da aula
 
-## Agenda de condução
+- [ ] Preparar exemplos de perguntas indutivas.
+- [ ] Revisar RN02.
+- [ ] Separar cartões ou tabela de classificação.
+- [ ] Deixar roteiro e script abertos.
+- [ ] Conferir materiais, dados e exemplos.
+- [ ] Separar a entrega esperada da aula.
 
-| Intervalo | Etapa | Minutos |
-|---|---|---:|
-| 00–08 | Abertura e diagnóstico | 8 |
-| 08–25 | Conceitos e exemplos | 17 |
-| 25–45 | Demonstração guiada | 20 |
-| 45–50 | Pausa | 5 |
-| 50–65 | Dinâmica em dupla ou grupo | 15 |
-| 65–77 | Exercício individual | 12 |
-| 77–85 | Correção e dúvidas | 8 |
-| 85–90 | Fechamento e tarefa | 5 |
-| Total | | 90 |
+## Agenda
 
-O roteiro original contém o caderno completo de atividades. Nesta versão, os enunciados de grupo e individual
-abaixo definem o recorte do encontro. A tarefa de casa conclui os itens restantes. Se precisar reduzir extensão,
-preservar demonstração, tentativa individual, feedback e orientação da entrega.
+| Intervalo | Etapa |
+|---|---|
+| 00–08 | Abertura e diagnóstico |
+| 08–25 | Conceitos e exemplos |
+| 25–45 | Demonstração guiada |
+| 45–50 | Pausa |
+| 50–65 | Dinâmica |
+| 65–77 | Exercício individual |
+| 77–85 | Correção e dúvidas |
+| 85–90 | Fechamento e tarefa |
 
 ## 00–08 — Abertura e diagnóstico
 
-**Mostrar:** título da aula e objetivo. **Fala de abertura:**
+> Perguntar ‘você quer um relatório bonito?’ parece útil, mas talvez só confirme a nossa própria ideia. Hoje vamos aprender a descobrir necessidade antes de oferecer solução.
 
-> 'Você quer um relatório bonito?' ajuda a descobrir a necessidade? Vamos fazer perguntas que permitam à recepção explicar o problema com exemplos.
+**Pergunta diagnóstica:** Qual diferença entre perguntar ‘você quer X?’ e ‘conte a última vez que isso aconteceu’?
 
-**Condução:** dar dois minutos para uma previsão individual no chat ou caderno. Colher duas respostas,
-sem exigir fala de todos. Esperar aproximadamente 30 segundos antes de completar a resposta.
-Não confundir silêncio inicial com falta de capacidade; oferecer a situação concreta novamente.
+Ouça pelo menos duas respostas antes de completar.
 
-**Pergunta de diagnóstico:** “Uma resposta simulada é evidência de usuário real?”
-
-**Referência para o professor:** Não; marcar origem e hipótese explicitamente.
-
-**Transição para a explicação:**
-
-> Vamos transformar essa primeira resposta em um raciocínio que outra pessoa consiga conferir.
-> A cada exemplo, anotem a decisão e a informação que a sustenta.
-
-## 08–25 — Explicação teórica e exemplos
-
-Dividir os 17 minutos entre as três explicações, a escrita e duas perguntas breves.
-Usar as falas como apoio, sem acrescentar uma exposição inteira do E-book.
-
-### Explicação 1 — Escutar antes de sugerir
-
-**Fala sugerida:**
-
-> Perguntas abertas pedem uma situação, frequência, impacto e modo atual de trabalho. 'Conte a última ocorrência de conflito' produz informação diferente de oferecer uma solução pronta. Confirme entendimento com a pessoa.
-
-**Ação:** escrever uma palavra-chave e pedir um exemplo com palavras do aluno. Se houver dúvida, pedir a entrada, regra ou situação concreta que sustenta a resposta.
-### Explicação 2 — Classificar
-
-**Fala sugerida:**
-
-> Requisito funcional descreve comportamento. Característica de qualidade precisa ser verificável. Restrição limita a solução. 'Rápido' é ambíguo até definir cenário e medida. Uma necessidade de qualidade pode ser essencial, não secundária.
-
-**Ação:** escrever uma palavra-chave e pedir um exemplo com palavras do aluno. Se houver dúvida, pedir a entrada, regra ou situação concreta que sustenta a resposta.
-### Explicação 3 — Fonte e hipótese
-
-**Fala sugerida:**
-
-> Nesta entrevista, o cenário é fictício. Use informações fornecidas e marque respostas adicionais como hipótese de simulação. Não transformar conversa inventada em pesquisa real. Registrar ambiguidade e como validá-la faz parte da entrega.
-
-**Ação:** escrever uma palavra-chave e pedir um exemplo com palavras do aluno. Se houver dúvida, pedir a entrada, regra ou situação concreta que sustenta a resposta.
-
-**Mostrar no quadro:** roteiro de entrevista e tabela Informação / Fonte / Funcional, qualidade ou restrição.
-
-**Checagem de compreensão:** “Uma resposta simulada é evidência de usuário real?”  
-**Resposta esperada:** Não; marcar origem e hipótese explicitamente.
+**Referência para o professor:** A segunda tende a revelar contexto e comportamento sem induzir uma solução específica.
 
 **Transição:**
 
-> Agora vou percorrer um exemplo pensando em voz alta. Antes de mostrar o resultado,
-> vou pedir uma previsão. Observem onde uma regra ou evidência muda a decisão.
+> Vamos praticar escuta, classificar o que aprendemos e deixar explícito o que ainda é dúvida.
 
-## 25–45 — Demonstração guiada
+## 08–25 — Conceitos e exemplos
 
-**Preparação:** abrir os dados, documento, código ou cartões indicados. Reservar aproximadamente cinco minutos
-por passo e os minutos finais para uma previsão e uma dúvida. Em comandos, executar uma operação de cada vez
-e conferir estado. Não substituir falha de ambiente por uma afirmação de execução bem-sucedida.
+### 1. Perguntas de descoberta
+
+**Fala sugerida:**
+
+> Perguntar ‘você quer um botão?’ empurra uma solução. Perguntar ‘conte a última vez que o conflito aconteceu’ revela contexto e comportamento.
+
+**Mostrar/fazer:** duas versões da mesma pergunta.
+
+**Perguntar:** Qual delas gera mais informação sobre o problema?
+
+**Compreensão esperada:** a aberta/situacional.
+
+### 2. Classificação de requisitos
+
+**Fala sugerida:**
+
+> Nem toda frase de uma conversa vira requisito do mesmo tipo. Classificar ajuda a saber o que precisa ser esclarecido ou verificado.
+
+**Mostrar/fazer:** RN02, dados fictícios e ‘resposta rápida’.
+
+**Perguntar:** Qual item ainda está vago?
+
+**Compreensão esperada:** ‘rápido’ sem cenário/limite.
+
+### 3. Fonte e rastreabilidade
+
+**Fala sugerida:**
+
+> Registrar origem permite voltar à pessoa certa e evita transformar interpretação em fato.
+
+**Mostrar/fazer:** nota de entrevista com citação parafraseada e hipótese separada.
+
+**Perguntar:** O que é observação e o que é interpretação?
+
+**Compreensão esperada:** o aluno separa relato/evidência de conclusão própria.
+
+## 25–45 — Demonstração guiada — Transformar perguntas e classificar respostas
 
 ### Passo 1 — Reescrever pergunta
 
-**Fala durante a demonstração:**
+**Fazer:** Troque ‘você quer um relatório bonito?’ por pergunta sobre situação.
 
-> Troco 'quer pagamento?' por 'em que momento o pagamento causa dificuldade e o que acontece depois?'. Quero entender objetivo.
+**Fala sugerida:**
 
-**Ação:** mostrar o registro correspondente antes de avançar; pedir uma previsão e conferir a resposta com a evidência.
-### Passo 2 — Classificar exemplos
+> Quero aprender com a experiência da pessoa, não confirmar a solução que eu trouxe.
 
-**Fala durante a demonstração:**
+**Checar com a turma:** Peça outra versão aberta.
 
-> Uma reserva ativa por horário é comportamento. Dados fictícios são restrição educacional. 'Carregar rápido' exige condição de medição.
+### Passo 2 — Classificar respostas
 
-**Ação:** mostrar o registro correspondente antes de avançar; pedir uma previsão e conferir a resposta com a evidência.
+**Fazer:** Use cartões funcional/restrição/hipótese/ambiguidade.
+
+**Fala sugerida:**
+
+> Classificar não é burocracia; é reconhecer o tipo de decisão que ainda precisamos tomar.
+
+**Checar com a turma:** Peça classificação de RN02 e dados fictícios.
+
 ### Passo 3 — Registrar pendência
 
-**Fala durante a demonstração:**
+**Fazer:** Escreva ‘rápido’ como termo ainda não mensurável.
 
-> Quem pode cancelar? O laboratório não possui login; essa decisão fica como questão de extensão, sem fingir implementação.
+**Fala sugerida:**
 
-**Ação:** mostrar o registro correspondente antes de avançar; pedir uma previsão e conferir a resposta com a evidência.
+> Se não conseguimos verificar, não finja precisão. Registre a dúvida e defina como investigá-la.
 
-**Pergunta após a demonstração:** “Qual decisão vocês conseguem explicar sem copiar a frase que usei?”
+**Checar com a turma:** Pergunte que cenário tornaria ‘rápido’ discutível.
 
-**Referência:** a resposta precisa relacionar situação, decisão e fundamento.
-As falas de cada passo indicam o comportamento ou a interpretação que deve ser conferido.
+**Resultado de referência:** Exemplo: ‘Conte a última situação de conflito’ é aberta; RN02 é funcional; uso de dados fictícios é restrição educacional; ‘rápido’ é ambíguo até haver cenário e limite.
 
-**Transição:**
-
-> Na prática, vocês vão alternar quem conduz e quem revisa. O objetivo é produzir algo
-> que o colega consiga conferir, e não somente repetir minha demonstração.
+Peça previsão antes de revelar decisões ou resultados.
 
 ## 45–50 — Pausa
 
-Deixar horário de retorno visível e não apresentar conteúdo obrigatório durante os cinco minutos.
-Na gravação, indicar o ponto em que a atividade seguinte começa.
+Informar horário de retorno e não inserir conteúdo obrigatório.
 
-## 50–65 — Dinâmica em dupla ou grupo
+## 50–65 — Dinâmica — Recepção e analista
 
-**Nome:** Revisão com explicação — Levantamento e requisitos.  
-**Contexto profissional:** uma equipe precisa revisar seu trabalho antes de avançar.
-**Objetivo:** aplicar os conceitos e produzir um registro conferível no recorte da aula.
+**Cenário:** Em duplas, uma pessoa representa a recepção e a outra conduz uma entrevista curta sobre conflitos de agenda.
 
-**Fala de orientação:**
+> Quem entrevista deve resistir à vontade de explicar a solução. O objetivo é compreender a situação.
 
-> Uma pessoa começa conduzindo e a outra confere as decisões. Na metade, troquem funções.
-> Registrem o que fizeram e qual informação justifica o resultado.
-> Se discordarem, expliquem a diferença usando regra ou evidência, em vez de escolher pela maioria.
+1. Preparar três perguntas abertas.
+2. Conduzir entrevista de cinco minutos.
+3. Registrar fatos, hipóteses e dúvidas separadamente.
+4. Trocar papéis e revisar uma pergunta indutiva.
 
-**Enunciado e passo a passo:**
+**Entrega:** roteiro + notas classificadas
 
-1. Preparar três das cinco perguntas da entrega.
-2. Entrevistar por cinco minutos com base no caso.
-3. Trocar papel e registrar uma ambiguidade e uma hipótese.
-
-**Tempo:** 2 minutos para ler e organizar; 5 para produzir; 5 para trocar revisão; 3 para compartilhar.
-Selecionar duas duplas para falar e recolher as demais por escrito. Em aulas de entrevista ou apresentação,
-usar o mesmo tempo para a primeira participação, troca e feedback.
-
-**Entrega esperada:** registro da atividade com contexto, decisão, fundamento e uma revisão.
-**Critérios:** cumprir as etapas, preservar as regras e permitir que o colega confira.
-**Referência de correção:** usar os exemplos da demonstração e verificar o que mudou no novo caso,
-sem exigir palavras idênticas.
-
-**Perguntas ao circular:** “Qual passo está sendo executado?”, “Qual evidência sustenta isso?”
-e “O que precisaria mudar para sua conclusão ser diferente?”
-
-**Dica para a dupla:** separar o que observou do que está supondo.
-**Variação difícil:** formular um contraexemplo ou limite; transferir para casa se não couber.
+**Observar:** perguntas abertas; fonte/contexto registrado; hipóteses separadas; ambiguidade identificada.
 
 ## 65–77 — Exercício individual
 
-**Fala do professor — enunciado:**
+> Reescreva duas perguntas indutivas como abertas. Depois classifique RN02, o uso de dados fictícios e a frase ‘o sistema precisa ser rápido’. Para a última, escreva uma pergunta de esclarecimento.
 
-> Reescreva duas perguntas indutivas como abertas. Classifique RN02 e a restrição de dados fictícios e proponha validação para 'rápido'.
+**Entrega:** quatro respostas classificadas
 
-**Tempo:** 2 minutos de leitura, 7 de resolução e 3 de revisão/entrega.
-Cada aluno entrega uma resposta própria, mesmo quando a atividade anterior foi em grupo.
+**Critérios:** perguntas não indutivas; classificação coerente; ambiguidade reconhecida; pergunta de validação útil.
 
-**Entrega:** artefato pedido no enunciado, acompanhado de uma explicação breve da decisão.
-**Critérios:** correção, completude do recorte, evidência e justificativa. Aplicar a
-[rubrica formativa](../../planejamento/analise-pedagogica.md), de 0 a 2 por critério. Referência proposta: 6/8, sem zero em correção ou evidência.
+**Ajuda graduada:** dê o início ‘conte uma situação em que...’ para destravar a pergunta.
 
-**Ajuda graduada:** pedir que identifique primeiro a entrada, regra ou exigência; depois que escolha o próximo
-passo. Não resolver todas as etapas. Registrar qual parte foi assistida e conferir transferência em uma tentativa nova.
+## 77–85 — Correção e intervenções
 
-**Gabarito comentado — revelar depois da tentativa:**
+Peça que a pessoa explique sua decisão antes da resposta de referência.
 
-> RN02 é funcional; dados fictícios limitam o exercício. Para rapidez, pedir fluxo, ambiente e limiar antes de escrever critério. Aceitar outras perguntas abertas que não ofereçam resposta pronta.
+**Se aparecer:** a entrevista vira demonstração da solução
 
-## 77–85 — Correção, intervenções e dúvidas
+> Volte ao problema. Que pergunta ajudaria a pessoa contar uma situação real sem aprovar nossa ideia?
 
-**Fala para iniciar a correção:**
+**Se aparecer:** o aluno transforma hipótese em requisito confirmado
 
-> Se sua resposta foi diferente, mantenha a primeira versão. Vamos descobrir em qual decisão
-> o raciocínio mudou. Corrigir e explicar a mudança faz parte da aprendizagem.
+> Qual fonte ou decisão confirmou isso? Se não existe, mantenha como hipótese.
 
-**Se o aluno pergunta já contém solução:**
+**Se aparecer:** o aluno mede ‘rápido’ sem contexto
 
-> Qual situação você quer entender antes de pedir essa função?
+> Rápido para qual ação, em qual condição e comparado a quê?
 
-**Se o aluno resposta extra tratada como fato:**
+### Perguntas de verificação
 
-> Onde essa informação foi fornecida e como confirmaremos?
+- **Pergunta fechada é sempre ruim?** — Não. Pode confirmar algo específico; o problema é usá-la cedo demais e limitar descoberta.
+- **Tudo que o usuário pede vira requisito?** — Não. Pode ser sugestão, solução proposta, preferência ou hipótese; precisa de contexto e decisão.
+- **Como lidar com ‘o sistema precisa ser rápido’?** — Definir cenário, operação, limite/medida e contexto antes de tratá-lo como requisito verificável.
 
-**Dúvida central da aula:** “Uma resposta simulada é evidência de usuário real?”
+## 85–90 — Fechamento e tarefa
 
-**Como responder:**
+> Boa análise de requisitos não é escrever frases bonitas; é reduzir ambiguidade sem inventar certeza.
 
-> Não; marcar origem e hipótese explicitamente.
+1. Revisar as perguntas.
+2. Classificar respostas e pendências.
+3. Registrar uma nova dúvida de descoberta.
+4. Entregar `m05-aula-02-revisao.md`.
 
-**Se perguntarem se a resposta precisa ser igual:**
+**Entrega:** roteiro de entrevista revisado + classificação
 
-> Não precisa repetir minha frase. Precisa respeitar as regras e permitir que outra pessoa
-> confira como você chegou à decisão.
+**Ponte:**
 
-**Se perguntarem como usar a gravação:**
+> Na próxima aula vamos pegar o que descobrimos e escrever histórias e critérios que Produto, Dev e QA consigam discutir juntos.
 
-> Localize o trecho em que surgiu a dúvida, reveja o exemplo e depois tente uma entrada ou situação nova.
-> Assistir de novo ajuda; explicar sua própria decisão é o que vamos avaliar.
+## Pós-aula
 
-**Modelo de devolutiva:**
-
-> Você acertou ao identificar a decisão principal. Falta mostrar a informação que a sustenta.
-> Acrescente essa evidência e explique o que mudou na sua revisão.
-
-Selecionar duas dúvidas para os oito minutos. Registrar as demais para resposta após a aula ou retomada.
-Não ampliar silenciosamente a duração do encontro.
-
-## 85–90 — Fechamento e tarefa para casa
-
-**Fala de fechamento:**
-
-> Hoje trabalhamos como realizar entrevista simulada e classificar requisitos e hipóteses.
-> Para revisar, procure uma decisão, a evidência que a sustenta e uma limitação que ainda precisa de atenção.
-> Guardem a primeira versão e a correção; isso ajuda a explicar a evolução no portfólio.
-
-**Pergunta de saída:** “O que você mudou na sua primeira previsão, e por quê?”
-
-**Tarefa de casa — falar à turma:**
-
-> Completar cinco perguntas e registro de entrevista; classificar três requisitos e uma restrição. Revisar fontes e pendências.
-
-**Tempo-base:** 30–45 minutos para revisão. Se o enunciado exigir concluir vários artefatos, execução pendente
-ou preparação da entrega final, combinar prazo e tempo adicional explicitamente; não prometer que tudo cabe
-nesse intervalo.
-
-**Entrega:** `modulo-05-aula-02-levantamento-e-requisitos-revisao.md`, ou arquivos específicos pedidos, contendo resposta inicial, feedback,
-versão revisada e explicação. O professor verifica a revisão no início do encontro seguinte.
-
-**Dica:** usar E-book e gravação como apoio; identificar empresa fictícia e origem da evidência.
-**Variação difícil:** acrescentar uma situação nova ou uma dúvida de aplicação, com proposta de investigação.
-
-## Checklist do professor e uso da gravação
-
-- [ ] Preparar recursos e exemplo antes do encontro.
-- [ ] Pedir previsão antes de revelar referência.
-- [ ] Conferir compreensão por exemplo, não por memorização.
-- [ ] Alternar condução e revisão na dupla.
-- [ ] Preservar exercício individual.
-- [ ] Declarar execução, simulação e limites corretamente.
-- [ ] Registrar feedback, tarefa e dúvidas pendentes.
-- [ ] Disponibilizar gravação para revisão e indicar os blocos de demonstração e correção.
-
-Percentual de vídeo assistido é sinal de utilização, não prova de domínio.
-Usar artefato e explicação para avaliar aprendizagem; não penalizar o aluno por uma falha de registro de reprodução.
+- [ ] Disponibilizar gravação.
+- [ ] Registrar dúvidas e lacunas recorrentes.
+- [ ] Conferir se demonstração, prática e tarefa seguiram o roteiro.
+- [ ] Atualizar roteiro e script juntos se alguma regra mudar.

@@ -1,160 +1,126 @@
-# Roteiro — Módulo 5, Aula 3
+# Roteiro de Aula — Módulo 5, Aula 3
 
-**Condução com falas prontas:** [script do professor](scripts/modulo-05-aula-03-historias-e-criterios.md). Seguir a sequência de até 90 minutos. As atividades abaixo formam o caderno completo; o script define o recorte ao vivo e a conclusão em casa. A gravação serve para revisão posterior.
+# User Stories e Critérios de Aceite
 
-## Tema e objetivo da aula
+> **Papel deste documento:** definir o que será ensinado, praticado e avaliado.  
+> A condução minuto a minuto, falas sugeridas, respostas esperadas e intervenções ficam no [script do professor](scripts/modulo-05-aula-03-historias-e-criterios.md).
 
-**Tema:** Histórias e critérios. **Objetivo observável:** escrever três histórias e critérios positivos e negativos.
+## Objetivo da aula
 
-**Leitura:** [E-book do módulo](../ebooks/modulo-05-product-owner-e-produto.md), tópicos 3, 4. **Pré-requisito:** atividade da aula anterior, com retomada da lacuna identificada no feedback.
+Transformar necessidades em User Stories compreensíveis e critérios de aceite positivos e negativos que possam ser discutidos e testados.
 
-## Duração sugerida
+Ao final, o aluno deverá conseguir:
 
-| Etapa | Minutos |
+- escrever história com usuário, necessidade e valor
+- evitar histórias tautológicas
+- criar critérios observáveis
+- relacionar critérios a regras e testes
+- identificar dependências e perguntas em aberto
+
+## Conteúdos e conceitos
+
+### História como conversa
+- quem
+- o que
+- por quê
+- não substitui refinamento
+
+### Critério de aceite
+- comportamento observável
+- positivo e negativo
+- estado importante
+
+### Conexão Produto–Dev–QA
+- Produto esclarece valor/regra
+- Dev discute solução
+- QA ajuda com exemplos/riscos
+
+## Duração e blocos
+
+| Bloco | Tempo previsto |
 |---|---:|
-| Abertura e diagnóstico | 8 |
-| Conceitos e exemplos | 17 |
-| Demonstração guiada | 20 |
-| Pausa | 5 |
-| Dinâmica em dupla ou grupo | 15 |
-| Exercício individual | 12 |
-| Correção e dúvidas | 8 |
-| Fechamento e orientação da tarefa | 5 |
-| Total | 90 |
+| Abertura e diagnóstico | 8 min |
+| Conceitos e exemplos | 17 min |
+| Demonstração guiada | 20 min |
+| Pausa | 5 min |
+| Dinâmica em dupla ou grupo | 15 min |
+| Exercício individual | 12 min |
+| Correção e dúvidas | 8 min |
+| Fechamento e tarefa | 5 min |
+| **Total** | **90 min** |
 
 ## Materiais necessários
 
-modelo de história e casos do módulo 4. Usar [caderno do caso](../atividades/caso-agenda-clara.md), editor de Markdown ou papel e [laboratório](../portfolio/agenda-clara/README.md). Testar o ambiente antes da aula. Contas de ferramentas são opcionais quando houver alternativa documental; evidência de execução continua necessária quando o enunciado a solicitar.
+- E-book do Módulo 5
+- caso Agenda Clara
+- template de User Story e critérios
 
-## Abertura da aula
+## Exemplos planejados
 
-Compare um benefício circular com benefício concreto. Dê dois minutos para registrar uma previsão individual, recolha duas respostas e pergunte qual evidência seria necessária. Retome um conceito anterior e anuncie a entrega de hoje.
+### Exemplo 1
+US de cancelamento.
 
-## Explicação teórica e exemplos práticos
+### Exemplo 2
+Critério de conflito H09 ocupado.
 
-### User Stories
+### Exemplo 3
+Critério para ID inexistente.
 
-**Conceito:** Uma história expressa necessidade e benefício sob a perspectiva de quem recebe valor.
+## Demonstração planejada — Escrever US03 e derivar critérios
 
-**Explicação simples:** Quem quer fazer o quê, e para qual benefício?
+1. Definir persona/usuário.
+2. Escrever necessidade e valor.
+3. Relacionar RN06/RN07.
+4. Criar critério positivo de cancelamento.
+5. Criar critério negativo de ID inexistente.
+6. Derivar um caso de teste.
 
-**Aprofundamento:** O formato Como/quero/para ajuda a iniciar conversa, mas não garante qualidade. Uma história precisa de exemplos e tamanho adequado. Não force toda tarefa técnica nesse formato. Divida por recortes úteis, respeitando dependências. Evite benefícios circulares, como “quero reservar para reservar”. Consultar, reservar e cancelar têm propósitos distintos. “Adicionar banco” descreve solução técnica; manter reserva após encerrar aplicativo descreve necessidade de persistência, ainda fora do laboratório.
+**Resultado pedagógico esperado:** o aluno conecta história, regra, critério e teste.
 
-**Exemplo cotidiano:** Um cliente precisa recuperar uma compra; o banco de dados é um meio para atender essa necessidade.
+## Dinâmica em grupo — Conversa e confirmação
 
-**Cenário empresarial:** PO escreve US02, Dev discute integridade e QA deriva cenários.
+**Cenário:** Cada dupla recebe uma necessidade do Agenda Clara e deve produzir história + critérios que outra dupla consiga desafiar.
 
-**Erros a observar:** História enorme; usuário genérico; benefício circular.
+1. Escrever User Story.
+2. Criar um critério positivo.
+3. Criar um critério negativo.
+4. Trocar com outra dupla e levantar uma pergunta/ambiguidade.
 
-**Orientação:** Perfil, propósito, exemplos e dependências claros.
+**Entrega esperada:** história + critérios revisados
 
-### Critérios de aceite
-
-**Conceito:** Critérios de aceite descrevem condições verificáveis de uma necessidade específica.
-
-**Explicação simples:** Dizem o que deve acontecer no sucesso e na recusa.
-
-**Aprofundamento:** Dado/Quando/Então separa contexto, ação e resultado; não é sintaxe obrigatória. Critérios de história são específicos; Definition of Done é padrão comum do incremento. Para US02, cubra sucesso, conflito, espaços e horário fora do catálogo. Confira estado, não só mensagem. Critérios ajudam a derivar testes, sem limitar toda exploração. Não inclua desempenho vago nem detalhe de implementação sem necessidade.
-
-**Exemplo cotidiano:** “Compra concluída” fica ambíguo sem definir cobrança e criação do pedido.
-
-**Cenário empresarial:** QA transforma critério de conflito em caso; Dev garante preservação da reserva.
-
-**Erros a observar:** Somente fluxo positivo; “ser intuitivo” sem condição; confundir aceite e DoD.
-
-**Orientação:** Contexto, ação, resultado e estado definidos.
-
-Distribua os 17 minutos entre os tópicos. Peça um exemplo com palavras do aluno antes de avançar; se houver uma contradição, retome a regra do caso.
-
-## Demonstração guiada
-
-Escreva US03 e derive critérios de cancelamento e id inexistente.
-
-**Exemplo 1:** US03: Como recepcionista, quero cancelar uma reserva ativa para oferecer o horário a outra pessoa. RN06/RN07. Depende de identificar reserva. Autorização de cancelamento é questão futura, pois login não existe.
-
-**Exemplo 2:** Dado H09 ocupado por Ana, quando Bruno solicita H09, então retornar conflito e preservar Ana. O teste confere saída e estado usando RN05.
-
-Interrompa antes do resultado para pedir uma previsão. Revele uma etapa de cada vez, marque a regra e compare a resposta com a evidência. Não concluir correção apenas pela aparência do arquivo.
-
-## Dinâmica em grupo
-
-**Nome:** Conversa e confirmação. **Contexto:** a equipe precisa revisar uma decisão antes de avançar o MVP. Em duplas, uma pessoa produz e outra confere; trocar funções na metade do tempo. Em grupos maiores, adicionar um papel de registro.
-
-**Distribuição:** 2 minutos de leitura; 5 de execução; 5 de revisão cruzada; 3 de compartilhamento. Se houver mais de duas duplas, recolher as demais conclusões por escrito para caber no tempo.
-
-**Atividade 3: Criar três histórias do MVP**
-
-**Contexto profissional:** o time da empresa fictícia Agenda Clara precisa revisar esta decisão antes de entregar o MVP. Dados e regras no [caderno do caso](../atividades/caso-agenda-clara.md).
-
-**Objetivo:** Criar três histórias do MVP, com registro que permita conferência por outra pessoa.
-
-**Passo a passo:**
-
-1. Escreva US01 consultar, US02 reservar e US03 cancelar.
-2. Use perfil e benefício concreto.
-3. Vincule às RN correspondentes.
-4. Registre uma dependência e uma pendência.
-
-**Entrega esperada:** três histórias com vínculos e propósito Identificar nome, versão ou premissas, regra utilizada e justificativa. Nome sugerido: `m05-atividade-03.md`.
-
-**Critérios específicos:** Perfil e valor claros; cobertura do MVP; regras identificadas.
-
-**Exemplo de resposta comentada:** US03: Como recepcionista, quero cancelar uma reserva ativa para oferecer o horário a outra pessoa. RN06/RN07. Depende de identificar reserva. Autorização de cancelamento é questão futura, pois login não existe.
-
-**Dica:** faça sua tentativa antes de ler a resposta e explique qualquer revisão.
-
-**Variação mais difícil:** Divida uma história grande sem perder o benefício do recorte.
-
-**Atividade 4: Escrever critérios positivos e negativos**
-
-**Contexto profissional:** o time da empresa fictícia Agenda Clara precisa revisar esta decisão antes de entregar o MVP. Dados e regras no [caderno do caso](../atividades/caso-agenda-clara.md).
-
-**Objetivo:** Escrever critérios positivos e negativos, com registro que permita conferência por outra pessoa.
-
-**Passo a passo:**
-
-1. Descreva sucesso e conflito de US02.
-2. Inclua espaços e H12 inválido.
-3. Descreva cancelamento ativo e inexistente.
-4. Converta um critério em caso de teste.
-
-**Entrega esperada:** critérios para três histórias e caso derivado Identificar nome, versão ou premissas, regra utilizada e justificativa. Nome sugerido: `m05-atividade-04.md`.
-
-**Critérios específicos:** Testabilidade; positivos e negativos; estado final explícito.
-
-**Exemplo de resposta comentada:** Dado H09 ocupado por Ana, quando Bruno solicita H09, então retornar conflito e preservar Ana. O teste confere saída e estado usando RN05.
-
-**Dica:** faça sua tentativa antes de ler a resposta e explique qualquer revisão.
-
-**Variação mais difícil:** Qual comportamento indevido passaria se você conferisse só a mensagem?
-
+**Critérios:** valor explícito; critérios observáveis; positivo e negativo; pergunta de refinamento.
 
 ## Exercício individual
 
-Crie critério para conflito e um caso de teste derivado.
+Escreva um critério para H09 já ocupado por Ana quando Bruno tenta reservar. Inclua retorno esperado e o que não pode mudar. Depois derive um caso de teste curto.
 
-**Tempo:** 12 minutos. **Entrega:** uma versão própria do artefato, incluindo regra, decisão e evidência. **Avaliação:** critérios específicos acima e rubrica do E-book. O professor verifica se houve transferência para o novo caso. Se houver ajuda, registrar qual etapa foi assistida.
+**Entrega:** critério + caso de teste
 
-## Perguntas para os alunos
+**Critérios:** regra correta; estado preservado; dados concretos; teste deriva do critério.
 
-- Quem recebe valor?
-- Qual estado precisa ser conferido?
-- Qual parte da sua previsão você reviu e qual evidência motivou a mudança?
+## Perguntas de verificação
 
-## Possíveis dúvidas e como responder
+- User Story substitui requisito detalhado?
+- Critério ‘funcionar corretamente’ é suficiente?
+- Critério deve cobrir só cenário feliz?
 
-| Dúvida | Resposta |
-|---|---|
-| Formato garante qualidade? | Não; exemplos e conversa são necessários. |
-| Aceite é DoD? | Aceite é específico; DoD é padrão comum de qualidade. |
-| Preciso copiar a resposta de referência? | Não; preserve as regras e explique sua decisão com evidência. |
-
-## Correção e fechamento
-
-As respostas de referência estão na demonstração. Não exigir frases idênticas; conferir critérios e raciocínio. Cada aluno completa: “Usei ___ para decidir ___ e confirmei com ___”. Relacionar à entrega do módulo: brief do problema, roteiro de entrevista, três histórias completas, backlog com seis itens e ata de refinamento. A priorização define a ordem de trabalho.
+> As respostas esperadas e intervenções ficam exclusivamente no script do professor.
 
 ## Tarefa para casa
 
-Revisar histórias e critérios com QA e Dev simulados.
+1. Revisar as histórias.
+2. Adicionar pelo menos um critério negativo em cada conjunto relevante.
+3. Registrar uma pergunta de refinamento.
+4. Entregar `m05-aula-03-revisao.md`.
 
-**Tempo sugerido:** 30–45 minutos. Entregar `m05-aula-03-revisao.md` com resposta inicial, feedback, versão revisada e explicação da mudança. O professor verifica a revisão no próximo encontro.
+**Entrega:** histórias e critérios revisados
+
+## Conexão com a trilha
+
+A Aula 4 organiza as histórias em backlog, prioridade, dependências e decisões de refinamento.
+
+## Referências
+
+- [E-book correspondente](../ebooks/modulo-05-product-owner-e-produto.md)
+- [Caso Agenda Clara](../atividades/caso-agenda-clara.md)
+- [Script do professor](scripts/modulo-05-aula-03-historias-e-criterios.md)

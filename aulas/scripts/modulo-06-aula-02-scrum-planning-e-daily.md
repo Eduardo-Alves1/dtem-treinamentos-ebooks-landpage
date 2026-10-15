@@ -1,267 +1,201 @@
-# Script do professor — Scrum, Planning e Daily
+# Script do Professor — Scrum, Planning e Daily
 
-**DTEM Treinamentos · encontro ao vivo de até 90 minutos, gravado para revisão.**
+**DTEM Treinamentos · encontro ao vivo de até 90 minutos.**
 
-Este documento contém falas e ações de condução. Adaptar a linguagem ao próprio estilo, preservando conceitos,
-exemplos e critérios. Os intervalos incluem escrita, espera, interação e prática; não são 90 minutos de leitura.
-Não depende de vídeos prévios. O aluno pode consultar o E-book e rever a gravação depois.
+> **Papel deste documento:** orientar a condução da aula. O script operacionaliza o roteiro correspondente; não deve criar outra aula paralela.
 
-**Roteiro:** [planejamento da aula](../modulo-06-aula-02-scrum-planning-e-daily.md).  
-**Material de estudo:** [E-book correspondente](../../ebooks/modulo-06-gestao-de-projetos-tech.md).  
-**Caso:** [Agenda Clara](../../atividades/caso-agenda-clara.md), empresa e dados fictícios.
+**Roteiro:** [Módulo 6, Aula 2](../modulo-06-aula-02-scrum-planning-e-daily.md)  
+**Material do aluno:** [E-book correspondente](../../ebooks/modulo-06-gestao-de-projetos-tech.md)  
+**Caso:** [Agenda Clara](../../atividades/caso-agenda-clara.md)  
 
-## Objetivo e materiais
+## Alinhamento obrigatório
 
-**Objetivo observável:** simular Planning e Daily orientadas por uma meta compartilhada.  
-**Materiais:** backlog de consulta, reserva, cancelamento e relatório; quadro e papéis.
+- **Objetivo:** Apresentar responsabilidades do Scrum e praticar Planning e Daily como eventos de alinhamento e adaptação orientados por objetivo.
+- **Demonstração central:** Simular Planning e adaptar após uma Daily.
+- **Prática em grupo:** Planejar e adaptar.
+- **Exercício individual:** registrar um impedimento de forma útil.
+- **Tarefa:** revisar meta, plano e registro de Daily.
 
-Antes do encontro, preparar o exemplo e conferir os recursos necessários. Em tarefas de ferramenta, preparar
-conta e ambiente com antecedência. Se a execução estiver indisponível, percorrer manualmente e declarar o método;
-publicação ou execução exigidas pela entrega devem ser concluídas depois com apoio. Não inventar evidência.
+## Antes da aula
 
-## Agenda de condução
+- [ ] Revisar termos do Scrum Guide.
+- [ ] Preparar cenário de bloqueio.
+- [ ] Evitar ensinar Daily como três perguntas obrigatórias.
+- [ ] Deixar roteiro e script abertos.
+- [ ] Conferir materiais, dados e exemplos.
+- [ ] Separar a entrega esperada da aula.
 
-| Intervalo | Etapa | Minutos |
-|---|---|---:|
-| 00–08 | Abertura e diagnóstico | 8 |
-| 08–25 | Conceitos e exemplos | 17 |
-| 25–45 | Demonstração guiada | 20 |
-| 45–50 | Pausa | 5 |
-| 50–65 | Dinâmica em dupla ou grupo | 15 |
-| 65–77 | Exercício individual | 12 |
-| 77–85 | Correção e dúvidas | 8 |
-| 85–90 | Fechamento e tarefa | 5 |
-| Total | | 90 |
+## Agenda
 
-O roteiro original contém o caderno completo de atividades. Nesta versão, os enunciados de grupo e individual
-abaixo definem o recorte do encontro. A tarefa de casa conclui os itens restantes. Se precisar reduzir extensão,
-preservar demonstração, tentativa individual, feedback e orientação da entrega.
+| Intervalo | Etapa |
+|---|---|
+| 00–08 | Abertura e diagnóstico |
+| 08–25 | Conceitos e exemplos |
+| 25–45 | Demonstração guiada |
+| 45–50 | Pausa |
+| 50–65 | Dinâmica |
+| 65–77 | Exercício individual |
+| 77–85 | Correção e dúvidas |
+| 85–90 | Fechamento e tarefa |
 
 ## 00–08 — Abertura e diagnóstico
 
-**Mostrar:** título da aula e objetivo. **Fala de abertura:**
+> Uma reunião útil muda entendimento ou plano. Hoje vamos praticar Planning e Daily sem transformar Scrum em uma sequência de cerimônias mecânicas.
 
-> Uma reunião útil muda o entendimento ou o plano. Vamos praticar decisões de uma Sprint, sem transformar a conversa em cobrança individual.
+**Pergunta diagnóstica:** Qual é a função principal da Daily no Scrum?
 
-**Condução:** dar dois minutos para uma previsão individual no chat ou caderno. Colher duas respostas,
-sem exigir fala de todos. Esperar aproximadamente 30 segundos antes de completar a resposta.
-Não confundir silêncio inicial com falta de capacidade; oferecer a situação concreta novamente.
+Ouça pelo menos duas respostas antes de completar.
 
-**Pergunta de diagnóstico:** “A Daily precisa ser uma prestação de contas ao gestor?”
-
-**Referência para o professor:** Não. Ela permite ao time inspecionar a meta e adaptar o próprio plano.
-
-**Transição para a explicação:**
-
-> Vamos transformar essa primeira resposta em um raciocínio que outra pessoa consiga conferir.
-> A cada exemplo, anotem a decisão e a informação que a sustenta.
-
-## 08–25 — Explicação teórica e exemplos
-
-Dividir os 17 minutos entre as três explicações, a escrita e duas perguntas breves.
-Usar as falas como apoio, sem acrescentar uma exposição inteira do E-book.
-
-### Explicação 1 — Responsabilidades
-
-**Fala sugerida:**
-
-> No Scrum, Product Owner cuida de valor e backlog; Scrum Master ajuda a estabelecer o Scrum e a eficácia do time; Developers criam o incremento. QA pode ser uma especialidade entre Developers: não é obrigatoriamente um papel separado no framework.
-
-**Ação:** escrever uma palavra-chave e pedir um exemplo com palavras do aluno. Se houver dúvida, pedir a entrada, regra ou situação concreta que sustenta a resposta.
-### Explicação 2 — Planning
-
-**Fala sugerida:**
-
-> A Planning conversa sobre por que a Sprint vale a pena, o que pode ser feito e como realizar o trabalho. Uma meta como permitir reservar e cancelar horários orienta escolhas. Selecionar todo o backlog sem olhar capacidade deixa a meta frágil.
-
-**Ação:** escrever uma palavra-chave e pedir um exemplo com palavras do aluno. Se houver dúvida, pedir a entrada, regra ou situação concreta que sustenta a resposta.
-### Explicação 3 — Daily
-
-**Fala sugerida:**
-
-> A Daily é um evento de até 15 minutos para Developers inspecionarem progresso rumo à meta e adaptarem o plano. As três perguntas tradicionais são uma opção, não uma obrigação. Aqui faremos uma simulação curta e guardaremos discussões técnicas longas para depois.
-
-**Ação:** escrever uma palavra-chave e pedir um exemplo com palavras do aluno. Se houver dúvida, pedir a entrada, regra ou situação concreta que sustenta a resposta.
-
-**Mostrar no quadro:** Meta → seleção coerente → plano; impedimento → impacto → ação.
-
-**Checagem de compreensão:** “A Daily precisa ser uma prestação de contas ao gestor?”  
-**Resposta esperada:** Não. Ela permite ao time inspecionar a meta e adaptar o próprio plano.
+**Referência para o professor:** Inspecionar progresso rumo à Sprint Goal e adaptar o plano de trabalho.
 
 **Transição:**
 
-> Agora vou percorrer um exemplo pensando em voz alta. Antes de mostrar o resultado,
-> vou pedir uma previsão. Observem onde uma regra ou evidência muda a decisão.
+> Vamos começar com uma meta clara; depois veremos como o plano muda quando surge um impedimento.
 
-## 25–45 — Demonstração guiada
+## 08–25 — Conceitos e exemplos
 
-**Preparação:** abrir os dados, documento, código ou cartões indicados. Reservar aproximadamente cinco minutos
-por passo e os minutos finais para uma previsão e uma dúvida. Em comandos, executar uma operação de cada vez
-e conferir estado. Não substituir falha de ambiente por uma afirmação de execução bem-sucedida.
+### 1. Responsabilidades no Scrum
+
+**Fala sugerida:**
+
+> Scrum não cria uma hierarquia em que PO manda, Scrum Master distribui tarefa e Dev apenas executa. Cada accountability possui foco diferente.
+
+**Mostrar/fazer:** quadro com responsabilidades.
+
+**Perguntar:** Quem decide como transformar itens em trabalho técnico?
+
+**Compreensão esperada:** Developers, colaborando com as demais pessoas.
+
+### 2. Sprint Planning
+
+**Fala sugerida:**
+
+> Planning conecta objetivo, capacidade e seleção de trabalho. A meta ajuda o time a adaptar detalhes sem perder o propósito.
+
+**Mostrar/fazer:** meta ‘garantir reserva sem duplicidade’.
+
+**Perguntar:** Um item que não contribui para a meta precisa entrar agora?
+
+**Compreensão esperada:** não necessariamente.
+
+### 3. Daily Scrum
+
+**Fala sugerida:**
+
+> Daily é para Developers inspecionarem progresso e ajustarem o plano. Pode revelar impedimentos, mas não precisa seguir perguntas decoradas.
+
+**Mostrar/fazer:** bloqueio por ambiente.
+
+**Perguntar:** Que decisão pode sair de uma Daily?
+
+**Compreensão esperada:** reorganizar trabalho, buscar ajuda, ajustar sequência etc.
+
+## 25–45 — Demonstração guiada — Simular Planning e adaptar após uma Daily
 
 ### Passo 1 — Criar meta
 
-**Fala durante a demonstração:**
+**Fazer:** Escreva uma Sprint Goal curta.
 
-> Quero que a recepção consiga reservar e cancelar no cenário de estudo. Relatório pode esperar: não é necessário para essa meta.
+**Fala sugerida:**
 
-**Ação:** mostrar o registro correspondente antes de avançar; pedir uma previsão e conferir a resposta com a evidência.
-### Passo 2 — Selecionar e decompor
+> A meta não é repetir a lista de tarefas. Ela explica o resultado que queremos perseguir nesta rodada.
 
-**Fala durante a demonstração:**
+**Checar com a turma:** Peça se o aluno consegue excluir um item sem perder a meta.
 
-> Reserva envolve regra de nome, horário e conflito, além de teste. Vou explicitar o trabalho necessário em vez de chamar tudo de um único botão.
+### Passo 2 — Selecionar e planejar
 
-**Ação:** mostrar o registro correspondente antes de avançar; pedir uma previsão e conferir a resposta com a evidência.
-### Passo 3 — Adaptar após bloqueio
+**Fazer:** Use capacidade da aula anterior.
 
-**Fala durante a demonstração:**
+**Fala sugerida:**
 
-> O ambiente de uma pessoa falhou. Ela pode revisar critérios com outra pessoa enquanto o impedimento é tratado; ajustamos o plano e comunicamos risco, sem fingir que o bloqueio sumiu.
+> O time decide como transformar itens em trabalho e verifica se o recorte é realista.
 
-**Ação:** mostrar o registro correspondente antes de avançar; pedir uma previsão e conferir a resposta com a evidência.
+**Checar com a turma:** Pergunte que dependência pode bloquear execução.
 
-**Pergunta após a demonstração:** “Qual decisão vocês conseguem explicar sem copiar a frase que usei?”
+### Passo 3 — Simular Daily
 
-**Referência:** a resposta precisa relacionar situação, decisão e fundamento.
-As falas de cada passo indicam o comportamento ou a interpretação que deve ser conferido.
+**Fazer:** Introduza falta de ambiente para um teste.
 
-**Transição:**
+**Fala sugerida:**
 
-> Na prática, vocês vão alternar quem conduz e quem revisa. O objetivo é produzir algo
-> que o colega consiga conferir, e não somente repetir minha demonstração.
+> A Daily útil termina com adaptação ou clareza, não com uma lista de ‘ontem/hoje’.
+
+**Checar com a turma:** Peça impacto, pedido de ajuda e próximo passo.
+
+**Resultado de referência:** PO ordena backlog; Developers planejam execução; Scrum Master facilita Scrum. Bloqueio deve gerar ação/adaptação sem mascarar critério de qualidade.
+
+Peça previsão antes de revelar decisões ou resultados.
 
 ## 45–50 — Pausa
 
-Deixar horário de retorno visível e não apresentar conteúdo obrigatório durante os cinco minutos.
-Na gravação, indicar o ponto em que a atividade seguinte começa.
+Informar horário de retorno e não inserir conteúdo obrigatório.
 
-## 50–65 — Dinâmica em dupla ou grupo
+## 50–65 — Dinâmica — Planejar e adaptar
 
-**Nome:** Revisão com explicação — Scrum, Planning e Daily.  
-**Contexto profissional:** uma equipe precisa revisar seu trabalho antes de avançar.
-**Objetivo:** aplicar os conceitos e produzir um registro conferível no recorte da aula.
+**Cenário:** A equipe inicia uma Sprint com meta clara e recebe um bloqueio no segundo momento.
 
-**Fala de orientação:**
+> Não usem a Daily para prestar contas ao professor. Usem para decidir o que o time precisa fazer a seguir.
 
-> Uma pessoa começa conduzindo e a outra confere as decisões. Na metade, troquem funções.
-> Registrem o que fizeram e qual informação justifica o resultado.
-> Se discordarem, expliquem a diferença usando regra ou evidência, em vez de escolher pela maioria.
+1. Escrever Sprint Goal.
+2. Escolher três itens.
+3. Definir um plano simples.
+4. Sortear um bloqueio.
+5. Adaptar sem abandonar a meta.
 
-**Enunciado e passo a passo:**
+**Entrega:** meta + plano inicial + plano adaptado
 
-1. Definir uma meta e escolher dois itens coerentes.
-2. Distribuir papéis e simular Planning em cinco minutos.
-3. Simular Daily em cinco minutos com um bloqueio e registrar a adaptação.
-
-**Tempo:** 2 minutos para ler e organizar; 5 para produzir; 5 para trocar revisão; 3 para compartilhar.
-Selecionar duas duplas para falar e recolher as demais por escrito. Em aulas de entrevista ou apresentação,
-usar o mesmo tempo para a primeira participação, troca e feedback.
-
-**Entrega esperada:** registro da atividade com contexto, decisão, fundamento e uma revisão.
-**Critérios:** cumprir as etapas, preservar as regras e permitir que o colega confira.
-**Referência de correção:** usar os exemplos da demonstração e verificar o que mudou no novo caso,
-sem exigir palavras idênticas.
-
-**Perguntas ao circular:** “Qual passo está sendo executado?”, “Qual evidência sustenta isso?”
-e “O que precisaria mudar para sua conclusão ser diferente?”
-
-**Dica para a dupla:** separar o que observou do que está supondo.
-**Variação difícil:** formular um contraexemplo ou limite; transferir para casa se não couber.
+**Observar:** meta clara; responsabilidades coerentes; adaptação explícita; qualidade preservada.
 
 ## 65–77 — Exercício individual
 
-**Fala do professor — enunciado:**
+> Escreva uma atualização para um teste bloqueado por falta de ambiente. Inclua impacto na meta, o que já foi verificado, pedido de ajuda e próximo passo.
 
-> Escreva uma intervenção de Daily para um teste bloqueado por falta de ambiente.
+**Entrega:** registro de impedimento
 
-**Tempo:** 2 minutos de leitura, 7 de resolução e 3 de revisão/entrega.
-Cada aluno entrega uma resposta própria, mesmo quando a atividade anterior foi em grupo.
+**Critérios:** impacto claro; pedido objetivo; próxima ação; sem culpabilização.
 
-**Entrega:** artefato pedido no enunciado, acompanhado de uma explicação breve da decisão.
-**Critérios:** correção, completude do recorte, evidência e justificativa. Aplicar a
-[rubrica formativa](../../planejamento/analise-pedagogica.md), de 0 a 2 por critério. Referência proposta: 6/8, sem zero em correção ou evidência.
+**Ajuda graduada:** use estrutura ‘estado / impacto / necessidade / próximo passo’.
 
-**Ajuda graduada:** pedir que identifique primeiro a entrada, regra ou exigência; depois que escolha o próximo
-passo. Não resolver todas as etapas. Registrar qual parte foi assistida e conferir transferência em uma tentativa nova.
+## 77–85 — Correção e intervenções
 
-**Gabarito comentado — revelar depois da tentativa:**
+Peça que a pessoa explique sua decisão antes da resposta de referência.
 
-> Exemplo: o teste de conflito ainda não foi executado e ameaça a meta de reserva. Vou revisar o caso com a dupla e pedir restauração do ambiente; depois combinaremos a execução. Deve aparecer impacto, ação e acompanhamento.
+**Se aparecer:** Daily vira ‘ontem fiz X, hoje Y’ sem decisão
 
-## 77–85 — Correção, intervenções e dúvidas
+> Como isso afeta a Sprint Goal? Existe algo que precisa ser adaptado ou coordenado?
 
-**Fala para iniciar a correção:**
+**Se aparecer:** Scrum Master distribui tarefas
 
-> Se sua resposta foi diferente, mantenha a primeira versão. Vamos descobrir em qual decisão
-> o raciocínio mudou. Corrigir e explicar a mudança faz parte da aprendizagem.
+> Que responsabilidade pertence aos Developers? Organização do trabalho é do próprio time de desenvolvimento.
 
-**Se o aluno daily vira relatório de horas:**
+**Se aparecer:** bloqueio é escondido para ‘não parecer atraso’
 
-> Que decisão ajudará a atingir a meta hoje?
+> Tornar impedimento visível cedo aumenta chance de adaptação. Qual impacto real precisa ser comunicado?
 
-**Se o aluno po determina sozinho o plano técnico:**
+### Perguntas de verificação
 
-> Peça ao time que explique como pode executar e verificar a seleção.
+- **Daily é reunião de status para gerente?** — Não. No Scrum, é evento dos Developers para inspecionar progresso rumo à Sprint Goal e adaptar plano.
+- **Scrum Master é chefe técnico?** — Não. Atua na efetividade do Scrum e facilitação, sem assumir automaticamente liderança técnica.
+- **PO define como o código deve ser implementado?** — Não como regra. PO foca valor e backlog; implementação é responsabilidade técnica dos Developers.
 
-**Dúvida central da aula:** “A Daily precisa ser uma prestação de contas ao gestor?”
+## 85–90 — Fechamento e tarefa
 
-**Como responder:**
+> Scrum só faz sentido quando os eventos ajudam a inspecionar e adaptar. Reunião sem decisão ou aprendizado vira ritual vazio.
 
-> Não. Ela permite ao time inspecionar a meta e adaptar o próprio plano.
+1. Revisar Sprint Goal.
+2. Atualizar plano após bloqueio.
+3. Registrar uma Daily simulada com decisão.
+4. Entregar `m06-aula-02-revisao.md`.
 
-**Se perguntarem se a resposta precisa ser igual:**
+**Entrega:** meta/plano/registro revisados
 
-> Não precisa repetir minha frase. Precisa respeitar as regras e permitir que outra pessoa
-> confira como você chegou à decisão.
+**Ponte:**
 
-**Se perguntarem como usar a gravação:**
+> Na próxima aula vamos separar três perguntas: entregamos algo realmente concluído? O que aprendemos com o resultado? E como melhorar nosso modo de trabalhar?
 
-> Localize o trecho em que surgiu a dúvida, reveja o exemplo e depois tente uma entrada ou situação nova.
-> Assistir de novo ajuda; explicar sua própria decisão é o que vamos avaliar.
+## Pós-aula
 
-**Modelo de devolutiva:**
-
-> Você acertou ao identificar a decisão principal. Falta mostrar a informação que a sustenta.
-> Acrescente essa evidência e explique o que mudou na sua revisão.
-
-Selecionar duas dúvidas para os oito minutos. Registrar as demais para resposta após a aula ou retomada.
-Não ampliar silenciosamente a duração do encontro.
-
-## 85–90 — Fechamento e tarefa para casa
-
-**Fala de fechamento:**
-
-> Hoje trabalhamos como simular Planning e Daily orientadas por uma meta compartilhada.
-> Para revisar, procure uma decisão, a evidência que a sustenta e uma limitação que ainda precisa de atenção.
-> Guardem a primeira versão e a correção; isso ajuda a explicar a evolução no portfólio.
-
-**Pergunta de saída:** “O que você mudou na sua primeira previsão, e por quê?”
-
-**Tarefa de casa — falar à turma:**
-
-> Completar os registros de Planning e Daily da aula, distinguindo simulação dos eventos de uma Sprint real.
-
-**Tempo-base:** 30–45 minutos para revisão. Se o enunciado exigir concluir vários artefatos, execução pendente
-ou preparação da entrega final, combinar prazo e tempo adicional explicitamente; não prometer que tudo cabe
-nesse intervalo.
-
-**Entrega:** `modulo-06-aula-02-scrum-planning-e-daily-revisao.md`, ou arquivos específicos pedidos, contendo resposta inicial, feedback,
-versão revisada e explicação. O professor verifica a revisão no início do encontro seguinte.
-
-**Dica:** usar E-book e gravação como apoio; identificar empresa fictícia e origem da evidência.
-**Variação difícil:** acrescentar uma situação nova ou uma dúvida de aplicação, com proposta de investigação.
-
-## Checklist do professor e uso da gravação
-
-- [ ] Preparar recursos e exemplo antes do encontro.
-- [ ] Pedir previsão antes de revelar referência.
-- [ ] Conferir compreensão por exemplo, não por memorização.
-- [ ] Alternar condução e revisão na dupla.
-- [ ] Preservar exercício individual.
-- [ ] Declarar execução, simulação e limites corretamente.
-- [ ] Registrar feedback, tarefa e dúvidas pendentes.
-- [ ] Disponibilizar gravação para revisão e indicar os blocos de demonstração e correção.
-
-Percentual de vídeo assistido é sinal de utilização, não prova de domínio.
-Usar artefato e explicação para avaliar aprendizagem; não penalizar o aluno por uma falha de registro de reprodução.
+- [ ] Disponibilizar gravação.
+- [ ] Registrar dúvidas e lacunas recorrentes.
+- [ ] Conferir se demonstração, prática e tarefa seguiram o roteiro.
+- [ ] Atualizar roteiro e script juntos se alguma regra mudar.
