@@ -97,7 +97,6 @@ Permite explicar a razão da cobertura escolhida.
 
 **Critérios específicos:** Riscos justificados; escopo delimitado; condições observáveis de início e fim.
 
-**Exemplo de resposta comentada:** Prioridade maior para integridade da reserva por conflito operacional. Executar testes sequenciais nas duas classes; persistência e acesso simultâneo não são comprovados. Não liberar um produto real com base apenas neste laboratório.
 
 **Dica:** faça sua tentativa antes de ler a resposta e explique qualquer revisão.
 
@@ -162,7 +161,6 @@ Demonstra raciocínio reproduzível e capacidade de comunicar comportamentos.
 
 **Critérios específicos:** Cobrir oito regras; especificar dados e estado; registrar versão e resultado.
 
-**Exemplo de resposta comentada:** TC03/RN03: agenda vazia; reservar espaços em H11; esperado nome_invalido e H11 livre. Referência rejeita; variante aceita e ocupa H11. Essa diferença é um defeito simulado, não incidente real.
 
 **Dica:** faça sua tentativa antes de ler a resposta e explique qualquer revisão.
 
@@ -227,7 +225,6 @@ Mostra autonomia para formular perguntas úteis.
 
 **Critérios específicos:** Cinco sequências; observação separada de interpretação; conclusão ligada a regra.
 
-**Exemplo de resposta comentada:** Reservar H10, cancelar seu id e reservar H10 outra vez gera novo id. Cancelar o antigo retorna nao_encontrado e preserva a reserva nova. O identificador distingue reservas no mesmo horário.
 
 **Dica:** faça sua tentativa antes de ler a resposta e explique qualquer revisão.
 
@@ -292,7 +289,6 @@ Melhora colaboração técnica e explicações em entrevista.
 
 **Critérios específicos:** Reproduzível; ligado a RN03; estado conferido; impacto separado da prioridade.
 
-**Exemplo de resposta comentada:** Esperado nome_invalido e H11 livre; observado sucesso, id 1 e H11 ocupado. Impacto: recepção não identifica cliente. Severidade moderada e prioridade alta são propostas contextuais para o MVP, não classificações universais.
 
 **Dica:** faça sua tentativa antes de ler a resposta e explique qualquer revisão.
 
@@ -357,7 +353,6 @@ Ajuda a justificar decisões de qualidade com evidências.
 
 **Critérios específicos:** Distinguir reteste e regressão; decisão sustentada por versão e resultados.
 
-**Exemplo de resposta comentada:** Se os quatro passam, pode liberar a demonstração sequencial das regras cobertas. Não autoriza uso real: concorrência, segurança e persistência permanecem sem validação.
 
 **Dica:** faça sua tentativa antes de ler a resposta e explique qualquer revisão.
 
@@ -421,7 +416,6 @@ Permite transferir seu processo entre ferramentas.
 
 **Critérios específicos:** Bug validado somente após evidência; automação tem estado e comparação.
 
-**Exemplo de resposta comentada:** Criar Agenda; reservar espaços; comparar status com nome_invalido. Na variante a comparação falha. BUG01 passa para validado apenas após reteste na versão indicada.
 
 **Dica:** faça sua tentativa antes de ler a resposta e explique qualquer revisão.
 
@@ -475,7 +469,7 @@ Explique cada passagem e indique onde uma evidência pode obrigar o time a volta
 
 As atividades dos tópicos formam o caderno de prática. Além delas, resolva: **Depois de corrigir nome vazio, cancelar não libera mais H10. Que teste identifica a regressão e qual decisão de liberação você recomenda?**
 
-Entregue situação inicial, decisão, evidência, consequência e uma limitação. **Referência para correção:** Reservar H10, cancelar o id retornado, consultar e reservar novamente. H10 deve reaparecer e aceitar nova reserva. Caso contrário, há divergência de RN06; bloquear o escopo afetado e registrar evidência da versão.
+Entregue situação inicial, decisão, evidência, consequência e uma limitação.
 
 ## Entrega final do módulo
 
