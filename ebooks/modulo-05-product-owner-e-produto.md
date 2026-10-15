@@ -96,7 +96,6 @@ Ajuda a explorar produto e análise de negócios com expectativas realistas.
 
 **Critérios específicos:** Separar resultado de entrega; identificar base fictícia e denominador.
 
-**Exemplo de resposta comentada:** Hipótese: controle de ocupação reduz conflitos. Métrica: tentativas com conflito operacional / tentativas totais por semana. Base 20%, sem resultado posterior comprovado.
 
 **Dica:** faça sua tentativa antes de ler a resposta e explique qualquer revisão.
 
@@ -161,7 +160,6 @@ Constrói repertório de investigação útil em Produto e QA.
 
 **Critérios específicos:** Cinco perguntas; fontes ou hipóteses explícitas; requisito verificável.
 
-**Exemplo de resposta comentada:** “Conte a última situação de conflito” é aberta. RN02 é funcional; uso de dados fictícios é restrição educacional; “resposta rápida” precisa de cenário e limite antes de ser verificável.
 
 **Dica:** faça sua tentativa antes de ler a resposta e explique qualquer revisão.
 
@@ -225,7 +223,6 @@ Produz artefatos revisáveis de comunicação com o time.
 
 **Critérios específicos:** Perfil e valor claros; cobertura do MVP; regras identificadas.
 
-**Exemplo de resposta comentada:** US03: Como recepcionista, quero cancelar uma reserva ativa para oferecer o horário a outra pessoa. RN06/RN07. Depende de identificar reserva. Autorização de cancelamento é questão futura, pois login não existe.
 
 **Dica:** faça sua tentativa antes de ler a resposta e explique qualquer revisão.
 
@@ -289,7 +286,6 @@ Reduz ambiguidade e conecta Produto a QA.
 
 **Critérios específicos:** Testabilidade; positivos e negativos; estado final explícito.
 
-**Exemplo de resposta comentada:** Dado H09 ocupado por Ana, quando Bruno solicita H09, então retornar conflito e preservar Ana. O teste confere saída e estado usando RN05.
 
 **Dica:** faça sua tentativa antes de ler a resposta e explique qualquer revisão.
 
@@ -354,7 +350,6 @@ Ajuda a defender decisões e negociar escopo.
 
 **Critérios específicos:** Ordem explicada; dependências; adiamentos e correção considerados.
 
-**Exemplo de resposta comentada:** Consultar e reservar sustentam cancelar. Corrigir RN03 antes da liberação da reserva. Persistência exige mudança de desenho; relatório e pagamento ficam fora do MVP atual.
 
 **Dica:** faça sua tentativa antes de ler a resposta e explique qualquer revisão.
 
@@ -419,7 +414,6 @@ Ajuda a conduzir conversas e pedir apoio especializado.
 
 **Critérios específicos:** Perguntas úteis; decisões claras; pendência com responsável.
 
-**Exemplo de resposta comentada:** Decisões: aplicar strip ao nome; recusa preserva estado; catálogo fixo. Pendência: concorrência real exige desenho e testes adicionais, fora do laboratório.
 
 **Dica:** faça sua tentativa antes de ler a resposta e explique qualquer revisão.
 
@@ -473,7 +467,7 @@ Explique cada passagem e indique onde uma evidência pode obrigar o time a volta
 
 As atividades dos tópicos formam o caderno de prática. Além delas, resolva: **O patrocinador pede pagamento online, mas usuários relatam reservas duplicadas. Qual próximo passo você recomenda?**
 
-Entregue situação inicial, decisão, evidência, consequência e uma limitação. **Referência para correção:** Investigar objetivo do pagamento e evidências. Integridade de reserva já tem risco demonstrado; pagamento está fora do MVP e ainda é hipótese. Priorizar correção do fluxo central e propor validação da demanda de pagamento, registrando o adiamento.
+Entregue situação inicial, decisão, evidência, consequência e uma limitação.
 
 ## Entrega final do módulo
 
