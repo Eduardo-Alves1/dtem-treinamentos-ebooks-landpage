@@ -207,19 +207,12 @@ Como colocar no currículo
 Como colocar no LinkedIn
 Como isso aparece em vagas
 🧠 RESUMO DO MÓDULO
-👨‍🏫 GUIA DO PROFESSOR
-Objetivo da aula
-Tempo sugerido
-Etapa	Tempo
-Introdução	15 min
-Perguntas para os alunos
-Pergunta 1
-Pergunta 2
-Dinâmicas sugeridas
-Possíveis dúvidas
-Dúvida	Explicação
-O que é API?	Explicação
+
+[Resumo voltado ao aluno, com conceitos-chave, dúvidas de revisão e próximos passos.]
+
 📌 ENTREGA FINAL
 🚀 PRÓXIMOS PASSOS
 📚 MATERIAL COMPLEMENTAR
 🔗 REFERÊNCIAS
+
+> **Regra editorial:** este template é destinado ao aluno. Falas prontas, gabaritos internos, instruções de condução e materiais de correção do professor pertencem aos roteiros/scripts docentes.
