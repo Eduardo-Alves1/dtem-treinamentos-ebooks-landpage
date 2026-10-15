@@ -1,267 +1,217 @@
-# Script do professor — Leitura de código e comportamento
+# Script do Professor — Leitura de Código e Comportamento
 
-**DTEM Treinamentos · encontro ao vivo de até 90 minutos, gravado para revisão.**
+**DTEM Treinamentos · encontro ao vivo de até 90 minutos.**
 
-Este documento contém falas e ações de condução. Adaptar a linguagem ao próprio estilo, preservando conceitos,
-exemplos e critérios. Os intervalos incluem escrita, espera, interação e prática; não são 90 minutos de leitura.
-Não depende de vídeos prévios. O aluno pode consultar o E-book e rever a gravação depois.
+> **Papel deste documento:** orientar a condução da aula. O conteúdo e as atividades abaixo devem permanecer coerentes com o roteiro; o script não cria uma aula paralela.
 
-**Roteiro:** [planejamento da aula](../modulo-03-aula-02-leitura-de-codigo.md).  
-**Material de estudo:** [E-book correspondente](../../ebooks/modulo-03-introducao-ao-desenvolvimento-de-software.md).  
-**Caso:** [Agenda Clara](../../atividades/caso-agenda-clara.md), empresa e dados fictícios.
+**Roteiro:** [Módulo 3, Aula 2](../modulo-03-aula-02-leitura-de-codigo.md)  
+**Material do aluno:** [E-book correspondente](../../ebooks/modulo-03-introducao-ao-desenvolvimento-de-software.md)  
+**Laboratório:** [Agenda Clara](../../portfolio/agenda-clara/README.md)  
 
-## Objetivo e materiais
+## Alinhamento obrigatório
 
-**Objetivo observável:** rastrear código de reserva e localizar o retorno que impede duplicidade.  
-**Materiais:** agenda_clara.py aberto com numeração de linhas e tabela de rastreamento.
+- **Objetivo:** Ensinar o iniciante a ler código pelo comportamento, rastreando entradas, decisões e retornos sem exigir domínio completo da linguagem.
+- **Demonstração central:** Rastrear duas chamadas e comparar uma lógica entre linguagens.
+- **Prática em grupo:** Leia pelo comportamento.
+- **Exercício individual:** rastrear uma entrada inválida.
+- **Tarefa:** rastrear uma chamada nova e comparar uma função simples.
 
-Antes do encontro, preparar o exemplo e conferir os recursos necessários. Em tarefas de ferramenta, preparar
-conta e ambiente com antecedência. Se a execução estiver indisponível, percorrer manualmente e declarar o método;
-publicação ou execução exigidas pela entrega devem ser concluídas depois com apoio. Não inventar evidência.
+Não substituir esses elementos por um exemplo genérico sem revisar também o roteiro.
+
+## Antes da aula
+
+- [ ] Abrir a função `reservar`.
+- [ ] Preparar trechos equivalentes curtos de `validar_nome` em Python, JS e TS.
+- [ ] Evitar introduzir Node, build ou configuração TypeScript nesta aula.
+- [ ] Deixar o roteiro e este script abertos.
+- [ ] Testar qualquer ferramenta, arquivo ou demonstração antes da turma entrar.
+- [ ] Separar o material que o aluno deverá entregar ao final.
 
 ## Agenda de condução
 
-| Intervalo | Etapa | Minutos |
-|---|---|---:|
-| 00–08 | Abertura e diagnóstico | 8 |
-| 08–25 | Conceitos e exemplos | 17 |
-| 25–45 | Demonstração guiada | 20 |
-| 45–50 | Pausa | 5 |
-| 50–65 | Dinâmica em dupla ou grupo | 15 |
-| 65–77 | Exercício individual | 12 |
-| 77–85 | Correção e dúvidas | 8 |
-| 85–90 | Fechamento e tarefa | 5 |
-| Total | | 90 |
-
-O roteiro original contém o caderno completo de atividades. Nesta versão, os enunciados de grupo e individual
-abaixo definem o recorte do encontro. A tarefa de casa conclui os itens restantes. Se precisar reduzir extensão,
-preservar demonstração, tentativa individual, feedback e orientação da entrega.
+| Intervalo | Etapa |
+|---|---|
+| 00–08 | Abertura e diagnóstico |
+| 08–25 | Conceitos e exemplos |
+| 25–45 | Demonstração guiada |
+| 45–50 | Pausa |
+| 50–65 | Dinâmica |
+| 65–77 | Exercício individual |
+| 77–85 | Correção e dúvidas |
+| 85–90 | Fechamento e tarefa |
 
 ## 00–08 — Abertura e diagnóstico
 
-**Mostrar:** título da aula e objetivo. **Fala de abertura:**
+**Fala de abertura:**
 
-> Você não precisa escrever o programa inteiro para acompanhar uma regra. Vamos ler uma operação com uma entrada concreta e observar onde ela termina.
+> Vocês não precisam escrever o programa inteiro para conseguir entender uma regra. Hoje vamos ler uma operação usando entradas concretas e depois comparar a mesma lógica em outra sintaxe.
 
-**Condução:** dar dois minutos para uma previsão individual no chat ou caderno. Colher duas respostas,
-sem exigir fala de todos. Esperar aproximadamente 30 segundos antes de completar a resposta.
-Não confundir silêncio inicial com falta de capacidade; oferecer a situação concreta novamente.
+**Pergunta diagnóstica:** Se eu trocar Python por JavaScript, a ideia de `if` e retorno deixa de existir?
 
-**Pergunta de diagnóstico:** “Qual evidência mostra que a segunda chamada não criou reserva?”
+Dê cerca de dois minutos para respostas curtas. Escute pelo menos duas respostas antes de completar.
 
-**Referência para o professor:** Retorno antecipado de conflito e estado com a única reserva original.
-
-**Transição para a explicação:**
-
-> Vamos transformar essa primeira resposta em um raciocínio que outra pessoa consiga conferir.
-> A cada exemplo, anotem a decisão e a informação que a sustenta.
-
-## 08–25 — Explicação teórica e exemplos
-
-Dividir os 17 minutos entre as três explicações, a escrita e duas perguntas breves.
-Usar as falas como apoio, sem acrescentar uma exposição inteira do E-book.
-
-### Explicação 1 — Ler pelo contrato
-
-**Fala sugerida:**
-
-> Comece pelo que entra e sai. reservar recebe nome e horário; consultar informa horários livres; cancelar usa identificador. Depois acompanhe decisões. Não tente entender todas as linhas ao mesmo tempo.
-
-**Ação:** escrever uma palavra-chave e pedir um exemplo com palavras do aluno. Se houver dúvida, pedir a entrada, regra ou situação concreta que sustenta a resposta.
-### Explicação 2 — Estado e retorno
-
-**Fala sugerida:**
-
-> self.reservas mantém reservas por identificador. Um return encerra a operação atual. Nas recusas, isso acontece antes de criar uma reserva. A classe reúne estado e operações; o objetivo de hoje é acompanhar comportamento, sem aprofundar toda orientação a objetos.
-
-**Ação:** escrever uma palavra-chave e pedir um exemplo com palavras do aluno. Se houver dúvida, pedir a entrada, regra ou situação concreta que sustenta a resposta.
-### Explicação 3 — Variante e causa
-
-**Fala sugerida:**
-
-> AgendaComDefeito transforma um nome feito de espaços antes de chamar a referência. Podemos observar o efeito e localizar essa transformação. Ler a linha sustenta uma hipótese de causa; precisamos também comparar regra, entrada e saída.
-
-**Ação:** escrever uma palavra-chave e pedir um exemplo com palavras do aluno. Se houver dúvida, pedir a entrada, regra ou situação concreta que sustenta a resposta.
-
-**Mostrar no quadro:** trecho reservar, com validações marcadas antes da escrita em reservas.
-
-**Checagem de compreensão:** “Qual evidência mostra que a segunda chamada não criou reserva?”  
-**Resposta esperada:** Retorno antecipado de conflito e estado com a única reserva original.
+**Resposta de referência para o professor:** Não. A linguagem muda a sintaxe, mas os conceitos lógicos permanecem.
 
 **Transição:**
 
-> Agora vou percorrer um exemplo pensando em voz alta. Antes de mostrar o resultado,
-> vou pedir uma previsão. Observem onde uma regra ou evidência muda a decisão.
+> Primeiro vamos provar isso lendo o comportamento em Python; depois fazemos uma comparação curta com JS e TS.
 
-## 25–45 — Demonstração guiada
+## 08–25 — Conceitos e exemplos
 
-**Preparação:** abrir os dados, documento, código ou cartões indicados. Reservar aproximadamente cinco minutos
-por passo e os minutos finais para uma previsão e uma dúvida. Em comandos, executar uma operação de cada vez
-e conferir estado. Não substituir falha de ambiente por uma afirmação de execução bem-sucedida.
+### 1. Ler pelo contrato
 
-### Passo 1 — Percorrer Ana/H09
+**Fala sugerida:**
 
-**Fala durante a demonstração:**
+> Ler código não significa entender cada linha do projeto. Começamos pela operação que queremos explicar: que dados recebe e o que promete devolver.
 
-> Nome válido, catálogo válido e horário livre: chega ao registro e retorna sucesso. Vou anotar a mudança em reservas.
+**Mostrar/fazer:** assinatura de `reservar`.
 
-**Ação:** mostrar o registro correspondente antes de avançar; pedir uma previsão e conferir a resposta com a evidência.
-### Passo 2 — Percorrer Bruno/H09
+**Perguntar:** Que pergunta essa operação responde?
 
-**Fala durante a demonstração:**
+**Compreensão esperada:** se a reserva pode ser criada e qual resultado retorna.
 
-> Com a primeira reserva preservada, consultar não inclui H09. A condição retorna conflito e a criação não é executada.
+### 2. Estado e retorno
 
-**Ação:** mostrar o registro correspondente antes de avançar; pedir uma previsão e conferir a resposta com a evidência.
-### Passo 3 — Localizar variante
+**Fala sugerida:**
 
-**Fala durante a demonstração:**
+> Um `return` pode encerrar o caminho antes de qualquer alteração. Por isso rastrear retorno e estado juntos ajuda a entender o comportamento.
 
-> A entrada de espaços vira 'Nome não informado'. Depois a implementação base aceita esse novo texto. A divergência começa na transformação.
+**Mostrar/fazer:** caminho de conflito antes da inserção.
 
-**Ação:** mostrar o registro correspondente antes de avançar; pedir uma previsão e conferir a resposta com a evidência.
+**Perguntar:** Em qual ponto uma reserva deixa de poder ser criada?
 
-**Pergunta após a demonstração:** “Qual decisão vocês conseguem explicar sem copiar a frase que usei?”
+**Compreensão esperada:** quando uma validação falha ou o horário já está ocupado.
 
-**Referência:** a resposta precisa relacionar situação, decisão e fundamento.
-As falas de cada passo indicam o comportamento ou a interpretação que deve ser conferido.
+### 3. Mesma lógica, outra sintaxe
 
-**Transição:**
+**Fala sugerida:**
 
-> Na prática, vocês vão alternar quem conduz e quem revisa. O objetivo é produzir algo
-> que o colega consiga conferir, e não somente repetir minha demonstração.
+> A lógica aprendida no módulo anterior não pertence ao Python. Vamos comparar uma validação simples em outras linguagens apenas para enxergar que a ideia permanece.
+
+**Mostrar/fazer:** `validar_nome` em Python, JS e TS lado a lado.
+
+**Perguntar:** O que mudou: a regra ou a forma de escrevê-la?
+
+**Compreensão esperada:** a regra permanece; sintaxe e tipagem mudam.
+
+Evite ler o E-book. Use-o como base e mantenha a explicação oral no recorte previsto pelo roteiro.
+
+## 25–45 — Demonstração guiada — Rastrear duas chamadas e comparar uma lógica entre linguagens
+
+### Passo 1 — Rastrear caminho de sucesso
+
+**Fazer:** Siga Ana/H09 e marque condições.
+
+**Fala sugerida:**
+
+> Não vou explicar o arquivo inteiro. Vou seguir uma entrada concreta e observar as decisões que ela atravessa.
+
+**Checar com a turma:** Peça o estado antes e depois.
+
+### Passo 2 — Rastrear caminho de conflito
+
+**Fazer:** Siga Bruno/H09.
+
+**Fala sugerida:**
+
+> Agora a mesma função recebe uma entrada parecida, mas encontra outro estado. Vamos localizar o retorno que encerra o caminho.
+
+**Checar com a turma:** Pergunte se alguma alteração de estado ocorre depois do retorno.
+
+### Passo 3 — Comparar linguagens
+
+**Fazer:** Mostre uma função de validação equivalente em três sintaxes.
+
+**Fala sugerida:**
+
+> Python continua sendo nossa linguagem principal para lógica. JS e TS aparecem aqui só para provar uma ideia: a lógica transfere; a escrita muda.
+
+**Checar com a turma:** Peça aos alunos para apontar entrada, decisão e retorno nas três versões.
+
+**Resultado de referência:** O segundo pedido para H09 retorna conflito antes de inserir nova reserva. Na comparação de linguagens, a intenção de `validar_nome` permanece equivalente apesar da sintaxe.
+
+Peça previsão antes de executar ou revelar a resposta. Depois compare previsão, evidência e explicação.
 
 ## 45–50 — Pausa
 
-Deixar horário de retorno visível e não apresentar conteúdo obrigatório durante os cinco minutos.
-Na gravação, indicar o ponto em que a atividade seguinte começa.
+Informar o horário de retorno. Não usar a pausa para conteúdo obrigatório.
 
-## 50–65 — Dinâmica em dupla ou grupo
+## 50–65 — Dinâmica — Leia pelo comportamento
 
-**Nome:** Revisão com explicação — Leitura de código e comportamento.  
-**Contexto profissional:** uma equipe precisa revisar seu trabalho antes de avançar.
-**Objetivo:** aplicar os conceitos e produzir um registro conferível no recorte da aula.
+**Cenário:** Cada dupla recebe uma entrada diferente do laboratório e precisa explicar o caminho sem comentar o arquivo inteiro.
 
-**Fala de orientação:**
+**Orientação para a turma:**
 
-> Uma pessoa começa conduzindo e a outra confere as decisões. Na metade, troquem funções.
-> Registrem o que fizeram e qual informação justifica o resultado.
-> Se discordarem, expliquem a diferença usando regra ou evidência, em vez de escolher pela maioria.
+> Vocês não precisam explicar todas as linhas. Expliquem apenas as que afetam a entrada que receberam.
 
-**Enunciado e passo a passo:**
+1. Identificar entrada.
+2. Marcar as condições relevantes.
+3. Registrar retorno e estado final.
+4. Trocar com outra dupla para revisão.
 
-1. Percorrer reserva válida e conflito na mesma agenda.
-2. Marcar a linha do retorno e o estado final.
-3. Trocar papéis e investigar nome somente com espaços na variante.
+**Tempo sugerido:** 2 min organização, 8 min produção, 3 min revisão entre pares e 2 min compartilhamento.
 
-**Tempo:** 2 minutos para ler e organizar; 5 para produzir; 5 para trocar revisão; 3 para compartilhar.
-Selecionar duas duplas para falar e recolher as demais por escrito. Em aulas de entrevista ou apresentação,
-usar o mesmo tempo para a primeira participação, troca e feedback.
+**Entrega esperada:** trilha de execução anotada
 
-**Entrega esperada:** registro da atividade com contexto, decisão, fundamento e uma revisão.
-**Critérios:** cumprir as etapas, preservar as regras e permitir que o colega confira.
-**Referência de correção:** usar os exemplos da demonstração e verificar o que mudou no novo caso,
-sem exigir palavras idênticas.
-
-**Perguntas ao circular:** “Qual passo está sendo executado?”, “Qual evidência sustenta isso?”
-e “O que precisaria mudar para sua conclusão ser diferente?”
-
-**Dica para a dupla:** separar o que observou do que está supondo.
-**Variação difícil:** formular um contraexemplo ou limite; transferir para casa se não couber.
+**O professor observa:** caminho coerente; retorno identificado; estado final correto; explicação focada.
 
 ## 65–77 — Exercício individual
 
-**Fala do professor — enunciado:**
+**Enunciado para falar à turma:**
 
-> Rastreie nome válido com H12 numa agenda vazia. Indique recusa, linha responsável e estado.
+> Rastreie nome válido com H12 em agenda vazia. Indique onde a operação para, qual retorno é produzido e se o estado muda. Depois escreva em uma frase o que seria igual se essa regra estivesse em JavaScript.
 
-**Tempo:** 2 minutos de leitura, 7 de resolução e 3 de revisão/entrega.
-Cada aluno entrega uma resposta própria, mesmo quando a atividade anterior foi em grupo.
+**Entrega:** rastreamento + frase de transferência
 
-**Entrega:** artefato pedido no enunciado, acompanhado de uma explicação breve da decisão.
-**Critérios:** correção, completude do recorte, evidência e justificativa. Aplicar a
-[rubrica formativa](../../planejamento/analise-pedagogica.md), de 0 a 2 por critério. Referência proposta: 6/8, sem zero em correção ou evidência.
+**Critérios:** retorno correto; estado correto; linha/condição decisiva identificada; lógica separada da sintaxe.
 
-**Ajuda graduada:** pedir que identifique primeiro a entrada, regra ou exigência; depois que escolha o próximo
-passo. Não resolver todas as etapas. Registrar qual parte foi assistida e conferir transferência em uma tentativa nova.
-
-**Gabarito comentado — revelar depois da tentativa:**
-
-> Horário fora do catálogo retorna horario_invalido antes do registro. Agenda continua vazia. Não precisa decorar números de linha; identificar trecho e decisão.
+**Se houver dificuldade:** peça primeiro só ‘qual condição falha?’ e depois complete retorno/estado.
 
 ## 77–85 — Correção, intervenções e dúvidas
 
-**Fala para iniciar a correção:**
+Peça primeiro que o aluno explique o caminho usado. Só depois mostre referência ou correção.
 
-> Se sua resposta foi diferente, mantenha a primeira versão. Vamos descobrir em qual decisão
-> o raciocínio mudou. Corrigir e explicar a mudança faz parte da aprendizagem.
+**Se aparecer:** o aluno tenta traduzir cada linha para português
 
-**Se o aluno adivinhar pelo nome do método:**
+> Escolha primeiro a entrada e marque apenas as condições que ela realmente atravessa.
 
-> Qual entrada você está usando e qual condição foi atendida?
+**Se aparecer:** o aluno assume que retorno de conflito também altera estado
 
-**Se o aluno continuar após return:**
+> Onde está a instrução que modifica a agenda nesse caminho? O retorno pode acontecer antes dela.
 
-> A operação já terminou; quais linhas deixam de ser alcançadas?
+**Se aparecer:** o aluno acha que agora precisa dominar TS
 
-**Dúvida central da aula:** “Qual evidência mostra que a segunda chamada não criou reserva?”
+> Não. TS é apenas comparação introdutória. O objetivo é enxergar a portabilidade da lógica.
 
-**Como responder:**
+### Perguntas de verificação
 
-> Retorno antecipado de conflito e estado com a única reserva original.
+- **Preciso entender todo o arquivo para explicar uma função?** — Não. É possível começar pelo contrato e rastrear uma entrada concreta.
+- **Depois de um `return`, o restante daquele caminho executa?** — Não; a função encerra naquele ponto.
+- **Ao passar de Python para JS/TS, a lógica precisa ser reaprendida do zero?** — Não. Conceitos como condição, laço e função permanecem; a sintaxe e a tipagem variam.
 
-**Se perguntarem se a resposta precisa ser igual:**
-
-> Não precisa repetir minha frase. Precisa respeitar as regras e permitir que outra pessoa
-> confira como você chegou à decisão.
-
-**Se perguntarem como usar a gravação:**
-
-> Localize o trecho em que surgiu a dúvida, reveja o exemplo e depois tente uma entrada ou situação nova.
-> Assistir de novo ajuda; explicar sua própria decisão é o que vamos avaliar.
-
-**Modelo de devolutiva:**
-
-> Você acertou ao identificar a decisão principal. Falta mostrar a informação que a sustenta.
-> Acrescente essa evidência e explique o que mudou na sua revisão.
-
-Selecionar duas dúvidas para os oito minutos. Registrar as demais para resposta após a aula ou retomada.
-Não ampliar silenciosamente a duração do encontro.
-
-## 85–90 — Fechamento e tarefa para casa
+## 85–90 — Fechamento e tarefa
 
 **Fala de fechamento:**
 
-> Hoje trabalhamos como rastrear código de reserva e localizar o retorno que impede duplicidade.
-> Para revisar, procure uma decisão, a evidência que a sustenta e uma limitação que ainda precisa de atenção.
-> Guardem a primeira versão e a correção; isso ajuda a explicar a evolução no portfólio.
+> Ler código é seguir intenção, decisões e estado. A linguagem importa, mas a lógica é o fio que permite vocês aprenderem novas sintaxes depois.
 
-**Pergunta de saída:** “O que você mudou na sua primeira previsão, e por quê?”
+**Tarefa para casa:**
 
-**Tarefa de casa — falar à turma:**
+1. Rastrear outra entrada do laboratório.
+2. Registrar retorno e estado.
+3. Escolher uma função simples de lógica do Módulo 2 e observar uma versão equivalente em JS ou TS, sem obrigação de programar um projeto.
+4. Entregar `m03-aula-02-revisao.md`.
 
-> Completar tabela e comparar referência/variante. Executar quando disponível e identificar evidência manual ou executada.
+**Entrega:** rastreamento revisado + comparação curta
 
-**Tempo-base:** 30–45 minutos para revisão. Se o enunciado exigir concluir vários artefatos, execução pendente
-ou preparação da entrega final, combinar prazo e tempo adicional explicitamente; não prometer que tudo cabe
-nesse intervalo.
+**Ponte para a próxima aula:**
 
-**Entrega:** `modulo-03-aula-02-leitura-de-codigo-revisao.md`, ou arquivos específicos pedidos, contendo resposta inicial, feedback,
-versão revisada e explicação. O professor verifica a revisão no início do encontro seguinte.
+> Agora que conseguimos ler uma mudança, precisamos aprender a registrá-la de forma que outra pessoa entenda o que aconteceu.
 
-**Dica:** usar E-book e gravação como apoio; identificar empresa fictícia e origem da evidência.
-**Variação difícil:** acrescentar uma situação nova ou uma dúvida de aplicação, com proposta de investigação.
+## Checklist pós-aula
 
-## Checklist do professor e uso da gravação
-
-- [ ] Preparar recursos e exemplo antes do encontro.
-- [ ] Pedir previsão antes de revelar referência.
-- [ ] Conferir compreensão por exemplo, não por memorização.
-- [ ] Alternar condução e revisão na dupla.
-- [ ] Preservar exercício individual.
-- [ ] Declarar execução, simulação e limites corretamente.
-- [ ] Registrar feedback, tarefa e dúvidas pendentes.
-- [ ] Disponibilizar gravação para revisão e indicar os blocos de demonstração e correção.
-
-Percentual de vídeo assistido é sinal de utilização, não prova de domínio.
-Usar artefato e explicação para avaliar aprendizagem; não penalizar o aluno por uma falha de registro de reprodução.
+- [ ] Disponibilizar a gravação.
+- [ ] Registrar dúvidas que precisam ser retomadas.
+- [ ] Conferir se atividade, demonstração e tarefa foram as mesmas do roteiro.
+- [ ] Anotar ajustes de tempo para a próxima turma.
+- [ ] Se uma regra ou resposta de referência mudar, atualizar roteiro e script juntos.

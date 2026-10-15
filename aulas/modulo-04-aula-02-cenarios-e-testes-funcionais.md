@@ -1,120 +1,127 @@
-# Roteiro — Módulo 4, Aula 2
+# Roteiro de Aula — Módulo 4, Aula 2
 
-**Condução com falas prontas:** [script do professor](scripts/modulo-04-aula-02-cenarios-e-testes-funcionais.md). Seguir a sequência de até 90 minutos. As atividades abaixo formam o caderno completo; o script define o recorte ao vivo e a conclusão em casa. A gravação serve para revisão posterior.
+# Cenários e Testes Funcionais
 
-## Tema e objetivo da aula
+> **Papel deste documento:** definir o que será ensinado, praticado e avaliado.  
+> A condução minuto a minuto, falas sugeridas, respostas esperadas e intervenções ficam no [script do professor](scripts/modulo-04-aula-02-cenarios-e-testes-funcionais.md).
 
-**Tema:** Cenários e testes funcionais. **Objetivo observável:** escrever oito casos com regra, dados e resultado.
+## Objetivo da aula
 
-**Leitura:** [E-book do módulo](../ebooks/modulo-04-qualidade-de-software.md), tópicos 2. **Pré-requisito:** atividade da aula anterior, com retomada da lacuna identificada no feedback.
+Transformar regras em cenários e casos funcionais reproduzíveis, separando resultado esperado de resultado observado.
 
-## Duração sugerida
+Ao final, o aluno deverá conseguir:
 
-| Etapa | Minutos |
+- escrever casos com pré-condição, dados, passos e esperado
+- relacionar caso à regra
+- executar e registrar observado
+- cobrir caminhos positivos e negativos
+- preservar estado como parte da evidência
+
+## Conteúdos e conceitos
+
+### Cenário versus caso
+- cenário descreve situação
+- caso detalha execução
+- regra dá referência
+
+### Esperado antes do observado
+- regra define referência
+- não adaptar esperado ao resultado
+- divergência pode indicar bug
+
+### Cobertura funcional
+- positivo e negativo
+- estado depois da ação
+- prioridade pelo risco
+
+## Duração e blocos
+
+| Bloco | Tempo previsto |
 |---|---:|
-| Abertura e diagnóstico | 8 |
-| Conceitos e exemplos | 17 |
-| Demonstração guiada | 20 |
-| Pausa | 5 |
-| Dinâmica em dupla ou grupo | 15 |
-| Exercício individual | 12 |
-| Correção e dúvidas | 8 |
-| Fechamento e orientação da tarefa | 5 |
-| Total | 90 |
+| Abertura e diagnóstico | 8 min |
+| Conceitos e exemplos | 17 min |
+| Demonstração guiada | 20 min |
+| Pausa | 5 min |
+| Dinâmica em dupla ou grupo | 15 min |
+| Exercício individual | 12 min |
+| Correção e dúvidas | 8 min |
+| Fechamento e tarefa | 5 min |
+| **Total** | **90 min** |
 
 ## Materiais necessários
 
-Python 3, simulador e tabela de casos. Usar [caderno do caso](../atividades/caso-agenda-clara.md), editor de Markdown ou papel e [laboratório](../portfolio/agenda-clara/README.md). Testar o ambiente antes da aula. Contas de ferramentas são opcionais quando houver alternativa documental; evidência de execução continua necessária quando o enunciado a solicitar.
+- E-book do Módulo 4
+- RN01–RN08
+- modelo de caso de teste
+- laboratório
 
-## Abertura da aula
+## Exemplos planejados
 
-Compare “testar reserva” com uma entrada e estado explícitos. Dê dois minutos para registrar uma previsão individual, recolha duas respostas e pergunte qual evidência seria necessária. Retome um conceito anterior e anuncie a entrega de hoje.
+### Exemplo 1
+TC03 para nome com espaços.
 
-## Explicação teórica e exemplos práticos
+### Exemplo 2
+Conflito de H09.
 
-### Cenários e testes funcionais
+### Exemplo 3
+Cancelamento de ID inexistente.
 
-**Conceito:** Cenário resume uma situação; caso de teste define como executá-la e conferir seu resultado.
+## Demonstração planejada — Escrever e executar casos funcionais
 
-**Explicação simples:** “Testar reserva” é amplo. “Reservar H09 livre para Ana e confirmar que ele fica ocupado” permite conferência.
+1. Escolher RN03 e escrever esperado.
+2. Executar na referência e variante.
+3. Registrar observado e estado.
+4. Escrever caso de conflito RN05.
+5. Comparar resultados sem alterar o esperado.
 
-**Aprofundamento:** Um caso contém ID, regra, pré-condição, dados, passos, esperado e estado final. A execução acrescenta versão, observado, status e evidência. O esperado vem da regra, não do código atual. Reinicie a agenda nos casos independentes; preserve o estado explicitamente nas sequências. Texto vazio e espaços somente são entradas distintas para RN03. Uma recusa não deve alterar reserva anterior. Não use “funcionou” como esperado nem aprove apenas porque nenhuma exceção ocorreu.
+**Resultado pedagógico esperado:** o aluno produz evidência repetível e identifica divergência entre versões.
 
-**Exemplo cotidiano:** Uma compra sem mensagem de erro ainda pode gerar pedido duplicado.
+## Dinâmica em grupo — Do requisito à evidência
 
-**Cenário empresarial:** QA vincula TC02 a RN05 e verifica conflito e preservação da reserva de Ana.
+**Cenário:** Cada dupla recebe uma regra diferente de RN01–RN08.
 
-**Erros a observar:** Ausência de pré-condição; esperado vago; copiar observado para esperado.
+1. Escrever um caso com dados e estado inicial.
+2. Definir esperado antes de executar.
+3. Executar ou simular declaradamente.
+4. Registrar observado e estado final.
+5. Trocar caso com outra dupla para verificar reproduzibilidade.
 
-**Orientação:** Definir resultado antes de executar e conferir estado final.
+**Entrega esperada:** caso funcional revisado por outra dupla
 
-Distribua os 17 minutos entre os tópicos. Peça um exemplo com palavras do aluno antes de avançar; se houver uma contradição, retome a regra do caso.
-
-## Demonstração guiada
-
-Execute Ana/H09 e depois Bruno/H09; confira a preservação da primeira reserva.
-
-**Exemplo 1:** TC03/RN03: agenda vazia; reservar espaços em H11; esperado nome_invalido e H11 livre. Referência rejeita; variante aceita e ocupa H11. Essa diferença é um defeito simulado, não incidente real.
-
-Interrompa antes do resultado para pedir uma previsão. Revele uma etapa de cada vez, marque a regra e compare a resposta com a evidência. Não concluir correção apenas pela aparência do arquivo.
-
-## Dinâmica em grupo
-
-**Nome:** Do requisito à evidência. **Contexto:** a equipe precisa revisar uma decisão antes de avançar o MVP. Em duplas, uma pessoa produz e outra confere; trocar funções na metade do tempo. Em grupos maiores, adicionar um papel de registro.
-
-**Distribuição:** 2 minutos de leitura; 5 de execução; 5 de revisão cruzada; 3 de compartilhamento. Se houver mais de duas duplas, recolher as demais conclusões por escrito para caber no tempo.
-
-**Atividade 2: Escrever e executar oito casos de teste**
-
-**Contexto profissional:** o time da empresa fictícia Agenda Clara precisa revisar esta decisão antes de entregar o MVP. Dados e regras no [caderno do caso](../atividades/caso-agenda-clara.md).
-
-**Objetivo:** Escrever e executar oito casos de teste, com registro que permita conferência por outra pessoa.
-
-**Passo a passo:**
-
-1. Crie pelo menos um caso por regra RN01–RN08.
-2. Inclua sucesso, conflito, espaços, horário inválido e cancelamento.
-3. Registre quando a agenda será reiniciada.
-4. Execute na referência e anote observado.
-5. Compare o caso de espaços nas duas versões.
-
-**Entrega esperada:** tabela com oito casos e registro de execução Identificar nome, versão ou premissas, regra utilizada e justificativa. Nome sugerido: `m04-atividade-02.md`.
-
-**Critérios específicos:** Cobrir oito regras; especificar dados e estado; registrar versão e resultado.
-
-**Exemplo de resposta comentada:** TC03/RN03: agenda vazia; reservar espaços em H11; esperado nome_invalido e H11 livre. Referência rejeita; variante aceita e ocupa H11. Essa diferença é um defeito simulado, não incidente real.
-
-**Dica:** faça sua tentativa antes de ler a resposta e explique qualquer revisão.
-
-**Variação mais difícil:** Crie um caso que valide preservação do estado após uma recusa.
-
+**Critérios:** vínculo com regra; esperado explícito; dados suficientes; estado final observado.
 
 ## Exercício individual
 
-Escreva o caso RN07 de cancelamento inexistente preservando outra reserva.
+Escreva o caso de RN07 para cancelar um ID inexistente enquanto existe outra reserva válida. Inclua estado inicial, ação, esperado e o que deve permanecer inalterado.
 
-**Tempo:** 12 minutos. **Entrega:** uma versão própria do artefato, incluindo regra, decisão e evidência. **Avaliação:** critérios específicos acima e rubrica do E-book. O professor verifica se houve transferência para o novo caso. Se houver ajuda, registrar qual etapa foi assistida.
+**Entrega:** caso funcional individual
 
-## Perguntas para os alunos
+**Critérios:** RN07 ligada; estado preservado; dados claros; resultado verificável.
 
-- De onde vem o esperado?
-- Quando reiniciar o estado?
-- Qual parte da sua previsão você reviu e qual evidência motivou a mudança?
+## Perguntas de verificação
 
-## Possíveis dúvidas e como responder
+- O esperado pode ser definido depois de executar?
+- Caso de teste é só uma lista de cliques?
+- Por que registrar estado depois de uma recusa?
 
-| Dúvida | Resposta |
-|---|---|
-| Caso negativo é erro do teste? | Não; verifica uma recusa prevista. |
-| Sem exceção significa aprovado? | Não; saída e estado precisam atender à regra. |
-| Preciso copiar a resposta de referência? | Não; preserve as regras e explique sua decisão com evidência. |
-
-## Correção e fechamento
-
-As respostas de referência estão na demonstração. Não exigir frases idênticas; conferir critérios e raciocínio. Cada aluno completa: “Usei ___ para decidir ___ e confirmei com ___”. Relacionar à entrega do módulo: plano de testes, oito casos ligados a RN01–RN08, registro de execução das duas versões, BUG01 e evidência de reteste. A próxima aula amplia investigação e comunicação.
+> As respostas esperadas e intervenções ficam exclusivamente no script do professor.
 
 ## Tarefa para casa
 
-Revisar casos e executar nas versões disponíveis, identificando a evidência.
+1. Revisar os casos com feedback.
+2. Executar nas versões disponíveis.
+3. Registrar versão, esperado, observado e evidência.
+4. Entregar `m04-aula-02-revisao.md`.
 
-**Tempo sugerido:** 30–45 minutos. Entregar `m04-aula-02-revisao.md` com resposta inicial, feedback, versão revisada e explicação da mudança. O professor verifica a revisão no próximo encontro.
+**Entrega:** casos revisados + registros de execução
+
+## Conexão com a trilha
+
+A Aula 3 usa os casos para explorar o sistema e registrar um defeito de forma útil.
+
+## Referências
+
+- [E-book correspondente](../ebooks/modulo-04-qualidade-de-software.md)
+- [Caso Agenda Clara](../atividades/caso-agenda-clara.md)
+- [Laboratório](../portfolio/agenda-clara/README.md)
+- [Script do professor](scripts/modulo-04-aula-02-cenarios-e-testes-funcionais.md)

@@ -1,267 +1,217 @@
-# Script do professor — Qualidade, riscos e plano
+# Script do Professor — Qualidade, Riscos e Plano de Testes
 
-**DTEM Treinamentos · encontro ao vivo de até 90 minutos, gravado para revisão.**
+**DTEM Treinamentos · encontro ao vivo de até 90 minutos.**
 
-Este documento contém falas e ações de condução. Adaptar a linguagem ao próprio estilo, preservando conceitos,
-exemplos e critérios. Os intervalos incluem escrita, espera, interação e prática; não são 90 minutos de leitura.
-Não depende de vídeos prévios. O aluno pode consultar o E-book e rever a gravação depois.
+> **Papel deste documento:** orientar a condução da aula. O conteúdo e as atividades abaixo devem permanecer coerentes com o roteiro; o script não cria uma aula paralela.
 
-**Roteiro:** [planejamento da aula](../modulo-04-aula-01-qualidade-riscos-e-plano.md).  
-**Material de estudo:** [E-book correspondente](../../ebooks/modulo-04-qualidade-de-software.md).  
-**Caso:** [Agenda Clara](../../atividades/caso-agenda-clara.md), empresa e dados fictícios.
+**Roteiro:** [Módulo 4, Aula 1](../modulo-04-aula-01-qualidade-riscos-e-plano.md)  
+**Material do aluno:** [E-book correspondente](../../ebooks/modulo-04-qualidade-de-software.md)  
+**Caso:** [Agenda Clara](../../atividades/caso-agenda-clara.md)  
+**Laboratório:** [Agenda Clara](../../portfolio/agenda-clara/README.md)  
 
-## Objetivo e materiais
+## Alinhamento obrigatório
 
-**Objetivo observável:** produzir plano de testes com riscos, escopo e condições de início/fim.  
-**Materiais:** RN01–RN08, quadro de riscos e modelo de plano; simulador disponível para próxima aula.
+- **Objetivo:** Introduzir qualidade orientada a risco e produzir um plano de testes enxuto com escopo, prioridades, estratégia e limites.
+- **Demonstração central:** Construir um plano de testes de uma página.
+- **Prática em grupo:** Planejar antes de executar.
+- **Exercício individual:** detalhar risco de cancelamento.
+- **Tarefa:** revisar o plano e acrescentar uma limitação.
 
-Antes do encontro, preparar o exemplo e conferir os recursos necessários. Em tarefas de ferramenta, preparar
-conta e ambiente com antecedência. Se a execução estiver indisponível, percorrer manualmente e declarar o método;
-publicação ou execução exigidas pela entrega devem ser concluídas depois com apoio. Não inventar evidência.
+Não substituir esses elementos por um exemplo genérico sem revisar também o roteiro.
+
+## Antes da aula
+
+- [ ] Abrir RN01–RN08.
+- [ ] Testar o laboratório.
+- [ ] Preparar modelo de plano de uma página.
+- [ ] Deixar o roteiro e este script abertos.
+- [ ] Testar qualquer ferramenta, arquivo ou demonstração antes da turma entrar.
+- [ ] Separar o material que o aluno deverá entregar ao final.
 
 ## Agenda de condução
 
-| Intervalo | Etapa | Minutos |
-|---|---|---:|
-| 00–08 | Abertura e diagnóstico | 8 |
-| 08–25 | Conceitos e exemplos | 17 |
-| 25–45 | Demonstração guiada | 20 |
-| 45–50 | Pausa | 5 |
-| 50–65 | Dinâmica em dupla ou grupo | 15 |
-| 65–77 | Exercício individual | 12 |
-| 77–85 | Correção e dúvidas | 8 |
-| 85–90 | Fechamento e tarefa | 5 |
-| Total | | 90 |
-
-O roteiro original contém o caderno completo de atividades. Nesta versão, os enunciados de grupo e individual
-abaixo definem o recorte do encontro. A tarefa de casa conclui os itens restantes. Se precisar reduzir extensão,
-preservar demonstração, tentativa individual, feedback e orientação da entrega.
+| Intervalo | Etapa |
+|---|---|
+| 00–08 | Abertura e diagnóstico |
+| 08–25 | Conceitos e exemplos |
+| 25–45 | Demonstração guiada |
+| 45–50 | Pausa |
+| 50–65 | Dinâmica |
+| 65–77 | Exercício individual |
+| 77–85 | Correção e dúvidas |
+| 85–90 | Fechamento e tarefa |
 
 ## 00–08 — Abertura e diagnóstico
 
-**Mostrar:** título da aula e objetivo. **Fala de abertura:**
+**Fala de abertura:**
 
-> Se vocês tivessem pouco tempo para testar a agenda, por onde começariam? A resposta precisa considerar o que pode dar errado e qual o impacto para quem usa.
+> Se vocês tivessem pouco tempo para testar a agenda, por onde começariam? A resposta não deveria ser ‘clicar em tudo’, e sim pensar no que pode dar errado e no impacto.
 
-**Condução:** dar dois minutos para uma previsão individual no chat ou caderno. Colher duas respostas,
-sem exigir fala de todos. Esperar aproximadamente 30 segundos antes de completar a resposta.
-Não confundir silêncio inicial com falta de capacidade; oferecer a situação concreta novamente.
+**Pergunta diagnóstica:** Qual risco do Agenda Clara você investigaria primeiro e por quê?
 
-**Pergunta de diagnóstico:** “Um plano que lista ferramentas explica por que testar?”
+Dê cerca de dois minutos para respostas curtas. Escute pelo menos duas respostas antes de completar.
 
-**Referência para o professor:** Não; precisamos de objetivo, risco, cenários, ambiente e critérios.
-
-**Transição para a explicação:**
-
-> Vamos transformar essa primeira resposta em um raciocínio que outra pessoa consiga conferir.
-> A cada exemplo, anotem a decisão e a informação que a sustenta.
-
-## 08–25 — Explicação teórica e exemplos
-
-Dividir os 17 minutos entre as três explicações, a escrita e duas perguntas breves.
-Usar as falas como apoio, sem acrescentar uma exposição inteira do E-book.
-
-### Explicação 1 — Qualidade compartilhada
-
-**Fala sugerida:**
-
-> Qualidade envolve atender necessidades e reduzir riscos. QA contribui para prevenir e investigar problemas, mas não garante tudo sozinho. Discutir uma regra antes de implementar é trabalho de qualidade. Testes aumentam informação e confiança, sem provar ausência de todos os defeitos.
-
-**Ação:** escrever uma palavra-chave e pedir um exemplo com palavras do aluno. Se houver dúvida, pedir a entrada, regra ou situação concreta que sustenta a resposta.
-### Explicação 2 — Risco orienta escolha
-
-**Fala sugerida:**
-
-> Duplicidade prejudica atendimento; nome inválido prejudica identificação; cancelamento incorreto ocupa capacidade. Precisamos explicar impacto e chance considerada, não apenas dar uma nota. No laboratório, investigações são sequenciais; concorrência real e persistência ficam fora.
-
-**Ação:** escrever uma palavra-chave e pedir um exemplo com palavras do aluno. Se houver dúvida, pedir a entrada, regra ou situação concreta que sustenta a resposta.
-### Explicação 3 — Plano orienta decisão
-
-**Fala sugerida:**
-
-> Um plano curto informa objetivo, escopo, riscos, estratégia, ambiente, dados e condições para iniciar e encerrar. 'Ter Jira' não define estratégia. 'Executar casos críticos e tratar defeitos impeditivos' é uma condição discutível e verificável quando identificamos quais casos e defeitos importam.
-
-**Ação:** escrever uma palavra-chave e pedir um exemplo com palavras do aluno. Se houver dúvida, pedir a entrada, regra ou situação concreta que sustenta a resposta.
-
-**Mostrar no quadro:** plano em uma página e matriz Risco / Consequência / Evidência / Prioridade.
-
-**Checagem de compreensão:** “Um plano que lista ferramentas explica por que testar?”  
-**Resposta esperada:** Não; precisamos de objetivo, risco, cenários, ambiente e critérios.
+**Resposta de referência para o professor:** qualquer escolha coerente precisa relacionar comportamento a impacto; duplicidade tende a ser crítica para integridade da agenda.
 
 **Transição:**
 
-> Agora vou percorrer um exemplo pensando em voz alta. Antes de mostrar o resultado,
-> vou pedir uma previsão. Observem onde uma regra ou evidência muda a decisão.
+> Vamos transformar risco em um plano objetivo, deixando claro o que será e o que não será investigado.
 
-## 25–45 — Demonstração guiada
+## 08–25 — Conceitos e exemplos
 
-**Preparação:** abrir os dados, documento, código ou cartões indicados. Reservar aproximadamente cinco minutos
-por passo e os minutos finais para uma previsão e uma dúvida. Em comandos, executar uma operação de cada vez
-e conferir estado. Não substituir falha de ambiente por uma afirmação de execução bem-sucedida.
+### 1. Qualidade compartilhada
 
-### Passo 1 — Definir escopo
+**Fala sugerida:**
 
-**Fala durante a demonstração:**
+> QA não entra apenas no final. Qualidade melhora quando regras, riscos e exemplos são discutidos cedo e depois verificados com evidências.
 
-> Vou investigar consulta, reserva e cancelamento nas RN01–RN08. Não vou afirmar validação de segurança ou acesso simultâneo.
+**Mostrar/fazer:** uma regra ambígua e um exemplo claro.
 
-**Ação:** mostrar o registro correspondente antes de avançar; pedir uma previsão e conferir a resposta com a evidência.
-### Passo 2 — Ligar risco a cenário
+**Perguntar:** Que problema poderíamos evitar antes de desenvolver?
 
-**Fala durante a demonstração:**
+**Compreensão esperada:** ambiguidade, regra conflitante ou caso crítico esquecido.
 
-> Duplicidade: reservar Ana/H09 e depois Bruno/H09, verificando conflito e preservação. Esse cenário responde a um risco concreto.
+### 2. Risco
 
-**Ação:** mostrar o registro correspondente antes de avançar; pedir uma previsão e conferir a resposta com a evidência.
-### Passo 3 — Definir início e fim
+**Fala sugerida:**
 
-**Fala durante a demonstração:**
+> Se o tempo é limitado, não testamos tudo com a mesma profundidade. Risco ajuda a decidir onde investir esforço.
 
-> Início exige regras e ambiente disponíveis. Encerramento exige evidências dos casos críticos e decisão sobre defeitos. Caso bloqueado não vira aprovado.
+**Mostrar/fazer:** duplicidade, nome inválido e cancelamento.
 
-**Ação:** mostrar o registro correspondente antes de avançar; pedir uma previsão e conferir a resposta com a evidência.
+**Perguntar:** Qual falha causaria maior impacto para uma recepção?
 
-**Pergunta após a demonstração:** “Qual decisão vocês conseguem explicar sem copiar a frase que usei?”
+**Compreensão esperada:** resposta justificada, não necessariamente única.
 
-**Referência:** a resposta precisa relacionar situação, decisão e fundamento.
-As falas de cada passo indicam o comportamento ou a interpretação que deve ser conferido.
+### 3. Plano de testes
 
-**Transição:**
+**Fala sugerida:**
 
-> Na prática, vocês vão alternar quem conduz e quem revisa. O objetivo é produzir algo
-> que o colega consiga conferir, e não somente repetir minha demonstração.
+> Plano não precisa ser longo. Ele precisa orientar decisão: o que investigaremos, por quê, com quais dados e o que não estaremos provando.
+
+**Mostrar/fazer:** estrutura de uma página.
+
+**Perguntar:** O que não podemos afirmar após testes apenas sequenciais e em memória?
+
+**Compreensão esperada:** concorrência real, persistência, segurança etc.
+
+Evite ler o E-book. Use-o como base e mantenha a explicação oral no recorte previsto pelo roteiro.
+
+## 25–45 — Demonstração guiada — Construir um plano de testes de uma página
+
+### Passo 1 — Definir objetivo/escopo
+
+**Fazer:** Escreva o que a equipe quer ganhar de confiança.
+
+**Fala sugerida:**
+
+> Plano começa com decisão, não com ferramenta. Vamos definir o que estamos tentando verificar e o que fica fora.
+
+**Checar com a turma:** Peça um exemplo de fora de escopo.
+
+### Passo 2 — Ligar risco a teste
+
+**Fazer:** Associe duplicidade a cenário de conflito.
+
+**Fala sugerida:**
+
+> Cada risco importante deve apontar para uma evidência que nos ajude a avaliá-lo.
+
+**Checar com a turma:** Pergunte qual teste investigaria cancelamento.
+
+### Passo 3 — Definir encerramento
+
+**Fazer:** Escreva condições observáveis.
+
+**Fala sugerida:**
+
+> ‘Testar tudo’ não é critério de fim. Precisamos de uma condição que possamos conferir.
+
+**Checar com a turma:** Peça uma condição crítica de encerramento.
+
+**Resultado de referência:** Plano enxuto contendo objetivo, RN01–RN08, riscos priorizados, abordagem, ambiente/dados, critérios de início/fim e limites como ausência de persistência/concorrência real.
+
+Peça previsão antes de executar ou revelar a resposta. Depois compare previsão, evidência e explicação.
 
 ## 45–50 — Pausa
 
-Deixar horário de retorno visível e não apresentar conteúdo obrigatório durante os cinco minutos.
-Na gravação, indicar o ponto em que a atividade seguinte começa.
+Informar o horário de retorno. Não usar a pausa para conteúdo obrigatório.
 
-## 50–65 — Dinâmica em dupla ou grupo
+## 50–65 — Dinâmica — Planejar antes de executar
 
-**Nome:** Revisão com explicação — Qualidade, riscos e plano.  
-**Contexto profissional:** uma equipe precisa revisar seu trabalho antes de avançar.
-**Objetivo:** aplicar os conceitos e produzir um registro conferível no recorte da aula.
+**Cenário:** A equipe precisa decidir o foco de testes do MVP Agenda Clara antes de iniciar execução.
 
-**Fala de orientação:**
+**Orientação para a turma:**
 
-> Uma pessoa começa conduzindo e a outra confere as decisões. Na metade, troquem funções.
-> Registrem o que fizeram e qual informação justifica o resultado.
-> Se discordarem, expliquem a diferença usando regra ou evidência, em vez de escolher pela maioria.
+> Se duas duplas priorizarem diferente, a discussão deve ser sobre contexto e impacto, não sobre uma resposta decorada.
 
-**Enunciado e passo a passo:**
+1. Escolher três riscos.
+2. Ordená-los com justificativa.
+3. Relacionar cada risco a um tipo de evidência/teste.
+4. Registrar um limite que a estratégia não cobre.
 
-1. Listar três riscos com consequência.
-2. Escolher cenário para o risco prioritário.
-3. Trocar revisão e definir condição de início e fim.
+**Tempo sugerido:** 2 min organização, 8 min produção, 3 min revisão entre pares e 2 min compartilhamento.
 
-**Tempo:** 2 minutos para ler e organizar; 5 para produzir; 5 para trocar revisão; 3 para compartilhar.
-Selecionar duas duplas para falar e recolher as demais por escrito. Em aulas de entrevista ou apresentação,
-usar o mesmo tempo para a primeira participação, troca e feedback.
+**Entrega esperada:** recorte de plano de testes
 
-**Entrega esperada:** registro da atividade com contexto, decisão, fundamento e uma revisão.
-**Critérios:** cumprir as etapas, preservar as regras e permitir que o colega confira.
-**Referência de correção:** usar os exemplos da demonstração e verificar o que mudou no novo caso,
-sem exigir palavras idênticas.
-
-**Perguntas ao circular:** “Qual passo está sendo executado?”, “Qual evidência sustenta isso?”
-e “O que precisaria mudar para sua conclusão ser diferente?”
-
-**Dica para a dupla:** separar o que observou do que está supondo.
-**Variação difícil:** formular um contraexemplo ou limite; transferir para casa se não couber.
+**O professor observa:** risco justificado; evidência relacionada; limite explícito; sem promessa de ‘zero bugs’.
 
 ## 65–77 — Exercício individual
 
-**Fala do professor — enunciado:**
+**Enunciado para falar à turma:**
 
-> Escreva um plano resumido para cancelamento: objetivo, risco, dados, sequência e limitação. O plano completo de oito regras será concluído em casa.
+> Escolha o risco de cancelamento e escreva objetivo, dados necessários, sequência de investigação, evidência esperada e uma limitação do teste.
 
-**Tempo:** 2 minutos de leitura, 7 de resolução e 3 de revisão/entrega.
-Cada aluno entrega uma resposta própria, mesmo quando a atividade anterior foi em grupo.
+**Entrega:** bloco individual do plano
 
-**Entrega:** artefato pedido no enunciado, acompanhado de uma explicação breve da decisão.
-**Critérios:** correção, completude do recorte, evidência e justificativa. Aplicar a
-[rubrica formativa](../../planejamento/analise-pedagogica.md), de 0 a 2 por critério. Referência proposta: 6/8, sem zero em correção ou evidência.
+**Critérios:** risco claro; evidência observável; sequência coerente; limite declarado.
 
-**Ajuda graduada:** pedir que identifique primeiro a entrada, regra ou exigência; depois que escolha o próximo
-passo. Não resolver todas as etapas. Registrar qual parte foi assistida e conferir transferência em uma tentativa nova.
-
-**Gabarito comentado — revelar depois da tentativa:**
-
-> RN06: reservar, cancelar id e consultar disponibilidade. Risco é perda de capacidade. Ambiente sequencial em memória; não cobre autorização real. Encerramento deve exigir execução e análise de divergências.
+**Se houver dificuldade:** forneça a regra de cancelamento e peça primeiro apenas ‘qual comportamento provaria que está errado?’.
 
 ## 77–85 — Correção, intervenções e dúvidas
 
-**Fala para iniciar a correção:**
+Peça primeiro que o aluno explique o caminho usado. Só depois mostre referência ou correção.
 
-> Se sua resposta foi diferente, mantenha a primeira versão. Vamos descobrir em qual decisão
-> o raciocínio mudou. Corrigir e explicar a mudança faz parte da aprendizagem.
+**Se aparecer:** “QA garante qualidade.”
 
-**Se o aluno plano afirma zero defeitos:**
+> QA contribui com técnicas e investigação, mas Produto, Dev, Infra e outras áreas também tomam decisões que afetam qualidade.
 
-> Qual conjunto de condições você investigou e qual risco permaneceu?
+**Se aparecer:** plano vira lista de ferramentas
 
-**Se o aluno prioridade sem razão:**
+> Que risco cada ferramenta ajudará a investigar? Se não houver relação, a ferramenta não é a estratégia.
 
-> Que impacto justifica começar por esse cenário?
+**Se aparecer:** critério de fim ‘quando tudo passar’
 
-**Dúvida central da aula:** “Um plano que lista ferramentas explica por que testar?”
+> Quais casos são críticos? O que significa ‘tudo’ e em qual escopo?
 
-**Como responder:**
+### Perguntas de verificação
 
-> Não; precisamos de objetivo, risco, cenários, ambiente e critérios.
+- **Testes provam que não existem bugs?** — Não. Eles aumentam confiança no escopo e condições investigadas.
+- **Plano de testes precisa ser um documento enorme?** — Não. Precisa ser suficiente para orientar decisões e tornar premissas explícitas.
+- **Quem é responsável pela qualidade?** — O time inteiro; QA tem contribuição especializada, não propriedade exclusiva.
 
-**Se perguntarem se a resposta precisa ser igual:**
-
-> Não precisa repetir minha frase. Precisa respeitar as regras e permitir que outra pessoa
-> confira como você chegou à decisão.
-
-**Se perguntarem como usar a gravação:**
-
-> Localize o trecho em que surgiu a dúvida, reveja o exemplo e depois tente uma entrada ou situação nova.
-> Assistir de novo ajuda; explicar sua própria decisão é o que vamos avaliar.
-
-**Modelo de devolutiva:**
-
-> Você acertou ao identificar a decisão principal. Falta mostrar a informação que a sustenta.
-> Acrescente essa evidência e explique o que mudou na sua revisão.
-
-Selecionar duas dúvidas para os oito minutos. Registrar as demais para resposta após a aula ou retomada.
-Não ampliar silenciosamente a duração do encontro.
-
-## 85–90 — Fechamento e tarefa para casa
+## 85–90 — Fechamento e tarefa
 
 **Fala de fechamento:**
 
-> Hoje trabalhamos como produzir plano de testes com riscos, escopo e condições de início/fim.
-> Para revisar, procure uma decisão, a evidência que a sustenta e uma limitação que ainda precisa de atenção.
-> Guardem a primeira versão e a correção; isso ajuda a explicar a evolução no portfólio.
+> Planejamento de QA não é burocracia: é tornar explícito onde queremos confiança, que evidência precisamos e quais limites ainda permanecem.
 
-**Pergunta de saída:** “O que você mudou na sua primeira previsão, e por quê?”
+**Tarefa para casa:**
 
-**Tarefa de casa — falar à turma:**
+1. Revisar o plano com feedback.
+2. Acrescentar pelo menos uma limitação relevante.
+3. Entregar `m04-aula-01-revisao.md`.
 
-> Completar plano de uma página para RN01–RN08 e preparar ambiente. Identificar o que está fora e revisar com a rubrica.
+**Entrega:** plano de testes revisado
 
-**Tempo-base:** 30–45 minutos para revisão. Se o enunciado exigir concluir vários artefatos, execução pendente
-ou preparação da entrega final, combinar prazo e tempo adicional explicitamente; não prometer que tudo cabe
-nesse intervalo.
+**Ponte para a próxima aula:**
 
-**Entrega:** `modulo-04-aula-01-qualidade-riscos-e-plano-revisao.md`, ou arquivos específicos pedidos, contendo resposta inicial, feedback,
-versão revisada e explicação. O professor verifica a revisão no início do encontro seguinte.
+> Na próxima aula vamos pegar as regras do plano e escrever casos que outra pessoa consegue executar e conferir.
 
-**Dica:** usar E-book e gravação como apoio; identificar empresa fictícia e origem da evidência.
-**Variação difícil:** acrescentar uma situação nova ou uma dúvida de aplicação, com proposta de investigação.
+## Checklist pós-aula
 
-## Checklist do professor e uso da gravação
-
-- [ ] Preparar recursos e exemplo antes do encontro.
-- [ ] Pedir previsão antes de revelar referência.
-- [ ] Conferir compreensão por exemplo, não por memorização.
-- [ ] Alternar condução e revisão na dupla.
-- [ ] Preservar exercício individual.
-- [ ] Declarar execução, simulação e limites corretamente.
-- [ ] Registrar feedback, tarefa e dúvidas pendentes.
-- [ ] Disponibilizar gravação para revisão e indicar os blocos de demonstração e correção.
-
-Percentual de vídeo assistido é sinal de utilização, não prova de domínio.
-Usar artefato e explicação para avaliar aprendizagem; não penalizar o aluno por uma falha de registro de reprodução.
+- [ ] Disponibilizar a gravação.
+- [ ] Registrar dúvidas que precisam ser retomadas.
+- [ ] Conferir se atividade, demonstração e tarefa foram as mesmas do roteiro.
+- [ ] Anotar ajustes de tempo para a próxima turma.
+- [ ] Se uma regra ou resposta de referência mudar, atualizar roteiro e script juntos.
