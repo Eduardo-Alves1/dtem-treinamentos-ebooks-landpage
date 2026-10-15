@@ -22,8 +22,7 @@ Criar materiais:
 
 # O material deve servir para
 
-- professor ministrar aula;
-- aluno estudar;
+- aluno estudar e acompanhar a formação;
 - revisão pós-aula;
 - construção de portfólio;
 - preparação para entrevistas.
@@ -48,7 +47,7 @@ Iniciantes e pessoas em transição de carreira.
 12. Projeto prático
 13. Glossário
 14. Resumo
-15. Guia do professor
+15. Resumo final para o aluno
 
 # Regras
 
@@ -58,6 +57,8 @@ Iniciantes e pessoas em transição de carreira.
 - Sempre usar exemplos reais.
 - Sempre usar Markdown.
 - Sempre gerar material robusto.
+- Não incluir falas do professor, instruções de condução, gabaritos internos, respostas de referência para correção, tempo de aula ou links para scripts do professor.
+- O E-book deve ser seguro para disponibilização direta ao aluno.
 
 # Formato esperado
 
