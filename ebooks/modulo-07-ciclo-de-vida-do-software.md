@@ -36,7 +36,6 @@ SDLC organiza atividades de descoberta, construção, verificação, entrega e e
 | 3 | [Shift Left e prevenção](../aulas/modulo-07-aula-03-shift-left-e-prevencao.md) | 3 |
 | 4 | [Release e operação](../aulas/modulo-07-aula-04-release-e-operacao.md) | 4 |
 
-**Duração sugerida:** quatro encontros de até 90 minutos, incluindo pausa de 5 minutos: até 6 horas ao vivo. O script delimita a prática do encontro; o restante do caderno é concluído depois. Usar papel ou Markdown se uma ferramenta estiver indisponível, identificando a simulação e concluindo posteriormente a execução exigida.
 
 ## Tópico 1 — SDLC e integração entre áreas
 
@@ -378,15 +377,7 @@ diagrama completo de SDLC, matriz de rastreabilidade, checklist de release simul
 | Evidência | Não verificável | Falta dado, versão ou saída | Outra pessoa consegue conferir |
 | Justificativa | Ausente | Genérica | Conecta regra, risco e decisão |
 
-Parâmetro formativo proposto: 6/8, sem zero em correção ou evidência. O professor devolve um acerto, uma lacuna e uma ação; o aluno corrige, registra a mudança e reapresenta. Não é regra comercial de certificação.
-
-## Guia do professor
-
-Ler os tópicos indicados em cada roteiro e conferir o laboratório antes da aula. Apresentar o enunciado antes da resposta comentada. Na demonstração, verbalizar qual regra orienta cada decisão. Em dupla, alternar quem conduz e quem revisa; na etapa individual, trocar entrada ou premissa para avaliar transferência.
-
-Distinguir execução local de deploy real. Não pedir configuração de nuvem nesta formação. Valorizar relações entre artefatos e capacidade de avaliar impacto de mudança. Perguntar onde a qualidade pode ser discutida antes do código.
-
-Usar a rubrica para orientar a revisão. Ao aluno com dificuldade, oferecer uma entrada e pedir a decisão seguinte; depois ampliar. Registrar ajuda recebida. Ao aluno mais avançado, aplicar a variação difícil. Retomar a versão revisada no encontro seguinte.
+Parâmetro formativo proposto: 6/8, sem zero em correção ou evidência. Após o feedback, registre um acerto, uma lacuna e uma ação; corrija, registre a mudança e reapresente quando solicitado. Não é regra comercial de certificação.
 
 ## Resumo final para o aluno
 
@@ -400,16 +391,3 @@ Guarde a primeira versão e a correção. Na apresentação, explique uma decis�
 ## Referências
 
 [Ementa local](../ementa.md), [caso Agenda Clara](../atividades/caso-agenda-clara.md) e [laboratório](../portfolio/agenda-clara/README.md). Aprofundamento em [ISTQB CTFL](https://istqb.org/certifications/certified-tester-foundation-level-ctfl-v4-0/) e [Git](https://git-scm.com/docs/gittutorial). Os casos, exercícios e rubricas são autorais.
-
-
-
-## Scripts com falas para o professor
-
-Usar o roteiro para planejar, o script para conduzir e este E-book para aprofundar. As falas são apoio adaptável, com exemplos, perguntas, gabaritos e intervenções. O aluno revê a gravação do encontro na plataforma.
-
-- [Aula 1 — script com falas](../aulas/scripts/modulo-07-aula-01-sdlc-e-integracao.md)
-- [Aula 2 — script com falas](../aulas/scripts/modulo-07-aula-02-rastreabilidade-e-impacto.md)
-- [Aula 3 — script com falas](../aulas/scripts/modulo-07-aula-03-shift-left-e-prevencao.md)
-- [Aula 4 — script com falas](../aulas/scripts/modulo-07-aula-04-release-e-operacao.md)
-
-Planejar inicialmente 30–45 minutos de revisão e conclusão por aula; exercícios técnicos, projeto final e portfólio podem exigir blocos maiores. Combinar essa carga e os prazos com a turma. Não comprimir toda a prática original em 90 minutos.
