@@ -94,7 +94,6 @@ Ajuda a localizar responsabilidades e evidências no trabalho.
 
 **Critérios específicos:** Cobertura do ciclo; feedback; distinção de execução e simulação.
 
-**Exemplo de resposta comentada:** Feedback da recepção retorna a requisitos. QA contribui em exemplos e execução; Dados define medida; Infra discute observação futura. No laboratório, deploy real e monitoramento não existem.
 
 **Dica:** faça sua tentativa antes de ler a resposta e explique qualquer revisão.
 
@@ -158,7 +157,6 @@ Ajuda a investigar mudanças e explicar contribuição.
 
 **Critérios específicos:** Vínculos coerentes; evidência identificada; impacto explicado.
 
-**Exemplo de resposta comentada:** RN03 → US02 → TC03 → BUG01 → referência para reteste. Se RN03 passar a exigir tamanho mínimo, casos e código atuais precisam revisão, sem afirmar que a regra nova já está coberta.
 
 **Dica:** faça sua tentativa antes de ler a resposta e explique qualquer revisão.
 
@@ -223,7 +221,6 @@ Mostra capacidade de contribuir antes de receber uma entrega pronta.
 
 **Critérios específicos:** Ambiguidade identificada; exemplo verificável; execução posterior preservada.
 
-**Exemplo de resposta comentada:** Nome textual com conteúdo após strip. Exemplos: Ana aceita; vazio e espaços recusados. Rever antes do código e testar depois retorno e ausência de alteração de estado.
 
 **Dica:** faça sua tentativa antes de ler a resposta e explique qualquer revisão.
 
@@ -288,7 +285,6 @@ Ajuda a explicar riscos de entrega mesmo sem administrar infraestrutura.
 
 **Critérios específicos:** Versão e evidências; gatilho acionável; não confundir com produção.
 
-**Exemplo de resposta comentada:** Liberar demonstração da referência se cenários críticos passam. Se duplicidade ou cancelamento incorreto ocorrer, interromper, registrar entrada/estado, corrigir e repetir. Reinício perde reservas; nenhuma estratégia de migração real foi implementada.
 
 **Dica:** faça sua tentativa antes de ler a resposta e explique qualquer revisão.
 
@@ -347,7 +343,7 @@ Explique cada passagem e indique onde uma evidência pode obrigar o time a volta
 
 As atividades dos tópicos formam o caderno de prática. Além delas, resolva: **Um requisito muda após testes concluídos. Como manter o fluxo e os artefatos coerentes?**
 
-Entregue situação inicial, decisão, evidência, consequência e uma limitação. **Referência para correção:** Registrar mudança e motivo, analisar impacto, revisar história/critério, código, casos e documentação; executar cenários afetados e regressão; atualizar versão e decisão de release. Não reutilizar aprovação anterior sem avaliar a mudança.
+Entregue situação inicial, decisão, evidência, consequência e uma limitação.
 
 ## Entrega final do módulo
 
