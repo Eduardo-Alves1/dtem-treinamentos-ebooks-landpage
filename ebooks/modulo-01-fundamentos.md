@@ -1,6 +1,5 @@
 # Módulo 1 — Fundamentos da Tecnologia
 
-> **Revisão pedagógica — outubro de 2026:** este E-book conta com um [caderno de prática e avaliação](../atividades/modulo-01-caderno-de-pratica.md). Ele complementa os exercícios abaixo com entregas verificáveis, respostas comentadas, rubrica e recuperação. Consulte também o [índice da formação](../planejamento/trilha-e-indice.md).
 
 ## Contrato de aprendizagem e conexão com a trilha
 
@@ -35,7 +34,7 @@ Ao longo deste módulo, você vai aprender o que é tecnologia no contexto de ne
 
 Este material foi escrito para servir em quatro frentes ao mesmo tempo:
 
-- apoio para o professor ministrar aula com clareza;
+- material de apoio para acompanhar e revisar o conteúdo;
 - material de acompanhamento para o aluno durante a aula;
 - revisão prática depois do encontro;
 - base de construção de portfólio e preparação para o mercado.
@@ -870,73 +869,6 @@ Para cada área, o mapa deve conter:
 
 ---
 
-## Guia do Professor
-
-### Objetivo da aula
-
-Apresentar a base do ecossistema de tecnologia para iniciantes, reduzindo confusão inicial e conectando conceitos fundamentais com situações reais de mercado.
-
-### Tempo sugerido
-
-Quatro encontros de até 90 minutos, incluindo pausa: até 6 horas ao vivo. Cada aula tem seu script com explicação, demonstração e prática. Consultar os quatro roteiros para a sequência; concluir o caderno de atividades fora do encontro.
-
-### Estratégia de condução
-
-- Comece perguntando quais nomes de áreas os alunos já ouviram.
-- Mostre que tecnologia é resolução de problema, não apenas código.
-- Use exemplos de aplicativos conhecidos para ancorar a explicação.
-- Reforce o vocabulário básico várias vezes ao longo da aula.
-- Conecte sempre cada conceito a uma situação de empresa real.
-
-### Perguntas para os alunos
-
-- Quando você pensa em tecnologia, o que vem à cabeça?
-- Você acredita que toda pessoa de tecnologia precisa programar? Por quê?
-- Qual área mais chamou sua atenção até agora?
-- O que você acha que acontece quando clica em "Entrar" em um aplicativo?
-- Por que uma empresa não pode depender de uma única área para entregar valor?
-
-### Dinâmicas sugeridas
-
-**Dinâmica 1 — Anatomia de um app**
-
-Peça aos alunos que escolham um aplicativo conhecido e identifiquem:
-
-- o que é front-end;
-- o que pode estar no back-end;
-- quais dados devem ser salvos;
-- que integrações podem existir.
-
-**Dinâmica 2 — Squad simulada**
-
-Divida a turma em grupos e atribua papéis:
-
-- Produto;
-- QA;
-- Dev;
-- Infra;
-- Gestão.
-
-Dê um cenário simples, como "criar uma funcionalidade de agendamento", e peça que cada grupo explique sua participação.
-
-### Possíveis dúvidas e respostas de apoio
-
-| Dúvida | Explicação de apoio |
-|---|---|
-| Preciso saber programar para entrar em tecnologia? | As exigências variam por função. QA, Produto e Gestão requerem práticas e níveis de experiência diferentes; lógica e contexto técnico ajudam a explorar essas possibilidades. |
-| API é a mesma coisa que banco de dados? | Não. API comunica; banco de dados armazena. |
-| Front-end é menos técnico que back-end? | Não. São especialidades diferentes com desafios distintos. |
-| Pensamento computacional serve só para quem programa? | Não. Ele ajuda qualquer profissional a organizar raciocínio e resolver problemas. |
-
-### Pontos de atenção do professor
-
-- Evitar excesso de siglas sem explicação.
-- Não presumir conhecimento prévio do aluno.
-- Repetir conceitos-chave com exemplos diferentes.
-- Estimular perguntas sem ridicularizar dúvidas básicas.
-- Observar se a turma entendeu relação entre áreas, e não apenas definições isoladas.
-
----
 
 ## Resumo Final Para o Aluno
 
@@ -957,15 +889,3 @@ O próximo passo é usar essa base para desenvolver raciocínio lógico com mais
 ## Fechamento
 
 Se você chegou até aqui, já deu um passo importante: saiu da visão superficial sobre tecnologia e começou a construir visão de mercado. Esse é o tipo de base que diferencia quem apenas consome conteúdo de quem começa a se preparar de verdade para atuar na área.
-
-
-## Scripts com falas para o professor
-
-Usar o roteiro para planejar, o script para conduzir e este E-book para aprofundar. As falas são apoio adaptável, com exemplos, perguntas, gabaritos e intervenções. O aluno revê a gravação do encontro na plataforma.
-
-- [Aula 1 — script com falas](../aulas/scripts/modulo-01-aula-01-mercado-tech-e-areas-de-ti.md)
-- [Aula 2 — script com falas](../aulas/scripts/modulo-01-aula-02-como-funciona-uma-empresa-tech.md)
-- [Aula 3 — script com falas](../aulas/scripts/modulo-01-aula-03-conceitos-basicos-front-back-api-banco.md)
-- [Aula 4 — script com falas](../aulas/scripts/modulo-01-aula-04-pensamento-computacional-e-mapa-mental.md)
-
-Planejar inicialmente 30–45 minutos de revisão e conclusão por aula; exercícios técnicos, projeto final e portfólio podem exigir blocos maiores. Combinar essa carga e os prazos com a turma. Não comprimir toda a prática original em 90 minutos.
