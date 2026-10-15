@@ -1,65 +1,118 @@
-# Bônus — Aula 1: Currículo, LinkedIn e portfólio
+# Roteiro de Aula — Bônus — Aula 1
 
-**Condução com falas prontas:** [script do professor](scripts/aula-01-curriculo-linkedin-e-portfolio.md). Seguir a sequência de até 90 minutos. As atividades abaixo formam o caderno completo; o script define o recorte ao vivo e a conclusão em casa. A gravação serve para revisão posterior.
+# Currículo, LinkedIn e Portfólio
 
-## Objetivo e duração
+> **Papel deste documento:** definir o que será ensinado, praticado e avaliado.  
+> A condução minuto a minuto, falas sugeridas, respostas esperadas e intervenções ficam no [script do professor](scripts/aula-01-curriculo-linkedin-e-portfolio.md).
 
-Produzir matriz de aderência, currículo e rascunho de perfil coerentes com evidências do projeto. Pré-requisito: dossiê e contribuição individual. [Leitura](../ebooks/bonus-preparacao-para-o-mercado.md): tópicos 1 e 2.
+## Objetivo da aula
 
-| Etapa | Minutos |
+Transformar evidências reais da formação em currículo, proposta de perfil LinkedIn e portfólio coerentes com uma oportunidade, sem inventar experiência ou depender de fórmulas universais de ATS.
+
+Ao final, o aluno deverá conseguir:
+
+- ler uma vaga e separar requisitos relevantes
+- relacionar requisito a evidência própria
+- descrever projeto educacional de forma honesta
+- produzir currículo simples e legível
+- rascunhar headline e Sobre coerentes
+- revisar links e portfólio
+
+## Conteúdos e conceitos
+
+### Aderência entre vaga e evidência
+- responsabilidade exigida
+- evidência disponível
+- lacuna reconhecida
+
+### Currículo e ATS
+- texto selecionável e estrutura clara
+- sistemas variam
+- palavras-chave não garantem aprovação
+
+### LinkedIn e portfólio
+- headline indica direção
+- Sobre conta trajetória/evidência
+- projeto precisa ser acessível
+
+## Duração e blocos
+
+| Bloco | Tempo previsto |
 |---|---:|
-| Abertura e diagnóstico | 8 |
-| Conceitos e exemplos | 17 |
-| Demonstração guiada | 20 |
-| Pausa | 5 |
-| Dinâmica em dupla ou grupo | 15 |
-| Exercício individual | 12 |
-| Correção e dúvidas | 8 |
-| Fechamento e orientação da tarefa | 5 |
-| Total | 90 |
+| Abertura e diagnóstico | 8 min |
+| Conceitos e exemplos | 17 min |
+| Demonstração guiada | 20 min |
+| Pausa | 5 min |
+| Dinâmica em dupla ou grupo | 15 min |
+| Exercício individual | 12 min |
+| Correção e dúvidas | 8 min |
+| Fechamento e tarefa | 5 min |
+| **Total** | **90 min** |
 
-## Materiais e abertura
+## Materiais necessários
 
-Dossiê, editor de texto, três descrições reais selecionadas pelo aluno ou exemplos identificados como simulação. Pergunte: “Qual afirmação sobre você o avaliador consegue conferir?”. Recolha duas respostas.
+- E-book do bônus
+- uma vaga real ou exemplo simulado
+- currículo em texto/Markdown
+- dossiê do Agenda Clara
+- links de portfólio
 
-## Explicação teórica e exemplos
+## Demonstração planejada — Da exigência da vaga à frase verificável
 
-Separar responsabilidade da vaga, evidência e lacuna. Currículo apresenta adequação; LinkedIn comunica trajetória; ATS organiza candidaturas e pode extrair texto, variando por produto e configuração. Não há uma regra universal de aprovação por palavra-chave. Mostrar a diferença entre “experiência em QA” sem contexto e “executei oito casos em projeto educacional”.
+1. Escolher uma responsabilidade da vaga.
+2. Localizar evidência correspondente no projeto.
+3. Escrever uma frase de currículo com ação e contexto educacional.
+4. Marcar uma lacuna quando não houver evidência.
+5. Conferir se o link do projeto permite verificação.
 
-Modelo de headline: “Em transição para QA | Testes funcionais e bugs | Projeto educacional Agenda Clara”. Modelo de projeto: “Escrevi casos de reserva e executei uma divergência plantada de RN03. Documentei esperado, observado e reteste em laboratório local.”
+**Resultado pedagógico esperado:** o aluno aprende a comunicar evidência sem exagero.
 
-## Demonstração
+## Dinâmica em grupo — Revisão por evidência
 
-1. Escolher uma exigência de descrição real ou exemplo simulado.
-2. Localizar artefato correspondente.
-3. Escrever ação e resultado educacional, sem inventar efeito em empresa.
-4. Mostrar lacuna e próxima prática.
-5. Conferir link e clareza.
+**Cenário:** Em duplas, uma pessoa revisa uma seção do currículo/LinkedIn da outra buscando frases vagas ou maiores que a evidência.
 
-Referência: exigência “documentar bugs”, evidência BUG01; lacuna “outros domínios”, ação “testar cadastro fictício”.
+1. Escolher uma frase.
+2. Perguntar ‘qual evidência sustenta isso?’.
+3. Reescrever com ação, contexto e limite.
+4. Trocar papéis.
+5. Conferir se o link citado abre.
 
-## Dinâmica em grupo — revisão cruzada
+**Entrega esperada:** tabela frase original / evidência / frase revisada
 
-Contexto: candidatura inicial. Objetivo: tornar as afirmações verificáveis. Duplas leem uma seção do currículo, marcam uma frase vaga e pedem uma evidência. Trocar papéis após cinco minutos. Entrega: tabela frase original/evidência/frase revisada. Critérios: clareza, verdade, aderência e contribuição. Dica: não transformar exercício em emprego. Variação: adaptar para análise de produto.
+**Critérios:** afirmação verificável; contexto educacional claro; sem números inventados; link acessível.
 
 ## Exercício individual
 
-Criar currículo em Markdown, headline e Sobre; anexar matriz de três vagas com links e data. Para fonte indisponível, declarar simulação. Conferir ação, evidência e limite em cada frase de projeto. Exemplo de resposta no E-book.
+Escreva três linhas sobre sua contribuição no Agenda Clara, uma headline e duas frases para o Sobre. Identifique explicitamente o projeto como educacional e cite pelo menos um artefato que possa ser conferido.
 
-## Perguntas, dúvidas e fechamento
+**Entrega:** bloco de currículo + headline + trecho Sobre
 
-- O que a descrição realmente exige?
-- Qual evidência sustenta esta habilidade?
-- Onde o currículo diverge do perfil?
+**Critérios:** honestidade; clareza; evidência; coerência entre documentos.
 
-| Dúvida | Resposta |
-|---|---|
-| Tenho que publicar agora? | Entregue rascunho revisável; publicação é escolha posterior |
-| Preciso de experiência contratada para citar o projeto? | Pode citar, identificando como educacional |
-| Palavra-chave garante aprovação? | Não; use termos corretos e evidências |
+## Perguntas de verificação
 
-Fechar com uma frase de apresentação e uma lacuna. Aplicar rubrica da análise pedagógica.
+- Existe quantidade ideal de palavras-chave que garante passar no ATS?
+- Posso colocar ‘QA’ como experiência profissional por ter feito o projeto?
+- Um portfólio privado serve?
+
+> As respostas esperadas e intervenções ficam exclusivamente no script do professor.
 
 ## Tarefa para casa
 
-Em 30–45 minutos, revisar currículo e perfil com feedback, conferir links e explicar uma alteração. Entregar versão inicial e revisada. Desafio opcional: adaptar para outra descrição sem inventar habilidade.
+1. Montar matriz de três vagas com links e data.
+2. Revisar currículo em formato simples.
+3. Revisar headline e Sobre.
+4. Conferir links do portfólio.
+5. Guardar versão inicial e revisada.
+
+**Entrega:** matriz + currículo + rascunho de perfil + links conferidos
+
+## Conexão com a trilha
+
+A Aula 2 usa esses documentos para praticar apresentação, entrevista e plano de evolução.
+
+## Referências
+
+- [E-book do bônus](../ebooks/bonus-preparacao-para-o-mercado.md)
+- [Projeto Agenda Clara](../portfolio/agenda-clara/README.md)
+- [Script do professor](scripts/aula-01-curriculo-linkedin-e-portfolio.md)
