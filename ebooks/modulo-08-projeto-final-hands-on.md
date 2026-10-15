@@ -95,7 +95,6 @@ Ajuda a apresentar portfólio com honestidade e clareza.
 
 **Critérios específicos:** Três histórias; positivos/negativos; escopo e limites.
 
-**Exemplo de resposta comentada:** MVP consulta, reserva única sequencial e cancelamento. Não inclui autenticação ou concorrência real. Critério central: tentativa em horário ocupado preserva reserva original.
 
 **Dica:** faça sua tentativa antes de ler a resposta e explique qualquer revisão.
 
@@ -160,7 +159,6 @@ Demonstra participação e decisão em contexto colaborativo.
 
 **Critérios específicos:** Capacidade; meta; bloqueio real ou claramente simulado; eventos distintos.
 
-**Exemplo de resposta comentada:** Bloqueio fictício: participante sem ambiente. Ajuste: execução em dupla em computador disponível; adiar relatório. DoD permanece. Ação de melhoria: verificar ambiente antes do encontro.
 
 **Dica:** faça sua tentativa antes de ler a resposta e explique qualquer revisão.
 
@@ -225,7 +223,6 @@ Produz material para explicar investigação técnica.
 
 **Critérios específicos:** Oito casos; dois tipos de bug diferenciados; nenhuma execução inventada.
 
-**Exemplo de resposta comentada:** BUG01 viola RN03 na variante. BUG02 descreve RN06 violada em versão fictícia: cancelamento retorna sucesso, mas horário não reaparece. A referência fornecida não tem esse defeito; produzir plano de confirmação, não falso resultado.
 
 **Dica:** faça sua tentativa antes de ler a resposta e explique qualquer revisão.
 
@@ -290,7 +287,6 @@ Ajuda a sustentar narrativa honesta em seleção.
 
 **Critérios específicos:** Decisão sustentada; demonstração limitada ao implementado; contribuição individual.
 
-**Exemplo de resposta comentada:** Liberar apenas demonstração sequencial da referência com evidências dos casos críticos. Próximos passos: persistência, identidade e concorrência requerem novos requisitos e desenho, antes de prometer produto operacional.
 
 **Dica:** faça sua tentativa antes de ler a resposta e explique qualquer revisão.
 
@@ -347,7 +343,7 @@ Explique cada passagem e indique onde uma evidência pode obrigar o time a volta
 
 As atividades dos tópicos formam o caderno de prática. Além delas, resolva: **Durante a Review, o patrocinador exige um prazo para pagamento real. Responda sem prometer uma solução que o time não investigou.**
 
-Entregue situação inicial, decisão, evidência, consequência e uma limitação. **Referência para correção:** Explicar escopo atual, benefício entregue e hipótese do novo pedido. Propor investigação de integrações, segurança, esforço e critérios antes de estimar. Registrar pedido no backlog futuro e preservar evidência da entrega atual.
+Entregue situação inicial, decisão, evidência, consequência e uma limitação.
 
 ## Entrega final do módulo
 
