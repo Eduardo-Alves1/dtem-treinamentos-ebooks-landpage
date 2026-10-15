@@ -800,51 +800,66 @@ h3 {
 
 .investment-section {
   border-top: 1px solid var(--line);
-  background: #f0e9dd;
+  background: transparent;
 }
 
 .pricing-options {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 20px;
-  max-width: 1020px;
+  gap: 18px;
+  max-width: 960px;
 }
 
 .pricing-card {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 34px;
+  padding: 28px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--surface);
-  box-shadow: 0 12px 36px rgba(34, 42, 45, 0.07);
+  transition: transform 200ms ease, border-color 200ms ease, box-shadow 200ms ease;
+}
+
+.pricing-card:hover {
+  border-color: rgba(15, 118, 110, 0.26);
+  box-shadow: 0 18px 44px rgba(34, 42, 45, 0.1);
+  transform: translateY(-5px);
 }
 
 .pricing-card.featured {
-  border: 2px solid var(--green);
+  border-color: rgba(15, 118, 110, 0.34);
+  box-shadow: 0 18px 44px rgba(15, 118, 110, 0.08);
 }
 
-.pricing-label {
+.pricing-badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  padding: 0 12px;
+  border-radius: 999px;
+  background: rgba(15, 118, 110, 0.1);
   color: var(--green-dark);
-  font-size: 0.88rem;
+  font-size: 0.82rem;
   font-weight: 800;
   text-transform: uppercase;
 }
 
-.pricing-amount {
-  margin: 20px 0 12px;
-  font-size: clamp(1.75rem, 3.2vw, 2.8rem);
-  font-weight: 800;
+.pricing-card h3 {
+  margin: 18px 0 10px;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1;
   letter-spacing: -0.04em;
-  line-height: 1.1;
 }
 
-.pricing-detail {
-  flex: 1;
+.pricing-card p {
+  margin: 0 0 24px;
   color: var(--muted);
   line-height: 1.6;
-  margin-bottom: 28px;
+}
+
+.pricing-card .button {
+  margin-top: auto;
 }
 
 @media (max-width: 720px) {
@@ -853,6 +868,10 @@ h3 {
   }
 
   .pricing-card {
-    padding: 26px;
+    padding: 24px;
+  }
+
+  .pricing-card h3 {
+    font-size: 2.2rem;
   }
 }
