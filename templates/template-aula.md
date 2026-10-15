@@ -1,62 +1,110 @@
 # Template — Roteiro de Aula DTEM
 
-> O roteiro define **o que será ensinado e praticado**. As falas prontas, intervenções, respostas esperadas e condução minuto a minuto pertencem ao **script do professor**.
+> O Roteiro é o **contrato pedagógico** da aula: define o que será ensinado, praticado e avaliado.  
+> Falas prontas, respostas esperadas, gabaritos, intervenções e condução minuto a minuto pertencem ao Script do Professor.
 
-# 🎓 ROTEIRO DE AULA — [TEMA]
+# Roteiro de Aula — [MÓDULO / AULA]
 
-## 🎯 Objetivo da aula
+# [TEMA]
+
+## Objetivo da aula
+
 [Resultado observável esperado do aluno.]
 
-## 📚 Conteúdos e conceitos
-- Conceito 1
-- Conceito 2
-- Conceito 3
+Ao final, o aluno deverá conseguir:
 
-## ⏱️ Duração e blocos
+- [resultado 1];
+- [resultado 2];
+- [resultado 3].
+
+## Conteúdos e conceitos
+
+### [Conceito 1]
+- ponto;
+- ponto.
+
+### [Conceito 2]
+- ponto;
+- ponto.
+
+## Duração e blocos
+
 | Bloco | Tempo previsto |
 |---|---:|
-| Abertura | 10 min |
-| Conteúdo e exemplos | 25 min |
-| Prática guiada | 20 min |
-| Atividade | 20 min |
-| Revisão e fechamento | 15 min |
+| Abertura e diagnóstico | 8 min |
+| Conceitos e exemplos | 17 min |
+| Demonstração guiada | 20 min |
+| Pausa | 5 min |
+| Dinâmica em dupla ou grupo | 15 min |
+| Exercício individual | 12 min |
+| Correção e dúvidas | 8 min |
+| Fechamento e tarefa | 5 min |
+| **Total** | **90 min** |
 
-## 🛠️ Materiais necessários
-- Material do aluno
-- Ferramentas necessárias
-- Arquivos ou ambiente de prática
+## Materiais necessários
 
-## 🌎 Exemplos e cenário corporativo
-[Descrever os exemplos que devem ser trabalhados, sem escrever a fala do professor.]
+- E-book correspondente;
+- atividade/caso/laboratório quando aplicável;
+- ferramentas necessárias;
+- arquivos ou ambiente de prática.
 
-## 🔥 Demonstração planejada
-[Definir o objetivo, entrada, passos e evidência que será mostrada.]
+## Exemplos planejados
 
-## 🧠 Dinâmica em grupo
-- Objetivo
-- Enunciado
-- Entrega esperada
-- Critérios
+[Descrever exemplos coerentes com o nível da turma. Não escrever fala do professor.]
 
-## 🧪 Exercício individual
-- Objetivo
-- Enunciado
-- Entrega esperada
-- Critérios
+## Demonstração planejada — [NOME]
 
-## ❓ Perguntas de verificação
-- Pergunta 1
-- Pergunta 2
+1. [passo];
+2. [passo];
+3. [passo].
 
-> As respostas esperadas e intervenções ficam no script do professor.
+**Resultado pedagógico esperado:** [o que o aluno deve compreender ao observar a demonstração].
 
-## 📌 Resumo e conexão com a trilha
-[Conceitos essenciais e conexão com a próxima aula.]
+## Dinâmica em grupo — [NOME]
 
-## 🏠 Tarefa para casa
-[Entrega e critérios.]
+**Cenário:** [...]
 
-## 🔗 Referências
-- E-book correspondente
-- Caso ou laboratório utilizado
-- Script do professor correspondente
+1. [passo];
+2. [passo];
+3. [passo].
+
+**Entrega esperada:** [...]
+
+**Critérios:** [...]
+
+## Exercício individual
+
+[Enunciado.]
+
+**Entrega:** [...]
+
+**Critérios:** [...]
+
+## Perguntas de verificação
+
+- [pergunta];
+- [pergunta];
+- [pergunta].
+
+> As respostas esperadas e intervenções ficam exclusivamente no Script do Professor.
+
+## Tarefa para casa
+
+1. [passo];
+2. [passo].
+
+**Entrega:** [...]
+
+## Conexão com a trilha
+
+[Explicar o que esta aula consolida e qual é a próxima evolução.]
+
+## Referências
+
+- E-book correspondente;
+- caso/laboratório quando aplicável;
+- Script do Professor correspondente.
+
+## Regra de manutenção
+
+Se objetivo, demonstração, dinâmica, exercício individual, critério, tarefa ou entrega mudarem, atualizar o Script correspondente na mesma mudança.

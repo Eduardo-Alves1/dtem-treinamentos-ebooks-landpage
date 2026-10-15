@@ -1,37 +1,67 @@
 ---
 name: dtem-aula-professor
-description: Cria roteiro de aula para o professor ministrar módulos da mentoria DTEM Treinamentos com explicações, dinâmicas e perguntas.
+description: Cria e revisa o Roteiro de Aula DTEM, definindo o contrato pedagógico que o Script do Professor deverá operacionalizar.
 ---
 
-# Skill: Roteiro de Aula para Professor DTEM
+# Skill: Roteiro de Aula DTEM
 
-Use esta skill quando o usuário pedir um roteiro de aula, plano de aula ou guia do professor.
+Use esta skill para criar ou revisar o planejamento pedagógico de uma aula.
 
 ## Objetivo
 
-Criar o planejamento pedagógico da aula: o que será ensinado, praticado, entregue e avaliado. A condução detalhada ao vivo pertence ao script do professor.
+Definir **o que será ensinado, praticado, entregue e avaliado**.
+
+A condução detalhada ao vivo pertence ao Script do Professor.
+
+## Antes de criar
+
+Consultar:
+
+- E-book correspondente;
+- trilha;
+- aula anterior/próxima;
+- caso ou laboratório;
+- entrega acumulada do módulo.
 
 ## Estrutura obrigatória
 
-O roteiro deve conter:
+1. tema;
+2. objetivo observável;
+3. resultados esperados;
+4. conteúdos;
+5. blocos de até 90 minutos;
+6. materiais;
+7. exemplos;
+8. demonstração;
+9. dinâmica;
+10. exercício individual;
+11. perguntas de verificação;
+12. critérios;
+13. tarefa/entrega;
+14. conexão com a trilha;
+15. referências.
 
-1. Tema da aula
-2. Objetivo da aula
-3. Duração sugerida
-4. Materiais necessários
-5. Abertura da aula
-6. Explicação teórica
-7. Exemplos práticos
-8. Dinâmica em grupo
-9. Exercício individual
-10. Perguntas para os alunos
-11. Perguntas de verificação
-12. Critérios das atividades
-13. Fechamento da aula
-14. Tarefa para casa
+## Não incluir
 
-## Estilo
+- falas prontas;
+- gabaritos;
+- respostas esperadas;
+- intervenções;
+- instruções minuto a minuto.
 
-Use linguagem simples e orientada à prática.
+Esses elementos pertencem à skill `dtem-script-professor`.
 
-Não incluir falas prontas, gabaritos, respostas esperadas, intervenções ou instruções minuto a minuto. Esses elementos ficam exclusivamente no script do professor em `/aulas/scripts`.
+## Regra de alinhamento
+
+Objetivo, demonstração, dinâmica, exercício, critérios, tarefa e entrega formam o **contrato pedagógico**.
+
+Se qualquer um deles mudar e já existir Script correspondente, revisar o Script na mesma alteração.
+
+## Qualidade
+
+- prática coerente com o tema;
+- progressão adequada a iniciantes;
+- exemplos sem inventar processos reais;
+- simulação declarada como simulação;
+- exercício individual preservado;
+- tarefa não deve depender de conteúdo ainda não ensinado.
