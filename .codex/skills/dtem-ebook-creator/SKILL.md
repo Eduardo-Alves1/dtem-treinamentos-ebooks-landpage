@@ -10,8 +10,7 @@ Use esta skill quando o usuário pedir para criar, expandir ou melhorar um E-boo
 ## Objetivo
 
 Transformar módulos da ementa em E-books completos para:
-- professor ministrar aula;
-- aluno estudar;
+- aluno estudar e acompanhar a formação;
 - revisão pós-aula;
 - apoio à construção de portfólio;
 - preparação para o mercado tech.
@@ -50,8 +49,7 @@ Cada E-book deve conter:
 12. Exercícios práticos
 13. Mini desafios
 14. Entrega final do módulo
-15. Guia do professor
-16. Resumo final para o aluno
+15. Resumo final para o aluno
 
 ## Para cada tópico, desenvolva
 
@@ -73,3 +71,5 @@ Cada E-book deve conter:
 - Nomear como `modulo-XX-nome-do-modulo.md`.
 - Sempre conectar teoria com prática.
 - Sempre usar exemplos envolvendo QA, Produto, Dev, Dados, Infra ou Gestão quando fizer sentido.
+- Não inserir conteúdo interno do professor: falas prontas, scripts, gabaritos, respostas de referência para correção, instruções de condução ou cronograma da aula.
+- Critérios de avaliação visíveis ao aluno devem ser escritos para o próprio aluno.
