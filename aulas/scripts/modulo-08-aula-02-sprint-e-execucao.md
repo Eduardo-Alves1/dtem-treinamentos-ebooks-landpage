@@ -1,267 +1,203 @@
-# Script do professor — Sprint e execução
+# Script do Professor — Sprint Simulada e Execução
 
-**DTEM Treinamentos · encontro ao vivo de até 90 minutos, gravado para revisão.**
+**DTEM Treinamentos · encontro ao vivo de até 90 minutos.**
 
-Este documento contém falas e ações de condução. Adaptar a linguagem ao próprio estilo, preservando conceitos,
-exemplos e critérios. Os intervalos incluem escrita, espera, interação e prática; não são 90 minutos de leitura.
-Não depende de vídeos prévios. O aluno pode consultar o E-book e rever a gravação depois.
+> **Papel deste documento:** orientar a condução da aula. O script operacionaliza o roteiro correspondente; não deve criar uma aula paralela.
 
-**Roteiro:** [planejamento da aula](../modulo-08-aula-02-sprint-e-execucao.md).  
-**Material de estudo:** [E-book correspondente](../../ebooks/modulo-08-projeto-final-hands-on.md).  
-**Caso:** [Agenda Clara](../../atividades/caso-agenda-clara.md), empresa e dados fictícios.
+**Roteiro:** [Módulo 8, Aula 2](../modulo-08-aula-02-sprint-e-execucao.md)  
+**Material do aluno:** [E-book correspondente](../../ebooks/modulo-08-projeto-final-hands-on.md)  
+**Caso:** [Agenda Clara](../../atividades/caso-agenda-clara.md)  
+**Laboratório:** [Agenda Clara](../../portfolio/agenda-clara/README.md)  
 
-## Objetivo e materiais
+## Alinhamento obrigatório
 
-**Objetivo observável:** executar uma rodada simulada com meta, capacidade e evidências.  
-**Materiais:** backlog de seis itens, quadro WIP 2 e laboratório disponível.
+- **Objetivo:** Planejar e executar uma rodada simulada do projeto final, registrando capacidade, progresso, bloqueios, adaptação e contribuição individual.
+- **Demonstração central:** Planejar uma rodada e reagir a um bloqueio.
+- **Prática em grupo:** Planejar com limites.
+- **Exercício individual:** registrar contribuição e decisão revista.
+- **Tarefa:** revisar sprint.md e preparar ambiente para testes.
 
-Antes do encontro, preparar o exemplo e conferir os recursos necessários. Em tarefas de ferramenta, preparar
-conta e ambiente com antecedência. Se a execução estiver indisponível, percorrer manualmente e declarar o método;
-publicação ou execução exigidas pela entrega devem ser concluídas depois com apoio. Não inventar evidência.
+## Antes da aula
 
-## Agenda de condução
+- [ ] Preparar quadro e cards.
+- [ ] Validar laboratório.
+- [ ] Definir bloqueio fictício para usar somente se não surgir um real.
+- [ ] Deixar roteiro e script abertos.
+- [ ] Conferir materiais, dados e exemplos.
+- [ ] Separar a entrega esperada da aula.
 
-| Intervalo | Etapa | Minutos |
-|---|---|---:|
-| 00–08 | Abertura e diagnóstico | 8 |
-| 08–25 | Conceitos e exemplos | 17 |
-| 25–45 | Demonstração guiada | 20 |
-| 45–50 | Pausa | 5 |
-| 50–65 | Dinâmica em dupla ou grupo | 15 |
-| 65–77 | Exercício individual | 12 |
-| 77–85 | Correção e dúvidas | 8 |
-| 85–90 | Fechamento e tarefa | 5 |
-| Total | | 90 |
+## Agenda
 
-O roteiro original contém o caderno completo de atividades. Nesta versão, os enunciados de grupo e individual
-abaixo definem o recorte do encontro. A tarefa de casa conclui os itens restantes. Se precisar reduzir extensão,
-preservar demonstração, tentativa individual, feedback e orientação da entrega.
+| Intervalo | Etapa |
+|---|---|
+| 00–08 | Abertura e diagnóstico |
+| 08–25 | Conceitos e exemplos |
+| 25–45 | Demonstração guiada |
+| 45–50 | Pausa |
+| 50–65 | Dinâmica |
+| 65–77 | Exercício individual |
+| 77–85 | Correção e dúvidas |
+| 85–90 | Fechamento e tarefa |
 
 ## 00–08 — Abertura e diagnóstico
 
-**Mostrar:** título da aula e objetivo. **Fala de abertura:**
+> Agora o plano precisa encontrar a realidade. Hoje vamos executar uma rodada pequena e registrar tanto o que funcionou quanto o que ficou bloqueado.
 
-> Agora o plano precisa encontrar a realidade. Vamos executar uma parte do projeto e registrar decisões, inclusive o que ficar pendente.
+**Pergunta diagnóstica:** Se o código existe, mas faltam testes exigidos pela DoD, qual é o status correto?
 
-**Condução:** dar dois minutos para uma previsão individual no chat ou caderno. Colher duas respostas,
-sem exigir fala de todos. Esperar aproximadamente 30 segundos antes de completar a resposta.
-Não confundir silêncio inicial com falta de capacidade; oferecer a situação concreta novamente.
+Ouça pelo menos duas respostas antes de completar.
 
-**Pergunta de diagnóstico:** “Um evento encenado na aula deve ser descrito como reunião de um projeto de empresa?”
-
-**Referência para o professor:** Não. Deve ser identificado como simulação educacional.
-
-**Transição para a explicação:**
-
-> Vamos transformar essa primeira resposta em um raciocínio que outra pessoa consiga conferir.
-> A cada exemplo, anotem a decisão e a informação que a sustenta.
-
-## 08–25 — Explicação teórica e exemplos
-
-Dividir os 17 minutos entre as três explicações, a escrita e duas perguntas breves.
-Usar as falas como apoio, sem acrescentar uma exposição inteira do E-book.
-
-### Explicação 1 — Rodada e meta
-
-**Fala sugerida:**
-
-> Uma simulação curta permite praticar colaboração, mas não equivale automaticamente a uma Sprint completa. Defina uma meta alcançável e selecione itens a partir da capacidade do grupo.
-
-**Ação:** escrever uma palavra-chave e pedir um exemplo com palavras do aluno. Se houver dúvida, pedir a entrada, regra ou situação concreta que sustenta a resposta.
-### Explicação 2 — Trabalho integrado
-
-**Fala sugerida:**
-
-> Os papéis de produto, qualidade, desenvolvimento e facilitação ajudam a distribuir atenção. Alternem contribuições para aprender, sem declarar que uma pessoa só pode testar ou outra só pode conversar com o usuário.
-
-**Ação:** escrever uma palavra-chave e pedir um exemplo com palavras do aluno. Se houver dúvida, pedir a entrada, regra ou situação concreta que sustenta a resposta.
-### Explicação 3 — Evidência e conclusão
-
-**Fala sugerida:**
-
-> A DoD determina quando concluir um item. Um cartão movido para concluído sem evidência produz uma imagem falsa de progresso. Registre execução local, revisão de documento e eventos simulados com seus nomes corretos.
-
-**Ação:** escrever uma palavra-chave e pedir um exemplo com palavras do aluno. Se houver dúvida, pedir a entrada, regra ou situação concreta que sustenta a resposta.
-
-**Mostrar no quadro:** Meta | capacidade | seis itens ordenados | WIP 2 | evidência | pendência.
-
-**Checagem de compreensão:** “Um evento encenado na aula deve ser descrito como reunião de um projeto de empresa?”  
-**Resposta esperada:** Não. Deve ser identificado como simulação educacional.
+**Referência para o professor:** Ainda não está Done; deve permanecer em andamento/bloqueado conforme a situação.
 
 **Transição:**
 
-> Agora vou percorrer um exemplo pensando em voz alta. Antes de mostrar o resultado,
-> vou pedir uma previsão. Observem onde uma regra ou evidência muda a decisão.
+> Vamos começar por uma meta pequena, executar o que cabe e adaptar quando eu introduzir uma restrição.
 
-## 25–45 — Demonstração guiada
+## 08–25 — Conceitos e exemplos
 
-**Preparação:** abrir os dados, documento, código ou cartões indicados. Reservar aproximadamente cinco minutos
-por passo e os minutos finais para uma previsão e uma dúvida. Em comandos, executar uma operação de cada vez
-e conferir estado. Não substituir falha de ambiente por uma afirmação de execução bem-sucedida.
+### 1. Meta e recorte
 
-### Passo 1 — Selecionar rodada
+**Fala sugerida:**
 
-**Fala durante a demonstração:**
+> A Sprint simulada não é teatro de Scrum. Ela serve para praticar decisões reais de recorte, dependência e conclusão.
 
-> Vamos escolher consulta e uma reserva válida antes de tentar todos os fluxos. O restante permanece no backlog.
+**Mostrar/fazer:** meta e cards do projeto.
 
-**Ação:** mostrar o registro correspondente antes de avançar; pedir uma previsão e conferir a resposta com a evidência.
+**Perguntar:** Que itens são necessários para demonstrar a meta?
+
+**Compreensão esperada:** apenas itens relacionados ao objetivo atual.
+
+### 2. Execução integrada
+
+**Fala sugerida:**
+
+> Projeto final precisa mostrar integração: uma mudança em regra pode afetar caso, código e README. Registrem quem produziu ou revisou o quê.
+
+**Mostrar/fazer:** cadeia de um item.
+
+**Perguntar:** Como distinguir contribuição pessoal em trabalho de dupla?
+
+**Compreensão esperada:** registrando artefato/decisão produzida ou revisada.
+
+### 3. Bloqueio e DoD
+
+**Fala sugerida:**
+
+> Quando ambiente falha, o trabalho não vira Done. Adaptamos o plano e registramos o que ficou pendente.
+
+**Mostrar/fazer:** item com código e teste faltando.
+
+**Perguntar:** Qual status é honesto?
+
+**Compreensão esperada:** em andamento/bloqueado, não concluído.
+
+## 25–45 — Demonstração guiada — Planejar uma rodada e reagir a um bloqueio
+
+### Passo 1 — Definir meta e recorte
+
+**Fazer:** Escolha um objetivo pequeno.
+
+**Fala sugerida:**
+
+> A meta ajuda a decidir o que realmente precisa ser concluído nesta rodada.
+
+**Checar com a turma:** Peça um item que ficaria de fora.
+
 ### Passo 2 — Executar e registrar
 
-**Fala durante a demonstração:**
+**Fazer:** Atualize quadro com atividade real.
 
-> Uma dupla realiza o cenário, outra revisa critério e registra o resultado. Indiquem versão e ambiente; se não houver ambiente, descrevam a simulação sem dizer executado.
+**Fala sugerida:**
 
-**Ação:** mostrar o registro correspondente antes de avançar; pedir uma previsão e conferir a resposta com a evidência.
-### Passo 3 — Adaptar plano
+> Status precisa refletir evidência. Código escrito não significa automaticamente item Done.
 
-**Fala durante a demonstração:**
+**Checar com a turma:** Pergunte qual critério de DoD falta.
 
-> O cenário de conflito exige esclarecimento. Registramos a dúvida, buscamos decisão e ajustamos a seleção sem esconder a pendência.
+### Passo 3 — Introduzir bloqueio
 
-**Ação:** mostrar o registro correspondente antes de avançar; pedir uma previsão e conferir a resposta com a evidência.
+**Fazer:** Simule ambiente indisponível.
 
-**Pergunta após a demonstração:** “Qual decisão vocês conseguem explicar sem copiar a frase que usei?”
+**Fala sugerida:**
 
-**Referência:** a resposta precisa relacionar situação, decisão e fundamento.
-As falas de cada passo indicam o comportamento ou a interpretação que deve ser conferido.
+> Vamos adaptar sem reduzir silenciosamente o padrão de qualidade.
 
-**Transição:**
+**Checar com a turma:** Peça duas opções de replanejamento e seus trade-offs.
 
-> Na prática, vocês vão alternar quem conduz e quem revisa. O objetivo é produzir algo
-> que o colega consiga conferir, e não somente repetir minha demonstração.
+**Resultado de referência:** Bloqueio deve permanecer visível; é possível reorganizar execução em dupla ou adiar item menos crítico, preservando critérios de conclusão.
+
+Peça previsão antes de revelar decisões ou resultados.
 
 ## 45–50 — Pausa
 
-Deixar horário de retorno visível e não apresentar conteúdo obrigatório durante os cinco minutos.
-Na gravação, indicar o ponto em que a atividade seguinte começa.
+Informar horário de retorno e não inserir conteúdo obrigatório.
 
-## 50–65 — Dinâmica em dupla ou grupo
+## 50–65 — Dinâmica — Planejar com limites
 
-**Nome:** Revisão com explicação — Sprint e execução.  
-**Contexto profissional:** uma equipe precisa revisar seu trabalho antes de avançar.
-**Objetivo:** aplicar os conceitos e produzir um registro conferível no recorte da aula.
+**Cenário:** A rodada possui capacidade limitada e uma pessoa fica temporariamente sem ambiente.
 
-**Fala de orientação:**
+> Simulem decisões, não cargos. O importante é documentar como o trabalho mudou diante do impedimento.
 
-> Uma pessoa começa conduzindo e a outra confere as decisões. Na metade, troquem funções.
-> Registrem o que fizeram e qual informação justifica o resultado.
-> Se discordarem, expliquem a diferença usando regra ou evidência, em vez de escolher pela maioria.
+1. Definir meta.
+2. Selecionar trabalho.
+3. Atualizar quadro após bloqueio.
+4. Decidir ajuda/resequenciamento/adiamento.
+5. Registrar contribuição de cada participante.
 
-**Enunciado e passo a passo:**
+**Entrega:** sprint.md com plano inicial e adaptado
 
-1. Definir meta de uma rodada e papéis.
-2. Executar ou simular explicitamente um único fluxo, registrando a evidência correspondente.
-3. Inspecionar o quadro e definir a próxima ação mantendo WIP 2.
-
-**Tempo:** 2 minutos para ler e organizar; 5 para produzir; 5 para trocar revisão; 3 para compartilhar.
-Selecionar duas duplas para falar e recolher as demais por escrito. Em aulas de entrevista ou apresentação,
-usar o mesmo tempo para a primeira participação, troca e feedback.
-
-**Entrega esperada:** registro da atividade com contexto, decisão, fundamento e uma revisão.
-**Critérios:** cumprir as etapas, preservar as regras e permitir que o colega confira.
-**Referência de correção:** usar os exemplos da demonstração e verificar o que mudou no novo caso,
-sem exigir palavras idênticas.
-
-**Perguntas ao circular:** “Qual passo está sendo executado?”, “Qual evidência sustenta isso?”
-e “O que precisaria mudar para sua conclusão ser diferente?”
-
-**Dica para a dupla:** separar o que observou do que está supondo.
-**Variação difícil:** formular um contraexemplo ou limite; transferir para casa se não couber.
+**Observar:** meta explícita; capacidade respeitada; bloqueio visível; DoD preservada; contribuições registradas.
 
 ## 65–77 — Exercício individual
 
-**Fala do professor — enunciado:**
+> Escolha um item da rodada e escreva: o que você produziu ou revisou, qual evidência existe, qual decisão mudou durante a execução e por quê.
 
-> Um item tem código, mas faltam testes exigidos pela DoD. Registre status e próximo passo.
+**Entrega:** registro individual de contribuição
 
-**Tempo:** 2 minutos de leitura, 7 de resolução e 3 de revisão/entrega.
-Cada aluno entrega uma resposta própria, mesmo quando a atividade anterior foi em grupo.
+**Critérios:** ação concreta; evidência identificada; mudança justificada; sem inflar papel profissional.
 
-**Entrega:** artefato pedido no enunciado, acompanhado de uma explicação breve da decisão.
-**Critérios:** correção, completude do recorte, evidência e justificativa. Aplicar a
-[rubrica formativa](../../planejamento/analise-pedagogica.md), de 0 a 2 por critério. Referência proposta: 6/8, sem zero em correção ou evidência.
+**Ajuda graduada:** use verbos observáveis: escrevi, revisei, executei, comparei, documentei.
 
-**Ajuda graduada:** pedir que identifique primeiro a entrada, regra ou exigência; depois que escolha o próximo
-passo. Não resolver todas as etapas. Registrar qual parte foi assistida e conferir transferência em uma tentativa nova.
+## 77–85 — Correção e intervenções
 
-**Gabarito comentado — revelar depois da tentativa:**
+Peça que a pessoa explique sua decisão antes da resposta de referência.
 
-> Manter em andamento ou verificação conforme política, explicitar teste pendente e responsável. Não declarar concluído; avaliar o impacto na meta e adaptar o plano.
+**Se aparecer:** o grupo marca tudo Done no final da aula
 
-## 77–85 — Correção, intervenções e dúvidas
+> Para cada item, qual evidência atende a DoD? O que não tiver evidência continua pendente.
 
-**Fala para iniciar a correção:**
+**Se aparecer:** o aluno assume cargo profissional no portfólio
 
-> Se sua resposta foi diferente, mantenha a primeira versão. Vamos descobrir em qual decisão
-> o raciocínio mudou. Corrigir e explicar a mudança faz parte da aprendizagem.
+> Descreva a atividade exercitada no projeto educacional, não um cargo que você não ocupou profissionalmente.
 
-**Se o aluno todos os seis itens precisam caber agora:**
+**Se aparecer:** o bloqueio gera redução do critério
 
-> Qual subconjunto entrega um resultado verificável dentro da capacidade?
+> Se a DoD mudou, isso precisa ser uma decisão explícita. Preferimos adaptar escopo em vez de fingir conclusão.
 
-**Se o aluno documento de reunião comprova execução:**
+### Perguntas de verificação
 
-> Que resultado foi observado? Separe registro de decisão de evidência técnica.
+- **Código pronto significa item concluído?** — Não se a DoD exige testes/documentação ainda pendentes.
+- **Bloqueio deve ser escondido para não prejudicar a apresentação?** — Não. Deve ser registrado e tratado; transparência faz parte da aprendizagem.
+- **Como apresentar contribuição em grupo?** — Descrever artefato/decisão que produziu ou revisou, sem atribuir a si todo o trabalho.
 
-**Dúvida central da aula:** “Um evento encenado na aula deve ser descrito como reunião de um projeto de empresa?”
+## 85–90 — Fechamento e tarefa
 
-**Como responder:**
+> O valor da simulação está em tomar decisões honestas sob restrição, não em terminar cartões a qualquer custo.
 
-> Não. Deve ser identificado como simulação educacional.
+1. Atualizar quadro final da rodada.
+2. Revisar contribuição individual.
+3. Resolver ou documentar pendências de ambiente.
+4. Preparar dados/estado para os testes da Aula 3.
+5. Entregar `m08-aula-02-revisao.md`.
 
-**Se perguntarem se a resposta precisa ser igual:**
+**Entrega:** sprint.md revisado + ambiente preparado/pendência documentada
 
-> Não precisa repetir minha frase. Precisa respeitar as regras e permitir que outra pessoa
-> confira como você chegou à decisão.
+**Ponte:**
 
-**Se perguntarem como usar a gravação:**
+> Na próxima aula vamos trocar sensação por evidência: executar os casos, registrar o que realmente vimos e distinguir o que foi executado do que foi apenas fornecido como cenário.
 
-> Localize o trecho em que surgiu a dúvida, reveja o exemplo e depois tente uma entrada ou situação nova.
-> Assistir de novo ajuda; explicar sua própria decisão é o que vamos avaliar.
+## Pós-aula
 
-**Modelo de devolutiva:**
-
-> Você acertou ao identificar a decisão principal. Falta mostrar a informação que a sustenta.
-> Acrescente essa evidência e explique o que mudou na sua revisão.
-
-Selecionar duas dúvidas para os oito minutos. Registrar as demais para resposta após a aula ou retomada.
-Não ampliar silenciosamente a duração do encontro.
-
-## 85–90 — Fechamento e tarefa para casa
-
-**Fala de fechamento:**
-
-> Hoje trabalhamos como executar uma rodada simulada com meta, capacidade e evidências.
-> Para revisar, procure uma decisão, a evidência que a sustenta e uma limitação que ainda precisa de atenção.
-> Guardem a primeira versão e a correção; isso ajuda a explicar a evolução no portfólio.
-
-**Pergunta de saída:** “O que você mudou na sua primeira previsão, e por quê?”
-
-**Tarefa de casa — falar à turma:**
-
-> Completar as duas rodadas simuladas e os registros previstos no roteiro, com rodízio de contribuições e pendências claras. Agendar tempo adicional quando a complexidade superar a janela de estudo.
-
-**Tempo-base:** 30–45 minutos para revisão. Se o enunciado exigir concluir vários artefatos, execução pendente
-ou preparação da entrega final, combinar prazo e tempo adicional explicitamente; não prometer que tudo cabe
-nesse intervalo.
-
-**Entrega:** `modulo-08-aula-02-sprint-e-execucao-revisao.md`, ou arquivos específicos pedidos, contendo resposta inicial, feedback,
-versão revisada e explicação. O professor verifica a revisão no início do encontro seguinte.
-
-**Dica:** usar E-book e gravação como apoio; identificar empresa fictícia e origem da evidência.
-**Variação difícil:** acrescentar uma situação nova ou uma dúvida de aplicação, com proposta de investigação.
-
-## Checklist do professor e uso da gravação
-
-- [ ] Preparar recursos e exemplo antes do encontro.
-- [ ] Pedir previsão antes de revelar referência.
-- [ ] Conferir compreensão por exemplo, não por memorização.
-- [ ] Alternar condução e revisão na dupla.
-- [ ] Preservar exercício individual.
-- [ ] Declarar execução, simulação e limites corretamente.
-- [ ] Registrar feedback, tarefa e dúvidas pendentes.
-- [ ] Disponibilizar gravação para revisão e indicar os blocos de demonstração e correção.
-
-Percentual de vídeo assistido é sinal de utilização, não prova de domínio.
-Usar artefato e explicação para avaliar aprendizagem; não penalizar o aluno por uma falha de registro de reprodução.
+- [ ] Disponibilizar gravação.
+- [ ] Registrar dúvidas e lacunas recorrentes.
+- [ ] Conferir se demonstração, prática e tarefa seguiram o roteiro.
+- [ ] Atualizar roteiro e script juntos se alguma regra mudar.

@@ -1,120 +1,130 @@
-# Roteiro — Módulo 8, Aula 1
+# Roteiro de Aula — Módulo 8, Aula 1
 
-**Condução com falas prontas:** [script do professor](scripts/modulo-08-aula-01-kickoff-e-requisitos.md). Seguir a sequência de até 90 minutos. As atividades abaixo formam o caderno completo; o script define o recorte ao vivo e a conclusão em casa. A gravação serve para revisão posterior.
+# Kickoff, Escopo e Requisitos do Projeto Final
 
-## Tema e objetivo da aula
+> **Papel deste documento:** definir o que será ensinado, praticado e avaliado.  
+> A condução minuto a minuto, falas sugeridas, respostas esperadas e intervenções ficam no [script do professor](scripts/modulo-08-aula-01-kickoff-e-requisitos.md).
 
-**Tema:** Kickoff e requisitos. **Objetivo observável:** fechar problema, escopo e três histórias.
+## Objetivo da aula
 
-**Leitura:** [E-book do módulo](../ebooks/modulo-08-projeto-final-hands-on.md), tópicos 1. **Pré-requisito:** entregas dos módulos 2–7; acesso ao laboratório e possibilidade de revisar documentos.
+Iniciar o projeto final definindo problema, escopo, limites, requisitos e histórias que servirão como base verificável para as próximas aulas.
 
-## Duração sugerida
+Ao final, o aluno deverá conseguir:
 
-| Etapa | Minutos |
+- explicar o problema do Agenda Clara
+- delimitar MVP e fora de escopo
+- revisar três histórias e critérios
+- ligar critérios às regras
+- registrar contribuição individual desde o kickoff
+
+## Conteúdos e conceitos
+
+### Kickoff e problema
+- contexto compartilhado
+- objetivo do projeto
+- papéis e contribuição
+
+### Escopo e limites
+- MVP atual
+- fora de escopo
+- não prometer produto real
+
+### Requisitos e histórias
+- regra
+- história
+- critério
+- rastreabilidade
+
+## Duração e blocos
+
+| Bloco | Tempo previsto |
 |---|---:|
-| Abertura e diagnóstico | 8 |
-| Conceitos e exemplos | 17 |
-| Demonstração guiada | 20 |
-| Pausa | 5 |
-| Dinâmica em dupla ou grupo | 15 |
-| Exercício individual | 12 |
-| Correção e dúvidas | 8 |
-| Fechamento e orientação da tarefa | 5 |
-| Total | 90 |
+| Abertura e diagnóstico | 8 min |
+| Conceitos e exemplos | 17 min |
+| Demonstração guiada | 20 min |
+| Pausa | 5 min |
+| Dinâmica em dupla ou grupo | 15 min |
+| Exercício individual | 12 min |
+| Correção e dúvidas | 8 min |
+| Fechamento e tarefa | 5 min |
+| **Total** | **90 min** |
 
 ## Materiais necessários
 
-caderno do caso e kit do E-book. Usar [caderno do caso](../atividades/caso-agenda-clara.md), editor de Markdown ou papel e [laboratório](../portfolio/agenda-clara/README.md). Testar o ambiente antes da aula. Contas de ferramentas são opcionais quando houver alternativa documental; evidência de execução continua necessária quando o enunciado a solicitar.
+- E-book do Módulo 8
+- caso Agenda Clara
+- entregas dos módulos anteriores
+- template do dossiê
 
-## Abertura da aula
+## Exemplos planejados
 
-Apresente o conflito da recepção e peça delimitação do MVP. Dê dois minutos para registrar uma previsão individual, recolha duas respostas e pergunte qual evidência seria necessária. Retome um conceito anterior e anuncie a entrega de hoje.
+### Exemplo 1
+MVP de consulta/reserva/cancelamento.
 
-## Explicação teórica e exemplos práticos
+### Exemplo 2
+História de reserva com conflito.
 
-### Problema, escopo e requisitos do projeto
+### Exemplo 3
+Fora de escopo: login, pagamento, concorrência real.
 
-**Conceito:** Um projeto integrado começa por um problema delimitado e critérios de sucesso verificáveis.
+## Demonstração planejada — Fechar escopo e revisar uma história
 
-**Explicação simples:** Dizer o que será entregue e o que ficou fora evita demonstrar mais do que foi realmente construído.
+1. Ler o problema e objetivo do projeto.
+2. Listar dentro/fora do MVP.
+3. Selecionar uma história.
+4. Conferir regra e critérios positivos/negativos.
+5. Adicionar vínculo de rastreabilidade.
+6. Registrar uma decisão de escopo.
 
-**Aprofundamento:** Retome base fictícia de 20% de conflitos. Objetivo do laboratório é demonstrar integridade sequencial e clareza das regras, sem comprovar redução em operação real. Perfis simulados: cliente solicita; recepção acompanha; PO prioriza; QA investiga; integrante Dev lê e altera código; facilitação organiza. O kit ao final fornece histórias e critérios para serem revisados e personalizados. Registre decisões de escopo e perguntas futuras. O fluxo passa por consulta, escolha, validação, reserva e cancelamento.
+**Resultado pedagógico esperado:** o aluno inicia o dossiê com base consistente para execução.
 
-**Exemplo cotidiano:** Um projeto pequeno com evidências claras pode comunicar mais aprendizado que um app amplo sem funcionamento verificável.
+## Dinâmica em grupo — Acordar a entrega
 
-**Cenário empresarial:** Agenda Clara escolhe resolver conflito e cancelamento antes de adicionar pagamento.
+**Cenário:** A equipe precisa sair do kickoff com entendimento comum sobre o que será demonstrado no projeto final.
 
-**Erros a observar:** Expandir escopo sem tempo; esconder partes desenhadas; declarar resultado de negócio não medido.
+1. Escrever problema em uma frase.
+2. Definir três itens dentro e três fora do escopo.
+3. Revisar três histórias e critérios.
+4. Registrar uma decisão e uma dúvida.
+5. Distribuir responsabilidade de documentação/revisão, sem simular cargos reais.
 
-**Orientação:** Recorte, premissas e critérios explícitos.
+**Entrega esperada:** kickoff.md + escopo + histórias revisadas
 
-Distribua os 17 minutos entre os tópicos. Peça um exemplo com palavras do aluno antes de avançar; se houver uma contradição, retome a regra do caso.
-
-## Demonstração guiada
-
-Revise uma história e compare critério com regra.
-
-**Exemplo 1:** MVP consulta, reserva única sequencial e cancelamento. Não inclui autenticação ou concorrência real. Critério central: tentativa em horário ocupado preserva reserva original.
-
-Interrompa antes do resultado para pedir uma previsão. Revele uma etapa de cada vez, marque a regra e compare a resposta com a evidência. Não concluir correção apenas pela aparência do arquivo.
-
-## Dinâmica em grupo
-
-**Nome:** Acordar a entrega. **Contexto:** a equipe precisa revisar uma decisão antes de avançar o MVP. Em duplas, uma pessoa produz e outra confere; trocar funções na metade do tempo. Em grupos maiores, adicionar um papel de registro.
-
-**Distribuição:** 2 minutos de leitura; 5 de execução; 5 de revisão cruzada; 3 de compartilhamento. Se houver mais de duas duplas, recolher as demais conclusões por escrito para caber no tempo.
-
-**Atividade 1: Fechar o recorte e escrever requisitos**
-
-**Contexto profissional:** o time da empresa fictícia Agenda Clara precisa revisar esta decisão antes de entregar o MVP. Dados e regras no [caderno do caso](../atividades/caso-agenda-clara.md).
-
-**Objetivo:** Fechar o recorte e escrever requisitos, com registro que permita conferência por outra pessoa.
-
-**Passo a passo:**
-
-1. Leia RN01–RN08 e o kit.
-2. Defina problema e objetivo do MVP.
-3. Revise US01–US03 e critérios.
-4. Registre fora do escopo e duas perguntas.
-5. Desenhe jornada e identifique partes executáveis.
-
-**Entrega esperada:** requisitos.md e jornada Identificar nome, versão ou premissas, regra utilizada e justificativa. Nome sugerido: `m08-atividade-01.md`.
-
-**Critérios específicos:** Três histórias; positivos/negativos; escopo e limites.
-
-**Exemplo de resposta comentada:** MVP consulta, reserva única sequencial e cancelamento. Não inclui autenticação ou concorrência real. Critério central: tentativa em horário ocupado preserva reserva original.
-
-**Dica:** faça sua tentativa antes de ler a resposta e explique qualquer revisão.
-
-**Variação mais difícil:** Como reformular a promessa se o aluno só produzir protótipo, sem execução?
-
+**Critérios:** problema claro; limites honestos; rastreabilidade inicial; contribuição identificada.
 
 ## Exercício individual
 
-Escreva uma decisão de escopo e razão própria.
+Escolha um pedido fora do MVP — por exemplo, pagamento ou login — e escreva por que não entra agora, o que precisaria ser investigado e como registrar isso no backlog futuro.
 
-**Tempo:** 12 minutos. **Entrega:** uma versão própria do artefato, incluindo regra, decisão e evidência. **Avaliação:** critérios específicos acima e rubrica do E-book. O professor verifica se houve transferência para o novo caso. Se houver ajuda, registrar qual etapa foi assistida.
+**Entrega:** decisão de escopo individual
 
-## Perguntas para os alunos
+**Critérios:** razão coerente; investigação futura; sem estimativa inventada; distinção entre atual e futuro.
 
-- Qual valor o recorte entrega?
-- O que não foi implementado?
-- Qual parte da sua previsão você reviu e qual evidência motivou a mudança?
+## Perguntas de verificação
 
-## Possíveis dúvidas e como responder
+- Projeto final precisa implementar uma aplicação web completa?
+- Podemos chamar a simulação de experiência profissional?
+- Fora de escopo significa ‘nunca será feito’?
 
-| Dúvida | Resposta |
-|---|---|
-| Tenho que criar site? | Não; o simulador executa regras e o restante pode ser prototipado. |
-| Posso ampliar? | Depois de atender o MVP e registrar novas regras e testes. |
-| Preciso copiar a resposta de referência? | Não; preserve as regras e explique sua decisão com evidência. |
-
-## Correção e fechamento
-
-As respostas de referência estão na demonstração. Não exigir frases idênticas; conferir critérios e raciocínio. Cada aluno completa: “Usei ___ para decidir ___ e confirmei com ___”. Relacionar à entrega do módulo: dossiê Agenda Clara com requisitos, três histórias, backlog, oito casos executados, dois reportes simulados, Sprint, SDLC, release e apresentação de cinco minutos. A próxima aula organiza trabalho.
+> As respostas esperadas e intervenções ficam exclusivamente no script do professor.
 
 ## Tarefa para casa
 
-Revisar requisitos e jornada.
+1. Revisar kickoff e escopo.
+2. Concluir três histórias com critérios.
+3. Atualizar matriz de rastreabilidade.
+4. Registrar contribuição individual.
+5. Entregar `m08-aula-01-revisao.md`.
 
-**Tempo sugerido:** 30–45 minutos. Entregar `m08-aula-01-revisao.md` com resposta inicial, feedback, versão revisada e explicação da mudança. O professor verifica a revisão no próximo encontro.
+**Entrega:** primeiro bloco do dossiê
+
+## Conexão com a trilha
+
+A Aula 2 transforma esse escopo em uma Sprint simulada com capacidade, execução e adaptação.
+
+## Referências
+
+- [E-book correspondente](../ebooks/modulo-08-projeto-final-hands-on.md)
+- [Caso Agenda Clara](../atividades/caso-agenda-clara.md)
+- [Laboratório Agenda Clara](../portfolio/agenda-clara/README.md)
+- [Script do professor](scripts/modulo-08-aula-01-kickoff-e-requisitos.md)

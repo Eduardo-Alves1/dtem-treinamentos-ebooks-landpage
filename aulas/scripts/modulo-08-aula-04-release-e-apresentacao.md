@@ -1,267 +1,204 @@
-# Script do professor — Release e apresentação
+# Script do Professor — Release, Dossiê e Apresentação
 
-**DTEM Treinamentos · encontro ao vivo de até 90 minutos, gravado para revisão.**
+**DTEM Treinamentos · encontro ao vivo de até 90 minutos.**
 
-Este documento contém falas e ações de condução. Adaptar a linguagem ao próprio estilo, preservando conceitos,
-exemplos e critérios. Os intervalos incluem escrita, espera, interação e prática; não são 90 minutos de leitura.
-Não depende de vídeos prévios. O aluno pode consultar o E-book e rever a gravação depois.
+> **Papel deste documento:** orientar a condução da aula. O script operacionaliza o roteiro correspondente; não deve criar uma aula paralela.
 
-**Roteiro:** [planejamento da aula](../modulo-08-aula-04-release-e-apresentacao.md).  
-**Material de estudo:** [E-book correspondente](../../ebooks/modulo-08-projeto-final-hands-on.md).  
-**Caso:** [Agenda Clara](../../atividades/caso-agenda-clara.md), empresa e dados fictícios.
+**Roteiro:** [Módulo 8, Aula 4](../modulo-08-aula-04-release-e-apresentacao.md)  
+**Material do aluno:** [E-book correspondente](../../ebooks/modulo-08-projeto-final-hands-on.md)  
+**Caso:** [Agenda Clara](../../atividades/caso-agenda-clara.md)  
+**Laboratório:** [Agenda Clara](../../portfolio/agenda-clara/README.md)  
 
-## Objetivo e materiais
+## Alinhamento obrigatório
 
-**Objetivo observável:** apresentar um portfólio verificável e justificar limites da entrega.  
-**Materiais:** dossiê com os seis arquivos definidos no roteiro, checklist e matriz de rastreabilidade.
+- **Objetivo:** Consolidar o dossiê do projeto, sustentar uma decisão de release simulada e apresentar contribuição, evidências, limites e próximos passos em formato profissional e honesto.
+- **Demonstração central:** Conferir dossiê e ensaiar um pitch verificável.
+- **Prática em grupo:** Review e retrospectiva final.
+- **Exercício individual:** apresentar ou preparar pitch de cinco minutos.
+- **Tarefa:** finalizar dossiê, pitch e plano de evolução.
 
-Antes do encontro, preparar o exemplo e conferir os recursos necessários. Em tarefas de ferramenta, preparar
-conta e ambiente com antecedência. Se a execução estiver indisponível, percorrer manualmente e declarar o método;
-publicação ou execução exigidas pela entrega devem ser concluídas depois com apoio. Não inventar evidência.
+## Antes da aula
 
-## Agenda de condução
+- [ ] Conferir laboratório e arquivos.
+- [ ] Preparar cronômetro.
+- [ ] Selecionar no máximo duas apresentações ao vivo dentro da janela de 15 minutos ou reservar encontro extra.
+- [ ] Não prometer que toda turma fará defesa individual ao vivo no mesmo encontro.
+- [ ] Deixar roteiro e script abertos.
+- [ ] Conferir materiais, dados e exemplos.
+- [ ] Separar a entrega esperada da aula.
 
-| Intervalo | Etapa | Minutos |
-|---|---|---:|
-| 00–08 | Abertura e diagnóstico | 8 |
-| 08–25 | Conceitos e exemplos | 17 |
-| 25–45 | Demonstração guiada | 20 |
-| 45–50 | Pausa | 5 |
-| 50–65 | Dinâmica em dupla ou grupo | 15 |
-| 65–77 | Exercício individual | 12 |
-| 77–85 | Correção e dúvidas | 8 |
-| 85–90 | Fechamento e tarefa | 5 |
-| Total | | 90 |
+## Agenda
 
-O roteiro original contém o caderno completo de atividades. Nesta versão, os enunciados de grupo e individual
-abaixo definem o recorte do encontro. A tarefa de casa conclui os itens restantes. Se precisar reduzir extensão,
-preservar demonstração, tentativa individual, feedback e orientação da entrega.
+| Intervalo | Etapa |
+|---|---|
+| 00–08 | Abertura e diagnóstico |
+| 08–25 | Conceitos e exemplos |
+| 25–45 | Demonstração guiada |
+| 45–50 | Pausa |
+| 50–65 | Dinâmica |
+| 65–77 | Exercício individual |
+| 77–85 | Correção e dúvidas |
+| 85–90 | Fechamento e tarefa |
 
 ## 00–08 — Abertura e diagnóstico
 
-**Mostrar:** título da aula e objetivo. **Fala de abertura:**
+> Uma boa apresentação permite conferir o que você afirma. Hoje vamos transformar o dossiê em uma narrativa curta, verificável e honesta.
 
-> Uma boa apresentação permite conferir suas afirmações. Vamos organizar o dossiê, demonstrar o que funciona e explicar as limitações sem inventar experiência profissional.
+**Pergunta diagnóstica:** Qual é a diferença entre ‘participei de um projeto educacional’ e ‘trabalhei profissionalmente nesse produto’?
 
-**Condução:** dar dois minutos para uma previsão individual no chat ou caderno. Colher duas respostas,
-sem exigir fala de todos. Esperar aproximadamente 30 segundos antes de completar a resposta.
-Não confundir silêncio inicial com falta de capacidade; oferecer a situação concreta novamente.
+Ouça pelo menos duas respostas antes de completar.
 
-**Pergunta de diagnóstico:** “Como mencionar esse trabalho no currículo?”
-
-**Referência para o professor:** Como projeto educacional, com contribuição e artefatos verificáveis, sem apresentá-lo como emprego ou resultado comercial real.
-
-**Transição para a explicação:**
-
-> Vamos transformar essa primeira resposta em um raciocínio que outra pessoa consiga conferir.
-> A cada exemplo, anotem a decisão e a informação que a sustenta.
-
-## 08–25 — Explicação teórica e exemplos
-
-Dividir os 17 minutos entre as três explicações, a escrita e duas perguntas breves.
-Usar as falas como apoio, sem acrescentar uma exposição inteira do E-book.
-
-### Explicação 1 — Dossiê
-
-**Fala sugerida:**
-
-> Os seis arquivos previstos no roteiro devem formar uma história coerente: problema, decisões, execução e avaliação precisam se conectar. Confira links, identificação da versão e consistência entre requisito, teste e resultado.
-
-**Ação:** escrever uma palavra-chave e pedir um exemplo com palavras do aluno. Se houver dúvida, pedir a entrada, regra ou situação concreta que sustenta a resposta.
-### Explicação 2 — Apresentação
-
-**Fala sugerida:**
-
-> Um pitch de cinco minutos pode dividir o tempo em 45 segundos de problema, 60 de escopo, 90 de demonstração, 45 de colaboração e 60 de limites e próximos passos. Ensaiar evita perder todo o tempo abrindo arquivos.
-
-**Ação:** escrever uma palavra-chave e pedir um exemplo com palavras do aluno. Se houver dúvida, pedir a entrada, regra ou situação concreta que sustenta a resposta.
-### Explicação 3 — Portfólio honesto
-
-**Fala sugerida:**
-
-> Descreva projeto educacional, contribuição pessoal e evidências. A execução local não comprova produção, clientes reais ou experiência contratada. Mostrar uma limitação bem compreendida também demonstra capacidade profissional.
-
-**Ação:** escrever uma palavra-chave e pedir um exemplo com palavras do aluno. Se houver dúvida, pedir a entrada, regra ou situação concreta que sustenta a resposta.
-
-**Mostrar no quadro:** Problema → recorte → demonstração → contribuição → limites → próximos passos.
-
-**Checagem de compreensão:** “Como mencionar esse trabalho no currículo?”  
-**Resposta esperada:** Como projeto educacional, com contribuição e artefatos verificáveis, sem apresentá-lo como emprego ou resultado comercial real.
+**Referência para o professor:** O primeiro descreve prática de formação; o segundo implica experiência contratada/real que não deve ser inventada.
 
 **Transição:**
 
-> Agora vou percorrer um exemplo pensando em voz alta. Antes de mostrar o resultado,
-> vou pedir uma previsão. Observem onde uma regra ou evidência muda a decisão.
+> Vamos conferir primeiro se as afirmações têm evidência e só depois ensaiar como contá-las.
 
-## 25–45 — Demonstração guiada
+## 08–25 — Conceitos e exemplos
 
-**Preparação:** abrir os dados, documento, código ou cartões indicados. Reservar aproximadamente cinco minutos
-por passo e os minutos finais para uma previsão e uma dúvida. Em comandos, executar uma operação de cada vez
-e conferir estado. Não substituir falha de ambiente por uma afirmação de execução bem-sucedida.
+### 1. Dossiê coerente
+
+**Fala sugerida:**
+
+> Um dossiê forte conta uma história verificável. Se o slide diz ‘tudo aprovado’ e há teste pendente, a narrativa perde credibilidade.
+
+**Mostrar/fazer:** seis arquivos/artefatos do projeto.
+
+**Perguntar:** Que vínculo você seguiria para conferir uma afirmação?
+
+**Compreensão esperada:** regra → história/critério → teste → evidência/bug → decisão.
+
+### 2. Decisão de release simulada
+
+**Fala sugerida:**
+
+> A decisão final deve dizer exatamente o que pode ser demonstrado no laboratório e o que permanece fora de escopo.
+
+**Mostrar/fazer:** checklist final.
+
+**Perguntar:** Podemos afirmar prontidão para produção?
+
+**Compreensão esperada:** não; laboratório não cobre requisitos de produção.
+
+### 3. Apresentação profissional
+
+**Fala sugerida:**
+
+> Portfólio não precisa parecer emprego. Ele precisa mostrar como você pensou, o que produziu e o que consegue defender com evidência.
+
+**Mostrar/fazer:** estrutura de pitch de cinco minutos.
+
+**Perguntar:** Como mencionar o projeto no currículo?
+
+**Compreensão esperada:** como projeto educacional com contribuição e artefatos verificáveis.
+
+## 25–45 — Demonstração guiada — Conferir dossiê e ensaiar um pitch verificável
 
 ### Passo 1 — Conferir dossiê
 
-**Fala durante a demonstração:**
+**Fazer:** Siga uma regra até a evidência.
 
-> Escolho uma regra e sigo seus vínculos até a evidência. Se o teste está pendente, o slide não pode dizer que todos os critérios foram aprovados.
+**Fala sugerida:**
 
-**Ação:** mostrar o registro correspondente antes de avançar; pedir uma previsão e conferir a resposta com a evidência.
-### Passo 2 — Demonstrar localmente
+> Antes de ensaiar slides, vou verificar se minha narrativa é sustentada pelos arquivos.
 
-**Fala durante a demonstração:**
+**Checar com a turma:** Peça à turma para apontar uma afirmação sem evidência.
 
-> Mostro consulta, reserva e comportamento de conflito na referência. Explico que o estado fica em memória e que não há proteção real de concorrência.
+### Passo 2 — Demonstrar o que existe
 
-**Ação:** mostrar o registro correspondente antes de avançar; pedir uma previsão e conferir a resposta com a evidência.
+**Fazer:** Execute consulta/reserva/conflito ou cancelamento.
+
+**Fala sugerida:**
+
+> Vou mostrar apenas o que está implementado e dizer explicitamente que o estado é local/em memória.
+
+**Checar com a turma:** Pergunte o que não pode ser inferido desta demonstração.
+
 ### Passo 3 — Ensaiar pitch
 
-**Fala durante a demonstração:**
+**Fazer:** Cronometre problema, escopo, demonstração, contribuição, limites.
 
-> Vou usar os cinco blocos e terminar dentro de cinco minutos. A turma revisará se minhas afirmações têm evidência.
+**Fala sugerida:**
 
-**Ação:** mostrar o registro correspondente antes de avançar; pedir uma previsão e conferir a resposta com a evidência.
+> Cinco minutos exigem escolhas. O objetivo não é listar tudo que estudamos; é contar uma história coerente.
 
-**Pergunta após a demonstração:** “Qual decisão vocês conseguem explicar sem copiar a frase que usei?”
+**Checar com a turma:** Peça feedback sobre uma afirmação exagerada ou vaga.
 
-**Referência:** a resposta precisa relacionar situação, decisão e fundamento.
-As falas de cada passo indicam o comportamento ou a interpretação que deve ser conferido.
+**Resultado de referência:** Pitch honesto identifica projeto educacional, problema, escopo, artefatos, demonstração verificável, contribuição individual, limites e próximos passos.
 
-**Transição:**
-
-> Na prática, vocês vão alternar quem conduz e quem revisa. O objetivo é produzir algo
-> que o colega consiga conferir, e não somente repetir minha demonstração.
+Peça previsão antes de revelar decisões ou resultados.
 
 ## 45–50 — Pausa
 
-Deixar horário de retorno visível e não apresentar conteúdo obrigatório durante os cinco minutos.
-Na gravação, indicar o ponto em que a atividade seguinte começa.
+Informar horário de retorno e não inserir conteúdo obrigatório.
 
-## 50–65 — Dinâmica em dupla ou grupo
+## 50–65 — Dinâmica — Review e retrospectiva final
 
-**Nome:** Revisão com explicação — Release e apresentação.  
-**Contexto profissional:** uma equipe precisa revisar seu trabalho antes de avançar.
-**Objetivo:** aplicar os conceitos e produzir um registro conferível no recorte da aula.
+**Cenário:** As duplas revisam os dossiês antes da apresentação final.
 
-**Fala de orientação:**
+> Revisem como colegas de trabalho: não corrijam estética primeiro; procurem inconsistência, evidência ausente e afirmação maior que o que foi feito.
 
-> Uma pessoa começa conduzindo e a outra confere as decisões. Na metade, troquem funções.
-> Registrem o que fizeram e qual informação justifica o resultado.
-> Se discordarem, expliquem a diferença usando regra ou evidência, em vez de escolher pela maioria.
+1. Conferir uma cadeia de rastreabilidade.
+2. Revisar uma afirmação do pitch.
+3. Identificar um limite que precisa aparecer.
+4. Dar feedback sobre clareza/evidência.
+5. Registrar uma melhoria final no dossiê.
 
-**Enunciado e passo a passo:**
+**Entrega:** checklist de revisão + ajuste final
 
-1. Revisar um vínculo e um arquivo do dossiê em dupla.
-2. Ouvir até duas apresentações voluntárias de cinco minutos na janela da dinâmica.
-3. Dar feedback sobre clareza, evidência e limites.
-
-**Tempo:** 2 minutos para conferir um vínculo; 10 para até dois pitches de 5 minutos; 3 para feedback. As demais apresentações são entregas pós-aula ou exigem agenda adicional.
-Selecionar duas duplas para falar e recolher as demais por escrito. Em aulas de entrevista ou apresentação,
-usar o mesmo tempo para a primeira participação, troca e feedback.
-
-**Entrega esperada:** registro da atividade com contexto, decisão, fundamento e uma revisão.
-**Critérios:** cumprir as etapas, preservar as regras e permitir que o colega confira.
-**Referência de correção:** usar os exemplos da demonstração e verificar o que mudou no novo caso,
-sem exigir palavras idênticas.
-
-**Perguntas ao circular:** “Qual passo está sendo executado?”, “Qual evidência sustenta isso?”
-e “O que precisaria mudar para sua conclusão ser diferente?”
-
-**Dica para a dupla:** separar o que observou do que está supondo.
-**Variação difícil:** formular um contraexemplo ou limite; transferir para casa se não couber.
+**Observar:** afirmações sustentadas; limites explícitos; contribuição individual clara; feedback acionável.
 
 ## 65–77 — Exercício individual
 
-**Fala do professor — enunciado:**
+> Prepare um pitch de até cinco minutos com problema, escopo, uma demonstração/evidência, sua contribuição, uma limitação e um próximo passo. Se não houver tempo para todos apresentarem ao vivo, grave o pitch para revisão posterior.
 
-> Escreva o trecho final do pitch com uma limitação, seu impacto e um próximo passo.
+**Entrega:** pitch + roteiro/registro de evidências
 
-**Tempo:** 2 minutos de leitura, 7 de resolução e 3 de revisão/entrega.
-Cada aluno entrega uma resposta própria, mesmo quando a atividade anterior foi em grupo.
+**Critérios:** tempo respeitado; contribuição própria; afirmações verificáveis; limites claros.
 
-**Entrega:** artefato pedido no enunciado, acompanhado de uma explicação breve da decisão.
-**Critérios:** correção, completude do recorte, evidência e justificativa. Aplicar a
-[rubrica formativa](../../planejamento/analise-pedagogica.md), de 0 a 2 por critério. Referência proposta: 6/8, sem zero em correção ou evidência.
+**Ajuda graduada:** use cinco blocos de aproximadamente 45–90 segundos e elimine detalhes que não sustentam a narrativa.
 
-**Ajuda graduada:** pedir que identifique primeiro a entrada, regra ou exigência; depois que escolha o próximo
-passo. Não resolver todas as etapas. Registrar qual parte foi assistida e conferir transferência em uma tentativa nova.
+## 77–85 — Correção e intervenções
 
-**Gabarito comentado — revelar depois da tentativa:**
+Peça que a pessoa explique sua decisão antes da resposta de referência.
 
-> Exemplo: as reservas ficam em memória e são perdidas ao reiniciar; para um uso operacional, precisaríamos avaliar persistência e recuperação e verificar esse comportamento. O próximo passo não deve ser apresentado como já implementado.
+**Se aparecer:** o aluno afirma ‘sistema pronto para produção’
 
-## 77–85 — Correção, intervenções e dúvidas
+> Que requisitos de segurança, persistência, concorrência, operação e infraestrutura foram realmente verificados? Restrinja a afirmação.
 
-**Fala para iniciar a correção:**
+**Se aparecer:** o aluno apresenta contribuição do grupo como exclusivamente sua
 
-> Se sua resposta foi diferente, mantenha a primeira versão. Vamos descobrir em qual decisão
-> o raciocínio mudou. Corrigir e explicar a mudança faz parte da aprendizagem.
+> Qual parte você produziu ou revisou? Descreva sua contribuição sem apagar o trabalho coletivo.
 
-**Se o aluno toda turma apresenta ao vivo em quinze minutos:**
+**Se aparecer:** o pitch vira lista de ferramentas
 
-> Nesta janela cabem duas apresentações com feedback breve. As demais precisam de gravação pós-aula ou agenda adicional.
+> Que problema foi resolvido, que decisão você tomou e qual evidência pode mostrar? Ferramentas são contexto, não narrativa.
 
-**Se o aluno inventar números de impacto:**
+### Perguntas de verificação
 
-> Que medição sustenta esse número? Se não existe, apresente como hipótese.
+- **Como mencionar o projeto no currículo?** — Como projeto educacional, descrevendo contribuição e artefatos verificáveis sem apresentar como emprego.
+- **Precisamos esconder limitações para parecer mais profissional?** — Não. Limites bem explicados mostram entendimento e honestidade técnica.
+- **Todos conseguem apresentar ao vivo em 15 minutos?** — Não. Cabem no máximo duas apresentações de cinco minutos com feedback curto; o restante precisa de agenda adicional ou gravação.
 
-**Dúvida central da aula:** “Como mencionar esse trabalho no currículo?”
+## 85–90 — Fechamento e tarefa
 
-**Como responder:**
+> O objetivo do projeto final não é fingir senioridade. É mostrar que vocês conseguem conectar problema, decisão, execução, evidência e reflexão sobre limites.
 
-> Como projeto educacional, com contribuição e artefatos verificáveis, sem apresentá-lo como emprego ou resultado comercial real.
+1. Aplicar feedback final.
+2. Conferir links e arquivos.
+3. Gravar pitch se não apresentou ao vivo.
+4. Escrever autoavaliação com um acerto, uma lacuna e próximo estudo.
+5. Organizar a entrega final do projeto.
 
-**Se perguntarem se a resposta precisa ser igual:**
+**Entrega:** dossiê final + pitch + autoavaliação
 
-> Não precisa repetir minha frase. Precisa respeitar as regras e permitir que outra pessoa
-> confira como você chegou à decisão.
+**Ponte:**
 
-**Se perguntarem como usar a gravação:**
+> Agora que existe um projeto verificável, vamos aprender a transformá-lo em comunicação profissional sem exagerar experiência.
 
-> Localize o trecho em que surgiu a dúvida, reveja o exemplo e depois tente uma entrada ou situação nova.
-> Assistir de novo ajuda; explicar sua própria decisão é o que vamos avaliar.
+## Pós-aula
 
-**Modelo de devolutiva:**
-
-> Você acertou ao identificar a decisão principal. Falta mostrar a informação que a sustenta.
-> Acrescente essa evidência e explique o que mudou na sua revisão.
-
-Selecionar duas dúvidas para os oito minutos. Registrar as demais para resposta após a aula ou retomada.
-Não ampliar silenciosamente a duração do encontro.
-
-## 85–90 — Fechamento e tarefa para casa
-
-**Fala de fechamento:**
-
-> Hoje trabalhamos como apresentar um portfólio verificável e justificar limites da entrega.
-> Para revisar, procure uma decisão, a evidência que a sustenta e uma limitação que ainda precisa de atenção.
-> Guardem a primeira versão e a correção; isso ajuda a explicar a evolução no portfólio.
-
-**Pergunta de saída:** “O que você mudou na sua primeira previsão, e por quê?”
-
-**Tarefa de casa — falar à turma:**
-
-> Concluir o dossiê e enviar o pitch de até cinco minutos gravado após a aula, com autoavaliação. Isso é entrega do aluno, não vídeo teórico prévio. Para defesa individual ao vivo de todos, reservar encontros adicionais explicitamente.
-
-**Tempo-base:** 30–45 minutos para revisão. Se o enunciado exigir concluir vários artefatos, execução pendente
-ou preparação da entrega final, combinar prazo e tempo adicional explicitamente; não prometer que tudo cabe
-nesse intervalo.
-
-**Entrega:** `modulo-08-aula-04-release-e-apresentacao-revisao.md`, ou arquivos específicos pedidos, contendo resposta inicial, feedback,
-versão revisada e explicação. O professor verifica a revisão no início do encontro seguinte.
-
-**Dica:** usar E-book e gravação como apoio; identificar empresa fictícia e origem da evidência.
-**Variação difícil:** acrescentar uma situação nova ou uma dúvida de aplicação, com proposta de investigação.
-
-## Checklist do professor e uso da gravação
-
-- [ ] Preparar recursos e exemplo antes do encontro.
-- [ ] Pedir previsão antes de revelar referência.
-- [ ] Conferir compreensão por exemplo, não por memorização.
-- [ ] Alternar condução e revisão na dupla.
-- [ ] Preservar exercício individual.
-- [ ] Declarar execução, simulação e limites corretamente.
-- [ ] Registrar feedback, tarefa e dúvidas pendentes.
-- [ ] Disponibilizar gravação para revisão e indicar os blocos de demonstração e correção.
-
-Percentual de vídeo assistido é sinal de utilização, não prova de domínio.
-Usar artefato e explicação para avaliar aprendizagem; não penalizar o aluno por uma falha de registro de reprodução.
+- [ ] Disponibilizar gravação.
+- [ ] Registrar dúvidas e lacunas recorrentes.
+- [ ] Conferir se demonstração, prática e tarefa seguiram o roteiro.
+- [ ] Atualizar roteiro e script juntos se alguma regra mudar.

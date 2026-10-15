@@ -1,120 +1,131 @@
-# Roteiro — Módulo 7, Aula 4
+# Roteiro de Aula — Módulo 7, Aula 4
 
-**Condução com falas prontas:** [script do professor](scripts/modulo-07-aula-04-release-e-operacao.md). Seguir a sequência de até 90 minutos. As atividades abaixo formam o caderno completo; o script define o recorte ao vivo e a conclusão em casa. A gravação serve para revisão posterior.
+# Release, Operação e Resposta a Falhas
 
-## Tema e objetivo da aula
+> **Papel deste documento:** definir o que será ensinado, praticado e avaliado.  
+> A condução minuto a minuto, falas sugeridas, respostas esperadas e intervenções ficam no [script do professor](scripts/modulo-07-aula-04-release-e-operacao.md).
 
-**Tema:** Release e operação. **Objetivo observável:** produzir checklist e resposta a falha simulada.
+## Objetivo da aula
 
-**Leitura:** [E-book do módulo](../ebooks/modulo-07-ciclo-de-vida-do-software.md), tópicos 4. **Pré-requisito:** atividade da aula anterior, com retomada da lacuna identificada no feedback.
+Ensinar decisão de release baseada em evidências, diferenciar deploy de release e praticar resposta a falha dentro dos limites do laboratório educacional.
 
-## Duração sugerida
+Ao final, o aluno deverá conseguir:
 
-| Etapa | Minutos |
+- diferenciar deploy e release
+- produzir checklist de liberação
+- definir gatilho de parada
+- explicar limites de rollback/recuperação no laboratório
+- emitir decisão proporcional às evidências
+
+## Conteúdos e conceitos
+
+### Deploy versus release
+- deploy coloca versão em ambiente
+- release disponibiliza/autoriza uso
+- processos podem variar
+
+### Critérios de liberação
+- casos críticos
+- defeitos impeditivos
+- limites conhecidos
+- decisão explícita
+
+### Operação e resposta a falhas
+- detectar
+- interromper/mitigar
+- registrar
+- recuperar
+- aprender
+
+## Duração e blocos
+
+| Bloco | Tempo previsto |
 |---|---:|
-| Abertura e diagnóstico | 8 |
-| Conceitos e exemplos | 17 |
-| Demonstração guiada | 20 |
-| Pausa | 5 |
-| Dinâmica em dupla ou grupo | 15 |
-| Exercício individual | 12 |
-| Correção e dúvidas | 8 |
-| Fechamento e orientação da tarefa | 5 |
-| Total | 90 |
+| Abertura e diagnóstico | 8 min |
+| Conceitos e exemplos | 17 min |
+| Demonstração guiada | 20 min |
+| Pausa | 5 min |
+| Dinâmica em dupla ou grupo | 15 min |
+| Exercício individual | 12 min |
+| Correção e dúvidas | 8 min |
+| Fechamento e tarefa | 5 min |
+| **Total** | **90 min** |
 
 ## Materiais necessários
 
-versão de referência e registro de execução. Usar [caderno do caso](../atividades/caso-agenda-clara.md), editor de Markdown ou papel e [laboratório](../portfolio/agenda-clara/README.md). Testar o ambiente antes da aula. Contas de ferramentas são opcionais quando houver alternativa documental; evidência de execução continua necessária quando o enunciado a solicitar.
+- E-book do Módulo 7
+- checklist de release
+- laboratório
+- matriz de rastreabilidade
 
-## Abertura da aula
+## Exemplos planejados
 
-Pergunte se abrir o programa significa que pode liberar um serviço real. Dê dois minutos para registrar uma previsão individual, recolha duas respostas e pergunte qual evidência seria necessária. Retome um conceito anterior e anuncie a entrega de hoje.
+### Exemplo 1
+Falha de RN02 antes de demonstração.
 
-## Explicação teórica e exemplos práticos
+### Exemplo 2
+Checklist de release simulada.
 
-### Deploy, release, observação e resposta a falhas
+### Exemplo 3
+Reinício do laboratório não tratado como rollback real.
 
-**Conceito:** Entrega precisa identificar versão, critérios de liberação e forma de perceber e tratar falhas.
+## Demonstração planejada — Executar checklist e tomar decisão de liberação
 
-**Explicação simples:** Colocar algo no ar e confirmar que está útil são decisões relacionadas, mas distintas.
+1. Revisar critérios críticos.
+2. Executar verificações rápidas de reserva/conflito/cancelamento.
+3. Inserir uma falha crítica simulada.
+4. Decidir liberar, interromper ou restringir.
+5. Registrar limites e plano de resposta.
 
-**Aprofundamento:** Deploy disponibiliza versão em ambiente; release libera a entrega para uso conforme estratégia. Eles podem ocorrer juntos ou separadamente. No curso, deploy é simulado: escolher versão, executar verificações e registrar decisão, sem publicar serviço. Defina verificação rápida, indicador, responsável e condição de reversão. Rollback nem sempre é seguro: mudanças em dados ou esquema podem exigir plano específico. No laboratório em memória, voltar à classe anterior é comparação didática e perde estado; não é um procedimento de produção. Observação precisa de ação diante de sinal ruim.
+**Resultado pedagógico esperado:** o aluno emite decisão clara e honesta sobre o escopo autorizado.
 
-**Exemplo cotidiano:** Uma atualização pode ser instalada para um grupo pequeno antes de ser liberada a todos.
+## Dinâmica em grupo — Liberar ou interromper
 
-**Cenário empresarial:** Time só demonstra referência após reteste; falha crítica exige voltar ao plano e revisar evidências.
+**Cenário:** A equipe está a dez minutos de uma demonstração e um teste crítico de conflito falha.
 
-**Erros a observar:** Chamar execução local de deploy real; rollback como solução universal; medir sem ação.
+1. Identificar requisito/risco afetado.
+2. Classificar impacto.
+3. Decidir release/demonstração.
+4. Registrar justificativa e próxima ação.
+5. Indicar claramente o que não será demonstrado.
 
-**Orientação:** Versão identificada, checklist, condição de parada e limites explícitos.
+**Entrega esperada:** decisão de release + mini plano de resposta
 
-Distribua os 17 minutos entre os tópicos. Peça um exemplo com palavras do aluno antes de avançar; se houver uma contradição, retome a regra do caso.
-
-## Demonstração guiada
-
-Faça verificações rápidas e emita decisão limitada ao laboratório.
-
-**Exemplo 1:** Liberar demonstração da referência se cenários críticos passam. Se duplicidade ou cancelamento incorreto ocorrer, interromper, registrar entrada/estado, corrigir e repetir. Reinício perde reservas; nenhuma estratégia de migração real foi implementada.
-
-Interrompa antes do resultado para pedir uma previsão. Revele uma etapa de cada vez, marque a regra e compare a resposta com a evidência. Não concluir correção apenas pela aparência do arquivo.
-
-## Dinâmica em grupo
-
-**Nome:** Liberar ou interromper. **Contexto:** a equipe precisa revisar uma decisão antes de avançar o MVP. Em duplas, uma pessoa produz e outra confere; trocar funções na metade do tempo. Em grupos maiores, adicionar um papel de registro.
-
-**Distribuição:** 2 minutos de leitura; 5 de execução; 5 de revisão cruzada; 3 de compartilhamento. Se houver mais de duas duplas, recolher as demais conclusões por escrito para caber no tempo.
-
-**Atividade 4: Criar checklist de release e reversão simuladas**
-
-**Contexto profissional:** o time da empresa fictícia Agenda Clara precisa revisar esta decisão antes de entregar o MVP. Dados e regras no [caderno do caso](../atividades/caso-agenda-clara.md).
-
-**Objetivo:** Criar checklist de release e reversão simuladas, com registro que permita conferência por outra pessoa.
-
-**Passo a passo:**
-
-1. Identifique versão e escopo.
-2. Defina verificações de reserva e cancelamento.
-3. Defina sinal de falha e responsável.
-4. Descreva parar demonstração e retornar à versão de referência.
-5. Registre perda de estado e limites.
-
-**Entrega esperada:** checklist, decisão e plano de resposta simulado Identificar nome, versão ou premissas, regra utilizada e justificativa. Nome sugerido: `m07-atividade-04.md`.
-
-**Critérios específicos:** Versão e evidências; gatilho acionável; não confundir com produção.
-
-**Exemplo de resposta comentada:** Liberar demonstração da referência se cenários críticos passam. Se duplicidade ou cancelamento incorreto ocorrer, interromper, registrar entrada/estado, corrigir e repetir. Reinício perde reservas; nenhuma estratégia de migração real foi implementada.
-
-**Dica:** faça sua tentativa antes de ler a resposta e explique qualquer revisão.
-
-**Variação mais difícil:** Qual risco aparece se uma versão nova altera dados persistidos?
-
+**Critérios:** evidência citada; escopo afetado claro; sem mascarar falha; limite da simulação declarado.
 
 ## Exercício individual
 
-Defina gatilho de parada para falha em RN02.
+Escreva um gatilho de parada para falha de RN02 e uma resposta de quatro passos. Diferencie o que é possível no laboratório do que exigiria ambiente de produção real.
 
-**Tempo:** 12 minutos. **Entrega:** uma versão própria do artefato, incluindo regra, decisão e evidência. **Avaliação:** critérios específicos acima e rubrica do E-book. O professor verifica se houve transferência para o novo caso. Se houver ajuda, registrar qual etapa foi assistida.
+**Entrega:** gatilho + resposta
 
-## Perguntas para os alunos
+**Critérios:** gatilho observável; ação coerente; reteste previsto; limites reais declarados.
 
-- Qual é o escopo liberado?
-- Quais dados se perdem ao reiniciar?
-- Qual parte da sua previsão você reviu e qual evidência motivou a mudança?
+## Perguntas de verificação
 
-## Possíveis dúvidas e como responder
+- Deploy e release são sempre a mesma coisa?
+- Reiniciar o laboratório é rollback?
+- Uma falha crítica precisa bloquear todo o produto?
 
-| Dúvida | Resposta |
-|---|---|
-| Execução local é deploy real? | Não neste exercício; publicação e infraestrutura não foram implementadas. |
-| Rollback é sempre seguro? | Não; depende de dados e compatibilidade. |
-| Preciso copiar a resposta de referência? | Não; preserve as regras e explique sua decisão com evidência. |
-
-## Correção e fechamento
-
-As respostas de referência estão na demonstração. Não exigir frases idênticas; conferir critérios e raciocínio. Cada aluno completa: “Usei ___ para decidir ___ e confirmei com ___”. Relacionar à entrega do módulo: diagrama completo de SDLC, matriz de rastreabilidade, checklist de release simulada e plano de resposta a falha. O projeto final integra todas essas decisões.
+> As respostas esperadas e intervenções ficam exclusivamente no script do professor.
 
 ## Tarefa para casa
 
-Consolidar fluxo, matriz e checklist.
+1. Revisar o diagrama SDLC.
+2. Concluir matriz de rastreabilidade.
+3. Finalizar checklist de release.
+4. Registrar plano de resposta a falha.
+5. Entregar `m07-aula-04-revisao.md` e organizar a entrega do módulo.
 
-**Tempo sugerido:** 30–45 minutos. Entregar `m07-aula-04-revisao.md` com resposta inicial, feedback, versão revisada e explicação da mudança. O professor verifica a revisão no próximo encontro. Organizar também a entrega final e a reflexão individual.
+**Entrega:** pacote final do Módulo 7
+
+## Conexão com a trilha
+
+O Módulo 8 reúne os artefatos em um projeto final integrado e verificável.
+
+## Referências
+
+- [E-book correspondente](../ebooks/modulo-07-ciclo-de-vida-do-software.md)
+- [Caso Agenda Clara](../atividades/caso-agenda-clara.md)
+- [Laboratório Agenda Clara](../portfolio/agenda-clara/README.md)
+- [Script do professor](scripts/modulo-07-aula-04-release-e-operacao.md)

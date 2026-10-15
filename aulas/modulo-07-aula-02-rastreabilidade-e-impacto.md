@@ -1,119 +1,125 @@
-# Roteiro — Módulo 7, Aula 2
+# Roteiro de Aula — Módulo 7, Aula 2
 
-**Condução com falas prontas:** [script do professor](scripts/modulo-07-aula-02-rastreabilidade-e-impacto.md). Seguir a sequência de até 90 minutos. As atividades abaixo formam o caderno completo; o script define o recorte ao vivo e a conclusão em casa. A gravação serve para revisão posterior.
+# Rastreabilidade e Análise de Impacto
 
-## Tema e objetivo da aula
+> **Papel deste documento:** definir o que será ensinado, praticado e avaliado.  
+> A condução minuto a minuto, falas sugeridas, respostas esperadas e intervenções ficam no [script do professor](scripts/modulo-07-aula-02-rastreabilidade-e-impacto.md).
 
-**Tema:** Rastreabilidade e impacto. **Objetivo observável:** ligar regras, histórias, testes e versões.
+## Objetivo da aula
 
-**Leitura:** [E-book do módulo](../ebooks/modulo-07-ciclo-de-vida-do-software.md), tópicos 2. **Pré-requisito:** atividade da aula anterior, com retomada da lacuna identificada no feedback.
+Ensinar rastreabilidade como conexão verificável entre necessidade, regra, história, teste, defeito e versão, usando esses vínculos para avaliar impacto de mudanças.
 
-## Duração sugerida
+Ao final, o aluno deverá conseguir:
 
-| Etapa | Minutos |
+- montar uma cadeia de rastreabilidade
+- explicar por que rastreabilidade não é apenas link
+- identificar artefatos afetados por mudança
+- distinguir evidência atual de cobertura futura
+- produzir análise de impacto simples
+
+## Conteúdos e conceitos
+
+### Rastreabilidade
+- origem da necessidade
+- vínculo entre artefatos
+- possibilidade de conferir
+
+### Análise de impacto
+- mudança invalida premissas
+- artefatos precisam revisão
+- não reutilizar aprovação cegamente
+
+### Versão e evidência
+- resultado pertence a uma versão
+- reteste precisa referência
+- cobertura não se transfere automaticamente
+
+## Duração e blocos
+
+| Bloco | Tempo previsto |
 |---|---:|
-| Abertura e diagnóstico | 8 |
-| Conceitos e exemplos | 17 |
-| Demonstração guiada | 20 |
-| Pausa | 5 |
-| Dinâmica em dupla ou grupo | 15 |
-| Exercício individual | 12 |
-| Correção e dúvidas | 8 |
-| Fechamento e orientação da tarefa | 5 |
-| Total | 90 |
+| Abertura e diagnóstico | 8 min |
+| Conceitos e exemplos | 17 min |
+| Demonstração guiada | 20 min |
+| Pausa | 5 min |
+| Dinâmica em dupla ou grupo | 15 min |
+| Exercício individual | 12 min |
+| Correção e dúvidas | 8 min |
+| Fechamento e tarefa | 5 min |
+| **Total** | **90 min** |
 
 ## Materiais necessários
 
-RN, US, TC e BUG dos módulos 4 e 5. Usar [caderno do caso](../atividades/caso-agenda-clara.md), editor de Markdown ou papel e [laboratório](../portfolio/agenda-clara/README.md). Testar o ambiente antes da aula. Contas de ferramentas são opcionais quando houver alternativa documental; evidência de execução continua necessária quando o enunciado a solicitar.
+- E-book do Módulo 7
+- matriz de rastreabilidade
+- artefatos Agenda Clara
 
-## Abertura da aula
+## Exemplos planejados
 
-Mude a regra do nome e pergunte o que precisa ser revisto. Dê dois minutos para registrar uma previsão individual, recolha duas respostas e pergunte qual evidência seria necessária. Retome um conceito anterior e anuncie a entrega de hoje.
+### Exemplo 1
+Cadeia RN03–US02–TC03–BUG01.
 
-## Explicação teórica e exemplos práticos
+### Exemplo 2
+Mudança para incluir H12 no catálogo.
 
-### Requisitos, desenvolvimento e rastreabilidade
+### Exemplo 3
+Nova regra de tamanho mínimo de nome.
 
-**Conceito:** Rastreabilidade permite seguir uma necessidade até as evidências que sustentam sua implementação.
+## Demonstração planejada — Montar cadeia e analisar uma mudança
 
-**Explicação simples:** Se a regra mudar, você precisa saber quais histórias, testes e documentos serão afetados.
+1. Ligar RN03 à história/critério correspondente.
+2. Ligar ao TC03.
+3. Ligar BUG01 à evidência da variante.
+4. Identificar a versão usada no reteste.
+5. Alterar uma premissa e listar impactos.
 
-**Aprofundamento:** Use IDs estáveis e relações úteis. RN03 está ligada a US02, TC03, BUG01 e versão corrigida. A matriz não precisa relacionar tudo com tudo; deve apoiar análise de cobertura e impacto. Link quebrado ou versão indefinida enfraquece evidência. Desenvolvimento deve preservar regra, documentação e histórico. Uma mudança de critério exige investigar código e casos derivados. Não conclua cobertura só por ter uma linha: conferir se o teste realmente verifica a regra e o estado.
+**Resultado pedagógico esperado:** o aluno consegue explicar não só a cadeia, mas o que precisa ser revisto quando algo muda.
 
-**Exemplo cotidiano:** Um manual e o programa podem divergir após alteração de política.
+## Dinâmica em grupo — Seguir a mudança
 
-**Cenário empresarial:** Time localiza rapidamente todos os artefatos afetados pela validação de espaços.
+**Cenário:** A regra de catálogo muda para incluir H12 depois de histórias, testes e documentação já existirem.
 
-**Erros a observar:** IDs inconsistentes; matriz decorativa; evidência de versão errada.
+1. Localizar artefatos que mencionam catálogo.
+2. Classificar impacto: precisa mudar / precisa verificar / não afetado.
+3. Atualizar uma linha da matriz.
+4. Explicar qual evidência precisa ser refeita.
 
-**Orientação:** Poucos vínculos claros e revisão quando a regra muda.
+**Entrega esperada:** matriz de impacto
 
-Distribua os 17 minutos entre os tópicos. Peça um exemplo com palavras do aluno antes de avançar; se houver uma contradição, retome a regra do caso.
-
-## Demonstração guiada
-
-Monte cadeia RN03–US02–TC03–BUG01–versão.
-
-**Exemplo 1:** RN03 → US02 → TC03 → BUG01 → referência para reteste. Se RN03 passar a exigir tamanho mínimo, casos e código atuais precisam revisão, sem afirmar que a regra nova já está coberta.
-
-Interrompa antes do resultado para pedir uma previsão. Revele uma etapa de cada vez, marque a regra e compare a resposta com a evidência. Não concluir correção apenas pela aparência do arquivo.
-
-## Dinâmica em grupo
-
-**Nome:** Seguir a mudança. **Contexto:** a equipe precisa revisar uma decisão antes de avançar o MVP. Em duplas, uma pessoa produz e outra confere; trocar funções na metade do tempo. Em grupos maiores, adicionar um papel de registro.
-
-**Distribuição:** 2 minutos de leitura; 5 de execução; 5 de revisão cruzada; 3 de compartilhamento. Se houver mais de duas duplas, recolher as demais conclusões por escrito para caber no tempo.
-
-**Atividade 2: Construir matriz de rastreabilidade**
-
-**Contexto profissional:** o time da empresa fictícia Agenda Clara precisa revisar esta decisão antes de entregar o MVP. Dados e regras no [caderno do caso](../atividades/caso-agenda-clara.md).
-
-**Objetivo:** Construir matriz de rastreabilidade, com registro que permita conferência por outra pessoa.
-
-**Passo a passo:**
-
-1. Liste RN02, RN03 e RN06.
-2. Ligue a histórias, testes e bugs aplicáveis.
-3. Indique versão ou estado de verificação.
-4. Escolha uma mudança e identifique impactos.
-
-**Entrega esperada:** matriz com três regras e análise de mudança Identificar nome, versão ou premissas, regra utilizada e justificativa. Nome sugerido: `m07-atividade-02.md`.
-
-**Critérios específicos:** Vínculos coerentes; evidência identificada; impacto explicado.
-
-**Exemplo de resposta comentada:** RN03 → US02 → TC03 → BUG01 → referência para reteste. Se RN03 passar a exigir tamanho mínimo, casos e código atuais precisam revisão, sem afirmar que a regra nova já está coberta.
-
-**Dica:** faça sua tentativa antes de ler a resposta e explique qualquer revisão.
-
-**Variação mais difícil:** Como identificar uma regra sem teste e um teste sem regra?
-
+**Critérios:** dependências identificadas; impacto justificado; versão/evidência considerada; nenhuma aprovação antiga reaproveitada sem análise.
 
 ## Exercício individual
 
-Analise impacto de novo catálogo H12 e registre o que deixa de ser válido.
+Com H12 entrando no catálogo, indique pelo menos uma regra, um caso, uma documentação ou exemplo e uma execução que precisam ser revistos. Justifique cada item.
 
-**Tempo:** 12 minutos. **Entrega:** uma versão própria do artefato, incluindo regra, decisão e evidência. **Avaliação:** critérios específicos acima e rubrica do E-book. O professor verifica se houve transferência para o novo caso. Se houver ajuda, registrar qual etapa foi assistida.
+**Entrega:** análise individual de impacto
 
-## Perguntas para os alunos
+**Critérios:** itens concretos; relação com mudança; justificativa; nova evidência proposta.
 
-- Qual regra não tem teste?
-- Qual versão sustenta a evidência?
-- Qual parte da sua previsão você reviu e qual evidência motivou a mudança?
+## Perguntas de verificação
 
-## Possíveis dúvidas e como responder
+- Rastreabilidade é apenas colocar links entre arquivos?
+- Teste aprovado em versão anterior continua válido após qualquer mudança?
+- Todos os artefatos sempre mudam quando uma regra muda?
 
-| Dúvida | Resposta |
-|---|---|
-| Matriz garante cobertura? | Não; é preciso revisar o conteúdo do teste. |
-| Preciso ligar tudo a tudo? | Não; use relações úteis e conferíveis. |
-| Preciso copiar a resposta de referência? | Não; preserve as regras e explique sua decisão com evidência. |
-
-## Correção e fechamento
-
-As respostas de referência estão na demonstração. Não exigir frases idênticas; conferir critérios e raciocínio. Cada aluno completa: “Usei ___ para decidir ___ e confirmei com ___”. Relacionar à entrega do módulo: diagrama completo de SDLC, matriz de rastreabilidade, checklist de release simulada e plano de resposta a falha. Antecipar revisão reduz ambiguidades.
+> As respostas esperadas e intervenções ficam exclusivamente no script do professor.
 
 ## Tarefa para casa
 
-Revisar matriz e uma análise de impacto.
+1. Completar vínculos principais.
+2. Adicionar versão às evidências.
+3. Escolher uma mudança e registrar impacto.
+4. Entregar `m07-aula-02-revisao.md`.
 
-**Tempo sugerido:** 30–45 minutos. Entregar `m07-aula-02-revisao.md` com resposta inicial, feedback, versão revisada e explicação da mudança. O professor verifica a revisão no próximo encontro.
+**Entrega:** matriz de rastreabilidade + análise de impacto
+
+## Conexão com a trilha
+
+A Aula 3 usa esses vínculos para antecipar perguntas e prevenir ambiguidades com Shift Left.
+
+## Referências
+
+- [E-book correspondente](../ebooks/modulo-07-ciclo-de-vida-do-software.md)
+- [Caso Agenda Clara](../atividades/caso-agenda-clara.md)
+- [Laboratório Agenda Clara](../portfolio/agenda-clara/README.md)
+- [Script do professor](scripts/modulo-07-aula-02-rastreabilidade-e-impacto.md)

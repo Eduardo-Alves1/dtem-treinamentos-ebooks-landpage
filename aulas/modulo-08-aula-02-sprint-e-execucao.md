@@ -1,120 +1,129 @@
-# Roteiro — Módulo 8, Aula 2
+# Roteiro de Aula — Módulo 8, Aula 2
 
-**Condução com falas prontas:** [script do professor](scripts/modulo-08-aula-02-sprint-e-execucao.md). Seguir a sequência de até 90 minutos. As atividades abaixo formam o caderno completo; o script define o recorte ao vivo e a conclusão em casa. A gravação serve para revisão posterior.
+# Sprint Simulada e Execução
 
-## Tema e objetivo da aula
+> **Papel deste documento:** definir o que será ensinado, praticado e avaliado.  
+> A condução minuto a minuto, falas sugeridas, respostas esperadas e intervenções ficam no [script do professor](scripts/modulo-08-aula-02-sprint-e-execucao.md).
 
-**Tema:** Sprint e execução. **Objetivo observável:** planejar recorte e registrar adaptação.
+## Objetivo da aula
 
-**Leitura:** [E-book do módulo](../ebooks/modulo-08-projeto-final-hands-on.md), tópicos 2. **Pré-requisito:** atividade da aula anterior, com retomada da lacuna identificada no feedback.
+Planejar e executar uma rodada simulada do projeto final, registrando capacidade, progresso, bloqueios, adaptação e contribuição individual.
 
-## Duração sugerida
+Ao final, o aluno deverá conseguir:
 
-| Etapa | Minutos |
+- definir meta da rodada
+- selecionar trabalho coerente com capacidade
+- aplicar DoD
+- registrar bloqueio e adaptação
+- distinguir trabalho concluído de parcialmente executado
+
+## Conteúdos e conceitos
+
+### Meta e recorte
+- objetivo da rodada
+- trabalho selecionado
+- capacidade
+
+### Execução integrada
+- artefatos se conectam
+- código, teste e documentação
+- contribuição individual
+
+### Bloqueio e DoD
+- bloqueio visível
+- adaptação
+- DoD não some por prazo
+
+## Duração e blocos
+
+| Bloco | Tempo previsto |
 |---|---:|
-| Abertura e diagnóstico | 8 |
-| Conceitos e exemplos | 17 |
-| Demonstração guiada | 20 |
-| Pausa | 5 |
-| Dinâmica em dupla ou grupo | 15 |
-| Exercício individual | 12 |
-| Correção e dúvidas | 8 |
-| Fechamento e orientação da tarefa | 5 |
-| Total | 90 |
+| Abertura e diagnóstico | 8 min |
+| Conceitos e exemplos | 17 min |
+| Demonstração guiada | 20 min |
+| Pausa | 5 min |
+| Dinâmica em dupla ou grupo | 15 min |
+| Exercício individual | 12 min |
+| Correção e dúvidas | 8 min |
+| Fechamento e tarefa | 5 min |
+| **Total** | **90 min** |
 
 ## Materiais necessários
 
-backlog, disponibilidade e cartões. Usar [caderno do caso](../atividades/caso-agenda-clara.md), editor de Markdown ou papel e [laboratório](../portfolio/agenda-clara/README.md). Testar o ambiente antes da aula. Contas de ferramentas são opcionais quando houver alternativa documental; evidência de execução continua necessária quando o enunciado a solicitar.
+- E-book do Módulo 8
+- backlog do projeto
+- quadro de Sprint
+- laboratório
 
-## Abertura da aula
+## Exemplos planejados
 
-Introduza uma indisponibilidade de ambiente. Dê dois minutos para registrar uma previsão individual, recolha duas respostas e pergunte qual evidência seria necessária. Retome um conceito anterior e anuncie a entrega de hoje.
+### Exemplo 1
+Pessoa sem ambiente disponível.
 
-## Explicação teórica e exemplos práticos
+### Exemplo 2
+Adiar relatório para preservar testes do fluxo central.
 
-### Backlog, Sprint e colaboração
+### Exemplo 3
+Item com código sem evidência de teste.
 
-**Conceito:** O projeto transforma necessidade em recorte de trabalho com meta, capacidade e decisões registradas.
+## Demonstração planejada — Planejar uma rodada e reagir a um bloqueio
 
-**Explicação simples:** O time combina uma entrega possível e mostra o que mudou quando surgiram dificuldades.
+1. Definir meta.
+2. Calcular/considerar capacidade.
+3. Selecionar itens.
+4. Iniciar execução e atualizar quadro.
+5. Introduzir bloqueio de ambiente.
+6. Adaptar plano mantendo DoD.
 
-**Aprofundamento:** Planeje Sprint simulada de duas rodadas distribuídas nas aulas; a compressão é didática. Meta: demonstrar reserva e cancelamento conforme regras. Backlog inclui consulta, reserva, cancelamento, validação de nome, documentação e evidências. Estime capacidade de cada encontro, não toda semana como se fosse disponibilidade integral. Daily simulada registra risco e ajuste. DoD: regra atendida, casos relevantes executados, documentação atualizada e revisão. Review recebe feedback de produto; Retrospectiva propõe uma melhoria.
+**Resultado pedagógico esperado:** o aluno registra realidade e decisão, sem fingir conclusão.
 
-**Exemplo cotidiano:** Uma equipe precisa diminuir recorte quando perde capacidade, sem simplesmente esconder tarefa incompleta.
+## Dinâmica em grupo — Planejar com limites
 
-**Cenário empresarial:** Time adia relatório para concluir correção de RN03 e teste de cancelamento.
+**Cenário:** A rodada possui capacidade limitada e uma pessoa fica temporariamente sem ambiente.
 
-**Erros a observar:** Meta igual a lista de tarefas; atribuir tudo a uma pessoa; inventar reuniões que não aconteceram.
+1. Definir meta.
+2. Selecionar trabalho.
+3. Atualizar quadro após bloqueio.
+4. Decidir ajuda/resequenciamento/adiamento.
+5. Registrar contribuição de cada participante.
 
-**Orientação:** Registro curto, papéis rotativos e contribuição individual.
+**Entrega esperada:** sprint.md com plano inicial e adaptado
 
-Distribua os 17 minutos entre os tópicos. Peça um exemplo com palavras do aluno antes de avançar; se houver uma contradição, retome a regra do caso.
-
-## Demonstração guiada
-
-Calcule capacidade e negocie tarefas.
-
-**Exemplo 1:** Bloqueio fictício: participante sem ambiente. Ajuste: execução em dupla em computador disponível; adiar relatório. DoD permanece. Ação de melhoria: verificar ambiente antes do encontro.
-
-Interrompa antes do resultado para pedir uma previsão. Revele uma etapa de cada vez, marque a regra e compare a resposta com a evidência. Não concluir correção apenas pela aparência do arquivo.
-
-## Dinâmica em grupo
-
-**Nome:** Planejar com limites. **Contexto:** a equipe precisa revisar uma decisão antes de avançar o MVP. Em duplas, uma pessoa produz e outra confere; trocar funções na metade do tempo. Em grupos maiores, adicionar um papel de registro.
-
-**Distribuição:** 2 minutos de leitura; 5 de execução; 5 de revisão cruzada; 3 de compartilhamento. Se houver mais de duas duplas, recolher as demais conclusões por escrito para caber no tempo.
-
-**Atividade 2: Organizar Sprint simulada e dois ajustes**
-
-**Contexto profissional:** o time da empresa fictícia Agenda Clara precisa revisar esta decisão antes de entregar o MVP. Dados e regras no [caderno do caso](../atividades/caso-agenda-clara.md).
-
-**Objetivo:** Organizar Sprint simulada e dois ajustes, com registro que permita conferência por outra pessoa.
-
-**Passo a passo:**
-
-1. Defina meta e capacidade.
-2. Ordene seis itens e decomponha tarefas.
-3. Crie quadro com WIP 2.
-4. Registre Daily com um bloqueio.
-5. Faça Review e Retrospectiva com uma melhoria concreta.
-
-**Entrega esperada:** sprint.md com quadro, eventos e decisões Identificar nome, versão ou premissas, regra utilizada e justificativa. Nome sugerido: `m08-atividade-02.md`.
-
-**Critérios específicos:** Capacidade; meta; bloqueio real ou claramente simulado; eventos distintos.
-
-**Exemplo de resposta comentada:** Bloqueio fictício: participante sem ambiente. Ajuste: execução em dupla em computador disponível; adiar relatório. DoD permanece. Ação de melhoria: verificar ambiente antes do encontro.
-
-**Dica:** faça sua tentativa antes de ler a resposta e explique qualquer revisão.
-
-**Variação mais difícil:** Como demonstrar sua contribuição se o grupo usou o mesmo dossiê?
-
+**Critérios:** meta explícita; capacidade respeitada; bloqueio visível; DoD preservada; contribuições registradas.
 
 ## Exercício individual
 
-Registre sua contribuição e uma decisão revista.
+Escolha um item da rodada e escreva: o que você produziu ou revisou, qual evidência existe, qual decisão mudou durante a execução e por quê.
 
-**Tempo:** 12 minutos. **Entrega:** uma versão própria do artefato, incluindo regra, decisão e evidência. **Avaliação:** critérios específicos acima e rubrica do E-book. O professor verifica se houve transferência para o novo caso. Se houver ajuda, registrar qual etapa foi assistida.
+**Entrega:** registro individual de contribuição
 
-## Perguntas para os alunos
+**Critérios:** ação concreta; evidência identificada; mudança justificada; sem inflar papel profissional.
 
-- O que cabe?
-- Qual ajuste protege a meta?
-- Qual parte da sua previsão você reviu e qual evidência motivou a mudança?
+## Perguntas de verificação
 
-## Possíveis dúvidas e como responder
+- Código pronto significa item concluído?
+- Bloqueio deve ser escondido para não prejudicar a apresentação?
+- Como apresentar contribuição em grupo?
 
-| Dúvida | Resposta |
-|---|---|
-| Isso é Scrum completo? | É simulação de eventos e decisões, com tempo comprimido. |
-| Posso inventar Daily? | Somente como cenário identificado, nunca como reunião real realizada. |
-| Preciso copiar a resposta de referência? | Não; preserve as regras e explique sua decisão com evidência. |
-
-## Correção e fechamento
-
-As respostas de referência estão na demonstração. Não exigir frases idênticas; conferir critérios e raciocínio. Cada aluno completa: “Usei ___ para decidir ___ e confirmei com ___”. Relacionar à entrega do módulo: dossiê Agenda Clara com requisitos, três histórias, backlog, oito casos executados, dois reportes simulados, Sprint, SDLC, release e apresentação de cinco minutos. Evidências serão executadas na próxima aula.
+> As respostas esperadas e intervenções ficam exclusivamente no script do professor.
 
 ## Tarefa para casa
 
-Revisar sprint.md e preparar ambiente.
+1. Atualizar quadro final da rodada.
+2. Revisar contribuição individual.
+3. Resolver ou documentar pendências de ambiente.
+4. Preparar dados/estado para os testes da Aula 3.
+5. Entregar `m08-aula-02-revisao.md`.
 
-**Tempo sugerido:** 30–45 minutos. Entregar `m08-aula-02-revisao.md` com resposta inicial, feedback, versão revisada e explicação da mudança. O professor verifica a revisão no próximo encontro.
+**Entrega:** sprint.md revisado + ambiente preparado/pendência documentada
+
+## Conexão com a trilha
+
+A Aula 3 consolida execução de testes e diferencia BUG01 realmente reproduzido de BUG02 fornecido como incidente fictício.
+
+## Referências
+
+- [E-book correspondente](../ebooks/modulo-08-projeto-final-hands-on.md)
+- [Caso Agenda Clara](../atividades/caso-agenda-clara.md)
+- [Laboratório Agenda Clara](../portfolio/agenda-clara/README.md)
+- [Script do professor](scripts/modulo-08-aula-02-sprint-e-execucao.md)
