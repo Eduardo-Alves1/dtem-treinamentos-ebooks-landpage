@@ -1,267 +1,219 @@
-# Script do professor — Pensamento Computacional e Entrega do Mapa Mental de TI
+# Script do Professor — Pensamento Computacional e Entrega do Mapa Mental de TI
 
-**DTEM Treinamentos · encontro ao vivo de até 90 minutos, gravado para revisão.**
+**DTEM Treinamentos · encontro ao vivo de até 90 minutos.**
 
-Este documento contém falas e ações de condução. Adaptar a linguagem ao próprio estilo, preservando conceitos,
-exemplos e critérios. Os intervalos incluem escrita, espera, interação e prática; não são 90 minutos de leitura.
-Não depende de vídeos prévios. O aluno pode consultar o E-book e rever a gravação depois.
+> **Papel deste documento:** orientar a condução da aula. O conteúdo e as atividades abaixo devem permanecer coerentes com o roteiro; o script não cria uma aula paralela.
 
-**Roteiro:** [planejamento da aula](../modulo-01-aula-04-pensamento-computacional-e-mapa-mental.md).  
-**Material de estudo:** [E-book correspondente](../../ebooks/modulo-01-fundamentos.md).  
-**Caso:** [Agenda Clara](../../atividades/caso-agenda-clara.md), empresa e dados fictícios.
+**Roteiro:** [Módulo 1, Aula 4](../modulo-01-aula-04-pensamento-computacional-e-mapa-mental.md)  
+**Material do aluno:** [E-book correspondente](../../ebooks/modulo-01-fundamentos.md)  
+**Caderno:** [prática do Módulo 1](../../atividades/modulo-01-caderno-de-pratica.md)  
 
-## Objetivo e materiais
+## Alinhamento obrigatório
 
-**Objetivo observável:** aplicar quatro pilares do pensamento computacional e explicar conexões no mapa final.  
-**Materiais:** mapa iniciado, quadro e tabela dos quatro pilares.
+- **Objetivo:** Introduzir pensamento computacional como método para organizar problemas e consolidar a visão do Módulo 1 no mapa mental final.
+- **Demonstração central:** Investigar ‘aluno não consegue acessar a aula’ com os quatro pilares.
+- **Prática em grupo:** Quebre o problema.
+- **Exercício individual:** finalizar o mapa mental do Módulo 1.
+- **Tarefa:** revisar e salvar a versão final do mapa mental.
 
-Antes do encontro, preparar o exemplo e conferir os recursos necessários. Em tarefas de ferramenta, preparar
-conta e ambiente com antecedência. Se a execução estiver indisponível, percorrer manualmente e declarar o método;
-publicação ou execução exigidas pela entrega devem ser concluídas depois com apoio. Não inventar evidência.
+Não substituir esses elementos por um exemplo genérico sem revisar também o roteiro.
+
+## Antes da aula
+
+- [ ] Separar um problema simples para a demonstração.
+- [ ] Preparar template do mapa mental final.
+- [ ] Revisar as entregas das aulas 1–3 para retomar exemplos conhecidos.
+- [ ] Deixar o roteiro e este script abertos.
+- [ ] Testar qualquer ferramenta, arquivo ou demonstração antes da turma entrar.
+- [ ] Separar o material que o aluno deverá entregar ao final.
 
 ## Agenda de condução
 
-| Intervalo | Etapa | Minutos |
-|---|---|---:|
-| 00–08 | Abertura e diagnóstico | 8 |
-| 08–25 | Conceitos e exemplos | 17 |
-| 25–45 | Demonstração guiada | 20 |
-| 45–50 | Pausa | 5 |
-| 50–65 | Dinâmica em dupla ou grupo | 15 |
-| 65–77 | Exercício individual | 12 |
-| 77–85 | Correção e dúvidas | 8 |
-| 85–90 | Fechamento e tarefa | 5 |
-| Total | | 90 |
-
-O roteiro original contém o caderno completo de atividades. Nesta versão, os enunciados de grupo e individual
-abaixo definem o recorte do encontro. A tarefa de casa conclui os itens restantes. Se precisar reduzir extensão,
-preservar demonstração, tentativa individual, feedback e orientação da entrega.
+| Intervalo | Etapa |
+|---|---|
+| 00–08 | Abertura e diagnóstico |
+| 08–25 | Conceitos e exemplos |
+| 25–45 | Demonstração guiada |
+| 45–50 | Pausa |
+| 50–65 | Dinâmica |
+| 65–77 | Exercício individual |
+| 77–85 | Correção e dúvidas |
+| 85–90 | Fechamento e tarefa |
 
 ## 00–08 — Abertura e diagnóstico
 
-**Mostrar:** título da aula e objetivo. **Fala de abertura:**
+**Fala de abertura:**
 
-> Um aluno não consegue abrir uma aula. Qual hipótese vocês investigariam primeiro? Hoje vamos organizar esse problema antes de escolher uma solução e concluir nosso mapa de tecnologia.
+> Antes de aprender algo novo, quero que olhem para trás: o que ficou mais claro sobre tecnologia nestas três aulas e o que ainda parece confuso?
 
-**Condução:** dar dois minutos para uma previsão individual no chat ou caderno. Colher duas respostas,
-sem exigir fala de todos. Esperar aproximadamente 30 segundos antes de completar a resposta.
-Não confundir silêncio inicial com falta de capacidade; oferecer a situação concreta novamente.
+**Pergunta diagnóstica:** Pensamento computacional significa ‘pensar como um computador’?
 
-**Pergunta de diagnóstico:** “Padrão e hipótese são iguais?”
+Dê cerca de dois minutos para respostas curtas no chat, voz ou caderno. Escute pelo menos duas respostas antes de completar.
 
-**Referência para o professor:** Não. Hipótese é explicação a investigar; padrão é regularidade observada, ainda sujeita a interpretação.
-
-**Transição para a explicação:**
-
-> Vamos transformar essa primeira resposta em um raciocínio que outra pessoa consiga conferir.
-> A cada exemplo, anotem a decisão e a informação que a sustenta.
-
-## 08–25 — Explicação teórica e exemplos
-
-Dividir os 17 minutos entre as três explicações, a escrita e duas perguntas breves.
-Usar as falas como apoio, sem acrescentar uma exposição inteira do E-book.
-
-### Explicação 1 — Decomposição e padrões
-
-**Fala sugerida:**
-
-> Decompor é dividir um problema em partes: acesso, permissão, navegação e reprodução. Procurar padrões é comparar situações: ocorre com todos ou com um grupo? Um padrão precisa de observação; 'talvez seja no celular' ainda é hipótese.
-
-**Ação:** escrever uma palavra-chave e pedir um exemplo com palavras do aluno. Se houver dúvida, pedir a entrada, regra ou situação concreta que sustenta a resposta.
-### Explicação 2 — Abstração e algoritmo
-
-**Fala sugerida:**
-
-> Abstrair é selecionar o que importa para a pergunta atual. Para investigar acesso, precisamos de estado da matrícula e mensagem, não de todos os detalhes pessoais. Um algoritmo descreve passos para verificar hipóteses. A sequência deve indicar como reagir ao resultado de cada passo.
-
-**Ação:** escrever uma palavra-chave e pedir um exemplo com palavras do aluno. Se houver dúvida, pedir a entrada, regra ou situação concreta que sustenta a resposta.
-### Explicação 3 — Mapa como explicação
-
-**Fala sugerida:**
-
-> O mapa final reúne áreas, componentes e raciocínio. Uma conexão precisa de significado: Produto define regra, Dev implementa, QA investiga. A aparência ajuda a leitura, mas a avaliação busca entendimento. Cada pessoa explica pelo menos três relações e uma dúvida que levará adiante.
-
-**Ação:** escrever uma palavra-chave e pedir um exemplo com palavras do aluno. Se houver dúvida, pedir a entrada, regra ou situação concreta que sustenta a resposta.
-
-**Mostrar no quadro:** tabela Pilar / Aplicação / Evidência e mapa com setas explicadas.
-
-**Checagem de compreensão:** “Padrão e hipótese são iguais?”  
-**Resposta esperada:** Não. Hipótese é explicação a investigar; padrão é regularidade observada, ainda sujeita a interpretação.
+**Resposta de referência para o professor:** Não. Significa estruturar problemas usando decomposição, padrões, abstração e passos lógicos.
 
 **Transição:**
 
-> Agora vou percorrer um exemplo pensando em voz alta. Antes de mostrar o resultado,
-> vou pedir uma previsão. Observem onde uma regra ou evidência muda a decisão.
+> Vamos usar um problema comum para transformar esses quatro pilares em uma ferramenta prática de raciocínio.
 
-## 25–45 — Demonstração guiada
+## 08–25 — Conceitos e exemplos
 
-**Preparação:** abrir os dados, documento, código ou cartões indicados. Reservar aproximadamente cinco minutos
-por passo e os minutos finais para uma previsão e uma dúvida. Em comandos, executar uma operação de cada vez
-e conferir estado. Não substituir falha de ambiente por uma afirmação de execução bem-sucedida.
+### 1. Decomposição
 
-### Passo 1 — Dividir acesso à aula
+**Fala sugerida:**
 
-**Fala durante a demonstração:**
+> Decompor é dividir um problema grande em partes que conseguimos analisar. Uma plataforma de cursos vira cadastro, login, aulas, progresso, pagamento e outras partes.
 
-> Vou separar entrada na conta, curso liberado e reprodução. Isso evita tratar tudo como o mesmo problema.
+**Mostrar/fazer:** quebre ‘plataforma de cursos’ em blocos.
 
-**Ação:** mostrar o registro correspondente antes de avançar; pedir uma previsão e conferir a resposta com a evidência.
-### Passo 2 — Identificar hipótese e dado
+**Perguntar:** Que parte vocês investigariam primeiro se o aluno não consegue acessar a aula?
 
-**Fala durante a demonstração:**
+**Compreensão esperada:** o aluno consegue isolar partes sem tentar resolver tudo de uma vez.
 
-> Se só um aluno falha, verificar sua liberação é uma hipótese razoável. Precisamos conferir estado e mensagem antes de concluir.
+### 2. Padrões e abstração
 
-**Ação:** mostrar o registro correspondente antes de avançar; pedir uma previsão e conferir a resposta com a evidência.
-### Passo 3 — Escrever passos e conexão
+**Fala sugerida:**
 
-**Fala durante a demonstração:**
+> Padrões ajudam a notar recorrências. Abstração ajuda a escolher quais detalhes importam agora. Abstrair não significa ignorar informação importante.
 
-> Confirmar acesso, verificar curso liberado e reproduzir ação. Se faltou permissão, registrar; se não, seguir investigação. Vou ligar esse trabalho a Suporte, Produto e QA no mapa.
+**Mostrar/fazer:** liste cinco reclamações e agrupe por semelhança.
 
-**Ação:** mostrar o registro correspondente antes de avançar; pedir uma previsão e conferir a resposta com a evidência.
+**Perguntar:** Que informação podemos deixar para depois sem atrapalhar a investigação?
 
-**Pergunta após a demonstração:** “Qual decisão vocês conseguem explicar sem copiar a frase que usei?”
+**Compreensão esperada:** o aluno separa sinal relevante de detalhe secundário.
 
-**Referência:** a resposta precisa relacionar situação, decisão e fundamento.
-As falas de cada passo indicam o comportamento ou a interpretação que deve ser conferido.
+### 3. Algoritmo
 
-**Transição:**
+**Fala sugerida:**
 
-> Na prática, vocês vão alternar quem conduz e quem revisa. O objetivo é produzir algo
-> que o colega consiga conferir, e não somente repetir minha demonstração.
+> Algoritmo é uma sequência organizada de passos. Podemos escrevê-lo em linguagem natural, fluxograma ou pseudocódigo. Código é uma forma de implementar essa lógica.
+
+**Mostrar/fazer:** escreva um passo a passo de login.
+
+**Perguntar:** Qual passo precisa acontecer antes de consultar credenciais?
+
+**Compreensão esperada:** o aluno reconhece ordem e decisão sem depender de sintaxe.
+
+Evite transformar este bloco em leitura do E-book. Use o E-book como base e mantenha a explicação oral no recorte previsto pelo roteiro.
+
+## 25–45 — Demonstração guiada — Investigar ‘aluno não consegue acessar a aula’ com os quatro pilares
+
+### Passo 1 — Decompor o fluxo
+
+**Fazer:** Escreva acesso → login → curso → aula → player.
+
+**Fala sugerida:**
+
+> Se tratarmos ‘não acessa’ como um único bloco, fica difícil investigar. Vamos quebrar o caminho em pontos observáveis.
+
+**Checar com a turma:** Peça onde o problema pode estar em cada etapa.
+
+### Passo 2 — Buscar padrões e abstrair
+
+**Fazer:** Liste hipóteses como senha, curso não liberado, navegador e instabilidade.
+
+**Fala sugerida:**
+
+> Agora vamos agrupar e escolher o que investigar primeiro. Não precisamos explicar toda a arquitetura para testar uma hipótese simples.
+
+**Checar com a turma:** Pergunte qual informação seria evidência para cada hipótese.
+
+### Passo 3 — Criar algoritmo de investigação
+
+**Fazer:** Escreva uma sequência numerada.
+
+**Fala sugerida:**
+
+> Nosso algoritmo não é código. É um roteiro lógico: verificar credenciais, autorização, acesso ao curso e comportamento do player, registrando o resultado.
+
+**Checar com a turma:** Peça a um aluno para reorganizar a ordem e justificar.
+
+**Resultado de referência:** Uma boa resposta usa os quatro pilares de forma coerente: divide o fluxo, identifica semelhanças, escolhe foco relevante e cria passos verificáveis.
+
+Antes de mostrar o resultado, peça uma previsão. Depois compare previsão, comportamento observado e explicação.
 
 ## 45–50 — Pausa
 
-Deixar horário de retorno visível e não apresentar conteúdo obrigatório durante os cinco minutos.
-Na gravação, indicar o ponto em que a atividade seguinte começa.
+Informar claramente o horário de retorno. Não usar a pausa para conteúdo obrigatório.
 
-## 50–65 — Dinâmica em dupla ou grupo
+## 50–65 — Dinâmica — Quebre o problema
 
-**Nome:** Revisão com explicação — Pensamento Computacional e Entrega do Mapa Mental de TI.  
-**Contexto profissional:** uma equipe precisa revisar seu trabalho antes de avançar.
-**Objetivo:** aplicar os conceitos e produzir um registro conferível no recorte da aula.
+**Cenário:** Cada grupo escolhe um problema: pagamento falha, e-mail não chega, aula não abre, pedido não aparece no histórico ou certificado não é gerado.
 
-**Fala de orientação:**
+**Orientação para a turma:**
 
-> Uma pessoa começa conduzindo e a outra confere as decisões. Na metade, troquem funções.
-> Registrem o que fizeram e qual informação justifica o resultado.
-> Se discordarem, expliquem a diferença usando regra ou evidência, em vez de escolher pela maioria.
+> Não tentem adivinhar a causa. Organizem o problema e deixem claro o que precisaria ser observado para avançar.
 
-**Enunciado e passo a passo:**
+1. Aplicar decomposição.
+2. Identificar possíveis padrões.
+3. Definir o que será abstraído/focado.
+4. Criar um algoritmo de investigação.
+5. Relacionar pelo menos uma área de TI ao problema.
 
-1. Aplicar quatro pilares ao problema 'reserva não foi confirmada'.
-2. Registrar dados mínimos e hipóteses separadas de fatos.
-3. Escrever quatro passos com uma decisão e trocar revisão.
+**Tempo sugerido:** 2 min para organização, 8 min para produção, 3 min para revisão entre pares e 2 min para compartilhamento.
 
-**Tempo:** 2 minutos para ler e organizar; 5 para produzir; 5 para trocar revisão; 3 para compartilhar.
-Selecionar duas duplas para falar e recolher as demais por escrito. Em aulas de entrevista ou apresentação,
-usar o mesmo tempo para a primeira participação, troca e feedback.
+**Entrega esperada:** quadro com os quatro pilares aplicados
 
-**Entrega esperada:** registro da atividade com contexto, decisão, fundamento e uma revisão.
-**Critérios:** cumprir as etapas, preservar as regras e permitir que o colega confira.
-**Referência de correção:** usar os exemplos da demonstração e verificar o que mudou no novo caso,
-sem exigir palavras idênticas.
-
-**Perguntas ao circular:** “Qual passo está sendo executado?”, “Qual evidência sustenta isso?”
-e “O que precisaria mudar para sua conclusão ser diferente?”
-
-**Dica para a dupla:** separar o que observou do que está supondo.
-**Variação difícil:** formular um contraexemplo ou limite; transferir para casa se não couber.
+**O professor observa:** quatro pilares visíveis; ordem lógica; foco justificável; conexão com área de TI.
 
 ## 65–77 — Exercício individual
 
-**Fala do professor — enunciado:**
+**Enunciado para falar à turma:**
 
-> Finalize três conexões explicadas no mapa e justifique uma sequência de investigação. O mapa completo será revisado em casa; duas pessoas compartilham uma conexão agora.
+> Finalize o mapa mental incluindo as seis áreas, front-end, back-end, API, banco de dados, pensamento computacional, o fluxo básico de uma empresa tech, cargos, ferramentas, a área que mais chamou sua atenção e próximos estudos.
 
-**Tempo:** 2 minutos de leitura, 7 de resolução e 3 de revisão/entrega.
-Cada aluno entrega uma resposta própria, mesmo quando a atividade anterior foi em grupo.
+**Entrega:** mapa mental final do Módulo 1
 
-**Entrega:** artefato pedido no enunciado, acompanhado de uma explicação breve da decisão.
-**Critérios:** correção, completude do recorte, evidência e justificativa. Aplicar a
-[rubrica formativa](../../planejamento/analise-pedagogica.md), de 0 a 2 por critério. Referência proposta: 6/8, sem zero em correção ou evidência.
+**Critérios:** clareza; conexões corretas; organização; reflexão pessoal; evolução em relação à primeira versão.
 
-**Ajuda graduada:** pedir que identifique primeiro a entrada, regra ou exigência; depois que escolha o próximo
-passo. Não resolver todas as etapas. Registrar qual parte foi assistida e conferir transferência em uma tentativa nova.
-
-**Gabarito comentado — revelar depois da tentativa:**
-
-> Separar nome, horário, ocupação e resposta; não concluir falha do banco sem evidência. Relação válida: Produto define RN03, QA testa espaços, Dev implementa validação. O mapa final cobre seis áreas, componentes e quatro pilares.
+**Se houver dificuldade:** permita começar em papel ou lista hierárquica; a estética não deve impedir a demonstração de compreensão.
 
 ## 77–85 — Correção, intervenções e dúvidas
 
-**Fala para iniciar a correção:**
+Comece pedindo que o aluno explique como chegou à resposta antes de mostrar uma referência.
 
-> Se sua resposta foi diferente, mantenha a primeira versão. Vamos descobrir em qual decisão
-> o raciocínio mudou. Corrigir e explicar a mudança faz parte da aprendizagem.
+**Se aparecer:** “Decomposição é apenas dividir tarefas entre pessoas.”
 
-**Se o aluno enumerar pilares sem aplicação:**
+> Pode ajudar na divisão do trabalho, mas aqui é principalmente dividir o problema em partes menores e compreensíveis.
 
-> Mostre qual parte foi dividida e qual decisão ficou mais clara.
+**Se aparecer:** “Algoritmo é sinônimo de programa.”
 
-**Se o aluno mapa só com nomes e sem relações:**
+> Programa implementa uma solução em uma linguagem. Algoritmo descreve a lógica e pode existir antes do código.
 
-> Escolha uma seta e escreva o verbo que explica a conexão.
+**Se aparecer:** “Meu mapa precisa ficar bonito para estar certo.”
 
-**Dúvida central da aula:** “Padrão e hipótese são iguais?”
+> Visual ajuda, mas o principal é a clareza das relações e a capacidade de explicar o que você conectou.
 
-**Como responder:**
+### Perguntas de verificação
 
-> Não. Hipótese é explicação a investigar; padrão é regularidade observada, ainda sujeita a interpretação.
+- **Pensamento computacional é programação?** — Não. É um modo estruturado de resolver problemas; programação pode usar esse raciocínio.
+- **Algoritmo sempre tem código?** — Não. Pode ser sequência de passos em linguagem natural, pseudocódigo ou fluxograma.
+- **Abstração significa ignorar detalhes?** — Significa focar nos detalhes relevantes para o objetivo atual, sem descartar informação crítica.
 
-**Se perguntarem se a resposta precisa ser igual:**
-
-> Não precisa repetir minha frase. Precisa respeitar as regras e permitir que outra pessoa
-> confira como você chegou à decisão.
-
-**Se perguntarem como usar a gravação:**
-
-> Localize o trecho em que surgiu a dúvida, reveja o exemplo e depois tente uma entrada ou situação nova.
-> Assistir de novo ajuda; explicar sua própria decisão é o que vamos avaliar.
-
-**Modelo de devolutiva:**
-
-> Você acertou ao identificar a decisão principal. Falta mostrar a informação que a sustenta.
-> Acrescente essa evidência e explique o que mudou na sua revisão.
-
-Selecionar duas dúvidas para os oito minutos. Registrar as demais para resposta após a aula ou retomada.
-Não ampliar silenciosamente a duração do encontro.
-
-## 85–90 — Fechamento e tarefa para casa
+## 85–90 — Fechamento e tarefa
 
 **Fala de fechamento:**
 
-> Hoje trabalhamos como aplicar quatro pilares do pensamento computacional e explicar conexões no mapa final.
-> Para revisar, procure uma decisão, a evidência que a sustenta e uma limitação que ainda precisa de atenção.
-> Guardem a primeira versão e a correção; isso ajuda a explicar a evolução no portfólio.
+> Vocês terminam o Módulo 1 com um mapa inicial do mercado e, mais importante, com uma forma organizada de pensar sobre problemas. Não é preciso escolher uma área agora; os próximos módulos darão prática para amadurecer essa escolha.
 
-**Pergunta de saída:** “O que você mudou na sua primeira previsão, e por quê?”
+**Tarefa para casa:**
 
-**Tarefa de casa — falar à turma:**
+1. Revisar a organização do mapa.
+2. Adicionar três cargos encontrados em vagas.
+3. Adicionar três ferramentas citadas no módulo.
+4. Registrar três dúvidas para levar ao próximo módulo.
+5. Salvar/publicar a versão final como primeiro item do portfólio de estudos.
 
-> Concluir as quatro atividades e o mapa; gravar ou escrever explicação de três minutos. Revisar com a rubrica do caderno e registrar uma dúvida.
+**Entrega:** mapa mental final revisado
 
-**Tempo-base:** 30–45 minutos para revisão. Se o enunciado exigir concluir vários artefatos, execução pendente
-ou preparação da entrega final, combinar prazo e tempo adicional explicitamente; não prometer que tudo cabe
-nesse intervalo.
+**Ponte para a próxima aula:**
 
-**Entrega:** `modulo-01-aula-04-pensamento-computacional-e-mapa-mental-revisao.md`, ou arquivos específicos pedidos, contendo resposta inicial, feedback,
-versão revisada e explicação. O professor verifica a revisão no início do encontro seguinte.
+> No próximo módulo vamos pegar esse raciocínio estruturado e transformá-lo em algoritmos, decisões, repetições e funções, usando Python como ferramenta de aprendizagem.
 
-**Dica:** usar E-book e gravação como apoio; identificar empresa fictícia e origem da evidência.
-**Variação difícil:** acrescentar uma situação nova ou uma dúvida de aplicação, com proposta de investigação.
+## Checklist pós-aula
 
-## Checklist do professor e uso da gravação
-
-- [ ] Preparar recursos e exemplo antes do encontro.
-- [ ] Pedir previsão antes de revelar referência.
-- [ ] Conferir compreensão por exemplo, não por memorização.
-- [ ] Alternar condução e revisão na dupla.
-- [ ] Preservar exercício individual.
-- [ ] Declarar execução, simulação e limites corretamente.
-- [ ] Registrar feedback, tarefa e dúvidas pendentes.
-- [ ] Disponibilizar gravação para revisão e indicar os blocos de demonstração e correção.
-
-Percentual de vídeo assistido é sinal de utilização, não prova de domínio.
-Usar artefato e explicação para avaliar aprendizagem; não penalizar o aluno por uma falha de registro de reprodução.
+- [ ] Disponibilizar a gravação.
+- [ ] Registrar dúvidas que precisam ser retomadas.
+- [ ] Conferir se a atividade usada foi a mesma definida no roteiro.
+- [ ] Anotar qualquer ajuste de tempo para a próxima turma.
+- [ ] Não alterar critérios ou respostas de referência apenas na fala; se a regra mudar, atualizar roteiro e script juntos.

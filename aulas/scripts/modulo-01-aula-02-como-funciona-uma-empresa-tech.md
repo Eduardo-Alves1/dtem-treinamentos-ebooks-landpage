@@ -1,267 +1,218 @@
-# Script do professor — Como Funciona uma Empresa de Tecnologia
+# Script do Professor — Como Funciona uma Empresa de Tecnologia
 
-**DTEM Treinamentos · encontro ao vivo de até 90 minutos, gravado para revisão.**
+**DTEM Treinamentos · encontro ao vivo de até 90 minutos.**
 
-Este documento contém falas e ações de condução. Adaptar a linguagem ao próprio estilo, preservando conceitos,
-exemplos e critérios. Os intervalos incluem escrita, espera, interação e prática; não são 90 minutos de leitura.
-Não depende de vídeos prévios. O aluno pode consultar o E-book e rever a gravação depois.
+> **Papel deste documento:** orientar a condução da aula. O conteúdo e as atividades abaixo devem permanecer coerentes com o roteiro; o script não cria uma aula paralela.
 
-**Roteiro:** [planejamento da aula](../modulo-01-aula-02-como-funciona-uma-empresa-tech.md).  
-**Material de estudo:** [E-book correspondente](../../ebooks/modulo-01-fundamentos.md).  
-**Caso:** [Agenda Clara](../../atividades/caso-agenda-clara.md), empresa e dados fictícios.
+**Roteiro:** [Módulo 1, Aula 2](../modulo-01-aula-02-como-funciona-uma-empresa-tech.md)  
+**Material do aluno:** [E-book correspondente](../../ebooks/modulo-01-fundamentos.md)  
+**Caderno:** [prática do Módulo 1](../../atividades/modulo-01-caderno-de-pratica.md)  
 
-## Objetivo e materiais
+## Alinhamento obrigatório
 
-**Objetivo observável:** desenhar a passagem de um problema à entrega com feedback e qualidade desde requisitos.  
-**Materiais:** quadro, exemplo de cadastro e cartões com papéis.
+- **Objetivo:** Explicar como empresas de tecnologia organizam pessoas, papéis, processos e feedback para transformar necessidades em produtos digitais.
+- **Demonstração central:** Do cadastro de aluno ao feedback.
+- **Prática em grupo:** Da ideia ao deploy.
+- **Exercício individual:** mapear o caminho de uma funcionalidade comum.
+- **Tarefa:** mapear uma funcionalidade de um app real e atualizar o mapa mental.
 
-Antes do encontro, preparar o exemplo e conferir os recursos necessários. Em tarefas de ferramenta, preparar
-conta e ambiente com antecedência. Se a execução estiver indisponível, percorrer manualmente e declarar o método;
-publicação ou execução exigidas pela entrega devem ser concluídas depois com apoio. Não inventar evidência.
+Não substituir esses elementos por um exemplo genérico sem revisar também o roteiro.
+
+## Antes da aula
+
+- [ ] Preparar o exemplo ‘cadastro de aluno’.
+- [ ] Deixar um fluxo vazio com problema → entrega → feedback.
+- [ ] Separar uma imagem ou exemplo simples de backlog/card.
+- [ ] Deixar o roteiro e este script abertos.
+- [ ] Testar qualquer ferramenta, arquivo ou demonstração antes da turma entrar.
+- [ ] Separar o material que o aluno deverá entregar ao final.
 
 ## Agenda de condução
 
-| Intervalo | Etapa | Minutos |
-|---|---|---:|
-| 00–08 | Abertura e diagnóstico | 8 |
-| 08–25 | Conceitos e exemplos | 17 |
-| 25–45 | Demonstração guiada | 20 |
-| 45–50 | Pausa | 5 |
-| 50–65 | Dinâmica em dupla ou grupo | 15 |
-| 65–77 | Exercício individual | 12 |
-| 77–85 | Correção e dúvidas | 8 |
-| 85–90 | Fechamento e tarefa | 5 |
-| Total | | 90 |
-
-O roteiro original contém o caderno completo de atividades. Nesta versão, os enunciados de grupo e individual
-abaixo definem o recorte do encontro. A tarefa de casa conclui os itens restantes. Se precisar reduzir extensão,
-preservar demonstração, tentativa individual, feedback e orientação da entrega.
+| Intervalo | Etapa |
+|---|---|
+| 00–08 | Abertura e diagnóstico |
+| 08–25 | Conceitos e exemplos |
+| 25–45 | Demonstração guiada |
+| 45–50 | Pausa |
+| 50–65 | Dinâmica |
+| 65–77 | Exercício individual |
+| 77–85 | Correção e dúvidas |
+| 85–90 | Fechamento e tarefa |
 
 ## 00–08 — Abertura e diagnóstico
 
-**Mostrar:** título da aula e objetivo. **Fala de abertura:**
+**Fala de abertura:**
 
-> Uma pessoa pede um botão de cancelamento. Será que basta desenhar e programar esse botão? Vamos descobrir quais decisões e contribuições estão escondidas nesse pedido.
+> Como vocês imaginam que uma funcionalidade nasce dentro de uma empresa? Quem pede, quem decide, quem constrói e o que acontece depois que ela vai para o ar?
 
-**Condução:** dar dois minutos para uma previsão individual no chat ou caderno. Colher duas respostas,
-sem exigir fala de todos. Esperar aproximadamente 30 segundos antes de completar a resposta.
-Não confundir silêncio inicial com falta de capacidade; oferecer a situação concreta novamente.
+**Pergunta diagnóstica:** Uma funcionalidade simples, como ‘esqueci minha senha’, pode envolver quantas áreas?
 
-**Pergunta de diagnóstico:** “Qual contribuição de QA acontece antes da construção?”
+Dê cerca de dois minutos para respostas curtas no chat, voz ou caderno. Escute pelo menos duas respostas antes de completar.
 
-**Referência para o professor:** Revisar exemplos, ambiguidades e riscos da regra, sem substituir testes posteriores.
-
-**Transição para a explicação:**
-
-> Vamos transformar essa primeira resposta em um raciocínio que outra pessoa consiga conferir.
-> A cada exemplo, anotem a decisão e a informação que a sustenta.
-
-## 08–25 — Explicação teórica e exemplos
-
-Dividir os 17 minutos entre as três explicações, a escrita e duas perguntas breves.
-Usar as falas como apoio, sem acrescentar uma exposição inteira do E-book.
-
-### Explicação 1 — Da necessidade ao comportamento
-
-**Fala sugerida:**
-
-> Primeiro precisamos entender por que cancelar é necessário. Depois explicamos quando o cancelamento é permitido e o que deve acontecer com a reserva. Essas decisões orientam solução e verificação. O time pode voltar a uma pergunta anterior quando encontra informação nova.
-
-**Ação:** escrever uma palavra-chave e pedir um exemplo com palavras do aluno. Se houver dúvida, pedir a entrada, regra ou situação concreta que sustenta a resposta.
-### Explicação 2 — Papéis colaboram
-
-**Fala sugerida:**
-
-> Produto discute necessidade e prioridade; Dev avalia implementação; QA contribui com exemplos e riscos antes de construir e depois verifica comportamento. UX pode facilitar a jornada, Dados define medida, Infra pensa em disponibilização e suporte traz situações de uso. O desenho não deve colocar cada área em uma caixa sem conversa.
-
-**Ação:** escrever uma palavra-chave e pedir um exemplo com palavras do aluno. Se houver dúvida, pedir a entrada, regra ou situação concreta que sustenta a resposta.
-### Explicação 3 — Feedback e organização
-
-**Fala sugerida:**
-
-> Após disponibilizar uma solução, ainda precisamos ouvir as pessoas e observar sinais. Backlog, tarefa e registro de bug ajudam a organizar, mas não substituem acordos. Hoje vamos representar esse caminho, sem aprofundar todas as regras de Scrum.
-
-**Ação:** escrever uma palavra-chave e pedir um exemplo com palavras do aluno. Se houver dúvida, pedir a entrada, regra ou situação concreta que sustenta a resposta.
-
-**Mostrar no quadro:** fluxo Problema → Regra e exemplos → Construção → Verificação → Disponibilização → Feedback, com retorno.
-
-**Checagem de compreensão:** “Qual contribuição de QA acontece antes da construção?”  
-**Resposta esperada:** Revisar exemplos, ambiguidades e riscos da regra, sem substituir testes posteriores.
+**Resposta de referência para o professor:** Mais de uma; a aula mostrará como Produto, UX, Dev, QA, Infra, Dados e Suporte podem contribuir.
 
 **Transição:**
 
-> Agora vou percorrer um exemplo pensando em voz alta. Antes de mostrar o resultado,
-> vou pedir uma previsão. Observem onde uma regra ou evidência muda a decisão.
+> Vamos acompanhar uma funcionalidade inteira, do problema ao feedback, para enxergar o trabalho como um sistema e não como departamentos isolados.
 
-## 25–45 — Demonstração guiada
+## 08–25 — Conceitos e exemplos
 
-**Preparação:** abrir os dados, documento, código ou cartões indicados. Reservar aproximadamente cinco minutos
-por passo e os minutos finais para uma previsão e uma dúvida. Em comandos, executar uma operação de cada vez
-e conferir estado. Não substituir falha de ambiente por uma afirmação de execução bem-sucedida.
+### 1. Tipos de empresa e contexto
 
-### Passo 1 — Descrever cancelamento
+**Fala sugerida:**
 
-**Fala durante a demonstração:**
+> Nem toda empresa tech tem a mesma estrutura. O que se repete é a necessidade de entender problemas, organizar trabalho, construir, verificar, publicar e aprender com o uso.
 
-> A recepção quer liberar um horário quando a pessoa cancela. Vou registrar necessidade e resultado esperado antes de escolher tela.
+**Mostrar/fazer:** liste quatro tipos de organização e um exemplo de produto/serviço.
 
-**Ação:** mostrar o registro correspondente antes de avançar; pedir uma previsão e conferir a resposta com a evidência.
-### Passo 2 — Adicionar critério e teste
+**Perguntar:** Uma empresa de varejo pode ter um grande time de tecnologia sem ser uma ‘startup’?
 
-**Fala durante a demonstração:**
+**Compreensão esperada:** sim; tecnologia pode ser produto principal ou uma capacidade interna.
 
-> Cancelar uma reserva ativa deve liberar o horário. Podemos preparar reserva, cancelar pelo identificador e consultar depois. QA pode sugerir esse exemplo antes do código.
+### 2. Papéis e colaboração
 
-**Ação:** mostrar o registro correspondente antes de avançar; pedir uma previsão e conferir a resposta com a evidência.
-### Passo 3 — Adicionar pergunta e retorno
+**Fala sugerida:**
 
-**Fala durante a demonstração:**
+> Uma funcionalidade simples pode envolver várias pessoas. O valor não está em cada caixa isolada, mas no fluxo de decisões entre elas.
 
-> Quem pode cancelar? Ainda falta uma decisão. Vou marcá-la como pendência. Se o suporte trouxer cancelamentos indevidos, esse feedback retorna à análise.
+**Mostrar/fazer:** retome o mapa da aula anterior e acrescente UX/UI e Suporte.
 
-**Ação:** mostrar o registro correspondente antes de avançar; pedir uma previsão e conferir a resposta com a evidência.
+**Perguntar:** Quem pode trazer um problema real do usuário para o time?
 
-**Pergunta após a demonstração:** “Qual decisão vocês conseguem explicar sem copiar a frase que usei?”
+**Compreensão esperada:** várias fontes: Suporte, Produto, Dados, pesquisa com usuário etc.
 
-**Referência:** a resposta precisa relacionar situação, decisão e fundamento.
-As falas de cada passo indicam o comportamento ou a interpretação que deve ser conferido.
+### 3. Ciclo da necessidade ao feedback
 
-**Transição:**
+**Fala sugerida:**
 
-> Na prática, vocês vão alternar quem conduz e quem revisa. O objetivo é produzir algo
-> que o colega consiga conferir, e não somente repetir minha demonstração.
+> Produto digital não termina no deploy. Depois da publicação, dados, suporte e usuários geram sinais que podem levar o time de volta a uma decisão anterior.
+
+**Mostrar/fazer:** desenhe um fluxo com seta de feedback voltando para Produto.
+
+**Perguntar:** O que pode fazer uma funcionalidade voltar para revisão depois de publicada?
+
+**Compreensão esperada:** feedback, métricas, defeitos, mudança de regra ou nova necessidade.
+
+Evite transformar este bloco em leitura do E-book. Use o E-book como base e mantenha a explicação oral no recorte previsto pelo roteiro.
+
+## 25–45 — Demonstração guiada — Do cadastro de aluno ao feedback
+
+### Passo 1 — Começar pelo problema
+
+**Fazer:** Escreva ‘novo aluno precisa criar conta’ no quadro.
+
+**Fala sugerida:**
+
+> Antes de tela e código, temos uma necessidade. Se começarmos pela solução sem entender isso, corremos o risco de construir a coisa errada.
+
+**Checar com a turma:** Pergunte o que o aluno precisa conseguir fazer.
+
+### Passo 2 — Passar pelas contribuições
+
+**Fazer:** Adicione requisitos, tela, regra/API e testes.
+
+**Fala sugerida:**
+
+> Agora cada contribuição entra por um motivo. Produto esclarece, UX pensa na experiência, Dev constrói e QA ajuda a discutir riscos e a verificar comportamentos.
+
+**Checar com a turma:** Pergunte onde QA poderia contribuir antes do código existir.
+
+### Passo 3 — Fechar com uso e feedback
+
+**Fazer:** Adicione deploy, Dados/Suporte e seta de retorno.
+
+**Fala sugerida:**
+
+> A publicação não encerra o ciclo. Se muitos alunos abandonarem o cadastro ou abrirem chamados, essa informação volta para o time.
+
+**Checar com a turma:** Peça um exemplo de dado ou feedback que faria o time revisar a funcionalidade.
+
+**Resultado de referência:** Fluxo possível: necessidade → requisitos/critério → desenho/solução → desenvolvimento → verificações → deploy → uso → dados/feedback → nova decisão.
+
+Antes de mostrar o resultado, peça uma previsão. Depois compare previsão, comportamento observado e explicação.
 
 ## 45–50 — Pausa
 
-Deixar horário de retorno visível e não apresentar conteúdo obrigatório durante os cinco minutos.
-Na gravação, indicar o ponto em que a atividade seguinte começa.
+Informar claramente o horário de retorno. Não usar a pausa para conteúdo obrigatório.
 
-## 50–65 — Dinâmica em dupla ou grupo
+## 50–65 — Dinâmica — Da ideia ao deploy
 
-**Nome:** Revisão com explicação — Como Funciona uma Empresa de Tecnologia.  
-**Contexto profissional:** uma equipe precisa revisar seu trabalho antes de avançar.
-**Objetivo:** aplicar os conceitos e produzir um registro conferível no recorte da aula.
+**Cenário:** Cada grupo recebe uma funcionalidade simples: recuperar senha, cadastrar produto, agendar consulta, acompanhar entrega ou emitir certificado.
 
-**Fala de orientação:**
+**Orientação para a turma:**
 
-> Uma pessoa começa conduzindo e a outra confere as decisões. Na metade, troquem funções.
-> Registrem o que fizeram e qual informação justifica o resultado.
-> Se discordarem, expliquem a diferença usando regra ou evidência, em vez de escolher pela maioria.
+> Não quero uma fila rígida de departamentos. Mostrem onde as pessoas precisam trocar informação e onde o fluxo pode voltar.
 
-**Enunciado e passo a passo:**
+1. Definir o problema resolvido.
+2. Indicar áreas que participam.
+3. Descrever o que Produto precisa esclarecer.
+4. Descrever o que Dev precisa construir e o que QA precisa investigar.
+5. Escolher uma métrica ou feedback pós-entrega.
 
-1. Escolher uma funcionalidade simples: cadastro ou cancelamento.
-2. Desenhar seis passagens e indicar contribuições em mais de uma etapa.
-3. Registrar critério, resultado esperado e pergunta pendente.
+**Tempo sugerido:** 2 min para organização, 8 min para produção, 3 min para revisão entre pares e 2 min para compartilhamento.
 
-**Tempo:** 2 minutos para ler e organizar; 5 para produzir; 5 para trocar revisão; 3 para compartilhar.
-Selecionar duas duplas para falar e recolher as demais por escrito. Em aulas de entrevista ou apresentação,
-usar o mesmo tempo para a primeira participação, troca e feedback.
+**Entrega esperada:** fluxo da funcionalidade com áreas e decisões
 
-**Entrega esperada:** registro da atividade com contexto, decisão, fundamento e uma revisão.
-**Critérios:** cumprir as etapas, preservar as regras e permitir que o colega confira.
-**Referência de correção:** usar os exemplos da demonstração e verificar o que mudou no novo caso,
-sem exigir palavras idênticas.
-
-**Perguntas ao circular:** “Qual passo está sendo executado?”, “Qual evidência sustenta isso?”
-e “O que precisaria mudar para sua conclusão ser diferente?”
-
-**Dica para a dupla:** separar o que observou do que está supondo.
-**Variação difícil:** formular um contraexemplo ou limite; transferir para casa se não couber.
+**O professor observa:** problema explícito; colaboração entre áreas; QA não aparece apenas como etapa final; feedback pós-entrega incluído.
 
 ## 65–77 — Exercício individual
 
-**Fala do professor — enunciado:**
+**Enunciado para falar à turma:**
 
-> Escolha recuperação de senha ou emissão de certificado. Descreva necessidade, contribuições de três áreas e uma pergunta que precisa ser esclarecida.
+> Escolha login, cadastro, pagamento, pesquisa, avaliação, notificação ou cancelamento. Descreva o problema, o que Produto define, o que Dev constrói, o que QA investiga, qual dado pode ser acompanhado e um risco relevante.
 
-**Tempo:** 2 minutos de leitura, 7 de resolução e 3 de revisão/entrega.
-Cada aluno entrega uma resposta própria, mesmo quando a atividade anterior foi em grupo.
+**Entrega:** tabela ou fluxo individual da funcionalidade
 
-**Entrega:** artefato pedido no enunciado, acompanhado de uma explicação breve da decisão.
-**Critérios:** correção, completude do recorte, evidência e justificativa. Aplicar a
-[rubrica formativa](../../planejamento/analise-pedagogica.md), de 0 a 2 por critério. Referência proposta: 6/8, sem zero em correção ou evidência.
+**Critérios:** problema claro; pelo menos três áreas conectadas; risco coerente; feedback ou métrica presente.
 
-**Ajuda graduada:** pedir que identifique primeiro a entrada, regra ou exigência; depois que escolha o próximo
-passo. Não resolver todas as etapas. Registrar qual parte foi assistida e conferir transferência em uma tentativa nova.
-
-**Gabarito comentado — revelar depois da tentativa:**
-
-> Para certificado, Produto define condição de emissão; Dev implementa; QA investiga aluno elegível e não elegível; Dados pode acompanhar emissões. Não presumir elegibilidade apenas por ver um vídeo. O fluxo deve retornar feedback e deixar pendências visíveis.
+**Se houver dificuldade:** reduza o exercício para três perguntas: qual problema, quem precisa decidir algo e como saberíamos se funcionou.
 
 ## 77–85 — Correção, intervenções e dúvidas
 
-**Fala para iniciar a correção:**
+Comece pedindo que o aluno explique como chegou à resposta antes de mostrar uma referência.
 
-> Se sua resposta foi diferente, mantenha a primeira versão. Vamos descobrir em qual decisão
-> o raciocínio mudou. Corrigir e explicar a mudança faz parte da aprendizagem.
+**Se aparecer:** “O fluxo é Produto → Dev → QA e acabou.”
 
-**Se o aluno desenhar qa somente no fim:**
+> Esse desenho é simples demais. Onde entram feedback, Dados, Suporte e colaboração de QA antes da construção?
 
-> Onde um exemplo antecipado poderia evitar uma interpretação errada?
+**Se aparecer:** “PO decide sozinho como o sistema será feito.”
 
-**Se o aluno escrever critério 'funcionar corretamente':**
+> PO organiza valor e prioridade; decisões de solução exigem colaboração com o time e outras especialidades.
 
-> Qual ação e qual resultado outra pessoa consegue conferir?
+**Se aparecer:** “Deploy significa que o trabalho terminou.”
 
-**Dúvida central da aula:** “Qual contribuição de QA acontece antes da construção?”
+> Depois do deploy ainda existem uso, monitoramento, suporte, dados e possíveis ajustes.
 
-**Como responder:**
+### Perguntas de verificação
 
-> Revisar exemplos, ambiguidades e riscos da regra, sem substituir testes posteriores.
+- **Toda empresa usa Scrum?** — Não. Scrum, Kanban e modelos híbridos são possibilidades; o importante aqui é entender colaboração e fluxo.
+- **QA só participa depois que o desenvolvimento termina?** — Não. QA pode revisar regras, exemplos e riscos antes e também testar depois.
+- **O que acontece depois do deploy?** — Usuários utilizam, dados/feedback são observados e o produto pode evoluir ou ser corrigido.
 
-**Se perguntarem se a resposta precisa ser igual:**
-
-> Não precisa repetir minha frase. Precisa respeitar as regras e permitir que outra pessoa
-> confira como você chegou à decisão.
-
-**Se perguntarem como usar a gravação:**
-
-> Localize o trecho em que surgiu a dúvida, reveja o exemplo e depois tente uma entrada ou situação nova.
-> Assistir de novo ajuda; explicar sua própria decisão é o que vamos avaliar.
-
-**Modelo de devolutiva:**
-
-> Você acertou ao identificar a decisão principal. Falta mostrar a informação que a sustenta.
-> Acrescente essa evidência e explique o que mudou na sua revisão.
-
-Selecionar duas dúvidas para os oito minutos. Registrar as demais para resposta após a aula ou retomada.
-Não ampliar silenciosamente a duração do encontro.
-
-## 85–90 — Fechamento e tarefa para casa
+## 85–90 — Fechamento e tarefa
 
 **Fala de fechamento:**
 
-> Hoje trabalhamos como desenhar a passagem de um problema à entrega com feedback e qualidade desde requisitos.
-> Para revisar, procure uma decisão, a evidência que a sustenta e uma limitação que ainda precisa de atenção.
-> Guardem a primeira versão e a correção; isso ajuda a explicar a evolução no portfólio.
+> Entender como o trabalho circula entre as áreas ajuda vocês a compreender vagas, reuniões e decisões, mesmo antes de escolher uma especialidade.
 
-**Pergunta de saída:** “O que você mudou na sua primeira previsão, e por quê?”
+**Tarefa para casa:**
 
-**Tarefa de casa — falar à turma:**
+1. Escolher um aplicativo usado no dia a dia.
+2. Selecionar uma funcionalidade.
+3. Descrever quais áreas provavelmente contribuiriam.
+4. Atualizar o mapa mental com papéis, responsabilidades e ferramentas citadas.
 
-> Revisar fluxo com feedback e acrescentar uma contribuição de Dados ou Suporte. Atualizar mapa mental; concluir a análise completa no caderno.
+**Entrega:** fluxo da funcionalidade + mapa mental atualizado
 
-**Tempo-base:** 30–45 minutos para revisão. Se o enunciado exigir concluir vários artefatos, execução pendente
-ou preparação da entrega final, combinar prazo e tempo adicional explicitamente; não prometer que tudo cabe
-nesse intervalo.
+**Ponte para a próxima aula:**
 
-**Entrega:** `modulo-01-aula-02-como-funciona-uma-empresa-tech-revisao.md`, ou arquivos específicos pedidos, contendo resposta inicial, feedback,
-versão revisada e explicação. O professor verifica a revisão no início do encontro seguinte.
+> Na próxima aula vamos olhar para dentro do sistema e separar o que o usuário vê do que acontece por trás da tela.
 
-**Dica:** usar E-book e gravação como apoio; identificar empresa fictícia e origem da evidência.
-**Variação difícil:** acrescentar uma situação nova ou uma dúvida de aplicação, com proposta de investigação.
+## Checklist pós-aula
 
-## Checklist do professor e uso da gravação
-
-- [ ] Preparar recursos e exemplo antes do encontro.
-- [ ] Pedir previsão antes de revelar referência.
-- [ ] Conferir compreensão por exemplo, não por memorização.
-- [ ] Alternar condução e revisão na dupla.
-- [ ] Preservar exercício individual.
-- [ ] Declarar execução, simulação e limites corretamente.
-- [ ] Registrar feedback, tarefa e dúvidas pendentes.
-- [ ] Disponibilizar gravação para revisão e indicar os blocos de demonstração e correção.
-
-Percentual de vídeo assistido é sinal de utilização, não prova de domínio.
-Usar artefato e explicação para avaliar aprendizagem; não penalizar o aluno por uma falha de registro de reprodução.
+- [ ] Disponibilizar a gravação.
+- [ ] Registrar dúvidas que precisam ser retomadas.
+- [ ] Conferir se a atividade usada foi a mesma definida no roteiro.
+- [ ] Anotar qualquer ajuste de tempo para a próxima turma.
+- [ ] Não alterar critérios ou respostas de referência apenas na fala; se a regra mudar, atualizar roteiro e script juntos.

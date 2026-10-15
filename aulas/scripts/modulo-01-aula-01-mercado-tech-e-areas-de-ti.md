@@ -1,267 +1,218 @@
-# Script do professor — Mercado Tech e Principais Áreas de TI
+# Script do Professor — Mercado Tech e Principais Áreas de TI
 
-**DTEM Treinamentos · encontro ao vivo de até 90 minutos, gravado para revisão.**
+**DTEM Treinamentos · encontro ao vivo de até 90 minutos.**
 
-Este documento contém falas e ações de condução. Adaptar a linguagem ao próprio estilo, preservando conceitos,
-exemplos e critérios. Os intervalos incluem escrita, espera, interação e prática; não são 90 minutos de leitura.
-Não depende de vídeos prévios. O aluno pode consultar o E-book e rever a gravação depois.
+> **Papel deste documento:** orientar a condução da aula. O conteúdo e as atividades abaixo devem permanecer coerentes com o roteiro; o script não cria uma aula paralela.
 
-**Roteiro:** [planejamento da aula](../modulo-01-aula-01-mercado-tech-e-areas-de-ti.md).  
-**Material de estudo:** [E-book correspondente](../../ebooks/modulo-01-fundamentos.md).  
-**Caso:** [Agenda Clara](../../atividades/caso-agenda-clara.md), empresa e dados fictícios.
+**Roteiro:** [Módulo 1, Aula 1](../modulo-01-aula-01-mercado-tech-e-areas-de-ti.md)  
+**Material do aluno:** [E-book correspondente](../../ebooks/modulo-01-fundamentos.md)  
+**Caderno:** [prática do Módulo 1](../../atividades/modulo-01-caderno-de-pratica.md)  
 
-## Objetivo e materiais
+## Alinhamento obrigatório
 
-**Objetivo observável:** relacionar seis áreas de TI a responsabilidades e artefatos e iniciar um mapa mental.  
-**Materiais:** quadro, tabela de seis áreas e caderno de prática do Módulo 1; não exige instalação.
+- **Objetivo:** Apresentar o mercado de tecnologia e mostrar que uma solução digital envolve diferentes áreas e responsabilidades, não apenas programação.
+- **Demonstração central:** Tabela Área × Pergunta × Responsabilidade × Artefato.
+- **Prática em grupo:** Monte o time tech.
+- **Exercício individual:** iniciar o mapa mental das áreas de TI.
+- **Tarefa:** pesquisar três vagas e atualizar o mapa mental.
 
-Antes do encontro, preparar o exemplo e conferir os recursos necessários. Em tarefas de ferramenta, preparar
-conta e ambiente com antecedência. Se a execução estiver indisponível, percorrer manualmente e declarar o método;
-publicação ou execução exigidas pela entrega devem ser concluídas depois com apoio. Não inventar evidência.
+Não substituir esses elementos por um exemplo genérico sem revisar também o roteiro.
+
+## Antes da aula
+
+- [ ] Separar uma descrição real de vaga de QA, uma de Produto e uma técnica.
+- [ ] Preparar a tabela vazia das seis áreas.
+- [ ] Deixar um exemplo de produto digital pronto para a demonstração.
+- [ ] Deixar o roteiro e este script abertos.
+- [ ] Testar qualquer ferramenta, arquivo ou demonstração antes da turma entrar.
+- [ ] Separar o material que o aluno deverá entregar ao final.
 
 ## Agenda de condução
 
-| Intervalo | Etapa | Minutos |
-|---|---|---:|
-| 00–08 | Abertura e diagnóstico | 8 |
-| 08–25 | Conceitos e exemplos | 17 |
-| 25–45 | Demonstração guiada | 20 |
-| 45–50 | Pausa | 5 |
-| 50–65 | Dinâmica em dupla ou grupo | 15 |
-| 65–77 | Exercício individual | 12 |
-| 77–85 | Correção e dúvidas | 8 |
-| 85–90 | Fechamento e tarefa | 5 |
-| Total | | 90 |
-
-O roteiro original contém o caderno completo de atividades. Nesta versão, os enunciados de grupo e individual
-abaixo definem o recorte do encontro. A tarefa de casa conclui os itens restantes. Se precisar reduzir extensão,
-preservar demonstração, tentativa individual, feedback e orientação da entrega.
+| Intervalo | Etapa |
+|---|---|
+| 00–08 | Abertura e diagnóstico |
+| 08–25 | Conceitos e exemplos |
+| 25–45 | Demonstração guiada |
+| 45–50 | Pausa |
+| 50–65 | Dinâmica |
+| 65–77 | Exercício individual |
+| 77–85 | Correção e dúvidas |
+| 85–90 | Fechamento e tarefa |
 
 ## 00–08 — Abertura e diagnóstico
 
-**Mostrar:** título da aula e objetivo. **Fala de abertura:**
+**Fala de abertura:**
 
-> Quando uma reserva aparece duplicada, quem deveria investigar? Antes de escolher uma profissão, precisamos entender quais perguntas cada especialidade faz. Hoje vamos ligar as áreas de TI a entregas concretas.
+> Antes de qualquer definição, quero saber o que vocês imaginam quando escutam ‘trabalhar com tecnologia’. Qual profissão vem primeiro à cabeça?
 
-**Condução:** dar dois minutos para uma previsão individual no chat ou caderno. Colher duas respostas,
-sem exigir fala de todos. Esperar aproximadamente 30 segundos antes de completar a resposta.
-Não confundir silêncio inicial com falta de capacidade; oferecer a situação concreta novamente.
+**Pergunta diagnóstica:** Para trabalhar com tecnologia é obrigatório ser programador?
 
-**Pergunta de diagnóstico:** “Um caso de teste é um artefato de qual contribuição?”
+Dê cerca de dois minutos para respostas curtas no chat, voz ou caderno. Escute pelo menos duas respostas antes de completar.
 
-**Referência para o professor:** QA pode produzi-lo, com colaboração do time; qualidade não pertence exclusivamente a uma pessoa.
-
-**Transição para a explicação:**
-
-> Vamos transformar essa primeira resposta em um raciocínio que outra pessoa consiga conferir.
-> A cada exemplo, anotem a decisão e a informação que a sustenta.
-
-## 08–25 — Explicação teórica e exemplos
-
-Dividir os 17 minutos entre as três explicações, a escrita e duas perguntas breves.
-Usar as falas como apoio, sem acrescentar uma exposição inteira do E-book.
-
-### Explicação 1 — Tecnologia e problema
-
-**Fala sugerida:**
-
-> Tecnologia aplicada a negócios começa com uma necessidade. Uma recepção quer organizar horários; um cliente quer confirmar atendimento. O produto digital precisa atender essas pessoas. Programar é uma das contribuições. Entender a necessidade, verificar comportamento, observar dados e manter o ambiente também fazem parte do trabalho.
-
-**Ação:** escrever uma palavra-chave e pedir um exemplo com palavras do aluno. Se houver dúvida, pedir a entrada, regra ou situação concreta que sustenta a resposta.
-### Explicação 2 — Seis contribuições
-
-**Fala sugerida:**
-
-> Desenvolvimento constrói regras e interfaces. QA contribui para prevenir e identificar problemas. Produto investiga necessidade e prioridade. Dados organiza medidas e análise. Infraestrutura cuida de ambientes e observação. Gestão coordena objetivo, capacidade e dependências. Em uma empresa pequena, a mesma pessoa pode reunir atividades; as responsabilidades continuam existindo.
-
-**Ação:** escrever uma palavra-chave e pedir um exemplo com palavras do aluno. Se houver dúvida, pedir a entrada, regra ou situação concreta que sustenta a resposta.
-### Explicação 3 — Artefato e carreira
-
-**Fala sugerida:**
-
-> Vamos relacionar cada área a algo que pode ser examinado: código, teste, requisito, métrica, plano de ambiente e plano de trabalho. Um nome de ferramenta não explica sozinho uma contribuição. Ao pesquisar vagas, registrem a fonte e distingam interesse de competência já demonstrada.
-
-**Ação:** escrever uma palavra-chave e pedir um exemplo com palavras do aluno. Se houver dúvida, pedir a entrada, regra ou situação concreta que sustenta a resposta.
-
-**Mostrar no quadro:** tabela Área / Pergunta / Artefato, com seis linhas.
-
-**Checagem de compreensão:** “Um caso de teste é um artefato de qual contribuição?”  
-**Resposta esperada:** QA pode produzi-lo, com colaboração do time; qualidade não pertence exclusivamente a uma pessoa.
+**Resposta de referência para o professor:** Não. Existem diferentes áreas, responsabilidades e portas de entrada; a aula vai organizar essa visão.
 
 **Transição:**
 
-> Agora vou percorrer um exemplo pensando em voz alta. Antes de mostrar o resultado,
-> vou pedir uma previsão. Observem onde uma regra ou evidência muda a decisão.
+> Vamos usar essa percepção inicial para montar o mapa do mercado: que problemas existem, quem contribui e o que cada área entrega.
 
-## 25–45 — Demonstração guiada
+## 08–25 — Conceitos e exemplos
 
-**Preparação:** abrir os dados, documento, código ou cartões indicados. Reservar aproximadamente cinco minutos
-por passo e os minutos finais para uma previsão e uma dúvida. Em comandos, executar uma operação de cada vez
-e conferir estado. Não substituir falha de ambiente por uma afirmação de execução bem-sucedida.
+### 1. Tecnologia no contexto profissional
 
-### Passo 1 — Apresentar conflito em H09
+**Fala sugerida:**
 
-**Fala durante a demonstração:**
+> Quando falamos em tecnologia dentro de uma empresa, estamos falando de resolver problemas usando pessoas, processos, sistemas e ferramentas. Código é importante, mas é apenas uma parte dessa história.
 
-> Ana já está em H09 e Bruno pede o mesmo horário. Produto pergunta qual regra protege o atendimento; QA pergunta como verificar a recusa e a preservação de Ana.
+**Mostrar/fazer:** liste exemplos cotidianos: delivery, banco digital, streaming e sistema interno.
 
-**Ação:** mostrar o registro correspondente antes de avançar; pedir uma previsão e conferir a resposta com a evidência.
-### Passo 2 — Preencher duas linhas
+**Perguntar:** Qual problema cada exemplo resolve?
 
-**Fala durante a demonstração:**
+**Compreensão esperada:** o aluno relaciona tecnologia a problema e solução, e não apenas a computador ou código.
 
-> Desenvolvimento pode implementar a verificação de ocupação. Dados pode medir tentativas com conflito, definindo período e denominador. Estou mostrando contribuições possíveis, não atribuindo processo interno a uma marca.
+### 2. Principais áreas de TI
 
-**Ação:** mostrar o registro correspondente antes de avançar; pedir uma previsão e conferir a resposta com a evidência.
-### Passo 3 — Conectar o mapa
+**Fala sugerida:**
 
-**Fala durante a demonstração:**
+> Cada área faz perguntas diferentes. Desenvolvimento constrói; Produto entende e prioriza necessidades; QA investiga qualidade e risco; Dados mede; Infra sustenta ambientes; Gestão ajuda a organizar fluxo, dependências e entrega.
 
-> Vou ligar Produto a regra, QA a teste e Dev a implementação. As setas precisam de uma explicação. Escrever somente três nomes não demonstra como as áreas colaboram.
+**Mostrar/fazer:** monte no quadro as seis áreas em colunas.
 
-**Ação:** mostrar o registro correspondente antes de avançar; pedir uma previsão e conferir a resposta com a evidência.
+**Perguntar:** Qual dessas áreas vocês já conheciam e o que imaginavam que ela fazia?
 
-**Pergunta após a demonstração:** “Qual decisão vocês conseguem explicar sem copiar a frase que usei?”
+**Compreensão esperada:** o aluno diferencia responsabilidade de cargo e de ferramenta.
 
-**Referência:** a resposta precisa relacionar situação, decisão e fundamento.
-As falas de cada passo indicam o comportamento ou a interpretação que deve ser conferido.
+### 3. Colaboração entre áreas
 
-**Transição:**
+**Fala sugerida:**
 
-> Na prática, vocês vão alternar quem conduz e quem revisa. O objetivo é produzir algo
-> que o colega consiga conferir, e não somente repetir minha demonstração.
+> Um produto digital é resultado de colaboração. Uma User Story, um código, um caso de teste ou um dashboard são peças diferentes de uma mesma entrega.
+
+**Mostrar/fazer:** use um app conhecido e marque duas ou três interações entre áreas.
+
+**Perguntar:** Quem precisa conversar antes de uma funcionalidade chegar ao usuário?
+
+**Compreensão esperada:** o aluno percebe relações entre áreas e evita a ideia de uma cadeia rígida.
+
+Evite transformar este bloco em leitura do E-book. Use o E-book como base e mantenha a explicação oral no recorte previsto pelo roteiro.
+
+## 25–45 — Demonstração guiada — Tabela Área × Pergunta × Responsabilidade × Artefato
+
+### Passo 1 — Escolher um produto
+
+**Fazer:** Use um aplicativo de delivery ou plataforma de cursos.
+
+**Fala sugerida:**
+
+> Vamos olhar para um produto que todo mundo entende. O objetivo não é descobrir como a empresa realmente se organiza, e sim enxergar responsabilidades que precisam existir.
+
+**Checar com a turma:** Peça dois problemas que esse produto resolve.
+
+### Passo 2 — Preencher as seis áreas
+
+**Fazer:** Monte a tabela no quadro.
+
+**Fala sugerida:**
+
+> Para cada área, eu quero uma pergunta e uma entrega. Isso evita decorar apenas nomes de cargos.
+
+**Checar com a turma:** Pergunte se GitHub, Jira ou Python são áreas. Reforce que são ferramentas/tecnologias.
+
+### Passo 3 — Conectar as áreas
+
+**Fazer:** Desenhe duas ou três setas entre as linhas.
+
+**Fala sugerida:**
+
+> As setas são tão importantes quanto as caixas. Elas mostram que uma decisão de Produto pode gerar trabalho para Dev e perguntas para QA, e que o resultado volta em forma de feedback.
+
+**Checar com a turma:** Peça a um aluno para explicar uma conexão com as próprias palavras.
+
+**Resultado de referência:** Exemplo possível: Produto → necessidade/User Story; Desenvolvimento → implementação/código; QA → risco/caso de teste; Dados → métrica/dashboard; Infra → ambiente/monitoramento; Gestão → plano/quadro de acompanhamento.
+
+Antes de mostrar o resultado, peça uma previsão. Depois compare previsão, comportamento observado e explicação.
 
 ## 45–50 — Pausa
 
-Deixar horário de retorno visível e não apresentar conteúdo obrigatório durante os cinco minutos.
-Na gravação, indicar o ponto em que a atividade seguinte começa.
+Informar claramente o horário de retorno. Não usar a pausa para conteúdo obrigatório.
 
-## 50–65 — Dinâmica em dupla ou grupo
+## 50–65 — Dinâmica — Monte o time tech
 
-**Nome:** Revisão com explicação — Mercado Tech e Principais Áreas de TI.  
-**Contexto profissional:** uma equipe precisa revisar seu trabalho antes de avançar.
-**Objetivo:** aplicar os conceitos e produzir um registro conferível no recorte da aula.
+**Cenário:** Uma empresa quer criar um aplicativo de delivery para pequenos restaurantes.
 
-**Fala de orientação:**
+**Orientação para a turma:**
 
-> Uma pessoa começa conduzindo e a outra confere as decisões. Na metade, troquem funções.
-> Registrem o que fizeram e qual informação justifica o resultado.
-> Se discordarem, expliquem a diferença usando regra ou evidência, em vez de escolher pela maioria.
+> Vocês não precisam desenhar uma empresa perfeita. Quero que justifiquem por que cada contribuição é necessária.
 
-**Enunciado e passo a passo:**
+1. Definir qual problema principal o aplicativo resolve.
+2. Selecionar as áreas que precisam participar.
+3. Registrar uma responsabilidade e uma entrega de cada área.
+4. Descrever pelo menos duas relações de colaboração.
 
-1. Preencher as seis áreas com responsabilidade e artefato.
-2. Explicar como duas delas tratariam uma reserva duplicada.
-3. Trocar revisão e apontar uma linha vaga para melhorar.
+**Tempo sugerido:** 2 min para organização, 8 min para produção, 3 min para revisão entre pares e 2 min para compartilhamento.
 
-**Tempo:** 2 minutos para ler e organizar; 5 para produzir; 5 para trocar revisão; 3 para compartilhar.
-Selecionar duas duplas para falar e recolher as demais por escrito. Em aulas de entrevista ou apresentação,
-usar o mesmo tempo para a primeira participação, troca e feedback.
+**Entrega esperada:** tabela, quadro ou mapa simples com o time e suas contribuições
 
-**Entrega esperada:** registro da atividade com contexto, decisão, fundamento e uma revisão.
-**Critérios:** cumprir as etapas, preservar as regras e permitir que o colega confira.
-**Referência de correção:** usar os exemplos da demonstração e verificar o que mudou no novo caso,
-sem exigir palavras idênticas.
-
-**Perguntas ao circular:** “Qual passo está sendo executado?”, “Qual evidência sustenta isso?”
-e “O que precisaria mudar para sua conclusão ser diferente?”
-
-**Dica para a dupla:** separar o que observou do que está supondo.
-**Variação difícil:** formular um contraexemplo ou limite; transferir para casa se não couber.
+**O professor observa:** coerência entre área e responsabilidade; pelo menos uma entrega por área; duas relações de colaboração explicadas; linguagem própria do grupo.
 
 ## 65–77 — Exercício individual
 
-**Fala do professor — enunciado:**
+**Enunciado para falar à turma:**
 
-> Escolha uma área diferente da que sua dupla apresentou. Escreva sua pergunta, um artefato e uma colaboração com outra área. Acrescente uma conexão ao mapa.
+> Crie a primeira versão do seu mapa mental com Desenvolvimento, QA, Produto, Dados, Infraestrutura e Gestão. Para cada área, escreva uma frase, um cargo relacionado e uma conexão com outra área. Acrescente uma dúvida que ainda tenha.
 
-**Tempo:** 2 minutos de leitura, 7 de resolução e 3 de revisão/entrega.
-Cada aluno entrega uma resposta própria, mesmo quando a atividade anterior foi em grupo.
+**Entrega:** primeira versão do mapa mental
 
-**Entrega:** artefato pedido no enunciado, acompanhado de uma explicação breve da decisão.
-**Critérios:** correção, completude do recorte, evidência e justificativa. Aplicar a
-[rubrica formativa](../../planejamento/analise-pedagogica.md), de 0 a 2 por critério. Referência proposta: 6/8, sem zero em correção ou evidência.
+**Critérios:** seis áreas identificadas; descrições coerentes; ao menos uma conexão explicada; dúvida registrada.
 
-**Ajuda graduada:** pedir que identifique primeiro a entrada, regra ou exigência; depois que escolha o próximo
-passo. Não resolver todas as etapas. Registrar qual parte foi assistida e conferir transferência em uma tentativa nova.
-
-**Gabarito comentado — revelar depois da tentativa:**
-
-> Exemplo: Dados pergunta quantas tentativas tiveram conflito; define medida com período e denominador; colabora com Produto para avaliar uma hipótese. Aceitar outras respostas coerentes. Exigir atividade e evidência, sem pontuar preferência pessoal como domínio.
+**Se houver dificuldade:** peça ao aluno que comece por apenas uma área que entendeu melhor e, a partir dela, conecte as demais.
 
 ## 77–85 — Correção, intervenções e dúvidas
 
-**Fala para iniciar a correção:**
+Comece pedindo que o aluno explique como chegou à resposta antes de mostrar uma referência.
 
-> Se sua resposta foi diferente, mantenha a primeira versão. Vamos descobrir em qual decisão
-> o raciocínio mudou. Corrigir e explicar a mudança faz parte da aprendizagem.
+**Se aparecer:** “GitHub/Jira/Python é uma área de TI.”
 
-**Se o aluno escolher área apenas por uma ferramenta:**
+> Isso é ferramenta ou tecnologia. Qual problema uma pessoa resolve usando essa ferramenta? A resposta nos aproxima da área e da responsabilidade.
 
-> A ferramenta ajuda uma tarefa. Que problema essa pessoa resolve e o que entrega para outra área?
+**Se aparecer:** “Produto é o chefe dos desenvolvedores.”
 
-**Se o aluno dizer que qa garante tudo:**
+> Produto organiza necessidades e prioridades, mas trabalha em colaboração com o time. Não é uma relação automática de chefia.
 
-> Vamos distribuir a contribuição: quem esclarece a regra, quem implementa e quem investiga os comportamentos?
+**Se aparecer:** “QA garante que nunca haverá bugs.”
 
-**Dúvida central da aula:** “Um caso de teste é um artefato de qual contribuição?”
+> QA ajuda a prevenir e encontrar problemas, mas nenhum profissional consegue garantir ausência total de defeitos. Qualidade é construída pelo time.
 
-**Como responder:**
+### Perguntas de verificação
 
-> QA pode produzi-lo, com colaboração do time; qualidade não pertence exclusivamente a uma pessoa.
+- **Trabalhar com tecnologia significa necessariamente programar?** — Não. Programação é central em várias funções, mas o ecossistema inclui Produto, QA, Dados, Infra, Gestão e outras áreas.
+- **Qual é a diferença entre cargo, ferramenta e responsabilidade?** — Cargo é uma função profissional; ferramenta apoia o trabalho; responsabilidade descreve o que precisa ser feito/entregue.
+- **QA é a única pessoa responsável pela qualidade?** — Não. QA contribui fortemente, mas qualidade é responsabilidade compartilhada pelo time.
 
-**Se perguntarem se a resposta precisa ser igual:**
-
-> Não precisa repetir minha frase. Precisa respeitar as regras e permitir que outra pessoa
-> confira como você chegou à decisão.
-
-**Se perguntarem como usar a gravação:**
-
-> Localize o trecho em que surgiu a dúvida, reveja o exemplo e depois tente uma entrada ou situação nova.
-> Assistir de novo ajuda; explicar sua própria decisão é o que vamos avaliar.
-
-**Modelo de devolutiva:**
-
-> Você acertou ao identificar a decisão principal. Falta mostrar a informação que a sustenta.
-> Acrescente essa evidência e explique o que mudou na sua revisão.
-
-Selecionar duas dúvidas para os oito minutos. Registrar as demais para resposta após a aula ou retomada.
-Não ampliar silenciosamente a duração do encontro.
-
-## 85–90 — Fechamento e tarefa para casa
+## 85–90 — Fechamento e tarefa
 
 **Fala de fechamento:**
 
-> Hoje trabalhamos como relacionar seis áreas de TI a responsabilidades e artefatos e iniciar um mapa mental.
-> Para revisar, procure uma decisão, a evidência que a sustenta e uma limitação que ainda precisa de atenção.
-> Guardem a primeira versão e a correção; isso ajuda a explicar a evolução no portfólio.
+> Hoje a ideia principal não é escolher uma profissão definitiva. É entender que tecnologia é um ecossistema de áreas diferentes trabalhando juntas para resolver problemas.
 
-**Pergunta de saída:** “O que você mudou na sua primeira previsão, e por quê?”
+**Tarefa para casa:**
 
-**Tarefa de casa — falar à turma:**
+1. Pesquisar uma vaga de QA.
+2. Pesquisar uma vaga de Produto.
+3. Pesquisar uma vaga de Desenvolvimento, Dados ou Infraestrutura.
+4. Registrar título, link/data, responsabilidades, ferramentas e termos desconhecidos.
+5. Atualizar o mapa mental com pelo menos cinco termos encontrados.
 
-> Completar mapa e tabela; comparar três descrições de vagas com link e data, ou identificar exemplos como simulação. Escrever um interesse e uma dúvida. A pesquisa fica para fora do encontro.
+**Entrega:** mapa mental atualizado + registro das três vagas
 
-**Tempo-base:** 30–45 minutos para revisão. Se o enunciado exigir concluir vários artefatos, execução pendente
-ou preparação da entrega final, combinar prazo e tempo adicional explicitamente; não prometer que tudo cabe
-nesse intervalo.
+**Ponte para a próxima aula:**
 
-**Entrega:** `modulo-01-aula-01-mercado-tech-e-areas-de-ti-revisao.md`, ou arquivos específicos pedidos, contendo resposta inicial, feedback,
-versão revisada e explicação. O professor verifica a revisão no início do encontro seguinte.
+> Na próxima aula vamos sair do mapa de áreas e acompanhar o caminho de uma funcionalidade dentro de uma empresa tech.
 
-**Dica:** usar E-book e gravação como apoio; identificar empresa fictícia e origem da evidência.
-**Variação difícil:** acrescentar uma situação nova ou uma dúvida de aplicação, com proposta de investigação.
+## Checklist pós-aula
 
-## Checklist do professor e uso da gravação
-
-- [ ] Preparar recursos e exemplo antes do encontro.
-- [ ] Pedir previsão antes de revelar referência.
-- [ ] Conferir compreensão por exemplo, não por memorização.
-- [ ] Alternar condução e revisão na dupla.
-- [ ] Preservar exercício individual.
-- [ ] Declarar execução, simulação e limites corretamente.
-- [ ] Registrar feedback, tarefa e dúvidas pendentes.
-- [ ] Disponibilizar gravação para revisão e indicar os blocos de demonstração e correção.
-
-Percentual de vídeo assistido é sinal de utilização, não prova de domínio.
-Usar artefato e explicação para avaliar aprendizagem; não penalizar o aluno por uma falha de registro de reprodução.
+- [ ] Disponibilizar a gravação.
+- [ ] Registrar dúvidas que precisam ser retomadas.
+- [ ] Conferir se a atividade usada foi a mesma definida no roteiro.
+- [ ] Anotar qualquer ajuste de tempo para a próxima turma.
+- [ ] Não alterar critérios ou respostas de referência apenas na fala; se a regra mudar, atualizar roteiro e script juntos.

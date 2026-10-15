@@ -1,267 +1,217 @@
-# Script do professor — Funções e resolução de problemas
+# Script do Professor — Funções e Resolução de Problemas
 
-**DTEM Treinamentos · encontro ao vivo de até 90 minutos, gravado para revisão.**
+**DTEM Treinamentos · encontro ao vivo de até 90 minutos.**
 
-Este documento contém falas e ações de condução. Adaptar a linguagem ao próprio estilo, preservando conceitos,
-exemplos e critérios. Os intervalos incluem escrita, espera, interação e prática; não são 90 minutos de leitura.
-Não depende de vídeos prévios. O aluno pode consultar o E-book e rever a gravação depois.
+> **Papel deste documento:** orientar a condução da aula. O conteúdo e as atividades abaixo devem permanecer coerentes com o roteiro; o script não cria uma aula paralela.
 
-**Roteiro:** [planejamento da aula](../modulo-02-aula-04-funcoes-e-desafios.md).  
-**Material de estudo:** [E-book correspondente](../../ebooks/modulo-02-logica-de-programacao.md).  
-**Caso:** [Agenda Clara](../../atividades/caso-agenda-clara.md), empresa e dados fictícios.
+**Roteiro:** [Módulo 2, Aula 4](../modulo-02-aula-04-funcoes-e-desafios.md)  
+**Material do aluno:** [E-book correspondente](../../ebooks/modulo-02-logica-de-programacao.md)  
+**Caso:** [Agenda Clara](../../atividades/caso-agenda-clara.md)  
 
-## Objetivo e materiais
+## Alinhamento obrigatório
 
-**Objetivo observável:** usar uma função com retorno e investigar uma validação que aceita espaços.  
-**Materiais:** exemplo validar_nome, quadro de entradas/retornos e Python opcional.
+- **Objetivo:** Usar funções para encapsular responsabilidades e aplicar depuração orientada por hipótese em uma validação simples.
+- **Demonstração central:** Implementar, reproduzir e corrigir `validar_nome`.
+- **Prática em grupo:** Função sob revisão.
+- **Exercício individual:** escrever a função e explicar o limite de responsabilidade.
+- **Tarefa:** consolidar as atividades de lógica e revisar a entrega do módulo.
 
-Antes do encontro, preparar o exemplo e conferir os recursos necessários. Em tarefas de ferramenta, preparar
-conta e ambiente com antecedência. Se a execução estiver indisponível, percorrer manualmente e declarar o método;
-publicação ou execução exigidas pela entrega devem ser concluídas depois com apoio. Não inventar evidência.
+Não substituir esses elementos por um exemplo genérico sem revisar também o roteiro.
+
+## Antes da aula
+
+- [ ] Confirmar Python disponível.
+- [ ] Preparar as três entradas de teste.
+- [ ] Separar exemplo curto de `print` versus `return`.
+- [ ] Deixar o roteiro e este script abertos.
+- [ ] Testar qualquer ferramenta, arquivo ou demonstração antes da turma entrar.
+- [ ] Separar o material que o aluno deverá entregar ao final.
 
 ## Agenda de condução
 
-| Intervalo | Etapa | Minutos |
-|---|---|---:|
-| 00–08 | Abertura e diagnóstico | 8 |
-| 08–25 | Conceitos e exemplos | 17 |
-| 25–45 | Demonstração guiada | 20 |
-| 45–50 | Pausa | 5 |
-| 50–65 | Dinâmica em dupla ou grupo | 15 |
-| 65–77 | Exercício individual | 12 |
-| 77–85 | Correção e dúvidas | 8 |
-| 85–90 | Fechamento e tarefa | 5 |
-| Total | | 90 |
-
-O roteiro original contém o caderno completo de atividades. Nesta versão, os enunciados de grupo e individual
-abaixo definem o recorte do encontro. A tarefa de casa conclui os itens restantes. Se precisar reduzir extensão,
-preservar demonstração, tentativa individual, feedback e orientação da entrega.
+| Intervalo | Etapa |
+|---|---|
+| 00–08 | Abertura e diagnóstico |
+| 08–25 | Conceitos e exemplos |
+| 25–45 | Demonstração guiada |
+| 45–50 | Pausa |
+| 50–65 | Dinâmica |
+| 65–77 | Exercício individual |
+| 77–85 | Correção e dúvidas |
+| 85–90 | Fechamento e tarefa |
 
 ## 00–08 — Abertura e diagnóstico
 
-**Mostrar:** título da aula e objetivo. **Fala de abertura:**
+**Fala de abertura:**
 
-> Se repetimos a mesma validação em vários lugares, como evitar cópias divergentes? Vamos dar uma responsabilidade clara a uma função e investigar um erro lógico.
+> Se copiarmos a mesma validação em vários lugares, o que acontece quando uma cópia muda e outra não? Hoje vamos dar uma responsabilidade clara a uma função e investigar um erro lógico.
 
-**Condução:** dar dois minutos para uma previsão individual no chat ou caderno. Colher duas respostas,
-sem exigir fala de todos. Esperar aproximadamente 30 segundos antes de completar a resposta.
-Não confundir silêncio inicial com falta de capacidade; oferecer a situação concreta novamente.
+**Pergunta diagnóstica:** Uma função que imprime `True` necessariamente devolve `True` para quem a chamou?
 
-**Pergunta de diagnóstico:** “Mostrar um resultado na tela significa que a função o devolveu?”
+Dê cerca de dois minutos para respostas curtas no chat, voz ou caderno. Escute pelo menos duas respostas antes de completar.
 
-**Referência para o professor:** Não. Exibição e retorno são operações diferentes; conferir o valor recebido pelo chamador.
-
-**Transição para a explicação:**
-
-> Vamos transformar essa primeira resposta em um raciocínio que outra pessoa consiga conferir.
-> A cada exemplo, anotem a decisão e a informação que a sustenta.
-
-## 08–25 — Explicação teórica e exemplos
-
-Dividir os 17 minutos entre as três explicações, a escrita e duas perguntas breves.
-Usar as falas como apoio, sem acrescentar uma exposição inteira do E-book.
-
-### Explicação 1 — Parâmetros e retorno
-
-**Fala sugerida:**
-
-> Uma função recebe entradas por parâmetros e pode devolver resultado. validar_nome recebe um texto e responde se ele tem conteúdo após remover espaços. Ela não deve reservar o horário. Separar responsabilidades facilita conferir o comportamento.
-
-**Ação:** escrever uma palavra-chave e pedir um exemplo com palavras do aluno. Se houver dúvida, pedir a entrada, regra ou situação concreta que sustenta a resposta.
-### Explicação 2 — print e return
-
-**Fala sugerida:**
-
-> Print exibe algo; return devolve o resultado para quem chamou. Se a função somente imprimir True, isso não significa que devolveu True. Em Python, sem retorno explícito, o resultado é None. A função pequena pode ser útil justamente por ter um propósito limitado.
-
-**Ação:** escrever uma palavra-chave e pedir um exemplo com palavras do aluno. Se houver dúvida, pedir a entrada, regra ou situação concreta que sustenta a resposta.
-### Explicação 3 — Depuração com hipótese
-
-**Fala sugerida:**
-
-> Vamos comparar nome diferente de vazio com conteúdo depois de strip. Espaços são texto não vazio, mas não têm conteúdo útil. O programa pode executar sem travar e ainda violar a regra. Primeiro reproduzir, depois formular hipótese e conferir correção e casos anteriores.
-
-**Ação:** escrever uma palavra-chave e pedir um exemplo com palavras do aluno. Se houver dúvida, pedir a entrada, regra ou situação concreta que sustenta a resposta.
-
-**Mostrar no quadro:** entrada → validar_nome → retorno, mais tabela Ana / vazio / espaços.
-
-**Checagem de compreensão:** “Mostrar um resultado na tela significa que a função o devolveu?”  
-**Resposta esperada:** Não. Exibição e retorno são operações diferentes; conferir o valor recebido pelo chamador.
+**Resposta de referência para o professor:** Não. Exibição e retorno são operações diferentes.
 
 **Transição:**
 
-> Agora vou percorrer um exemplo pensando em voz alta. Antes de mostrar o resultado,
-> vou pedir uma previsão. Observem onde uma regra ou evidência muda a decisão.
+> Vamos definir primeiro o contrato da função e depois usar entradas concretas para investigar um comportamento incorreto.
 
-## 25–45 — Demonstração guiada
+## 08–25 — Conceitos e exemplos
 
-**Preparação:** abrir os dados, documento, código ou cartões indicados. Reservar aproximadamente cinco minutos
-por passo e os minutos finais para uma previsão e uma dúvida. Em comandos, executar uma operação de cada vez
-e conferir estado. Não substituir falha de ambiente por uma afirmação de execução bem-sucedida.
+### 1. Funções e responsabilidade
 
-### Passo 1 — Prever três retornos
+**Fala sugerida:**
 
-**Fala durante a demonstração:**
+> Uma função recebe informações, executa uma responsabilidade e pode devolver um resultado. `validar_nome` não deveria reservar horário; ela deveria responder sobre o nome.
 
-> Para Ana, esperamos True. Para texto vazio e espaços, False. Essas expectativas vêm da regra.
+**Mostrar/fazer:** assinatura `def validar_nome(nome):`.
 
-**Ação:** mostrar o registro correspondente antes de avançar; pedir uma previsão e conferir a resposta com a evidência.
-### Passo 2 — Comparar expressões
+**Perguntar:** Que informação entra e qual resultado deve sair?
 
-**Fala durante a demonstração:**
+**Compreensão esperada:** texto entra; um booleano de validade sai.
 
-> '   ' != '' é verdadeiro; bool('   '.strip()) é falso. Localizei a diferença que sustenta a hipótese.
+### 2. `print` versus `return`
 
-**Ação:** mostrar o registro correspondente antes de avançar; pedir uma previsão e conferir a resposta com a evidência.
-### Passo 3 — Explicar responsabilidade
+**Fala sugerida:**
 
-**Fala durante a demonstração:**
+> Mostrar algo na tela e devolver um valor para quem chamou a função são coisas diferentes.
 
-> A função devolve decisão; a operação de reserva usa essa decisão. Vou repetir nome válido após a correção para evitar quebrar o que funcionava.
+**Mostrar/fazer:** uma função que apenas imprime e outra que retorna.
 
-**Ação:** mostrar o registro correspondente antes de avançar; pedir uma previsão e conferir a resposta com a evidência.
+**Perguntar:** Qual delas permite usar o resultado em uma condição?
 
-**Pergunta após a demonstração:** “Qual decisão vocês conseguem explicar sem copiar a frase que usei?”
+**Compreensão esperada:** a que retorna valor.
 
-**Referência:** a resposta precisa relacionar situação, decisão e fundamento.
-As falas de cada passo indicam o comportamento ou a interpretação que deve ser conferido.
+### 3. Depuração por hipótese
 
-**Transição:**
+**Fala sugerida:**
 
-> Na prática, vocês vão alternar quem conduz e quem revisa. O objetivo é produzir algo
-> que o colega consiga conferir, e não somente repetir minha demonstração.
+> Depurar não é alterar linhas aleatoriamente. Primeiro reproduzimos, depois formulamos uma hipótese e verificamos se a mudança explica o comportamento.
+
+**Mostrar/fazer:** `nome != ''` versus `bool(nome.strip())`.
+
+**Perguntar:** Por que `'   '` passa na primeira expressão?
+
+**Compreensão esperada:** porque é uma string não vazia, apesar de conter apenas espaços.
+
+Evite transformar este bloco em leitura do E-book. Use o E-book como base e mantenha a explicação oral no recorte previsto pelo roteiro.
+
+## 25–45 — Demonstração guiada — Implementar, reproduzir e corrigir `validar_nome`
+
+### Passo 1 — Definir contrato da função
+
+**Fazer:** Escreva nome, entrada e saída esperada.
+
+**Fala sugerida:**
+
+> Antes do corpo, vamos definir a responsabilidade. Isso evita colocar regra de reserva dentro de uma validação de nome.
+
+**Checar com a turma:** Pergunte se a função deveria alterar a agenda.
+
+### Passo 2 — Comparar duas validações
+
+**Fazer:** Execute `'   ' != ''` e `bool('   '.strip())`.
+
+**Fala sugerida:**
+
+> O programa não travou; mesmo assim a primeira regra está errada para o nosso negócio. Esse é um erro lógico.
+
+**Checar com a turma:** Peça que a turma formule a hipótese antes de mostrar `strip`.
+
+### Passo 3 — Retestar após correção
+
+**Fazer:** Repita Ana, vazio e espaços.
+
+**Fala sugerida:**
+
+> Corrigir um caso não encerra a investigação. Precisamos confirmar que o comportamento válido continua válido.
+
+**Checar com a turma:** Pergunte por que testar Ana novamente é importante.
+
+**Resultado de referência:** `validar_nome('Ana')` → True; `validar_nome('')` e `validar_nome('   ')` → False. `return` devolve valor; `print` apenas exibe.
+
+Antes de mostrar o resultado, peça uma previsão. Depois compare previsão, comportamento observado e explicação.
 
 ## 45–50 — Pausa
 
-Deixar horário de retorno visível e não apresentar conteúdo obrigatório durante os cinco minutos.
-Na gravação, indicar o ponto em que a atividade seguinte começa.
+Informar claramente o horário de retorno. Não usar a pausa para conteúdo obrigatório.
 
-## 50–65 — Dinâmica em dupla ou grupo
+## 50–65 — Dinâmica — Função sob revisão
 
-**Nome:** Revisão com explicação — Funções e resolução de problemas.  
-**Contexto profissional:** uma equipe precisa revisar seu trabalho antes de avançar.
-**Objetivo:** aplicar os conceitos e produzir um registro conferível no recorte da aula.
+**Cenário:** Uma dupla recebe uma função de validação e três entradas; uma pessoa explica e a outra tenta encontrar um contraexemplo.
 
-**Fala de orientação:**
+**Orientação para a turma:**
 
-> Uma pessoa começa conduzindo e a outra confere as decisões. Na metade, troquem funções.
-> Registrem o que fizeram e qual informação justifica o resultado.
-> Se discordarem, expliquem a diferença usando regra ou evidência, em vez de escolher pela maioria.
+> Quem revisa não precisa ‘achar defeito’ a qualquer custo; precisa tentar confirmar ou refutar a regra.
 
-**Enunciado e passo a passo:**
+1. Definir responsabilidade da função.
+2. Executar/prever três entradas.
+3. Comparar validação defeituosa e corrigida.
+4. Trocar papéis e propor um novo caso.
 
-1. Descrever entrada, responsabilidade e retorno de validar_nome.
-2. Comparar duas validações com três entradas.
-3. Trocar revisão e formular hipótese do erro de espaços.
+**Tempo sugerido:** 2 min para organização, 8 min para produção, 3 min para revisão entre pares e 2 min para compartilhamento.
 
-**Tempo:** 2 minutos para ler e organizar; 5 para produzir; 5 para trocar revisão; 3 para compartilhar.
-Selecionar duas duplas para falar e recolher as demais por escrito. Em aulas de entrevista ou apresentação,
-usar o mesmo tempo para a primeira participação, troca e feedback.
+**Entrega esperada:** função + tabela entrada/esperado/observado
 
-**Entrega esperada:** registro da atividade com contexto, decisão, fundamento e uma revisão.
-**Critérios:** cumprir as etapas, preservar as regras e permitir que o colega confira.
-**Referência de correção:** usar os exemplos da demonstração e verificar o que mudou no novo caso,
-sem exigir palavras idênticas.
-
-**Perguntas ao circular:** “Qual passo está sendo executado?”, “Qual evidência sustenta isso?”
-e “O que precisaria mudar para sua conclusão ser diferente?”
-
-**Dica para a dupla:** separar o que observou do que está supondo.
-**Variação difícil:** formular um contraexemplo ou limite; transferir para casa se não couber.
+**O professor observa:** responsabilidade delimitada; retornos corretos; hipótese do bug explicada; reteste após correção.
 
 ## 65–77 — Exercício individual
 
-**Fala do professor — enunciado:**
+**Enunciado para falar à turma:**
 
-> Escreva função em Python ou pseudocódigo e três retornos. Explique por que corrigir somente o caso de espaços não encerra a conferência.
+> Escreva `validar_nome` em Python ou pseudocódigo e registre os retornos para Ana, vazio e espaços. Depois responda: quem deve decidir se um horário pode ser reservado — `validar_nome` ou a operação de reserva? Justifique.
 
-**Tempo:** 2 minutos de leitura, 7 de resolução e 3 de revisão/entrega.
-Cada aluno entrega uma resposta própria, mesmo quando a atividade anterior foi em grupo.
+**Entrega:** função + três resultados + justificativa
 
-**Entrega:** artefato pedido no enunciado, acompanhado de uma explicação breve da decisão.
-**Critérios:** correção, completude do recorte, evidência e justificativa. Aplicar a
-[rubrica formativa](../../planejamento/analise-pedagogica.md), de 0 a 2 por critério. Referência proposta: 6/8, sem zero em correção ou evidência.
+**Critérios:** função correta; retorno em vez de apenas impressão; responsabilidade separada; justificativa coerente.
 
-**Ajuda graduada:** pedir que identifique primeiro a entrada, regra ou exigência; depois que escolha o próximo
-passo. Não resolver todas as etapas. Registrar qual parte foi assistida e conferir transferência em uma tentativa nova.
-
-**Gabarito comentado — revelar depois da tentativa:**
-
-> Para entrada textual, bool(nome.strip()) produz True para Ana e False para vazio/espaços. Repetir os três casos verifica correção e preservação do nome válido. Não afirmar tratamento de todos os tipos pela função simples.
+**Se houver dificuldade:** permita primeiro escrever a regra em português e depois converter para código.
 
 ## 77–85 — Correção, intervenções e dúvidas
 
-**Fala para iniciar a correção:**
+Comece pedindo que o aluno explique como chegou à resposta antes de mostrar uma referência.
 
-> Se sua resposta foi diferente, mantenha a primeira versão. Vamos descobrir em qual decisão
-> o raciocínio mudou. Corrigir e explicar a mudança faz parte da aprendizagem.
+**Se aparecer:** a função valida nome e já cria a reserva
 
-**Se o aluno função reserva e valida tudo:**
+> Qual responsabilidade conseguimos isolar para testar separadamente? `validar_nome` deve apenas responder sobre o nome.
 
-> Que responsabilidade você consegue isolar e conferir separadamente?
+**Se aparecer:** o aluno muda várias linhas de uma vez
 
-**Se o aluno mudar várias linhas sem hipótese:**
+> Qual hipótese estamos testando? Mude uma coisa que responda à hipótese e repita os mesmos casos.
 
-> Qual entrada reproduz o problema e qual diferença explica a falha?
+**Se aparecer:** o aluno usa `print` onde precisa de retorno
 
-**Dúvida central da aula:** “Mostrar um resultado na tela significa que a função o devolveu?”
+> Quem chama essa função consegue usar o valor exibido em uma condição? O que precisa ser devolvido?
 
-**Como responder:**
+### Perguntas de verificação
 
-> Não. Exibição e retorno são operações diferentes; conferir o valor recebido pelo chamador.
+- **Mostrar um resultado com `print` significa que a função o retornou?** — Não. `print` exibe; `return` entrega o valor ao chamador.
+- **Por que espaços passam em `nome != ''`?** — Porque a string contém caracteres de espaço e, portanto, não é vazia.
+- **Depois de corrigir o bug, por que testar novamente um nome válido?** — Para confirmar que a correção não quebrou o comportamento que já funcionava.
 
-**Se perguntarem se a resposta precisa ser igual:**
-
-> Não precisa repetir minha frase. Precisa respeitar as regras e permitir que outra pessoa
-> confira como você chegou à decisão.
-
-**Se perguntarem como usar a gravação:**
-
-> Localize o trecho em que surgiu a dúvida, reveja o exemplo e depois tente uma entrada ou situação nova.
-> Assistir de novo ajuda; explicar sua própria decisão é o que vamos avaliar.
-
-**Modelo de devolutiva:**
-
-> Você acertou ao identificar a decisão principal. Falta mostrar a informação que a sustenta.
-> Acrescente essa evidência e explique o que mudou na sua revisão.
-
-Selecionar duas dúvidas para os oito minutos. Registrar as demais para resposta após a aula ou retomada.
-Não ampliar silenciosamente a duração do encontro.
-
-## 85–90 — Fechamento e tarefa para casa
+## 85–90 — Fechamento e tarefa
 
 **Fala de fechamento:**
 
-> Hoje trabalhamos como usar uma função com retorno e investigar uma validação que aceita espaços.
-> Para revisar, procure uma decisão, a evidência que a sustenta e uma limitação que ainda precisa de atenção.
-> Guardem a primeira versão e a correção; isso ajuda a explicar a evolução no portfólio.
+> O ponto principal não é decorar `def` ou `strip`. É aprender a separar responsabilidades, reproduzir um problema e confirmar a correção com casos controlados.
 
-**Pergunta de saída:** “O que você mudou na sua primeira previsão, e por quê?”
+**Tarefa para casa:**
 
-**Tarefa de casa — falar à turma:**
+1. Revisar a função e a investigação do bug.
+2. Organizar as atividades do módulo.
+3. Resolver um mini desafio próprio de validação ou repetição.
+4. Registrar uma reflexão sobre o que mudou no seu raciocínio.
 
-> Concluir as seis atividades de lógica e revisar entrega. O mini desafio de limite por cliente exige discutir identificador e contagem, não inventar controle baseado apenas em nome.
+**Entrega:** entrega final do Módulo 2 organizada e revisada
 
-**Tempo-base:** 30–45 minutos para revisão. Se o enunciado exigir concluir vários artefatos, execução pendente
-ou preparação da entrega final, combinar prazo e tempo adicional explicitamente; não prometer que tudo cabe
-nesse intervalo.
+**Ponte para a próxima aula:**
 
-**Entrega:** `modulo-02-aula-04-funcoes-e-desafios-revisao.md`, ou arquivos específicos pedidos, contendo resposta inicial, feedback,
-versão revisada e explicação. O professor verifica a revisão no início do encontro seguinte.
+> No próximo módulo vocês vão começar a enxergar como essa lógica aparece dentro de um projeto real e como mudanças são registradas com Git e GitHub.
 
-**Dica:** usar E-book e gravação como apoio; identificar empresa fictícia e origem da evidência.
-**Variação difícil:** acrescentar uma situação nova ou uma dúvida de aplicação, com proposta de investigação.
+## Checklist pós-aula
 
-## Checklist do professor e uso da gravação
-
-- [ ] Preparar recursos e exemplo antes do encontro.
-- [ ] Pedir previsão antes de revelar referência.
-- [ ] Conferir compreensão por exemplo, não por memorização.
-- [ ] Alternar condução e revisão na dupla.
-- [ ] Preservar exercício individual.
-- [ ] Declarar execução, simulação e limites corretamente.
-- [ ] Registrar feedback, tarefa e dúvidas pendentes.
-- [ ] Disponibilizar gravação para revisão e indicar os blocos de demonstração e correção.
-
-Percentual de vídeo assistido é sinal de utilização, não prova de domínio.
-Usar artefato e explicação para avaliar aprendizagem; não penalizar o aluno por uma falha de registro de reprodução.
+- [ ] Disponibilizar a gravação.
+- [ ] Registrar dúvidas que precisam ser retomadas.
+- [ ] Conferir se a atividade usada foi a mesma definida no roteiro.
+- [ ] Anotar qualquer ajuste de tempo para a próxima turma.
+- [ ] Não alterar critérios ou respostas de referência apenas na fala; se a regra mudar, atualizar roteiro e script juntos.
