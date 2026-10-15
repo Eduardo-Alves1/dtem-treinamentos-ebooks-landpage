@@ -99,7 +99,6 @@ Ajuda a localizar perguntas e investigar falhas sem atribuí-las automaticamente
 
 **Critérios específicos:** cumprir todas as etapas, preservar as regras citadas e permitir que um colega confira o resultado. Aplicar também a rubrica ao final do módulo.
 
-**Resposta de referência e comentário:** Entrada por chamadas Python; regras na classe Agenda; estado em reservas; saída em dicionários. Uma interface futura chamaria a regra. Encerrar a execução perde o estado porque não há persistência.
 
 **Dica:** escreva sua resposta antes de consultar a referência; depois registre uma diferença e a razão da revisão.
 
@@ -163,7 +162,6 @@ Reduz dependência de explicações vagas e melhora perguntas feitas a Dev.
 
 **Critérios específicos:** cumprir todas as etapas, preservar as regras citadas e permitir que um colega confira o resultado. Aplicar também a rubrica ao final do módulo.
 
-**Resposta de referência e comentário:** A primeira reserva recebe id 1. A segunda encontra H09 fora de consultar() e retorna conflito antes de adicionar dados. O dicionário conserva uma única reserva.
 
 **Dica:** escreva sua resposta antes de consultar a referência; depois registre uma diferença e a razão da revisão.
 
@@ -228,7 +226,6 @@ Permite demonstrar evolução e contribuição pessoal no portfólio.
 
 **Critérios específicos:** cumprir todas as etapas, preservar as regras citadas e permitir que um colega confira o resultado. Aplicar também a rubrica ao final do módulo.
 
-**Resposta de referência e comentário:** Histórico esperado: apresentar projeto; adicionar simulador de reservas; esclarecer execução. Os hashes variam. O importante é que cada commit tenha mudança verificável e mensagem coerente.
 
 **Dica:** escreva sua resposta antes de consultar a referência; depois registre uma diferença e a razão da revisão.
 
@@ -293,7 +290,6 @@ Transforma uma atividade em evidência consultável, sem atribuir experiência e
 
 **Critérios específicos:** cumprir todas as etapas, preservar as regras citadas e permitir que um colega confira o resultado. Aplicar também a rubrica ao final do módulo.
 
-**Resposta de referência e comentário:** Entrega contém URL acessível ao avaliador, README com contexto fictício, instruções e limites, código e histórico. Repositório privado precisa ter acesso concedido ao avaliador; link sozinho não prova acessibilidade.
 
 **Dica:** escreva sua resposta antes de consultar a referência; depois registre uma diferença e a razão da revisão.
 
@@ -357,7 +353,6 @@ Mostra comunicação e capacidade de receber feedback técnico.
 
 **Critérios específicos:** cumprir todas as etapas, preservar as regras citadas e permitir que um colega confira o resultado. Aplicar também a rubrica ao final do módulo.
 
-**Resposta de referência e comentário:** Descrição de referência: “A instrução dependia da pasta atual. Agora indica executar a partir da raiz ou entrar na pasta do simulador. Verificação: o caminho resolve em ambos os casos documentados.”
 
 **Dica:** escreva sua resposta antes de consultar a referência; depois registre uma diferença e a razão da revisão.
 
