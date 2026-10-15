@@ -38,7 +38,6 @@ Um projeto tem recorte e objetivo; um produto pode continuar evoluindo depois de
 | 3 | [Review, Retrospectiva e DoD](../aulas/modulo-06-aula-03-review-retrospectiva-e-dod.md) | 4 |
 | 4 | [Kanban e ferramentas](../aulas/modulo-06-aula-04-kanban-e-ferramentas.md) | 5, 6 |
 
-**Duração sugerida:** quatro encontros de até 90 minutos, incluindo pausa de 5 minutos: até 6 horas ao vivo. O script delimita a prática do encontro; o restante do caderno é concluído depois. Usar papel ou Markdown se uma ferramenta estiver indisponível, identificando a simulação e concluindo posteriormente a execução exigida.
 
 ## Tópico 1 — Projetos, objetivos, riscos e capacidade
 
@@ -503,15 +502,7 @@ plano de Sprint simulada, quadro com políticas e limites, registros de Daily, R
 | Evidência | Não verificável | Falta dado, versão ou saída | Outra pessoa consegue conferir |
 | Justificativa | Ausente | Genérica | Conecta regra, risco e decisão |
 
-Parâmetro formativo proposto: 6/8, sem zero em correção ou evidência. O professor devolve um acerto, uma lacuna e uma ação; o aluno corrige, registra a mudança e reapresenta. Não é regra comercial de certificação.
-
-## Guia do professor
-
-Ler os tópicos indicados em cada roteiro e conferir o laboratório antes da aula. Apresentar o enunciado antes da resposta comentada. Na demonstração, verbalizar qual regra orienta cada decisão. Em dupla, alternar quem conduz e quem revisa; na etapa individual, trocar entrada ou premissa para avaliar transferência.
-
-Não apresentar QA como papel separado obrigatório do Scrum: pessoas que testam podem integrar Developers. Explicar que os três relatos clássicos da Daily são uma técnica possível, não regra obrigatória. Diferenciar Review de Retrospectiva. O exercício de oito horas não constitui uma Sprint real de produção.
-
-Usar a rubrica para orientar a revisão. Ao aluno com dificuldade, oferecer uma entrada e pedir a decisão seguinte; depois ampliar. Registrar ajuda recebida. Ao aluno mais avançado, aplicar a variação difícil. Retomar a versão revisada no encontro seguinte.
+Parâmetro formativo proposto: 6/8, sem zero em correção ou evidência. Após o feedback, registre um acerto, uma lacuna e uma ação; corrija, registre a mudança e reapresente quando solicitado. Não é regra comercial de certificação.
 
 ## Resumo final para o aluno
 
@@ -527,16 +518,3 @@ Guarde a primeira versão e a correção. Na apresentação, explique uma decis�
 ## Referências
 
 [Ementa local](../ementa.md), [caso Agenda Clara](../atividades/caso-agenda-clara.md) e [laboratório](../portfolio/agenda-clara/README.md). Definições em [Scrum Guide](https://scrumguides.org/scrum-guide.html) e referência de fluxo em [Kanban Guide](https://kanbanguides.org/). Os casos, exercícios e rubricas são autorais.
-
-
-
-## Scripts com falas para o professor
-
-Usar o roteiro para planejar, o script para conduzir e este E-book para aprofundar. As falas são apoio adaptável, com exemplos, perguntas, gabaritos e intervenções. O aluno revê a gravação do encontro na plataforma.
-
-- [Aula 1 — script com falas](../aulas/scripts/modulo-06-aula-01-projetos-e-capacidade.md)
-- [Aula 2 — script com falas](../aulas/scripts/modulo-06-aula-02-scrum-planning-e-daily.md)
-- [Aula 3 — script com falas](../aulas/scripts/modulo-06-aula-03-review-retrospectiva-e-dod.md)
-- [Aula 4 — script com falas](../aulas/scripts/modulo-06-aula-04-kanban-e-ferramentas.md)
-
-Planejar inicialmente 30–45 minutos de revisão e conclusão por aula; exercícios técnicos, projeto final e portfólio podem exigir blocos maiores. Combinar essa carga e os prazos com a turma. Não comprimir toda a prática original em 90 minutos.
