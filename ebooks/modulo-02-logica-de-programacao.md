@@ -101,7 +101,6 @@ Ajuda QA a prever resultados e Produto a descobrir ambiguidades antes da impleme
 
 **Critérios específicos:** cumprir todas as etapas, preservar as regras citadas e permitir que um colega confira o resultado. Aplicar também a rubrica ao final do módulo.
 
-**Resposta de referência e comentário:** Ana/H09 valida nome e catálogo, encontra horário livre e ocupa H09. Bruno/H09 valida as mesmas entradas, encontra H09 ocupado e retorna conflito. H09 continua reservado para Ana; a recusa não pode apagar a primeira reserva.
 
 **Dica:** escreva sua resposta antes de consultar a referência; depois registre uma diferença e a razão da revisão.
 
@@ -165,7 +164,6 @@ Facilita ler JSON, reproduzir bugs com entradas específicas e explicar regras a
 
 **Critérios específicos:** cumprir todas as etapas, preservar as regras citadas e permitir que um colega confira o resultado. Aplicar também a rubrica ao final do módulo.
 
-**Resposta de referência e comentário:** nome: texto não vazio após strip; horario: texto pertencente ao catálogo; quantidade: inteiro não negativo; disponíveis: lista de textos. 2 + 3 resulta em 5 e a concatenação dos textos resulta em "23".
 
 **Dica:** escreva sua resposta antes de consultar a referência; depois registre uma diferença e a razão da revisão.
 
@@ -229,7 +227,6 @@ Ajuda a justificar cobertura de testes e traduzir critérios de aceite.
 
 **Critérios específicos:** cumprir todas as etapas, preservar as regras citadas e permitir que um colega confira o resultado. Aplicar também a rubrica ao final do módulo.
 
-**Resposta de referência e comentário:** Nome válido + H09 pode continuar para verificar ocupação; nome válido + H12 retorna horario_invalido; vazio + H09 retorna nome_invalido; vazio + H12 também retorna nome_invalido se nome for a primeira validação. A ordem precisa ser documentada.
 
 **Dica:** escreva sua resposta antes de consultar a referência; depois registre uma diferença e a razão da revisão.
 
@@ -293,7 +290,6 @@ Permite entender testes parametrizados, contagens e pequenas rotinas de Dados.
 
 **Critérios específicos:** cumprir todas as etapas, preservar as regras citadas e permitir que um colega confira o resultado. Aplicar também a rubrica ao final do módulo.
 
-**Resposta de referência e comentário:** Resultado com H10 ocupado: [H09, H11]; com todos ocupados: []. Um contador iniciado em 0, condição tentativas < 3 e incremento de 1 realiza três iterações; sem incremento, não há parada.
 
 **Dica:** escreva sua resposta antes de consultar a referência; depois registre uma diferença e a razão da revisão.
 
@@ -357,7 +353,6 @@ Ajuda a ler código e a explicar onde uma regra deve ser verificada.
 
 **Critérios específicos:** cumprir todas as etapas, preservar as regras citadas e permitir que um colega confira o resultado. Aplicar também a rubrica ao final do módulo.
 
-**Resposta de referência e comentário:** def validar_nome(nome): return bool(nome.strip()). Os resultados para as três entradas são True, False e False. A função pressupõe str; a classe de referência também protege contra outros tipos.
 
 **Dica:** escreva sua resposta antes de consultar a referência; depois registre uma diferença e a razão da revisão.
 
@@ -421,7 +416,6 @@ Constrói explicações verificáveis para bugs e entrevistas técnicas iniciais
 
 **Critérios específicos:** cumprir todas as etapas, preservar as regras citadas e permitir que um colega confira o resultado. Aplicar também a rubrica ao final do módulo.
 
-**Resposta de referência e comentário:** "   " != "" é True; bool("   ".strip()) é False. A primeira expressão confunde texto não vazio com conteúdo útil. A correção rejeita vazio e espaços e preserva nome válido.
 
 **Dica:** escreva sua resposta antes de consultar a referência; depois registre uma diferença e a razão da revisão.
 
