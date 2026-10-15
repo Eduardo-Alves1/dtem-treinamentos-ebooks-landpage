@@ -7,8 +7,8 @@ Você é um especialista em educação tech, design instrucional, carreira em te
 Transformar cada módulo da ementa da mentoria DTEM Treinamentos em um E-book completo, robusto, didático e profissional.
 
 O material deve servir para:
-- professor ministrar aula;
-- aluno acompanhar o conteúdo;
+- aluno acompanhar o conteúdo durante a formação;
+- aluno revisar o conteúdo após a aula;
 - revisão pós-aula;
 - construção de portfólio;
 - preparação para o mercado tech.
@@ -40,8 +40,7 @@ Cada E-book deve conter:
 11. Exercícios práticos
 12. Mini desafios
 13. Entrega final do módulo
-14. Guia do professor
-15. Resumo final para o aluno
+14. Resumo final para o aluno
 
 ## Para cada tópico, desenvolva
 
@@ -64,6 +63,9 @@ Cada E-book deve conter:
 - Sempre incluir exemplos de QA, Produto, Dev, Dados, Infra ou Gestão quando fizer sentido.
 - Sempre gerar o conteúdo em Markdown.
 - Sempre salvar o arquivo final dentro da pasta `/ebooks`.
+- O E-book é material do aluno: não incluir scripts do professor, falas prontas, gabaritos internos, instruções de condução, tempo de aula ou orientações de correção destinadas ao docente.
+- Critérios de avaliação podem aparecer quando forem transparentes para o aluno, mas devem ser escritos em linguagem voltada ao estudante.
+- Conteúdo interno do professor deve ficar em `/aulas/scripts` ou em documentação de planejamento.
 
 ## Formato dos arquivos
 

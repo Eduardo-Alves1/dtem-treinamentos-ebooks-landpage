@@ -9,7 +9,7 @@ Use esta skill quando o usuário pedir um roteiro de aula, plano de aula ou guia
 
 ## Objetivo
 
-Criar um material para o professor conduzir a aula de forma clara, organizada e prática.
+Criar o planejamento pedagógico da aula: o que será ensinado, praticado, entregue e avaliado. A condução detalhada ao vivo pertence ao script do professor.
 
 ## Estrutura obrigatória
 
@@ -25,8 +25,8 @@ O roteiro deve conter:
 8. Dinâmica em grupo
 9. Exercício individual
 10. Perguntas para os alunos
-11. Possíveis dúvidas dos alunos
-12. Como responder às dúvidas
+11. Perguntas de verificação
+12. Critérios das atividades
 13. Fechamento da aula
 14. Tarefa para casa
 
@@ -34,4 +34,4 @@ O roteiro deve conter:
 
 Use linguagem simples e orientada à prática.
 
-O professor deve conseguir ministrar a aula apenas seguindo o roteiro.
+Não incluir falas prontas, gabaritos, respostas esperadas, intervenções ou instruções minuto a minuto. Esses elementos ficam exclusivamente no script do professor em `/aulas/scripts`.

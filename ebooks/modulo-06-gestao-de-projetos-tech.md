@@ -38,7 +38,6 @@ Um projeto tem recorte e objetivo; um produto pode continuar evoluindo depois de
 | 3 | [Review, Retrospectiva e DoD](../aulas/modulo-06-aula-03-review-retrospectiva-e-dod.md) | 4 |
 | 4 | [Kanban e ferramentas](../aulas/modulo-06-aula-04-kanban-e-ferramentas.md) | 5, 6 |
 
-**Duração sugerida:** quatro encontros de até 90 minutos, incluindo pausa de 5 minutos: até 6 horas ao vivo. O script delimita a prática do encontro; o restante do caderno é concluído depois. Usar papel ou Markdown se uma ferramenta estiver indisponível, identificando a simulação e concluindo posteriormente a execução exigida.
 
 ## Tópico 1 — Projetos, objetivos, riscos e capacidade
 
@@ -97,7 +96,6 @@ Ajuda a comunicar previsão e limitações com responsabilidade.
 
 **Critérios específicos:** Cálculo coerente; distinção entre disponibilidade e esforço; margem explícita.
 
-**Exemplo de resposta comentada:** 360 minutos brutos − 90 − 60 = 210 minutos estimados para tarefas. Distribuir respeitando competências e dependências; não somar trabalho paralelo como se todos pudessem fazer qualquer tarefa.
 
 **Dica:** faça sua tentativa antes de ler a resposta e explique qualquer revisão.
 
@@ -161,7 +159,6 @@ Ajuda a participar de conversas sem confundir cargo e responsabilidade.
 
 **Critérios específicos:** PO/SM/Developers corretos; qualidade compartilhada; especialidade sem subequipe obrigatória.
 
-**Exemplo de resposta comentada:** PO ordena backlog; Developers planejam como entregar; time mantém qualidade. Scrum Master facilita compreensão e remoção de impedimentos sem comandar tecnicamente cada tarefa.
 
 **Dica:** faça sua tentativa antes de ler a resposta e explique qualquer revisão.
 
@@ -226,7 +223,6 @@ Melhora comunicação objetiva em equipe.
 
 **Critérios específicos:** Meta útil; plano viável; ajuste preserva objetivo e qualidade.
 
-**Exemplo de resposta comentada:** Reorganizar dupla para execução em ambiente disponível, adiando melhoria de relatório. Bloqueio inclui quem precisa de apoio e horário de revisão da solução. Não marcar tarefa bloqueada como concluída.
 
 **Dica:** faça sua tentativa antes de ler a resposta e explique qualquer revisão.
 
@@ -290,7 +286,6 @@ Demonstra capacidade de receber feedback e melhorar processo.
 
 **Critérios específicos:** Distinguir eventos; não concluir item sem padrão; melhoria verificável.
 
-**Exemplo de resposta comentada:** DoD: regra atendida, cenários relevantes executados e README coerente. Ação: revisar critérios em dupla antes de iniciar; medir quantos itens voltaram por ambiguidade no próximo exercício.
 
 **Dica:** faça sua tentativa antes de ler a resposta e explique qualquer revisão.
 
@@ -355,7 +350,6 @@ Ajuda a comunicar gargalos e decisões de trabalho.
 
 **Critérios específicos:** Limite respeitado; bloqueio visível; métrica com período definido.
 
-**Exemplo de resposta comentada:** Com dois itens ativos, não puxar terceiro; ajudar a verificar ou remover bloqueio. Throughput de dois itens em uma rodada informa conclusão, sem inferir produtividade individual.
 
 **Dica:** faça sua tentativa antes de ler a resposta e explique qualquer revisão.
 
@@ -419,7 +413,6 @@ Facilita colaboração em organizações com ferramentas diferentes.
 
 **Critérios específicos:** Rastreabilidade; estado coerente; pedido acionável.
 
-**Exemplo de resposta comentada:** Meta: reserva íntegra. Progresso: sucesso/conflito verificados. Risco: RN03 falha na variante. Pedido: priorizar correção antes da liberação simulada. BUG01 ligado a US02 e TC03.
 
 **Dica:** faça sua tentativa antes de ler a resposta e explique qualquer revisão.
 
@@ -473,7 +466,7 @@ Explique cada passagem e indique onde uma evidência pode obrigar o time a volta
 
 As atividades dos tópicos formam o caderno de prática. Além delas, resolva: **Uma pessoa ficará ausente e surge um bug que afeta a reserva. Replaneje sem abandonar qualidade nem fingir capacidade inexistente.**
 
-Entregue situação inicial, decisão, evidência, consequência e uma limitação. **Referência para correção:** Recalcular capacidade, discutir impacto na meta, negociar escopo com PO e priorizar o risco. Manter critérios de qualidade; adiar item menos valioso e registrar razão. Ausência não é compensada automaticamente por pressão sobre o restante do time.
+Entregue situação inicial, decisão, evidência, consequência e uma limitação.
 
 ## Entrega final do módulo
 
@@ -503,15 +496,7 @@ plano de Sprint simulada, quadro com políticas e limites, registros de Daily, R
 | Evidência | Não verificável | Falta dado, versão ou saída | Outra pessoa consegue conferir |
 | Justificativa | Ausente | Genérica | Conecta regra, risco e decisão |
 
-Parâmetro formativo proposto: 6/8, sem zero em correção ou evidência. O professor devolve um acerto, uma lacuna e uma ação; o aluno corrige, registra a mudança e reapresenta. Não é regra comercial de certificação.
-
-## Guia do professor
-
-Ler os tópicos indicados em cada roteiro e conferir o laboratório antes da aula. Apresentar o enunciado antes da resposta comentada. Na demonstração, verbalizar qual regra orienta cada decisão. Em dupla, alternar quem conduz e quem revisa; na etapa individual, trocar entrada ou premissa para avaliar transferência.
-
-Não apresentar QA como papel separado obrigatório do Scrum: pessoas que testam podem integrar Developers. Explicar que os três relatos clássicos da Daily são uma técnica possível, não regra obrigatória. Diferenciar Review de Retrospectiva. O exercício de oito horas não constitui uma Sprint real de produção.
-
-Usar a rubrica para orientar a revisão. Ao aluno com dificuldade, oferecer uma entrada e pedir a decisão seguinte; depois ampliar. Registrar ajuda recebida. Ao aluno mais avançado, aplicar a variação difícil. Retomar a versão revisada no encontro seguinte.
+Parâmetro formativo proposto: 6/8, sem zero em correção ou evidência. Após o feedback, registre um acerto, uma lacuna e uma ação; corrija, registre a mudança e reapresente quando solicitado. Não é regra comercial de certificação.
 
 ## Resumo final para o aluno
 
@@ -527,16 +512,3 @@ Guarde a primeira versão e a correção. Na apresentação, explique uma decis�
 ## Referências
 
 [Ementa local](../ementa.md), [caso Agenda Clara](../atividades/caso-agenda-clara.md) e [laboratório](../portfolio/agenda-clara/README.md). Definições em [Scrum Guide](https://scrumguides.org/scrum-guide.html) e referência de fluxo em [Kanban Guide](https://kanbanguides.org/). Os casos, exercícios e rubricas são autorais.
-
-
-
-## Scripts com falas para o professor
-
-Usar o roteiro para planejar, o script para conduzir e este E-book para aprofundar. As falas são apoio adaptável, com exemplos, perguntas, gabaritos e intervenções. O aluno revê a gravação do encontro na plataforma.
-
-- [Aula 1 — script com falas](../aulas/scripts/modulo-06-aula-01-projetos-e-capacidade.md)
-- [Aula 2 — script com falas](../aulas/scripts/modulo-06-aula-02-scrum-planning-e-daily.md)
-- [Aula 3 — script com falas](../aulas/scripts/modulo-06-aula-03-review-retrospectiva-e-dod.md)
-- [Aula 4 — script com falas](../aulas/scripts/modulo-06-aula-04-kanban-e-ferramentas.md)
-
-Planejar inicialmente 30–45 minutos de revisão e conclusão por aula; exercícios técnicos, projeto final e portfólio podem exigir blocos maiores. Combinar essa carga e os prazos com a turma. Não comprimir toda a prática original em 90 minutos.

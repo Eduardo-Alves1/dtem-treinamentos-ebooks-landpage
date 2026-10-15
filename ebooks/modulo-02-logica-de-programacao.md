@@ -11,8 +11,6 @@
 ## Apresentação
 
 
-
-
 Neste módulo, você vai transformar regras de negócio em algoritmos, rastrear variáveis e validar condições, repetições e funções. O conteúdo foi organizado para estudar antes do encontro, acompanhar a demonstração e revisar a própria entrega depois do feedback. Não é necessário dominar previamente uma profissão: cada tarefa oferece uma entrada concreta e um exemplo de conferência.
 
 Ao estudar, faça uma previsão, execute ou percorra o exemplo manualmente, explique a diferença e tente um caso novo. Copiar a resposta produz um arquivo; explicar como chegou ao resultado produz evidência de aprendizagem.
@@ -32,7 +30,7 @@ Ao final, o aluno deve conseguir transformar regras de negócio em algoritmos, r
 - Funções e responsabilidade.
 - Resolução de problemas e depuração inicial.
 
-O módulo se conecta à ementa oficial local e usa as regras do [caso contínuo](../atividades/caso-agenda-clara.md). As explicações abaixo são conteúdo de estudo; os roteiros correspondentes oferecem a sequência de condução para o professor. O aluno pode usar editor de texto e papel; tarefas que exigem execução precisam receber evidência de execução posteriormente.
+O módulo se conecta à ementa da formação e usa as regras do [caso contínuo](../atividades/caso-agenda-clara.md). Este E-book reúne conteúdo de estudo, exemplos e atividades para acompanhar e revisar o módulo. O aluno pode usar editor de texto e papel; tarefas que exigem execução precisam receber evidência de execução posteriormente.
 
 ## Percurso das aulas
 
@@ -103,7 +101,6 @@ Ajuda QA a prever resultados e Produto a descobrir ambiguidades antes da impleme
 
 **Critérios específicos:** cumprir todas as etapas, preservar as regras citadas e permitir que um colega confira o resultado. Aplicar também a rubrica ao final do módulo.
 
-**Resposta de referência e comentário:** Ana/H09 valida nome e catálogo, encontra horário livre e ocupa H09. Bruno/H09 valida as mesmas entradas, encontra H09 ocupado e retorna conflito. H09 continua reservado para Ana; a recusa não pode apagar a primeira reserva.
 
 **Dica:** escreva sua resposta antes de consultar a referência; depois registre uma diferença e a razão da revisão.
 
@@ -167,7 +164,6 @@ Facilita ler JSON, reproduzir bugs com entradas específicas e explicar regras a
 
 **Critérios específicos:** cumprir todas as etapas, preservar as regras citadas e permitir que um colega confira o resultado. Aplicar também a rubrica ao final do módulo.
 
-**Resposta de referência e comentário:** nome: texto não vazio após strip; horario: texto pertencente ao catálogo; quantidade: inteiro não negativo; disponíveis: lista de textos. 2 + 3 resulta em 5 e a concatenação dos textos resulta em "23".
 
 **Dica:** escreva sua resposta antes de consultar a referência; depois registre uma diferença e a razão da revisão.
 
@@ -231,7 +227,6 @@ Ajuda a justificar cobertura de testes e traduzir critérios de aceite.
 
 **Critérios específicos:** cumprir todas as etapas, preservar as regras citadas e permitir que um colega confira o resultado. Aplicar também a rubrica ao final do módulo.
 
-**Resposta de referência e comentário:** Nome válido + H09 pode continuar para verificar ocupação; nome válido + H12 retorna horario_invalido; vazio + H09 retorna nome_invalido; vazio + H12 também retorna nome_invalido se nome for a primeira validação. A ordem precisa ser documentada.
 
 **Dica:** escreva sua resposta antes de consultar a referência; depois registre uma diferença e a razão da revisão.
 
@@ -295,7 +290,6 @@ Permite entender testes parametrizados, contagens e pequenas rotinas de Dados.
 
 **Critérios específicos:** cumprir todas as etapas, preservar as regras citadas e permitir que um colega confira o resultado. Aplicar também a rubrica ao final do módulo.
 
-**Resposta de referência e comentário:** Resultado com H10 ocupado: [H09, H11]; com todos ocupados: []. Um contador iniciado em 0, condição tentativas < 3 e incremento de 1 realiza três iterações; sem incremento, não há parada.
 
 **Dica:** escreva sua resposta antes de consultar a referência; depois registre uma diferença e a razão da revisão.
 
@@ -359,7 +353,6 @@ Ajuda a ler código e a explicar onde uma regra deve ser verificada.
 
 **Critérios específicos:** cumprir todas as etapas, preservar as regras citadas e permitir que um colega confira o resultado. Aplicar também a rubrica ao final do módulo.
 
-**Resposta de referência e comentário:** def validar_nome(nome): return bool(nome.strip()). Os resultados para as três entradas são True, False e False. A função pressupõe str; a classe de referência também protege contra outros tipos.
 
 **Dica:** escreva sua resposta antes de consultar a referência; depois registre uma diferença e a razão da revisão.
 
@@ -423,7 +416,6 @@ Constrói explicações verificáveis para bugs e entrevistas técnicas iniciais
 
 **Critérios específicos:** cumprir todas as etapas, preservar as regras citadas e permitir que um colega confira o resultado. Aplicar também a rubrica ao final do módulo.
 
-**Resposta de referência e comentário:** "   " != "" é True; bool("   ".strip()) é False. A primeira expressão confunde texto não vazio com conteúdo útil. A correção rejeita vazio e espaços e preserva nome válido.
 
 **Dica:** escreva sua resposta antes de consultar a referência; depois registre uma diferença e a razão da revisão.
 
@@ -486,7 +478,6 @@ As atividades detalhadas em cada tópico compõem o caderno de prática. Para o 
 
 **Desafio:** Altere a política para permitir somente duas reservas por cliente. Descreva qual dado adicional falta; não invente uma solução que conte apenas horários.
 
-**Referência para o professor:** É necessário identificar o cliente e contar suas reservas ativas. Nome sozinho pode ser ambíguo. A nova regra exige um identificador de cliente e testes para 0, 1, 2 e 3 reservas.
 
 ## Entrega final do módulo
 
@@ -512,15 +503,8 @@ Inclua no início: título, nome do aluno, data, identificação do projeto educ
 | Evidência verificável | Não permite conferência | Falta entrada, versão ou resultado | Outra pessoa consegue conferir o raciocínio ou reproduzir |
 | Justificativa | Decisão sem razão | Razão genérica | Relaciona decisão a regra, risco e resultado |
 
-**Parâmetro formativo:** 6 de 8 pontos, sem zero em correção ou evidência. Não representa regra de certificação. O professor registra um acerto, uma lacuna e uma próxima ação; o aluno corrige e reapresenta.
+**Parâmetro formativo:** 6 de 8 pontos, sem zero em correção ou evidência. Não representa regra de certificação. Após o feedback, registre um acerto, uma lacuna e a próxima ação; corrija e reapresente quando solicitado.
 
-## Guia do professor
-
-Antes de cada aula, leia os tópicos indicados e execute ou percorra o exemplo de referência. Separe a resposta comentada do enunciado até os alunos tentarem. Os quatro [roteiros de aula](../planejamento/trilha-e-indice.md) incluem tempos, perguntas, demonstração, dúvidas e tarefa de casa.
-
-Na abertura, peça uma previsão individual. Durante a prática, observe a regra aplicada, a evidência e a explicação, em vez de corrigir apenas a aparência do arquivo. Use pares com alternância: uma pessoa conduz, a outra confere; trocar funções no segundo cenário.
-
-Para turma com dificuldade, reduza a quantidade de casos por rodada e modele uma etapa sem resolver toda a tarefa. Para turma avançada, aplique as variações difíceis. Na devolutiva, escolha uma lacuna prioritária e peça uma nova evidência. Reserve a primeira parte do próximo encontro para verificar essa revisão.
 
 ## Resumo final para o aluno
 
@@ -617,15 +601,3 @@ Altere uma entrada de cada bloco e preveja a saída antes de executar. Entregue 
 ## Referências e continuidade
 
 Consultar [ementa local](../ementa.md), [caderno do caso](../atividades/caso-agenda-clara.md) e [laboratório](../portfolio/agenda-clara/README.md). Referências técnicas: [Python](https://docs.python.org/3/tutorial/), [Git](https://git-scm.com/docs/gittutorial), [Scrum Guide](https://scrumguides.org/scrum-guide.html) e [ISTQB CTFL](https://istqb.org/certifications/certified-tester-foundation-level-ctfl-v4-0/). Use a documentação pertinente ao tema; os exemplos, atividades e rubricas são autorais.
-
-
-## Scripts com falas para o professor
-
-Usar o roteiro para planejar, o script para conduzir e este E-book para aprofundar. As falas são apoio adaptável, com exemplos, perguntas, gabaritos e intervenções. O aluno revê a gravação do encontro na plataforma.
-
-- [Aula 1 — script com falas](../aulas/scripts/modulo-02-aula-01-algoritmos-e-rastreamento.md)
-- [Aula 2 — script com falas](../aulas/scripts/modulo-02-aula-02-variaveis-e-condicoes.md)
-- [Aula 3 — script com falas](../aulas/scripts/modulo-02-aula-03-lacos-e-listas.md)
-- [Aula 4 — script com falas](../aulas/scripts/modulo-02-aula-04-funcoes-e-desafios.md)
-
-Planejar inicialmente 30–45 minutos de revisão e conclusão por aula; exercícios técnicos, projeto final e portfólio podem exigir blocos maiores. Combinar essa carga e os prazos com a turma. Não comprimir toda a prática original em 90 minutos.

@@ -1,108 +1,62 @@
+# Template — Roteiro de Aula DTEM
 
----
+> O roteiro define **o que será ensinado e praticado**. As falas prontas, intervenções, respostas esperadas e condução minuto a minuto pertencem ao **script do professor**.
 
-# `templates/template-aula.md`
-
-```md
 # 🎓 ROTEIRO DE AULA — [TEMA]
 
----
+## 🎯 Objetivo da aula
+[Resultado observável esperado do aluno.]
 
-# 🎯 OBJETIVO DA AULA
+## 📚 Conteúdos e conceitos
+- Conceito 1
+- Conceito 2
+- Conceito 3
 
----
+## ⏱️ Duração e blocos
+| Bloco | Tempo previsto |
+|---|---:|
+| Abertura | 10 min |
+| Conteúdo e exemplos | 25 min |
+| Prática guiada | 20 min |
+| Atividade | 20 min |
+| Revisão e fechamento | 15 min |
 
-# ⏱️ DURAÇÃO ESTIMADA
+## 🛠️ Materiais necessários
+- Material do aluno
+- Ferramentas necessárias
+- Arquivos ou ambiente de prática
 
-| Etapa | Tempo |
-|---|---|
-| Introdução | 10 min |
-| Explicação | 30 min |
-| Exercício | 20 min |
+## 🌎 Exemplos e cenário corporativo
+[Descrever os exemplos que devem ser trabalhados, sem escrever a fala do professor.]
 
----
+## 🔥 Demonstração planejada
+[Definir o objetivo, entrada, passos e evidência que será mostrada.]
 
-# 🛠️ MATERIAIS NECESSÁRIOS
+## 🧠 Dinâmica em grupo
+- Objetivo
+- Enunciado
+- Entrega esperada
+- Critérios
 
-- Notebook
-- VS Code
-- Navegador
-- Jira
-- GitHub
+## 🧪 Exercício individual
+- Objetivo
+- Enunciado
+- Entrega esperada
+- Critérios
 
----
-
-# 🚀 ABERTURA DA AULA
-
-## Quebra-gelo
-
----
-
-## Contextualização
-
----
-
-# 📖 EXPLICAÇÃO DIDÁTICA
-
-## Conceito principal
-
----
-
-## Explicação simples
-
----
-
-## Explicação técnica
-
----
-
-# 🌎 EXEMPLOS REAIS
-
----
-
-# 🏢 EXEMPLO CORPORATIVO
-
----
-
-# 🔥 DEMONSTRAÇÃO PRÁTICA
-
-## Passo a passo
-
----
-
-# 🧠 DINÂMICA EM GRUPO
-
----
-
-# 🧪 EXERCÍCIO PRÁTICO
-
----
-
-# ❓ PERGUNTAS PARA OS ALUNOS
-
+## ❓ Perguntas de verificação
 - Pergunta 1
 - Pergunta 2
 
----
+> As respostas esperadas e intervenções ficam no script do professor.
 
-# ⚠️ POSSÍVEIS DÚVIDAS
+## 📌 Resumo e conexão com a trilha
+[Conceitos essenciais e conexão com a próxima aula.]
 
-| Dúvida | Resposta |
-|---|---|
-| Dúvida | Explicação |
+## 🏠 Tarefa para casa
+[Entrega e critérios.]
 
----
-
-# 📌 RESUMO DA AULA
-
----
-
-# 🏠 TAREFA PARA CASA
-
----
-
-# 💡 DICAS PARA O PROFESSOR
-
----
-
-# 🚀 FECHAMENTO
+## 🔗 Referências
+- E-book correspondente
+- Caso ou laboratório utilizado
+- Script do professor correspondente

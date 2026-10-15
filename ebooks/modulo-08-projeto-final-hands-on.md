@@ -36,7 +36,6 @@ A empresa fictícia tem conflitos de agenda. O MVP consulta, reserva e cancela; 
 | 3 | [Testes e defeitos](../aulas/modulo-08-aula-03-testes-e-defeitos.md) | 3 |
 | 4 | [Release e apresentação](../aulas/modulo-08-aula-04-release-e-apresentacao.md) | 4 |
 
-**Duração sugerida:** quatro encontros de até 90 minutos, incluindo pausa de 5 minutos: até 6 horas ao vivo. O script delimita a prática do encontro; o restante do caderno é concluído depois. Usar papel ou Markdown se uma ferramenta estiver indisponível, identificando a simulação e concluindo posteriormente a execução exigida.
 
 ## Tópico 1 — Problema, escopo e requisitos do projeto
 
@@ -96,7 +95,6 @@ Ajuda a apresentar portfólio com honestidade e clareza.
 
 **Critérios específicos:** Três histórias; positivos/negativos; escopo e limites.
 
-**Exemplo de resposta comentada:** MVP consulta, reserva única sequencial e cancelamento. Não inclui autenticação ou concorrência real. Critério central: tentativa em horário ocupado preserva reserva original.
 
 **Dica:** faça sua tentativa antes de ler a resposta e explique qualquer revisão.
 
@@ -161,7 +159,6 @@ Demonstra participação e decisão em contexto colaborativo.
 
 **Critérios específicos:** Capacidade; meta; bloqueio real ou claramente simulado; eventos distintos.
 
-**Exemplo de resposta comentada:** Bloqueio fictício: participante sem ambiente. Ajuste: execução em dupla em computador disponível; adiar relatório. DoD permanece. Ação de melhoria: verificar ambiente antes do encontro.
 
 **Dica:** faça sua tentativa antes de ler a resposta e explique qualquer revisão.
 
@@ -226,7 +223,6 @@ Produz material para explicar investigação técnica.
 
 **Critérios específicos:** Oito casos; dois tipos de bug diferenciados; nenhuma execução inventada.
 
-**Exemplo de resposta comentada:** BUG01 viola RN03 na variante. BUG02 descreve RN06 violada em versão fictícia: cancelamento retorna sucesso, mas horário não reaparece. A referência fornecida não tem esse defeito; produzir plano de confirmação, não falso resultado.
 
 **Dica:** faça sua tentativa antes de ler a resposta e explique qualquer revisão.
 
@@ -291,7 +287,6 @@ Ajuda a sustentar narrativa honesta em seleção.
 
 **Critérios específicos:** Decisão sustentada; demonstração limitada ao implementado; contribuição individual.
 
-**Exemplo de resposta comentada:** Liberar apenas demonstração sequencial da referência com evidências dos casos críticos. Próximos passos: persistência, identidade e concorrência requerem novos requisitos e desenho, antes de prometer produto operacional.
 
 **Dica:** faça sua tentativa antes de ler a resposta e explique qualquer revisão.
 
@@ -348,7 +343,7 @@ Explique cada passagem e indique onde uma evidência pode obrigar o time a volta
 
 As atividades dos tópicos formam o caderno de prática. Além delas, resolva: **Durante a Review, o patrocinador exige um prazo para pagamento real. Responda sem prometer uma solução que o time não investigou.**
 
-Entregue situação inicial, decisão, evidência, consequência e uma limitação. **Referência para correção:** Explicar escopo atual, benefício entregue e hipótese do novo pedido. Propor investigação de integrações, segurança, esforço e critérios antes de estimar. Registrar pedido no backlog futuro e preservar evidência da entrega atual.
+Entregue situação inicial, decisão, evidência, consequência e uma limitação.
 
 ## Entrega final do módulo
 
@@ -378,15 +373,7 @@ dossiê Agenda Clara com requisitos, três histórias, backlog, oito casos execu
 | Evidência | Não verificável | Falta dado, versão ou saída | Outra pessoa consegue conferir |
 | Justificativa | Ausente | Genérica | Conecta regra, risco e decisão |
 
-Parâmetro formativo proposto: 6/8, sem zero em correção ou evidência. O professor devolve um acerto, uma lacuna e uma ação; o aluno corrige, registra a mudança e reapresenta. Não é regra comercial de certificação.
-
-## Guia do professor
-
-Ler os tópicos indicados em cada roteiro e conferir o laboratório antes da aula. Apresentar o enunciado antes da resposta comentada. Na demonstração, verbalizar qual regra orienta cada decisão. Em dupla, alternar quem conduz e quem revisa; na etapa individual, trocar entrada ou premissa para avaliar transferência.
-
-Rotacionar PO, QA e integrante de desenvolvimento/organização. Se houver três pessoas, uma facilita e registra os eventos em cada rodada. Avaliar também explicação individual. Usar BUG01 executável e BUG02 como registro de incidente simulado fornecido, sem misturar os tipos de evidência.
-
-Usar a rubrica para orientar a revisão. Ao aluno com dificuldade, oferecer uma entrada e pedir a decisão seguinte; depois ampliar. Registrar ajuda recebida. Ao aluno mais avançado, aplicar a variação difícil. Retomar a versão revisada no encontro seguinte.
+Parâmetro formativo proposto: 6/8, sem zero em correção ou evidência. Após o feedback, registre um acerto, uma lacuna e uma ação; corrija, registre a mudança e reapresente quando solicitado. Não é regra comercial de certificação.
 
 ## Resumo final para o aluno
 
@@ -521,19 +508,6 @@ Se regra crítica divergir, interromper a demonstração, registrar estado e rep
 | Colaboração | 45 s | Registro de contribuição |
 | Limites e evolução | 60 s | Riscos e próximo passo |
 
-O professor verifica: coerência entre regra e teste; oito casos executados; BUG01 e BUG02 corretamente identificados; decisão de release sustentada; eventos diferenciados; vínculos acessíveis; defesa individual. Para grupo, cada pessoa responde uma pergunta sobre uma parte que produziu ou revisou.
+Na avaliação serão observados: coerência entre regra e teste; oito casos executados; BUG01 e BUG02 corretamente identificados; decisão de release sustentada; eventos diferenciados; vínculos acessíveis; defesa individual. Em trabalhos em grupo, cada pessoa deve conseguir explicar a parte que produziu ou revisou.
 
 **Exemplo de frase para portfólio:** “Projeto educacional Agenda Clara: elaborei critérios de reserva, executei testes sequenciais e documentei uma divergência simulada de validação. O laboratório usa Python e estado em memória; não implementei serviço de produção.”
-
-
-
-## Scripts com falas para o professor
-
-Usar o roteiro para planejar, o script para conduzir e este E-book para aprofundar. As falas são apoio adaptável, com exemplos, perguntas, gabaritos e intervenções. O aluno revê a gravação do encontro na plataforma.
-
-- [Aula 1 — script com falas](../aulas/scripts/modulo-08-aula-01-kickoff-e-requisitos.md)
-- [Aula 2 — script com falas](../aulas/scripts/modulo-08-aula-02-sprint-e-execucao.md)
-- [Aula 3 — script com falas](../aulas/scripts/modulo-08-aula-03-testes-e-defeitos.md)
-- [Aula 4 — script com falas](../aulas/scripts/modulo-08-aula-04-release-e-apresentacao.md)
-
-Planejar inicialmente 30–45 minutos de revisão e conclusão por aula; exercícios técnicos, projeto final e portfólio podem exigir blocos maiores. Combinar essa carga e os prazos com a turma. Não comprimir toda a prática original em 90 minutos.

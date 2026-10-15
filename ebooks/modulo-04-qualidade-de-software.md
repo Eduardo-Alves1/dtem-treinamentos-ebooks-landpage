@@ -38,7 +38,6 @@ QA contribui para prevenir problemas e investigar comportamentos ao longo do des
 | 3 | [Exploração e reporte de bugs](../aulas/modulo-04-aula-03-exploracao-e-bugs.md) | 3, 4 |
 | 4 | [Regressão, ferramentas e automação](../aulas/modulo-04-aula-04-regressao-ferramentas-e-automacao.md) | 5, 6 |
 
-**Duração sugerida:** quatro encontros de até 90 minutos, incluindo pausa de 5 minutos: até 6 horas ao vivo. O script delimita a prática do encontro; o restante do caderno é concluído depois. Usar papel ou Markdown se uma ferramenta estiver indisponível, identificando a simulação e concluindo posteriormente a execução exigida.
 
 ## Tópico 1 — Qualidade, riscos e plano de testes
 
@@ -98,7 +97,6 @@ Permite explicar a razão da cobertura escolhida.
 
 **Critérios específicos:** Riscos justificados; escopo delimitado; condições observáveis de início e fim.
 
-**Exemplo de resposta comentada:** Prioridade maior para integridade da reserva por conflito operacional. Executar testes sequenciais nas duas classes; persistência e acesso simultâneo não são comprovados. Não liberar um produto real com base apenas neste laboratório.
 
 **Dica:** faça sua tentativa antes de ler a resposta e explique qualquer revisão.
 
@@ -163,7 +161,6 @@ Demonstra raciocínio reproduzível e capacidade de comunicar comportamentos.
 
 **Critérios específicos:** Cobrir oito regras; especificar dados e estado; registrar versão e resultado.
 
-**Exemplo de resposta comentada:** TC03/RN03: agenda vazia; reservar espaços em H11; esperado nome_invalido e H11 livre. Referência rejeita; variante aceita e ocupa H11. Essa diferença é um defeito simulado, não incidente real.
 
 **Dica:** faça sua tentativa antes de ler a resposta e explique qualquer revisão.
 
@@ -228,7 +225,6 @@ Mostra autonomia para formular perguntas úteis.
 
 **Critérios específicos:** Cinco sequências; observação separada de interpretação; conclusão ligada a regra.
 
-**Exemplo de resposta comentada:** Reservar H10, cancelar seu id e reservar H10 outra vez gera novo id. Cancelar o antigo retorna nao_encontrado e preserva a reserva nova. O identificador distingue reservas no mesmo horário.
 
 **Dica:** faça sua tentativa antes de ler a resposta e explique qualquer revisão.
 
@@ -293,7 +289,6 @@ Melhora colaboração técnica e explicações em entrevista.
 
 **Critérios específicos:** Reproduzível; ligado a RN03; estado conferido; impacto separado da prioridade.
 
-**Exemplo de resposta comentada:** Esperado nome_invalido e H11 livre; observado sucesso, id 1 e H11 ocupado. Impacto: recepção não identifica cliente. Severidade moderada e prioridade alta são propostas contextuais para o MVP, não classificações universais.
 
 **Dica:** faça sua tentativa antes de ler a resposta e explique qualquer revisão.
 
@@ -358,7 +353,6 @@ Ajuda a justificar decisões de qualidade com evidências.
 
 **Critérios específicos:** Distinguir reteste e regressão; decisão sustentada por versão e resultados.
 
-**Exemplo de resposta comentada:** Se os quatro passam, pode liberar a demonstração sequencial das regras cobertas. Não autoriza uso real: concorrência, segurança e persistência permanecem sem validação.
 
 **Dica:** faça sua tentativa antes de ler a resposta e explique qualquer revisão.
 
@@ -422,7 +416,6 @@ Permite transferir seu processo entre ferramentas.
 
 **Critérios específicos:** Bug validado somente após evidência; automação tem estado e comparação.
 
-**Exemplo de resposta comentada:** Criar Agenda; reservar espaços; comparar status com nome_invalido. Na variante a comparação falha. BUG01 passa para validado apenas após reteste na versão indicada.
 
 **Dica:** faça sua tentativa antes de ler a resposta e explique qualquer revisão.
 
@@ -476,7 +469,7 @@ Explique cada passagem e indique onde uma evidência pode obrigar o time a volta
 
 As atividades dos tópicos formam o caderno de prática. Além delas, resolva: **Depois de corrigir nome vazio, cancelar não libera mais H10. Que teste identifica a regressão e qual decisão de liberação você recomenda?**
 
-Entregue situação inicial, decisão, evidência, consequência e uma limitação. **Referência para correção:** Reservar H10, cancelar o id retornado, consultar e reservar novamente. H10 deve reaparecer e aceitar nova reserva. Caso contrário, há divergência de RN06; bloquear o escopo afetado e registrar evidência da versão.
+Entregue situação inicial, decisão, evidência, consequência e uma limitação.
 
 ## Entrega final do módulo
 
@@ -506,15 +499,8 @@ plano de testes, oito casos ligados a RN01–RN08, registro de execução das du
 | Evidência | Não verificável | Falta dado, versão ou saída | Outra pessoa consegue conferir |
 | Justificativa | Ausente | Genérica | Conecta regra, risco e decisão |
 
-Parâmetro formativo proposto: 6/8, sem zero em correção ou evidência. O professor devolve um acerto, uma lacuna e uma ação; o aluno corrige, registra a mudança e reapresenta. Não é regra comercial de certificação.
+Parâmetro formativo proposto: 6/8, sem zero em correção ou evidência. Após o feedback, registre um acerto, uma lacuna e uma ação; corrija, registre a mudança e reapresente quando solicitado. Não é regra comercial de certificação.
 
-## Guia do professor
-
-Ler os tópicos indicados em cada roteiro e conferir o laboratório antes da aula. Apresentar o enunciado antes da resposta comentada. Na demonstração, verbalizar qual regra orienta cada decisão. Em dupla, alternar quem conduz e quem revisa; na etapa individual, trocar entrada ou premissa para avaliar transferência.
-
-Distribuir as regras antes da prática de QA para não depender das histórias ainda não estudadas. Usar a versão com defeito para separar observado e esperado; pedir que o aluno formule o esperado antes de executar.
-
-Usar a rubrica para orientar a revisão. Ao aluno com dificuldade, oferecer uma entrada e pedir a decisão seguinte; depois ampliar. Registrar ajuda recebida. Ao aluno mais avançado, aplicar a variação difícil. Retomar a versão revisada no encontro seguinte.
 
 ## Resumo final para o aluno
 
@@ -530,16 +516,3 @@ Guarde a primeira versão e a correção. Na apresentação, explique uma decis�
 ## Referências
 
 [Ementa local](../ementa.md), [caso Agenda Clara](../atividades/caso-agenda-clara.md) e [laboratório](../portfolio/agenda-clara/README.md). Aprofundamento em [ISTQB CTFL](https://istqb.org/certifications/certified-tester-foundation-level-ctfl-v4-0/) e documentação oficial de [Jira](https://support.atlassian.com/jira-software-cloud/) e [Azure Boards](https://learn.microsoft.com/en-us/azure/devops/boards/). Os casos, exercícios e rubricas são autorais.
-
-
-
-## Scripts com falas para o professor
-
-Usar o roteiro para planejar, o script para conduzir e este E-book para aprofundar. As falas são apoio adaptável, com exemplos, perguntas, gabaritos e intervenções. O aluno revê a gravação do encontro na plataforma.
-
-- [Aula 1 — script com falas](../aulas/scripts/modulo-04-aula-01-qualidade-riscos-e-plano.md)
-- [Aula 2 — script com falas](../aulas/scripts/modulo-04-aula-02-cenarios-e-testes-funcionais.md)
-- [Aula 3 — script com falas](../aulas/scripts/modulo-04-aula-03-exploracao-e-bugs.md)
-- [Aula 4 — script com falas](../aulas/scripts/modulo-04-aula-04-regressao-ferramentas-e-automacao.md)
-
-Planejar inicialmente 30–45 minutos de revisão e conclusão por aula; exercícios técnicos, projeto final e portfólio podem exigir blocos maiores. Combinar essa carga e os prazos com a turma. Não comprimir toda a prática original em 90 minutos.

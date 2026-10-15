@@ -4,6 +4,8 @@
 
 ## Começar por aqui
 
+Leia também a [arquitetura dos materiais](arquitetura-materiais.md), que define a separação oficial entre E-book do aluno, roteiro pedagógico e script interno do professor.
+
 Leia a [análise pedagógica](analise-pedagogica.md), confira a [ementa local](../ementa.md) e use o [caso Agenda Clara](../atividades/caso-agenda-clara.md). A ementa publicada foi acessada pelo terminal e confirma os oito módulos e o bônus. O plano utiliza o detalhamento local para desenvolver os tópicos e entregas.
 
 A formação apresenta uma base de tecnologia e prática introdutória em QA, Produto e organização do trabalho. O aluno constrói artefatos e aprende a explicá-los. O escopo não equivale a domínio de todas as profissões ou garantia de contratação.
@@ -100,7 +102,7 @@ Planejar 30–45 minutos iniciais de estudo posterior por aula e ampliar os bloc
 
 ## Como usar os materiais
 
-1. Professor lê o capítulo e percorre a resposta de referência antes da aula.
+1. Professor lê o E-book, revisa o roteiro pedagógico e usa o script interno para preparar respostas de referência e intervenções antes da aula.
 2. Aluno recebe o problema e faz uma previsão antes da demonstração.
 3. Dupla produz e revisa; o exercício individual muda entrada ou premissa.
 4. Professor devolve um acerto, uma lacuna e uma ação.
